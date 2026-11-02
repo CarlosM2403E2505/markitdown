@@ -154,6 +154,30 @@ def evaluar_columnas(probs, columnas, max_variables=10):
     return total
 
 
+def simular_columnas(probs, columnas, n=40000, semilla=19):
+    """Como evaluar_columnas, pero por simulación (para boletos que varían en muchos
+    partidos). P(14) se corrige con su valor exacto: la suma de las columnas."""
+    import random
+    rnd = random.Random(semilla)
+    idx = [[SIGNOS.index(s) for s in c] for c in columnas]
+    dist = [0] * (len(probs) + 1)
+    acumuladas = [(p[0], p[0] + p[1]) for p in probs]
+    for _ in range(n):
+        res = [0 if (u := rnd.random()) < a else (1 if u < b else 2) for a, b in acumuladas]
+        mejor = max(sum(r == c for r, c in zip(res, col)) for col in idx)
+        dist[mejor] += 1
+    dist = [v / n for v in dist]
+    p14 = 0.0
+    for col in idx:
+        v = 1.0
+        for p, s in zip(probs, col):
+            v *= p[s]
+        p14 += v
+    dist[13] = max(0.0, dist[13] + dist[14] - p14)
+    dist[14] = p14
+    return dist
+
+
 def al_menos(dist, k):
     return sum(dist[k:])
 
@@ -389,8 +413,10 @@ def comparar_sistemas(probs, forzados, presupuesto=12):
 
     resultado = []
     for nombre, cols, dobles in sistemas:
-        dist = evaluar_columnas(probs, cols, max_variables=14) if len(cols) <= 64 else None
-        resultado.append({"nombre": nombre, "columnas": cols, "dobles": dobles, "dist": dist,
+        variables = sum(len({c[i] for c in cols}) > 1 for i in range(len(probs)))
+        simulado = variables > 10
+        dist = simular_columnas(probs, cols) if simulado else evaluar_columnas(probs, cols)
+        resultado.append({"nombre": nombre + (" (P≥13 a P≥10 simuladas)" if simulado else ""), "columnas": cols, "dobles": dobles, "dist": dist,
                           "p14": al_menos(dist, 14), "p13": al_menos(dist, 13), "p12": al_menos(dist, 12),
                           "p10": al_menos(dist, 10)})
     maximo = max(s["p14"] for s in resultado)

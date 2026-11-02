@@ -103,7 +103,7 @@ class TestColumnasMasProbables(unittest.TestCase):
         probs = _probs_aleatorias(6)
         cols = qc.columnas_mas_probables(probs, 16)
         self.assertEqual(len(set(cols)), 16)
-        exacta = qc.evaluar_columnas(probs, cols, max_variables=14)[14]
+        exacta = qc.simular_columnas(probs, cols)[14]
         self.assertAlmostEqual(exacta, sum(self._p_columna(probs, c) for c in cols))
 
     def test_son_las_mas_probables_de_todas(self):
@@ -132,7 +132,7 @@ class TestColumnasMasProbables(unittest.TestCase):
 
 class TestVariantesConEmpate(unittest.TestCase):
     def test_se_comparan_cuando_c_no_lleva_x(self):
-        probs = [[0.45, 0.25, 0.30] for _ in range(14)]
+        probs = [[0.50 - 0.01 * i, 0.20, 0.30 + 0.01 * i] for i in range(14)]
         sistemas, _ = qc.comparar_sistemas(probs, [0, 1])
         variantes = [s for s in sistemas if s["nombre"].startswith("C+X")]
         self.assertTrue(variantes)
@@ -141,6 +141,17 @@ class TestVariantesConEmpate(unittest.TestCase):
             self.assertEqual(len(set(s["columnas"])), 16)
             for f in (0, 1):
                 self.assertGreaterEqual(len({c[f] for c in s["columnas"]}), 2)
+
+
+class TestSimulacion(unittest.TestCase):
+    def test_simulacion_se_parece_a_la_exacta(self):
+        probs = _probs_aleatorias(15)
+        cols = qc.columnas_mas_probables(probs, 16)
+        sim = qc.simular_columnas(probs, cols)
+        exacta = qc.evaluar_columnas(probs, cols)
+        self.assertAlmostEqual(sim[14], exacta[14])
+        for k in (13, 12, 10):
+            self.assertAlmostEqual(qc.al_menos(sim, k), qc.al_menos(exacta, k), delta=0.01)
 
 
 class TestPostmortem(unittest.TestCase):
