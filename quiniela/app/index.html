@@ -1,0 +1,453 @@
+<meta name="dash-one-writer">
+<style>
+  .cq { font-family: var(--font-anthropic-sans); color: var(--color-fg); display: flex; flex-direction: column; gap: var(--cds-gap-lg); font-variant-numeric: tabular-nums; }
+  .cq-cabecera { display: flex; flex-direction: column; gap: var(--cds-gap-xs); }
+  .cq-titulo { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; text-wrap: balance; }
+  .cq-frase { margin: 0; color: var(--color-fg-muted); font-size: var(--cds-font-size-body); max-width: 70ch; }
+  .cq .cq-frase b { color: var(--color-fg); font-weight: 600; }
+  .cq-pestanas { display: flex; flex-wrap: wrap; gap: var(--cds-gap-xs); border-bottom: 1px solid var(--color-border-line); }
+  .cq-pestana { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; margin-bottom: -1px; }
+  .cq-pestana[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); }
+  .cq-pestana:focus-visible { outline: 2px solid var(--color-fg); outline-offset: 2px; }
+  .cq-seccion { display: flex; flex-direction: column; gap: var(--cds-gap-md); }
+  .cq-fichas { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr)); gap: var(--cds-gap-md); }
+  .cq-ficha { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-md); display: flex; flex-direction: column; gap: var(--cds-gap-xs); min-width: 0; }
+  .cq-etiqueta { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cq-cifra { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); line-height: 1.1; }
+  .cq-cifra small { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cq-rejilla { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-md); }
+  .cq-tarjeta { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); display: flex; flex-direction: column; gap: var(--cds-gap-sm); min-width: 0; }
+  .cq-tarjeta h2 { margin: 0; font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); }
+  .cq-nota { margin: 0; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cq-leyenda { display: flex; flex-wrap: wrap; gap: var(--cds-gap-md); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); }
+  .cq-leyenda span { display: inline-flex; align-items: center; gap: var(--cds-gap-xs); }
+  .cq-muestra { width: 0.625rem; height: 0.625rem; border-radius: 50%; display: inline-block; }
+  .cq-grafico { position: relative; min-height: 12rem; }
+  .cq-grafico svg { display: block; overflow: visible; }
+  .cq-grafico text { font-family: var(--font-anthropic-sans); font-size: var(--cds-font-size-caption); fill: var(--color-fg-muted); }
+  .cq-grafico .cq-rotulo { fill: var(--color-fg); }
+  .cq-tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; z-index: 2; }
+  .cq-tip .cq-tip-cab { color: var(--cds-text-secondary); }
+  .cq-caja-tabla { overflow: auto; max-height: 34rem; }
+  .cq-tabla { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-caption); }
+  .cq-tabla th { position: sticky; top: 0; background: var(--color-panel); text-align: left; font-weight: var(--cds-font-weight-medium); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+  .cq-tabla td { padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); vertical-align: middle; }
+  .cq-tabla .cq-num { text-align: right; }
+  .cq-tabla .cq-ancho { min-width: 11rem; }
+  .cq-pastilla { display: inline-block; padding: 0 var(--cds-pad-xs); border-radius: var(--cds-radius); font-size: var(--cds-font-size-caption); white-space: nowrap; border: 1px solid currentColor; }
+  .cq-r-muy-alto { color: var(--color-bad); }
+  .cq-r-alto { color: var(--color-warn); }
+  .cq-r-moderado { color: var(--color-fg-muted); }
+  .cq-r-bajo { color: var(--color-ok); }
+  .cq-signo { font-weight: 600; letter-spacing: 0.04em; }
+  .cq-barra { display: flex; height: 0.5rem; border-radius: var(--cds-radius); overflow: hidden; min-width: 6rem; background: var(--cds-chart-grid); }
+  .cq-buscar { font: inherit; font-size: var(--cds-font-size-body); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); max-width: 22rem; width: 100%; }
+  .cq-oculto-estrecho { }
+  @media (max-width: 40rem) { .cq-oculto-estrecho { display: none; } }
+  [data-dash-source-state=empty] { color: transparent; }
+  [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+</style>
+
+<div class="cq">
+  <header class="cq-cabecera">
+    <h1 class="cq-titulo">Control Quiniela</h1>
+    <p class="cq-frase">Jornada <b data-draw="t-jornada" data-source="ultima" data-field="jornada">—</b>: el boleto acierta 14 una vez entre <b data-draw="t-p14-frase" data-source="ultima" data-field="p14_uno_entre">—</b>, y el modelo se separa del mercado más de <b data-draw="c-umbral">—</b> puntos en <b data-draw="t-disc" data-source="discrepancias" data-field="n">—</b> partidos.</p>
+  </header>
+
+  <nav class="cq-pestanas" role="tablist" aria-label="Secciones">
+    <button class="cq-pestana" role="tab" id="tab-resumen" data-tab="resumen" aria-selected="true">Resumen</button>
+    <button class="cq-pestana" role="tab" id="tab-jornada" data-tab="jornada" aria-selected="false">Jornada en curso</button>
+    <button class="cq-pestana" role="tab" id="tab-bajas" data-tab="bajas" aria-selected="false">Bajas</button>
+    <button class="cq-pestana" role="tab" id="tab-sueltas" data-tab="sueltas" aria-selected="false">Sueltas</button>
+  </nav>
+
+  <section class="cq-seccion" id="resumen" data-seccion="resumen">
+    <div class="cq-fichas">
+      <div class="cq-ficha"><span class="cq-etiqueta">Jornada en curso</span><span class="cq-cifra" data-draw="t-jornada-ficha" data-source="ultima" data-field="jornada">—</span></div>
+      <div class="cq-ficha"><span class="cq-etiqueta">Hacer 14 con el boleto</span><span class="cq-cifra"><small>1 entre </small><span data-draw="t-p14" data-source="ultima" data-field="p14_uno_entre">—</span></span></div>
+      <div class="cq-ficha"><span class="cq-etiqueta">Cobrar (10 o más)</span><span class="cq-cifra" data-draw="t-p10" data-source="ultima" data-field="p10">—</span></div>
+      <div class="cq-ficha"><span class="cq-etiqueta">Pleno jugado</span><span class="cq-cifra" data-draw="t-pleno" data-source="ultima" data-field="pleno_jugado">—</span></div>
+      <div class="cq-ficha"><span class="cq-etiqueta">Acertar las 5 sueltas</span><span class="cq-cifra" data-draw="t-sueltas" data-source="ultima" data-field="sueltas_p_todas">—</span></div>
+    </div>
+
+    <div class="cq-rejilla">
+      <div class="cq-tarjeta" id="mejor-columna">
+        <h2>Mejor columna por jornada</h2>
+        <p class="cq-nota">Aciertos de la mejor columna del boleto. Se cobra desde <span data-draw="c-premio">—</span>.</p>
+        <p class="cq-nota" data-vacio="columnas" hidden>Todavía no hay jornadas cerradas con este dato.</p>
+        <div class="cq-grafico" data-draw="grafico-columnas" data-source="jornadas"></div>
+      </div>
+      <div class="cq-tarjeta" id="historial">
+        <h2>Historial</h2>
+        <p class="cq-nota">Log-loss: cuanto más bajo, mejor calibrado. Repartir un tercio a cada signo da <span data-draw="c-azar">—</span>.</p>
+        <div class="cq-caja-tabla">
+          <table class="cq-tabla" data-source="jornadas" data-row-key="jornada">
+            <thead><tr>
+              <th data-field="jornada">Jornada</th>
+              <th data-field="tipo">Tipo</th>
+              <th data-field="estado">Estado</th>
+              <th data-field="coste" class="cq-num">Coste (€)</th>
+              <th data-field="mejor_columna" class="cq-num">Mejor columna</th>
+              <th data-field="sueltas_aciertos" class="cq-num">Sueltas acertadas</th>
+              <th data-field="pleno_jugado">Pleno</th>
+              <th data-field="log_loss_modelo" class="cq-num cq-oculto-estrecho">Log-loss modelo</th>
+              <th data-field="log_loss_mercado" class="cq-num cq-oculto-estrecho">Log-loss mercado</th>
+            </tr></thead>
+            <tbody data-draw="tabla-jornadas"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cq-seccion" id="jornada" data-seccion="jornada" hidden>
+    <div class="cq-tarjeta" id="modelo-mercado">
+      <h2>Modelo frente a mercado</h2>
+      <p class="cq-nota">Probabilidad del signo que el mercado ve favorito. En rojo, diferencias de más de <span data-draw="c-umbral">—</span> puntos: según el prompt, hay que revisar los datos o explicar la razón.</p>
+      <div class="cq-leyenda"><span><i class="cq-muestra" data-serie="0"></i>Modelo</span><span><i class="cq-muestra" data-serie="1"></i>Mercado (bet365)</span></div>
+      <div class="cq-grafico" data-draw="grafico-mercado" data-source="jornada_actual"></div>
+    </div>
+    <div class="cq-tarjeta" id="partidos">
+      <h2>Los 14 y el Pleno</h2>
+      <p class="cq-nota">Signo del boleto (los dobles, de dos signos), riesgo y resultado cuando se juegue.</p>
+      <div class="cq-caja-tabla">
+        <table class="cq-tabla" data-source="jornada_actual" data-row-key="n">
+          <thead><tr>
+            <th data-field="n">#</th>
+            <th data-field="partido" class="cq-ancho">Partido</th>
+            <th data-field="p1" class="cq-num">1</th>
+            <th data-field="px" class="cq-num">X</th>
+            <th data-field="p2" class="cq-num">2</th>
+            <th data-field="signo_boleto">Boleto</th>
+            <th data-field="riesgo">Riesgo</th>
+            <th data-field="p_mercado_fav" class="cq-num cq-oculto-estrecho">Mercado</th>
+            <th data-field="resultado">Resultado</th>
+          </tr></thead>
+          <tbody data-draw="tabla-partidos"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cq-seccion" id="bajas" data-seccion="bajas" hidden>
+    <div class="cq-tarjeta" id="tabla-bajas">
+      <h2>Bajas y dudas</h2>
+      <p class="cq-nota">Clase de la noticia: A oficial, B medio fiable, C rumor, D especulación. Solo A y B mueven el precio.</p>
+      <label class="cq-nota" for="buscar-bajas">Buscar por equipo o jugador</label>
+      <input class="cq-buscar" id="buscar-bajas" type="search" placeholder="Bayern, Musiala…" autocomplete="off">
+      <div class="cq-caja-tabla">
+        <table class="cq-tabla" data-source="bajas" data-row-key="id">
+          <thead><tr>
+            <th data-field="jornada" class="cq-num">Jornada</th>
+            <th data-field="equipo">Equipo</th>
+            <th data-field="jugador">Jugador</th>
+            <th data-field="posicion" class="cq-oculto-estrecho">Posición</th>
+            <th data-field="estado">Estado</th>
+            <th data-field="clase">Clase</th>
+            <th data-field="partido" class="cq-oculto-estrecho">Partido</th>
+            <th data-field="fuente" class="cq-oculto-estrecho">Fuente</th>
+            <th data-field="fecha" class="cq-oculto-estrecho">Fecha</th>
+          </tr></thead>
+          <tbody data-draw="tabla-bajas"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="cq-seccion" id="sueltas" data-seccion="sueltas" hidden>
+    <div class="cq-tarjeta" id="tabla-sueltas">
+      <h2>Apuestas sueltas</h2>
+      <p class="cq-nota">Cinco apuestas de partidos distintos, todas por encima del <span data-draw="c-minimo-suelta">—</span>.</p>
+      <div class="cq-caja-tabla">
+        <table class="cq-tabla" data-source="sueltas" data-row-key="jornada,n">
+          <thead><tr>
+            <th data-field="jornada" class="cq-num">Jornada</th>
+            <th data-field="apuesta" class="cq-ancho">Apuesta</th>
+            <th data-field="partido" class="cq-oculto-estrecho">Partido</th>
+            <th data-field="p" class="cq-num">Probabilidad</th>
+            <th data-field="resultado">Resultado</th>
+          </tr></thead>
+          <tbody data-draw="tabla-sueltas"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script>
+  const es = d3.formatLocale({decimal: ',', thousands: '.', grouping: [3], currency: ['', ' €']});
+  window.CQ = {
+    pct: (v) => (v == null ? '—' : es.format('.1f')(v * 100) + ' %'),
+    entero: (v) => (v == null ? '—' : es.format(',d')(v)),
+    dec3: (v) => (v == null ? '—' : es.format('.3f')(v)),
+    claseRiesgo: (r) => ({'Muy alto': 'cq-r-muy-alto', 'Alto': 'cq-r-alto', 'Moderado': 'cq-r-moderado', 'Bajo': 'cq-r-bajo'})[r] || '',
+    filas: (id) => { const d = dash.data(id); return d.status === 'ok' ? d.data : null; },
+    PREMIO: 10,
+    UMBRAL: 0.10,
+    MINIMO_SUELTA: 0.80,
+    celda: (tr, texto, clase) => { const td = document.createElement('td'); td.textContent = texto; if (clase) td.className = clase; tr.appendChild(td); return td; },
+  };
+
+  dash.calc('ultima', {
+    inputs: ['jornadas'],
+    title: 'Última jornada con boleto',
+    description: 'La jornada más reciente con probabilidad de 14 calculada, y esa probabilidad como «1 entre N».',
+    fn: (jornadas) => {
+      const conBoleto = jornadas.filter((j) => j.p14 != null).sort((a, b) => a.jornada - b.jornada);
+      const r = conBoleto[conBoleto.length - 1];
+      return r ? [{...r, p14_uno_entre: Math.round(1 / r.p14)}] : [];
+    },
+  });
+
+  dash.calc('jornada_actual', {
+    inputs: ['partidos'],
+    title: 'Partidos de la jornada en curso',
+    description: 'Los partidos de la jornada más alta, con la probabilidad del favorito del mercado según el modelo y según bet365.',
+    fn: (partidos) => {
+      const max = Math.max(...partidos.map((p) => p.jornada));
+      return partidos.filter((p) => p.jornada === max).map((p) => {
+        if (p.m1 == null) return {...p, fav_mercado: null, p_modelo_fav: null, p_mercado_fav: null, diferencia: null};
+        const m = [p.m1, p.mx, p.m2], mod = [p.p1, p.px, p.p2];
+        const i = m.indexOf(Math.max(...m));
+        return {...p, fav_mercado: '1X2'[i], p_modelo_fav: mod[i], p_mercado_fav: m[i], diferencia: mod[i] - m[i]};
+      });
+    },
+  });
+
+  dash.calc('discrepancias', {
+    inputs: ['jornada_actual'],
+    title: 'Discrepancias con el mercado',
+    description: 'Partidos de la jornada en curso en los que el modelo y bet365 se separan más de 10 puntos en el favorito del mercado.',
+    fn: (jornada_actual) => [{n: jornada_actual.filter((p) => p.diferencia != null && Math.abs(p.diferencia) > 0.10).length}],
+  });
+</script>
+
+<script>
+  // Pestañas: muestran una sección y ocultan las demás.
+  const abrir = (nombre, enlazar) => {
+    document.querySelectorAll('[data-seccion]').forEach((s) => { s.hidden = s.dataset.seccion !== nombre; });
+    document.querySelectorAll('[data-tab]').forEach((b) => b.setAttribute('aria-selected', String(b.dataset.tab === nombre)));
+    if (enlazar) dash.setLink(nombre);
+  };
+  document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.tab, true)));
+  const pedida = location.hash.slice(1);
+  if (['resumen', 'jornada', 'bajas', 'sueltas'].includes(pedida)) abrir(pedida, false);
+
+  dash.onData(() => {
+    document.querySelectorAll('[data-serie]').forEach((e) => { e.style.background = dash.colors[Number(e.dataset.serie)]; });
+    const j = dash.data('jornadas');
+    const hay = j.status === 'ok' && j.data.some((r) => r.mejor_columna != null);
+    document.querySelectorAll('[data-vacio="columnas"]').forEach((e) => { e.hidden = j.status !== 'ok' || hay; });
+  });
+</script>
+
+<script>
+  const {pct, entero} = window.CQ;
+  const ficha = (nombre, fuente, campo, formato) => dash.draw(nombre, (el) => {
+    const d = dash.data(fuente);
+    el.classList.toggle('dash-skeleton', d.status === 'loading');
+    const r = d.status === 'ok' ? d.data[0] : null;
+    el.textContent = r && r[campo] != null ? formato(r[campo]) : '—';
+  });
+  ficha('t-jornada', 'ultima', 'jornada', String);
+  ficha('t-jornada-ficha', 'ultima', 'jornada', String);
+  ficha('t-p14', 'ultima', 'p14_uno_entre', entero);
+  ficha('t-p14-frase', 'ultima', 'p14_uno_entre', entero);
+  ficha('t-p10', 'ultima', 'p10', pct);
+  ficha('t-pleno', 'ultima', 'pleno_jugado', String);
+  ficha('t-sueltas', 'ultima', 'sueltas_p_todas', pct);
+  ficha('t-disc', 'discrepancias', 'n', String);
+  const {PREMIO, UMBRAL, MINIMO_SUELTA} = window.CQ;
+  dash.draw('c-premio', (el) => { el.textContent = String(PREMIO); });
+  dash.draw('c-umbral', (el) => { el.textContent = String(UMBRAL * 100); });
+  dash.draw('c-minimo-suelta', (el) => { el.textContent = pct(MINIMO_SUELTA).replace(',0', ''); });
+  dash.draw('c-azar', (el) => { el.textContent = window.CQ.dec3(Math.log(3)); });
+</script>
+
+<script>
+  // Tablas
+  const {pct, entero, dec3, claseRiesgo, filas, celda} = window.CQ;
+
+  dash.draw('tabla-jornadas', (tb) => {
+    const rows = filas('jornadas');
+    tb.replaceChildren();
+    if (!rows) return;
+    [...rows].sort((a, b) => b.jornada - a.jornada).forEach((r) => {
+      const tr = document.createElement('tr');
+      celda(tr, String(r.jornada));
+      celda(tr, r.tipo ?? '—');
+      celda(tr, r.estado ?? '—');
+      celda(tr, r.coste == null ? '—' : entero(r.coste), 'cq-num');
+      celda(tr, r.mejor_columna == null ? '—' : String(r.mejor_columna), 'cq-num');
+      celda(tr, r.sueltas_aciertos == null ? '—' : String(r.sueltas_aciertos), 'cq-num');
+      celda(tr, r.pleno_jugado ?? '—');
+      celda(tr, dec3(r.log_loss_modelo), 'cq-num cq-oculto-estrecho');
+      celda(tr, dec3(r.log_loss_mercado), 'cq-num cq-oculto-estrecho');
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('tabla-partidos', (tb) => {
+    const rows = filas('jornada_actual');
+    tb.replaceChildren();
+    if (!rows) return;
+    [...rows].sort((a, b) => a.n - b.n).forEach((r) => {
+      const tr = document.createElement('tr');
+      celda(tr, String(r.n));
+      celda(tr, r.partido, 'cq-ancho');
+      celda(tr, pct(r.p1), 'cq-num');
+      celda(tr, pct(r.px), 'cq-num');
+      celda(tr, pct(r.p2), 'cq-num');
+      celda(tr, r.signo_boleto ?? '—', 'cq-signo');
+      const td = document.createElement('td');
+      if (r.riesgo && r.riesgo !== '—') {
+        const s = document.createElement('span');
+        s.className = 'cq-pastilla ' + claseRiesgo(r.riesgo);
+        s.textContent = r.riesgo;
+        td.appendChild(s);
+      } else td.textContent = '—';
+      tr.appendChild(td);
+      celda(tr, r.p_mercado_fav == null ? '—' : pct(r.p_mercado_fav), 'cq-num cq-oculto-estrecho');
+      celda(tr, r.resultado ?? 'Pendiente');
+      tb.appendChild(tr);
+    });
+  });
+
+  let busqueda = '';
+  document.querySelectorAll('#buscar-bajas').forEach((inp) => inp.addEventListener('input', () => {
+    busqueda = inp.value.trim().toLowerCase();
+    dash.draw('tabla-bajas');
+  }));
+  dash.draw('tabla-bajas', (tb) => {
+    const rows = filas('bajas');
+    tb.replaceChildren();
+    if (!rows) return;
+    rows.filter((r) => !busqueda || `${r.equipo} ${r.jugador} ${r.partido}`.toLowerCase().includes(busqueda))
+      .sort((a, b) => b.jornada - a.jornada || a.equipo.localeCompare(b.equipo, 'es'))
+      .forEach((r) => {
+        const tr = document.createElement('tr');
+        tr.dataset.key = r.id;
+        celda(tr, String(r.jornada), 'cq-num');
+        celda(tr, r.equipo);
+        celda(tr, r.jugador);
+        celda(tr, r.posicion ?? '—', 'cq-oculto-estrecho');
+        const td = document.createElement('td');
+        const s = document.createElement('span');
+        s.className = 'cq-pastilla ' + (r.estado === 'Confirmada' ? 'cq-r-muy-alto' : r.estado === 'Duda' ? 'cq-r-alto' : 'cq-r-bajo');
+        s.textContent = r.estado;
+        td.appendChild(s);
+        tr.appendChild(td);
+        celda(tr, r.clase ?? '—');
+        celda(tr, r.partido ?? '—', 'cq-oculto-estrecho');
+        celda(tr, r.fuente ?? '—', 'cq-oculto-estrecho');
+        celda(tr, r.fecha ?? '—', 'cq-oculto-estrecho');
+        tb.appendChild(tr);
+      });
+  });
+
+  dash.draw('tabla-sueltas', (tb) => {
+    const rows = filas('sueltas');
+    tb.replaceChildren();
+    if (!rows) return;
+    [...rows].sort((a, b) => b.jornada - a.jornada || a.n - b.n).forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = `${r.jornada},${r.n}`;
+      celda(tr, String(r.jornada), 'cq-num');
+      celda(tr, r.apuesta, 'cq-ancho');
+      celda(tr, r.partido ?? '—', 'cq-oculto-estrecho');
+      celda(tr, pct(r.p), 'cq-num');
+      celda(tr, r.resultado == null ? 'Pendiente' : (r.resultado ? 'Acertada' : 'Fallada'));
+      tb.appendChild(tr);
+    });
+  });
+</script>
+
+<script>
+  // Gráficos
+  const {pct, filas, PREMIO, UMBRAL} = window.CQ;
+
+  const tooltip = (caja) => {
+    const t = document.createElement('div');
+    t.className = 'cq-tip';
+    t.hidden = true;
+    caja.appendChild(t);
+    return {
+      mostrar(lineas, x, y) {
+        t.replaceChildren(...lineas.map((l, i) => { const d = document.createElement('div'); if (i === 0) d.className = 'cq-tip-cab'; d.textContent = l; return d; }));
+        t.hidden = false;
+        const w = t.offsetWidth, W = caja.clientWidth;
+        t.style.left = Math.max(0, Math.min(W - w, x - w / 2)) + 'px';
+        t.style.top = Math.max(0, y - t.offsetHeight - 10) + 'px';
+      },
+      ocultar() { t.hidden = true; },
+    };
+  };
+
+  dash.draw('grafico-columnas', (el) => {
+    el.replaceChildren();
+    const rows = filas('jornadas');
+    if (!rows) return;
+    const datos = rows.filter((r) => r.mejor_columna != null).sort((a, b) => a.jornada - b.jornada);
+    if (!datos.length) return;
+    const W = el.clientWidth || 320, H = 192, m = {t: 12, r: 8, b: 24, l: 28};
+    const x = d3.scaleBand(datos.map((d) => 'J' + d.jornada), [m.l, W - m.r]).padding(0.35);
+    const y = d3.scaleLinear([0, 14], [H - m.b, m.t]);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Aciertos de la mejor columna por jornada');
+    svg.append('g').selectAll('line').data([0, 7, 14]).join('line')
+      .attr('x1', m.l).attr('x2', W - m.r).attr('y1', y).attr('y2', y).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data([0, 7, 14]).join('text')
+      .attr('x', m.l - 6).attr('y', y).attr('dy', '0.32em').attr('text-anchor', 'end').text(String);
+    svg.append('line').attr('x1', m.l).attr('x2', W - m.r).attr('y1', y(PREMIO)).attr('y2', y(PREMIO))
+      .attr('stroke', 'var(--cds-chart-reference)').attr('stroke-dasharray', '4 3');
+    svg.append('text').attr('x', W - m.r).attr('y', y(PREMIO) - 4).attr('text-anchor', 'end').text(`Premio desde ${PREMIO}`);
+    const bw = Math.min(32, x.bandwidth());
+    const tip = tooltip(el);
+    svg.append('g').selectAll('rect').data(datos).join('rect')
+      .attr('x', (d) => x('J' + d.jornada) + (x.bandwidth() - bw) / 2).attr('width', bw)
+      .attr('y', (d) => y(d.mejor_columna)).attr('height', (d) => y(0) - y(d.mejor_columna))
+      .attr('rx', 3).attr('fill', (d) => (d.mejor_columna >= PREMIO ? 'var(--color-ok)' : dash.colors[0]))
+      .on('pointerenter pointermove', (ev, d) => {
+        const [px, py] = d3.pointer(ev, el);
+        tip.mostrar([`Jornada ${d.jornada}`, `Mejor columna: ${d.mejor_columna} aciertos`], px, py);
+      })
+      .on('pointerleave', () => tip.ocultar());
+    svg.append('g').selectAll('text').data(datos).join('text')
+      .attr('x', (d) => x('J' + d.jornada) + x.bandwidth() / 2).attr('y', H - 6).attr('text-anchor', 'middle')
+      .text((d) => 'J' + d.jornada);
+  });
+
+  dash.draw('grafico-mercado', (el) => {
+    el.replaceChildren();
+    const rows = filas('jornada_actual');
+    if (!rows) return;
+    const datos = rows.filter((r) => r.p_mercado_fav != null).sort((a, b) => a.n - b.n);
+    if (!datos.length) return;
+    const W = el.clientWidth || 320, filaH = 40, arriba = 22;
+    const H = arriba + datos.length * filaH + 4;
+    const x = d3.scaleLinear([0, 1], [8, W - 8]);
+    const svg = d3.select(el).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`).attr('role', 'img').attr('aria-label', 'Probabilidad del favorito según el modelo y según el mercado');
+    const marcas = W < 420 ? [0, 0.5, 1] : [0, 0.25, 0.5, 0.75, 1];
+    svg.append('g').selectAll('line').data(marcas).join('line')
+      .attr('x1', x).attr('x2', x).attr('y1', arriba - 4).attr('y2', H).attr('stroke', 'var(--cds-chart-grid)');
+    svg.append('g').selectAll('text').data(marcas).join('text')
+      .attr('x', x).attr('y', 10).attr('text-anchor', (d) => (d === 0 ? 'start' : d === 1 ? 'end' : 'middle'))
+      .text((d) => (d * 100) + ' %');
+    const tip = tooltip(el);
+    const g = svg.append('g').selectAll('g').data(datos).join('g')
+      .attr('transform', (d, i) => `translate(0,${arriba + i * filaH})`);
+    g.append('rect').attr('x', 0).attr('y', 0).attr('width', W).attr('height', filaH).attr('fill', 'transparent');
+    g.append('text').attr('class', 'cq-rotulo').attr('x', 8).attr('y', 12).text((d) => `${d.n}. ${d.partido} (${d.fav_mercado})`);
+    const fuerte = (d) => Math.abs(d.diferencia) > UMBRAL;
+    g.append('line').attr('x1', (d) => x(d.p_modelo_fav)).attr('x2', (d) => x(d.p_mercado_fav)).attr('y1', 27).attr('y2', 27)
+      .attr('stroke', (d) => (fuerte(d) ? 'var(--cds-chart-status-critical)' : 'var(--cds-chart-muted)'))
+      .attr('stroke-width', 2).attr('stroke-linecap', 'round');
+    g.append('circle').attr('cx', (d) => x(d.p_mercado_fav)).attr('cy', 27).attr('r', 5).attr('fill', dash.colors[1]);
+    g.append('circle').attr('cx', (d) => x(d.p_modelo_fav)).attr('cy', 27).attr('r', 5).attr('fill', dash.colors[0]);
+    g.on('pointerenter pointermove', (ev, d) => {
+      const [px, py] = d3.pointer(ev, el);
+      const dif = d.diferencia * 100;
+      tip.mostrar([`${d.partido} · favorito ${d.fav_mercado}`, `Modelo: ${pct(d.p_modelo_fav)}`, `Mercado: ${pct(d.p_mercado_fav)}`,
+        `Diferencia: ${dif > 0 ? '+' : ''}${dif.toFixed(1).replace('.', ',')} puntos`], px, py);
+    }).on('pointerleave', () => tip.ocultar());
+  });
+</script>

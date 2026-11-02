@@ -33,7 +33,8 @@
    "xg_modelo_sin_ajustes": [
     2.423,
     1.492
-   ]
+   ],
+   "riesgo": "Muy alto"
   },
   {
    "n": 2,
@@ -114,7 +115,8 @@
     0.6596
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "2"
+   "signo_boleto_18eur": "2",
+   "riesgo": "Moderado"
   },
   {
    "n": 6,
@@ -221,7 +223,8 @@
     0.6879
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "2"
+   "signo_boleto_18eur": "2",
+   "riesgo": "Moderado"
   },
   {
    "n": 12,
@@ -370,5 +373,9 @@
    "apuesta": "Barcelona marca",
    "p": 0.866
   }
- ]
+ ],
+ "fechas": "3–5/11",
+ "tipo": "Europea",
+ "estado": "Pronóstico v1",
+ "boleto": "Reducida 7 dobles"
 }

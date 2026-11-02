@@ -1,0 +1,44 @@
+{
+ "rows": [
+  {
+   "jornada": 19,
+   "n": 1,
+   "apuesta": "Liverpool marca",
+   "partido": "Fenerbahçe – Liverpool",
+   "p": 0.908,
+   "resultado": null
+  },
+  {
+   "jornada": 19,
+   "n": 2,
+   "apuesta": "Real Madrid marca",
+   "partido": "AEK Atenas – Real Madrid",
+   "p": 0.899,
+   "resultado": null
+  },
+  {
+   "jornada": 19,
+   "n": 3,
+   "apuesta": "Man. City marca",
+   "partido": "Leipzig – Man. City",
+   "p": 0.889,
+   "resultado": null
+  },
+  {
+   "jornada": 19,
+   "n": 4,
+   "apuesta": "Arsenal marca",
+   "partido": "Slavia Praga – Arsenal",
+   "p": 0.881,
+   "resultado": null
+  },
+  {
+   "jornada": 19,
+   "n": 5,
+   "apuesta": "Barcelona marca",
+   "partido": "Barcelona – Aston Villa",
+   "p": 0.866,
+   "resultado": null
+  }
+ ]
+}
