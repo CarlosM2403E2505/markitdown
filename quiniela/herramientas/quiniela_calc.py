@@ -282,6 +282,99 @@ def mejor_boleto_b(probs, forzados, objetivo="p14", n_dobles=7, finalistas=40):
     return mejor[1], mejor[2], len(candidatos)
 
 
+def _k_mejores(probs, orden, k, fijo=None):
+    """Las k combinaciones de rangos más probables (0 = signo más probable de cada partido).
+
+    fijo=(partido, rango) obliga a ese partido a llevar ese rango."""
+    import heapq
+
+    def prob(rangos):
+        v = 1.0
+        for i, r in enumerate(rangos):
+            v *= probs[i][orden[i][r]]
+        return v
+
+    inicio = [0] * len(probs)
+    if fijo:
+        inicio[fijo[0]] = fijo[1]
+    inicio = tuple(inicio)
+    monton, vistos, salida = [(-prob(inicio), inicio)], {inicio}, []
+    while monton and len(salida) < k:
+        p, rangos = heapq.heappop(monton)
+        salida.append((-p, rangos))
+        for i in range(len(probs)):
+            if rangos[i] < 2 and not (fijo and i == fijo[0]):
+                nuevo = rangos[:i] + (rangos[i] + 1,) + rangos[i + 1:]
+                if nuevo not in vistos:
+                    vistos.add(nuevo)
+                    heapq.heappush(monton, (-prob(nuevo), nuevo))
+    return salida
+
+
+def columnas_mas_probables(probs, k=16, forzados=()):
+    """Las k columnas distintas más probables (máxima P(14) posible con k apuestas).
+
+    P(14) de un conjunto de columnas es la suma de sus probabilidades, porque como
+    mucho una acierta las 14. Con vetos, cada partido vetado tiene que aparecer con
+    al menos dos signos: por cada veto que no se cumple, la columna menos probable
+    que no haga falta para otro veto se cambia por la mejor que lo cumple.
+    """
+    orden = [_orden(p) for p in probs]
+    elegidas = _k_mejores(probs, orden, k)
+
+    def cumple(lista, g):
+        return len({r[g] for _, r in lista}) >= 2
+
+    for f in forzados:
+        if cumple(elegidas, f):
+            continue
+        ya = {r for _, r in elegidas}
+        nueva = next(c for c in _k_mejores(probs, orden, k + 1, fijo=(f, 1)) if c[1] not in ya)
+        for j in range(len(elegidas) - 1, -1, -1):
+            prueba = elegidas[:j] + elegidas[j + 1:] + [nueva]
+            if all(cumple(prueba, g) for g in forzados if cumple(elegidas, g) or g == f):
+                elegidas = prueba
+                break
+        else:
+            raise ValueError(f"No se puede cumplir el veto del partido {f + 1} con {k} columnas")
+    elegidas.sort(key=lambda c: -c[0])
+    return ["".join(SIGNOS[orden[i][r]] for i, r in enumerate(rangos)) for _, rangos in elegidas]
+
+
+def comparar_sistemas(probs, forzados, presupuesto=12):
+    """Evalúa los sistemas posibles con el presupuesto y elige según el criterio del prompt.
+
+    Criterio: entre los sistemas cuya P(14) es al menos el 90 % de la máxima, el de
+    mayor P(≥12); con empate, el de mayor P(14).
+    """
+    k = int(round(presupuesto / PRECIO_APUESTA))
+    sistemas = []
+    if k >= 16:
+        try:
+            dobles, cols = mejor_boleto_a(probs, forzados)
+            sistemas.append(("A · 4 dobles completos", cols, dobles))
+        except ValueError:
+            pass
+        try:
+            dobles, cols, _ = mejor_boleto_b(probs, forzados)
+            sistemas.append(("B · reducida de 7 dobles al 13", cols, dobles))
+        except ValueError:
+            pass
+    cols = columnas_mas_probables(probs, k, forzados)
+    sistemas.append((f"C · las {k} columnas más probables", cols, None))
+
+    resultado = []
+    for nombre, cols, dobles in sistemas:
+        dist = evaluar_columnas(probs, cols, max_variables=14) if len(cols) <= 64 else None
+        resultado.append({"nombre": nombre, "columnas": cols, "dobles": dobles, "dist": dist,
+                          "p14": al_menos(dist, 14), "p13": al_menos(dist, 13), "p12": al_menos(dist, 12),
+                          "p10": al_menos(dist, 10)})
+    maximo = max(s["p14"] for s in resultado)
+    candidatos = [s for s in resultado if s["p14"] >= 0.9 * maximo]
+    elegido = max(candidatos, key=lambda s: (round(s["p12"], 6), s["p14"]))
+    return resultado, elegido
+
+
 # ------------------------------------------------------------- comprobaciones
 
 def comprobar(datos):
@@ -402,6 +495,18 @@ def cmd_boleto(args):
         salida.append("  Columnas:")
         salida += [f"    {n:2d}. {c}" for n, c in enumerate(cols, 1)]
     salida.append(f"\n(Reducida: {n_cand} combinaciones evaluadas; objetivo {args.objetivo}.)")
+
+    sistemas, elegido = comparar_sistemas(probs, forzados, presupuesto)
+    salida.append(f"\n## Comparación de sistemas ({presupuesto} €)")
+    salida.append(f"  {'Sistema':<36} {'P(14)':>14} {'P(≥13)':>8} {'P(≥12)':>8} {'P(≥10)':>8}")
+    for s in sistemas:
+        marca = "  ← ELEGIDO" if s is elegido else ""
+        salida.append(f"  {s['nombre']:<36} {'1 entre ' + format(round(1 / s['p14']), ',').replace(',', '.'):>14}"
+                      f" {_pct(s['p13']):>8} {_pct(s['p12']):>8} {_pct(s['p10']):>8}{marca}")
+    salida.append("  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).")
+    if elegido["dobles"] is None:
+        salida.append(f"  Columnas del sistema elegido (apuestas sencillas):")
+        salida += [f"    {n:2d}. {c}" for n, c in enumerate(elegido["columnas"], 1)]
 
     pleno = datos.get("pleno")
     if pleno:

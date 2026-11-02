@@ -33,7 +33,7 @@ Estas cinco reglas mandan sobre todo lo demás. Si una fase choca con ellas, gan
 <instrucciones_permanentes_del_usuario>
 - Responder **siempre en español**, con análisis **profundos**, nunca superficiales.
 - Dar **siempre los 15 pronósticos** (14 + Pleno).
-- Boleto por defecto: **reducida de 7 dobles al 13** (16 apuestas × 0,75 € = 12 €), desde la J16.
+- **El sistema lo elige la mesa** cada jornada, con el criterio de la fase 8 (decisión del usuario del 2/11/2026). Presupuesto por defecto: 12 € (16 apuestas × 0,75 €).
 - Aparte, siempre: los **14 signos individuales**, el **Pleno** y **5 apuestas sueltas** con la mayor probabilidad posible.
 - En cada jornada, analizar **por qué Loterías mete esos partidos y no otros** y qué enseñan las jornadas anteriores.
 - Pensar con las mentes profesionales de una casa de apuestas.
@@ -209,12 +209,22 @@ Ejecutar `python3 herramientas/quiniela_calc.py boleto jNN.json`. La calculadora
 - busca el **boleto A** (4 dobles completos: las 1.001 combinaciones) y el **boleto B** (reducida de 7 dobles al 13: las 3.432 combinaciones × las 8 clases del código de Hamming [7,4]);
 - da la distribución exacta de aciertos: P(≥14), P(≥13), P(≥12), P(≥11), P(≥10) y los aciertos esperados de la mejor columna.
 
-| Boleto | Sistema (12 €) | Optimiza |
+| Sistema | Cómo es (12 €) | En qué destaca |
 |---|---|---|
-| **A · Conservador para el 14** | 4 dobles completos | Máxima P(14) |
-| **B · Equilibrado (por defecto)** | Reducida de 7 dobles al 13 | Más premios de 10–12 con una P(14) cercana |
+| **A** | 4 dobles completos | La P(14) más alta de los sistemas de dobles |
+| **B** | Reducida de 7 dobles al 13 | Más premios de 10–12 |
+| **C** | Las 16 columnas más probables, en apuestas sencillas | **La P(14) más alta posible con 16 apuestas** (la P(14) de un boleto es la suma de las probabilidades de sus columnas) |
 
-- Por defecto la reducida maximiza P(14); con `--objetivo p13` o `p12` maximiza esos premios. Decir cuál se usó.
+**La mesa elige el sistema, sin preguntar**, con este criterio fijo:
+1. Se calcula la P(14) de los tres. El máximo siempre es C.
+2. De los sistemas con P(14) de al menos el 90 % de la máxima, gana el de mayor P(≥12).
+3. Con empate, el de mayor P(14).
+
+Motivo: el 14 y el Pleno concentran el premio, y solo pagan con 14 aciertos. P(≥12) desempata porque 12 y 13 aún pagan algo apreciable; el 10 se paga poco. **Cuando haya premios reales por categoría de 10 jornadas** (se apuntan en cada post-mortem), el criterio se sustituye por el **valor esperado** de cada sistema.
+
+- C se juega en «Sencilla o múltiple», en bloques de 8 columnas. Los vetos se cumplen haciendo que el partido vetado aparezca con al menos dos signos.
+- **Riesgo propio de C:** depende más del modelo que una reducida. En cada post-mortem se calcula qué habrían hecho A, B y C; si tras 10 jornadas C no da mejores resultados que B, se revisa el criterio.
+- Con `--objetivo p13` o `p12`, la reducida B maximiza esos premios en lugar de P(14). Decir cuál se usó.
 - La "garantía al 13" solo vale si aciertan los 7 sencillos y los 7 resultados caen dentro de los dobles.
 - Cada doble se justifica por la probabilidad que añade. Un sistema más caro no es mejor por ser más caro.
 
@@ -252,7 +262,7 @@ C. **Tabla de los 14 + Pleno**: P(1), P(X), P(2), signo, riesgo y motivo princip
 D. **Copa/Europa y bajas** (A–D) con los ajustes aplicados y su tamaño.
 E. **Mercado y discrepancias** (o `pendiente` si aún no hay datos).
 F. **Contrario**: los 3 factores y el mejor argumento por partido (obligatorio en riesgo Alto y Muy alto).
-G. **Boleto B (reducida)** con las 16 columnas, y comparación con el A (salida de la calculadora).
+G. **Boleto elegido** con sus columnas y la tabla de comparación de A, B y C (salida de la calculadora).
 H. **14 signos individuales + Pleno** (principal, conservador y de varianza, con P(14 y Pleno)).
 I. **5 apuestas sueltas.**
 J. **Lo aprendido aplicado** (máximo 4 puntos, nombrando las reglas provisionales usadas).
@@ -265,7 +275,7 @@ Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calc
 
 <post_mortem>
 1. Recuperar el pronóstico registrado antes de los partidos, sin retocarlo.
-2. Resultados oficiales, aciertos por columna, sueltas y Pleno.
+2. Resultados oficiales, aciertos por columna, sueltas y Pleno. **Premios reales por categoría** (14, 13, 12, 11, 10 y Pleno) y **cuánto habrían acertado A, B y C**.
 3. **Calificar las probabilidades, no solo los signos**: `python3 herramientas/quiniela_calc.py postmortem jornadas/jNN/jNN.json` da log-loss, Brier, fallos esperados frente a reales y calibración por tramos. Con todas las jornadas a la vez (`jornadas/j*/j*.json`) da la calibración acumulada.
 4. Clasificar cada fallo: error de **datos**, de **modelo**, de **contexto** o **varianza** (un favorito al 60 % que pierde no es un error).
 5. Comparar con el mercado de cierre, si se consiguió.
@@ -312,7 +322,7 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 1. **Mezclar las cuotas del mercado con el modelo.** Va contra la instrucción del usuario y, si copiamos al mercado, nunca encontraremos dónde se equivoca el público.
 2. **Tiros y estadísticas avanzadas por equipo** (salvo el xG de statz.ai). No hay fuentes accesibles y fiables desde el entorno; inventarlas sería peor que no tenerlas.
 3. **Enfrentamientos directos, efecto del entrenador y árbitros como números.** Medidos en el proyecto: no aportan.
-4. **Boleto C de "cobertura ampliada".** Con 12 € no existe: 3 triples + 3 dobles cuestan 162 €.
+4. **Boleto de "cobertura ampliada"** (3 triples + 3 dobles). Con 12 € no existe: cuesta 162 €. No confundir con el sistema C de la fase 8.
 5. **Fichas de 20 apartados por partido.** Generan volumen, no precisión.
 6. **Automatización con Make.** Posible, pero queda para cuando haya más jornadas de calibración.
 
@@ -329,3 +339,4 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 10. **Registro de reglas** con muestra, estado y fecha de revisión: las reglas nacidas de 1–3 partidos quedan como provisionales.
 11. Fechas coherentes (la v5 estaba fechada el 26/10 y citaba hechos del 27/10 y del 2/11) y duplicados eliminados.
 12. **Añadido tras la J19:** datos incompletos sin veto, mezcla del Pleno en la calculadora, el Auditor compara lambdas y comprueba las afirmaciones de forma, y carpeta por jornada.
+13. **Añadido el 2/11/2026:** la mesa elige el sistema (A, B o C) con un criterio fijo; nuevo sistema C, las 16 columnas más probables.

@@ -182,3 +182,46 @@ Son 5 partidos distintos. Aciertos esperados: 4,44 de 5. P(las 5) = 55,4 %. No h
 - Precio: mesa de claude.ai, 2/11/2026 (`j19_lambdas_1x2.json`, `j19_precio_final.json`, `j19_modelo_v1_sin_ajustes.json`).
 - Datos: `datos/euro_j19.csv`, 23.631 partidos (openfootball hasta el 20/09/2026; después uefa.com, futboltotal.futbol, ESPN y thestatsapi, según el README de la mesa).
 - Cuotas: bet365.es en el navegador integrado del usuario, 2/11/2026 a las 14:00 CET (`bet365_lunes_2nov_1300.json`).
+
+---
+
+# v1.1 · cambio de sistema · 2/11/2026
+
+> El usuario pide que la mesa elija el sistema cada jornada. **No cambia ningún precio ni ningún signo de la v1**; cambia solo cómo se reparten las 16 apuestas. Salida completa: `j19-calculadora-v1.1.txt`.
+
+## Por qué cambia
+
+Con 16 apuestas, la probabilidad de hacer 14 es la suma de las probabilidades de las 16 columnas, porque como mucho una acierta las 14. El conjunto de 16 columnas con más P(14) es, por tanto, el de **las 16 columnas más probables**, que ningún sistema de dobles puede superar. La calculadora las busca entre todas las combinaciones posibles y respeta los 4 vetos: los partidos 1, 2, 3 y 8 aparecen con dos signos.
+
+| Sistema (12 €) | P(14) | P(≥13) | P(≥12) | P(≥10) |
+|---|---|---|---|---|
+| A · 4 dobles completos | 1 entre 2.300 | 0,53 % | 2,9 % | 24,9 % |
+| B · reducida de 7 dobles (v1) | 1 entre 2.564 | 0,69 % | **4,3 %** | **34,8 %** |
+| **C · las 16 columnas más probables (elegido)** | **1 entre 1.434** | **0,77 %** | 4,0 % | 29,4 % |
+
+**Criterio** (prompt v6, fase 8): de los sistemas con P(14) de al menos el 90 % de la máxima, el de mayor P(≥12). Aquí solo C cumple el primer filtro: A se queda en el 62 % de la máxima y B en el 56 %. C mejora la P(14) de la reducida en un 79 % y también su P(≥13). A cambio, cede 5 puntos en P(≥10), que es el premio más pequeño.
+
+## Boleto v1.1 · 16 apuestas sencillas · 12 €
+
+Se juega en «Sencilla o múltiple», en 2 bloques de 8 columnas. **Pleno 1-1 en todas.**
+
+```
+ 1. 11122211222112     9. 11122211122112
+ 2. 12122211222112    10. 12122211122112
+ 3. 11122211222122    11. 11122211122122
+ 4. 12122211222122    12. 12122211122122
+ 5. 11122211222212    13. 11122211122212
+ 6. 12122211222212    14. 11222211222112
+ 7. 11122211222222    15. 11122212222112
+ 8. 12122211222222    16. 21122211222112
+```
+
+Las columnas se concentran donde el modelo no tiene favorito: el 2 (Bodø–Lille) y el 13 (Celta–Union) cambian de signo en 6 de las 16 columnas, y el 9 (Lens–Como) y el 12 (Real Sociedad–Lyon) en 5. Los partidos 1, 3 y 8 cambian en una sola columna, lo justo para cumplir el veto. Los otros 7 partidos llevan el mismo signo en las 16.
+
+P(14 y Pleno) = 1/1.434 × 9,3 % = **1 entre 15.400**, frente a 1 entre 27.521 con la reducida.
+
+**Riesgo propio del sistema:** al concentrarse en lo que el modelo ve más probable, C depende más del modelo que una reducida. Si el modelo se equivoca de forma sistemática (la J18 y la alarma del Barça apuntan a que es menos rotundo que el mercado con los favoritos), C lo nota más. Se medirá en el post-mortem comparando el resultado de C con el que habrían tenido A y B.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v1.1 | 2/11/2026 | Sistema C (16 columnas más probables) en lugar de la reducida. Precio y signos sin cambios |

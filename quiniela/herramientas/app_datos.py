@@ -35,10 +35,6 @@ def _mercado(carpeta):
     return salida
 
 
-def _signo(p, dobles_de_partido):
-    return dobles_de_partido or qc.SIGNOS[qc._orden(p)[0]]
-
-
 def jornada_desde_json(ruta):
     d = _leer(ruta)
     n_j = d["jornada"]
@@ -46,17 +42,16 @@ def jornada_desde_json(ruta):
     probs = [p["p"] for p in partidos]
     mercado = _mercado(os.path.dirname(ruta))
     forzados = qc._forzados(partidos)
-    dobles, cols, _ = qc.mejor_boleto_b(probs, forzados)
-    dist = qc.evaluar_columnas(probs, cols)
-    signos_boleto = {}
-    for d_ in dobles:
-        signos_boleto[d_] = "".join(sorted((qc.SIGNOS[s] for s in qc._orden(probs[d_])[:2]), key=qc.SIGNOS.index))
+    _, elegido = qc.comparar_sistemas(probs, forzados, d.get("presupuesto", 12))
+    cols, dist = elegido["columnas"], elegido["dist"]
+    # Signos que aparecen en las columnas del boleto, partido a partido ("1", "12", "1X2"...).
+    signos_boleto = {i: "".join(s for s in qc.SIGNOS if any(c[i] == s for c in cols)) for i in range(len(probs))}
 
     filas = []
     for i, p in enumerate(partidos):
         m = mercado.get(p.get("n", i + 1))
         resultado = p.get("resultado")
-        signo_boleto = _signo(p["p"], signos_boleto.get(i))
+        signo_boleto = signos_boleto[i]
         filas.append({
             "jornada": n_j, "n": p.get("n", i + 1), "partido": p["partido"],
             "competicion": p.get("competicion"), "dia": p.get("dia"),
@@ -97,7 +92,7 @@ def jornada_desde_json(ruta):
     resumen = {
         "jornada": n_j, "fechas": d.get("fechas"), "tipo": d.get("tipo"),
         "estado": "Cerrada" if len(jugados) == 14 else d.get("estado", "Pronóstico"),
-        "boleto": d.get("boleto", "Reducida 7 dobles"), "coste": d.get("presupuesto", 12),
+        "boleto": elegido["nombre"].split(" · ", 1)[1].capitalize(), "coste": d.get("presupuesto", 12),
         "p14": round(qc.al_menos(dist, 14), 6), "p13": round(qc.al_menos(dist, 13), 5),
         "p10": round(qc.al_menos(dist, 10), 4),
         "mejor_columna": d.get("mejor_columna"),
