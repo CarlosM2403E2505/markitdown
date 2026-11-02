@@ -64,6 +64,27 @@ def categorias_pleno(m):
     return p
 
 
+def mezclar(p_cat, empirica, mezcla):
+    """(1 - mezcla) × Poisson + mezcla × distribución empírica, como el modelo oficial (0,2)."""
+    return {r: (1 - mezcla) * v + mezcla * empirica.get(r, 0.0) for r, v in p_cat.items()}
+
+
+def empirica_desde_csv(ruta):
+    """Distribución de resultados del Pleno en un CSV con columnas goles_local y goles_visitante."""
+    import csv
+    cuenta = {f"{a}-{b}": 0 for a in CATEGORIAS_PLENO for b in CATEGORIAS_PLENO}
+    n = 0
+    with open(ruta, encoding="utf-8") as f:
+        for fila in csv.DictReader(f):
+            try:
+                gl, gv = int(fila["goles_local"]), int(fila["goles_visitante"])
+            except (KeyError, ValueError):
+                continue
+            cuenta[f"{_categoria(gl)}-{_categoria(gv)}"] += 1
+            n += 1
+    return {r: c / n for r, c in cuenta.items()}
+
+
 def _signo_pleno(resultado):
     a, b = (3 if g == "M" else int(g) for g in resultado.split("-"))
     if a == b:
@@ -386,6 +407,8 @@ def cmd_boleto(args):
     if pleno:
         m = matriz_marcadores(pleno["lambda_local"], pleno["lambda_visitante"], pleno.get("factor_x", 1.0))
         p_cat = categorias_pleno(m)
+        if pleno.get("empirica"):
+            p_cat = mezclar(p_cat, pleno["empirica"], pleno.get("mezcla", 0.2))
         p_1x2 = uno_x_dos(m)
         tres = tres_plenos(p_cat, _signo_mas_probable(p_1x2))
         salida.append(f"\n## Pleno al 15 · {pleno['partido']}")
@@ -474,6 +497,11 @@ def main(argv=None):
     b.add_argument("--objetivo", choices=["p14", "p13", "p12"], default="p14",
                    help="qué maximiza la reducida (por defecto, P(14))")
     b.set_defaults(funcion=cmd_boleto)
+
+    e = sub.add_parser("empirica", help="distribución empírica del Pleno desde el CSV de partidos")
+    e.add_argument("csv", help="CSV con columnas goles_local y goles_visitante")
+    e.set_defaults(funcion=lambda a: print(json.dumps(
+        {r: round(v, 5) for r, v in empirica_desde_csv(a.csv).items()}, ensure_ascii=False)))
 
     p = sub.add_parser("postmortem", help="log-loss, Brier y calibración de una o varias jornadas")
     p.add_argument("entradas", nargs="+", help="JSON de jornada con 'resultado' (1, X o 2) en cada partido")

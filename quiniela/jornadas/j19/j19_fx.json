@@ -1,0 +1,17 @@
+{"fixtures":[
+{"n":1,"label":"Barcelona – Aston Villa","home":"barcelona","away":"aston villa","dia":"mar 3, 21:00","comp":"Champions"},
+{"n":2,"label":"Bodø/Glimt – Lille","home":"bodo glimt","away":"lille","dia":"mar 3, 21:00","comp":"Champions"},
+{"n":3,"label":"Man. United – Roma","home":"man united","away":"roma","dia":"mar 3, 21:00","comp":"Champions"},
+{"n":4,"label":"Villarreal – PSG","home":"villarreal","away":"psg","dia":"mar 3, 21:00","comp":"Champions"},
+{"n":5,"label":"AEK Atenas – Real Madrid","home":"aek","away":"real madrid","dia":"mié 4, 18:45","comp":"Champions"},
+{"n":6,"label":"Fenerbahçe – Liverpool","home":"fenerbahce","away":"liverpool","dia":"mié 4, 18:45","comp":"Champions"},
+{"n":7,"label":"B. Dortmund – Betis","home":"dortmund","away":"betis","dia":"mié 4, 21:00","comp":"Champions"},
+{"n":8,"label":"Oporto – Nápoles","home":"porto","away":"napoli","dia":"mié 4, 21:00","comp":"Champions"},
+{"n":9,"label":"Lens – Como","home":"lens","away":"como","dia":"mié 4, 21:00","comp":"Champions"},
+{"n":10,"label":"Leipzig – Man. City","home":"leipzig","away":"man city","dia":"mié 4, 21:00","comp":"Champions"},
+{"n":11,"label":"Slavia Praga – Arsenal","home":"slavia praha","away":"arsenal","dia":"mié 4, 21:00","comp":"Champions"},
+{"n":12,"label":"Real Sociedad – Lyon","home":"real sociedad","away":"lyon","dia":"jue 5, 18:45","comp":"Europa League"},
+{"n":13,"label":"Celta – Union SG","home":"celta","away":"union sg","dia":"jue 5, 21:00","comp":"Europa League"},
+{"n":14,"label":"Getafe – Brighton","home":"getafe","away":"brighton hove albion","dia":"jue 5, 21:00","comp":"Europa/Conference"},
+{"n":15,"label":"Atlético – Bayern (Pleno)","home":"atletico","away":"bayern","dia":"mar 3, 21:00","comp":"Champions"}
+]}

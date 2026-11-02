@@ -19,3 +19,9 @@ python3 -m unittest test_quiniela_calc.py
 
 El formato del JSON está en `ejemplo-jornada.json` (sus probabilidades son inventadas).
 Un partido con `"veto_unico": true` va siempre a doble.
+
+## Pleno con la mezcla del modelo oficial
+```bash
+python3 quiniela_calc.py empirica ../datos/euro_j19.csv   # pegar el resultado en pleno.empirica
+```
+Con `"empirica"` y `"mezcla": 0.2` en el Pleno, la calculadora da los mismos marcadores que el modelo oficial.

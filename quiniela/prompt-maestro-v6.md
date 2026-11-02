@@ -3,7 +3,7 @@
 > **Uso:** pega este prompt y escribe debajo una línea con este formato:
 > `Jornada N · primera pasada | revisión final | post-mortem · presupuesto X €`
 > Si tienes la lista oficial de los 15 partidos, pégala debajo; si falta, el Director la pide antes de empezar.
-> **Archivos del proyecto:** `00-indice.md` (entrada), `claude/jNN-*.md` (registro), `herramientas/quiniela_calc.py` (cuentas).
+> **Archivos del proyecto:** `00-indice.md` (entrada), `jornadas/jNN/` (una carpeta por jornada), `modelo/` y `datos/` (modelo oficial y partidos), `herramientas/quiniela_calc.py` (cuentas).
 > **Novedades frente a la v5:** al final, en el anexo C.
 
 ---
@@ -106,7 +106,8 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 
 **Lista de comprobación** (si algo falla, se para — regla de oro 4):
 - [ ] Nombres normalizados. Nunca fusionar Real Sociedad con Real Sociedad B, Racing Santander con Racing Ferrol, ni masculino con femenino.
-- [ ] Sin duplicados. Cada equipo con ≥30 partidos o marcado como **dato flojo**.
+- [ ] Sin duplicados. Cada equipo con ≥30 partidos o marcado como **dato flojo** (riesgo Muy alto y veto de signo único).
+- [ ] **Datos incompletos** (≥30 partidos, pero faltan temporadas o meses recientes de su liga): se sube **un nivel** de riesgo, sin veto. Así no se disparan los vetos por encima de los 7 dobles (J19: AEK, Fenerbahçe, Slavia y Union).
 - [ ] Último partido de cada equipo: si hay un hueco de más de 3 semanas, completar a mano.
 - [ ] **Copa y Europa entre semana de los 28 equipos:** día, rival, minutos de los titulares, prórroga, lesiones, viaje.
 - [ ] **Porteros y delanteros centro titulares**, uno a uno, con su posición comprobada (lección: Diego López, extremo del Valencia, apareció como portero).
@@ -128,6 +129,7 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 - **Cómo se aplica el factor de empates:** se multiplica la diagonal de la matriz de marcadores (0-0, 1-1, 2-2…) y se renormaliza para que la matriz sume 1. Es lo que hace `quiniela_calc.py marcador --factor-x`.
 - **Capa de xG (desde la J18, solo Primera):** ataque × (xG/goles)^0,30 y defensa × (xGA/encajados)^0,15, con tope de ±5 % por lado, a partir de la tabla de statz.ai. Muestra pequeña (error 0,48 frente a 0,62 por partido en ataque; defensa no concluyente): **revisar con 20 jornadas**.
 - **Calibración de referencia:** favoritos al 60–70 % ganan el 66 %; al 70–80 %, el 82 %. El mejor Pleno se declara al 13,8 % y sale el 15,8 %.
+- **Pleno:** 80 % Poisson + 20 % distribución empírica de los partidos del dataset (`quiniela_calc.py empirica datos/euro_jNN.csv` → campos `empirica` y `mezcla` del Pleno en el JSON).
 - **Coherencia:** cada partido suma 100 % y la suma de P(X) de los 14 ronda 3,5 (la calculadora avisa fuera de 2,5–4,5).
 - **Probado y descartado como número** (solo valen como aviso): enfrentamientos directos (+0,0002), cambio de entrenador (+0,03 pts/partido), árbitro (±11 puntos de error), rho de Dixon-Coles (0,9908 vs 0,9909).
 - **Un modelo más sofisticado solo entra si gana fuera de muestra.**
@@ -136,7 +138,7 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 
 Todos los ajustes del precio están aquí, en un solo sitio, y se registran (partido, ajuste, motivo, clase de la noticia).
 
-- **Tope: ±5 %** a los goles esperados por ajuste (lección Oporto–PSV, J15).
+- **Tope: ±5 %** a los goles esperados por ajuste (lección Oporto–PSV, J15). El −4,5 del favorito que viene de perder va aparte. **El Auditor compara las lambdas sin ajustar con las finales** y señala todo cambio por bajas que supere el tope (J19: −15 a −17 % en los partidos 2, 3 y 9).
 - **Excepción obligatoria:** baja del **portero** o del **delantero centro** titular → ajuste completo, hasta un 10 % (lección del Rayo sin Batalla, J16).
 - **Favorito que viene de perder en Europa:** −4,5 puntos a su probabilidad de ganar, repartidos proporcionalmente entre X y 2 (88 partidos UEFA 2025-27 fuera de muestra: ganó 43 de 47,0 esperados).
 - **Copa o Europa entre semana**, en ataque y en defensa:
@@ -233,6 +235,8 @@ Ejecutar `python3 herramientas/quiniela_calc.py boleto jNN.json`. La calculadora
 **El Auditor comprueba** (y firma con ✅ o devuelve con ❌):
 - [ ] Los 15 partidos son los del boleto oficial o de la lista aportada por el usuario, y la jornada no está excluida.
 - [ ] La salida de la calculadora está pegada y no tiene ERRORES.
+- [ ] Si el precio viene de otra sesión, el modelo se ha reejecutado y reproduce sus goles esperados sin ajustes.
+- [ ] Cada afirmación sobre la forma de un equipo («defiende bien», «encaja poco») está comprobada en los datos (J19: dos afirmaciones falsas detectadas así).
 - [ ] Ningún número sin fuente o sin la etiqueta `calculado`.
 - [ ] Bajas clasificadas de A a D, con fecha.
 - [ ] Coste ≤ presupuesto, sin columnas duplicadas, vetos respetados.
@@ -256,13 +260,13 @@ K. **Auditoría final** y riesgos: fallos esperados, datos flojos y lo que puede
 L. **Registro**: versión (v1 primera pasada · v2 revisión final · resultado · evaluación). **Nunca se sobrescribe una versión anterior.**
 M. **Fuentes**, con fecha de consulta.
 
-Guardar `claude/jNN-pronostico.md` y `claude/jNN.json` (entrada de la calculadora). Tras la jornada, añadir `"resultado"` a cada partido del JSON, guardar `claude/jNN-resultados.md` y actualizar `00-indice.md`.
+Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calculadora), `jNN-calculadora.txt` (su salida), `jNN-pronostico.md` y los archivos de la mesa. Tras la jornada, añadir `"resultado"` a cada partido del JSON (y `"resultado_pleno"`), guardar `jNN-resultados.md` y actualizar `00-indice.md`.
 </formato_salida>
 
 <post_mortem>
 1. Recuperar el pronóstico registrado antes de los partidos, sin retocarlo.
 2. Resultados oficiales, aciertos por columna, sueltas y Pleno.
-3. **Calificar las probabilidades, no solo los signos**: `python3 herramientas/quiniela_calc.py postmortem claude/jNN.json` da log-loss, Brier, fallos esperados frente a reales y calibración por tramos. Con todas las jornadas a la vez (`claude/j*.json`) da la calibración acumulada.
+3. **Calificar las probabilidades, no solo los signos**: `python3 herramientas/quiniela_calc.py postmortem jornadas/jNN/jNN.json` da log-loss, Brier, fallos esperados frente a reales y calibración por tramos. Con todas las jornadas a la vez (`jornadas/j*/j*.json`) da la calibración acumulada.
 4. Clasificar cada fallo: error de **datos**, de **modelo**, de **contexto** o **varianza** (un favorito al 60 % que pierde no es un error).
 5. Comparar con el mercado de cierre, si se consiguió.
 6. **Una regla nueva solo con evidencia** (muestra suficiente o error de proceso claro). Toda regla nueva entra en el registro de reglas como *provisional* con su muestra, y se revisa a las 10 jornadas: se confirma, se ajusta o se retira.
@@ -324,3 +328,4 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 9. **Red Team** con orden de pasos explícito.
 10. **Registro de reglas** con muestra, estado y fecha de revisión: las reglas nacidas de 1–3 partidos quedan como provisionales.
 11. Fechas coherentes (la v5 estaba fechada el 26/10 y citaba hechos del 27/10 y del 2/11) y duplicados eliminados.
+12. **Añadido tras la J19:** datos incompletos sin veto, mezcla del Pleno en la calculadora, el Auditor compara lambdas y comprueba las afirmaciones de forma, y carpeta por jornada.
