@@ -1,0 +1,28 @@
+{
+  "jornada": "EJEMPLO (probabilidades inventadas, solo para probar la herramienta)",
+  "presupuesto": 12,
+  "partidos": [
+    {"partido": "Local 1 - Visitante 1", "p": [0.72, 0.18, 0.10]},
+    {"partido": "Local 2 - Visitante 2", "p": [0.48, 0.28, 0.24]},
+    {"partido": "Local 3 - Visitante 3", "p": [0.35, 0.30, 0.35]},
+    {"partido": "Local 4 - Visitante 4", "p": [0.61, 0.23, 0.16]},
+    {"partido": "Local 5 - Visitante 5", "p": [0.25, 0.27, 0.48]},
+    {"partido": "Local 6 - Visitante 6", "p": [0.55, 0.26, 0.19], "veto_unico": true},
+    {"partido": "Local 7 - Visitante 7", "p": [0.44, 0.30, 0.26]},
+    {"partido": "Local 8 - Visitante 8", "p": [0.80, 0.13, 0.07]},
+    {"partido": "Local 9 - Visitante 9", "p": [0.40, 0.31, 0.29]},
+    {"partido": "Local 10 - Visitante 10", "p": [0.66, 0.21, 0.13]},
+    {"partido": "Local 11 - Visitante 11", "p": [0.30, 0.29, 0.41]},
+    {"partido": "Local 12 - Visitante 12", "p": [0.52, 0.27, 0.21]},
+    {"partido": "Local 13 - Visitante 13", "p": [0.38, 0.32, 0.30]},
+    {"partido": "Local 14 - Visitante 14", "p": [0.58, 0.25, 0.17]}
+  ],
+  "pleno": {"partido": "Local 15 - Visitante 15", "lambda_local": 1.55, "lambda_visitante": 1.05, "factor_x": 1.08},
+  "sueltas": [
+    {"partido": "Local 1 - Visitante 1", "apuesta": "Local 1 o empate (1X)", "p": 0.90},
+    {"partido": "Local 8 - Visitante 8", "apuesta": "Local 8 marca", "p": 0.88},
+    {"partido": "Local 4 - Visitante 4", "apuesta": "Menos de 3,5 goles", "p": 0.82},
+    {"partido": "Local 10 - Visitante 10", "apuesta": "1X", "p": 0.87},
+    {"partido": "Local 12 - Visitante 12", "apuesta": "Más de 1,5 goles", "p": 0.81}
+  ]
+}
