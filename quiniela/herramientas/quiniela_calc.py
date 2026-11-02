@@ -362,6 +362,30 @@ def comparar_sistemas(probs, forzados, presupuesto=12):
             pass
     cols = columnas_mas_probables(probs, k, forzados)
     sistemas.append((f"C · las {k} columnas más probables", cols, None))
+    # Variantes de C con empates: las columnas menos probables se cambian por las
+    # mejores que llevan alguna X. Entran solo si siguen cumpliendo los vetos.
+    if all("X" not in c for c in cols):
+        orden = [_orden(p) for p in probs]
+        con_x = [c for c in ("".join(SIGNOS[orden[i][x]] for i, x in enumerate(r))
+                             for _, r in _k_mejores(probs, orden, 4000)) if "X" in c]
+        def cumple(lista):
+            return all(len({c[f] for c in lista}) >= 2 for f in forzados)
+
+        for n in (2, 4, 8):
+            if len(con_x) < n:
+                continue
+            variante = list(cols)
+            for nueva in con_x[:n]:
+                # Se quita la menos probable cuya salida no rompa ningún veto.
+                for j in range(len(variante) - 1, -1, -1):
+                    if "X" in variante[j]:
+                        continue
+                    prueba = variante[:j] + variante[j + 1:] + [nueva]
+                    if cumple(prueba):
+                        variante = prueba
+                        break
+            if sum("X" in c for c in variante) == n:
+                sistemas.append((f"C+X · {k} columnas, {n} con empate", variante, None))
 
     resultado = []
     for nombre, cols, dobles in sistemas:

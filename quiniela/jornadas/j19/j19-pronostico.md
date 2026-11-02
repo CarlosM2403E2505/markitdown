@@ -225,3 +225,20 @@ P(14 y Pleno) = 1/1.434 × 9,3 % = **1 entre 15.400**, frente a 1 entre 27.521 c
 | Versión | Fecha | Qué |
 |---|---|---|
 | v1.1 | 2/11/2026 | Sistema C (16 columnas más probables) en lugar de la reducida. Precio y signos sin cambios |
+
+### Nota sobre los empates (v1.1)
+
+Ninguna de las 16 columnas lleva una X. Tampoco las llevaban el boleto A ni la reducida B. Que la jornada termine **sin ningún empate** tiene una probabilidad del **2,5 %** según el modelo: lo normal son 2 a 4 empates (media de 3,23).
+
+Aun así, meter X empeora el boleto en todas las categorías:
+
+| Sistema | P(14) | P(≥13) | P(≥12) | P(≥10) |
+|---|---|---|---|---|
+| C · sin X (elegido) | 1 entre 1.434 | 0,77 % | 4,0 % | 29,4 % |
+| C + 2 columnas con X | 1 entre 1.462 | 0,7 % | 3,8 % | 28,6 % |
+| C + 4 columnas con X | 1 entre 1.501 | 0,7 % | 3,7 % | 28,0 % |
+| C + 8 columnas con X | 1 entre 1.608 | 0,7 % | 3,6 % | 28,0 % |
+
+El motivo: sabemos que habrá unos 3 empates, pero no en qué partidos. Poner una X en un partido concreto es apostar a algo que pasa como mucho el 28 % de las veces, en lugar del 37–43 % del signo que va en el boleto. Además, en las copas europeas el modelo declara más empates de los que salen (22 % frente a 18 %), así que no hay motivo para pensar que los está infravalorando.
+
+Las variantes con X quedan en la comparación de todas las jornadas: entrarán solas cuando la X sea competitiva, como en ligas con muchos empates o en partidos de selecciones.

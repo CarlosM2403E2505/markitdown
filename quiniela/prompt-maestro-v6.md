@@ -222,6 +222,7 @@ Ejecutar `python3 herramientas/quiniela_calc.py boleto jNN.json`. La calculadora
 
 Motivo: el 14 y el Pleno concentran el premio, y solo pagan con 14 aciertos. P(≥12) desempata porque 12 y 13 aún pagan algo apreciable; el 10 se paga poco. **Cuando haya premios reales por categoría de 10 jornadas** (se apuntan en cada post-mortem), el criterio se sustituye por el **valor esperado** de cada sistema.
 
+- **Variantes C+X:** si C no lleva ninguna X, se comparan también versiones con 2, 4 y 8 columnas con empate, con el mismo criterio. Que un boleto no tenga X no es un error por sí mismo: la mesa no mete X por intuición (J19: con X empeoraban todas las categorías).
 - C se juega en «Sencilla o múltiple», en bloques de 8 columnas. Los vetos se cumplen haciendo que el partido vetado aparezca con al menos dos signos.
 - **Riesgo propio de C:** depende más del modelo que una reducida. En cada post-mortem se calcula qué habrían hecho A, B y C; si tras 10 jornadas C no da mejores resultados que B, se revisa el criterio.
 - Con `--objetivo p13` o `p12`, la reducida B maximiza esos premios en lugar de P(14). Decir cuál se usó.

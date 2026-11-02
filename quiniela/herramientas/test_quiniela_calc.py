@@ -130,6 +130,19 @@ class TestColumnasMasProbables(unittest.TestCase):
         self.assertEqual(len(set(cols)), 16)
 
 
+class TestVariantesConEmpate(unittest.TestCase):
+    def test_se_comparan_cuando_c_no_lleva_x(self):
+        probs = [[0.45, 0.25, 0.30] for _ in range(14)]
+        sistemas, _ = qc.comparar_sistemas(probs, [0, 1])
+        variantes = [s for s in sistemas if s["nombre"].startswith("C+X")]
+        self.assertTrue(variantes)
+        for s in variantes:
+            self.assertTrue(any("X" in c for c in s["columnas"]))
+            self.assertEqual(len(set(s["columnas"])), 16)
+            for f in (0, 1):
+                self.assertGreaterEqual(len({c[f] for c in s["columnas"]}), 2)
+
+
 class TestPostmortem(unittest.TestCase):
     def test_puntuacion_de_un_acierto_y_un_fallo(self):
         partidos = [{"partido": "A", "p": [0.5, 0.3, 0.2], "resultado": "1"},
