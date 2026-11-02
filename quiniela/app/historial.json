@@ -1,9 +1,65 @@
 {
  "nota": "Jornadas sin JSON en jornadas/. Datos tomados del registro de errores del prompt y del README de la mesa. null = sin dato.",
  "jornadas": [
-  {"jornada": 15, "fechas": null, "tipo": "—", "estado": "Cerrada", "boleto": null, "coste": null, "mejor_columna": 9, "sueltas_aciertos": null, "sueltas_total": null, "pleno_jugado": null, "pleno_resultado": null, "log_loss_modelo": null, "log_loss_mercado": null},
-  {"jornada": 16, "fechas": null, "tipo": "Doméstica", "estado": "Cerrada", "boleto": "Reducida 7 dobles", "coste": 12, "mejor_columna": 8, "sueltas_aciertos": 4, "sueltas_total": 5, "pleno_jugado": null, "pleno_resultado": null, "log_loss_modelo": null, "log_loss_mercado": null},
-  {"jornada": 17, "fechas": "27–29/10", "tipo": "Copa del Rey", "estado": "No se pronostica", "boleto": null, "coste": null, "mejor_columna": null, "sueltas_aciertos": null, "sueltas_total": null, "pleno_jugado": null, "pleno_resultado": null, "log_loss_modelo": null, "log_loss_mercado": null},
-  {"jornada": 18, "fechas": null, "tipo": "Doméstica", "estado": "Cerrada", "boleto": "1 triple + 3 dobles", "coste": 18, "mejor_columna": null, "sueltas_aciertos": null, "sueltas_total": null, "pleno_jugado": null, "pleno_resultado": null, "log_loss_modelo": 0.897, "log_loss_mercado": 0.786}
+  {
+   "jornada": 15,
+   "fechas": null,
+   "tipo": "—",
+   "estado": "Cerrada",
+   "boleto": null,
+   "coste": null,
+   "mejor_columna": 9,
+   "sueltas_aciertos": null,
+   "sueltas_total": null,
+   "pleno_jugado": null,
+   "pleno_resultado": null,
+   "log_loss_modelo": null,
+   "log_loss_mercado": null
+  },
+  {
+   "jornada": 16,
+   "fechas": null,
+   "tipo": "—",
+   "estado": "Cerrada",
+   "boleto": "Reducida 7 dobles",
+   "coste": 12,
+   "mejor_columna": 8,
+   "sueltas_aciertos": 4,
+   "sueltas_total": 5,
+   "pleno_jugado": null,
+   "pleno_resultado": null,
+   "log_loss_modelo": null,
+   "log_loss_mercado": null
+  },
+  {
+   "jornada": 17,
+   "fechas": "27–29/10",
+   "tipo": "Copa del Rey",
+   "estado": "No se pronostica",
+   "boleto": null,
+   "coste": null,
+   "mejor_columna": null,
+   "sueltas_aciertos": null,
+   "sueltas_total": null,
+   "pleno_jugado": null,
+   "pleno_resultado": null,
+   "log_loss_modelo": null,
+   "log_loss_mercado": null
+  },
+  {
+   "jornada": 18,
+   "fechas": null,
+   "tipo": "Doméstica",
+   "estado": "Cerrada",
+   "boleto": null,
+   "coste": null,
+   "mejor_columna": null,
+   "sueltas_aciertos": null,
+   "sueltas_total": null,
+   "pleno_jugado": null,
+   "pleno_resultado": null,
+   "log_loss_modelo": 0.897,
+   "log_loss_mercado": 0.786
+  }
  ]
 }

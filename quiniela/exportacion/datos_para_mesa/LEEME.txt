@@ -1,0 +1,108 @@
+DATOS PARA LA MESA · exportados el 2026-11-02
+=============================================
+
+Formato: CSV en UTF-8, separado por comas, fechas AAAA-MM-DD.
+Regla: no se ha inventado nada. Si un dato no estaba en los archivos de origen, la celda está vacía.
+Cada fila lleva su fuente (columna "fuente") y la fecha en que se obtuvo (columna "fecha_obtencion").
+"fecha_obtencion" = 2026-11-02 en todo: es el día en que los archivos de la mesa de claude.ai
+llegaron a la sesión de Claude Code (paquete quiniela_mesa_j19.zip). La mesa los reunió antes;
+la fecha en que la mesa consultó cada fuente no viene en los archivos.
+
+Generado con quiniela/herramientas/exportar.py (repositorio carlosm2403e2505/markitdown,
+rama quiniela-prompt-v6). Ejecutarlo de nuevo reproduce estos archivos.
+
+
+1. partidos.csv · 23.631 filas
+------------------------------
+Resultados de partidos: fecha, competición, local, visitante y goles.
+- Periodo: 2024-02-16 a 2026-11-01.
+- Competiciones: 66 (unas 60 ligas europeas y las copas UEFA). Código de competición del dataset
+  original, p. ej. "es.1:2026/27" = Primera, "en.2" = Championship, "uefa.cl" = Champions.
+- Nombres de equipo: como vienen en el dataset (en minúsculas y normalizados, p. ej. "man united").
+- Origen: archivo datos/euro_j19.csv del paquete de la mesa. Según su README:
+  · hasta el 2026-09-20 (23.155 partidos): openfootball (football.json, europe, champions-league);
+  · desde el 2026-09-21 (476 partidos): uefa.com, futboltotal.futbol, ESPN y thestatsapi, comprobados
+    con 211 partidos que coincidían. La mesa no indica de cuál de las cuatro sale cada partido.
+HUECOS:
+- xg_local y xg_visitante están VACÍOS en todas las filas: no tengo xG reales por partido.
+  (Los goles esperados del modelo de la J19 no son xG; están en pronosticos_j19.csv.)
+- Noruega 2026 a medias (unos 80 de 200 partidos).
+- Chequia sin datos desde el 2026-09-20.
+- Faltan las temporadas 2025-26 de Grecia, Turquía, Bélgica y Chequia.
+- Unos 25 partidos del 2026-11-01 no tenían marcador: no están en el archivo.
+
+
+2. bajas.csv · 7 filas
+----------------------
+Bajas y dudas que la mesa aplicó al Pleno de la J19 (Atlético – Bayern).
+- Origen: campo "pleno.ajustes" del archivo j19_lambdas_1x2.json de la mesa. Texto literal:
+  «Bayern sin Saibari, Gnabry, Musiala ni Díaz (λ visitante ×0,925); Atlético sin Hjulmand
+  (λ local ×0,985). Pendiente: portero del Bayern y Olise.»
+- Columnas añadidas: "partido" y "fecha_obtencion".
+HUECOS:
+- tipo VACÍO en las 5 bajas: la mesa no dice si son lesiones o sanciones.
+- tipo = "duda" en Olise y el portero del Bayern: la mesa los marca como «Pendiente».
+  Del portero no se sabe el nombre (jugador vacío).
+- posicion VACÍA salvo el portero: no está comprobada.
+- fecha_regreso VACÍA en todas.
+- La mesa aplicó también bajas en los partidos 1, 2, 3, 4, 8 y 9 de la J19, pero los archivos
+  solo traen el ajuste numérico, no los nombres. No están aquí.
+
+
+3. cuotas.csv · 24 filas
+------------------------
+Cuotas 1X2 de la J19 (12 partidos: del 1 al 11 y el Pleno).
+- bet365: foto del 2026-11-02 a las 14:00 CET (13:00 en Canarias), tomada por la mesa en el
+  navegador integrado del usuario.
+- OddsPortal: segunda foto incluida en el mismo archivo. El archivo solo la etiqueta «dom0015»
+  (domingo, 00:15), sin fecha completa: fecha_hora VACÍA.
+- Columnas añadidas: "jornada", "n_boleto" (posición en el boleto) y "fecha_obtencion".
+HUECOS:
+- Sin cuotas de Real Sociedad – Lyon, Celta – Union SG y Getafe – Brighton (partidos 12 a 14).
+- Una sola foto por casa: no hay movimientos de cuota.
+- Solo control: las cuotas nunca entran en el modelo.
+
+
+4. alineaciones.csv · NO SE HA CREADO
+-------------------------------------
+No tengo alineaciones, titulares ni minutos de ningún partido.
+
+
+5. Otros datos
+--------------
+pronosticos_j19.csv · 15 filas
+  Precio de la mesa para los 14 partidos y el Pleno de la J19: probabilidades 1X2, goles esperados
+  del modelo (finales y sin ajustes), vetos y riesgo.
+  - Origen: j19_lambdas_1x2.json de la mesa. "riesgo": el del pronóstico de la J19 (Claude Code).
+  - Fecha y hora: las del archivo de la mesa ("mar 3, 21:00"), pasadas a AAAA-MM-DD; hora peninsular.
+  - goles_esperados_*_sin_ajustes VACÍOS en los partidos que la mesa no ajustó (en esos coinciden
+    con los finales) y en el Pleno (la mesa no los separó).
+  - Son pronósticos de un modelo, no datos observados.
+
+sistemas_j19.csv · 6 filas
+  Comparación de los sistemas de boleto de 12 € (4 dobles, reducida de 7 dobles, 16 columnas más
+  probables y sus variantes con empates): probabilidad de 14, de 13 o más, de 12 o más y de 10 o
+  más, y cuál se eligió. Calculado en Claude Code sobre el precio de la mesa.
+
+boleto_j19.csv · 16 filas
+  Las 16 columnas del boleto elegido (signos de los partidos 1 a 14, en orden) y el Pleno.
+
+pleno_j19.csv · 16 filas
+  Probabilidad de cada resultado del Pleno (0, 1, 2 o M goles por equipo) de Atlético – Bayern:
+  80 % Poisson con los goles esperados de la mesa + 20 % distribución observada en partidos.csv.
+
+sueltas_j19.csv · 5 filas
+  Las 5 apuestas sueltas de la J19 con su probabilidad. resultado VACÍO: aún no se han jugado.
+
+historial_jornadas.csv · 4 filas
+  Lo que se sabe de las jornadas 15 a 18.
+  - J15: mejor columna 9 (registro de errores del prompt v5 del usuario).
+  - J16: reducida de 7 dobles (12 €), mejor columna 8 y sueltas 4 de 5 (mismo registro y prompt).
+  - J17: Copa del Rey, no se pronosticó.
+  - J18: jornada doméstica y log-loss del modelo (0,897) y del mercado (0,786), según el README
+    de la mesa.
+HUECOS:
+  - Sin pronósticos, resultados ni premios por partido de las jornadas 13 a 18.
+  - J13 y J14 no aparecen: no hay ningún dato numérico de su resultado.
+  - Fechas de las jornadas 15, 16 y 18 vacías. Tipo de la J15 y la J16 vacío.
+  - Boleto y coste de la J15 y la J18 vacíos: no consta cuál se jugó.

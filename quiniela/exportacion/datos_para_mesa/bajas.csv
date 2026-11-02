@@ -1,0 +1,8 @@
+equipo,jugador,posicion,tipo,fecha_regreso,fecha_fuente,fuente,partido,fecha_obtencion
+Bayern de Múnich,Saibari,,,,2026-11-02,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, datos/j19_lambdas_1x2.json, campo pleno.ajustes («Bayern sin Saibari, Gnabry, Musiala ni Díaz»; «Atlético sin Hjulmand»)",Atlético – Bayern (Pleno),2026-11-02
+Bayern de Múnich,Gnabry,,,,2026-11-02,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, datos/j19_lambdas_1x2.json, campo pleno.ajustes («Bayern sin Saibari, Gnabry, Musiala ni Díaz»; «Atlético sin Hjulmand»)",Atlético – Bayern (Pleno),2026-11-02
+Bayern de Múnich,Musiala,,,,2026-11-02,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, datos/j19_lambdas_1x2.json, campo pleno.ajustes («Bayern sin Saibari, Gnabry, Musiala ni Díaz»; «Atlético sin Hjulmand»)",Atlético – Bayern (Pleno),2026-11-02
+Bayern de Múnich,Díaz,,,,2026-11-02,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, datos/j19_lambdas_1x2.json, campo pleno.ajustes («Bayern sin Saibari, Gnabry, Musiala ni Díaz»; «Atlético sin Hjulmand»)",Atlético – Bayern (Pleno),2026-11-02
+Atlético de Madrid,Hjulmand,,,,2026-11-02,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, datos/j19_lambdas_1x2.json, campo pleno.ajustes («Bayern sin Saibari, Gnabry, Musiala ni Díaz»; «Atlético sin Hjulmand»)",Atlético – Bayern (Pleno),2026-11-02
+Bayern de Múnich,,portero,duda,,2026-11-02,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, datos/j19_lambdas_1x2.json, campo pleno.ajustes («Pendiente: portero del Bayern y Olise»)",Atlético – Bayern (Pleno),2026-11-02
+Bayern de Múnich,Olise,,duda,,2026-11-02,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, datos/j19_lambdas_1x2.json, campo pleno.ajustes («Pendiente: portero del Bayern y Olise»)",Atlético – Bayern (Pleno),2026-11-02

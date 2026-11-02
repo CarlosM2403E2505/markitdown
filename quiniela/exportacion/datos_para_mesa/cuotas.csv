@@ -1,0 +1,25 @@
+fecha_hora,partido,casa,cuota_1,cuota_X,cuota_2,fuente,jornada,n_boleto,fecha_obtencion
+2026-11-02T14:00+01:00,Barcelona – Aston Villa,bet365,1.25,7.5,8.0,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,1,2026-11-02
+2026-11-02T14:00+01:00,Bodø/Glimt – Lille,bet365,1.8,4.0,4.0,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,2,2026-11-02
+2026-11-02T14:00+01:00,Man. United – Roma,bet365,2.25,4.0,2.75,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,3,2026-11-02
+2026-11-02T14:00+01:00,Villarreal – PSG,bet365,5.0,4.5,1.57,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,4,2026-11-02
+2026-11-02T14:00+01:00,AEK Atenas – Real Madrid,bet365,9.0,7.0,1.25,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,5,2026-11-02
+2026-11-02T14:00+01:00,Fenerbahçe – Liverpool,bet365,5.25,4.5,1.53,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,6,2026-11-02
+2026-11-02T14:00+01:00,B. Dortmund – Betis,bet365,1.7,4.33,4.33,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,7,2026-11-02
+2026-11-02T14:00+01:00,Oporto – Nápoles,bet365,1.95,3.6,3.75,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,8,2026-11-02
+2026-11-02T14:00+01:00,Lens – Como,bet365,3.0,3.75,2.2,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,9,2026-11-02
+2026-11-02T14:00+01:00,Leipzig – Man. City,bet365,5.0,4.5,1.57,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,10,2026-11-02
+2026-11-02T14:00+01:00,Slavia Praga – Arsenal,bet365,10.0,6.5,1.25,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,11,2026-11-02
+2026-11-02T14:00+01:00,Atlético de Madrid – Bayern de Múnich,bet365,2.55,4.0,2.45,"bet365.es (navegador integrado), lunes 2/11/2026 14:00 CET = 13:00 Canarias; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,15,2026-11-02
+,Barcelona – Aston Villa,OddsPortal,1.25,7.5,9.5,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,1,2026-11-02
+,Bodø/Glimt – Lille,OddsPortal,1.88,4.1,4.0,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,2,2026-11-02
+,Man. United – Roma,OddsPortal,2.35,4.0,2.75,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,3,2026-11-02
+,Villarreal – PSG,OddsPortal,5.0,4.75,1.63,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,4,2026-11-02
+,AEK Atenas – Real Madrid,OddsPortal,9.0,7.0,1.33,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,5,2026-11-02
+,Fenerbahçe – Liverpool,OddsPortal,5.0,4.5,1.58,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,6,2026-11-02
+,B. Dortmund – Betis,OddsPortal,1.75,4.33,4.4,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,7,2026-11-02
+,Oporto – Nápoles,OddsPortal,2.25,3.65,3.1,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,8,2026-11-02
+,Lens – Como,OddsPortal,3.0,4.0,2.2,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,9,2026-11-02
+,Leipzig – Man. City,OddsPortal,5.25,4.75,1.55,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,10,2026-11-02
+,Slavia Praga – Arsenal,OddsPortal,10.0,6.5,1.32,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,11,2026-11-02
+,Atlético de Madrid – Bayern de Múnich,OddsPortal,2.88,4.0,2.3,"OddsPortal; el archivo de la mesa solo dice «dom0015», sin fecha completa; archivo jornadas/j19/bet365_lunes_2nov_1300.json",19,15,2026-11-02

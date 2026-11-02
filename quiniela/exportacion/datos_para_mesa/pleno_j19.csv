@@ -1,0 +1,17 @@
+jornada,partido,resultado_pleno,probabilidad,fuente,fecha_obtencion
+19,Atlético de Madrid – Bayern de Múnich,1-1,0.093152,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,1-2,0.080315,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,1-M,0.079569,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,2-1,0.078267,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,M-1,0.071131,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,2-2,0.067791,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,2-M,0.067191,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,M-M,0.062195,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,M-2,0.061993,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,1-0,0.057144,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,0-1,0.056305,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,0-M,0.049695,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,0-2,0.048368,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,2-0,0.046293,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,M-0,0.044884,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
+19,Atlético de Madrid – Bayern de Múnich,0-0,0.035706,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (80 % Poisson + 20 % distribución de datos/euro_j19.csv),2026-11-02
