@@ -373,3 +373,49 @@ Los 5 vetos siguen cumpliéndose. Sin los porcentajes del público no se puede m
 | Versión | Fecha | Qué |
 |---|---|---|
 | v2.1 | 3/11/2026 | Fuera la columna que más juega el público; entra `12122211122212`. Pleno sin cambios |
+
+---
+
+# v3 · DEFINITIVA · sin vetos · martes 3/11/2026
+
+> El usuario retira los vetos de signo único. Se mantiene el −4,5 en el precio (medido en 88 partidos). Precio, signos, Pleno y sueltas, sin cambios. Salida completa: `j19-calculadora-v3.txt`.
+
+## Qué sistema conviene más (todos los candidatos, sin vetos)
+
+| Sistema (12 €) | P(14) | P(≥13) | P(≥12) | P(≥10) |
+|---|---|---|---|---|
+| A · 4 dobles completos | 1 entre 1.385 | 0,788 % | 4,02 % | 29,2 % |
+| B · reducida de 7 dobles | 1 entre 2.516 | 0,704 % | 4,38 % | 35,1 % |
+| C · 16 columnas más probables (= A sin vetos) | 1 entre 1.385 | 0,788 % | 4,02 % | 29,2 % |
+| C + 2 columnas con X | 1 entre 1.402 | 0,789 % | 4,07 % | 29,9 % |
+| C + 4 columnas con X | 1 entre 1.426 | 0,777 % | 4,02 % | 29,6 % |
+| C + 8 columnas con X | 1 entre 1.509 | 0,744 % | 3,90 % | 29,3 % |
+| **C sin la columna del público · elegido** | **1 entre 1.410** | **0,788 %** | **4,08 %** | 29,8 % |
+| *v2.1, con vetos (referencia)* | *1 entre 1.455* | *0,781 %* | *4,07 %* | *29,9 %* |
+
+Sin vetos, las 16 columnas más probables coinciden con 4 dobles completos (partidos 2, 9, 12 y 13). B queda fuera del criterio porque su P(14) es el 55 % de la máxima. Entre los que pasan el corte del 90 %, gana el boleto sin la columna del público, por la mayor P(≥12). Frente a la v2.1, la P(14) sube un 3 % y el resto queda igual.
+
+## Pronósticos definitivos
+
+**14 signos:** `1 1 1 2 2 2 1 1 2 2 2 1 1 2` · **Pleno: 1-1**
+
+**Boleto · 16 apuestas sencillas · 12 € · Pleno 1-1 en todas** («Sencilla o múltiple», 2 bloques de 8):
+
+```
+ 1. 12122211222112     9. 12122211122112
+ 2. 11122211222122    10. 11122211122122
+ 3. 12122211222122    11. 12122211122122
+ 4. 11122211222212    12. 11122211122212
+ 5. 12122211222212    13. 12122211122212
+ 6. 11122211222222    14. 11122211122222
+ 7. 12122211222222    15. 12122211122222
+ 8. 11122211122112    16. 11222211222112
+```
+
+P(14) = 1 entre 1.410 · P(14 y Pleno) = 1 entre 15.139.
+
+**Sueltas:** marca el Liverpool (90,8 %), el Real Madrid (89,9 %), el City (88,9 %), el Arsenal (88,1 %) y el Barça (86,6 %). P(las 5) = 55,4 %.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v3 | 3/11/2026 | Vetos retirados por el usuario. Boleto rehecho con todos los candidatos. Definitiva |

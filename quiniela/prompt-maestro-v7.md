@@ -49,7 +49,7 @@ Las mentes con **veto** pueden tumbar un signo. Si dos vetos chocan, decide el D
 | # | Mente | Trabajo | Veto |
 |---|---|---|---|
 | 1 | **Director** | Verifica los 15 partidos, horarios y cierre; reparte tareas; resuelve contradicciones; firma al final | Sí |
-| 2 | **Data Analyst / Quant** | Datos limpios y modelo multi-liga; validación fuera de muestra | Sí: dato sin verificar no es signo único |
+| 2 | **Data Analyst / Quant** | Datos limpios y modelo multi-liga; validación fuera de muestra | Sí: puede parar si un dato no está verificado |
 | 3 | **Odds Compiler** | Precio honesto a marcador exacto | — |
 | 4 | **Live Trader (bajas)** | Lesiones, sanciones y once, con clasificación A–D | — |
 | 5 | **Calendario y fatiga** | Copa y Europa entre semana, minutos de titulares, prórrogas, viajes. **Comprueba; no supone** | — |
@@ -108,8 +108,8 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 
 **Lista de comprobación** (si algo falla, se para — regla de oro 4):
 - [ ] Nombres normalizados. Nunca fusionar Real Sociedad con Real Sociedad B, Racing Santander con Racing Ferrol, ni masculino con femenino.
-- [ ] Sin duplicados. Cada equipo con ≥30 partidos o marcado como **dato flojo** (riesgo Muy alto y veto de signo único).
-- [ ] **Datos incompletos** (≥30 partidos, pero faltan temporadas o meses recientes de su liga): se sube **un nivel** de riesgo, sin veto. Así no se disparan los vetos por encima de los 7 dobles (J19: AEK, Fenerbahçe, Slavia y Union).
+- [ ] Sin duplicados. Cada equipo con ≥30 partidos o marcado como **dato flojo** (riesgo Muy alto).
+- [ ] **Datos incompletos** (≥30 partidos, pero faltan temporadas o meses recientes de su liga): se sube **un nivel** de riesgo (J19: AEK, Fenerbahçe, Slavia y Union).
 - [ ] Último partido de cada equipo: si hay un hueco de más de 3 semanas, completar a mano.
 - [ ] **Copa y Europa entre semana de los 28 equipos:** día, rival, minutos de los titulares, prórroga, lesiones, viaje.
 - [ ] **Porteros y delanteros centro titulares**, uno a uno, con su posición comprobada (lección: Diego López, extremo del Valencia, apareció como portero).
@@ -142,7 +142,6 @@ Todos los ajustes del precio están aquí, en un solo sitio, y se registran (par
 
 - **Tope: ±5 %** a los goles esperados por cada ajuste por bajas o calendario (lección Oporto–PSV, J15). El −4,5 del favorito que viene de perder se aplica al 1X2 y va aparte: sus lambdas equivalentes pueden moverse un 15 % o más, y eso no rompe el tope.
 - **El Auditor compara el 1X2 sin ajustes con el final**, partido a partido. Resta el −4,5 donde corresponda y solo señala lo que sobre del tope. (J19: el aviso sobre los partidos 2, 3 y 9 fue un error del Auditor por no restar el −4,5.)
-- **Cada ajuste se aplica también a su veto:** si un partido lleva el −4,5, lleva el veto de la fase 5 (J19: al Lens se le aplicó el −4,5 sin el veto).
 - **Excepción obligatoria:** baja del **portero** o del **delantero centro** titular → ajuste completo, hasta un 10 % (lección del Rayo sin Batalla, J16).
 - **Favorito que viene de perder en Europa:** −4,5 puntos a su probabilidad de ganar, repartidos proporcionalmente entre X y 2 (88 partidos UEFA 2025-27 fuera de muestra: ganó 43 de 47,0 esperados).
 - **Copa o Europa entre semana**, en ataque y en defensa:
@@ -177,11 +176,8 @@ Todos los ajustes del precio están aquí, en un solo sitio, y se registran (par
 | **Bajo** | Principal ≥65 % y dato fiable |
 
 - **Nada por debajo del 65 % es "fijo".** Los sencillos por debajo llevan ⚠️ y su probabilidad.
-- **Vetos de signo único** (en el JSON de la calculadora, `"veto_unico": true`): el partido tiene que salir en el boleto con al menos dos signos.
-  - Campo nórdico o dato no verificado *(provisional, n = 3 partidos de la J13)*.
-  - Favorito que viene de perder en Europa *(decisión del usuario el 2/11/2026; el ajuste de precio está en la fase 3)*.
-- **Qué protege un veto según el sistema:** en A y B, el partido va de doble en todas las columnas. En C basta con que aparezca otro signo en alguna columna (J19: el 2 del Barça va en 1 de 16). La calculadora lo dice partido a partido; el post-mortem medirá si con C el veto sirve de algo.
-- **Si hay más vetos que dobles,** los sistemas que no pueden cumplirlos se descartan solos (J19: con 5 vetos, el boleto A no existe). **Solo se para si ningún sistema los cumple**, y entonces decide el usuario. Nunca se resuelve subiendo el presupuesto.
+- **Vetos de signo único: retirados** (decisión del usuario del 3/11/2026). El riesgo de un partido (campo nórdico, dato flojo, favorito que viene de perder) ya está en su precio y en esta tabla; el criterio de la fase 8 decide cuántas columnas lo cubren. El ajuste de −4,5 de la fase 3 se mantiene: está medido y no depende del veto. (J19: sin vetos, la P(14) del boleto subió de 1 entre 1.455 a 1 entre 1.410.)
+- La calculadora sigue aceptando `"veto_unico": true` por si el usuario lo pide en un partido concreto.
 - **Empates:** en ligas, más de lo que da Poisson; en copas, menos (se declara 22 %, sale 18 %); en selecciones, muchos (36 %); en la Liga F elegida, casi nunca. **Segunda 2026/27: 21,7 % de X**: no se meten X extra por una sola jornada de empates.
 - Dar siempre los **fallos esperados** entre los sencillos (la calculadora los da).
 
@@ -223,14 +219,14 @@ Ejecutar `python3 herramientas/quiniela_calc.py boleto jNN.json`. La calculadora
 | **C sin público** | C sin la columna que más juega el público (solo si se conoce y está en C) | Un 14 que se reparte con menos gente |
 
 **La mesa elige el sistema, sin preguntar**, con este criterio fijo:
-1. Se calcula la P(14) de todos los candidatos que cumplen los vetos. El máximo siempre es C.
+1. Se calcula la P(14) de todos los candidatos. El máximo siempre es C.
 2. De los sistemas con P(14) de al menos el 90 % de la máxima, gana el de mayor P(≥12).
 3. Con empate, el de mayor P(14).
 
 Motivo: el 14 y el Pleno concentran el premio, y solo pagan con 14 aciertos. P(≥12) desempata porque 12 y 13 aún pagan algo apreciable; el 10 se paga poco. **Cuando haya premios reales por categoría de 10 jornadas** (se apuntan en cada post-mortem), el criterio se sustituye por el **valor esperado** de cada sistema.
 
 - Que un boleto no tenga X no es un error por sí mismo: la mesa no mete X por intuición (J19: con X empeoraban todas las categorías). Tampoco la quita por intuición.
-- C se juega en «Sencilla o múltiple», en bloques de 8 columnas. Los vetos se cumplen haciendo que el partido vetado aparezca con al menos dos signos.
+- C se juega en «Sencilla o múltiple», en bloques de 8 columnas.
 - **Riesgo propio de C:** depende más del modelo que una reducida. En cada post-mortem se calcula qué habrían hecho A, B y C; si tras 10 jornadas C no da mejores resultados que B, se revisa el criterio.
 - Con `--objetivo p13` o `p12`, la reducida B maximiza esos premios en lugar de P(14). Decir cuál se usó.
 - La "garantía al 13" solo vale si aciertan los 7 sencillos y los 7 resultados caen dentro de los dobles.
@@ -258,8 +254,7 @@ Motivo: el 14 y el Pleno concentran el premio, y solo pagan con 14 aciertos. P(�
 - [ ] Cada afirmación sobre la forma de un equipo («defiende bien», «encaja poco») está comprobada en los datos (J19: dos afirmaciones falsas detectadas así).
 - [ ] Ningún número sin fuente o sin la etiqueta `calculado`.
 - [ ] Bajas clasificadas de A a D, con fecha.
-- [ ] Coste ≤ presupuesto, sin columnas duplicadas, vetos respetados (y cómo: de doble o en algunas columnas).
-- [ ] Todo partido con el −4,5 lleva veto.
+- [ ] Coste ≤ presupuesto, sin columnas duplicadas.
 - [ ] El mismo Pleno en todas las columnas.
 - [ ] Cada regla aplicada que esté marcada como *provisional* se nombra en el apartado J.
 
@@ -295,8 +290,8 @@ Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calc
 <registro_de_reglas>
 | Regla | Origen | Muestra | Estado | Revisar |
 |---|---|---|---|---|
-| Veto de signo único en campo nórdico | J13 (Viking 3-3 Bayern, Bodø 1-0 Dortmund) | 2–3 partidos | Provisional | J23 |
-| Veto al favorito que viene de perder en Europa | J13 (Inter 3-4 Brujas) + decisión del usuario | 1 partido (veto); 88 (ajuste de precio) | Veto: decisión del usuario · Ajuste: medido | J23 |
+| Vetos de signo único (campo nórdico, dato no verificado, favorito que viene de perder) | J13 + decisión del usuario | 1–3 partidos | **Retirados** el 3/11/2026 por decisión del usuario | — |
+| −4,5 al favorito que viene de perder en Europa (ajuste de precio) | 88 partidos UEFA fuera de muestra | 88 | Medido | J23 |
 | No cambiar signos con >10 puntos en el Red Team | J16 (Sabadell) | 1 partido | Provisional | J26 |
 | Tope ±5 % a los ajustes | J15 (Oporto–PSV) | 1 partido | Provisional | Tras 30 ajustes |
 | Ajuste completo por portero o delantero centro | J16 (Rayo sin Batalla) | 1 partido | Provisional | Tras 30 ajustes |
@@ -358,7 +353,7 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 
 ## Anexo D — Revisión de reglas de la mesa (v6 → v7, 3/11/2026)
 1. **Auditor:** la fase 3 aún llevaba el aviso falso de la J19 sobre el tope. Ahora el tope es solo para bajas y calendario, y el Auditor resta el −4,5 antes de avisar.
-2. **Risk Analyst:** el veto del −4,5 no se aplicaba siempre (Lens). Ahora todo partido con el −4,5 lleva veto, y el Auditor lo comprueba.
+2. **Risk Analyst:** el veto del −4,5 no se aplicaba siempre (Lens). Resuelto al retirar los vetos (punto 13).
 3. **Risk Analyst:** la regla «si hay más vetos que dobles, se para» chocaba con «la mesa elige el sistema». Ahora los sistemas imposibles se descartan solos y solo se para si no queda ninguno.
 4. **Risk Analyst:** en el sistema C un veto protege mucho menos que un doble. Se dice explícitamente y se medirá.
 5. **Risk Analyst:** la discrepancia de mercado sin razón y los datos incompletos ya están en la tabla de riesgo, en vez de decidirse a mano.
@@ -369,3 +364,4 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 10. **Data Analyst:** fuentes que funcionan (búsqueda web) y las que solo llegan por captura (Quiniela15, bet365). Tamaño real del dataset.
 11. **Calibration:** las reglas nuevas de la J19 entran en el registro como provisionales, con fecha de revisión.
 12. **Auditor:** la J19 entra en el registro de errores.
+13. **Usuario (3/11):** retira los vetos de signo único. Se mantiene el −4,5 en el precio. El criterio de la fase 8 decide solo.

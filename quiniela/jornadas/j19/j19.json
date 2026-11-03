@@ -26,15 +26,15 @@
     0.2157,
     0.258
    ],
-   "veto_unico": true,
-   "motivo_veto": "Favorito (Barça) que viene de perder en Europa (4-2 en París)",
+   "veto_unico": false,
    "signo_boleto_18eur": "12",
    "lambdas_ajustadas": true,
    "xg_modelo_sin_ajustes": [
     2.423,
     1.492
    ],
-   "riesgo": "Muy alto"
+   "riesgo": "Muy alto",
+   "veto_retirado": "Favorito (Barça) que viene de perder en Europa (4-2 en París)"
   },
   {
    "n": 2,
@@ -49,14 +49,14 @@
     0.2609,
     0.3663
    ],
-   "veto_unico": true,
-   "motivo_veto": "Campo nórdico (Bodø, césped artificial) y favorito que viene de perder (4-3 en Nápoles)",
+   "veto_unico": false,
    "signo_boleto_18eur": "12",
    "lambdas_ajustadas": true,
    "xg_modelo_sin_ajustes": [
     1.568,
     1.436
-   ]
+   ],
+   "veto_retirado": "Campo nórdico (Bodø, césped artificial) y favorito que viene de perder (4-3 en Nápoles)"
   },
   {
    "n": 3,
@@ -71,14 +71,14 @@
     0.2585,
     0.3156
    ],
-   "veto_unico": true,
-   "motivo_veto": "Favorito (Man. United) que viene de perder en Europa (4-1 en Como)",
+   "veto_unico": false,
    "signo_boleto_18eur": "12",
    "lambdas_ajustadas": true,
    "xg_modelo_sin_ajustes": [
     1.697,
     1.286
-   ]
+   ],
+   "veto_retirado": "Favorito (Man. United) que viene de perder en Europa (4-1 en Como)"
   },
   {
    "n": 4,
@@ -163,14 +163,14 @@
     0.2816,
     0.2868
    ],
-   "veto_unico": true,
-   "motivo_veto": "Favorito (Oporto) que viene de perder en Europa (0-1 con el PSV)",
+   "veto_unico": false,
    "signo_boleto_18eur": "1X2",
    "lambdas_ajustadas": true,
    "xg_modelo_sin_ajustes": [
     1.478,
     1.109
-   ]
+   ],
+   "veto_retirado": "Favorito (Oporto) que viene de perder en Europa (0-1 con el PSV)"
   },
   {
    "n": 9,
@@ -185,14 +185,14 @@
     0.2688,
     0.3884
    ],
-   "veto_unico": true,
+   "veto_unico": false,
    "signo_boleto_18eur": "2",
    "lambdas_ajustadas": true,
    "xg_modelo_sin_ajustes": [
     1.452,
     1.394
    ],
-   "motivo_veto": "Favorito (Lens) que viene de perder en Europa (3-0 en Brujas). Añadido en la v2: la mesa aplicó el −4,5 pero no marcó el veto"
+   "veto_retirado": "Favorito (Lens) que viene de perder en Europa (3-0 en Brujas). Añadido en la v2: la mesa aplicó el −4,5 pero no marcó el veto"
   },
   {
    "n": 10,
@@ -377,7 +377,7 @@
  ],
  "fechas": "3–5/11",
  "tipo": "Europea",
- "estado": "Pronóstico v2.1",
+ "estado": "Pronóstico v3",
  "boleto": "Reducida 7 dobles",
  "publico": {
   "columna": "11122211222112",
@@ -389,5 +389,6 @@
    "pleno": "1-1",
    "nota": "Columna «SIS.» de quiniela15.com: pronóstico ajeno, solo se analiza"
   }
- }
+ },
+ "vetos": "Retirados por decisión del usuario el 3/11/2026 (se mantiene el ajuste de −4,5 en el precio)"
 }
