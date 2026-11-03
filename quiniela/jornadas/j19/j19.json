@@ -377,6 +377,17 @@
  ],
  "fechas": "3–5/11",
  "tipo": "Europea",
- "estado": "Pronóstico v2",
- "boleto": "Reducida 7 dobles"
+ "estado": "Pronóstico v2.1",
+ "boleto": "Reducida 7 dobles",
+ "publico": {
+  "columna": "11122211222112",
+  "pleno": "1-2",
+  "fuente": "quiniela15.com, columna «USU.» (signo más jugado por los usuarios), captura del usuario",
+  "fecha": "2026-11-03",
+  "sistema_quiniela15": {
+   "columna": "11X22X11122X22",
+   "pleno": "1-1",
+   "nota": "Columna «SIS.» de quiniela15.com: pronóstico ajeno, solo se analiza"
+  }
+ }
 }

@@ -1,0 +1,92 @@
+# Jornada 19 · presupuesto 12 €
+Suma de P(X): 3.23
+
+## Los 14 signos
+ 1. Barcelona – Aston Villa          1  52.6% X  21.6% 2  25.8%  → 1 ⚠️  riesgo Moderado (veto: nunca signo único)
+ 2. Bodø/Glimt – Lille               1  37.3% X  26.1% 2  36.6%  → 1 ⚠️  riesgo Muy alto (veto: nunca signo único)
+ 3. Man. United – Roma               1  42.6% X  25.9% 2  31.6%  → 1 ⚠️  riesgo Alto (veto: nunca signo único)
+ 4. Villarreal – PSG                 1  26.9% X  21.1% 2  51.9%  → 2 ⚠️  riesgo Moderado
+ 5. AEK Atenas – Real Madrid         1  15.4% X  18.6% 2  66.0%  → 2  riesgo Bajo
+ 6. Fenerbahçe – Liverpool           1  18.6% X  18.7% 2  62.7%  → 2 ⚠️  riesgo Moderado
+ 7. B. Dortmund – Betis              1  51.4% X  22.5% 2  26.1%  → 1 ⚠️  riesgo Moderado
+ 8. Oporto – Nápoles                 1  43.2% X  28.2% 2  28.7%  → 1 ⚠️  riesgo Alto (veto: nunca signo único)
+ 9. Lens – Como                      1  34.3% X  26.9% 2  38.8%  → 2 ⚠️  riesgo Muy alto (veto: nunca signo único)
+10. Leipzig – Man. City              1  22.4% X  20.2% 2  57.4%  → 2 ⚠️  riesgo Moderado
+11. Slavia Praga – Arsenal           1  12.2% X  19.0% 2  68.8%  → 2  riesgo Bajo
+12. Real Sociedad – Lyon             1  39.8% X  23.4% 2  36.8%  → 1 ⚠️  riesgo Muy alto
+13. Celta – Union SG                 1  37.2% X  26.2% 2  36.5%  → 1 ⚠️  riesgo Muy alto
+14. Getafe – Brighton                1  19.1% X  24.9% 2  56.0%  → 2 ⚠️  riesgo Moderado
+Fallos esperados con los 14 signos individuales: 6.94
+
+## Boleto A · 4 dobles completos: no disponible (5 partidos con veto, pero el boleto A solo tiene 4 dobles)
+
+## Boleto B · reducida de 7 dobles al 13: 16 apuestas, 12.00 €
+  P(≥14) = 0.039% (1 entre 2.564)
+  P(≥13) = 0.692% (1 entre 144)
+  P(≥12) =   4.3%
+  P(≥11) =  15.1%
+  P(≥10) =  34.8%
+  Aciertos esperados de la mejor columna: 8.85
+  Dobles: Barcelona – Aston Villa (12), Bodø/Glimt – Lille (12), Man. United – Roma (12), Oporto – Nápoles (12), Lens – Como (12), Real Sociedad – Lyon (12), Celta – Union SG (12)
+  Columnas:
+     1. 11122211222112
+     2. 11122212122222
+     3. 11222211122212
+     4. 11222212222122
+     5. 12122211122122
+     6. 12122212222212
+     7. 12222211222222
+     8. 12222212122112
+     9. 21122211222222
+    10. 21122212122112
+    11. 21222211122122
+    12. 21222212222212
+    13. 22122211122212
+    14. 22122212222122
+    15. 22222211222112
+    16. 22222212122222
+
+(Reducida: 288 combinaciones evaluadas; objetivo p14.)
+
+## Comparación de sistemas (12 €)
+  Sistema                                       P(14)   P(≥13)   P(≥12)   P(≥10)
+  B · reducida de 7 dobles al 13        1 entre 2.564     0.7%     4.3%    34.8%
+  C · las 16 columnas más probables     1 entre 1.434     0.8%     4.0%    29.4%
+  C+X · 16 columnas, 2 con empate       1 entre 1.462     0.7%     3.8%    28.6%
+  C+X · 16 columnas, 4 con empate       1 entre 1.501     0.7%     3.7%    28.0%
+  C+X · 16 columnas, 8 con empate       1 entre 1.608     0.7%     3.6%    28.0%
+  C sin la columna del público · 16 columnas  1 entre 1.455     0.8%     4.1%    29.9%  ← ELEGIDO
+  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).
+  Columnas del sistema elegido (apuestas sencillas):
+     1. 12122211222112
+     2. 11122211222122
+     3. 12122211222122
+     4. 11122211222212
+     5. 12122211222212
+     6. 11122211222222
+     7. 12122211222222
+     8. 11122211122112
+     9. 12122211122112
+    10. 11122211122122
+    11. 12122211122122
+    12. 11122211122212
+    13. 11222211222112
+    14. 11122212222112
+    15. 21122211222112
+    16. 12122211122212
+
+## Pleno al 15 · Atlético de Madrid – Bayern de Múnich
+  1X2 del partido: 1  36.1% · X  21.9% · 2  42.1%
+  principal    1-1    9.3%
+  conservador  0-1    5.6%
+  varianza     M-M    6.2%
+  Se juega solo el principal, el mismo en todas las columnas.
+  P(14 y Pleno) con el sistema elegido: 0.006% (1 entre 15.621)
+
+## Apuestas sueltas
+  Liverpool marca                           90.8%
+  Real Madrid marca                         89.9%
+  Man. City marca                           88.9%
+  Arsenal marca                             88.1%
+  Barcelona marca                           86.6%
+  Aciertos esperados: 4.44 de 5 · P(todas) =  55.4%

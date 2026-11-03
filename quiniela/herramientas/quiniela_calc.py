@@ -365,7 +365,7 @@ def columnas_mas_probables(probs, k=16, forzados=()):
     return ["".join(SIGNOS[orden[i][r]] for i, r in enumerate(rangos)) for _, rangos in elegidas]
 
 
-def comparar_sistemas(probs, forzados, presupuesto=12):
+def comparar_sistemas(probs, forzados, presupuesto=12, publico=None):
     """Evalúa los sistemas posibles con el presupuesto y elige según el criterio del prompt.
 
     Criterio: entre los sistemas cuya P(14) es al menos el 90 % de la máxima, el de
@@ -410,6 +410,17 @@ def comparar_sistemas(probs, forzados, presupuesto=12):
                         break
             if sum("X" in c for c in variante) == n:
                 sistemas.append((f"C+X · {k} columnas, {n} con empate", variante, None))
+
+    # Red Team: si la columna que más juega el público está en el boleto, se compara
+    # también el boleto sin ella (un 14 con esa columna se reparte entre muchos).
+    if publico and publico in cols:
+        orden = [_orden(p) for p in probs]
+        for _, r in _k_mejores(probs, orden, len(cols) + 200):
+            c = "".join(SIGNOS[orden[i][x]] for i, x in enumerate(r))
+            nueva = [x for x in cols if x != publico] + [c]
+            if c not in cols and c != publico and all(len({x[f] for x in nueva}) >= 2 for f in forzados):
+                sistemas.append((f"C sin la columna del público · {k} columnas", nueva, None))
+                break
 
     resultado = []
     for nombre, cols, dobles in sistemas:
@@ -555,7 +566,8 @@ def cmd_boleto(args):
         salida += [f"    {n:2d}. {c}" for n, c in enumerate(cols, 1)]
     salida.append(f"\n(Reducida: {n_cand} combinaciones evaluadas; objetivo {args.objetivo}.)")
 
-    sistemas, elegido = comparar_sistemas(probs, forzados, presupuesto)
+    publico = (datos.get("publico") or {}).get("columna")
+    sistemas, elegido = comparar_sistemas(probs, forzados, presupuesto, publico)
     salida.append(f"\n## Comparación de sistemas ({presupuesto} €)")
     salida.append(f"  {'Sistema':<36} {'P(14)':>14} {'P(≥13)':>8} {'P(≥12)':>8} {'P(≥10)':>8}")
     for s in sistemas:

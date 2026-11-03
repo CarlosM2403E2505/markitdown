@@ -327,3 +327,49 @@ Con 5 vetos, el boleto de 4 dobles ya no es posible. La reducida B sigue en 1 en
 | Versión | Fecha | Qué |
 |---|---|---|
 | v2 | 3/11/2026 | Revisión final. Veto del Lens añadido, bajas del Pleno actualizadas, cuotas de los partidos 12–14 y aviso de la v1 corregido. Boleto y Pleno sin cambios |
+
+---
+
+# v2.1 · Red Team con la columna del público · martes 3/11/2026, 13:22
+
+> Captura de quiniela15.com aportada por el usuario (`quiniela15-3nov.png`). Trae el signo más jugado de cada partido («USU.») y el pronóstico de la web («SIS.»), **no los porcentajes**.
+
+## Lo que muestra
+
+| | Columna 1–14 | Pleno |
+|---|---|---|
+| Nuestros 14 signos | `11122211222112` | 1-1 |
+| **Lo más jugado por el público** | `11122211222112` | 1-2 |
+| Pronóstico de Quiniela15 (ajeno, no entra en el modelo) | `11X22X11122X22` | 1-1 |
+
+**Nuestra columna base es idéntica a la del público.** Era la columna 1 del boleto, y la más probable de las 16 (el 7,3 % de nuestra P(14)). Si sale, el premio de 14 se reparte entre muchísimos acertantes. En el Pleno sí nos separamos del público (1-1 frente a 1-2), y eso es bueno.
+
+El pronóstico de Quiniela15 pone X en los partidos 3, 6 y 12, el 1 del Lens y el 2 del Celta. Es un pronóstico ajeno: se registra, pero no cambia el precio.
+
+## Decisión
+
+| Boleto (12 €) | P(14) | P(≥13) | P(≥12) | P(≥10) |
+|---|---|---|---|---|
+| v2 (con la columna del público) | 1 entre 1.434 | 0,769 % | 3,97 % | 29,4 % |
+| **v2.1 (sin ella) · elegido** | **1 entre 1.455** | **0,781 %** | **4,07 %** | **29,9 %** |
+
+Quitar la columna del público cuesta un 1,4 % de P(14) y mejora las demás categorías. Por el criterio de la fase 8 (dentro del 90 % de la mejor P(14), la mayor P(≥12)), gana la v2.1. Entra la columna `12122211122212`.
+
+## Boleto final v2.1 · 16 apuestas sencillas · 12 € · Pleno 1-1 en todas
+
+```
+ 1. 12122211222112     9. 12122211122112
+ 2. 11122211222122    10. 11122211122122
+ 3. 12122211222122    11. 12122211122122
+ 4. 11122211222212    12. 11122211122212
+ 5. 12122211222212    13. 11222211222112
+ 6. 11122211222222    14. 11122212222112
+ 7. 12122211222222    15. 21122211222112
+ 8. 11122211122112    16. 12122211122212
+```
+
+Los 5 vetos siguen cumpliéndose. Sin los porcentajes del público no se puede medir el valor signo a signo; esta es la parte del Red Team que se puede hacer con el signo más jugado.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v2.1 | 3/11/2026 | Fuera la columna que más juega el público; entra `12122211122212`. Pleno sin cambios |

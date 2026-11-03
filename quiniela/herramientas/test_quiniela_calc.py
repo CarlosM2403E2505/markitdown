@@ -154,6 +154,18 @@ class TestSimulacion(unittest.TestCase):
             self.assertAlmostEqual(qc.al_menos(sim, k), qc.al_menos(exacta, k), delta=0.01)
 
 
+class TestColumnaDelPublico(unittest.TestCase):
+    def test_variante_sin_la_columna_del_publico(self):
+        probs = _probs_aleatorias(16)
+        base = "".join(qc.SIGNOS[qc._orden(p)[0]] for p in probs)
+        sistemas, _ = qc.comparar_sistemas(probs, [0], publico=base)
+        v = [s for s in sistemas if "público" in s["nombre"]]
+        self.assertEqual(len(v), 1)
+        self.assertNotIn(base, v[0]["columnas"])
+        self.assertEqual(len(set(v[0]["columnas"])), 16)
+        self.assertGreaterEqual(len({c[0] for c in v[0]["columnas"]}), 2)
+
+
 class TestPostmortem(unittest.TestCase):
     def test_puntuacion_de_un_acierto_y_un_fallo(self):
         partidos = [{"partido": "A", "p": [0.5, 0.3, 0.2], "resultado": "1"},

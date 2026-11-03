@@ -241,7 +241,8 @@ Motivo: el 14 y el Pleno concentran el premio, y solo pagan con 14 aciertos. P(�
 **Red Team**, en este orden:
 1. Comparar nuestra columna base con la que juega el público (% LAE).
 2. Si se parecen, rehacer los dobles hacia el valor, **solo entre boletos con P(14) de al menos el 90 % del máximo** (la calculadora da la P(14) de cada alternativa).
-3. **No se cambia ningún signo con más de 10 puntos de ventaja en el modelo** (lección del Sabadell, J16; *provisional, n = 1*).
+3. **Columna del público** (signo más jugado de cada partido, p. ej. la columna «USU.» de quiniela15.com): si está en el boleto, la calculadora compara también el boleto sin ella (campo `publico.columna` del JSON) y decide el criterio de la fase 8. J19: quitarla costaba un 1,4 % de P(14) y subía P(≥13), P(≥12) y P(≥10).
+4. **No se cambia ningún signo con más de 10 puntos de ventaja en el modelo** (lección del Sabadell, J16; *provisional, n = 1*).
 
 **El Auditor comprueba** (y firma con ✅ o devuelve con ❌):
 - [ ] Los 15 partidos son los del boleto oficial o de la lista aportada por el usuario, y la jornada no está excluida.

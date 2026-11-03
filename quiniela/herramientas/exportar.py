@@ -121,7 +121,7 @@ def pronosticos():
 def boleto():
     d = leer(os.path.join(J19, "j19.json"))
     probs = [p["p"] for p in d["partidos"]]
-    sistemas, elegido = qc.comparar_sistemas(probs, qc._forzados(d["partidos"]), d.get("presupuesto", 12))
+    sistemas, elegido = qc.comparar_sistemas(probs, qc._forzados(d["partidos"]), d.get("presupuesto", 12), (d.get("publico") or {}).get("columna"))
     resumen, columnas = [], []
     for s in sistemas:
         resumen.append({"jornada": 19, "sistema": s["nombre"], "elegido": "si" if s is elegido else "no",
