@@ -524,13 +524,22 @@ def cmd_boleto(args):
                       f"  → {signo}{marca}  riesgo {_riesgo(p['p'])}{veto}")
     salida.append(f"Fallos esperados con los 14 signos individuales: {fallos:.2f}")
 
-    dobles_a, cols_a = mejor_boleto_a(probs, forzados)
-    dist_a = evaluar_columnas(probs, cols_a)
-    dobles_b, cols_b, n_cand = mejor_boleto_b(probs, forzados, args.objetivo)
-    dist_b = evaluar_columnas(probs, cols_b)
+    boletos, n_cand = [], 0
+    for nombre, construir in (("Boleto A · 4 dobles completos", lambda: mejor_boleto_a(probs, forzados)),
+                              ("Boleto B · reducida de 7 dobles al 13",
+                               lambda: mejor_boleto_b(probs, forzados, args.objetivo))):
+        try:
+            hecho = construir()
+        except ValueError as e:
+            salida.append(f"\n## {nombre}: no disponible ({e})")
+            continue
+        dobles, cols = hecho[0], hecho[1]
+        if len(hecho) == 3:
+            n_cand = hecho[2]
+        dist = evaluar_columnas(probs, cols)
+        boletos.append((nombre, cols, dist, dobles))
 
-    for nombre, cols, dist, dobles in (("Boleto A · 4 dobles completos", cols_a, dist_a, dobles_a),
-                                       ("Boleto B · reducida de 7 dobles al 13", cols_b, dist_b, dobles_b)):
+    for nombre, cols, dist, dobles in boletos:
         coste = len(cols) * PRECIO_APUESTA
         if coste > presupuesto:
             print(f"ERROR: {nombre} cuesta {coste:.2f} €, más que el presupuesto ({presupuesto} €).")
@@ -572,7 +581,7 @@ def cmd_boleto(args):
             salida.append(f"  {tipo:<12} {r}  {_pct(p_cat[r])}")
         p_principal = p_cat[tres["principal"]]
         salida.append("  Se juega solo el principal, el mismo en todas las columnas.")
-        salida.append(f"  P(14 y Pleno) con el boleto B: {_prob(al_menos(dist_b, 14) * p_principal)}")
+        salida.append(f"  P(14 y Pleno) con el sistema elegido: {_prob(elegido['p14'] * p_principal)}")
 
     sueltas = datos.get("sueltas")
     if sueltas:

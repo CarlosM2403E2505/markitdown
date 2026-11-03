@@ -60,18 +60,16 @@ def partidos():
 
 
 def bajas():
+    tipos = {"Lesión": "lesion", "Sanción": "sancion", "Duda": "duda", "Vuelve a entrenar": "vuelve_a_entrenar"}
     filas = []
     for b in leer(os.path.join(RAIZ, "app", "bajas.json"))["bajas"]:
-        duda = b["estado"] == "Duda"
-        filas.append({"equipo": b["equipo"], "jugador": None if b["jugador"] == "Portero titular" else b["jugador"],
-                      "posicion": "portero" if b["jugador"] == "Portero titular" else None,
-                      "tipo": "duda" if duda else None, "fecha_regreso": None, "fecha_fuente": b["fecha"],
-                      "fuente": f"{MESA}, datos/j19_lambdas_1x2.json, campo pleno.ajustes"
-                                + (" («Pendiente: portero del Bayern y Olise»)" if duda else
-                                   " («Bayern sin Saibari, Gnabry, Musiala ni Díaz»; «Atlético sin Hjulmand»)"),
-                      "partido": b["partido"], "fecha_obtencion": OBTENIDO})
+        filas.append({"equipo": b["equipo"], "jugador": b["jugador"],
+                      "posicion": None if b["posicion"] == "Sin comprobar" else b["posicion"].lower(),
+                      "tipo": tipos.get(b["tipo"]), "fecha_regreso": None, "fecha_fuente": b["fecha"],
+                      "fuente": b["fuente"], "clase": b["clase"], "estado": b["estado"].lower(),
+                      "partido": b["partido"], "fecha_obtencion": b.get("consultado", OBTENIDO)})
     return escribir("bajas.csv", ["equipo", "jugador", "posicion", "tipo", "fecha_regreso", "fecha_fuente", "fuente",
-                                  "partido", "fecha_obtencion"], filas)
+                                  "clase", "estado", "partido", "fecha_obtencion"], filas)
 
 
 def cuotas():
@@ -88,6 +86,14 @@ def cuotas():
             filas.append({"fecha_hora": fecha_hora, "partido": nombres[int(n)], "casa": casa, "cuota_1": c[0],
                           "cuota_X": c[1], "cuota_2": c[2], "fuente": f"{fuente}; archivo jornadas/j19/bet365_lunes_2nov_1300.json",
                           "jornada": 19, "n_boleto": int(n), "fecha_obtencion": OBTENIDO})
+    extra = os.path.join(J19, "cuotas_comparadores_3nov.json")
+    if os.path.exists(extra):
+        c3 = leer(extra)
+        for x in c3["partidos"]:
+            filas.append({"fecha_hora": None, "partido": x["partido"], "casa": "Comparador (varias casas)",
+                          "cuota_1": x["cuota_1"], "cuota_X": x["cuota_X"], "cuota_2": x["cuota_2"],
+                          "fuente": f"{' y '.join(c3['fuentes'])}; {x['casas']}", "jornada": 19, "n_boleto": x["n"],
+                          "fecha_obtencion": c3["consultado"]})
     return escribir("cuotas.csv", ["fecha_hora", "partido", "casa", "cuota_1", "cuota_X", "cuota_2", "fuente",
                                    "jornada", "n_boleto", "fecha_obtencion"], filas)
 

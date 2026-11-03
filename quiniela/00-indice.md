@@ -15,9 +15,9 @@ Entrada a todo el proyecto. Se actualiza al cerrar cada jornada.
 | J13–J16 | — | — | Registro en la sesión de claude.ai | — | J15: 9 · J16: 8 | J16: 4/5 | — | — |
 | J17 | 27–29/10 | Copa del Rey | **No se pronostica** | — | — | — | — | — |
 | J18 | — | Doméstica | Registro en la sesión de claude.ai | 18 € | — | — | — | Modelo 0,897 · mercado 0,786 |
-| **J19** | 3–5/11 | Europea | **v1.1** (`jornadas/j19/`) | C · 16 columnas · 12 € | pendiente | pendiente | 1-1 | pendiente |
+| **J19** | 3–5/11 | Europea | **v2 revisión final** (`jornadas/j19/`) | C · 16 columnas · 12 € | pendiente | pendiente | 1-1 | pendiente |
 
 ## Pendiente
-- J19: revisión final antes del cierre (martes 3/11).
+- J19: post-mortem tras el jueves 5/11 (resultados, premios por categoría y qué habrían hecho A, B y C).
 - Traer a `jornadas/` los JSON de J13–J18 con sus resultados para calcular la calibración acumulada.
 - Hipótesis para medir: ¿el modelo infravalora a los favoritos claros frente al mercado? (J18 y J19).

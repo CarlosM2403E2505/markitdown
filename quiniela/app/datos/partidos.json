@@ -164,7 +164,7 @@
    "signo_modelo": "2",
    "signo_boleto": "12",
    "riesgo": "Muy alto",
-   "veto": false,
+   "veto": true,
    "m1": 0.3161,
    "mx": 0.2529,
    "m2": 0.431,

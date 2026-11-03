@@ -7,11 +7,12 @@
    "equipo": "Bayern de Múnich",
    "jugador": "Saibari",
    "posicion": "Sin comprobar",
-   "tipo": "Baja",
-   "clase": "A/B",
+   "tipo": "Lesión",
+   "clase": "B",
    "estado": "Confirmada",
-   "fuente": "Mesa de claude.ai",
-   "fecha": "2026-11-02"
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»; The Washington Post, 2026-11-02, «Michael Olise trains and joins Bayern for Atletico game but Diaz stays on long injury list»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
   },
   {
    "id": "j19-bayern-gnabry",
@@ -20,11 +21,12 @@
    "equipo": "Bayern de Múnich",
    "jugador": "Gnabry",
    "posicion": "Sin comprobar",
-   "tipo": "Baja",
-   "clase": "A/B",
+   "tipo": "Lesión",
+   "clase": "B",
    "estado": "Confirmada",
-   "fuente": "Mesa de claude.ai",
-   "fecha": "2026-11-02"
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
   },
   {
    "id": "j19-bayern-musiala",
@@ -33,11 +35,12 @@
    "equipo": "Bayern de Múnich",
    "jugador": "Musiala",
    "posicion": "Sin comprobar",
-   "tipo": "Baja",
-   "clase": "A/B",
+   "tipo": "Lesión",
+   "clase": "B",
    "estado": "Confirmada",
-   "fuente": "Mesa de claude.ai",
-   "fecha": "2026-11-02"
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
   },
   {
    "id": "j19-bayern-diaz",
@@ -46,37 +49,40 @@
    "equipo": "Bayern de Múnich",
    "jugador": "Díaz",
    "posicion": "Sin comprobar",
-   "tipo": "Baja",
-   "clase": "A/B",
+   "tipo": "Lesión",
+   "clase": "B",
    "estado": "Confirmada",
-   "fuente": "Mesa de claude.ai",
-   "fecha": "2026-11-02"
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»; The Washington Post, 2026-11-02, «Michael Olise trains and joins Bayern for Atletico game but Diaz stays on long injury list»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
   },
   {
-   "id": "j19-atletico-hjulmand",
-   "jornada": 19,
-   "partido": "Atlético – Bayern (Pleno)",
-   "equipo": "Atlético de Madrid",
-   "jugador": "Hjulmand",
-   "posicion": "Sin comprobar",
-   "tipo": "Baja",
-   "clase": "A/B",
-   "estado": "Confirmada",
-   "fuente": "Mesa de claude.ai",
-   "fecha": "2026-11-02"
-  },
-  {
-   "id": "j19-bayern-portero",
+   "id": "j19-bayern-ndiaye",
    "jornada": 19,
    "partido": "Atlético – Bayern (Pleno)",
    "equipo": "Bayern de Múnich",
-   "jugador": "Portero titular",
+   "jugador": "Bara Ndiaye",
+   "posicion": "Sin comprobar",
+   "tipo": "Lesión",
+   "clase": "B",
+   "estado": "Confirmada",
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
+  },
+  {
+   "id": "j19-bayern-neuer",
+   "jornada": 19,
+   "partido": "Atlético – Bayern (Pleno)",
+   "equipo": "Bayern de Múnich",
+   "jugador": "Neuer",
    "posicion": "Portero",
-   "tipo": "Duda",
-   "clase": "Pendiente",
+   "tipo": "Vuelve a entrenar",
+   "clase": "B",
    "estado": "Duda",
-   "fuente": "Mesa de claude.ai",
-   "fecha": "2026-11-02"
+   "fuente": "Goal.com, «Officially: Bayern Munich settles Olise's fate for the clash with Atletico Madrid» y Bulinews, «Bayern boss gives fresh injury update on Olise and Neuer»; Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups» (suplente: Urbig)",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
   },
   {
    "id": "j19-bayern-olise",
@@ -85,11 +91,54 @@
    "equipo": "Bayern de Múnich",
    "jugador": "Olise",
    "posicion": "Sin comprobar",
-   "tipo": "Duda",
-   "clase": "Pendiente",
+   "tipo": "Vuelve a entrenar",
+   "clase": "B",
    "estado": "Duda",
-   "fuente": "Mesa de claude.ai",
-   "fecha": "2026-11-02"
+   "fuente": "Goal.com, «Officially: Bayern Munich settles Olise's fate for the clash with Atletico Madrid» y Bulinews, «Bayern boss gives fresh injury update on Olise and Neuer»; The Washington Post, 2026-11-02, «Michael Olise trains and joins Bayern for Atletico game but Diaz stays on long injury list»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
+  },
+  {
+   "id": "j19-atletico-hjulmand",
+   "jornada": 19,
+   "partido": "Atlético – Bayern (Pleno)",
+   "equipo": "Atlético de Madrid",
+   "jugador": "Hjulmand",
+   "posicion": "Sin comprobar",
+   "tipo": "Sanción",
+   "clase": "B",
+   "estado": "Confirmada",
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups» (roja contra el Stuttgart)",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
+  },
+  {
+   "id": "j19-atletico-cardoso",
+   "jornada": 19,
+   "partido": "Atlético – Bayern (Pleno)",
+   "equipo": "Atlético de Madrid",
+   "jugador": "Johnny Cardoso",
+   "posicion": "Sin comprobar",
+   "tipo": "Duda",
+   "clase": "B",
+   "estado": "Duda",
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
+  },
+  {
+   "id": "j19-atletico-koke",
+   "jornada": 19,
+   "partido": "Atlético – Bayern (Pleno)",
+   "equipo": "Atlético de Madrid",
+   "jugador": "Koke",
+   "posicion": "Sin comprobar",
+   "tipo": "Duda",
+   "clase": "B",
+   "estado": "Duda",
+   "fuente": "Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",
+   "fecha": "2026-11-02",
+   "consultado": "2026-11-03"
   }
  ]
 }

@@ -242,3 +242,88 @@ Aun así, meter X empeora el boleto en todas las categorías:
 El motivo: sabemos que habrá unos 3 empates, pero no en qué partidos. Poner una X en un partido concreto es apostar a algo que pasa como mucho el 28 % de las veces, en lugar del 37–43 % del signo que va en el boleto. Además, en las copas europeas el modelo declara más empates de los que salen (22 % frente a 18 %), así que no hay motivo para pensar que los está infravalorando.
 
 Las variantes con X quedan en la comparación de todas las jornadas: entrarán solas cuando la X sea competitiva, como en ligas con muchos empates o en partidos de selecciones.
+
+---
+
+# v2 · revisión final · martes 3/11/2026, 10:45 UTC
+
+> Fases 3 y 4 con las noticias del día. **El boleto y el Pleno no cambian.** Salida completa: `j19-calculadora-v2.txt`.
+
+## A. Resumen
+
+- **Boleto final:** el mismo de la v1.1, las 16 columnas más probables. P(14) = 1 entre 1.434. **Pleno: 1-1.**
+- **Pleno:** Neuer y Olise vuelven a entrenar y viajan; el entrenador decidirá a última hora. Las bajas del Bayern (Musiala, Díaz, Gnabry, Saibari) siguen, y se suma Bara Ndiaye. En el Atlético, Hjulmand está sancionado, y Koke y Johnny Cardoso son duda.
+- **Corrección de la v1:** el aviso de que los ajustes de los partidos 2, 3 y 9 superaban el tope del ±5 % estaba mal. Son el −4,5 al favorito que viene de perder en Europa, una regla medida aparte del tope.
+- **Nuevo veto:** el Lens (partido 9) es favorito y viene de perder 3-0 en Brujas. La mesa le aplicó el −4,5 pero no marcó el veto. Ya está marcado. El boleto ya lo cumplía: el partido 9 aparece con dos signos.
+- **Pendiente hasta el cierre:** las alineaciones oficiales (se publican una hora antes de cada partido) y los porcentajes del público, que no he encontrado.
+
+## D. Bajas (clase B, prensa del 2/11 y el 3/11)
+
+| Equipo | Jugador | Situación | Fuente |
+|---|---|---|---|
+| Bayern | Musiala, Díaz, Gnabry, Saibari | Lesión, confirmada | Yahoo Sports, The Washington Post |
+| Bayern | **Bara Ndiaye** (nuevo) | Lesión, confirmada | Yahoo Sports |
+| Bayern | **Neuer** (portero) | Ha vuelto a entrenar tras 3 partidos de baja; decisión a última hora. Suplente: Urbig | Goal.com, Bulinews, Yahoo Sports |
+| Bayern | **Olise** | Ha entrenado y viajado; decisión a última hora | Goal.com, The Washington Post |
+| Atlético | Hjulmand | Sanción (roja contra el Stuttgart) | Yahoo Sports |
+| Atlético | **Koke, Johnny Cardoso** (nuevos) | Duda | Yahoo Sports |
+
+Kompany no estará en el banquillo; dirige Aaron Danks. Según el prompt, un cambio de entrenador no mueve el precio (está medido: +0,03 puntos por partido), así que queda solo como aviso.
+
+**Ajustes:** ninguno nuevo. Las dudas no mueven números (solo las bajas confirmadas de clase A o B). Ndiaye no tiene posición comprobada, y sin saber su peso en el equipo no hay base para ajustar.
+
+**Si juega Urbig en lugar de Neuer** (regla del portero: ajuste completo, hasta un 10 %):
+
+| Portero del Bayern | 1X2 del Pleno | Pleno más probable |
+|---|---|---|
+| Neuer (precio actual) | 36,1 / 21,9 / 42,1 | **1-1** (9,3 %) |
+| Urbig, +5 % al Atlético | 37,9 / 21,6 / 40,4 | **1-1** (9,1 %) |
+| Urbig, +10 % al Atlético | 39,8 / 21,4 / 38,8 | **1-1** (8,8 %) |
+
+El 1-1 sigue siendo el resultado más probable en los tres casos, así que el Pleno no depende de quién juegue en la portería.
+
+## E. Mercado de los partidos 12 a 14 (calidad baja)
+
+Mejor cuota de cada signo en comparadores, sin hora de la foto (livesportsodds.com, sportytrader.com, 3/11/2026):
+
+| # | Partido | Cuotas | Mercado normalizado | Modelo | Lectura |
+|---|---|---|---|---|---|
+| 12 | Real Sociedad – Lyon | 1,94 / 4,00 / — | No se puede normalizar sin el 2 | 39,8 / 23,4 / 36,8 | 1,94 equivale a un 49–52 % para la Real Sociedad: **unos 10 puntos más que el modelo** |
+| 13 | Celta – Union SG | 2,25 / 3,78 / 3,21 | 43,5 / 25,9 / 30,5 | 37,2 / 26,2 / 36,5 | −6 puntos en el 1; por debajo del umbral |
+| 14 | Getafe – Brighton | 6,25 / 4,00 / 1,66 | 15,8 / 24,7 / 59,5 | 19,1 / 24,9 / 56,0 | Coinciden; la cuota puede ser antigua |
+
+En la Real Sociedad el mercado vuelve a ser más rotundo que el modelo con el favorito, igual que en 9 de los 11 partidos de la v1. Como la cuota es incompleta y de un comparador, no basta para revisar el precio. El boleto ya cubre el 1 de la Real Sociedad en 11 de las 16 columnas.
+
+**Porcentajes del público (Quiniela15):** no los he encontrado. El análisis del Red Team frente a la columna del público queda sin hacer.
+
+## G. Boleto final (sin cambios desde la v1.1)
+
+16 apuestas sencillas, 12 €, **Pleno 1-1 en todas**. Se juega en «Sencilla o múltiple», en 2 bloques de 8:
+
+```
+ 1. 11122211222112     9. 11122211122112
+ 2. 12122211222112    10. 12122211122112
+ 3. 11122211222122    11. 11122211122122
+ 4. 12122211222122    12. 12122211122122
+ 5. 11122211222212    13. 11122211122212
+ 6. 12122211222212    14. 11222211222112
+ 7. 11122211222222    15. 11122212222112
+ 8. 12122211222222    16. 21122211222112
+```
+
+Con 5 vetos, el boleto de 4 dobles ya no es posible. La reducida B sigue en 1 entre 2.564. P(14 y Pleno) con el boleto elegido: 1 entre 15.396.
+
+## K. Auditoría v2
+
+- [x] Los 15 partidos no cambian.
+- [x] Cada partido suma el 100 %; suma de X: 3,23. Calculadora sin errores.
+- [x] Los 5 vetos (1, 2, 3, 8 y 9) aparecen con dos signos en el boleto.
+- [x] Bajas con fuente y fecha (`app/bajas.json`, `exportacion/datos_para_mesa/bajas.csv`).
+- [x] Corregido el aviso falso de la v1 sobre el tope de ajustes.
+- [ ] Alineaciones oficiales: una hora antes de cada partido.
+- [ ] Porcentajes del público: no encontrados.
+- **Corrección de la calculadora:** con más vetos que dobles, el boleto A detenía el programa con un error; ahora indica que no está disponible y sigue.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v2 | 3/11/2026 | Revisión final. Veto del Lens añadido, bajas del Pleno actualizadas, cuotas de los partidos 12–14 y aviso de la v1 corregido. Boleto y Pleno sin cambios |

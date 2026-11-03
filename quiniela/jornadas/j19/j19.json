@@ -185,13 +185,14 @@
     0.2688,
     0.3884
    ],
-   "veto_unico": false,
+   "veto_unico": true,
    "signo_boleto_18eur": "2",
    "lambdas_ajustadas": true,
    "xg_modelo_sin_ajustes": [
     1.452,
     1.394
-   ]
+   ],
+   "motivo_veto": "Favorito (Lens) que viene de perder en Europa (3-0 en Brujas). Añadido en la v2: la mesa aplicó el −4,5 pero no marcó el veto"
   },
   {
    "n": 10,
@@ -376,6 +377,6 @@
  ],
  "fechas": "3–5/11",
  "tipo": "Europea",
- "estado": "Pronóstico v1.1",
+ "estado": "Pronóstico v2",
  "boleto": "Reducida 7 dobles"
 }

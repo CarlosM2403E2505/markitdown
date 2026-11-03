@@ -32,24 +32,23 @@ HUECOS:
 - Unos 25 partidos del 2026-11-01 no tenían marcador: no están en el archivo.
 
 
-2. bajas.csv · 7 filas
-----------------------
-Bajas y dudas que la mesa aplicó al Pleno de la J19 (Atlético – Bayern).
-- Origen: campo "pleno.ajustes" del archivo j19_lambdas_1x2.json de la mesa. Texto literal:
-  «Bayern sin Saibari, Gnabry, Musiala ni Díaz (λ visitante ×0,925); Atlético sin Hjulmand
-  (λ local ×0,985). Pendiente: portero del Bayern y Olise.»
-- Columnas añadidas: "partido" y "fecha_obtencion".
+2. bajas.csv · 10 filas (actualizado el 2026-11-03)
+-------------------------------------------------
+Bajas y dudas del Pleno de la J19 (Atlético – Bayern), revisadas el 2026-11-03 con prensa.
+- Fuentes: Yahoo Sports (previa del partido), The Washington Post (2026-11-02), Goal.com y
+  Bulinews. Clase B (medio fiable con dato concreto). Cada fila dice cuál.
+- fecha_fuente: 2026-11-02 (fecha del artículo del Washington Post; los demás no dan fecha en la
+  búsqueda). fecha_obtencion: 2026-11-03, cuando se consultaron.
+- Columnas añadidas: "clase", "estado" (confirmada / duda) y "partido".
 HUECOS:
-- tipo VACÍO en las 5 bajas: la mesa no dice si son lesiones o sanciones.
-- tipo = "duda" en Olise y el portero del Bayern: la mesa los marca como «Pendiente».
-  Del portero no se sabe el nombre (jugador vacío).
-- posicion VACÍA salvo el portero: no está comprobada.
-- fecha_regreso VACÍA en todas.
-- La mesa aplicó también bajas en los partidos 1, 2, 3, 4, 8 y 9 de la J19, pero los archivos
-  solo traen el ajuste numérico, no los nombres. No están aquí.
+- posicion VACÍA salvo Neuer (portero): no está comprobada.
+- fecha_regreso VACÍA en todas: ninguna fuente la da.
+- Neuer y Olise: han vuelto a entrenar; el entrenador decide a última hora si juegan.
+- La mesa aplicó también bajas en los partidos 1, 2, 4 y 8 de la J19, pero los archivos solo traen
+  el ajuste numérico, no los nombres. No están aquí.
 
 
-3. cuotas.csv · 24 filas
+3. cuotas.csv · 27 filas
 ------------------------
 Cuotas 1X2 de la J19 (12 partidos: del 1 al 11 y el Pleno).
 - bet365: foto del 2026-11-02 a las 14:00 CET (13:00 en Canarias), tomada por la mesa en el
@@ -57,8 +56,12 @@ Cuotas 1X2 de la J19 (12 partidos: del 1 al 11 y el Pleno).
 - OddsPortal: segunda foto incluida en el mismo archivo. El archivo solo la etiqueta «dom0015»
   (domingo, 00:15), sin fecha completa: fecha_hora VACÍA.
 - Columnas añadidas: "jornada", "n_boleto" (posición en el boleto) y "fecha_obtencion".
+- Comparadores (3 filas, partidos 12 a 14): búsqueda web del 2026-11-03 en livesportsodds.com y
+  sportytrader.com. Es la mejor cuota de cada signo en casas distintas; la columna fuente dice
+  cuál. Sin hora: fecha_hora VACÍA. Calidad baja, solo control.
 HUECOS:
-- Sin cuotas de Real Sociedad – Lyon, Celta – Union SG y Getafe – Brighton (partidos 12 a 14).
+- Real Sociedad – Lyon: falta la cuota del 2 (el comparador no deja claro a qué signo va 4,03).
+- Getafe – Brighton: una de las páginas aparece con unos 500 días; la cuota puede ser antigua.
 - Una sola foto por casa: no hay movimientos de cuota.
 - Solo control: las cuotas nunca entran en el modelo.
 

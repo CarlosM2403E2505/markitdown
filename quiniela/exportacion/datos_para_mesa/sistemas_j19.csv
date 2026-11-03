@@ -1,5 +1,4 @@
 jornada,sistema,elegido,apuestas,coste_eur,p14,p13_o_mas,p12_o_mas,p10_o_mas,fuente,fecha_obtencion
-19,A · 4 dobles completos,no,16,12.0,0.00043476,0.005261,0.029481,0.248868,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa,2026-11-02
 19,B · reducida de 7 dobles al 13,no,16,12.0,0.00039008,0.006924,0.043252,0.348167,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa,2026-11-02
 19,C · las 16 columnas más probables,si,16,12.0,0.00069729,0.007689,0.03971,0.293627,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa,2026-11-02
 19,"C+X · 16 columnas, 2 con empate",no,16,12.0,0.00068401,0.007473,0.038478,0.286299,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa,2026-11-02
