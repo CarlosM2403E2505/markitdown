@@ -419,3 +419,8 @@ P(14) = 1 entre 1.410 · P(14 y Pleno) = 1 entre 15.139.
 | Versión | Fecha | Qué |
 |---|---|---|
 | v3 | 3/11/2026 | Vetos retirados por el usuario. Boleto rehecho con todos los candidatos. Definitiva |
+
+### v3.1 · opción de 6 € (8 apuestas) · 3/11/2026, 20:11 hora peninsular
+
+Mismo criterio. Elegido: las 8 columnas más probables sin la del público. P(14) = 1 entre 2.648 · P(≥13) = 0,47 % · P(≥12) = 2,7 % · P(≥10) = 23,7 % · P(14 y Pleno) = 1 entre 28.423. Son las columnas 1 a 8 del boleto de 12 €, con Pleno 1-1:
+`12122211222112 11122211222122 12122211222122 11122211222212 12122211222212 11122211222222 12122211222222 11122211122112`
