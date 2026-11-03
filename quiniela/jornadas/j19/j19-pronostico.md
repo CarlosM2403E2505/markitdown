@@ -424,3 +424,9 @@ P(14) = 1 entre 1.410 · P(14 y Pleno) = 1 entre 15.139.
 
 Mismo criterio. Elegido: las 8 columnas más probables sin la del público. P(14) = 1 entre 2.648 · P(≥13) = 0,47 % · P(≥12) = 2,7 % · P(≥10) = 23,7 % · P(14 y Pleno) = 1 entre 28.423. Son las columnas 1 a 8 del boleto de 12 €, con Pleno 1-1:
 `12122211222112 11122211222122 12122211222122 11122211222212 12122211222212 11122211222222 12122211222222 11122211122112`
+
+### v3.2 · formato de múltiples (para sellar rápido) · 3/11/2026, 20:27 hora peninsular
+
+- **Boleto 1 · 4 dobles · 16 apuestas · 12 €:** 1 · 12 · 1 · 2 · 2 · 2 · 1 · 1 · 12 · 2 · 2 · 12 · 12 · 2 · Pleno 1-1. P(14) = 1 entre 1.385 (son las 16 columnas más probables sin vetos; incluye la columna del público).
+- **Boleto 2 · 3 dobles · 8 apuestas · 6 €:** 1 · 12 · 2 · 2 · 2 · 2 · 1 · 1 · 2 · 2 · 2 · 12 · 12 · 2 · Pleno 1-1. El mejor boleto de 3 dobles sin columnas repetidas con el 1.
+- **Los dos (18 €, decisión del usuario):** P(14) = 1 entre 993 · P(≥13) = 1,04 % · P(≥12) = 5,0 % · P(≥10) = 33,3 %.
