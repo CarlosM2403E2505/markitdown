@@ -575,6 +575,12 @@ def cmd_boleto(args):
         salida.append(f"  {s['nombre']:<36} {'1 entre ' + format(round(1 / s['p14']), ',').replace(',', '.'):>14}"
                       f" {_pct(s['p13']):>8} {_pct(s['p12']):>8} {_pct(s['p10']):>8}{marca}")
     salida.append("  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).")
+    if forzados:
+        salida.append("  Vetos en el sistema elegido (columnas con un signo distinto del principal):")
+        for f in forzados:
+            principal = SIGNOS[_orden(probs[f])[0]]
+            otras = sum(c[f] != principal for c in elegido["columnas"])
+            salida.append(f"    {f + 1:2d}. {partidos[f]['partido']}: {otras} de {len(elegido['columnas'])}")
     if elegido["dobles"] is None:
         salida.append(f"  Columnas del sistema elegido (apuestas sencillas):")
         salida += [f"    {n:2d}. {c}" for n, c in enumerate(elegido["columnas"], 1)]

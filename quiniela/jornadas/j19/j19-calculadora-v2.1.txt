@@ -57,6 +57,12 @@ Fallos esperados con los 14 signos individuales: 6.94
   C+X · 16 columnas, 8 con empate       1 entre 1.608     0.7%     3.6%    28.0%
   C sin la columna del público · 16 columnas  1 entre 1.455     0.8%     4.1%    29.9%  ← ELEGIDO
   Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).
+  Vetos en el sistema elegido (columnas con un signo distinto del principal):
+     1. Barcelona – Aston Villa: 1 de 16
+     2. Bodø/Glimt – Lille: 7 de 16
+     3. Man. United – Roma: 1 de 16
+     8. Oporto – Nápoles: 1 de 16
+     9. Lens – Como: 6 de 16
   Columnas del sistema elegido (apuestas sencillas):
      1. 12122211222112
      2. 11122211222122

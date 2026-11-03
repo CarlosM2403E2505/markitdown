@@ -3,7 +3,7 @@
 Entrada a todo el proyecto. Se actualiza al cerrar cada jornada.
 
 ## Cómo se trabaja
-- **Prompt:** `prompt-maestro-v6.md` (pegarlo y escribir debajo `Jornada N · fase · presupuesto X €`).
+- **Prompt:** `prompt-maestro-v7.md` (pegarlo y escribir debajo `Jornada N · fase · presupuesto X €`).
 - **Modelo oficial:** `modelo/euro_model.py` (necesita `numpy` y `scipy`; instrucciones en `modelo/README-mesa.md`).
 - **Datos:** `datos/euro_j19.csv`, 23.631 partidos hasta el 1/11/2026.
 - **Cuentas:** `herramientas/quiniela_calc.py` (instrucciones en `herramientas/README.md`).
