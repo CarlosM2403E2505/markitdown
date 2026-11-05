@@ -34,7 +34,9 @@
     1.492
    ],
    "riesgo": "Muy alto",
-   "veto_retirado": "Favorito (Barça) que viene de perder en Europa (4-2 en París)"
+   "veto_retirado": "Favorito (Barça) que viene de perder en Europa (4-2 en París)",
+   "resultado": "1",
+   "marcador": "3-0"
   },
   {
    "n": 2,
@@ -56,7 +58,9 @@
     1.568,
     1.436
    ],
-   "veto_retirado": "Campo nórdico (Bodø, césped artificial) y favorito que viene de perder (4-3 en Nápoles)"
+   "veto_retirado": "Campo nórdico (Bodø, césped artificial) y favorito que viene de perder (4-3 en Nápoles)",
+   "resultado": "X",
+   "marcador": "0-0"
   },
   {
    "n": 3,
@@ -78,7 +82,9 @@
     1.697,
     1.286
    ],
-   "veto_retirado": "Favorito (Man. United) que viene de perder en Europa (4-1 en Como)"
+   "veto_retirado": "Favorito (Man. United) que viene de perder en Europa (4-1 en Como)",
+   "resultado": "1",
+   "marcador": "3-2"
   },
   {
    "n": 4,
@@ -99,7 +105,9 @@
    "xg_modelo_sin_ajustes": [
     1.493,
     2.164
-   ]
+   ],
+   "resultado": "2",
+   "marcador": "0-6"
   },
   {
    "n": 5,
@@ -116,7 +124,9 @@
    ],
    "veto_unico": false,
    "signo_boleto_18eur": "2",
-   "riesgo": "Moderado"
+   "riesgo": "Moderado",
+   "resultado": "2",
+   "marcador": "2-3"
   },
   {
    "n": 6,
@@ -132,7 +142,9 @@
     0.6274
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "2"
+   "signo_boleto_18eur": "2",
+   "resultado": "1",
+   "marcador": "3-2"
   },
   {
    "n": 7,
@@ -148,7 +160,9 @@
     0.2612
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "1"
+   "signo_boleto_18eur": "1",
+   "resultado": "1",
+   "marcador": "2-1"
   },
   {
    "n": 8,
@@ -170,7 +184,9 @@
     1.478,
     1.109
    ],
-   "veto_retirado": "Favorito (Oporto) que viene de perder en Europa (0-1 con el PSV)"
+   "veto_retirado": "Favorito (Oporto) que viene de perder en Europa (0-1 con el PSV)",
+   "resultado": "1",
+   "marcador": "4-1"
   },
   {
    "n": 9,
@@ -192,7 +208,9 @@
     1.452,
     1.394
    ],
-   "veto_retirado": "Favorito (Lens) que viene de perder en Europa (3-0 en Brujas). Añadido en la v2: la mesa aplicó el −4,5 pero no marcó el veto"
+   "veto_retirado": "Favorito (Lens) que viene de perder en Europa (3-0 en Brujas). Añadido en la v2: la mesa aplicó el −4,5 pero no marcó el veto",
+   "resultado": "2",
+   "marcador": "1-9"
   },
   {
    "n": 10,
@@ -208,7 +226,9 @@
     0.5738
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "2"
+   "signo_boleto_18eur": "2",
+   "resultado": "2",
+   "marcador": "2-3"
   },
   {
    "n": 11,
@@ -225,7 +245,9 @@
    ],
    "veto_unico": false,
    "signo_boleto_18eur": "2",
-   "riesgo": "Moderado"
+   "riesgo": "Moderado",
+   "resultado": "2",
+   "marcador": "1-2"
   },
   {
    "n": 12,
@@ -345,34 +367,41 @@
    "M-2": 0.04016,
    "M-M": 0.02069
   },
-  "mezcla": 0.2
+  "mezcla": 0.2,
+  "resultado_pleno": "0-2",
+  "marcador": "0-2"
  },
  "presupuesto": 12,
  "sueltas": [
   {
    "partido": "Fenerbahçe – Liverpool",
    "apuesta": "Liverpool marca",
-   "p": 0.908
+   "p": 0.908,
+   "resultado": true
   },
   {
    "partido": "AEK Atenas – Real Madrid",
    "apuesta": "Real Madrid marca",
-   "p": 0.899
+   "p": 0.899,
+   "resultado": true
   },
   {
    "partido": "Leipzig – Man. City",
    "apuesta": "Man. City marca",
-   "p": 0.889
+   "p": 0.889,
+   "resultado": true
   },
   {
    "partido": "Slavia Praga – Arsenal",
    "apuesta": "Arsenal marca",
-   "p": 0.881
+   "p": 0.881,
+   "resultado": true
   },
   {
    "partido": "Barcelona – Aston Villa",
    "apuesta": "Barcelona marca",
-   "p": 0.866
+   "p": 0.866,
+   "resultado": true
   }
  ],
  "fechas": "3–5/11",
