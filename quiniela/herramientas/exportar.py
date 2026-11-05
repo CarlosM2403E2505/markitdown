@@ -48,13 +48,19 @@ def fecha_y_hora(dia):
 def partidos():
     filas = []
     with open(os.path.join(RAIZ, "datos", "euro_j19.csv"), encoding="utf-8") as f:
+        de_la_mesa = {(r["fecha"], r["local"], r["visitante"]) for r in csv.DictReader(f)}
+    ultimo = sorted(f for f in os.listdir(os.path.join(RAIZ, "datos")) if f.startswith("euro_j") and f.endswith(".csv"))[-1]
+    with open(os.path.join(RAIZ, "datos", ultimo), encoding="utf-8") as f:
         for r in csv.DictReader(f):
             origen = ("openfootball (football.json, europe, champions-league)" if r["fecha"] <= "2026-09-20"
                       else "uefa.com, futboltotal.futbol, ESPN o thestatsapi (la mesa no indica cuál por partido)")
+            nuevo = (r["fecha"], r["local"], r["visitante"]) not in de_la_mesa
+            if nuevo:
+                origen = "añadido en Claude Code el 2026-11-05 desde prensa (ESPN, Yahoo Sports, laliga.com, futboltotal.futbol)"
             filas.append({"fecha": r["fecha"], "competicion": r["competicion"], "local": r["local"],
                           "visitante": r["visitante"], "goles_local": r["goles_local"],
                           "goles_visitante": r["goles_visitante"], "xg_local": None, "xg_visitante": None,
-                          "fuente": f"{MESA}, datos/euro_j19.csv; origen: {origen}", "fecha_obtencion": OBTENIDO})
+                          "fuente": f"datos/{ultimo}; origen: {origen}", "fecha_obtencion": "2026-11-05" if nuevo else OBTENIDO})
     return escribir("partidos.csv", ["fecha", "competicion", "local", "visitante", "goles_local", "goles_visitante",
                                      "xg_local", "xg_visitante", "fuente", "fecha_obtencion"], filas)
 

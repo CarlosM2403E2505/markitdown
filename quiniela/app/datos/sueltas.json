@@ -39,6 +39,46 @@
    "partido": "Barcelona – Aston Villa",
    "p": 0.866,
    "resultado": true
+  },
+  {
+   "jornada": 20,
+   "n": 1,
+   "apuesta": "Real Madrid F marca",
+   "partido": "Athletic F – Real Madrid F",
+   "p": 0.894,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 2,
+   "apuesta": "Málaga marca",
+   "partido": "Málaga – Racing",
+   "p": 0.856,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 3,
+   "apuesta": "Real Madrid marca",
+   "partido": "Valencia – Real Madrid",
+   "p": 0.852,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 4,
+   "apuesta": "Girona marca",
+   "partido": "Girona – Almería",
+   "p": 0.844,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 5,
+   "apuesta": "1X (Villarreal o empate)",
+   "partido": "Villarreal – Getafe",
+   "p": 0.839,
+   "resultado": null
   }
  ]
 }

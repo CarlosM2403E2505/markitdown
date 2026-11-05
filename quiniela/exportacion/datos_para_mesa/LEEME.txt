@@ -12,10 +12,11 @@ Generado con quiniela/herramientas/exportar.py (repositorio carlosm2403e2505/mar
 rama quiniela-prompt-v6). Ejecutarlo de nuevo reproduce estos archivos.
 
 
-1. partidos.csv · 23.631 filas
+1. partidos.csv · 23.655 filas (actualizado el 2026-11-05)
 ------------------------------
 Resultados de partidos: fecha, competición, local, visitante y goles.
-- Periodo: 2024-02-16 a 2026-11-01.
+- Periodo: 2024-02-16 a 2026-11-05. Los 24 partidos del 2026-11-01 al 2026-11-05 que faltaban
+  (Primera, Segunda y europeos de la semana) se añadieron en Claude Code desde prensa.
 - Competiciones: 66 (unas 60 ligas europeas y las copas UEFA). Código de competición del dataset
   original, p. ej. "es.1:2026/27" = Primera, "en.2" = Championship, "uefa.cl" = Champions.
 - Nombres de equipo: como vienen en el dataset (en minúsculas y normalizados, p. ej. "man united").

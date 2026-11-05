@@ -63,6 +63,39 @@ Las mentes con **veto** pueden tumbar un signo. Si dos vetos chocan, decide el D
 | 12 | **Pleno Specialist + Portfolio Manager** | Pleno (principal, conservador y de varianza) y boleto óptimo | — |
 | 13 | **Auditor / Calibration** | Revisa cuentas, fuentes, coherencia y calibración. Si encuentra un error, lo devuelve | **Sí** |
 
+### Recordatorio de funciones (lo que cada mente tiene que hacer sí o sí, revisado tras la J19)
+
+| Mente | Su función, en una frase | Lo que no puede volver a pasar |
+|---|---|---|
+| **Director** | Fija la lista oficial, el cierre y la hora de congelación (3 h antes), y firma un único boleto | Dos boletos distintos a 30 minutos del cierre (J19) |
+| **Data Analyst / Quant** | Datos al día antes de dar precio: ningún equipo sin su último partido de liga, Europa y Copa | Precio con resultados de hace dos semanas (J20: faltaban 2 de Primera, 6 de Segunda, la jornada 9 de Liga F y los europeos) |
+| **Odds Compiler** | Precio del modelo con la calibración vigente (T = 1,05; empates por liga) | Usar un factor de empates que no es el de esa liga (Segunda) |
+| **Live Trader (bajas)** | Lista de bajas con clase A–D, fuente y fecha; porteros y delanteros centro uno a uno | Mover un precio con una duda (solo A y B confirmadas) |
+| **Calendario y fatiga** | Quién jugó Europa o Copa, qué día y cuántos minutos; parones y vuelta de internacionales | Olvidar el ajuste del jueves europeo o las rotaciones antes de Copa |
+| **Táctico** | Contexto cualitativo de cada partido, sin mover números | Afirmaciones de estilo sin comprobar en los datos (J19: «la Roma defiende bien») |
+| **Contexto y motivación** | Separar hechos de narrativa (entrenador nuevo, derbi, objetivo) | Subir a un equipo porque «necesita ganar» |
+| **Market Analyst** | Cuotas y % del público después del precio; marcador modelo contra mercado en cada post-mortem | Meter cuotas en el modelo, o no anotarlas |
+| **Integridad** | Clasificar movimientos raros de 1 a 5, con la frase fija si no hay pruebas | Inventar sospechas |
+| **Red Team** | Columna y Pleno del público fuera del boleto; mejor argumento contra cada signo | Cambiar signos a mano sin pasar por el criterio |
+| **Risk Analyst** | Tabla de riesgo y fallos esperados; nada por debajo del 65 % es fijo | Vender un 50 % como seguro |
+| **Pleno + Portfolio** | Comparar todos los candidatos con la calculadora y elegir con el criterio fijo; dar valor esperado | Elegir por intuición, o ignorar que cada columna cobra por separado |
+| **Auditor** | Volver a ejecutar las cuentas, comprobar cada número y cada afirmación, y devolver lo que falle | Avisos sin comprobar (J19: el falso aviso del tope) |
+
+### Expertos que le faltan a la mesa para calibrar el modelo
+
+Se incorporan en cuanto haya datos para su trabajo; mientras, su tarea la cubre la mente indicada.
+
+| Experto | Qué haría | Qué necesita | Lo cubre ahora |
+|---|---|---|---|
+| **Estadístico de calibración** | Curvas de calibración por liga y por mes; revisar T y los factores de empates con cada bloque de 10 jornadas; detectar cambios de temporada | Pronósticos y resultados guardados (ya los hay desde la J19) | Auditor |
+| **Ingeniero de datos** | Carga automática y diaria de resultados desde dos fuentes que se comprueben entre sí, sin huecos | Una fuente accesible con resultados de Primera, Segunda, Liga F y UEFA | Data Analyst (a mano) |
+| **Especialista en Liga F** | Modelo propio con varias temporadas, no 63 partidos; reglas de selección de Loterías en Liga F | Resultados de 2024/25 y 2025/26 partido a partido | Odds Compiler |
+| **Analista de xG y eventos** | xG para Segunda y Liga F, y tiros a puerta, para que el modelo no dependa solo de goles | Una fuente de xG accesible (hoy solo statz.ai, y solo para Primera) | — |
+| **Analista de lesiones** | Medir cuánto vale cada jugador (minutos, goles y asistencias) para que el ajuste por bajas sea un número y no una opinión | Minutos por jugador y partido | Live Trader |
+| **Modelador de marcadores** | Probar Poisson bivariante o binomial negativa para el Pleno y los resultados M | Backtest de marcadores (los datos ya están) | Pleno Specialist |
+| **Actuario de apuestas mutuas** | Estimar el premio de cada columna según lo que juega el público, para un valor esperado de verdad | Los % del público de cada jornada y los premios oficiales | Portfolio Manager |
+| **Analista del público** | Recoger cada semana los % de cada signo (LAE y APU) | Una captura de quiniela15.com con porcentajes | Market Analyst |
+
 ---
 
 ## FASE 0 — Identificación y por qué estos partidos (Director)
@@ -391,3 +424,4 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 5. **Marcador modelo contra mercado** en cada post-mortem (fase 4).
 6. Registro de errores y de reglas actualizados con la J19.
 7. **Empates revisados con datos** (5/11/2026, a propuesta del usuario): la X está bien calibrada en general; en Segunda el factor baja de 1,08 a 1,00.
+8. **Recordatorio de funciones** de cada mente y **expertos que faltan** para calibrar (sección 1).

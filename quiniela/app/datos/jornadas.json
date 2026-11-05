@@ -78,6 +78,25 @@
    "pleno_resultado": "0-2",
    "log_loss_modelo": 0.8582,
    "log_loss_mercado": 0.729
+  },
+  {
+   "jornada": 20,
+   "fechas": "7–8/11",
+   "tipo": "Doméstica (7 Primera + 3 Segunda + 4 Liga F)",
+   "estado": "Pronóstico v1",
+   "boleto": "Las 16 columnas más probables",
+   "coste": 12,
+   "p14": 0.000631,
+   "p13": 0.00709,
+   "p10": 0.2842,
+   "mejor_columna": null,
+   "sueltas_aciertos": null,
+   "sueltas_total": null,
+   "sueltas_p_todas": 0.4617,
+   "pleno_jugado": null,
+   "pleno_resultado": null,
+   "log_loss_modelo": null,
+   "log_loss_mercado": null
   }
  ]
 }

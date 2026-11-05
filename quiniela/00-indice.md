@@ -16,8 +16,9 @@ Entrada a todo el proyecto. Se actualiza al cerrar cada jornada.
 | J17 | 27–29/10 | Copa del Rey | **No se pronostica** | — | — | — | — | — |
 | J18 | — | Doméstica | Registro en la sesión de claude.ai | 18 € | — | — | — | Modelo 0,897 · mercado 0,786 |
 | **J19** | 3–5/11 | Europea | **Cerrada** (`jornadas/j19/j19-resultados.md`) | 16 columnas · 12 € | 11 (4 × 1,88 € = 7,52 €) | 5/5 | 1-1 (salió 0-2) | Modelo 0,858 · mercado 0,729 (11 partidos) |
+| **J20** | 7–8/11 | Doméstica | **v1 primera pasada** (`jornadas/j20/`) | 16 columnas · 12 € | pendiente | pendiente | 1-1 | pendiente |
 
 ## Pendiente
-- J20: primera pasada con el boleto oficial (ver `jornadas/j20/j20-preparacion.md`), ya con la calibración T = 1,05 del prompt v8.
+- J20: v1 hecha (`jornadas/j20/j20-pronostico.md`). Revisión final y congelación el sábado 7 antes de las 11:00, con el boleto oficial, bajas, cuotas y % del público.
 - Traer a `jornadas/` los JSON de J13–J18 con sus resultados para calcular la calibración acumulada.
 - **Confirmado en la J19:** el modelo infravaloraba a los favoritos (backtest fuera de muestra). Corregido con T = 1,05; revisar en la J29.
