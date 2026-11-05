@@ -263,7 +263,9 @@
     0.368
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "1"
+   "signo_boleto_18eur": "1",
+   "resultado": "X",
+   "marcador": "1-1"
   },
   {
    "n": 13,
@@ -279,7 +281,9 @@
     0.365
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "1"
+   "signo_boleto_18eur": "1",
+   "resultado": "2",
+   "marcador": "1-2"
   },
   {
    "n": 14,
@@ -295,7 +299,9 @@
     0.5605
    ],
    "veto_unico": false,
-   "signo_boleto_18eur": "2"
+   "signo_boleto_18eur": "2",
+   "resultado": "2",
+   "marcador": "0-1"
   }
  ],
  "pleno": {
@@ -406,7 +412,7 @@
  ],
  "fechas": "3–5/11",
  "tipo": "Europea",
- "estado": "Pronóstico v3",
+ "estado": "Cerrada",
  "boleto": "Reducida 7 dobles",
  "publico": {
   "columna": "11122211222112",
@@ -419,5 +425,36 @@
    "nota": "Columna «SIS.» de quiniela15.com: pronóstico ajeno, solo se analiza"
   }
  },
- "vetos": "Retirados por decisión del usuario el 3/11/2026 (se mantiene el ajuste de −4,5 en el precio)"
+ "vetos": "Retirados por decisión del usuario el 3/11/2026 (se mantiene el ajuste de −4,5 en el precio)",
+ "escrutinio": {
+  "fuente": "loteriasyapuestas.es, escrutinio J19 (captura del usuario)",
+  "fecha": "2026-11-05",
+  "premios": {
+   "pleno": 42255.09,
+   "14": 10016.02,
+   "13": 158.26,
+   "12": 11.6,
+   "11": 1.88,
+   "10": 0.0
+  },
+  "acertantes": {
+   "pleno": 2,
+   "14": 18,
+   "13": 534,
+   "12": 7285,
+   "11": 45070,
+   "10": 152115
+  },
+  "apuestas": 1502403,
+  "recaudacion": 1126802.25,
+  "premios_total": 619741.24,
+  "elige8": {
+   "acertantes": 1272,
+   "premio": 21.63
+  }
+ },
+ "mejor_columna": 11,
+ "log_loss_mercado": 0.729,
+ "log_loss_mercado_nota": "bet365, 11 partidos con cuota (el modelo, en esos 11: 0,816)",
+ "cobrado": 7.52
 }

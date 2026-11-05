@@ -15,6 +15,7 @@ import argparse
 import itertools
 import json
 import math
+import os
 import sys
 
 SIGNOS = "1X2"
@@ -43,6 +44,16 @@ def matriz_marcadores(lam_local, lam_visitante, factor_x=1.0, max_goles=10):
         m[i][i] *= factor_x
     total = sum(map(sum, m))
     return [[v / total for v in fila] for fila in m]
+
+
+TEMPERATURA = 1.05  # calibración fuera de muestra (J19): el modelo era tímido con los favoritos
+
+
+def afinar(p, T=TEMPERATURA):
+    """Eleva el 1X2 a la potencia T y renormaliza (T > 1 = más rotundo con el favorito).
+    T = 1,05 se eligió en mar–jun de 2026 y mejoró el log-loss en jul–oct (1.155 partidos)."""
+    q = [v ** T for v in p]
+    return [v / sum(q) for v in q]
 
 
 def uno_x_dos(m):
@@ -176,6 +187,21 @@ def simular_columnas(probs, columnas, n=40000, semilla=19):
     dist[13] = max(0.0, dist[13] + dist[14] - p14)
     dist[14] = p14
     return dist
+
+
+def valor_esperado(probs, columnas, premios, p_pleno=0.0):
+    """Euros esperados de un boleto: cada columna cobra su categoría por separado.
+
+    premios: {"14": €, "13": €, "12": €, "11": €, "10": €, "pleno": €}. Si se da
+    p_pleno (probabilidad del Pleno jugado), una columna con 14 cobra además el Pleno.
+    """
+    total = 0.0
+    for col in columnas:
+        dist = _poisson_binomial([p[SIGNOS.index(s)] for p, s in zip(probs, col)])
+        for k in (10, 11, 12, 13, 14):
+            total += dist[k] * premios.get(str(k), 0.0)
+        total += dist[14] * p_pleno * premios.get("pleno", 0.0)
+    return total
 
 
 def al_menos(dist, k):
@@ -575,6 +601,16 @@ def cmd_boleto(args):
         salida.append(f"  {s['nombre']:<36} {'1 entre ' + format(round(1 / s['p14']), ',').replace(',', '.'):>14}"
                       f" {_pct(s['p13']):>8} {_pct(s['p12']):>8} {_pct(s['p10']):>8}{marca}")
     salida.append("  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).")
+    ruta_premios = args.premios or os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "datos", "premios.json")
+    if os.path.exists(ruta_premios):
+        with open(ruta_premios, encoding="utf-8") as f:
+            filas = json.load(f)["jornadas"]
+        media = {k: sum(x[k] for x in filas) / len(filas) for k in ("14", "13", "12", "11", "10", "pleno")}
+        salida.append(f"  Valor esperado con la media de {len(filas)} jornada(s) del registro de premios "
+                      "(informativo; cada columna cobra por separado):")
+        for s in sistemas:
+            ve = valor_esperado(probs, s["columnas"], media)
+            salida.append(f"    {s['nombre']:<46} {ve:6.2f} € por {len(s['columnas']) * PRECIO_APUESTA:.2f} €")
     if forzados:
         salida.append("  Vetos en el sistema elegido (columnas con un signo distinto del principal):")
         for f in forzados:
@@ -678,6 +714,7 @@ def main(argv=None):
     b.add_argument("entrada", help="JSON de la jornada (ver ejemplo-jornada.json)")
     b.add_argument("--objetivo", choices=["p14", "p13", "p12"], default="p14",
                    help="qué maximiza la reducida (por defecto, P(14))")
+    b.add_argument("--premios", help="tabla de premios (por defecto, datos/premios.json)")
     b.set_defaults(funcion=cmd_boleto)
 
     e = sub.add_parser("empirica", help="distribución empírica del Pleno desde el CSV de partidos")

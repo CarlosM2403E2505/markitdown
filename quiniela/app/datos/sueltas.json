@@ -6,7 +6,7 @@
    "apuesta": "Liverpool marca",
    "partido": "Fenerbahçe – Liverpool",
    "p": 0.908,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 19,
@@ -14,7 +14,7 @@
    "apuesta": "Real Madrid marca",
    "partido": "AEK Atenas – Real Madrid",
    "p": 0.899,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 19,
@@ -22,7 +22,7 @@
    "apuesta": "Man. City marca",
    "partido": "Leipzig – Man. City",
    "p": 0.889,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 19,
@@ -30,7 +30,7 @@
    "apuesta": "Arsenal marca",
    "partido": "Slavia Praga – Arsenal",
    "p": 0.881,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 19,
@@ -38,7 +38,7 @@
    "apuesta": "Barcelona marca",
    "partido": "Barcelona – Aston Villa",
    "p": 0.866,
-   "resultado": null
+   "resultado": true
   }
  ]
 }

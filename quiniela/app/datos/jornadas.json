@@ -64,20 +64,20 @@
    "jornada": 19,
    "fechas": "3–5/11",
    "tipo": "Europea",
-   "estado": "Pronóstico v3",
+   "estado": "Cerrada",
    "boleto": "16 columnas más probables, sin la del público",
    "coste": 12,
    "p14": 0.000709,
    "p13": 0.00788,
    "p10": 0.2981,
-   "mejor_columna": null,
-   "sueltas_aciertos": null,
-   "sueltas_total": null,
+   "mejor_columna": 11,
+   "sueltas_aciertos": 5,
+   "sueltas_total": 5,
    "sueltas_p_todas": 0.5537,
    "pleno_jugado": "1-1",
-   "pleno_resultado": null,
-   "log_loss_modelo": null,
-   "log_loss_mercado": null
+   "pleno_resultado": "0-2",
+   "log_loss_modelo": 0.8582,
+   "log_loss_mercado": 0.729
   }
  ]
 }

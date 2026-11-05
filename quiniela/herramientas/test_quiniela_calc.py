@@ -166,6 +166,22 @@ class TestColumnaDelPublico(unittest.TestCase):
         self.assertGreaterEqual(len({c[0] for c in v[0]["columnas"]}), 2)
 
 
+class TestAfinarYValor(unittest.TestCase):
+    def test_afinar_sube_al_favorito_y_suma_uno(self):
+        q = qc.afinar([0.5, 0.3, 0.2])
+        self.assertAlmostEqual(sum(q), 1.0)
+        self.assertGreater(q[0], 0.5)
+        self.assertEqual(qc.afinar([0.5, 0.3, 0.2], 1.0), [0.5, 0.3, 0.2])
+
+    def test_valor_esperado_cuenta_cada_columna(self):
+        probs = [[1.0, 0.0, 0.0]] * 14
+        premios = {"14": 100.0, "13": 10.0}
+        una = qc.valor_esperado(probs, ["1" * 14], premios)
+        dos = qc.valor_esperado(probs, ["1" * 14, "1" * 13 + "2"], premios)
+        self.assertAlmostEqual(una, 100.0)
+        self.assertAlmostEqual(dos, 110.0)
+
+
 class TestPostmortem(unittest.TestCase):
     def test_puntuacion_de_un_acierto_y_un_fallo(self):
         partidos = [{"partido": "A", "p": [0.5, 0.3, 0.2], "resultado": "1"},

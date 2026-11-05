@@ -3,7 +3,7 @@
 Entrada a todo el proyecto. Se actualiza al cerrar cada jornada.
 
 ## Cómo se trabaja
-- **Prompt:** `prompt-maestro-v7.md` (pegarlo y escribir debajo `Jornada N · fase · presupuesto X €`).
+- **Prompt:** `prompt-maestro-v8.md` (pegarlo y escribir debajo `Jornada N · fase · presupuesto X €`).
 - **Modelo oficial:** `modelo/euro_model.py` (necesita `numpy` y `scipy`; instrucciones en `modelo/README-mesa.md`).
 - **Datos:** `datos/euro_j19.csv`, 23.631 partidos hasta el 1/11/2026.
 - **Cuentas:** `herramientas/quiniela_calc.py` (instrucciones en `herramientas/README.md`).
@@ -15,9 +15,9 @@ Entrada a todo el proyecto. Se actualiza al cerrar cada jornada.
 | J13–J16 | — | — | Registro en la sesión de claude.ai | — | J15: 9 · J16: 8 | J16: 4/5 | — | — |
 | J17 | 27–29/10 | Copa del Rey | **No se pronostica** | — | — | — | — | — |
 | J18 | — | Doméstica | Registro en la sesión de claude.ai | 18 € | — | — | — | Modelo 0,897 · mercado 0,786 |
-| **J19** | 3–5/11 | Europea | **v3 definitiva** (`jornadas/j19/`) | 16 columnas sin la del público · 12 € | pendiente | pendiente | 1-1 | pendiente |
+| **J19** | 3–5/11 | Europea | **Cerrada** (`jornadas/j19/j19-resultados.md`) | 16 columnas · 12 € | 11 (4 × 1,88 € = 7,52 €) | 5/5 | 1-1 (salió 0-2) | Modelo 0,858 · mercado 0,729 (11 partidos) |
 
 ## Pendiente
-- J19: post-mortem tras el jueves 5/11 (resultados, premios por categoría y qué habrían hecho A, B y C).
+- J20: primera pasada con el boleto oficial (ver `jornadas/j20/j20-preparacion.md`), ya con la calibración T = 1,05 del prompt v8.
 - Traer a `jornadas/` los JSON de J13–J18 con sus resultados para calcular la calibración acumulada.
-- Hipótesis para medir: ¿el modelo infravalora a los favoritos claros frente al mercado? (J18 y J19).
+- **Confirmado en la J19:** el modelo infravaloraba a los favoritos (backtest fuera de muestra). Corregido con T = 1,05; revisar en la J29.
