@@ -27,3 +27,9 @@ Fuentes: eduardolosilla.es (escrutinio de la jornada 20), quinielafutbol.info (p
 1. **Jueves 5 por la noche o viernes 6 por la mañana · primera pasada:** con el boleto oficial, los huecos cubiertos y los europeos jugados.
 2. **Sábado 7 por la mañana, antes de las 14:00 · revisión final:** bajas, alineaciones probables, cuotas y lo que juega el público.
 3. **J19 · post-mortem:** cuando termine el jueves 5.
+
+## Cambios del prompt v8 que afectan a la J20
+
+- 1X2 del modelo elevado a T = 1,05 antes de los ajustes (`quiniela_calc.afinar`).
+- Factor de empates: Primera 1,08 · **Segunda 1,00** · Liga F 0,85.
+- Boleto congelado el sábado 7 a las 11:00 como tarde (3 horas antes del cierre de las 14:00).

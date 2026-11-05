@@ -125,12 +125,13 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 | Decaimiento xi | 0,0015 (vida media ~15 meses) | Backtest |
 | Ridge equipo / liga | 10 / 0,05 | Copas: log-loss 0,960 (vs 0,988 plano y 1,038 base) |
 | Escala de goles / mezcla del Pleno | 1,05 / 0,20 | Backtest |
-| Factor de empates | Ligas 1,08 · Copas UEFA 1,00 · Liga F 0,85 | 4.683 partidos no vistos |
+| Factor de empates | Ligas 1,08 · **Segunda 1,00** · Copas UEFA 1,00 · Liga F 0,85 | 4.683 partidos no vistos; Segunda, backtest del 5/11/2026 (431 + 102 partidos) |
 | Campo extra en Primera | +0,07 por lado | 0,9725 → 0,9632 (437 partidos) |
 | Copa del Rey (90') | Modesto vs Primera: 7/17/77 · modesto vs Segunda: 17/23/60 | Base medida |
 
 - **Cómo se aplica el factor de empates:** se multiplica la diagonal de la matriz de marcadores (0-0, 1-1, 2-2…) y se renormaliza para que la matriz sume 1. Es lo que hace `quiniela_calc.py marcador --factor-x`.
 - **Capa de xG (desde la J18, solo Primera):** ataque × (xG/goles)^0,30 y defensa × (xGA/encajados)^0,15, con tope de ±5 % por lado, a partir de la tabla de statz.ai. Muestra pequeña (error 0,48 frente a 0,62 por partido en ataque; defensa no concluyente): **revisar con 20 jornadas**.
+- **Empates (comprobado el 5/11/2026, `modelo/calibracion_empates.py`):** el modelo no infravalora la X; si acaso la sobrevalora (jul–oct 2026: declara un 24,4 %, salen un 21,5 %). En 2.268 partidos fuera de muestra **la X no fue nunca el signo más probable**: por eso casi nunca va en el boleto y cada empate es un fallo de la columna base. No es un error del modelo; se gestiona con las variantes con X de la fase 8, que entran solas cuando la X compite. **Segunda:** factor 1,00 en lugar de 1,08 (temporada 2025/26 para elegirlo; mejora también en 2026/27: log-loss 1,0159 → 1,0108). `modelo/j18_run.py` usa 1,08 para Segunda: en la J20 se corre con 1,00.
 - **Calibración del 1X2 (desde la J20): T = 1,05.** Después de calcular el 1X2 con el modelo y antes de los ajustes de la fase 3, se eleva a la potencia T y se renormaliza (`quiniela_calc.afinar`). Motivo: el modelo era tímido con los favoritos. En julio–octubre de 2026 (1.155 partidos fuera de muestra), los favoritos al 50–60 % ganaron el 59 %; al 60–70 %, el 70 %; al 70–80 %, el 82 %. T se eligió en marzo–junio y mejoró el log-loss en el periodo siguiente (0,9790 → 0,9776), también en favoritos, copas UEFA y Primera (`modelo/calibracion_temperatura.py`). Las lambdas del Pleno no se tocan. Revisar en la J29.
 - **Calibración de referencia (antigua):** favoritos al 60–70 % ganan el 66 %; al 70–80 %, el 82 %. El mejor Pleno se declara al 13,8 % y sale el 15,8 %.
 - **Pleno:** 80 % Poisson + 20 % distribución empírica de los partidos del dataset (`quiniela_calc.py empirica datos/euro_jNN.csv` → campos `empirica` y `mezcla` del Pleno en el JSON).
@@ -181,7 +182,7 @@ Todos los ajustes del precio están aquí, en un solo sitio, y se registran (par
 - **Nada por debajo del 65 % es "fijo".** Los sencillos por debajo llevan ⚠️ y su probabilidad.
 - **Vetos de signo único: retirados** (decisión del usuario del 3/11/2026). El riesgo de un partido (campo nórdico, dato flojo, favorito que viene de perder) ya está en su precio y en esta tabla; el criterio de la fase 8 decide cuántas columnas lo cubren. El ajuste de −4,5 de la fase 3 se mantiene: está medido y no depende del veto. (J19: sin vetos, la P(14) del boleto subió de 1 entre 1.455 a 1 entre 1.410.)
 - La calculadora sigue aceptando `"veto_unico": true` por si el usuario lo pide en un partido concreto.
-- **Empates:** en ligas, más de lo que da Poisson; en copas, menos (se declara 22 %, sale 18 %); en selecciones, muchos (36 %); en la Liga F elegida, casi nunca. **Segunda 2026/27: 21,7 % de X**: no se meten X extra por una sola jornada de empates.
+- **Empates:** en ligas, más de lo que da Poisson; en copas, menos (se declara 22 %, sale 18 %); en selecciones, muchos (36 %); en la Liga F elegida, casi nunca. **Segunda 2026/27: 19,6 % de X** (102 partidos hasta el 1/11; 2025/26: 24,6 %): no se meten X extra por una sola jornada de empates.
 - Dar siempre los **fallos esperados** entre los sencillos (la calculadora los da).
 
 ## FASE 6 — Analista contrario (por cada partido)
@@ -307,6 +308,7 @@ Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calc
 | Quitar la columna del público | J19 | 1 jornada | Provisional | J29 |
 | Datos incompletos: un nivel de riesgo, sin veto | J19 (AEK, Fenerbahçe, Slavia, Union) | 4 partidos | Provisional | J29 |
 | Calibración T = 1,05 | Backtest fuera de muestra (J19) | 1.113 + 1.155 partidos | Medido | J29 (¿T mayor?) |
+| Factor de empates de Segunda 1,00 | Backtest fuera de muestra (5/11/2026) | 431 + 102 partidos | Medido | J29 |
 | Boleto congelado 3 h antes del cierre; una sola mesa | J19 (error de proceso) | — | Regla de proceso | — |
 | Valor esperado como criterio | J19 (premios por columna) | 1 jornada de premios | Informativo hasta 10 jornadas | J29 |
 </registro_de_reglas>
@@ -388,3 +390,4 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 4. **Registro de premios**, con la J19 como primera fila.
 5. **Marcador modelo contra mercado** en cada post-mortem (fase 4).
 6. Registro de errores y de reglas actualizados con la J19.
+7. **Empates revisados con datos** (5/11/2026, a propuesta del usuario): la X está bien calibrada en general; en Segunda el factor baja de 1,08 a 1,00.
