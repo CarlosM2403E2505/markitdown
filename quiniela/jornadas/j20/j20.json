@@ -2,7 +2,7 @@
  "jornada": 20,
  "fechas": "7–8/11",
  "tipo": "Doméstica (7 Primera + 3 Segunda + 4 Liga F)",
- "estado": "Pronóstico v1",
+ "estado": "Pronóstico v1.1",
  "presupuesto": 12,
  "lista": "Fuentes no oficiales coincidentes (eduardolosilla.es, quinielafutbol.info, pronósticos del 5/11): confirmar con el boleto oficial",
  "partidos": [
@@ -103,21 +103,21 @@
    "partido": "Real Sociedad – Rayo",
    "competicion": "Primera",
    "p": [
-    0.4846,
-    0.252,
-    0.2634
+    0.5088,
+    0.246,
+    0.2452
    ],
    "p_sin_T": [
-    0.477,
-    0.2559,
-    0.267
+    0.5001,
+    0.2504,
+    0.2495
    ],
-   "lambda_local": 1.673,
-   "lambda_visitante": 1.191,
+   "lambda_local": 1.742,
+   "lambda_visitante": 1.162,
    "factor_empates": 1.08,
    "ajuste": [
-    0.96,
-    1.025
+    1.0,
+    1.0
    ],
    "veto_unico": false
   },
@@ -126,21 +126,21 @@
    "partido": "Celta – Levante",
    "competicion": "Primera",
    "p": [
-    0.5154,
-    0.2469,
-    0.2377
+    0.5397,
+    0.24,
+    0.2203
    ],
    "p_sin_T": [
-    0.5064,
-    0.2513,
-    0.2423
+    0.5296,
+    0.2447,
+    0.2256
    ],
-   "lambda_local": 1.734,
-   "lambda_visitante": 1.126,
+   "lambda_local": 1.806,
+   "lambda_visitante": 1.098,
    "factor_empates": 1.08,
    "ajuste": [
-    0.96,
-    1.025
+    1.0,
+    1.0
    ],
    "veto_unico": false
   },
@@ -149,21 +149,21 @@
    "partido": "Villarreal – Getafe",
    "competicion": "Primera",
    "p": [
-    0.6058,
-    0.2335,
-    0.1607
+    0.5862,
+    0.2397,
+    0.1741
    ],
    "p_sin_T": [
-    0.5932,
-    0.2392,
-    0.1676
+    0.5742,
+    0.245,
+    0.1807
    ],
-   "lambda_local": 1.821,
-   "lambda_visitante": 0.848,
+   "lambda_local": 1.777,
+   "lambda_visitante": 0.883,
    "factor_empates": 1.08,
    "ajuste": [
-    1.025,
-    0.96
+    1.0,
+    1.0
    ],
    "veto_unico": false
   },
@@ -385,7 +385,7 @@
   {
    "partido": "Villarreal – Getafe",
    "apuesta": "1X (Villarreal o empate)",
-   "p": 0.839
+   "p": 0.826
   }
  ]
 }

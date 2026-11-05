@@ -139,3 +139,25 @@ Cinco partidos distintos, tres de Primera. Aciertos esperados: 4,29 · P(las 5) 
 - Lista y cierre: eduardolosilla.es (jornada 20), quinielafutbol.info, loterias1fuengirola.com, quiniela15.com (pronósticos de la jornada 20), consultados el 4 y el 5/11/2026.
 - Resultados añadidos: elperiodicodeceuta.es y clarosports.com (Primera, jornada 11); futboltotal.futbol y movistarplus.es (Segunda, jornada 12); laliga.com (Liga F, jornada 9); ESPN, Yahoo Sports y loteriasyapuestas.es (europeos de la semana).
 - Copa: futboltotal.futbol (guía de la Copa del Rey 2026/27).
+
+---
+
+# v1.1 · sin ajuste de cansancio · viernes 6/11/2026
+
+> A petición del usuario, la mesa midió con datos cómo afectan los partidos europeos y de Copa entre semana a la liga (`modelo/calibracion_europa_liga.py`). Resultado: el ajuste de cansancio empeoraba las predicciones y se retira (prompt v8, fase 3). Salida: `j20-calculadora-v1.1.txt`.
+
+## Qué cambia
+
+| # | Partido | v1 (con ajuste) | v1.1 (sin ajuste) |
+|---|---|---|---|
+| 5 | Real Sociedad – Rayo | 48,5 / 25,2 / 26,3 | **50,9 / 24,6 / 24,5** |
+| 6 | Celta – Levante | 51,5 / 24,7 / 23,8 | **54,0 / 24,0 / 22,0** |
+| 7 | Villarreal – Getafe | 60,6 / 23,4 / 16,1 | **58,6 / 24,0 / 17,4** |
+
+- **El boleto no cambia:** las mismas 16 columnas. P(14) mejora de 1 entre 1.584 a **1 entre 1.489**. P(14 y Pleno) = 1 entre 16.030.
+- **Suelta del Villarreal (1X):** de 83,9 % a 82,6 %. P(las 5) = 46,2 %.
+- **Avisos de calendario** (no mueven el precio): la Real Sociedad, el Celta y el Getafe jugaron el jueves 5 en Europa; el Betis, el Villarreal, el Real Madrid, el Atlético y el Barcelona, el martes o el miércoles. El Celta tiene Copa el viernes 13, en el parón.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v1.1 | 6/11/2026 | Sin ajuste de cansancio; mismo boleto |

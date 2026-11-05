@@ -71,7 +71,7 @@ Las mentes con **veto** pueden tumbar un signo. Si dos vetos chocan, decide el D
 | **Data Analyst / Quant** | Datos al día antes de dar precio: ningún equipo sin su último partido de liga, Europa y Copa | Precio con resultados de hace dos semanas (J20: faltaban 2 de Primera, 6 de Segunda, la jornada 9 de Liga F y los europeos) |
 | **Odds Compiler** | Precio del modelo con la calibración vigente (T = 1,05; empates por liga) | Usar un factor de empates que no es el de esa liga (Segunda) |
 | **Live Trader (bajas)** | Lista de bajas con clase A–D, fuente y fecha; porteros y delanteros centro uno a uno | Mover un precio con una duda (solo A y B confirmadas) |
-| **Calendario y fatiga** | Quién jugó Europa o Copa, qué día y cuántos minutos; parones y vuelta de internacionales | Olvidar el ajuste del jueves europeo o las rotaciones antes de Copa |
+| **Calendario y fatiga** | Quién jugó Europa o Copa, qué día, con prórroga o no, y cuántos minutos; parones y vuelta de internacionales. Se informa como aviso: no mueve el precio (medido el 6/11) | Mover el precio por cansancio sin evidencia, u olvidar avisar de una prórroga o de rotaciones |
 | **Táctico** | Contexto cualitativo de cada partido, sin mover números | Afirmaciones de estilo sin comprobar en los datos (J19: «la Roma defiende bien») |
 | **Contexto y motivación** | Separar hechos de narrativa (entrenador nuevo, derbi, objetivo) | Subir a un equipo porque «necesita ganar» |
 | **Market Analyst** | Cuotas y % del público después del precio; marcador modelo contra mercado en cada post-mortem | Meter cuotas en el modelo, o no anotarlas |
@@ -180,14 +180,12 @@ Todos los ajustes del precio están aquí, en un solo sitio, y se registran (par
 - **El Auditor compara el 1X2 sin ajustes con el final**, partido a partido. Resta el −4,5 donde corresponda y solo señala lo que sobre del tope. (J19: el aviso sobre los partidos 2, 3 y 9 fue un error del Auditor por no restar el −4,5.)
 - **Excepción obligatoria:** baja del **portero** o del **delantero centro** titular → ajuste completo, hasta un 10 % (lección del Rayo sin Batalla, J16).
 - **Favorito que viene de perder en Europa:** −4,5 puntos a su probabilidad de ganar, repartidos proporcionalmente entre X y 2 (88 partidos UEFA 2025-27 fuera de muestra: ganó 43 de 47,0 esperados).
-- **Copa o Europa entre semana**, en ataque y en defensa:
-
-| Cuándo se jugó | Ataque | Goles encajados |
-|---|---|---|
-| Europa el jueves | −4 % | +2–3 % |
-| Copa el jueves | −2 % | +1,5 % |
-| Copa con titulares o con prórroga | −4 % | +3 % |
-| Martes o miércoles | Sin ajuste | Sin ajuste |
+- **Copa o Europa entre semana: sin ajuste** (retirado el 6/11/2026 con datos; `modelo/calibracion_europa_liga.py`, `calibracion_reglas_fatiga.py`).
+  - **Medido:** 1.371 partidos de liga de clubes europeos justo después de jugar en Europa, comparados con 3.451 de los mismos clubes sin Europa esa semana, todos fuera de muestra.
+  - **Hay un efecto, pero es pequeño:** −0,07 puntos por partido; tras el jueves, con partido el domingo, −0,11 puntos (ataque −3,9 %, goles encajados +3,6 %). En Primera (164 partidos) no se ve.
+  - **Ajustar empeora el precio:** con la regla antigua (jueves −4 % / +2,5 %), el log-loss pasa de 0,9568 a 0,9592; en Primera, de 0,9239 a 0,9275. Ninguna variante probada mejora a no ajustar: el modelo ya infravalora a estos clubes y el recorte los infravalora más.
+  - **Copa:** 12 casos de la primera ronda de 2026/27, −0,05 puntos por partido. Sin efecto medible.
+  - Queda como **aviso** en el apartado D (quién jugó, cuándo, prórrogas), sin mover números. Se vuelve a medir en la J29.
 
 - **Evitar el doble conteo:** si la baja lleva semanas, el modelo ya la ha visto en parte; ajustar menos.
 - **Revisión:** tras 30 ajustes registrados, si no mejoran el log-loss frente al precio sin ajustar, se eliminan.
@@ -334,6 +332,7 @@ Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calc
 | No cambiar signos con >10 puntos en el Red Team | J16 (Sabadell) | 1 partido | Provisional | J26 |
 | Tope ±5 % a los ajustes | J15 (Oporto–PSV) | 1 partido | Provisional | Tras 30 ajustes |
 | Ajuste completo por portero o delantero centro | J16 (Rayo sin Batalla) | 1 partido | Provisional | Tras 30 ajustes |
+| Ajuste por Europa o Copa entre semana | Mesa (sin medir) | 1.371 + 12 partidos (6/11/2026) | **Retirado**: empeoraba el log-loss | J29 |
 | Factor de empates, campo extra, Copa del Rey | Backtests | 437–4.683 partidos | Medido | Cada temporada |
 | Capa de xG | Temporada 2026/27 | Pocas jornadas | Provisional | Con 20 jornadas |
 | Criterio de sistema (90 % de P(14), luego P(≥12)) | Decisión del usuario del 2/11 | 1 jornada | Provisional; se sustituye por valor esperado con premios reales | J29 (10 jornadas) |
@@ -425,3 +424,4 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 6. Registro de errores y de reglas actualizados con la J19.
 7. **Empates revisados con datos** (5/11/2026, a propuesta del usuario): la X está bien calibrada en general; en Segunda el factor baja de 1,08 a 1,00.
 8. **Recordatorio de funciones** de cada mente y **expertos que faltan** para calibrar (sección 1).
+9. **Fatiga medida con datos** (6/11/2026, a petición del usuario): el ajuste por Europa o Copa entre semana se retira porque empeoraba las predicciones.
