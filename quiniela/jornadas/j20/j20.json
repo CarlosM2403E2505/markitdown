@@ -2,7 +2,7 @@
  "jornada": 20,
  "fechas": "7–8/11",
  "tipo": "Doméstica (7 Primera + 3 Segunda + 4 Liga F)",
- "estado": "Pronóstico v1.1",
+ "estado": "Jugada (pendiente de premios)",
  "presupuesto": 12,
  "lista": "Fuentes no oficiales coincidentes (eduardolosilla.es, quinielafutbol.info, pronósticos del 5/11): confirmar con el boleto oficial",
  "partidos": [
@@ -27,7 +27,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "1-2"
   },
   {
    "n": 2,
@@ -50,7 +52,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "X",
+   "marcador": "1-1"
   },
   {
    "n": 3,
@@ -73,7 +77,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "0-3"
   },
   {
    "n": 4,
@@ -96,7 +102,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "0-2"
   },
   {
    "n": 5,
@@ -119,7 +127,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "1",
+   "marcador": "1-0"
   },
   {
    "n": 6,
@@ -142,7 +152,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "X",
+   "marcador": "0-0"
   },
   {
    "n": 7,
@@ -165,7 +177,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "1",
+   "marcador": "2-0"
   },
   {
    "n": 8,
@@ -188,7 +202,9 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "1-2"
   },
   {
    "n": 9,
@@ -211,7 +227,8 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "2"
   },
   {
    "n": 10,
@@ -234,7 +251,8 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "2"
   },
   {
    "n": 11,
@@ -257,7 +275,8 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "X"
   },
   {
    "n": 12,
@@ -280,7 +299,8 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "X"
   },
   {
    "n": 13,
@@ -303,7 +323,8 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "2"
   },
   {
    "n": 14,
@@ -326,7 +347,8 @@
     1.0,
     1.0
    ],
-   "veto_unico": false
+   "veto_unico": false,
+   "resultado": "1"
   }
  ],
  "pleno": {
@@ -359,7 +381,8 @@
    "M-2": 0.0402,
    "M-M": 0.02071
   },
-  "mezcla": 0.2
+  "mezcla": 0.2,
+  "resultado_pleno": "1-2"
  },
  "sueltas": [
   {
@@ -387,5 +410,6 @@
    "apuesta": "1X (Villarreal o empate)",
    "p": 0.826
   }
- ]
+ ],
+ "combinacion_fuente": "elperiodicodeceuta.es (combinación de SELAE) y lotoluck.com, consultados el 8/11/2026"
 }
