@@ -79,6 +79,46 @@
    "partido": "Villarreal – Getafe",
    "p": 0.826,
    "resultado": null
+  },
+  {
+   "jornada": 21,
+   "n": 1,
+   "apuesta": "Menos de 3,5 goles",
+   "partido": "Alavés F – Eibar F",
+   "p": 0.938,
+   "resultado": null
+  },
+  {
+   "jornada": 21,
+   "n": 2,
+   "apuesta": "Almería marca",
+   "partido": "Almería – Andorra",
+   "p": 0.884,
+   "resultado": null
+  },
+  {
+   "jornada": 21,
+   "n": 3,
+   "apuesta": "Mallorca marca",
+   "partido": "Mallorca – Córdoba",
+   "p": 0.872,
+   "resultado": null
+  },
+  {
+   "jornada": 21,
+   "n": 4,
+   "apuesta": "Castellón marca",
+   "partido": "Valladolid – Castellón",
+   "p": 0.822,
+   "resultado": null
+  },
+  {
+   "jornada": 21,
+   "n": 5,
+   "apuesta": "Atlético F marca",
+   "partido": "Sevilla F – Atlético F",
+   "p": 0.819,
+   "resultado": null
   }
  ]
 }

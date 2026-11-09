@@ -94,6 +94,7 @@ Se incorporan en cuanto haya datos para su trabajo; mientras, su tarea la cubre 
 | **Analista de lesiones** | Medir cuánto vale cada jugador (minutos, goles y asistencias) para que el ajuste por bajas sea un número y no una opinión | Minutos por jugador y partido | Live Trader |
 | **Modelador de marcadores** | Probar Poisson bivariante o binomial negativa para el Pleno y los resultados M | Backtest de marcadores (los datos ya están) | Pleno Specialist |
 | **Actuario de apuestas mutuas** | Estimar el premio de cada columna según lo que juega el público, para un valor esperado de verdad | Los % del público de cada jornada y los premios oficiales | Portfolio Manager |
+| **Analista de selecciones** | Base de partidos de selecciones y un modelo propio; hoy se usa el Elo público como sustituto | Resultados de selecciones de los últimos años y acceso a eloratings.net (bloqueado desde el entorno) | Odds Compiler |
 | **Analista del público** | Recoger cada semana los % de cada signo (LAE y APU) | Una captura de quiniela15.com con porcentajes | Market Analyst |
 
 ---
@@ -332,6 +333,8 @@ Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calc
 | No cambiar signos con >10 puntos en el Red Team | J16 (Sabadell) | 1 partido | Provisional | J26 |
 | Tope ±5 % a los ajustes | J15 (Oporto–PSV) | 1 partido | Provisional | Tras 30 ajustes |
 | Ajuste completo por portero o delantero centro | J16 (Rayo sin Batalla) | 1 partido | Provisional | Tras 30 ajustes |
+| Liga de cada equipo por su temporada actual (en vez de «más partidos en 365 días») | J20 (Girona–Almería) | 444 partidos españoles + 2.595 de otras ligas | **No se aplica**: empeora en España (+10 milésimas con ascendidos y descendidos), mejora fuera | J29 |
+| Selecciones sin datos propios: Elo público + 2,4 goles (supuesto) | J21 | — | Provisional, baja calidad | Cada parón |
 | Ajuste por Europa o Copa entre semana | Mesa (sin medir) | 1.371 + 12 partidos (6/11/2026) | **Retirado**: empeoraba el log-loss | J29 |
 | Factor de empates, campo extra, Copa del Rey | Backtests | 437–4.683 partidos | Medido | Cada temporada |
 | Capa de xG | Temporada 2026/27 | Pocas jornadas | Provisional | Con 20 jornadas |
