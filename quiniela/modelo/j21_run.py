@@ -94,7 +94,8 @@ LF = """1|Deportivo|Sevilla|0|1
 9|Valencia|Eibar|2|1
 9|Espanyol|Logrono|2|1
 10|Eibar|Real Sociedad|1|2
-10|Athletic|Real Madrid|1|1"""
+10|Athletic|Real Madrid|1|1
+10|Granada|Espanyol|0|1"""
 LF_M = [l.split("|") for l in LF.splitlines()]
 LF_M = [(h, a, int(x), int(y)) for _, h, a, x, y in LF_M if "Barcelona" not in (h, a)]
 
@@ -129,11 +130,11 @@ FIX = [(1, "Valladolid – Castellón", "real valladolid", "castellon", "M"),
        (7, "Granada – Las Palmas", "granada", "las palmas", "M"),
        (8, "Eibar – Cádiz", "eibar", "cadiz", "M"),
        (9, "Eldense – Sabadell", "eldense", "sabadell", "M"),
-       (10, "Alavés F – Eibar F", "Alaves", "Eibar", "F"),
-       (11, "Real Sociedad F – Athletic F", "Real Sociedad", "Athletic", "F"),
-       (12, "Sevilla F – Atlético F", "Sevilla", "Atletico", "F"),
-       (13, "Valencia F – Granada F", "Valencia", "Granada", "F")]
-# 14 Bélgica – Italia y 15 España – Inglaterra: selecciones, sin datos en el modelo (ver j21_selecciones.py)
+       (11, "Alavés F – Eibar F", "Alaves", "Eibar", "F"),
+       (12, "Real Sociedad F – Athletic F", "Real Sociedad", "Athletic", "F"),
+       (13, "Sevilla F – Atlético F", "Sevilla", "Atletico", "F"),
+       (14, "Valencia F – Granada F", "Valencia", "Granada", "F")]
+# 10 Bélgica – Italia y 15 España – Inglaterra: selecciones, sin datos en el modelo (ver j21_selecciones.py)
 
 def afinar(p, t=T):
     q = [v ** t for v in p]; z = sum(q)

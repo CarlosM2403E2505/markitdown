@@ -85,7 +85,7 @@
    "n": 1,
    "apuesta": "Menos de 3,5 goles",
    "partido": "Alavés F – Eibar F",
-   "p": 0.938,
+   "p": 0.936,
    "resultado": null
   },
   {
@@ -101,7 +101,7 @@
    "n": 3,
    "apuesta": "Mallorca marca",
    "partido": "Mallorca – Córdoba",
-   "p": 0.872,
+   "p": 0.869,
    "resultado": null
   },
   {
@@ -109,7 +109,7 @@
    "n": 4,
    "apuesta": "Castellón marca",
    "partido": "Valladolid – Castellón",
-   "p": 0.822,
+   "p": 0.821,
    "resultado": null
   },
   {
@@ -117,7 +117,7 @@
    "n": 5,
    "apuesta": "Atlético F marca",
    "partido": "Sevilla F – Atlético F",
-   "p": 0.819,
+   "p": 0.818,
    "resultado": null
   }
  ]

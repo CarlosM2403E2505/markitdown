@@ -19,10 +19,10 @@
 | 11 | Athletic F – Real Madrid F | — | X | 16,4 % | ❌ |
 | 12 | Logroño F – Sevilla F | — | X | 26,4 % | ✅ |
 | 13 | Eibar F – Real Sociedad F | — | 2 | 40,2 % | ✅ |
-| 14 | Tenerife F – Alavés F | — | 1 | 64,6 % | ✅ |
+| 14 | Tenerife F – Alavés F | aplazado | 1 (sorteo de Loterías) | 64,6 % | ✅ |
 | 15 | Pleno: Atlético – Barcelona | 1-2 | | 7,6 % (4.º) | ❌ (1-1) |
 
-Marcadores de los partidos 9 a 14: `pendiente`.
+Marcadores: Girona 0-1 Almería y Sporting 1-2 Valladolid (elperiodicodeceuta.es, teleceuta.com). El Tenerife F–Alavés F se aplazó (futboleras.io, lasfutbolistas.com): su «1» salió del sorteo. Los de Logroño–Sevilla y Athletic–Real Madrid (1-1) de Liga F, según futboleras.io.
 
 ## Balance provisional
 

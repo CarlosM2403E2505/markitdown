@@ -94,3 +94,70 @@ P(las 5) = 48,7 %. Ninguna de selecciones, por la baja calidad de su precio.
 | Versión | Fecha | Qué |
 |---|---|---|
 | v1 | 9/11/2026 | Primera pasada |
+
+---
+
+# v1.1 · segunda comprobación · martes 10/11/2026
+
+> A petición del usuario se ha vuelto a comprobar todo. Salida: `j21-calculadora-v1.1.txt`.
+
+## Lo que estaba mal en la v1
+
+1. **El orden de los partidos.** En el boleto, **Bélgica–Italia es el 10** y la Liga F va del 11 al 14 (quinielafutbol.info, quiniela15.com y loterias1fuengirola.com coinciden). La v1 lo ponía en el 14: con aquel orden, las columnas se habrían rellenado mal. **No usar las columnas de la v1.**
+2. **Faltaban resultados.** Añadidos 6 de la jornada 13 de Segunda: Girona 0-1 Almería, Sporting 1-2 Valladolid, Las Palmas 2-0 Eldense, Córdoba 3-0 Ceuta, Burgos 2-1 Celta Fortuna y Sabadell 0-0 Real Sociedad B. Y uno de la Liga F: Granada 0-1 Espanyol.
+
+## Lo nuevo que hay que saber
+
+- **Tres partidos de la jornada 13 de Segunda se aplazaron:** Castellón–Eibar, Granada–Tenerife y Andorra–Mallorca. No hay motivo oficial; una web lo atribuye a un fallecimiento, pero la fuente es dudosa. Afecta a seis equipos de esta jornada (partidos 1, 3, 4, 6, 7 y 8): llegan con un partido menos y más descanso. **Sin ajuste**, porque no hay nada medido.
+- **El Tenerife F–Alavés F de la J20 se aplazó.** El «1» de la combinación oficial de aquel partido salió del sorteo de Loterías, no del juego.
+- **Bélgica–Italia:** sigue sin Elo. Control (no entra en el precio): en el ranking FIFA, Bélgica es 8.ª e Italia 15.ª; un mercado de predicciones da 44/18/31 (≈ 47/19/33 normalizado). El precio propio (51/26/23) le da a Italia 10 puntos menos que ese mercado: **riesgo muy alto**, y se mira en la revisión final.
+
+## Precio v1.1 (cambios de más de 1 punto)
+
+| # | Partido | v1 | v1.1 |
+|---|---|---|---|
+| 5 | Oviedo – Girona | 36,1 / 27,4 / 36,5 | **36,5 / 27,6 / 35,9** (el 1 pasa a ser el signo principal) |
+| 14 | Valencia F – Granada F | 27,9 / 23,1 / 49,0 | **29,4 / 24,4 / 46,2** |
+
+El resto se mueve menos de un punto.
+
+## Boleto v1.1 · 16 apuestas sencillas · 12 € · Pleno 1-0 en todas
+
+```
+ 1. 22111111211122     9. 22112111211222
+ 2. 22112111211122    10. 21112111111122
+ 3. 21111111211122    11. 21111111211222
+ 4. 22111111111122    12. 22111111111222
+ 5. 21112111211122    13. 21112111211222
+ 6. 22112111111122    14. 22112111111222
+ 7. 22111111211222    15. 22111111X11122
+ 8. 21111111111122    16. 2211111121X122
+```
+
+| # | Partido | En el boleto |
+|---|---|---|
+| 1 | Valladolid – Castellón | 2 |
+| 2 | Real Sociedad B – Sporting | 1 2 |
+| 3 | Almería – Andorra | 1 |
+| 4 | Mallorca – Córdoba | 1 |
+| 5 | Oviedo – Girona | 1 2 |
+| 6 | Tenerife – Ceuta | 1 |
+| 7 | Granada – Las Palmas | 1 |
+| 8 | Eibar – Cádiz | 1 |
+| 9 | Eldense – Sabadell | 1 X 2 |
+| 10 | **Bélgica – Italia** | 1 |
+| 11 | Alavés F – Eibar F | 1 X |
+| 12 | Real Sociedad F – Athletic F | 1 2 |
+| 13 | Sevilla F – Atlético F | 2 |
+| 14 | Valencia F – Granada F | 2 |
+| 15 | **Pleno: España – Inglaterra** | **1-0** |
+
+Sistema elegido: C + 2 columnas con X. P(14) = 1 entre 2.935 · P(14 y Pleno) = 1 entre 18.902.
+
+**14 signos:** `2 2 1 1 1 1 1 1 2 1 1 1 2 2`
+
+**Sueltas:** Alavés F–Eibar F menos de 3,5 goles (93,6 %), marcan el Almería (88,4 %), el Mallorca (86,9 %), el Castellón (82,1 %) y el Atlético F (81,8 %). P(las 5) = 48,3 %.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v1.1 | 10/11/2026 | Orden corregido (Bélgica–Italia es el 10), 7 resultados nuevos, aplazamientos anotados |

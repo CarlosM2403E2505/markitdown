@@ -2,45 +2,46 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v1",
+ "estado": "Pronóstico v1.1",
  "presupuesto": 12,
- "lista": "Fuentes no oficiales (quinielafutbol.info, quiniela15.com, lotopia.com, 9/11/2026); orden 1–14 supuesto: confirmar con el boleto oficial",
+ "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
   {
    "n": 1,
    "partido": "Valladolid – Castellón",
    "competicion": "Segunda",
    "p": [
-    0.2724,
-    0.2321,
-    0.4955
+    0.2778,
+    0.2326,
+    0.4896
    ],
    "p_sin_T": [
-    0.2758,
-    0.2368,
-    0.4875
+    0.2809,
+    0.2372,
+    0.4819
    ],
-   "lambda_local": 1.243,
-   "lambda_visitante": 1.726,
+   "lambda_local": 1.259,
+   "lambda_visitante": 1.718,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
   },
   {
    "n": 2,
    "partido": "Real Sociedad B – Sporting",
    "competicion": "Segunda",
    "p": [
-    0.3645,
-    0.2488,
-    0.3867
+    0.3706,
+    0.251,
+    0.3784
    ],
    "p_sin_T": [
-    0.3632,
-    0.2525,
-    0.3843
+    0.369,
+    0.2546,
+    0.3764
    ],
-   "lambda_local": 1.379,
-   "lambda_visitante": 1.426,
+   "lambda_local": 1.375,
+   "lambda_visitante": 1.391,
    "factor_empates": 1.0,
    "veto_unico": false
   },
@@ -49,55 +50,57 @@
    "partido": "Almería – Andorra",
    "competicion": "Segunda",
    "p": [
-    0.5729,
-    0.1996,
-    0.2275
+    0.5783,
+    0.1993,
+    0.2224
    ],
    "p_sin_T": [
-    0.5614,
-    0.2057,
-    0.2329
+    0.5666,
+    0.2054,
+    0.228
    ],
-   "lambda_local": 2.155,
-   "lambda_visitante": 1.336,
+   "lambda_local": 2.154,
+   "lambda_visitante": 1.311,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
   },
   {
    "n": 4,
    "partido": "Mallorca – Córdoba",
    "competicion": "Segunda",
    "p": [
-    0.6516,
-    0.197,
-    0.1514
+    0.6438,
+    0.1997,
+    0.1565
    ],
    "p_sin_T": [
-    0.6373,
-    0.204,
-    0.1587
+    0.6297,
+    0.2065,
+    0.1637
    ],
-   "lambda_local": 2.053,
-   "lambda_visitante": 0.914,
+   "lambda_local": 2.031,
+   "lambda_visitante": 0.927,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
   },
   {
    "n": 5,
    "partido": "Oviedo – Girona",
    "competicion": "Segunda",
    "p": [
-    0.3608,
-    0.2739,
-    0.3653
+    0.3653,
+    0.2757,
+    0.359
    ],
    "p_sin_T": [
-    0.3595,
-    0.2766,
-    0.3638
+    0.3638,
+    0.2783,
+    0.3579
    ],
-   "lambda_local": 1.196,
-   "lambda_visitante": 1.204,
+   "lambda_local": 1.194,
+   "lambda_visitante": 1.182,
    "factor_empates": 1.0,
    "veto_unico": false
   },
@@ -106,157 +109,84 @@
    "partido": "Tenerife – Ceuta",
    "competicion": "Segunda",
    "p": [
-    0.4945,
-    0.2481,
-    0.2574
+    0.5041,
+    0.2464,
+    0.2495
    ],
    "p_sin_T": [
-    0.4865,
-    0.2522,
-    0.2613
+    0.4956,
+    0.2506,
+    0.2537
    ],
-   "lambda_local": 1.567,
-   "lambda_visitante": 1.077,
+   "lambda_local": 1.587,
+   "lambda_visitante": 1.06,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
   },
   {
    "n": 7,
    "partido": "Granada – Las Palmas",
    "competicion": "Segunda",
    "p": [
-    0.4221,
-    0.2511,
-    0.3268
+    0.4173,
+    0.2518,
+    0.3309
    ],
    "p_sin_T": [
-    0.4178,
-    0.2547,
-    0.3275
+    0.4132,
+    0.2554,
+    0.3313
    ],
-   "lambda_local": 1.467,
-   "lambda_visitante": 1.27,
+   "lambda_local": 1.454,
+   "lambda_visitante": 1.275,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
   },
   {
    "n": 8,
    "partido": "Eibar – Cádiz",
    "competicion": "Segunda",
    "p": [
-    0.5389,
-    0.251,
-    0.2101
+    0.5395,
+    0.2508,
+    0.2097
    ],
    "p_sin_T": [
-    0.5289,
-    0.2554,
-    0.2157
+    0.5295,
+    0.2553,
+    0.2153
    ],
-   "lambda_local": 1.553,
-   "lambda_visitante": 0.89,
+   "lambda_local": 1.555,
+   "lambda_visitante": 0.889,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
   },
   {
    "n": 9,
    "partido": "Eldense – Sabadell",
    "competicion": "Segunda",
    "p": [
-    0.3601,
-    0.2762,
-    0.3637
+    0.3536,
+    0.2837,
+    0.3627
    ],
    "p_sin_T": [
-    0.3589,
-    0.2787,
-    0.3624
+    0.3527,
+    0.286,
+    0.3613
    ],
-   "lambda_local": 1.181,
-   "lambda_visitante": 1.188,
+   "lambda_local": 1.126,
+   "lambda_visitante": 1.143,
    "factor_empates": 1.0,
    "veto_unico": false,
    "riesgo": "Muy alto",
-   "nota_riesgo": "Sabadell: 12 partidos en los datos (dato flojo)"
+   "nota_riesgo": "Sabadell: 13 partidos en los datos (dato flojo)"
   },
   {
    "n": 10,
-   "partido": "Alavés F – Eibar F",
-   "competicion": "Liga F",
-   "p": [
-    0.4246,
-    0.33,
-    0.2454
-   ],
-   "p_sin_T": [
-    0.4202,
-    0.3305,
-    0.2493
-   ],
-   "lambda_local": 0.869,
-   "lambda_visitante": 0.594,
-   "factor_empates": 0.85,
-   "veto_unico": false
-  },
-  {
-   "n": 11,
-   "partido": "Real Sociedad F – Athletic F",
-   "competicion": "Liga F",
-   "p": [
-    0.3922,
-    0.2349,
-    0.3729
-   ],
-   "p_sin_T": [
-    0.3896,
-    0.2391,
-    0.3713
-   ],
-   "lambda_local": 1.269,
-   "lambda_visitante": 1.233,
-   "factor_empates": 0.85,
-   "veto_unico": false
-  },
-  {
-   "n": 12,
-   "partido": "Sevilla F – Atlético F",
-   "competicion": "Liga F",
-   "p": [
-    0.2281,
-    0.2067,
-    0.5652
-   ],
-   "p_sin_T": [
-    0.2335,
-    0.2126,
-    0.5539
-   ],
-   "lambda_local": 1.008,
-   "lambda_visitante": 1.692,
-   "factor_empates": 0.85,
-   "veto_unico": false
-  },
-  {
-   "n": 13,
-   "partido": "Valencia F – Granada F",
-   "competicion": "Liga F",
-   "p": [
-    0.2785,
-    0.2312,
-    0.4903
-   ],
-   "p_sin_T": [
-    0.2816,
-    0.2358,
-    0.4826
-   ],
-   "lambda_local": 1.023,
-   "lambda_visitante": 1.427,
-   "factor_empates": 0.85,
-   "veto_unico": false
-  },
-  {
-   "n": 14,
    "partido": "Bélgica – Italia",
    "competicion": "Selecciones",
    "p": [
@@ -268,6 +198,83 @@
    "lambda_visitante": 0.91,
    "riesgo": "Muy alto",
    "precio": "Sin rating de ninguna de las dos: supuesto de igualdad + 100 de Elo por campo; 2,4 goles (supuesto). Baja calidad.",
+   "veto_unico": false,
+   "control_mercado": "Mercado de predicciones (robinhood.com, 10/11): Bélgica 44, empate 18, Italia 31 céntimos; normalizado ≈ 47/19/33. Solo control. FIFA: Bélgica 8.ª, Italia 15.ª (sofascore.com)."
+  },
+  {
+   "n": 11,
+   "partido": "Alavés F – Eibar F",
+   "competicion": "Liga F",
+   "p": [
+    0.4261,
+    0.3279,
+    0.246
+   ],
+   "p_sin_T": [
+    0.4216,
+    0.3285,
+    0.2498
+   ],
+   "lambda_local": 0.877,
+   "lambda_visitante": 0.6,
+   "factor_empates": 0.85,
+   "veto_unico": false
+  },
+  {
+   "n": 12,
+   "partido": "Real Sociedad F – Athletic F",
+   "competicion": "Liga F",
+   "p": [
+    0.3915,
+    0.2337,
+    0.3748
+   ],
+   "p_sin_T": [
+    0.3889,
+    0.238,
+    0.3731
+   ],
+   "lambda_local": 1.277,
+   "lambda_visitante": 1.245,
+   "factor_empates": 0.85,
+   "veto_unico": false
+  },
+  {
+   "n": 13,
+   "partido": "Sevilla F – Atlético F",
+   "competicion": "Liga F",
+   "p": [
+    0.229,
+    0.2075,
+    0.5635
+   ],
+   "p_sin_T": [
+    0.2343,
+    0.2133,
+    0.5523
+   ],
+   "lambda_local": 1.007,
+   "lambda_visitante": 1.683,
+   "factor_empates": 0.85,
+   "veto_unico": false
+  },
+  {
+   "n": 14,
+   "partido": "Valencia F – Granada F",
+   "competicion": "Liga F",
+   "p": [
+    0.2941,
+    0.244,
+    0.4619
+   ],
+   "p_sin_T": [
+    0.2963,
+    0.2481,
+    0.4556
+   ],
+   "lambda_local": 0.993,
+   "lambda_visitante": 1.303,
+   "factor_empates": 0.85,
    "veto_unico": false
   }
  ],
@@ -308,7 +315,7 @@
   {
    "partido": "Alavés F – Eibar F",
    "apuesta": "Menos de 3,5 goles",
-   "p": 0.938
+   "p": 0.936
   },
   {
    "partido": "Almería – Andorra",
@@ -318,17 +325,17 @@
   {
    "partido": "Mallorca – Córdoba",
    "apuesta": "Mallorca marca",
-   "p": 0.872
+   "p": 0.869
   },
   {
    "partido": "Valladolid – Castellón",
    "apuesta": "Castellón marca",
-   "p": 0.822
+   "p": 0.821
   },
   {
    "partido": "Sevilla F – Atlético F",
    "apuesta": "Atlético F marca",
-   "p": 0.819
+   "p": 0.818
   }
  ]
 }
