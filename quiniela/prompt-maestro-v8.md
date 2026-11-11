@@ -439,3 +439,11 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 9. **Fatiga medida con datos** (6/11/2026, a petición del usuario): el ajuste por Europa o Copa entre semana se retira porque empeoraba las predicciones.
 10. **Claude in Chrome** (11/11/2026): vía segura para el boleto oficial, los % del público y las cuotas; importador que comprueba el boleto; valor por signo en la calculadora.
 11. **Datos nuevos (11/11/2026):** Liga F con la temporada anterior completa y Elo real de selecciones, gracias al acceso a Wikipedia y eloratings.net.
+
+
+## Anexo F — Auditoría de empates y cartera de boletos (11/11/2026)
+
+- **Nuevo en la mesa: Especialista en empates y marcadores** (Dixon-Coles, inflado de empates, recalibración). Primer informe: la X del modelo está calibrada; ninguna alternativa mejora fuera de muestra (`modelo/auditoria_empates*.py`). Se repite cada 10 jornadas.
+- **Nuevo en la mesa: Diseñador de carteras.** Con varios boletos, nunca se repite una columna entre ellos. Se comparan «las N más probables» con el mejor completo de dobles y triples, y se elige con el criterio fijo (`herramientas/cartera.py`).
+- **Regla de presentación:** en cada jornada se informa P(ningún empate) y en cuántos partidos cubre el boleto la X.
+- **Pleno con varios boletos:** el principal en los boletos de más P(14) y la segunda opción (si está a 1 punto o menos) en los demás.

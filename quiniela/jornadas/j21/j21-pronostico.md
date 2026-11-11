@@ -274,3 +274,28 @@ No se han encontrado noticias de la jornada.
 | Versión | Fecha | Qué |
 |---|---|---|
 | v1.3 | 11/11/2026 | Noticias del día; ajuste del Pleno por Rodri, Olmo y Guéhi. Boleto y Pleno sin cambios |
+
+---
+
+# v1.4 · 11/11/2026 · auditoría de empates y cartera de 8 boletos (72 €, pedida por el usuario)
+
+## Auditoría de empates (`modelo/auditoria_empates.py` y `auditoria_empates_2.py`)
+Validación que avanza en el tiempo: el modelo se reajusta cada mes y predice el mes siguiente.
+- **Primera y Segunda, 1.834 partidos fuera de muestra:** empates reales 25,2 %, probabilidad dada por el modelo 25,0 %. En total están bien medidos.
+- **Por tramos:** en los partidos igualados el modelo se queda 1–2 puntos corto, y en los desiguales da de más (15,9 % frente a 8,7 % real).
+- **Alternativas probadas** (elegidas con 2024-25 y probadas con 2025-26 y 2026-27):
+  - Dixon-Coles con rho de −0,05 a −0,15;
+  - factores de empate de 1,00 a 1,15;
+  - recalibración de P(X) según lo igualado del partido.
+  **Ninguna mejora fuera de muestra** (1,0107 actual frente a 1,0110–1,0196). No se aplica ninguna.
+- **Liga F, 54 partidos fuera de muestra:** empates reales 22,2 %. Factor 0,85 → 21,5 % dado; 0,90 → 22,5 %; 1,00 → 24,4 %. El 0,85 y el 0,90 empatan en log-loss. Se mantiene.
+- **Conclusión:** la X está bien medida. El problema está en el boleto:
+  - P(ningún empate en los 14) = 2,0 %, y se esperan 3,4 empates;
+  - el boleto de 16 columnas solo cubre la X en un partido.
+  Con 96 columnas la X queda cubierta en 6 partidos.
+
+## Cartera de 8 boletos (`herramientas/cartera.py`, salida en `j21-cartera-72.txt`)
+- **Sistema:** 4 de 12 € y 4 de 6 €, con 96 columnas distintas (sin repetir), por orden de probabilidad.
+- **Comparación:** C (las 96 más probables) frente a F (completo de 5 dobles y 1 triple). Por el criterio fijo gana **C**.
+- **Probabilidades:** P(14) 1 entre 350; P(≥13) 2,46 %; P(≥12) 10,0 %.
+- **Pleno:** 1-0 en los boletos de 12 € y M-0 en los de 6 €. Entonces P(14 y Pleno) = 1 entre 2.268, frente a 1 entre 2.228 con todo 1-0. Se confirma el sábado con el % del público.
