@@ -229,3 +229,48 @@ Sistema elegido: C (las 16 columnas más probables). **14 signos:** `2 2 1 1 1 1
 | Versión | Fecha | Qué |
 |---|---|---|
 | v1.2 | 11/11/2026 | Liga F con la temporada pasada (backtest 1,061 → 0,976) y Elo real de Bélgica e Italia |
+
+---
+
+# v1.3 · noticias del miércoles 11/11/2026 · la mesa al completo, con foco en el Pleno
+
+> Búsquedas del día (Live Trader, Calendario, Contexto). Salida: `j21-calculadora-v1.3.txt`. **El boleto no cambia.**
+
+## Pleno: España – Inglaterra (domingo 15, estadio Metropolitano)
+
+| Hecho | Clase | Fuente | Efecto |
+|---|---|---|---|
+| España sin **Rodri** ni **Dani Olmo** | B | Convocatoria del 6/11 (meridiano.net, sportaragon.com) | Ataque de España ×0,97 |
+| Inglaterra sin **Guéhi** (central titular); entra Dan Burn | B | ESPN, englandfootball.com (9/11) | Goles de España ×1,02 |
+| Pickford, portero titular de Inglaterra | B | englandfootball.com | — |
+| Las dos juegan el **jueves 12**: España en Praga, Inglaterra contra Croacia en Wembley | B | Varias | **Aviso:** si el jueves alguna se clasifica, puede rotar el domingo. Se mira el sábado |
+| Inglaterra es segunda del grupo A3 y solo perdió con España | B | englandfootball.com | Contexto, sin efecto en el precio |
+
+**Precio del Pleno:** 69,3 / 20,8 / 9,8. **Resultado más probable: 1-0 (15,7 %).** Le siguen M-0 (14,7 %) y 2-0 (14,1 %). Como el M-0 está a solo 1 punto, **el sábado se juega el que menos juegue el público** (fase 7). P(14 y Pleno) = 1 entre 10.073.
+
+## Bélgica – Italia (partido 10)
+
+- **Courtois** no juega la Nations League (portero titular). Es una baja larga y el Elo ya incluye partidos sin él: **sin ajuste**, para no contarla dos veces.
+- Debast y Openda, posibles bajas (clase C: lista de plantilla sin fecha fiable). Sin efecto.
+- De Bruyne y Lukaku, convocados; vuelve Doku.
+- Italia: no se han encontrado noticias de noviembre. `pendiente`.
+
+## Segunda
+
+- **Granada:** bajas de Pau Casadesús y Baïla Diallo (B, futbolfantasy.com). Posición sin comprobar: aviso, sin ajuste.
+- **Las Palmas:** José Arnáiz, duda (B).
+- **Castellón** (Ousmane Camara) y **Almería** (João Carvalho): datos de clase C, sin fecha fiable. Solo aviso.
+
+## Liga F
+
+No se han encontrado noticias de la jornada.
+
+## Pendiente para el sábado 14 (congelación a las 11:00)
+
+1. **Resultados del jueves** de España e Inglaterra, y si alguna ya está clasificada (posibles rotaciones).
+2. **Boleto oficial, % del público y cuotas** con Claude in Chrome (`navegador/encargo-claude-in-chrome.md`). **Deciden el Pleno** (1-0 frente a M-0) y la columna del público.
+3. Bajas de última hora y onces probables de las selecciones.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v1.3 | 11/11/2026 | Noticias del día; ajuste del Pleno por Rodri, Olmo y Guéhi. Boleto y Pleno sin cambios |

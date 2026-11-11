@@ -480,7 +480,7 @@
    "proximo_n": 3,
    "p_ganar_proximo": 0.5783,
    "bajas": null,
-   "dudas": null,
+   "dudas": 1,
    "elo": null
   },
   {
@@ -503,7 +503,7 @@
    "proximo_n": 1,
    "p_ganar_proximo": 0.4896,
    "bajas": null,
-   "dudas": null,
+   "dudas": 1,
    "elo": null
   },
   {
@@ -571,7 +571,7 @@
    "proximo": "Granada – Las Palmas",
    "proximo_n": 7,
    "p_ganar_proximo": 0.4173,
-   "bajas": null,
+   "bajas": 2,
    "dudas": null,
    "elo": null
   },
@@ -687,7 +687,7 @@
    "proximo_n": 7,
    "p_ganar_proximo": 0.3309,
    "bajas": null,
-   "dudas": null,
+   "dudas": 1,
    "elo": null
   },
   {
@@ -1376,7 +1376,7 @@
    "elo": 2287,
    "proximo": "España – Inglaterra",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.6975,
+   "p_ganar_proximo": 0.6934,
    "bajas": null,
    "dudas": null
   },
@@ -1399,7 +1399,7 @@
    "elo": 2146,
    "proximo": "España – Inglaterra",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.097,
+   "p_ganar_proximo": 0.0985,
    "bajas": null,
    "dudas": null
   },

@@ -2,7 +2,7 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v1.2",
+ "estado": "Pronóstico v1.3",
  "presupuesto": 12,
  "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
@@ -287,11 +287,11 @@
   "partido": "España – Inglaterra",
   "competicion": "Selecciones",
   "p": [
-   0.6975,
-   0.2055,
-   0.097
+   0.6934,
+   0.2081,
+   0.0985
   ],
-  "lambda_local": 1.87,
+  "lambda_local": 1.85,
   "lambda_visitante": 0.53,
   "factor_x": 1.0,
   "empirica": {
@@ -313,7 +313,8 @@
    "M-M": 0.02071
   },
   "mezcla": 0.2,
-  "precio": "Elo de eloratings.net (World.tsv, descargado el 11/11/2026): España 2287, Inglaterra 2146, +100 por campo; 2,4 goles (supuesto)."
+  "precio": "Elo de eloratings.net (World.tsv, descargado el 11/11/2026): España 2287, Inglaterra 2146, +100 por campo; 2,4 goles (supuesto).",
+  "ajuste": "España sin Rodri ni Olmo (ataque ×0,97, clase B); Inglaterra sin Guéhi (goles de España ×1,02, clase B). Tope 5 % respetado."
  },
  "sueltas": [
   {
