@@ -204,6 +204,12 @@ def valor_esperado(probs, columnas, premios, p_pleno=0.0):
     return total
 
 
+def valor_publico(p, pct):
+    """Valor de cada signo: probabilidad del modelo / % que juega el público (fase 4).
+    Por encima de 1,3, el público desprecia ese signo. pct en tanto por cien (0–100)."""
+    return [p[i] / (pct[i] / 100) if pct[i] else None for i in range(3)]
+
+
 def al_menos(dist, k):
     return sum(dist[k:])
 
@@ -560,6 +566,19 @@ def cmd_boleto(args):
         salida.append(f"{i:2d}. {p['partido']:<32} 1 {_pct(p['p'][0])} X {_pct(p['p'][1])} 2 {_pct(p['p'][2])}"
                       f"  → {signo}{marca}  riesgo {_riesgo(p['p'])}{veto}")
     salida.append(f"Fallos esperados con los 14 signos individuales: {fallos:.2f}")
+
+    porcentajes = (datos.get("publico") or {}).get("porcentajes") or {}
+    if porcentajes:
+        salida.append("\n## Valor frente al público (modelo / % LAE; > 1,3 = signo despreciado por el público)")
+        for i, p in enumerate(partidos, 1):
+            lae = (porcentajes.get(str(p.get("n", i))) or {}).get("lae")
+            if not lae:
+                salida.append(f"{i:2d}. {p['partido']:<32} sin porcentajes")
+                continue
+            v = valor_publico(p["p"], lae)
+            marcas = "  ← valor en " + ", ".join(SIGNOS[k] for k in range(3) if v[k] and v[k] > 1.3) if any(x and x > 1.3 for x in v) else ""
+            salida.append(f"{i:2d}. {p['partido']:<32} público {lae[0]:.0f}/{lae[1]:.0f}/{lae[2]:.0f}  valor "
+                          + " ".join(f"{SIGNOS[k]} {v[k]:.2f}" if v[k] else f"{SIGNOS[k]} —" for k in range(3)) + marcas)
 
     boletos, n_cand = [], 0
     for nombre, construir in (("Boleto A · 4 dobles completos", lambda: mejor_boleto_a(probs, forzados)),

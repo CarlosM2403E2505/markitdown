@@ -25,3 +25,10 @@ Un partido con `"veto_unico": true` va siempre a doble.
 python3 quiniela_calc.py empirica ../datos/euro_j19.csv   # pegar el resultado en pleno.empirica
 ```
 Con `"empirica"` y `"mezcla": 0.2` en el Pleno, la calculadora da los mismos marcadores que el modelo oficial.
+
+## Datos leídos con Claude in Chrome
+```bash
+python3 importar_navegador.py ../jornadas/j21/j21.json leido.json   # comprueba el boleto oficial y carga % y cuotas
+python3 -m unittest test_importar_navegador.py
+```
+El formato del JSON está en `../navegador/encargo-claude-in-chrome.md`. Si el boleto oficial no coincide con la lista de la jornada, no se escribe nada.

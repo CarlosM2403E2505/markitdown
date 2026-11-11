@@ -6,6 +6,7 @@ Entrada a todo el proyecto. Se actualiza al cerrar cada jornada.
 - **Prompt:** `prompt-maestro-v8.md` (pegarlo y escribir debajo `Jornada N · fase · presupuesto X €`).
 - **Modelo oficial:** `modelo/euro_model.py` (necesita `numpy` y `scipy`; instrucciones en `modelo/README-mesa.md`).
 - **Datos:** `datos/euro_j19.csv`, 23.631 partidos hasta el 1/11/2026.
+- **Datos del navegador (Claude in Chrome):** procedimiento seguro y texto para pegar en `navegador/encargo-claude-in-chrome.md`; carga con `herramientas/importar_navegador.py`.
 - **Cuentas:** `herramientas/quiniela_calc.py` (instrucciones en `herramientas/README.md`).
 - **App «Control Quiniela»:** https://claude.ai/artifact/L7JpUFruxB2b3HLWoNRG6c. Sus datos salen de `python3 herramientas/app_datos.py` (escribe `app/datos/`); las bajas se mantienen a mano en `app/bajas.json` y las jornadas antiguas en `app/historial.json`. La página está en `app/index.html`.
 
