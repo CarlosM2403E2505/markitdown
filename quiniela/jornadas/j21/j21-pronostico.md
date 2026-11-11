@@ -321,3 +321,22 @@ Validación que avanza en el tiempo: el modelo se reajusta cada mes y predice el
 - Valor esperado por euro ≈ 0,77 (negativo) con cualquier número de boletos. Jugar más solo sube la probabilidad en proporción.
 - **No hay razón técnica para pasar de 12 €.**
 - Con 12 €: boleto 1 de la cartera. Si el usuario decide jugar más, se juega en el orden de la cartera, sin repetir columnas.
+
+---
+
+# v1.6 · 11/11/2026 · 4 boletos de formato oficial (máximo 20 € cada uno)
+
+- **Herramienta:** `herramientas/boletos_oficiales.py`. Salida en `j21-boletos-oficiales.txt`.
+- **Formatos de Loterías (loteriasyapuestas.es, «Quinielas reducidas»):**
+  - Reducida 1: 4 triples, 9 apuestas, 6,75 €.
+  - Reducida 2: 7 dobles, 16 apuestas, 12 €.
+  - Reducida 3: 3 dobles + 3 triples, 24 apuestas, 18 €.
+  - Directas.
+- **Criterio:** cada boleto es de un formato distinto y el que más P(14) nueva añade por euro.
+- **Elegidos:**
+  - Directa de 4 dobles (12 €).
+  - Directa de 3 dobles + 1 triple (18 €).
+  - Reducida 1 (6,75 €).
+  - Reducida 3 (18 €).
+- **Los 4 juntos:** 54,75 €; P(14) 1 entre 542; P(≥12) 9,0 %.
+- **La Reducida 2 (7 dobles)** no entra: P(14) 1 entre 2.770 por 12 €, frente a 1 entre 1.583 de los 4 dobles directos al mismo precio.
