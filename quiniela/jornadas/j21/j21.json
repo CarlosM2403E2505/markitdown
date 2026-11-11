@@ -2,7 +2,7 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v1.3",
+ "estado": "Pronóstico v1.7 (selecciones con el modelo validado)",
  "presupuesto": 12,
  "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
@@ -12,8 +12,8 @@
    "competicion": "Segunda",
    "p": [
     0.2778,
-    0.2326,
-    0.4896
+    0.2327,
+    0.4895
    ],
    "p_sin_T": [
     0.2809,
@@ -31,9 +31,9 @@
    "partido": "Real Sociedad B – Sporting",
    "competicion": "Segunda",
    "p": [
-    0.3706,
-    0.251,
-    0.3784
+    0.3705,
+    0.2511,
+    0.3783
    ],
    "p_sin_T": [
     0.369,
@@ -50,8 +50,8 @@
    "partido": "Almería – Andorra",
    "competicion": "Segunda",
    "p": [
-    0.5783,
-    0.1993,
+    0.5796,
+    0.198,
     0.2224
    ],
    "p_sin_T": [
@@ -70,8 +70,8 @@
    "partido": "Mallorca – Córdoba",
    "competicion": "Segunda",
    "p": [
-    0.6438,
-    0.1997,
+    0.6437,
+    0.1998,
     0.1565
    ],
    "p_sin_T": [
@@ -90,9 +90,9 @@
    "partido": "Oviedo – Girona",
    "competicion": "Segunda",
    "p": [
-    0.3653,
-    0.2757,
-    0.359
+    0.3654,
+    0.2758,
+    0.3589
    ],
    "p_sin_T": [
     0.3638,
@@ -109,8 +109,8 @@
    "partido": "Tenerife – Ceuta",
    "competicion": "Segunda",
    "p": [
-    0.5041,
-    0.2464,
+    0.5064,
+    0.2441,
     0.2495
    ],
    "p_sin_T": [
@@ -149,9 +149,9 @@
    "partido": "Eibar – Cádiz",
    "competicion": "Segunda",
    "p": [
-    0.5395,
-    0.2508,
-    0.2097
+    0.5394,
+    0.2509,
+    0.2098
    ],
    "p_sin_T": [
     0.5295,
@@ -190,16 +190,20 @@
    "partido": "Bélgica – Italia",
    "competicion": "Selecciones",
    "p": [
-    0.5752,
-    0.2467,
-    0.1781
+    0.5094,
+    0.2407,
+    0.2499
    ],
    "lambda_local": 1.622,
    "lambda_visitante": 0.778,
    "riesgo": "Muy alto",
-   "precio": "Elo de eloratings.net (World.tsv, descargado el 11/11/2026): Bélgica 1956, Italia 1910, +100 por campo; 2,4 goles (supuesto).",
+   "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo)",
    "veto_unico": false,
-   "control_mercado": "Mercado de predicciones (robinhood.com, 10/11): Bélgica 44, empate 18, Italia 31 céntimos; normalizado ≈ 47/19/33. Solo control. FIFA: Bélgica 8.ª, Italia 15.ª (sofascore.com)."
+   "control_mercado": "Mercado de predicciones (robinhood.com, 10/11): Bélgica 44, empate 18, Italia 31 céntimos; normalizado ≈ 47/19/33. Solo control. FIFA: Bélgica 8.ª, Italia 15.ª (sofascore.com).",
+   "xg": [
+    1.693,
+    1.112
+   ]
   },
   {
    "n": 11,
@@ -248,7 +252,7 @@
    "p": [
     0.1947,
     0.1849,
-    0.6204
+    0.6205
    ],
    "p_sin_T": [
     0.2013,
@@ -268,7 +272,7 @@
    "p": [
     0.3286,
     0.234,
-    0.4374
+    0.4373
    ],
    "p_sin_T": [
     0.3293,
@@ -287,12 +291,12 @@
   "partido": "España – Inglaterra",
   "competicion": "Selecciones",
   "p": [
-   0.6934,
-   0.2081,
-   0.0985
+   0.5274,
+   0.2463,
+   0.2263
   ],
-  "lambda_local": 1.85,
-  "lambda_visitante": 0.53,
+  "lambda_local": 1.638,
+  "lambda_visitante": 0.982,
   "factor_x": 1.0,
   "empirica": {
    "0-0": 0.06977,
@@ -312,9 +316,9 @@
    "M-2": 0.04019,
    "M-M": 0.02071
   },
-  "mezcla": 0.2,
-  "precio": "Elo de eloratings.net (World.tsv, descargado el 11/11/2026): España 2287, Inglaterra 2146, +100 por campo; 2,4 goles (supuesto).",
-  "ajuste": "España sin Rodri ni Olmo (ataque ×0,97, clase B); Inglaterra sin Guéhi (goles de España ×1,02, clase B). Tope 5 % respetado."
+  "mezcla": 0.0,
+  "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo); Pleno sin mezcla empírica (validado)",
+  "ajuste": "España sin Rodri ni Olmo (×0,97) e Inglaterra sin Guéhi (×1,02 a los goles de España), clase B."
  },
  "sueltas": [
   {

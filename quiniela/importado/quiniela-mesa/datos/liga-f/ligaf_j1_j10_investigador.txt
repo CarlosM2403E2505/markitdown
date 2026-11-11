@@ -1,0 +1,79 @@
+1|2026-08-29|Abanca|Sevilla|0|1
+1|2026-08-29|Real Sociedad|Logrono|0|2
+1|2026-08-29|Eibar|Espanyol|1|0
+1|2026-08-29|Madrid CFF|Granada|3|1
+1|2026-08-30|Athletic|Badalona|3|1
+1|2026-08-30|Alaves|Valencia|2|0
+1|2026-08-30|Barcelona|Tenerife|5|0
+1|2026-08-30|Real Madrid|Atletico|3|2
+2|2026-09-05|Espanyol|Badalona|0|1
+2|2026-09-05|Valencia|Madrid CFF|1|3
+2|2026-09-05|Sevilla|Barcelona|0|4
+2|2026-09-06|Atletico|Alaves|1|0
+2|2026-09-06|Tenerife|Abanca|0|0
+2|2026-09-06|Logrono|Athletic|0|1
+2|2026-09-06|Real Madrid|Eibar|0|0
+2|2026-09-07|Granada|Real Sociedad|3|2
+3|2026-09-11|Abanca|Real Madrid|0|2
+3|2026-09-12|Athletic|Espanyol|2|2
+3|2026-09-12|Madrid CFF|Sevilla|1|0
+3|2026-09-12|Barcelona|Atletico|4|2
+3|2026-09-13|Alaves|Granada|1|0
+3|2026-09-13|Real Sociedad|Tenerife|1|1
+3|2026-09-13|Logrono|Valencia|2|1
+3|2026-09-13|Eibar|Badalona|1|4
+4|2026-09-18|Alaves|Barcelona|0|6
+4|2026-09-19|Badalona|Real Sociedad|0|0
+4|2026-09-19|Espanyol|Madrid CFF|5|1
+4|2026-09-19|Atletico|Logrono|1|0
+4|2026-09-19|Real Madrid|Valencia|3|1
+4|2026-09-20|Granada|Abanca|0|3
+4|2026-09-20|Tenerife|Sevilla|1|3
+4|2026-09-20|Eibar|Athletic|1|0
+5|2026-09-26|Badalona|Granada|0|1
+5|2026-09-26|Real Sociedad|Real Madrid|3|5
+5|2026-09-26|Logrono|Barcelona|0|2
+5|2026-09-26|Madrid CFF|Alaves|1|0
+5|2026-09-27|Athletic|Atletico|3|2
+5|2026-09-27|Valencia|Tenerife|1|2
+5|2026-09-27|Sevilla|Eibar|0|1
+5|2026-09-27|Abanca|Espanyol|1|1
+6|2026-10-03|Sevilla|Badalona|3|3
+6|2026-10-03|Espanyol|Alaves|1|0
+6|2026-10-03|Abanca|Atletico|1|2
+6|2026-10-03|Madrid CFF|Athletic|2|2
+6|2026-10-04|Granada|Eibar|0|0
+6|2026-10-04|Tenerife|Logrono|2|1
+6|2026-10-04|Barcelona|Real Madrid|7|0
+6|2026-10-04|Valencia|Real Sociedad|0|1
+7|2026-10-17|Logrono|Granada|2|3
+7|2026-10-17|Badalona|Tenerife|0|4
+7|2026-10-17|Athletic|Valencia|1|0
+7|2026-10-17|Real Madrid|Espanyol|3|1
+7|2026-10-18|Real Sociedad|Barcelona|2|1
+7|2026-10-18|Alaves|Sevilla|1|1
+7|2026-10-18|Eibar|Abanca|2|3
+7|2026-10-18|Atletico|Madrid CFF|4|0
+8|2026-10-23|Atletico|Valencia|4|0
+8|2026-10-24|Athletic|Sevilla|0|0
+8|2026-10-24|Real Sociedad|Espanyol|1|1
+8|2026-10-24|Real Madrid|Tenerife|3|2
+8|2026-10-24|Logrono|Badalona|1|0
+8|2026-10-24|Barcelona|Granada|3|0
+8|2026-10-25|Abanca|Alaves|2|1
+8|2026-10-25|Eibar|Madrid CFF|2|2
+9|2026-10-31|Granada|Atletico|1|1
+9|2026-10-31|Valencia|Eibar|2|1
+9|2026-10-31|Espanyol|Logrono|2|1
+9|2026-10-31|Madrid CFF|Abanca|2|1
+9|2026-11-01|Alaves|Real Sociedad|1|1
+9|2026-11-01|Badalona|Barcelona|0|4
+9|2026-11-01|Sevilla|Real Madrid|1|3
+9|2026-11-02|Tenerife|Athletic|2|0
+10|2026-11-07|Granada|Espanyol|0|1
+10|2026-11-07|Athletic|Real Madrid|1|1
+10|2026-11-07|Eibar|Real Sociedad|1|2
+10|2026-11-08|Logrono|Sevilla|2|2
+10|2026-11-08|Barcelona|Madrid CFF|5|1
+10|2026-11-09|Atletico|Badalona|3|0
+10|2026-11-09|Abanca|Valencia|0|2

@@ -340,3 +340,19 @@ Validación que avanza en el tiempo: el modelo se reajusta cada mes y predice el
   - Reducida 3 (18 €).
 - **Los 4 juntos:** 54,75 €; P(14) 1 entre 542; P(≥12) 9,0 %.
 - **La Reducida 2 (7 dobles)** no entra: P(14) 1 entre 2.770 por 12 €, frente a 1 entre 1.583 de los 4 dobles directos al mismo precio.
+
+---
+
+# v1.7 · 11/11/2026 · rescate de «quiniela-mesa»: selecciones con el modelo validado
+
+Detalle: `analisis/rescate-quiniela-mesa.md`. Salida: `j21-calculadora-v1.7.txt` y `j21-boletos-oficiales-v1.7.txt`.
+
+| Nº | Partido | v1.6 | **v1.7** | Motivo |
+|---|---|---|---|---|
+| 10 | Bélgica – Italia | 57,5 / 24,7 / 17,8 | **50,9 / 24,1 / 25,0** | Poisson de selecciones (log-loss en prueba 0,795 frente a 0,810 del Elo) |
+| 15 | España – Inglaterra | 69,3 / 20,8 / 9,8 | **52,7 / 24,6 / 22,6** | Ídem, con las bajas de clase B (Rodri, Olmo y Guéhi) |
+
+- **Pleno:** 1-0 11,9 % y 1-1 11,7 % casi empatados. **El sábado se juega el que menos juegue el público.**
+- **Datos:** se añaden Tenerife 2-2 Andorra y 3 partidos de Champions. Los precios de los clubes cambian menos de 0,3 puntos.
+- **4 boletos de 20 € como máximo:** mismos formatos y mismos dobles y triples que en la v1.6. Los 4 juntos (54,75 €): P(14) 1 entre 609, P(≥12) 8,3 %.
+- **Retorno:** se corrige el «0,77 € por euro». La Quiniela devuelve de media unos 0,55 € por euro jugado.

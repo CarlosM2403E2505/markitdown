@@ -447,3 +447,19 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 - **Nuevo en la mesa: Diseñador de carteras.** Con varios boletos, nunca se repite una columna entre ellos. Se comparan «las N más probables» con el mejor completo de dobles y triples, y se elige con el criterio fijo (`herramientas/cartera.py`).
 - **Regla de presentación:** en cada jornada se informa P(ningún empate) y en cuántos partidos cubre el boleto la X.
 - **Pleno con varios boletos:** el principal en los boletos de más P(14) y la segunda opción (si está a 1 punto o menos) en los demás.
+
+
+## Anexo G — Lo rescatado de «quiniela-mesa» (11/11/2026)
+
+Detalle y pruebas en `analisis/rescate-quiniela-mesa.md`.
+
+- **Selecciones:** el precio sale del Poisson de selecciones (`modelo/selecciones_modelo.py`, datos martj42), con empates ×1,00 y sin mezcla empírica en el Pleno.
+  - Log-loss en prueba 0,795, frente a 0,810 del Elo.
+  - El Elo queda como control.
+  - Antes de cada jornada con selecciones se añaden los partidos que falten en `results.csv`.
+- **Valor esperado:** no se calcula con premios medios. Se informa de que la Quiniela devuelve unos 0,55 € por euro jugado.
+- **Registro de premios:** una fila por jornada en el post-mortem. Si no hubo acertantes, el premio es null.
+- **Cambio de entrenador, enfrentamientos directos y árbitros:** solo aviso (medido).
+- **Histórico de Loterías:** media de 3,55 X por jornada; P(0 X) = 2,2 %.
+- **Lectura del post-mortem:** `importado/quiniela-mesa/docs/registro-errores.md` y `patrones-seleccion-lae.md`.
+- **Pendiente de probar en una jornada con Primera:** empates ×1,20 en partidos igualados de Primera y EURO_F 1,12.

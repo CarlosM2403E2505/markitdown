@@ -620,16 +620,11 @@ def cmd_boleto(args):
         salida.append(f"  {s['nombre']:<36} {'1 entre ' + format(round(1 / s['p14']), ',').replace(',', '.'):>14}"
                       f" {_pct(s['p13']):>8} {_pct(s['p12']):>8} {_pct(s['p10']):>8}{marca}")
     salida.append("  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).")
-    ruta_premios = args.premios or os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "datos", "premios.json")
-    if os.path.exists(ruta_premios):
-        with open(ruta_premios, encoding="utf-8") as f:
-            filas = json.load(f)["jornadas"]
-        media = {k: sum(x[k] for x in filas) / len(filas) for k in ("14", "13", "12", "11", "10", "pleno")}
-        salida.append(f"  Valor esperado con la media de {len(filas)} jornada(s) del registro de premios "
-                      "(informativo; cada columna cobra por separado):")
-        for s in sistemas:
-            ve = valor_esperado(probs, s["columnas"], media)
-            salida.append(f"    {s['nombre']:<46} {ve:6.2f} € por {len(s['columnas']) * PRECIO_APUESTA:.2f} €")
+    # Actuario (J21, rescate de «quiniela-mesa»): el valor esperado con premios medios no es válido.
+    # Los premios altos salen justo en las jornadas raras, cuando nuestras columnas aciertan poco;
+    # con la J13 en el registro daba 37,75 € por 12 €, imposible. Solo se informa del retorno medio.
+    salida.append("  Retorno: la Quiniela devuelve de media unos 0,55 € por euro jugado (lo que va a premios).")
+    salida.append("  Ningún sistema lo cambia; el valor solo mejora jugando lo que el público no juega (fase 4).")
     if forzados:
         salida.append("  Vetos en el sistema elegido (columnas con un signo distinto del principal):")
         for f in forzados:

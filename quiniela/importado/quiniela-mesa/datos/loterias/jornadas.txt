@@ -1,0 +1,152 @@
+#FECHA|N|Local|Visitante|resultado|signo
+@2026-08-16|J?|tipo=domestica
+2026-08-16|1|Alavés (M)|Getafe (M)|3-0|1
+2026-08-16|2|Sevilla (M)|Rayo Vallecano (M)|2-1|1
+2026-08-16|3|Racing de Santander (M)|Villarreal (M)|2-2|X
+2026-08-16|4|Espanyol (M)|Levante (M)|3-0|1
+2026-08-16|5|Celta (M)|Osasuna (M)|-|X
+2026-08-16|6|Andorra (M)|Ceuta (M)|5-1|1
+2026-08-16|7|Cádiz (M)|Celta Fortuna (M)|0-0|X
+2026-08-16|8|R. Oviedo (M)|Granada (M)|0-0|X
+2026-08-16|9|Mallorca (M)|R. Valladolid (M)|2-0|1
+2026-08-16|10|Eibar (M)|Tenerife (M)|1-3|2
+2026-08-16|11|Burgos (M)|Córdoba (M)|3-2|1
+2026-08-16|12|Girona (M)|Leganés (M)|1-1|X
+2026-08-16|13|Las Palmas (M)|Albacete (M)|2-1|1
+2026-08-16|14|Sporting (M)|Sabadell (M)|0-0|X
+2026-08-16|15|Deportivo (M)|Elche (M)|1-1|P
+2026-08-23|1|Athletic Club (M)|Sevilla (M)|1-3|2
+2026-08-23|2|Valencia (M)|Celta (M)|0-0|X
+2026-08-23|3|Espanyol (M)|Real Madrid (M)|1-2|2
+2026-08-23|4|Getafe (M)|Racing Santander (M)|1-0|1
+2026-08-23|5|Elche (M)|Barcelona (M)|0-5|2
+2026-08-23|6|Osasuna (M)|Levante (M)|0-0|X
+2026-08-23|7|Málaga (M)|Deportivo (M)|1-1|X
+2026-08-23|8|R. Oviedo (M)|Leganés (M)|0-1|2
+2026-08-23|9|Ceuta (M)|Las Palmas (M)|0-2|2
+2026-08-23|10|Eldense (M)|Cádiz (M)|2-2|X
+2026-08-23|11|Eibar (M)|R. Valladolid (M)|1-0|1
+2026-08-23|12|Castellón (M)|Sabadell (M)|0-0|X
+2026-08-23|13|Sporting (M)|Burgos (M)|1-0|1
+2026-08-23|14|Tenerife (M)|Almería (M)|1-0|1
+2026-08-23|15|At. Madrid (M)|Villarreal (M)|2-2|P
+2026-08-30|1|Levante (M)|Betis (M)|5-2|1
+2026-08-30|2|Real Sociedad (M)|Espanyol (M)|2-1|1
+2026-08-30|3|Sevilla (M)|At. Madrid (M)|1-3|2
+2026-08-30|4|Real Madrid (M)|Málaga (M)|4-0|1
+2026-08-30|5|Deportivo (M)|Valencia (M)|3-1|1
+2026-08-30|6|Celta (M)|Athletic Club (M)|0-2|2
+2026-08-30|7|Osasuna (M)|Getafe (M)|1-0|1
+2026-08-30|8|Albacete (M)|R. Oviedo (M)|0-1|2
+2026-08-30|9|Cádiz (M)|R. Valladolid (M)|1-1|X
+2026-08-30|10|Córdoba (M)|Granada (M)|1-3|2
+2026-08-30|11|Athletic Club (F)|Badalona W. (F)|3-1|1
+2026-08-30|12|Eibar (F)|Espanyol (F)|1-0|1
+2026-08-30|13|Alavés (F)|Valencia (F)|2-0|1
+2026-08-30|14|Real Madrid (F)|At. Madrid (F)|3-2|1
+2026-08-30|15|Barcelona (M)|Rayo Vallecano (M)|5-2|P
+2026-09-06|1|Athletic Club (M)|At. Madrid (M)|3-0|1
+2026-09-06|2|Rayo Vallecano (M)|Racing Santander (M)|3-2|1
+2026-09-06|3|Villarreal (M)|Deportivo (M)|2-3|2
+2026-09-06|4|Valencia (M)|Barcelona (M)|0-5|2
+2026-09-06|5|Alavés (M)|Osasuna (M)|5-2|1
+2026-09-06|6|Málaga (M)|Levante (M)|0-0|X
+2026-09-06|7|Espanyol (M)|Sevilla (M)|1-1|X
+2026-09-06|8|Real Sociedad B (M)|Tenerife (M)|1-1|X
+2026-09-06|9|Sporting (M)|Girona (M)|0-2|2
+2026-09-06|10|Almería (M)|Cádiz (M)|3-2|1
+2026-09-06|11|Sevilla (F)|Barcelona (F)|0-4|2
+2026-09-06|12|Logroño (F)|Athletic Club (F)|0-1|2
+2026-09-06|13|At. Madrid (F)|Alavés (F)|1-0|1
+2026-09-06|14|Real Madrid (F)|Eibar (F)|0-0|X
+2026-09-06|15|Getafe (M)|Celta (M)|1-1|P
+2026-09-09|1|Borussia Dortmund (M)|Villarreal (M)|3-2|1
+2026-09-09|2|Oporto (M)|Manchester City (M)|0-2|2
+2026-09-09|3|Losc Lille (M)|Betis (M)|2-3|2
+2026-09-09|4|Real Madrid (M)|Inter de Milán (M)|2-1|1
+2026-09-09|5|Barcelona (M)|Feyenoord (M)|5-1|1
+2026-09-09|6|PSG (M)|Slovan Bratislava (M)|6-1|1
+2026-09-09|7|Sporting de Portugal (M)|Galatasaray (M)|3-1|1
+2026-09-09|8|Nápoles (M)|Arsenal (M)|0-1|2
+2026-09-09|9|Fenerbahçe Sk (M)|Roma (M)|1-1|X
+2026-09-09|10|PSV (M)|Shakhtar Donetsk (M)|1-1|X
+2026-09-09|11|Como 1907 (M)|RB. Leipzig (M)|4-1|1
+2026-09-09|12|Bayern de Múnich (M)|Bodo Glimt (M)|5-0|1
+2026-09-09|13|Manchester United (M)|Sabah (M)|4-0|1
+2026-09-09|14|Sk Slavia de Praga (M)|Rc Lens (M)|2-3|2
+2026-09-09|15|Liverpool (M)|At. Madrid (M)|2-1|P
+2026-09-13|1|Athletic Club (M)|Elche (M)|1-1|X
+2026-09-13|2|Levante (M)|Barcelona (M)|2-4|2
+2026-09-13|3|Osasuna (M)|Espanyol (M)|0-2|2
+2026-09-13|4|Racing de Santander (M)|Alavés (M)|2-1|1
+2026-09-13|5|Real Madrid (M)|Rayo Vallecano (M)|4-1|1
+2026-09-13|6|Sevilla (M)|Valencia (M)|1-0|1
+2026-09-13|7|Villarreal (M)|Betis (M)|1-2|2
+2026-09-13|8|Cádiz (M)|Las Palmas (M)|0-1|2
+2026-09-13|9|Tenerife (M)|Leganés (M)|2-0|1
+2026-09-13|10|R. Valladolid (M)|R. Oviedo (M)|0-3|2
+2026-09-13|11|Alavés (F)|Granada (F)|1-0|1
+2026-09-13|12|Logroño (F)|Valencia (F)|2-1|1
+2026-09-13|13|Eibar (F)|Badalona W. (F)|1-4|2
+2026-09-13|14|Madrid CFF (F)|Sevilla (F)|1-0|1
+2026-09-13|15|Real Sociedad (M)|At. Madrid (M)|0-3|P
+2026-10-14|1|Villarreal (M)|Nápoles (M)|3-1|1
+2026-10-14|2|At. Madrid (M)|Manchester United (M)|2-0|1
+2026-10-14|3|Arsenal (M)|Lille (M)|3-0|1
+2026-10-14|4|Galatasaray (M)|Barcelona (M)|1-4|2
+2026-10-14|5|Inter de Milán (M)|Brujas (M)|3-4|2
+2026-10-14|6|Viking Fk (M)|Bayern Múnich (M)|3-3|X
+2026-10-14|7|Feyenoord (M)|Como (M)|3-2|1
+2026-10-14|8|Lask (M)|Liverpool (M)|3-6|2
+2026-10-14|9|Betis (M)|Oporto (M)|3-2|1
+2026-10-14|10|Bodo Glimt (M)|Borussia Dortmund (M)|1-0|1
+2026-10-14|11|Manchester City (M)|PSG (M)|2-4|2
+2026-10-14|12|Union SG (M)|Real Sociedad (M)|1-1|X
+2026-10-14|13|Celta (M)|Juventus (M)|1-2|2
+2026-10-14|14|U. Craiova (M)|Getafe (M)|1-1|X
+2026-10-14|15|Roma (M)|Real Madrid (M)|3-4|P
+2026-10-18|1|Espanyol (M)|At. Madrid (M)|0-1|2
+2026-10-18|2|Villarreal (M)|Elche (M)|0-0|X
+2026-10-18|3|Betis (M)|Barcelona (M)|2-5|2
+2026-10-18|4|Valencia (M)|Athletic Club (M)|0-0|X
+2026-10-18|5|Celta (M)|Alavés (M)|2-1|1
+2026-10-18|6|Málaga (M)|Real Sociedad (M)|2-5|2
+2026-10-18|7|Real Madrid (M)|Sevilla (M)|4-1|1
+2026-10-18|8|Eibar (M)|Mallorca (M)|1-1|X
+2026-10-18|9|Las Palmas (M)|Castellón (M)|0-3|2
+2026-10-18|10|Burgos (M)|Sabadell (M)|1-0|1
+2026-10-18|11|Athletic Club (F)|Valencia (F)|1-0|1
+2026-10-18|12|Real Madrid (F)|Espanyol (F)|3-1|1
+2026-10-18|13|Eibar (F)|Deportivo (F)|2-3|2
+2026-10-18|14|At. Madrid (F)|Madrid CFF (F)|4-0|1
+2026-10-18|15|Getafe (M)|Rayo Vallecano (M)|1-1|P
+2026-10-04|1|Albacete (M)|Eibar (M)||
+2026-10-04|2|Almería (M)|Burgos (M)||
+2026-10-04|3|Cádiz (M)|Leganés (M)||
+2026-10-04|4|Sabadell (M)|Andorra (M)||
+2026-10-04|5|Real Sociedad B (M)|Granada (M)||
+2026-10-04|6|Sporting (M)|Celta Fortuna (M)||
+2026-10-04|7|Castellón (M)|Ceuta (M)||
+2026-10-04|8|Las Palmas (M)|R. Valladolid (M)||
+2026-10-04|9|Girona (M)|Mallorca (M)||
+2026-10-04|10|Córdoba (M)|Tenerife (M)||
+2026-10-04|11|Barcelona (F)|Real Madrid (F)||
+2026-10-04|12|Deportivo (F)|At. Madrid (F)||
+2026-10-04|13|Madrid CFF (F)|Athletic Club (F)||
+2026-10-04|14|Tenerife (F)|Logroño (F)||
+2026-10-04|15|España (S)|República Checa (S)||
+2026-10-11|1|Rayo Vallecano (M)|Athletic Club (M)||
+2026-10-11|2|Alavés (M)|At. Madrid (M)||
+2026-10-11|3|Barcelona (M)|Getafe (M)||
+2026-10-11|4|Elche (M)|Celta (M)||
+2026-10-11|5|Real Sociedad (M)|Deportivo (M)||
+2026-10-11|6|Betis (M)|Osasuna (M)||
+2026-10-11|7|Racing Santander (M)|Valencia (M)||
+2026-10-11|8|Levante (M)|Sevilla (M)||
+2026-10-11|9|Eldense (M)|Córdoba (M)||
+2026-10-11|10|Andorra (M)|Castellón (M)||
+2026-10-11|11|Almería (M)|Leganés (M)||
+2026-10-11|12|Mallorca (M)|Las Palmas (M)||
+2026-10-11|13|Burgos (M)|Granada (M)||
+2026-10-11|14|R. Oviedo (M)|Eibar (M)||
+2026-10-11|15|Real Madrid (M)|Villarreal (M)||

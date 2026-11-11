@@ -1,6 +1,47 @@
 {
- "nota": "Premio por apuesta en cada categoría, del escrutinio oficial de Loterías. Se añade una fila por jornada en el post-mortem.",
+ "nota": "Premio por apuesta en cada categoría, del escrutinio oficial de Loterías. Se añade una fila por jornada en el post-mortem. Un premio null significa que no hubo acertantes (bote): no entra en la media.",
  "jornadas": [
-  {"jornada": 19, "tipo": "Europea", "empates": 2, "14": 10016.02, "13": 158.26, "12": 11.60, "11": 1.88, "10": 0.0, "pleno": 42255.09, "acertantes_14": 18, "recaudacion": 1126802.25, "fuente": "loteriasyapuestas.es, escrutinio J19 (captura del usuario del 5/11/2026)"}
+  {
+   "jornada": 13,
+   "tipo": "Europea (Champions y Europa)",
+   "empates": 2,
+   "14": null,
+   "13": 6795.61,
+   "12": 322.21,
+   "11": 23.43,
+   "10": 3.93,
+   "pleno": null,
+   "acertantes_14": 0,
+   "recaudacion": 996690,
+   "fuente": "loteriasyapuestas.es, escrutinio oficial (recogido por el proyecto «quiniela-mesa», datos/loterias/premios.txt); sin acertantes de 14 (bote)"
+  },
+  {
+   "jornada": 14,
+   "tipo": "Liga (Primera, Segunda y Liga F)",
+   "empates": 3,
+   "14": 11162.13,
+   "13": 165.26,
+   "12": 12.76,
+   "11": 2.22,
+   "10": 0.0,
+   "pleno": 80778.13,
+   "acertantes_14": 50,
+   "recaudacion": 3488166,
+   "fuente": "loteriasyapuestas.es, escrutinio oficial (recogido por el proyecto «quiniela-mesa», datos/loterias/premios.txt)"
+  },
+  {
+   "jornada": 19,
+   "tipo": "Europea",
+   "empates": 2,
+   "14": 10016.02,
+   "13": 158.26,
+   "12": 11.6,
+   "11": 1.88,
+   "10": 0.0,
+   "pleno": 42255.09,
+   "acertantes_14": 18,
+   "recaudacion": 1126802.25,
+   "fuente": "loteriasyapuestas.es, escrutinio J19 (captura del usuario del 5/11/2026)"
+  }
  ]
 }
