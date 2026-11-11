@@ -2,7 +2,7 @@
  "jornada": 20,
  "fechas": "7–8/11",
  "tipo": "Doméstica (7 Primera + 3 Segunda + 4 Liga F)",
- "estado": "Jugada (pendiente de premios)",
+ "estado": "Cerrada (sin premio; premios oficiales pendientes)",
  "presupuesto": 12,
  "lista": "Fuentes no oficiales coincidentes (eduardolosilla.es, quinielafutbol.info, pronósticos del 5/11): confirmar con el boleto oficial",
  "partidos": [
@@ -411,5 +411,6 @@
    "p": 0.826
   }
  ],
- "combinacion_fuente": "elperiodicodeceuta.es (combinación de SELAE) y lotoluck.com, consultados el 8/11/2026"
+ "combinacion_fuente": "elperiodicodeceuta.es (combinación de SELAE) y lotoluck.com, consultados el 8/11/2026",
+ "mejor_columna": 7
 }

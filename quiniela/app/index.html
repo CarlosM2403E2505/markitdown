@@ -43,6 +43,8 @@
   .cq-barra { display: flex; height: 0.5rem; border-radius: var(--cds-radius); overflow: hidden; min-width: 6rem; background: var(--cds-chart-grid); }
   .cq-buscar { font: inherit; font-size: var(--cds-font-size-body); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); max-width: 22rem; width: 100%; }
   .cq-oculto-estrecho { }
+  .cq-filtros { display: flex; flex-wrap: wrap; align-items: center; gap: var(--cds-gap-sm); }
+  .cq-filtros .cq-buscar { width: auto; min-width: 10rem; }
   @media (max-width: 40rem) { .cq-oculto-estrecho { display: none; } }
   [data-dash-source-state=empty] { color: transparent; }
   [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
@@ -59,6 +61,7 @@
     <button class="cq-pestana" role="tab" id="tab-jornada" data-tab="jornada" aria-selected="false">Jornada en curso</button>
     <button class="cq-pestana" role="tab" id="tab-bajas" data-tab="bajas" aria-selected="false">Bajas</button>
     <button class="cq-pestana" role="tab" id="tab-sueltas" data-tab="sueltas" aria-selected="false">Sueltas</button>
+    <button class="cq-pestana" role="tab" id="tab-equipos" data-tab="equipos" aria-selected="false">Equipos</button>
   </nav>
 
   <section class="cq-seccion" id="resumen" data-seccion="resumen">
@@ -154,6 +157,45 @@
     </div>
   </section>
 
+  <section class="cq-seccion" id="equipos" data-seccion="equipos" hidden>
+    <div class="cq-tarjeta" id="tabla-equipos">
+      <h2>Todos los equipos</h2>
+      <p class="cq-nota">Clasificación con los partidos que hay en los datos de la mesa, últimos cinco resultados (V, E, D) y fuerza del modelo: 100 es la media de su liga; en ataque, más es mejor; en defensa, menos es mejor. Las selecciones llevan su Elo.</p>
+      <div class="cq-filtros">
+        <label class="cq-nota" for="filtro-competicion">Competición</label>
+        <select class="cq-buscar" id="filtro-competicion">
+          <option value="">Todas</option>
+          <option value="Primera">Primera</option>
+          <option value="Segunda">Segunda</option>
+          <option value="Liga F">Liga F</option>
+          <option value="Selecciones">Selecciones</option>
+        </select>
+        <label class="cq-nota" for="buscar-equipos">Buscar equipo</label>
+        <input class="cq-buscar" id="buscar-equipos" type="search" placeholder="Almería, Real Madrid…" autocomplete="off">
+      </div>
+      <div class="cq-caja-tabla">
+        <table class="cq-tabla" data-source="equipos" data-row-key="id">
+          <thead><tr>
+            <th data-field="posicion" class="cq-num">#</th>
+            <th data-field="equipo" class="cq-ancho">Equipo</th>
+            <th data-field="competicion" class="cq-oculto-estrecho">Competición</th>
+            <th data-field="pts" class="cq-num">Pts</th>
+            <th data-field="pj" class="cq-num cq-oculto-estrecho">PJ</th>
+            <th data-field="dg" class="cq-num cq-oculto-estrecho">DG</th>
+            <th data-field="forma">Forma</th>
+            <th data-field="ataque" class="cq-num">Ataque</th>
+            <th data-field="defensa" class="cq-num">Defensa</th>
+            <th data-field="elo" class="cq-num cq-oculto-estrecho">Elo</th>
+            <th data-field="proximo" class="cq-oculto-estrecho">En la quiniela</th>
+            <th data-field="p_ganar_proximo" class="cq-num">Gana</th>
+            <th data-field="bajas" class="cq-num cq-oculto-estrecho">Bajas</th>
+          </tr></thead>
+          <tbody data-draw="tabla-equipos"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <section class="cq-seccion" id="sueltas" data-seccion="sueltas" hidden>
     <div class="cq-tarjeta" id="tabla-sueltas">
       <h2>Apuestas sueltas</h2>
@@ -231,7 +273,7 @@
   };
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.tab, true)));
   const pedida = location.hash.slice(1);
-  if (['resumen', 'jornada', 'bajas', 'sueltas'].includes(pedida)) abrir(pedida, false);
+  if (['resumen', 'jornada', 'bajas', 'sueltas', 'equipos'].includes(pedida)) abrir(pedida, false);
 
   dash.onData(() => {
     document.querySelectorAll('[data-serie]').forEach((e) => { e.style.background = dash.colors[Number(e.dataset.serie)]; });
@@ -341,6 +383,39 @@
         celda(tr, r.partido ?? '—', 'cq-oculto-estrecho');
         celda(tr, r.fuente ?? '—', 'cq-oculto-estrecho');
         celda(tr, r.fecha ?? '—', 'cq-oculto-estrecho');
+        tb.appendChild(tr);
+      });
+  });
+
+  let filtroComp = '', buscaEq = '';
+  document.querySelectorAll('#filtro-competicion').forEach((sel) => sel.addEventListener('change', () => { filtroComp = sel.value; dash.draw('tabla-equipos'); }));
+  document.querySelectorAll('#buscar-equipos').forEach((inp) => inp.addEventListener('input', () => { buscaEq = inp.value.trim().toLowerCase(); dash.draw('tabla-equipos'); }));
+  const formaColor = { V: 'cq-r-bajo', E: 'cq-r-moderado', D: 'cq-r-muy-alto' };
+  dash.draw('tabla-equipos', (tb) => {
+    const rows = filas('equipos');
+    tb.replaceChildren();
+    if (!rows) return;
+    rows.filter((r) => (!filtroComp || r.competicion === filtroComp) && (!buscaEq || r.equipo.toLowerCase().includes(buscaEq)))
+      .forEach((r) => {
+        const tr = document.createElement('tr');
+        tr.dataset.key = r.id;
+        celda(tr, r.posicion == null ? '—' : String(r.posicion), 'cq-num');
+        celda(tr, r.equipo, 'cq-ancho');
+        celda(tr, r.competicion, 'cq-oculto-estrecho');
+        celda(tr, r.pts == null ? '—' : String(r.pts), 'cq-num');
+        celda(tr, r.pj == null ? '—' : String(r.pj), 'cq-num cq-oculto-estrecho');
+        celda(tr, r.dg == null ? '—' : (r.dg > 0 ? '+' : '') + r.dg, 'cq-num cq-oculto-estrecho');
+        const tdf = document.createElement('td');
+        if (r.forma) {
+          [...r.forma].forEach((c) => { const s = document.createElement('span'); s.className = 'cq-signo ' + (formaColor[c] || ''); s.textContent = c; tdf.appendChild(s); });
+        } else tdf.textContent = '—';
+        tr.appendChild(tdf);
+        celda(tr, r.ataque == null ? '—' : String(r.ataque), 'cq-num');
+        celda(tr, r.defensa == null ? '—' : String(r.defensa), 'cq-num');
+        celda(tr, r.elo == null ? '—' : entero(r.elo), 'cq-num cq-oculto-estrecho');
+        celda(tr, r.proximo ? `${r.proximo_n}. ${r.proximo}` : '—', 'cq-oculto-estrecho');
+        celda(tr, r.p_ganar_proximo == null ? '—' : pct(r.p_ganar_proximo), 'cq-num');
+        celda(tr, r.bajas == null && r.dudas == null ? '—' : `${r.bajas || 0}${r.dudas ? ' + ' + r.dudas + ' dudas' : ''}`, 'cq-num cq-oculto-estrecho');
         tb.appendChild(tr);
       });
   });

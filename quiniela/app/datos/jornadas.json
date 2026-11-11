@@ -89,7 +89,7 @@
    "p14": 0.000672,
    "p13": 0.00746,
    "p10": 0.2902,
-   "mejor_columna": null,
+   "mejor_columna": 7,
    "sueltas_aciertos": null,
    "sueltas_total": null,
    "sueltas_p_todas": 0.4545,
