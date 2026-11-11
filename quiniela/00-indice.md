@@ -18,7 +18,7 @@ Entrada a todo el proyecto. Se actualiza al cerrar cada jornada.
 | J18 | — | Doméstica | Registro en la sesión de claude.ai | 18 € | — | — | — | Modelo 0,897 · mercado 0,786 |
 | **J19** | 3–5/11 | Europea | **Cerrada** (`jornadas/j19/j19-resultados.md`) | 16 columnas · 12 € | 11 (4 × 1,88 € = 7,52 €) | 5/5 | 1-1 (salió 0-2) | Modelo 0,858 · mercado 0,729 (11 partidos) |
 | **J20** | 7–8/11 | Doméstica | **Jugada** | 16 columnas · 12 € | 7 | pendiente | 1-1 (salió 1-2) | Modelo 1,072 |
-| **J21** | 14–15/11 | Parón | **v1.1** (orden corregido) | 16 columnas (2 con X) · 12 € | pendiente | pendiente | 1-0 | pendiente |
+| **J21** | 14–15/11 | Parón | **v1.2** (Liga F y Elo nuevos) | 16 columnas · 12 € | pendiente | pendiente | 1-0 | pendiente |
 
 ## Pendiente
 - J20: jugada (`jornadas/j20/j20-resultados.md`); faltan los premios.

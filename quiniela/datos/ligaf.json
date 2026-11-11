@@ -1,0 +1,2238 @@
+{
+"fuente": "Wikipedia (en), páginas 2025–26 Liga F y 2026–27 Liga F, tabla de resultados; descargado el 2026-11-11. Los 75 partidos de 2026-27 que la mesa tenía a mano coinciden.",
+"partidos": [
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Atletico",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Deportivo",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Logrono",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Espanyol",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Granada",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Levante",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Madrid CFF",
+"goles_local": 1,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Real Sociedad",
+"goles_local": 1,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Alhama",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Alhama",
+"goles_local": 4,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Atletico",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Barcelona",
+"goles_local": 1,
+"goles_visitante": 8
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Deportivo",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Logrono",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Eibar",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Espanyol",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Granada",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Levante",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Madrid CFF",
+"goles_local": 4,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Real Madrid",
+"goles_local": 1,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Sevilla",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Athletic",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Alhama",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Athletic",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 6
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Deportivo",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Logrono",
+"goles_local": 5,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Eibar",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Espanyol",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Granada",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Levante",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Badalona",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Madrid CFF",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Real Madrid",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Real Sociedad",
+"goles_local": 5,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Sevilla",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Atletico",
+"visitante": "Tenerife",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Alhama",
+"goles_local": 8,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Athletic",
+"goles_local": 7,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Atletico",
+"goles_local": 5,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Deportivo",
+"goles_local": 8,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Logrono",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Eibar",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Espanyol",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Granada",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Levante",
+"goles_local": 5,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Badalona",
+"goles_local": 6,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Madrid CFF",
+"goles_local": 12,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Real Madrid",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Real Sociedad",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Sevilla",
+"goles_local": 4,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Barcelona",
+"visitante": "Tenerife",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Alhama",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Athletic",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Atletico",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Logrono",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Eibar",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Espanyol",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Granada",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Levante",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Madrid CFF",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Real Madrid",
+"goles_local": 2,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Real Sociedad",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Deportivo",
+"visitante": "Tenerife",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Alhama",
+"goles_local": 2,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Atletico",
+"goles_local": 0,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Deportivo",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Espanyol",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Granada",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Levante",
+"goles_local": 2,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Badalona",
+"goles_local": 2,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Madrid CFF",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Real Madrid",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Sevilla",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Logrono",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Alhama",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Atletico",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Deportivo",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Logrono",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Espanyol",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Granada",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Levante",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Madrid CFF",
+"goles_local": 1,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Eibar",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Alhama",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Athletic",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Atletico",
+"goles_local": 0,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Barcelona",
+"goles_local": 1,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Deportivo",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Eibar",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Granada",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Levante",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Badalona",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Madrid CFF",
+"goles_local": 2,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Real Sociedad",
+"goles_local": 2,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Espanyol",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Alhama",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Athletic",
+"goles_local": 1,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Atletico",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Deportivo",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Eibar",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Espanyol",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Levante",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Madrid CFF",
+"goles_local": 3,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Real Sociedad",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Granada",
+"visitante": "Tenerife",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Alhama",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Atletico",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Deportivo",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Espanyol",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Granada",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Madrid CFF",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Real Madrid",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Levante",
+"visitante": "Tenerife",
+"goles_local": 2,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Alhama",
+"goles_local": 3,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Atletico",
+"goles_local": 2,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Barcelona",
+"goles_local": 1,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Deportivo",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Logrono",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Eibar",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Espanyol",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Granada",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Levante",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Madrid CFF",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Badalona",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Alhama",
+"goles_local": 5,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Atletico",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Deportivo",
+"goles_local": 1,
+"goles_visitante": 6
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Eibar",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Espanyol",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Granada",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Levante",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Real Sociedad",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Sevilla",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Madrid CFF",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Alhama",
+"goles_local": 5,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Atletico",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Deportivo",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Eibar",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Espanyol",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Granada",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Levante",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Badalona",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Madrid CFF",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Real Sociedad",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Sevilla",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Madrid",
+"visitante": "Tenerife",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Alhama",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Athletic",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Atletico",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Barcelona",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Deportivo",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Eibar",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Espanyol",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Granada",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Levante",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Badalona",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Madrid CFF",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Sevilla",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Real Sociedad",
+"visitante": "Tenerife",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Alhama",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Athletic",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Atletico",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Deportivo",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Espanyol",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Granada",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Levante",
+"goles_local": 4,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Badalona",
+"goles_local": 1,
+"goles_visitante": 5
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Madrid CFF",
+"goles_local": 1,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Sevilla",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Alhama",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Athletic",
+"goles_local": 5,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Atletico",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Barcelona",
+"goles_local": 1,
+"goles_visitante": 3
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Deportivo",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Espanyol",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Granada",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Levante",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Badalona",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Madrid CFF",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Real Sociedad",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2025-26",
+"local": "Tenerife",
+"visitante": "Sevilla",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Alaves",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 6
+},
+{
+"temporada": "2026-27",
+"local": "Alaves",
+"visitante": "Granada",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Alaves",
+"visitante": "Real Sociedad",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Alaves",
+"visitante": "Sevilla",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Alaves",
+"visitante": "Valencia",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Athletic",
+"visitante": "Atletico",
+"goles_local": 3,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Athletic",
+"visitante": "Espanyol",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Athletic",
+"visitante": "Badalona",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Athletic",
+"visitante": "Real Madrid",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Athletic",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Athletic",
+"visitante": "Valencia",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Atletico",
+"visitante": "Alaves",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Atletico",
+"visitante": "Badalona",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Atletico",
+"visitante": "Logrono",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Atletico",
+"visitante": "Madrid CFF",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Atletico",
+"visitante": "Valencia",
+"goles_local": 4,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Barcelona",
+"visitante": "Atletico",
+"goles_local": 4,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Barcelona",
+"visitante": "Granada",
+"goles_local": 3,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Barcelona",
+"visitante": "Madrid CFF",
+"goles_local": 5,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Barcelona",
+"visitante": "Real Madrid",
+"goles_local": 7,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Barcelona",
+"visitante": "Tenerife",
+"goles_local": 5,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Deportivo",
+"visitante": "Alaves",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Deportivo",
+"visitante": "Atletico",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Deportivo",
+"visitante": "Espanyol",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Deportivo",
+"visitante": "Real Madrid",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Deportivo",
+"visitante": "Sevilla",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Deportivo",
+"visitante": "Valencia",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Eibar",
+"visitante": "Athletic",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Eibar",
+"visitante": "Deportivo",
+"goles_local": 2,
+"goles_visitante": 3
+},
+{
+"temporada": "2026-27",
+"local": "Eibar",
+"visitante": "Espanyol",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Eibar",
+"visitante": "Badalona",
+"goles_local": 1,
+"goles_visitante": 4
+},
+{
+"temporada": "2026-27",
+"local": "Eibar",
+"visitante": "Madrid CFF",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Eibar",
+"visitante": "Real Sociedad",
+"goles_local": 1,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Espanyol",
+"visitante": "Alaves",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Espanyol",
+"visitante": "Badalona",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Espanyol",
+"visitante": "Logrono",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Espanyol",
+"visitante": "Madrid CFF",
+"goles_local": 5,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Granada",
+"visitante": "Atletico",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Granada",
+"visitante": "Deportivo",
+"goles_local": 0,
+"goles_visitante": 3
+},
+{
+"temporada": "2026-27",
+"local": "Granada",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Granada",
+"visitante": "Espanyol",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Granada",
+"visitante": "Real Sociedad",
+"goles_local": 3,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Badalona",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2026-27",
+"local": "Badalona",
+"visitante": "Granada",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Badalona",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Badalona",
+"visitante": "Tenerife",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2026-27",
+"local": "Logrono",
+"visitante": "Athletic",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Logrono",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Logrono",
+"visitante": "Granada",
+"goles_local": 2,
+"goles_visitante": 3
+},
+{
+"temporada": "2026-27",
+"local": "Logrono",
+"visitante": "Badalona",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Logrono",
+"visitante": "Sevilla",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Logrono",
+"visitante": "Valencia",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Madrid CFF",
+"visitante": "Alaves",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Madrid CFF",
+"visitante": "Athletic",
+"goles_local": 2,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Madrid CFF",
+"visitante": "Deportivo",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Madrid CFF",
+"visitante": "Granada",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Madrid CFF",
+"visitante": "Sevilla",
+"goles_local": 1,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Real Madrid",
+"visitante": "Atletico",
+"goles_local": 3,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Real Madrid",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Real Madrid",
+"visitante": "Espanyol",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Real Madrid",
+"visitante": "Tenerife",
+"goles_local": 3,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Real Madrid",
+"visitante": "Valencia",
+"goles_local": 3,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Real Sociedad",
+"visitante": "Barcelona",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Real Sociedad",
+"visitante": "Espanyol",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Real Sociedad",
+"visitante": "Logrono",
+"goles_local": 0,
+"goles_visitante": 2
+},
+{
+"temporada": "2026-27",
+"local": "Real Sociedad",
+"visitante": "Real Madrid",
+"goles_local": 3,
+"goles_visitante": 5
+},
+{
+"temporada": "2026-27",
+"local": "Real Sociedad",
+"visitante": "Tenerife",
+"goles_local": 1,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Sevilla",
+"visitante": "Barcelona",
+"goles_local": 0,
+"goles_visitante": 4
+},
+{
+"temporada": "2026-27",
+"local": "Sevilla",
+"visitante": "Eibar",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Sevilla",
+"visitante": "Badalona",
+"goles_local": 3,
+"goles_visitante": 3
+},
+{
+"temporada": "2026-27",
+"local": "Sevilla",
+"visitante": "Real Madrid",
+"goles_local": 1,
+"goles_visitante": 3
+},
+{
+"temporada": "2026-27",
+"local": "Tenerife",
+"visitante": "Athletic",
+"goles_local": 2,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Tenerife",
+"visitante": "Deportivo",
+"goles_local": 0,
+"goles_visitante": 0
+},
+{
+"temporada": "2026-27",
+"local": "Tenerife",
+"visitante": "Logrono",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Tenerife",
+"visitante": "Sevilla",
+"goles_local": 1,
+"goles_visitante": 3
+},
+{
+"temporada": "2026-27",
+"local": "Valencia",
+"visitante": "Eibar",
+"goles_local": 2,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Valencia",
+"visitante": "Madrid CFF",
+"goles_local": 1,
+"goles_visitante": 3
+},
+{
+"temporada": "2026-27",
+"local": "Valencia",
+"visitante": "Real Sociedad",
+"goles_local": 0,
+"goles_visitante": 1
+},
+{
+"temporada": "2026-27",
+"local": "Valencia",
+"visitante": "Tenerife",
+"goles_local": 1,
+"goles_visitante": 2
+}
+]
+}

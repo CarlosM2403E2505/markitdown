@@ -161,3 +161,71 @@ Sistema elegido: C + 2 columnas con X. P(14) = 1 entre 2.935 · P(14 y Pleno) = 
 | Versión | Fecha | Qué |
 |---|---|---|
 | v1.1 | 10/11/2026 | Orden corregido (Bélgica–Italia es el 10), 7 resultados nuevos, aplazamientos anotados |
+
+---
+
+# v1.2 · Liga F con la temporada pasada y Elo real de Bélgica e Italia · miércoles 11/11/2026
+
+> Nuevo entorno con acceso a Wikipedia y eloratings.net (aprobado por el usuario). Salida: `j21-calculadora-v1.2.txt`.
+
+## Qué cambia y con qué evidencia
+
+1. **Liga F (partidos 11 a 14):** el modelo usa ahora los **240 partidos de la temporada 2025/26**, partido a partido (`modelo/ligaf_modelo.py`, datos en `datos/ligaf.json`). Antes solo usaba los totales de goles de cada equipo. **Backtest** (jornadas 4 a 10 de esta temporada, 48 partidos fuera de muestra): log-loss **0,976** frente a **1,061** del método anterior. Los 75 resultados de esta temporada que la mesa tenía a mano coinciden con Wikipedia.
+2. **Bélgica–Italia (partido 10):** deja de ser un precio a ciegas. Elo de eloratings.net, descargado hoy: **Bélgica 1.956, Italia 1.910**, más 100 por campo → 57,5 / 24,7 / 17,8. Control (no entra en el precio): un mercado de predicciones daba ≈ 47/19/33.
+3. **España–Inglaterra:** Elo confirmado en la descarga (España 2.287, Inglaterra 2.146). Sin cambios.
+
+| # | Partido | v1.1 | **v1.2** |
+|---|---|---|---|
+| 10 | Bélgica – Italia | 50,7 / 26,2 / 23,0 | **57,5 / 24,7 / 17,8** |
+| 11 | Alavés F – Eibar F | 42,6 / 32,8 / 24,6 | **48,6 / 32,4 / 19,0** |
+| 12 | Real Sociedad F – Athletic F | 39,1 / 23,4 / 37,5 | **57,7 / 21,1 / 21,2** |
+| 13 | Sevilla F – Atlético F | 22,9 / 20,8 / 56,3 | **19,5 / 18,5 / 62,0** |
+| 14 | Valencia F – Granada F | 29,4 / 24,4 / 46,2 | **32,9 / 23,4 / 43,7** |
+
+## Boleto v1.2 · 16 apuestas sencillas · 12 € · Pleno 1-0 en todas
+
+```
+ 1. 22111111211122     9. 22111121211122
+ 2. 22112111211122    10. 22111111X11122
+ 3. 21111111211122    11. 22112121211122
+ 4. 22111111111122    12. 21111121211122
+ 5. 21112111211122    13. 22111121111122
+ 6. 22112111111122    14. 22112111X11122
+ 7. 21111111111122    15. 21111111X11122
+ 8. 21112111111122    16. 21112121211122
+```
+
+| # | Partido | En el boleto |
+|---|---|---|
+| 1 | Valladolid – Castellón | 2 |
+| 2 | Real Sociedad B – Sporting | 1 2 |
+| 3 | Almería – Andorra | 1 |
+| 4 | Mallorca – Córdoba | 1 |
+| 5 | Oviedo – Girona | 1 2 |
+| 6 | Tenerife – Ceuta | 1 |
+| 7 | Granada – Las Palmas | 1 2 |
+| 8 | Eibar – Cádiz | 1 |
+| 9 | Eldense – Sabadell | 1 X 2 |
+| 10 | Bélgica – Italia | 1 |
+| 11 | Alavés F – Eibar F | 1 |
+| 12 | Real Sociedad F – Athletic F | 1 |
+| 13 | Sevilla F – Atlético F | 2 |
+| 14 | Valencia F – Granada F | 2 |
+| 15 | **Pleno: España – Inglaterra** | **1-0** |
+
+| | v1.1 | **v1.2** |
+|---|---|---|
+| P(14) | 1 entre 2.935 | **1 entre 1.577** |
+| P(14 y Pleno) | 1 entre 18.902 | **1 entre 10.155** |
+| P(≥13) | 0,4 % (1 entre 250) | **0,7 % (1 entre 143)** |
+| P(≥12) | 2,4 % | **3,7 %** |
+
+Sistema elegido: C (las 16 columnas más probables). **14 signos:** `2 2 1 1 1 1 1 1 2 1 1 1 2 2`.
+
+**Sueltas:** Alavés F–Eibar F, menos de 3,5 goles (94,1 %); marcan el Almería (88,4 %), el Mallorca (86,9 %), el Atlético F (85,9 %) y el Castellón (82,1 %). P(las 5) = 51,0 %.
+
+**Por qué sube tanto P(14):** el nuevo modelo de la Liga F distingue mejor a los equipos y da favoritos más claros en tres de los cuatro partidos, y el backtest dice que esos favoritos están justificados. No es optimismo: es un modelo que acierta más con datos que no había visto.
+
+| Versión | Fecha | Qué |
+|---|---|---|
+| v1.2 | 11/11/2026 | Liga F con la temporada pasada (backtest 1,061 → 0,976) y Elo real de Bélgica e Italia |

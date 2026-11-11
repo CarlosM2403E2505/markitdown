@@ -136,6 +136,10 @@ FIX = [(1, "Valladolid – Castellón", "real valladolid", "castellon", "M"),
        (14, "Valencia F – Granada F", "Valencia", "Granada", "F")]
 # 10 Bélgica – Italia y 15 España – Inglaterra: selecciones, sin datos en el modelo (ver j21_selecciones.py)
 
+spec3 = importlib.util.spec_from_file_location("lfm", os.path.join(HERE, "ligaf_modelo.py"))
+lfm = importlib.util.module_from_spec(spec3); spec3.loader.exec_module(lfm)
+
+
 def afinar(p, t=T):
     q = [v ** t for v in p]; z = sum(q)
     return [v / z for v in q]
@@ -145,8 +149,8 @@ def main():
     adj = json.loads(sys.argv[3]) if len(sys.argv) > 3 else {}
     matches = json.load(open(ds, encoding="utf-8"))["matches"]
     m = em.EuroPoisson(xi=0.0015, ridge=10, scale=1.05, blend=0.2, hier=True).fit(matches, ref_date=date(2026, 11, 14))
-    lf = ligaf_fit()
-    print(f"Modelo: {len(matches)} partidos, campo {m.home_adv:.3f}, conv {m.converged} | Liga F: {len(LF_M)} partidos, conv {lf['ok']}, campo {math.exp(lf['home']):.2f}")
+    lf = lfm.ajustar()  # desde el 11/11/2026: temporada anterior partido a partido (ver ligaf_modelo.py)
+    print(f"Modelo: {len(matches)} partidos, campo {m.home_adv:.3f}, conv {m.converged} | Liga F: {lf['n']} partidos, conv {lf['ok']}, campo {math.exp(lf['home']):.2f}")
     rows = []
     for n, lab, h, a, kind in FIX:
         if kind == "M":

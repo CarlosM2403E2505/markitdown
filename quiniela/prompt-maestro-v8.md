@@ -159,7 +159,7 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 
 ## FASE 2 — Precio honesto (Odds Compiler / Quant)
 
-**Modelo:** Poisson multi-liga **jerárquico** (fuerza = nivel de liga + desviación del equipo), con unos 23.600 partidos (2024-02-16 a 2026-11-01, `datos/euro_j19.csv`). **Liga F:** Poisson ridge partido a partido sobre la temporada actual, sin los partidos del Barça, con la temporada anterior como prior y ventaja de campo fija en 1,10.
+**Modelo:** Poisson multi-liga **jerárquico** (fuerza = nivel de liga + desviación del equipo), con unos 23.600 partidos (2024-02-16 a 2026-11-01, `datos/euro_j19.csv`). **Liga F (desde la J21):** Poisson ridge partido a partido con la temporada actual y **la anterior completa, partido a partido** (`modelo/ligaf_modelo.py`, datos en `datos/ligaf.json`, de Wikipedia), sin los partidos del Barça, campo fijo en 1,10. Backtest del 11/11/2026: log-loss 0,976 frente a 1,061 del método anterior (48 partidos fuera de muestra). **Selecciones:** Elo de eloratings.net (`World.tsv`) + 100 por campo, pasado a 1X2 con un Poisson de 2,4 goles (supuesto).
 
 | Parámetro | Valor | Evidencia |
 |---|---|---|
@@ -342,7 +342,8 @@ Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calc
 | Ajuste completo por portero o delantero centro | J16 (Rayo sin Batalla) | 1 partido | Provisional | Tras 30 ajustes |
 | Liga de cada equipo por su temporada actual (en vez de «más partidos en 365 días») | J20 (Girona–Almería) | 444 partidos españoles + 2.595 de otras ligas | **No se aplica**: empeora en España (+10 milésimas con ascendidos y descendidos), mejora fuera | J29 |
 | Boleto oficial por navegador antes de la primera pasada | J21 (orden equivocado) | — | Regla de proceso | — |
-| Selecciones sin datos propios: Elo público + 2,4 goles (supuesto) | J21 | — | Provisional, baja calidad | Cada parón |
+| Liga F con la temporada anterior partido a partido | Backtest 11/11/2026 | 48 partidos | **Medido** (1,061 → 0,976) | J29 |
+| Selecciones: Elo de eloratings.net + 2,4 goles (supuesto) | J21 | — | Provisional | Cada parón |
 | Ajuste por Europa o Copa entre semana | Mesa (sin medir) | 1.371 + 12 partidos (6/11/2026) | **Retirado**: empeoraba el log-loss | J29 |
 | Factor de empates, campo extra, Copa del Rey | Backtests | 437–4.683 partidos | Medido | Cada temporada |
 | Capa de xG | Temporada 2026/27 | Pocas jornadas | Provisional | Con 20 jornadas |
@@ -437,3 +438,4 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 8. **Recordatorio de funciones** de cada mente y **expertos que faltan** para calibrar (sección 1).
 9. **Fatiga medida con datos** (6/11/2026, a petición del usuario): el ajuste por Europa o Copa entre semana se retira porque empeoraba las predicciones.
 10. **Claude in Chrome** (11/11/2026): vía segura para el boleto oficial, los % del público y las cuotas; importador que comprueba el boleto; valor por signo en la calculadora.
+11. **Datos nuevos (11/11/2026):** Liga F con la temporada anterior completa y Elo real de selecciones, gracias al acceso a Wikipedia y eloratings.net.

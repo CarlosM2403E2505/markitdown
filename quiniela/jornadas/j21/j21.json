@@ -2,7 +2,7 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v1.1",
+ "estado": "Pronóstico v1.2",
  "presupuesto": 12,
  "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
@@ -190,14 +190,14 @@
    "partido": "Bélgica – Italia",
    "competicion": "Selecciones",
    "p": [
-    0.5075,
-    0.2623,
-    0.2302
+    0.5752,
+    0.2467,
+    0.1781
    ],
-   "lambda_local": 1.49,
-   "lambda_visitante": 0.91,
+   "lambda_local": 1.622,
+   "lambda_visitante": 0.778,
    "riesgo": "Muy alto",
-   "precio": "Sin rating de ninguna de las dos: supuesto de igualdad + 100 de Elo por campo; 2,4 goles (supuesto). Baja calidad.",
+   "precio": "Elo de eloratings.net (World.tsv, descargado el 11/11/2026): Bélgica 1956, Italia 1910, +100 por campo; 2,4 goles (supuesto).",
    "veto_unico": false,
    "control_mercado": "Mercado de predicciones (robinhood.com, 10/11): Bélgica 44, empate 18, Italia 31 céntimos; normalizado ≈ 47/19/33. Solo control. FIFA: Bélgica 8.ª, Italia 15.ª (sofascore.com)."
   },
@@ -206,76 +206,80 @@
    "partido": "Alavés F – Eibar F",
    "competicion": "Liga F",
    "p": [
-    0.4261,
-    0.3279,
-    0.246
+    0.4865,
+    0.3239,
+    0.1896
    ],
    "p_sin_T": [
-    0.4216,
-    0.3285,
-    0.2498
+    0.4793,
+    0.3254,
+    0.1953
    ],
-   "lambda_local": 0.877,
-   "lambda_visitante": 0.6,
+   "lambda_local": 0.945,
+   "lambda_visitante": 0.489,
    "factor_empates": 0.85,
-   "veto_unico": false
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
   },
   {
    "n": 12,
    "partido": "Real Sociedad F – Athletic F",
    "competicion": "Liga F",
    "p": [
-    0.3915,
-    0.2337,
-    0.3748
+    0.5772,
+    0.2112,
+    0.2116
    ],
    "p_sin_T": [
-    0.3889,
-    0.238,
-    0.3731
+    0.5655,
+    0.2171,
+    0.2175
    ],
-   "lambda_local": 1.277,
-   "lambda_visitante": 1.245,
+   "lambda_local": 1.641,
+   "lambda_visitante": 0.915,
    "factor_empates": 0.85,
-   "veto_unico": false
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
   },
   {
    "n": 13,
    "partido": "Sevilla F – Atlético F",
    "competicion": "Liga F",
    "p": [
-    0.229,
-    0.2075,
-    0.5635
+    0.1947,
+    0.1849,
+    0.6204
    ],
    "p_sin_T": [
-    0.2343,
-    0.2133,
-    0.5523
+    0.2013,
+    0.1916,
+    0.6071
    ],
-   "lambda_local": 1.007,
-   "lambda_visitante": 1.683,
+   "lambda_local": 1.02,
+   "lambda_visitante": 1.936,
    "factor_empates": 0.85,
-   "veto_unico": false
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
   },
   {
    "n": 14,
    "partido": "Valencia F – Granada F",
    "competicion": "Liga F",
    "p": [
-    0.2941,
-    0.244,
-    0.4619
+    0.3286,
+    0.234,
+    0.4374
    ],
    "p_sin_T": [
-    0.2963,
-    0.2481,
-    0.4556
+    0.3293,
+    0.2384,
+    0.4323
    ],
-   "lambda_local": 0.993,
-   "lambda_visitante": 1.303,
+   "lambda_local": 1.14,
+   "lambda_visitante": 1.347,
    "factor_empates": 0.85,
-   "veto_unico": false
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
   }
  ],
  "pleno": {
@@ -309,13 +313,13 @@
    "M-M": 0.02071
   },
   "mezcla": 0.2,
-  "precio": "Elo de eloratings.net del 8/11/2026 (España 2287, Inglaterra 2146) + 100 por campo; 2,4 goles (supuesto). Baja calidad."
+  "precio": "Elo de eloratings.net (World.tsv, descargado el 11/11/2026): España 2287, Inglaterra 2146, +100 por campo; 2,4 goles (supuesto)."
  },
  "sueltas": [
   {
    "partido": "Alavés F – Eibar F",
    "apuesta": "Menos de 3,5 goles",
-   "p": 0.936
+   "p": 0.941
   },
   {
    "partido": "Almería – Andorra",
@@ -335,7 +339,7 @@
   {
    "partido": "Sevilla F – Atlético F",
    "apuesta": "Atlético F marca",
-   "p": 0.818
+   "p": 0.859
   }
  ]
 }
