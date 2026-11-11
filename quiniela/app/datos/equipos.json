@@ -617,8 +617,8 @@
    "proximo": "Real Sociedad B – Sporting",
    "proximo_n": 2,
    "p_ganar_proximo": 0.3784,
-   "bajas": null,
-   "dudas": null,
+   "bajas": 2,
+   "dudas": 3,
    "elo": null
   },
   {
@@ -641,7 +641,7 @@
    "proximo_n": 5,
    "p_ganar_proximo": 0.359,
    "bajas": null,
-   "dudas": null,
+   "dudas": 3,
    "elo": null
   },
   {

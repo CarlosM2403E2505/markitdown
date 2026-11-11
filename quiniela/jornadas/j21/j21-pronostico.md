@@ -299,3 +299,25 @@ Validación que avanza en el tiempo: el modelo se reajusta cada mes y predice el
 - **Comparación:** C (las 96 más probables) frente a F (completo de 5 dobles y 1 triple). Por el criterio fijo gana **C**.
 - **Probabilidades:** P(14) 1 entre 350; P(≥13) 2,46 %; P(≥12) 10,0 %.
 - **Pleno:** 1-0 en los boletos de 12 € y M-0 en los de 6 €. Entonces P(14 y Pleno) = 1 entre 2.268, frente a 1 entre 2.228 con todo 1-0. Se confirma el sábado con el % del público.
+
+---
+
+# v1.5 · 11/11/2026 · investigación partido a partido y recomendación de la mesa
+
+**Los datos están al día.** Las clasificaciones de los datos de la mesa coinciden con la prensa:
+- Segunda: Almería 29 pts, Castellón 27 con un partido menos, Ceuta último con 5.
+- Liga F: Barça 27, Valencia F colista con 6, Sevilla F 13.º con 10.
+
+**Hechos nuevos.** Ninguno es de clase A/B sobre un jugador clave, así que **no se mueve ningún precio**:
+- **Tenerife:** falleció su jugador **Jesús de Miguel**, y la J13 de Segunda quedó en parte aplazada (Granada–Tenerife y Castellón–Eibar). Contexto emocional, sin efecto medible.
+- **Ceuta:** destituido Romero; llega **Sergio Lobera**. Último con 5 puntos y −20 de diferencia de goles. Cambio de entrenador: aviso, no mueve el precio.
+- **Oviedo:** destituido Julián Calero tras ganar 1-2 en Cádiz; **Raúl González debuta contra el Girona** (sábado a las 21:00). Aviso.
+- **Sporting** (fotmob, clase C): Casas lesionado, Otero sancionado; dudas de Gelabert, Pablo García y Konrad de la Fuente. Si el sábado se confirman (clase A/B), el Live Trader revisa el partido 2.
+- **Girona** (jornadaperfecta, sin fecha, clase C): posibles sanciones de David López y Rubén Pulido; Bryan Gil lesionado.
+- **Italia:** juega el jueves 12 contra Francia en Milán y el domingo en Bruselas. Zaniolo deja la concentración. Italia es 2.ª del grupo con 7 puntos y Bélgica 3.ª con 6.
+- **Integridad:** no hay ninguna noticia de investigación ni de movimientos raros en estos partidos → nivel 1 (sin indicios).
+
+**Recomendación técnica de la mesa:**
+- Valor esperado por euro ≈ 0,77 (negativo) con cualquier número de boletos. Jugar más solo sube la probabilidad en proporción.
+- **No hay razón técnica para pasar de 12 €.**
+- Con 12 €: boleto 1 de la cartera. Si el usuario decide jugar más, se juega en el orden de la cartera, sin repetir columnas.
