@@ -478,7 +478,7 @@
    "defensa": 102,
    "proximo": "Almería – Andorra",
    "proximo_n": 3,
-   "p_ganar_proximo": 0.5796,
+   "p_ganar_proximo": 0.6052,
    "bajas": null,
    "dudas": 1,
    "elo": null
@@ -501,7 +501,7 @@
    "defensa": 93,
    "proximo": "Valladolid – Castellón",
    "proximo_n": 1,
-   "p_ganar_proximo": 0.4895,
+   "p_ganar_proximo": 0.4928,
    "bajas": null,
    "dudas": 1,
    "elo": null
@@ -616,7 +616,7 @@
    "defensa": 101,
    "proximo": "Real Sociedad B – Sporting",
    "proximo_n": 2,
-   "p_ganar_proximo": 0.3783,
+   "p_ganar_proximo": 0.3596,
    "bajas": 2,
    "dudas": 3,
    "elo": null
@@ -731,7 +731,7 @@
    "defensa": 117,
    "proximo": "Valladolid – Castellón",
    "proximo_n": 1,
-   "p_ganar_proximo": 0.2778,
+   "p_ganar_proximo": 0.2711,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -777,7 +777,7 @@
    "defensa": 103,
    "proximo": "Tenerife – Ceuta",
    "proximo_n": 6,
-   "p_ganar_proximo": 0.5064,
+   "p_ganar_proximo": 0.4932,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -846,7 +846,7 @@
    "defensa": 115,
    "proximo": "Real Sociedad B – Sporting",
    "proximo_n": 2,
-   "p_ganar_proximo": 0.3705,
+   "p_ganar_proximo": 0.3855,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -892,7 +892,7 @@
    "defensa": 111,
    "proximo": "Almería – Andorra",
    "proximo_n": 3,
-   "p_ganar_proximo": 0.2224,
+   "p_ganar_proximo": 0.2051,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -961,7 +961,7 @@
    "defensa": 129,
    "proximo": "Tenerife – Ceuta",
    "proximo_n": 6,
-   "p_ganar_proximo": 0.2495,
+   "p_ganar_proximo": 0.2634,
    "bajas": null,
    "dudas": null,
    "elo": null

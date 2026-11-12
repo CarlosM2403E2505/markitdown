@@ -356,3 +356,43 @@ Detalle: `analisis/rescate-quiniela-mesa.md`. Salida: `j21-calculadora-v1.7.txt`
 - **Datos:** se añaden Tenerife 2-2 Andorra y 3 partidos de Champions. Los precios de los clubes cambian menos de 0,3 puntos.
 - **4 boletos de 20 € como máximo:** mismos formatos y mismos dobles y triples que en la v1.6. Los 4 juntos (54,75 €): P(14) 1 entre 609, P(≥12) 8,3 %.
 - **Retorno:** se corrige el «0,77 € por euro». La Quiniela devuelve de media unos 0,55 € por euro jugado.
+
+---
+
+# v1.8 · jueves 12/11/2026 · primer repaso completo con el acceso a las webs
+
+**Datos nuevos:**
+- quiniela15.com: % LAE del público y orden oficial. **Coincide con el nuestro.**
+- jornadaperfecta.com: lesionados y sancionados de la próxima jornada, leídos hoy.
+
+**Bajas aplicadas** (clase B, tope del 5 %; portero titular sancionado hasta un 5 %):
+
+| Nº | Partido | Ajuste |
+|---|---|---|
+| 1 | Valladolid – Castellón | Valladolid sin Latasa (lesión) ni Iván Alejo (sanción): ataque ×0,96. Castellón sin Orozco (roja): ×0,98 |
+| 2 | Real Sociedad B – Sporting | Sporting sin Juan Otero (roja) ni Antonio Casas (grado 3): ataque ×0,95 |
+| 3 | Almería – Andorra | Andorra sin su portero Owono (roja) ni Lautaro de León (doble amarilla): Almería ×1,05 y Andorra ×0,99 (Marcos Luna, del Almería, sancionado) |
+| 6 | Tenerife – Ceuta | Tenerife sin su portero Dani Martín (doble amarilla): Ceuta ×1,05 |
+
+**Estadístico:**
+- Favoritos de Segunda: el modelo da un poco menos de lo real (47,2 % frente a 52,1 % en 2026/27, n = 119, dentro del ruido). Subir la temperatura no mejora la prueba: T = 1,05 sigue siendo la mejor (1,0513).
+- **El 78 % del público en el Almería, o el 73 % en el Tenerife, es el sesgo hacia el favorito.**
+- En **Primera**, T = 1,15–1,20 mejora la validación y la prueba (0,9630 → 0,9607). **Se aplicará en la próxima jornada con Primera.**
+
+**Pleno:**
+
+| Marcador | Modelo | Público estimado | Valor |
+|---|---|---|---|
+| **1-0** | 11,9 % | ≈2,8 % | **4,3** |
+| 1-1 | 11,7 % | 10,4 % | 1,1 |
+| 2-1 (lo que más juega el público) | 9,6 % | 26 % | 0,37 |
+
+- El público estimado sale de multiplicar los % de goles de cada equipo que da LAE.
+- **Pleno 1-0 en los 4 boletos.**
+
+**Boletos:** mismos formatos. Los 4 juntos: P(14) 1 entre 598; P(≥12) 8,4 %. Ninguno contiene la columna del público (22111111111121).
+
+**Pendiente:**
+- resultados del jueves (selecciones);
+- revisión del sábado a las 9:00 (bajas de última hora y % definitivos);
+- congelación a las 11:00.

@@ -2,7 +2,7 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v1.7 (selecciones con el modelo validado)",
+ "estado": "Pronóstico v1.8 (primer repaso completo del jueves)",
  "presupuesto": 12,
  "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
@@ -11,9 +11,9 @@
    "partido": "Valladolid – Castellón",
    "competicion": "Segunda",
    "p": [
-    0.2778,
-    0.2327,
-    0.4895
+    0.2711,
+    0.2361,
+    0.4928
    ],
    "p_sin_T": [
     0.2809,
@@ -24,16 +24,21 @@
    "lambda_visitante": 1.718,
    "factor_empates": 1.0,
    "veto_unico": false,
-   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.208,
+    1.682
+   ],
+   "ajuste": "Valladolid sin Latasa (lesión) ni Iván Alejo (sanción): ataque ×0,96; Castellón sin Orozco (roja): ×0,98 (jornadaperfecta.com, 12/11/2026, clase B)"
   },
   {
    "n": 2,
    "partido": "Real Sociedad B – Sporting",
    "competicion": "Segunda",
    "p": [
-    0.3705,
-    0.2511,
-    0.3783
+    0.3855,
+    0.255,
+    0.3596
    ],
    "p_sin_T": [
     0.369,
@@ -43,16 +48,21 @@
    "lambda_local": 1.375,
    "lambda_visitante": 1.391,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "xg": [
+    1.374,
+    1.32
+   ],
+   "ajuste": "Sporting sin Juan Otero (roja directa) ni Antonio Casas (lesión de grado 3): ataque ×0,95 (jornadaperfecta.com, 12/11/2026, clase B)"
   },
   {
    "n": 3,
    "partido": "Almería – Andorra",
    "competicion": "Segunda",
    "p": [
-    0.5796,
-    0.198,
-    0.2224
+    0.6052,
+    0.1896,
+    0.2051
    ],
    "p_sin_T": [
     0.5666,
@@ -63,7 +73,12 @@
    "lambda_visitante": 1.311,
    "factor_empates": 1.0,
    "veto_unico": false,
-   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    2.283,
+    1.311
+   ],
+   "ajuste": "Andorra sin su portero Owono (roja) ni Lautaro de León (doble amarilla): Almería ×1,05; Andorra ×0,97, y ×1,02 por la sanción de Marcos Luna (Almería): ×0,99 (jornadaperfecta.com, 12/11/2026, clase B)"
   },
   {
    "n": 4,
@@ -83,7 +98,11 @@
    "lambda_visitante": 0.927,
    "factor_empates": 1.0,
    "veto_unico": false,
-   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    2.03,
+    0.927
+   ]
   },
   {
    "n": 5,
@@ -102,16 +121,20 @@
    "lambda_local": 1.194,
    "lambda_visitante": 1.182,
    "factor_empates": 1.0,
-   "veto_unico": false
+   "veto_unico": false,
+   "xg": [
+    1.194,
+    1.181
+   ]
   },
   {
    "n": 6,
    "partido": "Tenerife – Ceuta",
    "competicion": "Segunda",
    "p": [
-    0.5064,
-    0.2441,
-    0.2495
+    0.4932,
+    0.2434,
+    0.2634
    ],
    "p_sin_T": [
     0.4956,
@@ -122,7 +145,12 @@
    "lambda_visitante": 1.06,
    "factor_empates": 1.0,
    "veto_unico": false,
-   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.609,
+    1.128
+   ],
+   "ajuste": "Tenerife sin su portero Dani Martín (doble amarilla): Ceuta ×1,05 (jornadaperfecta.com, 12/11/2026, clase B)"
   },
   {
    "n": 7,
@@ -142,7 +170,11 @@
    "lambda_visitante": 1.275,
    "factor_empates": 1.0,
    "veto_unico": false,
-   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.453,
+    1.275
+   ]
   },
   {
    "n": 8,
@@ -162,7 +194,11 @@
    "lambda_visitante": 0.889,
    "factor_empates": 1.0,
    "veto_unico": false,
-   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)"
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.554,
+    0.889
+   ]
   },
   {
    "n": 9,
@@ -183,7 +219,11 @@
    "factor_empates": 1.0,
    "veto_unico": false,
    "riesgo": "Muy alto",
-   "nota_riesgo": "Sabadell: 13 partidos en los datos (dato flojo)"
+   "nota_riesgo": "Sabadell: 13 partidos en los datos (dato flojo)",
+   "xg": [
+    1.126,
+    1.143
+   ]
   },
   {
    "n": 10,
@@ -223,7 +263,11 @@
    "lambda_visitante": 0.489,
    "factor_empates": 0.85,
    "veto_unico": false,
-   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    0.945,
+    0.489
+   ]
   },
   {
    "n": 12,
@@ -243,7 +287,11 @@
    "lambda_visitante": 0.915,
    "factor_empates": 0.85,
    "veto_unico": false,
-   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    1.641,
+    0.915
+   ]
   },
   {
    "n": 13,
@@ -263,7 +311,11 @@
    "lambda_visitante": 1.936,
    "factor_empates": 0.85,
    "veto_unico": false,
-   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    1.02,
+    1.936
+   ]
   },
   {
    "n": 14,
@@ -283,7 +335,11 @@
    "lambda_visitante": 1.347,
    "factor_empates": 0.85,
    "veto_unico": false,
-   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)"
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    1.14,
+    1.347
+   ]
   }
  ],
  "pleno": {
@@ -318,7 +374,8 @@
   },
   "mezcla": 0.0,
   "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo); Pleno sin mezcla empírica (validado)",
-  "ajuste": "España sin Rodri ni Olmo (×0,97) e Inglaterra sin Guéhi (×1,02 a los goles de España), clase B."
+  "ajuste": "España sin Rodri ni Olmo (×0,97) e Inglaterra sin Guéhi (×1,02 a los goles de España), clase B.",
+  "decision": "1-0 en los 4 boletos: es el más probable (11,9 %) y el público lo juega poco (≈2,8 %, producto de los % de goles de LAE); el 1-1 (11,7 %) lo juega un 10,4 %."
  },
  "sueltas": [
   {
@@ -329,7 +386,7 @@
   {
    "partido": "Almería – Andorra",
    "apuesta": "Almería marca",
-   "p": 0.884
+   "p": 0.898
   },
   {
    "partido": "Mallorca – Córdoba",
@@ -337,14 +394,132 @@
    "p": 0.869
   },
   {
-   "partido": "Valladolid – Castellón",
-   "apuesta": "Castellón marca",
-   "p": 0.821
-  },
-  {
    "partido": "Sevilla F – Atlético F",
    "apuesta": "Atlético F marca",
    "p": 0.859
+  },
+  {
+   "partido": "Valladolid – Castellón",
+   "apuesta": "Castellón marca",
+   "p": 0.814
   }
- ]
+ ],
+ "publico": {
+  "fuente": "quiniela15.com, % LAE, leído el 12/11/2026 (345 quinielistas en su comunidad; LAE es la estimación del público de Loterías)",
+  "porcentajes": {
+   "1": {
+    "lae": [
+     30,
+     25,
+     45
+    ]
+   },
+   "2": {
+    "lae": [
+     28,
+     27,
+     45
+    ]
+   },
+   "3": {
+    "lae": [
+     78,
+     11,
+     11
+    ]
+   },
+   "4": {
+    "lae": [
+     70,
+     17,
+     13
+    ]
+   },
+   "5": {
+    "lae": [
+     42,
+     32,
+     26
+    ]
+   },
+   "6": {
+    "lae": [
+     73,
+     16,
+     11
+    ]
+   },
+   "7": {
+    "lae": [
+     54,
+     26,
+     20
+    ]
+   },
+   "8": {
+    "lae": [
+     70,
+     17,
+     13
+    ]
+   },
+   "9": {
+    "lae": [
+     39,
+     35,
+     26
+    ]
+   },
+   "10": {
+    "lae": [
+     41,
+     28,
+     31
+    ]
+   },
+   "11": {
+    "lae": [
+     35,
+     33,
+     32
+    ]
+   },
+   "12": {
+    "lae": [
+     37,
+     34,
+     29
+    ]
+   },
+   "13": {
+    "lae": [
+     16,
+     18,
+     66
+    ]
+   },
+   "14": {
+    "lae": [
+     38,
+     26,
+     36
+    ]
+   }
+  },
+  "columna": "22111111111121",
+  "pleno_goles_lae": {
+   "local": {
+    "0": 5,
+    "1": 20,
+    "2": 50,
+    "M": 25
+   },
+   "visitante": {
+    "0": 14,
+    "1": 52,
+    "2": 25,
+    "M": 9
+   }
+  }
+ }
 }

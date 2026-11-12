@@ -93,7 +93,7 @@
    "n": 2,
    "apuesta": "Almería marca",
    "partido": "Almería – Andorra",
-   "p": 0.884,
+   "p": 0.898,
    "resultado": null
   },
   {
@@ -107,17 +107,17 @@
   {
    "jornada": 21,
    "n": 4,
-   "apuesta": "Castellón marca",
-   "partido": "Valladolid – Castellón",
-   "p": 0.821,
+   "apuesta": "Atlético F marca",
+   "partido": "Sevilla F – Atlético F",
+   "p": 0.859,
    "resultado": null
   },
   {
    "jornada": 21,
    "n": 5,
-   "apuesta": "Atlético F marca",
-   "partido": "Sevilla F – Atlético F",
-   "p": 0.859,
+   "apuesta": "Castellón marca",
+   "partido": "Valladolid – Castellón",
+   "p": 0.814,
    "resultado": null
   }
  ]
