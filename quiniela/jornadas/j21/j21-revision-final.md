@@ -67,3 +67,84 @@ Salida completa en `j21-boleto-unico.txt`. Los mejores:
 | 15 | Pleno: España – Inglaterra | **1-0** |
 
 P(14) 1 entre 1.273 · P(≥13) 0,85 % · P(≥12) 4,3 % · P(≥10) 31,0 % · P(14 y Pleno) ≈ 1 entre 10.430.
+
+---
+
+# v2.1 · Deliberación sobre el 14 y los empates (sábado 14/11)
+
+## Techo honesto de P(14)
+
+P(14) de un boleto = suma de las probabilidades de sus columnas. Con nuestras probabilidades:
+
+| Columnas (coste) | Mejor P(14) posible |
+|---|---|
+| 24 (18 €) | 1 entre 1.218 |
+| 26 (19,50 €, el máximo con 20 €) | **1 entre 1.136** |
+| 31 (23,25 €) | 1 entre 1.000 |
+| 71 (53,25 €) | 1 entre 500 |
+
+Con 20 € no se puede bajar de 1 entre 1.136. Para mejorar de verdad hace falta una de dos cosas:
+- **probabilidades más afiladas**, es decir, mejores datos (ver los expertos nuevos);
+- **más columnas**, que es decisión del usuario.
+
+## Empates: lo que se ha medido
+
+- **P(X) por partido:**
+
+  | Partido | P(X) |
+  |---|---|
+  | Alavés F – Eibar F | **32,4 %** |
+  | Eldense – Sabadell | **28,4 %** |
+  | Oviedo – Girona | 27,6 % |
+  | Real Sociedad B – Sporting | 25,5 % |
+  | Granada – Las Palmas | 25,3 % |
+  | Eibar – Cádiz | 25,1 % |
+
+- **En la jornada:** se esperan 3,4 empates; la probabilidad de que no haya ninguno es del 2 %.
+- **Lo que cuesta cubrir la X:** en ningún partido la X es el resultado más probable. Por eso cada X cubierta cuesta P(14). Se compararon 18.810 diseños de un boleto (formatos 3 dobles + 1 triple, 1 doble + 2 triples, 4 dobles y 2 dobles + 1 triple, con dobles 12, 1X o X2):
+
+  | Diseño | X cubierta en | P(14) | P(≥13) | P(todas las X cubiertas) |
+  |---|---|---|---|---|
+  | Máximo P(14) | 1 partido | 1 entre 1.273 | 0,85 % | 2,9 % |
+  | **X en los 2 partidos con más empate** | **2** | **1 entre 1.339 (95 % del máximo)** | **0,82 %** | 4,2 % |
+  | X en los 3 con más empate | 3 | 1 entre 1.501 (85 %) | 0,75 % | — |
+  | X en 4 partidos | 4 | 1 entre 1.744 (73 %) | 0,66 % | 7,8 % |
+
+## Decisión de la mesa: regla del empate (nueva)
+
+- **Regla:** se cubre la X en los partidos con más probabilidad de empate, mientras la P(14) del boleto se mantenga **≥ 90 % de la máxima** de ese formato.
+- **Esta jornada:** X en **Eldense – Sabadell** (triple) y en **Alavés F – Eibar F** (1X). La tercera (Oviedo – Girona) bajaría al 85 %: no entra.
+
+## Boleto final v2.1 (directa, 24 apuestas, 18 €)
+
+| Nº | Partido | Marca |
+|---|---|---|
+| 1 | Valladolid – Castellón | 2 |
+| 2 | Real Sociedad B – Sporting | **1 2** |
+| 3 | Almería – Andorra | 1 |
+| 4 | Mallorca – Córdoba | 1 |
+| 5 | Oviedo – Girona | **1 2** |
+| 6 | Tenerife – Ceuta | 1 |
+| 7 | Granada – Las Palmas | 1 |
+| 8 | Eibar – Cádiz | 1 |
+| 9 | Eldense – Sabadell | **1 X 2** |
+| 10 | Bélgica – Italia | 1 |
+| 11 | Alavés F – Eibar F | **1 X** |
+| 12 | Real Sociedad F – Athletic F | 1 |
+| 13 | Sevilla F – Atlético F | 2 |
+| 14 | Valencia F – Granada F | 2 |
+| 15 | Pleno: España – Inglaterra | **1-0** |
+
+## Informe del Auditor
+
+| Comprobación | Resultado |
+|---|---|
+| Apuestas y coste | 24 apuestas distintas, **18,00 €** ≤ 20 € ✅ |
+| P(14) por dos métodos (producto por partido y suma de las 24 columnas) | 1 entre 1.339 en los dos ✅ |
+| Distribución exacta (`evaluar_columnas`) | P(≥13) 0,825 %, P(≥12) 4,25 %, P(≥11) 13,6 %, P(≥10) 30,9 % ✅ |
+| P(14 y Pleno 1-0) | 1 entre 10.978 ✅ |
+| Nombres de los equipos en cada fila | ✅ |
+| Bajas aplicadas: solo A/B, con fuente y tope del 5 % | ✅ (6 partidos, ver arriba) |
+| Fuentes de los 4 resultados del jueves | Chequia–España con 2 fuentes; los otros 3 con 1 (futboltotal, clase B) ⚠️ Anotado |
+| El público no ha intervenido (anexo H) | ✅ |
+| Pendiente | Lamine Yamal y Oyarzabal (clase C, sin efecto) y el Pamplona–Eibar de Copa (sin confirmar) ⚠️ |

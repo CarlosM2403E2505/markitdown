@@ -473,3 +473,21 @@ Detalle y pruebas en `analisis/rescate-quiniela-mesa.md`.
   - el candidato «C sin público» (fase 8).
 - **Pleno = el marcador más probable según la mesa.**
 - El % del público (LAE) se sigue leyendo y se informa como dato del Market Analyst, sin efecto en la decisión.
+
+## Anexo I — Regla del empate, expertos nuevos y Auditor visible (14/11/2026)
+
+- **Regla del empate:**
+  - en cada jornada se cubre la X en los partidos con más P(X), mientras la P(14) del boleto se mantenga ≥ 90 % de la máxima de su formato;
+  - se informa siempre de P(X) por partido, de las X esperadas, de P(ninguna X), de las X cubiertas y de P(todas las X cubiertas);
+  - herramienta: búsqueda de diseños con dobles 12, 1X o X2 (`jornadas/j21/j21-revision-final.md`).
+- **Techo honesto:** la P(14) de un boleto es la suma de sus columnas. Con 20 € (26 apuestas) no se baja de lo que den las 26 columnas más probables. Solo lo mejoran unos datos mejores o más columnas (decisión del usuario).
+- **Expertos que se incorporan a la mesa:**
+
+  | Experto | Tarea | Por qué |
+  |---|---|---|
+  | **Trader de empates** | Dueño de la regla del empate. Delibera partido a partido dónde va la X y con qué coste | Las X se escapan como tercer signo |
+  | **Analista de categorías inferiores** | Completar los datos de los equipos con temporadas en Primera RFEF (Tenerife, Andorra, Sabadell, Ceuta, Eldense…) | Al modelo le faltan esas temporadas: precios menos afilados |
+  | **Analista de convocatorias** | Leer las convocatorias oficiales del viernes y el sábado (clase A) antes de congelar | Convertir bajas de clase C en datos de clase A o B |
+  | **Compilador de marcador exacto** | Control del Pleno con el mercado de resultado exacto, sin entrar en el modelo | El Pleno es el objetivo final |
+
+- **Auditor visible:** cada entrega lleva su tabla «Informe del Auditor» (coste, P(14) por dos métodos, distribución exacta, fuentes, bajas A/B, anexo H, pendientes).
