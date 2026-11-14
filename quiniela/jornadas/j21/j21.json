@@ -2,7 +2,7 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v1.8 (primer repaso completo del jueves)",
+ "estado": "Pronóstico v1.9 FINAL (congelado el sábado 14/11)",
  "presupuesto": 12,
  "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
@@ -157,9 +157,9 @@
    "partido": "Granada – Las Palmas",
    "competicion": "Segunda",
    "p": [
-    0.4173,
-    0.2518,
-    0.3309
+    0.426,
+    0.2534,
+    0.3206
    ],
    "p_sin_T": [
     0.4132,
@@ -173,8 +173,9 @@
    "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
    "xg": [
     1.453,
-    1.275
-   ]
+    1.237
+   ],
+   "ajuste": "Las Palmas sin Sandro Ramírez (delantero, microrrotura en el gemelo): ataque ×0,97 (jornadaperfecta.com, 14/11/2026, clase B)"
   },
   {
    "n": 8,
@@ -230,9 +231,9 @@
    "partido": "Bélgica – Italia",
    "competicion": "Selecciones",
    "p": [
-    0.5094,
-    0.2407,
-    0.2499
+    0.501,
+    0.2421,
+    0.2568
    ],
    "lambda_local": 1.622,
    "lambda_visitante": 0.778,
@@ -241,8 +242,8 @@
    "veto_unico": false,
    "control_mercado": "Mercado de predicciones (robinhood.com, 10/11): Bélgica 44, empate 18, Italia 31 céntimos; normalizado ≈ 47/19/33. Solo control. FIFA: Bélgica 8.ª, Italia 15.ª (sofascore.com).",
    "xg": [
-    1.693,
-    1.112
+    1.674,
+    1.129
    ]
   },
   {
@@ -347,12 +348,12 @@
   "partido": "España – Inglaterra",
   "competicion": "Selecciones",
   "p": [
-   0.5274,
-   0.2463,
-   0.2263
+   0.5322,
+   0.2464,
+   0.2214
   ],
-  "lambda_local": 1.638,
-  "lambda_visitante": 0.982,
+  "lambda_local": 1.637,
+  "lambda_visitante": 0.961,
   "factor_x": 1.0,
   "empirica": {
    "0-0": 0.06977,
@@ -375,7 +376,7 @@
   "mezcla": 0.0,
   "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo); Pleno sin mezcla empírica (validado)",
   "ajuste": "España sin Rodri ni Olmo (×0,97) e Inglaterra sin Guéhi (×1,02 a los goles de España), clase B.",
-  "decision": "1-0 en los 4 boletos: es el más probable (11,9 %) y el público lo juega poco (≈2,8 %, producto de los % de goles de LAE); el 1-1 (11,7 %) lo juega un 10,4 %."
+  "decision": "1-0 en los 4 boletos (12,2 % frente a ≈2,3 % del público: valor 5,3)."
  },
  "sueltas": [
   {
@@ -405,120 +406,120 @@
   }
  ],
  "publico": {
-  "fuente": "quiniela15.com, % LAE, leído el 12/11/2026 (345 quinielistas en su comunidad; LAE es la estimación del público de Loterías)",
+  "fuente": "quiniela15.com, % LAE, leído el sábado 14/11/2026 (441 quinielistas)",
   "porcentajes": {
    "1": {
     "lae": [
-     30,
+     28,
      25,
-     45
+     47
     ]
    },
    "2": {
     "lae": [
-     28,
+     26,
      27,
-     45
+     47
     ]
    },
    "3": {
     "lae": [
-     78,
-     11,
-     11
+     84,
+     9,
+     7
     ]
    },
    "4": {
     "lae": [
-     70,
-     17,
-     13
+     74,
+     16,
+     10
     ]
    },
    "5": {
     "lae": [
-     42,
+     44,
      32,
-     26
+     24
     ]
    },
    "6": {
     "lae": [
-     73,
-     16,
-     11
+     78,
+     13,
+     9
     ]
    },
    "7": {
     "lae": [
-     54,
-     26,
-     20
+     55,
+     27,
+     18
     ]
    },
    "8": {
     "lae": [
-     70,
-     17,
-     13
+     75,
+     15,
+     10
     ]
    },
    "9": {
     "lae": [
      39,
-     35,
-     26
+     37,
+     24
     ]
    },
    "10": {
     "lae": [
-     41,
+     40,
      28,
-     31
+     32
     ]
    },
    "11": {
     "lae": [
      35,
-     33,
-     32
+     34,
+     31
     ]
    },
    "12": {
     "lae": [
-     37,
+     39,
      34,
-     29
+     27
     ]
    },
    "13": {
     "lae": [
-     16,
-     18,
-     66
+     12,
+     15,
+     73
     ]
    },
    "14": {
     "lae": [
      38,
-     26,
-     36
+     25,
+     37
     ]
    }
   },
   "columna": "22111111111121",
   "pleno_goles_lae": {
    "local": {
-    "0": 5,
-    "1": 20,
-    "2": 50,
+    "0": 3,
+    "1": 19,
+    "2": 53,
     "M": 25
    },
    "visitante": {
-    "0": 14,
-    "1": 52,
-    "2": 25,
-    "M": 9
+    "0": 12,
+    "1": 54,
+    "2": 26,
+    "M": 8
    }
   }
  }

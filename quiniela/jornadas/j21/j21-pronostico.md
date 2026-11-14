@@ -396,3 +396,52 @@ Detalle: `analisis/rescate-quiniela-mesa.md`. Salida: `j21-calculadora-v1.7.txt`
 - resultados del jueves (selecciones);
 - revisión del sábado a las 9:00 (bajas de última hora y % definitivos);
 - congelación a las 11:00.
+
+---
+
+# v1.9 FINAL · sábado 14/11/2026 · CONGELADO
+
+**Resultados del jueves**, añadidos a `datos/selecciones/results.csv` (detalle en `PARTIDOS_AÑADIDOS.md`):
+- Chequia 0-2 España;
+- Inglaterra 2-1 Croacia;
+- Italia 3-1 Francia;
+- Turquía 1-2 Bélgica.
+
+**Contexto de grupo** (aviso, no mueve el precio):
+- España 15 e Inglaterra 12: el domingo se decide el primer puesto.
+- Francia 10, Italia 10 y Bélgica 9: Bélgica–Italia decide el grupo.
+
+**Precios que cambian:**
+
+| Nº | Partido | v1.9 | Motivo |
+|---|---|---|---|
+| 10 | Bélgica – Italia | **50,1 / 24,2 / 25,7** | Resultados del jueves |
+| 15 | España – Inglaterra | **53,2 / 24,6 / 22,1** | Resultados del jueves |
+| 7 | Granada – Las Palmas | **42,6 / 25,3 / 32,1** | Las Palmas sin Sandro Ramírez, ×0,97 |
+
+**Público (LAE, sábado):** columna del público 22111111111121. No está en ninguno de los 4 boletos.
+
+**Pleno: 1-0** en los 4 boletos.
+
+| Marcador | Modelo | Público estimado | Valor |
+|---|---|---|---|
+| **1-0** | 12,2 % | ≈2,3 % | **5,3** |
+| 1-1 | 11,7 % | 10,3 % | 1,1 |
+| 2-1 (lo que más juega el público) | 9,6 % | 28,6 % | 0,33 |
+
+**Boletos** (mismos formatos y mismos dobles y triples que en la v1.8):
+
+| Boleto | Formato | Precio | P(14) |
+|---|---|---|---|
+| 1 | Directa de 4 dobles | 12 € | 1 entre 1.777 |
+| 2 | Directa de 3 dobles + 1 triple | 18 € | 1 entre 1.427 |
+| 3 | Reducida 1 oficial | 6,75 € | 1 entre 6.342 |
+| 4 | Reducida 3 oficial | 18 € | 1 entre 2.499 |
+| **Los 4 juntos** | | **54,75 €** | **1 entre 603** (P(≥12) 8,4 %) |
+
+**Sueltas:**
+- Alavés F – Eibar F, menos de 3,5 goles: 94,1 %;
+- marca el Almería: 89,8 %;
+- marca el Mallorca: 86,9 %;
+- marca el Atlético F: 85,9 %;
+- marca el Castellón: 81,4 %.

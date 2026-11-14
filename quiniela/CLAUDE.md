@@ -56,25 +56,21 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
-## 5. Estado: J21 (sábado 14 y domingo 15/11/2026) · versión 1.7
+## 5. Estado: J21 (sábado 14 y domingo 15/11/2026) · versión 1.9 FINAL, congelada el sábado 14/11
 - **Composición:** 9 de Segunda, Bélgica–Italia (10), 4 de Liga F; Pleno España–Inglaterra.
 - **Horario:** cierre el sábado a las 14:00. **Congelación a las 11:00.**
-- **Precios clave:** Bélgica–Italia 50,9 / 24,1 / 25,0. España–Inglaterra 52,7 / 24,6 / 22,6. Pleno: 1-0 11,9 % y 1-1 11,7 %.
-- **4 boletos** (`jornadas/j21/j21-boletos-oficiales-v1.7.txt`):
+- **Precios clave:** Bélgica–Italia 50,1 / 24,2 / 25,7. España–Inglaterra 53,2 / 24,6 / 22,1. **Pleno 1-0 en los 4 boletos** (12,2 %; público ≈2,3 %).
+- **4 boletos** (`jornadas/j21/j21-boletos-oficiales-v1.9.txt`):
 
   | Boleto | Formato | Precio | Pleno |
   |---|---|---|---|
   | 1 | Directa de 4 dobles | 12 € | 1-0 |
   | 2 | Directa de 3 dobles + 1 triple | 18 € | 1-0 |
-  | 3 | Reducida 1 oficial (4 triples) | 6,75 € | 1-1 |
-  | 4 | Reducida 3 oficial (3 dobles + 3 triples) | 18 € | 1-1 |
+  | 3 | Reducida 1 oficial (4 triples) | 6,75 € | 1-0 |
+  | 4 | Reducida 3 oficial (3 dobles + 3 triples) | 18 € | 1-0 |
 
-  Los 4 juntos: 54,75 €; P(14) 1 entre 609.
-- **Pendiente del sábado:**
-  1. Resultados del jueves 12/11 (Italia–Francia, Chequia–España, Inglaterra–Croacia, Turquía–Bélgica): añadirlos a `datos/selecciones/results.csv`, volver a correr `j21_selecciones.py` y recalcular.
-  2. % del público (quiniela15 o Claude in Chrome): decide 1-0 o 1-1 en cada boleto.
-  3. Bajas del Sporting (Otero sancionado, Casas lesionado; dos fuentes) y de Girona y Andorra (sanciones sin confirmar).
-  4. Congelar y entregar con los nombres de los equipos.
+  Los 4 juntos: 54,75 €; P(14) 1 entre 603.
+- **Hecho el sábado:** resultados del jueves añadidos (`datos/selecciones/PARTIDOS_AÑADIDOS.md`), % LAE leídos y bajas revisadas. Congelado.
 - **Después:** premios oficiales de la J20 y de la J21 en `datos/premios.json` (null si no hubo acertantes), post-mortem de la J21 y actualización de la app.
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)

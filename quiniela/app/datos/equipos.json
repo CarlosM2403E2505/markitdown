@@ -570,7 +570,7 @@
    "defensa": 102,
    "proximo": "Granada – Las Palmas",
    "proximo_n": 7,
-   "p_ganar_proximo": 0.4173,
+   "p_ganar_proximo": 0.426,
    "bajas": 2,
    "dudas": null,
    "elo": null
@@ -685,7 +685,7 @@
    "defensa": 95,
    "proximo": "Granada – Las Palmas",
    "proximo_n": 7,
-   "p_ganar_proximo": 0.3309,
+   "p_ganar_proximo": 0.3206,
    "bajas": null,
    "dudas": 1,
    "elo": null
@@ -1353,7 +1353,7 @@
    "elo": 1956,
    "proximo": "Bélgica – Italia",
    "proximo_n": 10,
-   "p_ganar_proximo": 0.5094,
+   "p_ganar_proximo": 0.501,
    "bajas": null,
    "dudas": null
   },
@@ -1376,7 +1376,7 @@
    "elo": 2287,
    "proximo": "España – Inglaterra",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.5274,
+   "p_ganar_proximo": 0.5322,
    "bajas": null,
    "dudas": null
   },
@@ -1399,7 +1399,7 @@
    "elo": 2146,
    "proximo": "España – Inglaterra",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.2263,
+   "p_ganar_proximo": 0.2214,
    "bajas": null,
    "dudas": null
   },
@@ -1422,7 +1422,7 @@
    "elo": 1910,
    "proximo": "Bélgica – Italia",
    "proximo_n": 10,
-   "p_ganar_proximo": 0.2499,
+   "p_ganar_proximo": 0.2568,
    "bajas": null,
    "dudas": null
   }

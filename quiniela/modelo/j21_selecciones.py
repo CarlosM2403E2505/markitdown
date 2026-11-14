@@ -1,4 +1,4 @@
-"""J21 v1.7: precio del partido 10 (Bélgica–Italia) y del Pleno (España–Inglaterra) con el Poisson de selecciones.
+"""J21 v1.7–v1.9: precio del partido 10 (Bélgica–Italia) y del Pleno (España–Inglaterra) con el Poisson de selecciones.
 Validado en modelo/validacion_selecciones.py (log-loss en prueba 0,795 frente a 0,810 del Elo; empates ×1,00)
 y modelo/validacion_pleno_selecciones.py (sin mezcla empírica). Bajas de clase B como en la v1.3:
 España sin Rodri ni Olmo (ataque ×0,97) e Inglaterra sin Guéhi (goles de España ×1,02).
@@ -9,7 +9,7 @@ import numpy as np
 R = os.path.dirname(os.path.abspath(__file__))
 s = importlib.util.spec_from_file_location("sm", os.path.join(R, "selecciones_modelo.py")); sm = importlib.util.module_from_spec(s); s.loader.exec_module(sm)
 ms = sm.cargar("2006-01-01")
-mod = sm.NatPoisson().fit(ms, date(2026, 11, 14))
+mod = sm.NatPoisson().fit(ms, date(2026, 11, 15))
 ruta = os.path.join(R, "..", "jornadas", "j21", "j21.json"); d = json.load(open(ruta, encoding="utf-8"))
 def precio(h, a, fl=1.0, fv=1.0):
     lam, mu = mod.rates(sm.NOMBRES[h], sm.NOMBRES[a], neutral=False); lam, mu = lam * fl, mu * fv
