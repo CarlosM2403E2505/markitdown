@@ -7,7 +7,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 2. Siempre **los 15 pronósticos**: los 14 signos, el Pleno al 15 y **5 apuestas sueltas**.
 3. **Cuotas y pronósticos ajenos: se analizan, pero no entran en el modelo.**
 4. **La J17 (Copa del Rey) no se pronostica.**
-5. **Presupuesto:** lo fija el usuario. Ahora juega hasta **20 € por boleto** (pidió 4 boletos de formatos distintos, con dobles y triples fáciles de rellenar). **Nunca se propone subir para recuperar.** Si juega menos, se sigue el orden de prioridad de los boletos.
+5. **Presupuesto:** lo fija el usuario. Desde el 14/11: **un solo boleto de hasta 20 €**, con el objetivo de la **mayor P(≥13)** (`herramientas/boleto_unico.py ... 20 p13`). Tiene que caber en un boleto, así que las sencillas van como máximo de 8 en 8. **Nunca se propone subir para recuperar.** Si juega menos, se sigue el orden de prioridad de los boletos.
 6. **La mesa elige** el sistema con el criterio fijo: de los que tienen una P(14) de al menos el 90 % de la máxima, el de mayor P(≥12). En la cartera, el boleto que más P(14) nueva añade por euro. Los boletos se recomiendan porque lo dicen los profesionales, no solo porque el usuario los pida.
 7. **Los vetos de signo único se retiraron el 3/11/2026.** Se mantiene el ajuste medido de −4,5 al favorito que viene de perder. No se reabre.
 8. **No se discuten las decisiones del usuario.** Quiere profesionales que trabajen duro, sin mediocridad, y no quiere desacuerdos.
@@ -57,22 +57,15 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
-## 5. Estado: J21 (sábado 14 y domingo 15/11/2026) · versión 1.9 FINAL, congelada el sábado 14/11
-- **Composición:** 9 de Segunda, Bélgica–Italia (10), 4 de Liga F; Pleno España–Inglaterra.
-- **Horario:** cierre el sábado a las 14:00. **Congelación a las 11:00.**
-- **Precios clave:** Bélgica–Italia 50,1 / 24,2 / 25,7. España–Inglaterra 53,2 / 24,6 / 22,1. **Pleno 1-0 en los 4 boletos** (12,2 %; público ≈2,3 %).
-- **4 boletos** (`jornadas/j21/j21-boletos-oficiales-v1.9.txt`):
-
-  | Boleto | Formato | Precio | Pleno |
-  |---|---|---|---|
-  | 1 | Directa de 4 dobles | 12 € | 1-0 |
-  | 2 | Directa de 3 dobles + 1 triple | 18 € | 1-0 |
-  | 3 | Reducida 1 oficial (4 triples) | 6,75 € | 1-0 |
-  | 4 | Reducida 3 oficial (3 dobles + 3 triples) | 18 € | 1-0 |
-
-  Los 4 juntos: 54,75 €; P(14) 1 entre 603.
-- **Hecho el sábado:** resultados del jueves añadidos (`datos/selecciones/PARTIDOS_AÑADIDOS.md`), % LAE leídos y bajas revisadas. Congelado.
-- **Después:** premios oficiales de la J20 y de la J21 en `datos/premios.json` (null si no hubo acertantes), post-mortem de la J21 y actualización de la app.
+## 5. Estado: J21 (sábado 14 y domingo 15/11/2026) · v2.0 FINAL, congelada el 14/11
+- **Boleto único de 18 €** (directa, 24 apuestas):
+  - dobles 1 2 en Real Sociedad B – Sporting, Oviedo – Girona y Granada – Las Palmas;
+  - triple en Eldense – Sabadell;
+  - el resto, el signo de la mesa;
+  - **Pleno 1-0**.
+- **Probabilidades:** P(14) 1 entre 1.273 · P(≥13) 0,85 % · P(≥12) 4,3 %.
+- **Detalle:** `jornadas/j21/j21-revision-final.md`.
+- **Después:** premios de la J20 y de la J21 en `datos/premios.json`, post-mortem de la J21 y actualización de la app.
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)
 | Web | Estado | Uso |

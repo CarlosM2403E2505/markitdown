@@ -451,3 +451,15 @@ Detalle: `analisis/rescate-quiniela-mesa.md`. Salida: `j21-calculadora-v1.7.txt`
 - el 1-0 es el marcador más probable del modelo.
 
 No cambia nada.
+
+---
+
+# v2.0 FINAL · sábado 14/11/2026 · revisión a fondo y boleto único
+
+Sustituye a los 4 boletos de la v1.9. Detalle completo en `j21-revision-final.md`.
+
+- **Boleto:** directa de 3 dobles + 1 triple, **18 €**.
+  - Dobles 1 2: Real Sociedad B – Sporting, Oviedo – Girona y Granada – Las Palmas.
+  - Triple: Eldense – Sabadell.
+  - Pleno: 1-0.
+- **Probabilidades:** P(14) 1 entre 1.273 · **P(≥13) 0,85 %** (el mejor de los que caben en un solo boleto) · P(≥12) 4,3 %.

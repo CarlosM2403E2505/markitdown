@@ -2,7 +2,7 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v1.9 FINAL (congelado el sábado 14/11)",
+ "estado": "Pronóstico v2.0 FINAL: revisión a fondo y boleto único de 18 € (directa de 3 dobles + 1 triple), congelado el 14/11",
  "presupuesto": 12,
  "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
@@ -522,5 +522,15 @@
     "M": 8
    }
   }
+ },
+ "boleto_final": {
+  "tipo": "Directa: 3 dobles (P2, P5, P7: 1 2) + 1 triple (P9)",
+  "apuestas": 24,
+  "coste": 18.0,
+  "pleno": "1-0",
+  "p14": 0.0007855459544383347,
+  "p13": 0.0085,
+  "p12": 0.043,
+  "objetivo": "P(≥13), pedido por el usuario"
  }
 }
