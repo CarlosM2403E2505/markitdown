@@ -2,7 +2,7 @@
  "jornada": 21,
  "fechas": "14–15/11",
  "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
- "estado": "Pronóstico v2.1 FINAL: boleto único de 18 € con la regla del empate (X en Eldense–Sabadell y Alavés F–Eibar F), congelado el 14/11",
+ "estado": "Pronóstico v2.2 FINAL y CERRADO: 2 boletos (12 € + 6 €), Pleno 1-0",
  "presupuesto": 12,
  "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
  "partidos": [
@@ -524,17 +524,22 @@
   }
  },
  "boleto_final": {
-  "tipo": "Directa: dobles 1 2 en P2 y P5, 1X en P11, triple en P9",
+  "tipo": "Boleto 1: directa 4 dobles (P2, P5, P9, P14: 1 2) · Boleto 2: 8 sencillas nuevas",
   "apuestas": 24,
   "coste": 18.0,
   "pleno": "1-0",
-  "p14": 0.0007468259895444362,
-  "p13": 0.00825,
-  "p12": 0.0425,
-  "x_cubiertas": [
-   "Eldense – Sabadell",
-   "Alavés F – Eibar F"
-  ],
-  "regla": "regla del empate (P14 ≥ 90 % del máximo)"
+  "p14": 0.0008169934640522876,
+  "p13": 0.00875,
+  "p12": 0.0444,
+  "columnas_boleto2": [
+   "21111111X11122",
+   "21112111X11122",
+   "2111X111211122",
+   "21111121211122",
+   "21112121211122",
+   "2111X111111122",
+   "21111121111122",
+   "22111111X11122"
+  ]
  }
 }

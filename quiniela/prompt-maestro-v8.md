@@ -476,8 +476,8 @@ Detalle y pruebas en `analisis/rescate-quiniela-mesa.md`.
 
 ## Anexo I — Regla del empate, expertos nuevos y Auditor visible (14/11/2026)
 
-- **Regla del empate:**
-  - en cada jornada se cubre la X en los partidos con más P(X), mientras la P(14) del boleto se mantenga ≥ 90 % de la máxima de su formato;
+- **Empates (corregido por el usuario el 14/11): no es una regla fija.**
+  - El Trader de empates propone y la mesa decide si cubre la X en cada partido, comparando diseños con y sin X;
   - se informa siempre de P(X) por partido, de las X esperadas, de P(ninguna X), de las X cubiertas y de P(todas las X cubiertas);
   - herramienta: búsqueda de diseños con dobles 12, 1X o X2 (`jornadas/j21/j21-revision-final.md`).
 - **Techo honesto:** la P(14) de un boleto es la suma de sus columnas. Con 20 € (26 apuestas) no se baja de lo que den las 26 columnas más probables. Solo lo mejoran unos datos mejores o más columnas (decisión del usuario).

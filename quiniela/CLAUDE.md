@@ -14,7 +14,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 9. **Empates:** le preocupa que se escapen. En cada jornada se informa de P(ninguna X), del número de X esperadas y de en cuántos partidos cubre la X el boleto. Se usa el signo X (no «A»).
 10. **No inventar nada:** fuente y clase de la noticia (A oficial, B medio con dato concreto, C rumor, D especulación). **Solo A y B mueven el precio.** Un dato no visto queda null.
 11. No analizar los partidos en el descanso.
-13. **Empates (anexo I):** regla del empate. Se cubre la X en los partidos con más P(X) mientras la P(14) del boleto se mantenga ≥ 90 % de la máxima. Se informa de P(todas las X cubiertas).
+13. **Empates (decisión del usuario, 14/11):** no hay regla fija. **La mesa decide** en cada partido si cubre la X según vea la probabilidad; si no la ve, da el boleto como lo piensa. Se informa de P(X) por partido y de las X cubiertas.
 14. **El Auditor se ve:** cada entrega lleva la tabla «Informe del Auditor».
 12. **Decide la mesa, no el público (14/11/2026).** Cada signo, cada doble o triple y el Pleno salen solo de las probabilidades de la mesa. El % del público (LAE) se informa como dato, pero **nunca** cambia un signo ni el Pleno: no se desempata con él y no se quita «la columna del público». Pleno = el marcador más probable de la mesa.
 
@@ -59,16 +59,15 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
-## 5. Estado: J21 (sábado 14 y domingo 15/11/2026) · v2.1 FINAL, congelada el 14/11
-- **Boleto único de 18 €** (directa, 24 apuestas):
-  - 1 2 en Real Sociedad B – Sporting y en Oviedo – Girona;
-  - **1X2 en Eldense – Sabadell**;
-  - **1X en Alavés F – Eibar F**;
-  - el resto, el signo de la mesa;
-  - **Pleno 1-0**.
-- **Probabilidades:** P(14) 1 entre 1.339 · P(≥13) 0,82 % · P(≥12) 4,3 %.
-- **Detalle e informe del Auditor:** `jornadas/j21/j21-revision-final.md`.
-- **Después:** premios de la J20 y de la J21 en `datos/premios.json`, post-mortem de la J21 (cuántas X salieron y cuántas se cubrieron) y actualización de la app.
+## 5. Estado: J21 (sábado 14 y domingo 15/11/2026) · v2.2 FINAL y CERRADA, 14/11
+- **Decisión final: 2 boletos (12 € + 6 €), sin columnas repetidas.**
+  - **Boleto 1:** directa de 4 dobles (1 2 en Real Sociedad B – Sporting, Oviedo – Girona, Eldense – Sabadell y Valencia F – Granada F).
+  - **Boleto 2:** 8 columnas sencillas nuevas, con X en Oviedo – Girona (2 columnas) y en Eldense – Sabadell (3).
+  - **Pleno 1-0** en los dos.
+  - Detalle en `jornadas/j21/boletos_final_12_6.json`.
+- **Probabilidades juntos:** P(14) 1 entre 1.224 · P(≥13) 0,875 % · P(≥12) 4,4 %.
+- **Comparación:** sale mejor en todo que el boleto único de 18 € (1 entre 1.274; 0,855 %).
+- **Después:** premios de la J20 y de la J21 en `datos/premios.json` y post-mortem de la J21 (cuántas X salieron y cuántas se cubrieron).
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)
 | Web | Estado | Uso |

@@ -148,3 +148,24 @@ Con 20 € no se puede bajar de 1 entre 1.136. Para mejorar de verdad hace falta
 | Fuentes de los 4 resultados del jueves | Chequia–España con 2 fuentes; los otros 3 con 1 (futboltotal, clase B) ⚠️ Anotado |
 | El público no ha intervenido (anexo H) | ✅ |
 | Pendiente | Lamine Yamal y Oyarzabal (clase C, sin efecto) y el Pamplona–Eibar de Copa (sin confirmar) ⚠️ |
+
+---
+
+# v2.2 FINAL y CERRADA · Un boleto de 18 € frente a dos de 12 € + 6 €
+
+**Cambio pedido por el usuario:** los empates **no son una regla fija**. La mesa decide en cada partido si cubre la X.
+
+| Opción (18 € en total) | P(14) | P(≥13) | P(≥12) | P(≥10) | X cubiertas (decidido por la mesa) |
+|---|---|---|---|---|---|
+| A. Un boleto: directa de 3 dobles + 1 triple | 1 entre 1.274 | 0,855 % | 4,35 % | 31,1 % | Eldense – Sabadell |
+| **B. Dos boletos: 12 € (4 dobles) + 6 € (8 sencillas nuevas)** | **1 entre 1.224** | **0,875 %** | **4,44 %** | **31,4 %** | **Oviedo – Girona (2 columnas) y Eldense – Sabadell (3)** |
+
+- **Decisión: B.** Al mismo precio, es mejor en todo.
+- **Por qué:** las 8 sencillas del segundo boleto van justo a las combinaciones que el primero no cubre. Entre ellas están las X donde la mesa ve probabilidad.
+
+**Informe del Auditor:**
+- 24 apuestas distintas, 0 repetidas entre los dos boletos y 18,00 € en total.
+- P(14) = suma de las 24 columnas = 1 entre 1.224.
+- P(≥13) por simulación con 600.000 jornadas = 0,875 %.
+- Pleno 1-0 en los dos boletos.
+- Nombres de los equipos en cada fila. ✅
