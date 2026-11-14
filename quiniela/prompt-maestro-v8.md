@@ -463,3 +463,13 @@ Detalle y pruebas en `analisis/rescate-quiniela-mesa.md`.
 - **Histórico de Loterías:** media de 3,55 X por jornada; P(0 X) = 2,2 %.
 - **Lectura del post-mortem:** `importado/quiniela-mesa/docs/registro-errores.md` y `patrones-seleccion-lae.md`.
 - **Pendiente de probar en una jornada con Primera:** empates ×1,20 en partidos igualados de Primera y EURO_F 1,12.
+
+## Anexo H — Decide la mesa, no el público (decisión del usuario, 14/11/2026)
+
+- Cada signo, cada doble o triple y el Pleno salen **solo de las probabilidades de la mesa** (modelo + bajas A/B + criterio fijo de la fase 8).
+- **Quedan sin efecto:**
+  - el desempate del Pleno por «lo que menos juegue el público» (fase 7);
+  - la columna del público y el Pleno del público como motivo de cambio (fase 10);
+  - el candidato «C sin público» (fase 8).
+- **Pleno = el marcador más probable según la mesa.**
+- El % del público (LAE) se sigue leyendo y se informa como dato del Market Analyst, sin efecto en la decisión.

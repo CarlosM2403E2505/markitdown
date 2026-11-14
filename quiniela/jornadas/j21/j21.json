@@ -376,7 +376,7 @@
   "mezcla": 0.0,
   "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo); Pleno sin mezcla empírica (validado)",
   "ajuste": "España sin Rodri ni Olmo (×0,97) e Inglaterra sin Guéhi (×1,02 a los goles de España), clase B.",
-  "decision": "1-0 en los 4 boletos (12,2 % frente a ≈2,3 % del público: valor 5,3)."
+  "decision": "1-0 en los 4 boletos: es el marcador más probable según la mesa (12,2 %). El % del público no interviene (anexo H)."
  },
  "sueltas": [
   {

@@ -18,7 +18,7 @@ Suma de P(X): 3.38
 14. Valencia F – Granada F           1  32.9% X  23.4% 2  43.7%  → 2 ⚠️  riesgo Alto
 Fallos esperados con los 14 signos individuales: 7.06
 
-## Valor frente al público (modelo / % LAE; > 1,3 = signo despreciado por el público)
+## Lo que juega el público (solo informativo: no cambia ningún signo ni el Pleno)
  1. Valladolid – Castellón           público 28/25/47  valor 1 0.97 X 0.94 2 1.05
  2. Real Sociedad B – Sporting       público 26/27/47  valor 1 1.48 X 0.94 2 0.77  ← valor en 1
  3. Almería – Andorra                público 84/9/7  valor 1 0.72 X 2.11 2 2.93  ← valor en X, 2

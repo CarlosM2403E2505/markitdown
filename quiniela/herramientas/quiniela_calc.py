@@ -569,7 +569,7 @@ def cmd_boleto(args):
 
     porcentajes = (datos.get("publico") or {}).get("porcentajes") or {}
     if porcentajes:
-        salida.append("\n## Valor frente al público (modelo / % LAE; > 1,3 = signo despreciado por el público)")
+        salida.append("\n## Lo que juega el público (solo informativo: no cambia ningún signo ni el Pleno)")
         for i, p in enumerate(partidos, 1):
             lae = (porcentajes.get(str(p.get("n", i))) or {}).get("lae")
             if not lae:
@@ -611,8 +611,9 @@ def cmd_boleto(args):
         salida += [f"    {n:2d}. {c}" for n, c in enumerate(cols, 1)]
     salida.append(f"\n(Reducida: {n_cand} combinaciones evaluadas; objetivo {args.objetivo}.)")
 
-    publico = (datos.get("publico") or {}).get("columna")
-    sistemas, elegido = comparar_sistemas(probs, forzados, presupuesto, publico)
+    # Decisión del usuario (14/11/2026): decide la mesa, no el público. La columna del público
+    # ya no genera candidatos («C sin público»); los % de LAE solo se informan.
+    sistemas, elegido = comparar_sistemas(probs, forzados, presupuesto, None)
     salida.append(f"\n## Comparación de sistemas ({presupuesto} €)")
     salida.append(f"  {'Sistema':<36} {'P(14)':>14} {'P(≥13)':>8} {'P(≥12)':>8} {'P(≥10)':>8}")
     for s in sistemas:

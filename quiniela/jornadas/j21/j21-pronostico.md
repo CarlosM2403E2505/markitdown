@@ -445,3 +445,9 @@ Detalle: `analisis/rescate-quiniela-mesa.md`. Salida: `j21-calculadora-v1.7.txt`
 - marca el Mallorca: 86,9 %;
 - marca el Atlético F: 85,9 %;
 - marca el Castellón: 81,4 %.
+
+**Nota del 14/11 (anexo H):** decide la mesa, no el público. Se ha comprobado que los 4 boletos y el Pleno de la v1.9 salen solo de las probabilidades de la mesa:
+- `boletos_oficiales.py` no usa el público;
+- el 1-0 es el marcador más probable del modelo.
+
+No cambia nada.

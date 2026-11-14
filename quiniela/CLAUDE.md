@@ -1,6 +1,6 @@
 # CLAUDE.md — Mesa de la Quiniela (memoria de trabajo, al día el 12/11/2026)
 
-Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (anexos A–G). Índice: `00-indice.md`.
+Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (anexos A–H). Índice: `00-indice.md`.
 
 ## 1. Instrucciones permanentes del usuario
 1. **Español.** Análisis profundo, ordenado y explicado paso a paso, en tablas, siempre con el **nombre de los equipos** en cada pronóstico (nunca columnas sueltas sin nombres).
@@ -14,6 +14,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 9. **Empates:** le preocupa que se escapen. En cada jornada se informa de P(ninguna X), del número de X esperadas y de en cuántos partidos cubre la X el boleto. Se usa el signo X (no «A»).
 10. **No inventar nada:** fuente y clase de la noticia (A oficial, B medio con dato concreto, C rumor, D especulación). **Solo A y B mueven el precio.** Un dato no visto queda null.
 11. No analizar los partidos en el descanso.
+12. **Decide la mesa, no el público (14/11/2026).** Cada signo, cada doble o triple y el Pleno salen solo de las probabilidades de la mesa. El % del público (LAE) se informa como dato, pero **nunca** cambia un signo ni el Pleno: no se desempata con él y no se quita «la columna del público». Pleno = el marcador más probable de la mesa.
 
 ## 2. Límites
 - **Nunca sellar, apostar ni cargar dinero por el usuario.** Sella él en su administración.
