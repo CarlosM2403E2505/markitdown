@@ -34,7 +34,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | Pieza | Qué | Prueba |
 |---|---|---|
 | Clubes | `modelo/euro_model.py` (Poisson multi-liga jerárquico: xi 0,0015, ridge 10, escala 1,05, mezcla 0,2); `datos/euro_j21.json` (23.675 partidos) | — |
-| 1X2 | T = 1,05 (`afinar`) | `modelo/calibracion_temperatura.py` |
+| 1X2 | T = 1,05 (`afinar`) | `calibracion_temperatura.py`. Ventaja global medida en `analisis/ventaja-de-la-mesa.md`: acierto 50,4 % vs 46 % del local; log-loss 1,014 vs 1,062 de la media |
 | Empates | Primera ×1,08 (+0,07 de campo); Segunda ×1,00; UEFA ×1,0; Liga F ×0,85 | `auditoria_empates*.py` (1.834 + 54 partidos fuera de muestra): la X está calibrada. Dixon-Coles y la recalibración no mejoran |
 | Liga F | `modelo/ligaf_modelo.py` (temporada anterior partido a partido, sin el Barça, campo 1,10); `datos/ligaf.json` | Log-loss 1,061 → 0,976 |
 | Selecciones | `modelo/selecciones_modelo.py` (Poisson de quiniela-mesa); datos martj42 en `datos/selecciones/` | Log-loss en prueba 0,795 frente a 0,810 del Elo; empates ×1,0 (`validacion_selecciones.py`) |

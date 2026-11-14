@@ -1,0 +1,91 @@
+{
+ "n": 1862,
+ "desde": "2024-09-01",
+ "hasta": "2026-11-02",
+ "frecuencia_1X2": [
+  0.463,
+  0.251,
+  0.286
+ ],
+ "log_loss": {
+  "modelo": 1.0141,
+  "tasa_base (climatología)": 1.0615
+ },
+ "acierto_signo": {
+  "modelo": 0.5043,
+  "siempre_1": 0.4629,
+  "mejor_clasificado": 0.4565
+ },
+ "calibracion_favorito": [
+  {
+   "tramo": "0.33-0.42",
+   "n": 528,
+   "dada": 39.4,
+   "real": 44.1
+  },
+  {
+   "tramo": "0.42-0.50",
+   "n": 732,
+   "dada": 45.7,
+   "real": 44.7
+  },
+  {
+   "tramo": "0.50-0.58",
+   "n": 354,
+   "dada": 53.4,
+   "real": 55.1
+  },
+  {
+   "tramo": "0.58-0.66",
+   "n": 136,
+   "dada": 61.5,
+   "real": 64.7
+  },
+  {
+   "tramo": "0.66-1.01",
+   "n": 112,
+   "dada": 74.7,
+   "real": 85.7
+  }
+ ],
+ "boleto": {
+  "bloques_de_14": 133,
+  "aciertos": [
+   {
+    "k": 8,
+    "observado": 23,
+    "esperado": 22.5
+   },
+   {
+    "k": 9,
+    "observado": 14,
+    "esperado": 14.0
+   },
+   {
+    "k": 10,
+    "observado": 9,
+    "esperado": 6.5
+   },
+   {
+    "k": 11,
+    "observado": 4,
+    "esperado": 2.2
+   },
+   {
+    "k": 12,
+    "observado": 0,
+    "esperado": 0.5
+   },
+   {
+    "k": 13,
+    "observado": 0,
+    "esperado": 0.1
+   },
+   {
+    "k": 14,
+    "observado": 0,
+    "esperado": 0.0
+   }
+  ]
+ }
+}
