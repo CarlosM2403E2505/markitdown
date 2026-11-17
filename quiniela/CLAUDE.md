@@ -37,6 +37,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | 1X2 | T = 1,05 (`afinar`) | `calibracion_temperatura.py`. Ventaja global medida en `analisis/ventaja-de-la-mesa.md`: acierto 50,4 % vs 46 % del local; log-loss 1,014 vs 1,062 de la media |
 | Empates | Primera ×1,08 (+0,07 de campo); Segunda ×1,00; UEFA ×1,0; Liga F ×0,85 | `auditoria_empates*.py` (1.834 + 54 partidos fuera de muestra): la X está calibrada. Dixon-Coles y la recalibración no mejoran |
 | Liga F | `modelo/ligaf_modelo.py` (temporada anterior partido a partido, sin el Barça, campo 1,10); `datos/ligaf.json` | Log-loss 1,061 → 0,976 |
+| Champions femenina | `modelo/champions_f_modelo.py` (Poisson ridge, datos de Wikipedia en `datos/champions_f.json`) | Nuevo (17/11), confianza media: ~4-10 partidos por club. Fuerzas coherentes a ojo |
 | Selecciones | `modelo/selecciones_modelo.py` (Poisson de quiniela-mesa); datos martj42 en `datos/selecciones/` | Log-loss en prueba 0,795 frente a 0,810 del Elo; empates ×1,0 (`validacion_selecciones.py`) |
 | Pleno | 80 % Poisson + 20 % empírica en clubes; **sin mezcla en selecciones** | `validacion_pleno_selecciones.py` |
 | Retirado | Cansancio por Europa o Copa; liga de asignación por temporada | Empeoraban fuera de muestra |
@@ -59,15 +60,11 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
-## 5. Estado: J21 (sábado 14 y domingo 15/11/2026) · v2.2 FINAL y CERRADA, 14/11
-- **Decisión final: 2 boletos (12 € + 6 €), sin columnas repetidas.**
-  - **Boleto 1:** directa de 4 dobles (1 2 en Real Sociedad B – Sporting, Oviedo – Girona, Eldense – Sabadell y Valencia F – Granada F).
-  - **Boleto 2:** 8 columnas sencillas nuevas, con X en Oviedo – Girona (2 columnas) y en Eldense – Sabadell (3).
-  - **Pleno 1-0** en los dos.
-  - Detalle en `jornadas/j21/boletos_final_12_6.json`.
-- **Probabilidades juntos:** P(14) 1 entre 1.224 · P(≥13) 0,875 % · P(≥12) 4,4 %.
-- **Comparación:** sale mejor en todo que el boleto único de 18 € (1 entre 1.274; 0,855 %).
-- **Después:** premios de la J20 y de la J21 en `datos/premios.json` y post-mortem de la J21 (cuántas X salieron y cuántas se cubrieron).
+## 5. Estado: J22 (17-19/11/2026) · selecciones + Champions femenina · boleto propuesto
+- **J21 CERRADA:** mejor columna 9 aciertos, sin premio; 4 empates, 0 cubiertos; Pleno perdido (España 2-3). Post-mortem: `jornadas/j21/j21-resultados.md`. Premio oficial J21: pendiente en `datos/premios.json`.
+- **J22:** 6 selecciones (repesca) + Pleno Dinamarca–Noruega (modelo validado) y 8 de Champions femenina (`modelo/champions_f_modelo.py`, **confianza media**).
+- **Jornada favorable:** fallos esperados 5,6; boleto de 18 € da P(14) 1 entre 167, P(≥13) 4,6 %.
+- **Boleto propuesto (1 boleto, 18 €):** triple en Bosnia–Rumanía; dobles 1X en Hungría–Irlanda N. y Eire–Kosovo, 1 2 en Polonia–Suecia; resto al signo; Pleno 1-1. Detalle: `jornadas/j22/j22-pronostico.md`.
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)
 | Web | Estado | Uso |

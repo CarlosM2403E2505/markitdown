@@ -1,0 +1,293 @@
+{
+ "jornada": 22,
+ "fechas": "17-19/11/2026",
+ "tipo": "Selecciones (repesca Mundial) + Champions femenina",
+ "cierre": "martes 17/11 20:45",
+ "estado": "Pronóstico v1 (selecciones validadas + modelo femenino nuevo)",
+ "presupuesto": 20,
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Bosnia – Rumanía",
+   "competicion": "Selecciones",
+   "p": [
+    0.4163,
+    0.2713,
+    0.3125
+   ],
+   "xg": [
+    1.33,
+    1.12
+   ],
+   "confianza": "alta"
+  },
+  {
+   "n": 2,
+   "partido": "Ucrania – Georgia",
+   "competicion": "Selecciones",
+   "p": [
+    0.5315,
+    0.244,
+    0.2245
+   ],
+   "xg": [
+    1.66,
+    0.99
+   ],
+   "confianza": "alta"
+  },
+  {
+   "n": 3,
+   "partido": "Gales – Portugal",
+   "competicion": "Selecciones",
+   "p": [
+    0.144,
+    0.2229,
+    0.6331
+   ],
+   "xg": [
+    0.72,
+    1.81
+   ],
+   "confianza": "alta"
+  },
+  {
+   "n": 4,
+   "partido": "Hungría – Irlanda del Norte",
+   "competicion": "Selecciones",
+   "p": [
+    0.4447,
+    0.3074,
+    0.2479
+   ],
+   "xg": [
+    1.15,
+    0.78
+   ],
+   "confianza": "alta"
+  },
+  {
+   "n": 5,
+   "partido": "Polonia – Suecia",
+   "competicion": "Selecciones",
+   "p": [
+    0.4206,
+    0.234,
+    0.3454
+   ],
+   "xg": [
+    1.68,
+    1.5
+   ],
+   "confianza": "alta"
+  },
+  {
+   "n": 6,
+   "partido": "Eire – Kosovo",
+   "competicion": "Selecciones",
+   "p": [
+    0.4324,
+    0.2977,
+    0.2699
+   ],
+   "xg": [
+    1.19,
+    0.87
+   ],
+   "confianza": "alta"
+  },
+  {
+   "n": 7,
+   "partido": "Real Madrid F – Inter F",
+   "competicion": "Champions F",
+   "p": [
+    0.7997,
+    0.1288,
+    0.0716
+   ],
+   "xg": [
+    2.79,
+    0.73
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  },
+  {
+   "n": 8,
+   "partido": "Häcken F – Manchester City F",
+   "competicion": "Champions F",
+   "p": [
+    0.2536,
+    0.2761,
+    0.4703
+   ],
+   "xg": [
+    0.92,
+    1.36
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  },
+  {
+   "n": 9,
+   "partido": "Chelsea F – PSG F",
+   "competicion": "Champions F",
+   "p": [
+    0.6563,
+    0.2291,
+    0.1145
+   ],
+   "xg": [
+    1.7,
+    0.55
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  },
+  {
+   "n": 10,
+   "partido": "Juventus F – OH Leuven F",
+   "competicion": "Champions F",
+   "p": [
+    0.8324,
+    0.108,
+    0.0596
+   ],
+   "xg": [
+    3.12,
+    0.77
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  },
+  {
+   "n": 11,
+   "partido": "Austria Wien F – Bayern F",
+   "competicion": "Champions F",
+   "p": [
+    0.1865,
+    0.1842,
+    0.6293
+   ],
+   "xg": [
+    1.28,
+    2.44
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  },
+  {
+   "n": 12,
+   "partido": "Arsenal F – Lyon F",
+   "competicion": "Champions F",
+   "p": [
+    0.2336,
+    0.2451,
+    0.5213
+   ],
+   "xg": [
+    1.02,
+    1.65
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  },
+  {
+   "n": 13,
+   "partido": "Barcelona F – Servette F",
+   "competicion": "Champions F",
+   "p": [
+    0.9929,
+    0.0052,
+    0.0019
+   ],
+   "xg": [
+    8.21,
+    0.85
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  },
+  {
+   "n": 14,
+   "partido": "Benfica F – Roma F",
+   "competicion": "Champions F",
+   "p": [
+    0.6329,
+    0.2079,
+    0.1592
+   ],
+   "xg": [
+    2.0,
+    0.89
+   ],
+   "confianza": "media (modelo femenino nuevo)"
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "Dinamarca – Noruega",
+  "competicion": "Selecciones",
+  "p": [
+   0.4888,
+   0.2366,
+   0.2746
+  ],
+  "lambda_local": 1.729,
+  "lambda_visitante": 1.24,
+  "mezcla": 0.0,
+  "cats": {
+   "0-0": 0.0514,
+   "0-1": 0.0637,
+   "0-2": 0.0395,
+   "0-M": 0.0229,
+   "1-0": 0.0888,
+   "1-1": 0.1101,
+   "1-2": 0.0683,
+   "1-M": 0.0397,
+   "2-0": 0.0768,
+   "2-1": 0.0952,
+   "2-2": 0.059,
+   "2-M": 0.0343,
+   "M-0": 0.0725,
+   "M-1": 0.0899,
+   "M-2": 0.0557,
+   "M-M": 0.0324
+  },
+  "precio": "Poisson de selecciones (validado), sin mezcla empírica",
+  "decision": "1-1 (11,0 %) es el más probable; Dinamarca gana 48,9 %. Pendiente de confirmar el Pleno oficial del boleto."
+ },
+ "boleto_final": {
+  "tipo": "Directa: triple en Bosnia–Rumanía; dobles 1X en Hungría–Irlanda N. y Eire–Kosovo, 1 2 en Polonia–Suecia",
+  "apuestas": 24,
+  "coste": 18.0,
+  "p14": 0.005988023952095809,
+  "p13": 0.0459,
+  "p12": 0.165,
+  "x_cubiertas": [
+   "Bosnia – Rumanía",
+   "Hungría – Irlanda del Norte",
+   "Eire – Kosovo"
+  ]
+ },
+ "sueltas": [
+  {
+   "partido": "Barcelona F – Servette F",
+   "apuesta": "Gana Barcelona F",
+   "p": 0.993
+  },
+  {
+   "partido": "Juventus F – OH Leuven F",
+   "apuesta": "Gana Juventus F",
+   "p": 0.832
+  },
+  {
+   "partido": "Real Madrid F – Inter F",
+   "apuesta": "Gana Real Madrid F",
+   "p": 0.8
+  },
+  {
+   "partido": "Chelsea F – PSG F",
+   "apuesta": "Gana Chelsea F",
+   "p": 0.656
+  },
+  {
+   "partido": "Gales – Portugal",
+   "apuesta": "Gana Portugal",
+   "p": 0.633
+  }
+ ]
+}
