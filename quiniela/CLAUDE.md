@@ -34,7 +34,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | Pieza | Qué | Prueba |
 |---|---|---|
 | Clubes | `modelo/euro_model.py` (Poisson multi-liga jerárquico: xi 0,0015, ridge 10, escala 1,05, mezcla 0,2); `datos/euro_j21.json` (23.675 partidos) | — |
-| 1X2 | T = 1,05 (`afinar`) | `calibracion_temperatura.py`. Ventaja global medida en `analisis/ventaja-de-la-mesa.md`: acierto 50,4 % vs 46 % del local; log-loss 1,014 vs 1,062 de la media |
+| 1X2 | **Primera T = 1,15; resto T = 1,05** (`modelo/afinado.py`, `afinar_comp`) | `calibracion_favoritos.py` (17/11): afilar favoritos mejora Primera (0,9621→0,9600 fuera de muestra) y NO Segunda. Ventaja global: `analisis/ventaja-de-la-mesa.md` |
 | Empates | Primera ×1,08 (+0,07 de campo); Segunda ×1,00; UEFA ×1,0; Liga F ×0,85 | `auditoria_empates*.py` (1.834 + 54 partidos fuera de muestra): la X está calibrada. Dixon-Coles y la recalibración no mejoran |
 | Liga F | `modelo/ligaf_modelo.py` (temporada anterior partido a partido, sin el Barça, campo 1,10); `datos/ligaf.json` | Log-loss 1,061 → 0,976 |
 | Champions femenina | `modelo/champions_f_modelo.py` (Poisson ridge, datos de Wikipedia en `datos/champions_f.json`) | Nuevo (17/11), confianza media: ~4-10 partidos por club. Fuerzas coherentes a ojo |
@@ -42,6 +42,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | Pleno | 80 % Poisson + 20 % empírica en clubes; **sin mezcla en selecciones** | `validacion_pleno_selecciones.py` |
 | Retirado | Cansancio por Europa o Copa; liga de asignación por temporada | Empeoraban fuera de muestra |
 | Solo aviso | Cambio de entrenador, enfrentamientos directos, árbitros | Estudios de quiniela-mesa (anexo G) |
+| Aplicado 17/11 | Afinado de favoritos de Primera (T=1,15) | `analisis/afinado-favoritos.md` |
 | Pendiente de probar | Empates ×1,20 en partidos igualados de Primera; EURO_F 1,12 | Primera jornada con Primera |
 
 ## 4. Cómo se ejecuta (desde `quiniela/`)
@@ -60,11 +61,11 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
-## 5. Estado: J22 (17-19/11/2026) · selecciones + Champions femenina · boleto propuesto
-- **J21 CERRADA:** mejor columna 9 aciertos, sin premio; 4 empates, 0 cubiertos; Pleno perdido (España 2-3). Post-mortem: `jornadas/j21/j21-resultados.md`. Premio oficial J21: pendiente en `datos/premios.json`.
-- **J22:** 6 selecciones (repesca) + Pleno Dinamarca–Noruega (modelo validado) y 8 de Champions femenina (`modelo/champions_f_modelo.py`, **confianza media**).
-- **Jornada favorable:** fallos esperados 5,6; boleto de 18 € da P(14) 1 entre 167, P(≥13) 4,6 %.
-- **Boleto propuesto (1 boleto, 18 €):** triple en Bosnia–Rumanía; dobles 1X en Hungría–Irlanda N. y Eire–Kosovo, 1 2 en Polonia–Suecia; resto al signo; Pleno 1-1. Detalle: `jornadas/j22/j22-pronostico.md`.
+## 5. Estado: J23 (fin de semana 21-22/11/2026) · a la espera del boleto oficial
+- **Mejora aplicada (17/11):** afinado de favoritos de Primera, **T=1,15** (`modelo/afinado.py`, `analisis/afinado-favoritos.md`). Validado fuera de muestra; Segunda sigue en 1,05. Lo usará `j23_run.py` cuando se cree.
+- **J23:** vuelve la liga. Loterías aún no ha publicado los 14+Pleno (lo hace ~jueves). No se anticipa composición (sería doble especulación). Se arranca el precio en cuanto salga la lista oficial.
+- **Pendiente J22:** resultados (se juega hasta el 19) y post-mortem; premio oficial J21 en `datos/premios.json`.
+- **Flujo J23 cuando salga la lista:** copiar `j21_run.py`→`j23_run.py` (usando `afinar_comp`), fijar FIX con los nombres del dataset, precio clubes+Liga F, Pleno; bajas de jornadaperfecta; % LAE de quiniela15 (solo informativo, anexo H); boleto con `boleto_unico.py`; revisión del sábado y congelación.
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)
 | Web | Estado | Uso |
