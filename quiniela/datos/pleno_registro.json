@@ -1,0 +1,9 @@
+{
+ "nota": "Registro del Pleno al 15: nuestra elección, el resultado real y si acertamos. El Pleno es un solo partido: su acierto es raro por naturaleza. Se actualiza cada jornada en el post-mortem.",
+ "registro": [
+  {"jornada": 19, "partido": "Atlético – Bayern", "nuestro": "1-1", "p_nuestro": 0.093, "real": "0-2", "acierto": false, "nota": "Ganó el favorito pero sin encajar; el Pleno pagó 42.255 €"},
+  {"jornada": 20, "partido": "Atlético – Barcelona", "nuestro": null, "real": "1-2", "acierto": null, "nota": "Elección propia no registrada en su momento"},
+  {"jornada": 21, "partido": "España – Inglaterra", "nuestro": "1-0", "p_nuestro": 0.122, "real": "2-M", "acierto": false, "nota": "España perdió 2-3; el modelo le daba 53 % de ganar"},
+  {"jornada": 22, "partido": "Dinamarca – Noruega", "nuestro": "1-1", "p_nuestro": 0.110, "real": null, "acierto": null, "nota": "Pendiente (se juega hasta el 19/11)"}
+ ]
+}
