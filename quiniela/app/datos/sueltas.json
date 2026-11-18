@@ -119,6 +119,86 @@
    "partido": "Valladolid – Castellón",
    "p": 0.814,
    "resultado": null
+  },
+  {
+   "jornada": 22,
+   "n": 1,
+   "apuesta": "Gana Barcelona F",
+   "partido": "Barcelona F – Servette F",
+   "p": 0.993,
+   "resultado": null
+  },
+  {
+   "jornada": 22,
+   "n": 2,
+   "apuesta": "Gana Juventus F",
+   "partido": "Juventus F – OH Leuven F",
+   "p": 0.832,
+   "resultado": null
+  },
+  {
+   "jornada": 22,
+   "n": 3,
+   "apuesta": "Gana Real Madrid F",
+   "partido": "Real Madrid F – Inter F",
+   "p": 0.8,
+   "resultado": null
+  },
+  {
+   "jornada": 22,
+   "n": 4,
+   "apuesta": "Gana Chelsea F",
+   "partido": "Chelsea F – PSG F",
+   "p": 0.656,
+   "resultado": null
+  },
+  {
+   "jornada": 22,
+   "n": 5,
+   "apuesta": "Gana Portugal",
+   "partido": "Gales – Portugal",
+   "p": 0.633,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 1,
+   "apuesta": "Marca el Barcelona",
+   "partido": "Barcelona – Villarreal",
+   "p": 0.969,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 2,
+   "apuesta": "Marca el Real Madrid",
+   "partido": "Real Madrid – Celta",
+   "p": 0.922,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 3,
+   "apuesta": "Marca el Tenerife F",
+   "partido": "Tenerife F – Madrid CFF",
+   "p": 0.907,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 4,
+   "apuesta": "Marca la Real Sociedad",
+   "partido": "Racing – Real Sociedad",
+   "p": 0.888,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 5,
+   "apuesta": "Marca el Real Madrid F",
+   "partido": "Granada F – Real Madrid F",
+   "p": 0.884,
+   "resultado": null
   }
  ]
 }

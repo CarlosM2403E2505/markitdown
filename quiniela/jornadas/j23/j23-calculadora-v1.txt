@@ -1,0 +1,118 @@
+# Jornada 23 · presupuesto 20 €
+Suma de P(X): 2.85
+
+## Los 14 signos
+ 1. Alavés – Deportivo               1  59.0% X  23.2% 2  17.9%  → 1 ⚠️  riesgo Moderado
+ 2. Rayo – Valencia                  1  54.2% X  25.5% 2  20.2%  → 1 ⚠️  riesgo Moderado
+ 3. Real Madrid – Celta              1  78.7% X  13.8% 2   7.6%  → 1  riesgo Bajo
+ 4. Barcelona – Villarreal           1  84.2% X   9.4% 2   6.3%  → 1  riesgo Bajo
+ 5. Racing – Real Sociedad           1  28.0% X  20.2% 2  51.8%  → 2 ⚠️  riesgo Moderado
+ 6. Osasuna – Málaga                 1  64.5% X  20.7% 2  14.8%  → 1 ⚠️  riesgo Moderado
+ 7. Getafe – Atlético                1  24.8% X  29.3% 2  45.9%  → 2 ⚠️  riesgo Alto
+ 8. Tenerife – Mallorca              1  23.4% X  26.2% 2  50.5%  → 2 ⚠️  riesgo Moderado
+ 9. Sporting – Las Palmas            1  40.3% X  26.2% 2  33.5%  → 1 ⚠️  riesgo Alto
+10. Girona – Eibar                   1  50.6% X  26.3% 2  23.1%  → 1 ⚠️  riesgo Moderado
+11. Eibar F – Atlético F             1  11.0% X  16.7% 2  72.4%  → 2  riesgo Bajo
+12. Granada F – Real Madrid F        1  10.8% X  15.7% 2  73.5%  → 2  riesgo Bajo
+13. Real Sociedad F – Sevilla F      1  65.0% X  17.8% 2  17.2%  → 1  riesgo Bajo
+14. Tenerife F – Madrid CFF          1  75.4% X  14.1% 2  10.4%  → 1  riesgo Bajo
+Fallos esperados con los 14 signos individuales: 5.34
+
+## Boleto A · 4 dobles completos: 16 apuestas, 12.00 €
+  P(≥14) = 0.613% (1 entre 163)
+  P(≥13) =   4.5%
+  P(≥12) =  15.9%
+  P(≥11) =  35.7%
+  P(≥10) =  59.2%
+  Aciertos esperados de la mejor columna: 9.83
+  Dobles: Racing – Real Sociedad (12), Getafe – Atlético (X2), Sporting – Las Palmas (12), Girona – Eibar (1X)
+  Columnas:
+     1. 11112122112211
+     2. 111121221X2211
+     3. 11112122212211
+     4. 111121222X2211
+     5. 111121X2112211
+     6. 111121X21X2211
+     7. 111121X2212211
+     8. 111121X22X2211
+     9. 11111122112211
+    10. 111111221X2211
+    11. 11111122212211
+    12. 111111222X2211
+    13. 111111X2112211
+    14. 111111X21X2211
+    15. 111111X2212211
+    16. 111111X22X2211
+
+## Boleto B · reducida de 7 dobles al 13: 16 apuestas, 12.00 €
+  P(≥14) = 0.249% (1 entre 402)
+  P(≥13) =   3.5%
+  P(≥12) =  15.7%
+  P(≥11) =  38.6%
+  P(≥10) =  64.9%
+  Aciertos esperados de la mejor columna: 10.01
+  Dobles: Alavés – Deportivo (1X), Rayo – Valencia (1X), Racing – Real Sociedad (12), Getafe – Atlético (X2), Tenerife – Mallorca (X2), Sporting – Las Palmas (12), Girona – Eibar (1X)
+  Columnas:
+     1. 11112122112211
+     2. 111121XX2X2211
+     3. 1111112X212211
+     4. 111111X21X2211
+     5. 1X11212X1X2211
+     6. 1X1121X2212211
+     7. 1X1111222X2211
+     8. 1X1111XX112211
+     9. X11121222X2211
+    10. X11121XX112211
+    11. X111112X1X2211
+    12. X11111X2212211
+    13. XX11212X212211
+    14. XX1121X21X2211
+    15. XX111122112211
+    16. XX1111XX2X2211
+
+(Reducida: 27456 combinaciones evaluadas; objetivo p14.)
+
+## Comparación de sistemas (20 €)
+  Sistema                                       P(14)   P(≥13)   P(≥12)   P(≥10)
+  A · 4 dobles completos                  1 entre 163     4.5%    15.9%    59.2%
+  B · reducida de 7 dobles al 13          1 entre 402     3.5%    15.7%    64.9%
+  C · las 27 columnas más probables        1 entre 88     7.0%    21.6%    67.5%  ← ELEGIDO
+  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).
+  Retorno: la Quiniela devuelve de media unos 0,55 € por euro jugado (lo que va a premios).
+  Ningún sistema lo cambia; el valor solo mejora jugando lo que el público no juega (fase 4).
+  Columnas del sistema elegido (apuestas sencillas):
+     1. 11112122112211
+     2. 11112122212211
+     3. 11112122X12211
+     4. 111121X2112211
+     5. 11112112112211
+     6. 11111122112211
+     7. 111121X2212211
+     8. 111121221X2211
+     9. 1111212X112211
+    10. 1X112122112211
+    11. 11112121112211
+    12. 11112122122211
+    13. 11112112212211
+    14. 11111122212211
+    15. 111121222X2211
+    16. 1111212X212211
+    17. 111121X2X12211
+    18. X1112122112211
+    19. 1X112122212211
+    20. 1111X122112211
+    21. 11112121212211
+    22. 11112122222211
+    23. 12112122112211
+    24. 11112112X12211
+    25. 11111122X12211
+    26. 111111X2112211
+    27. 11112122XX2211
+
+## Pleno al 15 · Sevilla – Betis
+  1X2 del partido: 1  35.3% · X  25.3% · 2  39.4%
+  principal    1-1   11.5%
+  conservador  0-1    7.2%
+  varianza     2-2    6.5%
+  Se juega solo el principal, el mismo en todas las columnas.
+  P(14 y Pleno) con el sistema elegido: 0.130% (1 entre 769)

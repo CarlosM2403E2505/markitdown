@@ -1,0 +1,496 @@
+{
+ "jornada": 23,
+ "fechas": "21-22/11/2026",
+ "tipo": "Liga (7 Primera + 3 Segunda + 4 Liga F); Pleno derbi Sevilla–Betis",
+ "cierre": "sábado 21/11 14:00",
+ "estado": "Primera revisión (miércoles 18/11)",
+ "presupuesto": 20,
+ "lista": "quiniela15.com, 18/11/2026",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Alavés – Deportivo",
+   "competicion": "Primera",
+   "p": [
+    0.5895,
+    0.2317,
+    0.1788
+   ],
+   "xg": [
+    1.771,
+    0.952
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.507,
+    "Ambos marcan": 0.5134,
+    "Menos 3.5": 0.7099,
+    "Local marca": 0.8278,
+    "Visit marca": 0.616
+   }
+  },
+  {
+   "n": 2,
+   "partido": "Rayo – Valencia",
+   "competicion": "Primera",
+   "p": [
+    0.5423,
+    0.2553,
+    0.2024
+   ],
+   "xg": [
+    1.58,
+    0.933
+   ],
+   "ajuste": [
+    1.03,
+    0.97
+   ],
+   "bajas": "Valencia sin Gayà (roja), Jesús Vázquez, Danjuma, Otorbi y Diego López",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4545,
+    "Ambos marcan": 0.4856,
+    "Menos 3.5": 0.7556,
+    "Local marca": 0.7917,
+    "Visit marca": 0.6081
+   }
+  },
+  {
+   "n": 3,
+   "partido": "Real Madrid – Celta",
+   "competicion": "Primera",
+   "p": [
+    0.7866,
+    0.1375,
+    0.0759
+   ],
+   "xg": [
+    2.576,
+    0.83
+   ],
+   "ajuste": [
+    1.03,
+    0.93
+   ],
+   "bajas": "Celta sin Borja Iglesias (delantero titular) ni El-Abdellaoui; Starfelt y Álvaro Núñez (defensas) fuera",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.6574,
+    "Ambos marcan": 0.5243,
+    "Menos 3.5": 0.5585,
+    "Local marca": 0.9222,
+    "Visit marca": 0.5667
+   }
+  },
+  {
+   "n": 4,
+   "partido": "Barcelona – Villarreal",
+   "competicion": "Primera",
+   "p": [
+    0.8424,
+    0.0941,
+    0.0635
+   ],
+   "xg": [
+    3.492,
+    1.168
+   ],
+   "ajuste": [
+    1.0,
+    0.95
+   ],
+   "bajas": "Villarreal sin Gerard Moreno, Akhomach y Foyth",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.841,
+    "Ambos marcan": 0.6701,
+    "Menos 3.5": 0.3174,
+    "Local marca": 0.9691,
+    "Visit marca": 0.6909
+   }
+  },
+  {
+   "n": 5,
+   "partido": "Racing – Real Sociedad",
+   "competicion": "Primera",
+   "p": [
+    0.2799,
+    0.202,
+    0.5181
+   ],
+   "xg": [
+    1.658,
+    2.193
+   ],
+   "ajuste": [
+    0.95,
+    1.0
+   ],
+   "bajas": "Racing sin Andrés Martín (delantero clave)",
+   "notas": [
+    "EURO_F visitante (real sociedad)"
+   ],
+   "mk": {
+    "Mas 2.5": 0.7356,
+    "Ambos marcan": 0.7219,
+    "Menos 3.5": 0.4635,
+    "Local marca": 0.8108,
+    "Visit marca": 0.8885
+   }
+  },
+  {
+   "n": 6,
+   "partido": "Osasuna – Málaga",
+   "competicion": "Primera",
+   "p": [
+    0.6451,
+    0.2071,
+    0.1478
+   ],
+   "xg": [
+    1.971,
+    0.93
+   ],
+   "ajuste": [
+    1.02,
+    0.97
+   ],
+   "bajas": "Málaga sin Juan Cruz, Lobete y Aznou (sancionado)",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5493,
+    "Ambos marcan": 0.5246,
+    "Menos 3.5": 0.6707,
+    "Local marca": 0.8586,
+    "Visit marca": 0.6076
+   }
+  },
+  {
+   "n": 7,
+   "partido": "Getafe – Atlético",
+   "competicion": "Primera",
+   "p": [
+    0.2479,
+    0.2934,
+    0.4586
+   ],
+   "xg": [
+    0.919,
+    1.294
+   ],
+   "ajuste": [
+    0.98,
+    0.96
+   ],
+   "bajas": "Getafe sin Gudelj (sancionado), Uche y Juanmi; Atlético sin Lookman (rodilla, con Nigeria) ni Pubill (con España)",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.3757,
+    "Ambos marcan": 0.4401,
+    "Menos 3.5": 0.8175,
+    "Local marca": 0.6013,
+    "Visit marca": 0.7233
+   }
+  },
+  {
+   "n": 8,
+   "partido": "Tenerife – Mallorca",
+   "competicion": "Segunda",
+   "p": [
+    0.2339,
+    0.2615,
+    0.5046
+   ],
+   "xg": [
+    0.924,
+    1.46
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4262,
+    "Ambos marcan": 0.4631,
+    "Menos 3.5": 0.782,
+    "Local marca": 0.6031,
+    "Visit marca": 0.7678
+   }
+  },
+  {
+   "n": 9,
+   "partido": "Sporting – Las Palmas",
+   "competicion": "Segunda",
+   "p": [
+    0.4027,
+    0.2621,
+    0.3352
+   ],
+   "xg": [
+    1.35,
+    1.214
+   ],
+   "ajuste": [
+    0.96,
+    0.97
+   ],
+   "bajas": "Sporting sin Otero (sanción J14-15), Casas, Gelabert, Konrad y Corredera (sancionado); Las Palmas sin Opoku (roja) ni Sandro Ramírez",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4725,
+    "Ambos marcan": 0.5208,
+    "Menos 3.5": 0.7438,
+    "Local marca": 0.7408,
+    "Visit marca": 0.703
+   }
+  },
+  {
+   "n": 10,
+   "partido": "Girona – Eibar",
+   "competicion": "Segunda",
+   "p": [
+    0.5059,
+    0.2633,
+    0.2308
+   ],
+   "xg": [
+    1.447,
+    0.905
+   ],
+   "ajuste": [
+    0.98,
+    1.0
+   ],
+   "bajas": "Girona sin Bryan Gil, Jastin García y Álex Moreno (sancionado)",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4176,
+    "Ambos marcan": 0.4553,
+    "Menos 3.5": 0.7887,
+    "Local marca": 0.7647,
+    "Visit marca": 0.5954
+   }
+  },
+  {
+   "n": 11,
+   "partido": "Eibar F – Atlético F",
+   "competicion": "Liga F",
+   "p": [
+    0.11,
+    0.1666,
+    0.7235
+   ],
+   "xg": [
+    0.661,
+    1.984
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5025,
+    "Ambos marcan": 0.41,
+    "Menos 3.5": 0.7232,
+    "Local marca": 0.4785,
+    "Visit marca": 0.8693
+   }
+  },
+  {
+   "n": 12,
+   "partido": "Granada F – Real Madrid F",
+   "competicion": "Liga F",
+   "p": [
+    0.1085,
+    0.1567,
+    0.7348
+   ],
+   "xg": [
+    0.708,
+    2.108
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5437,
+    "Ambos marcan": 0.4388,
+    "Menos 3.5": 0.6855,
+    "Local marca": 0.5023,
+    "Visit marca": 0.8842
+   }
+  },
+  {
+   "n": 13,
+   "partido": "Real Sociedad F – Sevilla F",
+   "competicion": "Liga F",
+   "p": [
+    0.6503,
+    0.1777,
+    0.172
+   ],
+   "xg": [
+    1.998,
+    0.956
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5759,
+    "Ambos marcan": 0.525,
+    "Menos 3.5": 0.6554,
+    "Local marca": 0.8681,
+    "Visit marca": 0.6112
+   }
+  },
+  {
+   "n": 14,
+   "partido": "Tenerife F – Madrid CFF",
+   "competicion": "Liga F",
+   "p": [
+    0.7544,
+    0.1411,
+    0.1044
+   ],
+   "xg": [
+    2.328,
+    0.787
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.611,
+    "Ambos marcan": 0.4852,
+    "Menos 3.5": 0.6184,
+    "Local marca": 0.9068,
+    "Visit marca": 0.5396
+   }
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "Sevilla – Betis",
+  "competicion": "Primera",
+  "p": [
+   0.3551,
+   0.2419,
+   0.4031
+  ],
+  "lambda_local": 1.498,
+  "lambda_visitante": 1.594,
+  "factor_x": 1.08,
+  "empirica": {
+   "0-0": 0.06975,
+   "0-1": 0.07743,
+   "0-2": 0.05033,
+   "0-M": 0.04239,
+   "1-0": 0.09766,
+   "1-1": 0.11294,
+   "1-2": 0.07072,
+   "1-M": 0.04167,
+   "2-0": 0.06916,
+   "2-1": 0.08659,
+   "2-2": 0.0529,
+   "2-M": 0.02829,
+   "M-0": 0.07118,
+   "M-1": 0.0681,
+   "M-2": 0.04015,
+   "M-M": 0.02073
+  },
+  "mezcla": 0.2,
+  "bajas": "Betis sin Riquelme (faringitis); Ceballos duda (clase C, no mueve)",
+  "notas": [
+   "EURO_F visitante (betis)"
+  ],
+  "cats": {
+   "0-0": 0.0524,
+   "0-1": 0.0723,
+   "0-2": 0.0554,
+   "0-M": 0.0463,
+   "1-0": 0.0729,
+   "1-1": 0.1145,
+   "1-2": 0.082,
+   "1-M": 0.0649,
+   "2-0": 0.0538,
+   "2-1": 0.0811,
+   "2-2": 0.0655,
+   "2-M": 0.048,
+   "M-0": 0.0446,
+   "M-1": 0.0621,
+   "M-2": 0.0466,
+   "M-M": 0.0376
+  }
+ },
+ "boleto_provisional": {
+  "tipo": "Directa 3 dobles + 1 triple",
+  "apuestas": 24,
+  "coste": 18.0,
+  "signos": {
+   "1": "1",
+   "2": "1",
+   "3": "1",
+   "4": "1",
+   "5": "1 2",
+   "6": "1",
+   "7": "X 2",
+   "8": "2",
+   "9": "1 X 2",
+   "10": "1 X",
+   "11": "2",
+   "12": "2",
+   "13": "1",
+   "14": "1"
+  },
+  "pleno": "1-1",
+  "p14": 0.008333333333333333,
+  "p13": 0.0583
+ },
+ "sueltas": [
+  {
+   "partido": "Barcelona – Villarreal",
+   "apuesta": "Marca el Barcelona",
+   "p": 0.969
+  },
+  {
+   "partido": "Real Madrid – Celta",
+   "apuesta": "Marca el Real Madrid",
+   "p": 0.922
+  },
+  {
+   "partido": "Tenerife F – Madrid CFF",
+   "apuesta": "Marca el Tenerife F",
+   "p": 0.907
+  },
+  {
+   "partido": "Racing – Real Sociedad",
+   "apuesta": "Marca la Real Sociedad",
+   "p": 0.888
+  },
+  {
+   "partido": "Granada F – Real Madrid F",
+   "apuesta": "Marca el Real Madrid F",
+   "p": 0.884
+  }
+ ]
+}

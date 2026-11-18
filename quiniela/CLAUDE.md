@@ -43,7 +43,8 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | Retirado | Cansancio por Europa o Copa; liga de asignación por temporada | Empeoraban fuera de muestra |
 | Solo aviso | Cambio de entrenador, enfrentamientos directos, árbitros | Estudios de quiniela-mesa (anexo G) |
 | Aplicado 17/11 | Afinado de favoritos de Primera (T=1,15) | `analisis/afinado-favoritos.md` |
-| Pendiente de probar | Empates ×1,20 en partidos igualados de Primera; EURO_F 1,12 | Primera jornada con Primera |
+| Aplicado 18/11 | **EURO_F 1,12** en Primera (equipo con partido UEFA en 120 días frente a uno sin él) | `analisis/pendientes-primera.md` (validación 0,9930→0,9887; prueba 0,9600→0,9560) |
+| Rechazado 18/11 | Empates ×1,20 en igualados de Primera | Empeora la validación |
 
 ## 4. Cómo se ejecuta (desde `quiniela/`)
 ```bash
@@ -61,11 +62,12 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
-## 5. Estado: J23 (fin de semana 21-22/11/2026) · a la espera del boleto oficial
-- **Mejora aplicada (17/11):** afinado de favoritos de Primera, **T=1,15** (`modelo/afinado.py`, `analisis/afinado-favoritos.md`). Validado fuera de muestra; Segunda sigue en 1,05. Lo usará `j23_run.py` cuando se cree.
-- **J23:** vuelve la liga. Loterías aún no ha publicado los 14+Pleno (lo hace ~jueves). No se anticipa composición (sería doble especulación). Se arranca el precio en cuanto salga la lista oficial.
-- **Pendiente J22:** resultados (se juega hasta el 19) y post-mortem; premio oficial J21 en `datos/premios.json`.
-- **Flujo J23 cuando salga la lista:** copiar `j21_run.py`→`j23_run.py` (usando `afinar_comp`), fijar FIX con los nombres del dataset, precio clubes+Liga F, Pleno; bajas de jornadaperfecta; % LAE de quiniela15 (solo informativo, anexo H); boleto con `boleto_unico.py`; revisión del sábado y congelación.
+## 5. Estado: J23 (21-22/11/2026) · primera revisión hecha (18/11) · cierre sábado 14:00
+- **Lista oficial** (quiniela15, 18/11): 7 Primera + 3 Segunda + 4 Liga F; **Pleno: Sevilla – Betis** (derbi, sábado 18:30).
+- **Archivos:** dossier `jornadas/j23/j23-equipos.md`; precios `modelo/j23_run.py` → `jornadas/j23/j23.json`; revisión `jornadas/j23/j23-pronostico.md`; datos `datos/euro_j23.json` (Segunda J14 incluida) y Liga F J11.
+- **Boleto provisional (18 €):** 1 2 en Racing–R.Sociedad, X2 en Getafe–Atlético, 1X2 en Sporting–Las Palmas, 1X en Girona–Eibar; Pleno **1-1**. P(14) 1/120; P(≥13) 5,8 %.
+- **Sábado (revisión final):** bajas de última hora (Cubarsí, Ceballos, Ejuke), % LAE (informativo), vigilar Alavés–Deportivo (59 % que el Red Team ve alto), volver a correr `j23_run.py` y `boleto_unico.py`, congelar a las 11:00.
+- **Pendiente J22:** post-mortem (cita automática del viernes 20).
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)
 | Web | Estado | Uso |

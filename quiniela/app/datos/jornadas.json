@@ -116,6 +116,44 @@
    "pleno_resultado": null,
    "log_loss_modelo": null,
    "log_loss_mercado": null
+  },
+  {
+   "jornada": 22,
+   "fechas": "17-19/11/2026",
+   "tipo": "Selecciones (repesca Mundial) + Champions femenina",
+   "estado": "Pronóstico v1 (selecciones validadas + modelo femenino nuevo)",
+   "boleto": "Las 27 columnas más probables",
+   "coste": 20,
+   "p14": 0.00742,
+   "p13": 0.05156,
+   "p10": 0.6288,
+   "mejor_columna": null,
+   "sueltas_aciertos": null,
+   "sueltas_total": null,
+   "sueltas_p_todas": 0.2745,
+   "pleno_jugado": null,
+   "pleno_resultado": null,
+   "log_loss_modelo": null,
+   "log_loss_mercado": null
+  },
+  {
+   "jornada": 23,
+   "fechas": "21-22/11/2026",
+   "tipo": "Liga (7 Primera + 3 Segunda + 4 Liga F); Pleno derbi Sevilla–Betis",
+   "estado": "Primera revisión (miércoles 18/11)",
+   "boleto": "Las 27 columnas más probables",
+   "coste": 20,
+   "p14": 0.011358,
+   "p13": 0.07025,
+   "p10": 0.6745,
+   "mejor_columna": null,
+   "sueltas_aciertos": null,
+   "sueltas_total": null,
+   "sueltas_p_todas": 0.6361,
+   "pleno_jugado": null,
+   "pleno_resultado": null,
+   "log_loss_modelo": null,
+   "log_loss_mercado": null
   }
  ]
 }
