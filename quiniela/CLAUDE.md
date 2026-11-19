@@ -65,6 +65,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 ## 5. Estado: J23 (21-22/11/2026) · primera revisión hecha (18/11) · cierre sábado 14:00
 - **Lista oficial** (quiniela15, 18/11): 7 Primera + 3 Segunda + 4 Liga F; **Pleno: Sevilla – Betis** (derbi, sábado 18:30).
 - **Archivos:** dossier `jornadas/j23/j23-equipos.md`; precios `modelo/j23_run.py` → `jornadas/j23/j23.json`; revisión `jornadas/j23/j23-pronostico.md`; datos `datos/euro_j23.json` (Segunda J14 incluida) y Liga F J11.
+- **Decisión del usuario (20/11): boleto de 18 € + 8 sencillas complementarias (6 €), 24 € en total.** Juntas: P(14) 1 entre 87, P(≥13) 7,4 %. Columnas en `j23.json` (`columnas_individuales`).
 - **Boleto provisional (18 €):** 1 2 en Racing–R.Sociedad, X2 en Getafe–Atlético, 1X2 en Sporting–Las Palmas, 1X en Girona–Eibar; Pleno **1-1**. P(14) 1/120; P(≥13) 5,8 %.
 - **Sábado (revisión final):** bajas de última hora (Cubarsí, Ceballos, Ejuke), % LAE (informativo), vigilar Alavés–Deportivo (59 % que el Red Team ve alto), volver a correr `j23_run.py` y `boleto_unico.py`, congelar a las 11:00.
 - **J22 cerrada (post-mortem 19/11):** mejor columna **12 aciertos** en los dos formatos (boleto de 18 € y 6 columnas). Premio pendiente del escrutinio. Modelo 11/14 (femenino 7/8). Pleno fallado (Dinamarca 2-3 Noruega). `jornadas/j22/j22-resultados.md`.
