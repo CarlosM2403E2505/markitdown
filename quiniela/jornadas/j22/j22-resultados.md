@@ -24,7 +24,7 @@
 - **Boleto de 18 € (24 apuestas): 2 columnas con 12 aciertos, 8 con 11 y 10 con 10.** Solo fallaron Polonia–Suecia (X, cubrimos 1 y 2) y Benfica–Roma (2-3, jugamos 1).
 - **6 columnas individuales: la mejor hizo 12 aciertos** (la C4, la que llevaba la X en Hungría–Irlanda del Norte); otras dos hicieron 11.
 - **Premio:** 12 y 11 aciertos son categorías con premio. El importe depende del escrutinio oficial, todavía no publicado. Fue una jornada de favoritos (la columna del público hizo 10), así que el premio por acertante será bajo.
-- **Signo del modelo: 11 de 14.** Selecciones 4 de 6 (fallaron las dos X: Hungría e Polonia). **Champions femenina: 7 de 8**; el modelo nuevo, de confianza media, solo falló Benfica–Roma.
+- **Signo del modelo: 11 de 14.** Selecciones 4 de 6 (fallaron las dos X: Hungría y Polonia). **Champions femenina: 7 de 8**; el modelo nuevo, de confianza media, solo falló Benfica–Roma.
 - **Empates:** salieron 2 (Hungría–Irlanda del Norte y Polonia–Suecia). El boleto de 18 € cubrió el de Hungría.
 - **Pleno:** perdido. Dinamarca 2-3 Noruega (Haaland marcó). El 2-M era de los marcadores menos probables (3,4 %).
 - **Frente al público:** esta vez el público predijo mejor (log-loss 0,602 frente a 0,713 de la mesa). En una jornada de favoritos claros, el público, que los carga, sale ganando; en la J21 ganó la mesa. Por eso se mide a la larga, no semana a semana.
