@@ -82,3 +82,29 @@
 | Bajas | Solo A/B, con fuente; topes respetados (Celta −7 % por su delantero titular; el resto ≤ 5 %) ✅ |
 | Boleto | 24 apuestas, 18 € ≤ 20 €; P(14) recalculada como suma de las columnas ✅ |
 | Pendiente | % del público (LAE, aún no publicado: solo informativo); dudas de Cubarsí y Ceballos; Alavés–Deportivo en vigilancia ⚠️ |
+---
+
+## Liga F: investigación del usuario (20/11) y decisión de la mesa
+
+Datos: `jornadas/j23/navegador_ligaf_20261120.json` (investigación del usuario con Claude en el navegador).
+
+**Auditor:** los 8 resultados de la jornada 11 y la clasificación del Investigador coinciden exactamente con `datos/ligaf.json`. ✅
+
+**Live Trader:** ninguna baja nueva confirmada de una titular para la jornada 12. **No se mueve ningún precio:**
+- **Sin sancionadas** (acta oficial de la J11 de la RFEF, clase A).
+- **Atlético F:** Alexia (DF) está de baja desde el 30/10. El modelo ya tiene sus 3 partidos sin ella, así que no se ajusta. Jensen (8 goles) vuelve.
+- **Real Madrid F:** Misa (PT) no fue convocada en la J11 y no se sabe el motivo. Para la J12 no mueve precio (no consta baja para la J12). Se vigila la convocatoria del sábado: si se confirma que no juega, la portera titular podría mover el precio hasta un 5 %.
+- **Tenerife F y Madrid CFF:** las bajas largas (Pola y Mia Asenjo) ya están en los datos. Las 6 «bajas en la J11 sin motivo» son un dato de clase B sobre la J11, pero no se sabe si siguen para la J12: no mueven precio.
+- **Real Sociedad F:** Moraza vuelve. **Sevilla F:** Kanteh vuelve (suplente).
+
+**Calendario** (solo aviso; el cansancio no está medido en el fútbol femenino):
+- El **Real Madrid F** jugó la Champions el miércoles, con rotaciones; descansa 3,5 días.
+- El **Eibar F** jugó la Copa el miércoles en Valencia y ganó.
+- El **Madrid CFF** jugó la Copa el jueves en La Palma y cayó ante un equipo de categoría inferior (por confirmar). Lleva 4 puntos en sus últimos 5 partidos.
+
+**Red Team:** lo encontrado **refuerza** los dos signos que estaban en duda:
+- el Tenerife F (75 %) recibe a un Madrid CFF en mala racha y con partido el jueves;
+- la Real Sociedad F (65 %) recibe a un Sevilla F que lleva 7 jornadas sin ganar.
+
+**Boleto y Pleno:** sin cambios.
+**Pendiente para el sábado:** convocatorias de la jornada 12 (sobre todo si juega Misa) y confirmar el Argual 2-0 Madrid CFF.

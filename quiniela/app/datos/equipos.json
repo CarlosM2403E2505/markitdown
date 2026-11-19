@@ -43,7 +43,7 @@
    "proximo_n": 3,
    "p_ganar_proximo": 0.7866,
    "bajas": 1,
-   "dudas": null,
+   "dudas": 1,
    "elo": null
   },
   {
@@ -65,7 +65,7 @@
    "proximo": "Getafe – Atlético",
    "proximo_n": 7,
    "p_ganar_proximo": 0.4586,
-   "bajas": 3,
+   "bajas": 4,
    "dudas": 2,
    "elo": null
   },
@@ -755,8 +755,8 @@
    "proximo": "Tenerife – Mallorca",
    "proximo_n": 8,
    "p_ganar_proximo": 0.2339,
-   "bajas": null,
-   "dudas": null,
+   "bajas": 3,
+   "dudas": 3,
    "elo": null
   },
   {
