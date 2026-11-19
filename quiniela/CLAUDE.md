@@ -67,7 +67,8 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **Archivos:** dossier `jornadas/j23/j23-equipos.md`; precios `modelo/j23_run.py` → `jornadas/j23/j23.json`; revisión `jornadas/j23/j23-pronostico.md`; datos `datos/euro_j23.json` (Segunda J14 incluida) y Liga F J11.
 - **Boleto provisional (18 €):** 1 2 en Racing–R.Sociedad, X2 en Getafe–Atlético, 1X2 en Sporting–Las Palmas, 1X en Girona–Eibar; Pleno **1-1**. P(14) 1/120; P(≥13) 5,8 %.
 - **Sábado (revisión final):** bajas de última hora (Cubarsí, Ceballos, Ejuke), % LAE (informativo), vigilar Alavés–Deportivo (59 % que el Red Team ve alto), volver a correr `j23_run.py` y `boleto_unico.py`, congelar a las 11:00.
-- **Pendiente J22:** post-mortem (cita automática del viernes 20).
+- **J22 cerrada (post-mortem 19/11):** mejor columna **12 aciertos** en los dos formatos (boleto de 18 € y 6 columnas). Premio pendiente del escrutinio. Modelo 11/14 (femenino 7/8). Pleno fallado (Dinamarca 2-3 Noruega). `jornadas/j22/j22-resultados.md`.
+- **J23 tiene bote de 1.000.000 €** (quiniela15, 19/11).
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)
 | Web | Estado | Uso |

@@ -289,5 +289,12 @@
    "apuesta": "Gana Portugal",
    "p": 0.633
   }
- ]
+ ],
+ "resultado": {
+  "signos": "112XX112112212",
+  "pleno": "2-M",
+  "mejor_columna_18": 12,
+  "mejor_columna_6": 12,
+  "premio": "pendiente de escrutinio"
+ }
 }
