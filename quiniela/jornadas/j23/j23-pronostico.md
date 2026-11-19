@@ -108,3 +108,17 @@ Datos: `jornadas/j23/navegador_ligaf_20261120.json` (investigación del usuario 
 
 **Boleto y Pleno:** sin cambios.
 **Pendiente para el sábado:** convocatorias de la jornada 12 (sobre todo si juega Misa) y confirmar el Argual 2-0 Madrid CFF.
+
+---
+
+## Decisión del usuario (20/11): boleto de 18 € + 8 boletos individuales (6 €)
+
+La mesa elige las 8 sencillas **complementarias**: las 8 columnas más probables que **no** están ya en el boleto de 18 € (de las 8 más probables en general, 7 ya están dentro). Pleno 1-1 en todas.
+
+| Conjunto | Columnas | P(14) | P(≥13) | P(≥12) | P(≥10) |
+|---|---|---|---|---|---|
+| Solo el boleto de 18 € | 24 | 1 entre 120 | 5,83 % | 19,4 % | 65,6 % |
+| 18 € + 8 más probables (repiten 7) | 25 distintas | 1 entre 114 | 6,11 % | 20,1 % | 66,9 % |
+| **18 € + 8 complementarias (elegido)** | **32 distintas** | **1 entre 87** | **7,39 %** | **22,9 %** | **70,1 %** |
+
+Columnas en `j23.json` → `columnas_individuales`. Se revisan y congelan el sábado junto con el boleto.

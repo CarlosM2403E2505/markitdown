@@ -521,5 +521,17 @@
   "111121222X2211"
  ],
  "boleto_jugado": "Directa: 3 dobles + 1 triple (provisional, se congela el sábado)",
- "coste_jugado": 18
+ "coste_jugado": 18,
+ "columnas_individuales": [
+  "11112112112211",
+  "1111212X112211",
+  "1X112122112211",
+  "11112121112211",
+  "11112122122211",
+  "11112112212211",
+  "1111212X212211",
+  "X1112122112211"
+ ],
+ "individuales": "8 sencillas (6 €) que no repiten ninguna columna del boleto de 18 €; Pleno 1-1 en todas (provisional, se congela el sábado)",
+ "coste_total_previsto": 24
 }
