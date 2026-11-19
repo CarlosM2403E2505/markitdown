@@ -71,3 +71,18 @@ En la prueba hubo un 21,8 % de empates reales.
 - **Sus empates de Segunda a ×1,08:** su propio estudio da un k de 0,93, y nosotros usamos 1,00.
 - **Su Liga F antigua.**
 - **Las cuotas dentro del modelo:** el usuario lo prohíbe.
+
+## Anexo: peso de la temporada pasada en la Liga F (19/11/2026)
+
+Prueba fuera de muestra con las jornadas de 2026/27 en bloques de 8 partidos (sin el Barça). En cada bloque, el modelo se ajusta solo con los partidos anteriores.
+
+| Peso de 2025/26 | Log-loss (61 partidos) | Solo jornadas 7-11 (36) |
+|---|---|---|
+| **1,00 (actual)** | **1,0827** | **1,0599** |
+| 0,70 | 1,0838 | 1,0615 |
+| 0,50 | 1,0858 | 1,0641 |
+| 0,30 | 1,0911 | 1,0704 |
+| 0,15 | 1,1039 | 1,0840 |
+
+- **Se mantiene el peso 1,0**: dar menos peso a la temporada pasada empeora, también en las últimas jornadas.
+- La duda sobre la Real Sociedad F (fuerte el año pasado, floja este) no se confirma en conjunto. Queda como aviso del Red Team, sin cambiar el precio.
