@@ -42,8 +42,16 @@ def jornada_desde_json(ruta):
     probs = [p["p"] for p in partidos]
     mercado = _mercado(os.path.dirname(ruta))
     forzados = qc._forzados(partidos)
-    _, elegido = qc.comparar_sistemas(probs, forzados, d.get("presupuesto", 12), (d.get("publico") or {}).get("columna"))
-    cols, dist = elegido["columnas"], elegido["dist"]
+    if d.get("columnas_jugadas"):
+        # El boleto que de verdad se jugó (o se recomendó al congelar), no uno recalculado.
+        cols = d["columnas_jugadas"]
+        nvar = sum(len({c[i] for c in cols}) > 1 for i in range(len(probs)))
+        dist = qc.evaluar_columnas(probs, cols) if nvar <= 10 else qc.simular_columnas(probs, cols, n=200000)
+        elegido = {"nombre": " · " + d.get("boleto_jugado", f"{len(cols)} columnas"), "columnas": cols, "dist": dist}
+    else:
+        # Jornadas antiguas: se reproduce la elección de entonces (antes del anexo H contaba la columna del público).
+        _, elegido = qc.comparar_sistemas(probs, forzados, d.get("presupuesto", 12), (d.get("publico") or {}).get("columna"))
+        cols, dist = elegido["columnas"], elegido["dist"]
     # Signos que aparecen en las columnas del boleto, partido a partido ("1", "12", "1X2"...).
     signos_boleto = {i: "".join(s for s in qc.SIGNOS if any(c[i] == s for c in cols)) for i in range(len(probs))}
 
@@ -93,7 +101,8 @@ def jornada_desde_json(ruta):
         "jornada": n_j, "fechas": d.get("fechas"), "tipo": d.get("tipo"),
         "estado": "Cerrada" if len(jugados) == 14 else d.get("estado", "Pronóstico"),
         "boleto": ("16 columnas más probables, sin la del público" if "público" in elegido["nombre"]
-                   else elegido["nombre"].split(" · ", 1)[1].capitalize()), "coste": d.get("presupuesto", 12),
+                   else elegido["nombre"].split(" · ", 1)[1][:1].upper() + elegido["nombre"].split(" · ", 1)[1][1:]),
+        "coste": d.get("coste_jugado", d.get("presupuesto", 12)),
         "p14": round(qc.al_menos(dist, 14), 6), "p13": round(qc.al_menos(dist, 13), 5),
         "p10": round(qc.al_menos(dist, 10), 4),
         "mejor_columna": d.get("mejor_columna"),
@@ -103,6 +112,8 @@ def jornada_desde_json(ruta):
         "pleno_jugado": pleno_jugado, "pleno_resultado": pleno_resultado,
         "log_loss_modelo": round(qc.puntuar(partidos)["log_loss"], 4) if len(jugados) == 14 else None,
         "log_loss_mercado": d.get("log_loss_mercado"),
+        "log_loss_publico": d.get("log_loss_publico"),
+        "premio": d.get("premio"),
     }
     return resumen, filas, sueltas
 

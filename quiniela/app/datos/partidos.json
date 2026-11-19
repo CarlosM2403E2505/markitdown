@@ -586,8 +586,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -605,8 +605,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "X",
+   "acierto_boleto": false
   },
   {
    "jornada": 21,
@@ -624,8 +624,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -643,8 +643,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "X",
+   "acierto_boleto": false
   },
   {
    "jornada": 21,
@@ -662,8 +662,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -681,8 +681,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -700,8 +700,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -719,8 +719,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "X",
+   "acierto_boleto": false
   },
   {
    "jornada": 21,
@@ -738,8 +738,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -757,8 +757,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -776,8 +776,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -795,8 +795,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": false
   },
   {
    "jornada": 21,
@@ -814,8 +814,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 21,
@@ -833,8 +833,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "X",
+   "acierto_boleto": false
   },
   {
    "jornada": 21,
@@ -846,14 +846,14 @@
    "px": 0.2464,
    "p2": 0.2214,
    "signo_modelo": "1",
-   "signo_boleto": null,
+   "signo_boleto": "1-0",
    "riesgo": "—",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2-M",
+   "acierto_boleto": false
   },
   {
    "jornada": 22,
@@ -871,8 +871,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -884,14 +884,14 @@
    "px": 0.244,
    "p2": 0.2245,
    "signo_modelo": "1",
-   "signo_boleto": "1X",
+   "signo_boleto": "1",
    "riesgo": "Moderado",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -909,8 +909,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -922,14 +922,14 @@
    "px": 0.3074,
    "p2": 0.2479,
    "signo_modelo": "1",
-   "signo_boleto": "1X2",
+   "signo_boleto": "1X",
    "riesgo": "Alto",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "X",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -941,14 +941,14 @@
    "px": 0.234,
    "p2": 0.3454,
    "signo_modelo": "1",
-   "signo_boleto": "1X2",
+   "signo_boleto": "12",
    "riesgo": "Alto",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "X",
+   "acierto_boleto": false
   },
   {
    "jornada": 22,
@@ -960,14 +960,14 @@
    "px": 0.2977,
    "p2": 0.2699,
    "signo_modelo": "1",
-   "signo_boleto": "1X2",
+   "signo_boleto": "1X",
    "riesgo": "Alto",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -985,8 +985,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -998,14 +998,14 @@
    "px": 0.2761,
    "p2": 0.4703,
    "signo_modelo": "2",
-   "signo_boleto": "1X2",
+   "signo_boleto": "2",
    "riesgo": "Alto",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -1023,8 +1023,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -1042,8 +1042,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -1061,8 +1061,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -1074,14 +1074,14 @@
    "px": 0.2451,
    "p2": 0.5213,
    "signo_modelo": "2",
-   "signo_boleto": "1X2",
+   "signo_boleto": "2",
    "riesgo": "Moderado",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -1099,8 +1099,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 22,
@@ -1118,8 +1118,8 @@
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": false
   },
   {
    "jornada": 22,
@@ -1131,14 +1131,14 @@
    "px": 0.2366,
    "p2": 0.2746,
    "signo_modelo": "1",
-   "signo_boleto": null,
+   "signo_boleto": "1-1",
    "riesgo": "—",
    "veto": false,
    "m1": null,
    "mx": null,
    "m2": null,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2-M",
+   "acierto_boleto": false
   },
   {
    "jornada": 23,
@@ -1150,7 +1150,7 @@
    "px": 0.2317,
    "p2": 0.1788,
    "signo_modelo": "1",
-   "signo_boleto": "1X",
+   "signo_boleto": "1",
    "riesgo": "Moderado",
    "veto": false,
    "m1": null,
@@ -1169,7 +1169,7 @@
    "px": 0.2553,
    "p2": 0.2024,
    "signo_modelo": "1",
-   "signo_boleto": "1X2",
+   "signo_boleto": "1",
    "riesgo": "Moderado",
    "veto": false,
    "m1": null,
@@ -1226,7 +1226,7 @@
    "px": 0.202,
    "p2": 0.5181,
    "signo_modelo": "2",
-   "signo_boleto": "1X2",
+   "signo_boleto": "12",
    "riesgo": "Moderado",
    "veto": false,
    "m1": null,
@@ -1264,7 +1264,7 @@
    "px": 0.2934,
    "p2": 0.4586,
    "signo_modelo": "2",
-   "signo_boleto": "1X2",
+   "signo_boleto": "X2",
    "riesgo": "Alto",
    "veto": false,
    "m1": null,
@@ -1283,7 +1283,7 @@
    "px": 0.2615,
    "p2": 0.5046,
    "signo_modelo": "2",
-   "signo_boleto": "1X2",
+   "signo_boleto": "2",
    "riesgo": "Moderado",
    "veto": false,
    "m1": null,
@@ -1321,7 +1321,7 @@
    "px": 0.2633,
    "p2": 0.2308,
    "signo_modelo": "1",
-   "signo_boleto": "1X2",
+   "signo_boleto": "1X",
    "riesgo": "Moderado",
    "veto": false,
    "m1": null,
@@ -1416,7 +1416,7 @@
    "px": 0.2419,
    "p2": 0.4031,
    "signo_modelo": "2",
-   "signo_boleto": null,
+   "signo_boleto": "1-1",
    "riesgo": "—",
    "veto": false,
    "m1": null,

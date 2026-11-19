@@ -29,7 +29,9 @@
     1.208,
     1.682
    ],
-   "ajuste": "Valladolid sin Latasa (lesión) ni Iván Alejo (sanción): ataque ×0,96; Castellón sin Orozco (roja): ×0,98 (jornadaperfecta.com, 12/11/2026, clase B)"
+   "ajuste": "Valladolid sin Latasa (lesión) ni Iván Alejo (sanción): ataque ×0,96; Castellón sin Orozco (roja): ×0,98 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "2",
+   "marcador": "0-1"
   },
   {
    "n": 2,
@@ -53,7 +55,9 @@
     1.374,
     1.32
    ],
-   "ajuste": "Sporting sin Juan Otero (roja directa) ni Antonio Casas (lesión de grado 3): ataque ×0,95 (jornadaperfecta.com, 12/11/2026, clase B)"
+   "ajuste": "Sporting sin Juan Otero (roja directa) ni Antonio Casas (lesión de grado 3): ataque ×0,95 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "X",
+   "marcador": "2-2"
   },
   {
    "n": 3,
@@ -78,7 +82,9 @@
     2.283,
     1.311
    ],
-   "ajuste": "Andorra sin su portero Owono (roja) ni Lautaro de León (doble amarilla): Almería ×1,05; Andorra ×0,97, y ×1,02 por la sanción de Marcos Luna (Almería): ×0,99 (jornadaperfecta.com, 12/11/2026, clase B)"
+   "ajuste": "Andorra sin su portero Owono (roja) ni Lautaro de León (doble amarilla): Almería ×1,05; Andorra ×0,97, y ×1,02 por la sanción de Marcos Luna (Almería): ×0,99 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "1",
+   "marcador": "2-1"
   },
   {
    "n": 4,
@@ -102,7 +108,9 @@
    "xg": [
     2.03,
     0.927
-   ]
+   ],
+   "resultado": "X",
+   "marcador": "3-3"
   },
   {
    "n": 5,
@@ -125,7 +133,9 @@
    "xg": [
     1.194,
     1.181
-   ]
+   ],
+   "resultado": "2",
+   "marcador": "1-2"
   },
   {
    "n": 6,
@@ -150,7 +160,9 @@
     1.609,
     1.128
    ],
-   "ajuste": "Tenerife sin su portero Dani Martín (doble amarilla): Ceuta ×1,05 (jornadaperfecta.com, 12/11/2026, clase B)"
+   "ajuste": "Tenerife sin su portero Dani Martín (doble amarilla): Ceuta ×1,05 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "1",
+   "marcador": "2-0"
   },
   {
    "n": 7,
@@ -175,7 +187,9 @@
     1.453,
     1.237
    ],
-   "ajuste": "Las Palmas sin Sandro Ramírez (delantero, microrrotura en el gemelo): ataque ×0,97 (jornadaperfecta.com, 14/11/2026, clase B)"
+   "ajuste": "Las Palmas sin Sandro Ramírez (delantero, microrrotura en el gemelo): ataque ×0,97 (jornadaperfecta.com, 14/11/2026, clase B)",
+   "resultado": "1",
+   "marcador": "1-0"
   },
   {
    "n": 8,
@@ -199,7 +213,9 @@
    "xg": [
     1.554,
     0.889
-   ]
+   ],
+   "resultado": "X",
+   "marcador": "1-1"
   },
   {
    "n": 9,
@@ -224,7 +240,9 @@
    "xg": [
     1.126,
     1.143
-   ]
+   ],
+   "resultado": "1",
+   "marcador": "2-0"
   },
   {
    "n": 10,
@@ -244,7 +262,9 @@
    "xg": [
     1.674,
     1.129
-   ]
+   ],
+   "resultado": "1",
+   "marcador": "4-1"
   },
   {
    "n": 11,
@@ -268,7 +288,9 @@
    "xg": [
     0.945,
     0.489
-   ]
+   ],
+   "resultado": "1",
+   "marcador": "2-1"
   },
   {
    "n": 12,
@@ -292,7 +314,9 @@
    "xg": [
     1.641,
     0.915
-   ]
+   ],
+   "resultado": "2",
+   "marcador": "1-4"
   },
   {
    "n": 13,
@@ -316,7 +340,9 @@
    "xg": [
     1.02,
     1.936
-   ]
+   ],
+   "resultado": "2",
+   "marcador": "1-2"
   },
   {
    "n": 14,
@@ -340,7 +366,9 @@
    "xg": [
     1.14,
     1.347
-   ]
+   ],
+   "resultado": "X",
+   "marcador": "0-0"
   }
  ],
  "pleno": {
@@ -376,33 +404,40 @@
   "mezcla": 0.0,
   "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo); Pleno sin mezcla empírica (validado)",
   "ajuste": "España sin Rodri ni Olmo (×0,97) e Inglaterra sin Guéhi (×1,02 a los goles de España), clase B.",
-  "decision": "1-0 en los 4 boletos: es el marcador más probable según la mesa (12,2 %). El % del público no interviene (anexo H)."
+  "decision": "1-0 en los 4 boletos: es el marcador más probable según la mesa (12,2 %). El % del público no interviene (anexo H).",
+  "pleno_jugado": "1-0",
+  "resultado_pleno": "2-M"
  },
  "sueltas": [
   {
    "partido": "Alavés F – Eibar F",
    "apuesta": "Menos de 3,5 goles",
-   "p": 0.941
+   "p": 0.941,
+   "resultado": true
   },
   {
    "partido": "Almería – Andorra",
    "apuesta": "Almería marca",
-   "p": 0.898
+   "p": 0.898,
+   "resultado": true
   },
   {
    "partido": "Mallorca – Córdoba",
    "apuesta": "Mallorca marca",
-   "p": 0.869
+   "p": 0.869,
+   "resultado": true
   },
   {
    "partido": "Sevilla F – Atlético F",
    "apuesta": "Atlético F marca",
-   "p": 0.859
+   "p": 0.859,
+   "resultado": true
   },
   {
    "partido": "Valladolid – Castellón",
    "apuesta": "Castellón marca",
-   "p": 0.814
+   "p": 0.814,
+   "resultado": true
   }
  ],
  "publico": {
@@ -541,5 +576,36 @@
    "21111121111122",
    "22111111X11122"
   ]
- }
+ },
+ "columnas_jugadas": [
+  "21111111111121",
+  "21111111111122",
+  "21111111211121",
+  "21111111211122",
+  "21112111111121",
+  "21112111111122",
+  "21112111211121",
+  "21112111211122",
+  "22111111111121",
+  "22111111111122",
+  "22111111211121",
+  "22111111211122",
+  "22112111111121",
+  "22112111111122",
+  "22112111211121",
+  "22112111211122",
+  "21111111X11122",
+  "21112111X11122",
+  "2111X111211122",
+  "21111121211122",
+  "21112121211122",
+  "2111X111111122",
+  "21111121111122",
+  "22111111X11122"
+ ],
+ "boleto_jugado": "2 boletos: directa de 4 dobles (12 €) + 8 columnas sencillas (6 €)",
+ "coste_jugado": 18,
+ "mejor_columna": 9,
+ "log_loss_publico": 1.011,
+ "premio": "Sin premio (9 aciertos)"
 }

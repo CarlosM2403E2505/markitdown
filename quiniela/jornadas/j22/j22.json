@@ -19,7 +19,9 @@
     1.33,
     1.12
    ],
-   "confianza": "alta"
+   "confianza": "alta",
+   "resultado": "1",
+   "marcador": "2-1"
   },
   {
    "n": 2,
@@ -34,7 +36,9 @@
     1.66,
     0.99
    ],
-   "confianza": "alta"
+   "confianza": "alta",
+   "resultado": "1",
+   "marcador": "1-0"
   },
   {
    "n": 3,
@@ -49,7 +53,9 @@
     0.72,
     1.81
    ],
-   "confianza": "alta"
+   "confianza": "alta",
+   "resultado": "2",
+   "marcador": "2-3"
   },
   {
    "n": 4,
@@ -64,7 +70,9 @@
     1.15,
     0.78
    ],
-   "confianza": "alta"
+   "confianza": "alta",
+   "resultado": "X",
+   "marcador": "1-1"
   },
   {
    "n": 5,
@@ -79,7 +87,9 @@
     1.68,
     1.5
    ],
-   "confianza": "alta"
+   "confianza": "alta",
+   "resultado": "X",
+   "marcador": "1-1"
   },
   {
    "n": 6,
@@ -94,7 +104,9 @@
     1.19,
     0.87
    ],
-   "confianza": "alta"
+   "confianza": "alta",
+   "resultado": "1",
+   "marcador": "3-0"
   },
   {
    "n": 7,
@@ -109,7 +121,9 @@
     2.79,
     0.73
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "1",
+   "marcador": "3-1"
   },
   {
    "n": 8,
@@ -124,7 +138,9 @@
     0.92,
     1.36
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "2",
+   "marcador": "0-2"
   },
   {
    "n": 9,
@@ -139,7 +155,9 @@
     1.7,
     0.55
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "1",
+   "marcador": "1-0"
   },
   {
    "n": 10,
@@ -154,7 +172,9 @@
     3.12,
     0.77
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "1",
+   "marcador": "2-0"
   },
   {
    "n": 11,
@@ -169,7 +189,9 @@
     1.28,
     2.44
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "2",
+   "marcador": "0-4"
   },
   {
    "n": 12,
@@ -184,7 +206,9 @@
     1.02,
     1.65
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "2",
+   "marcador": "0-2"
   },
   {
    "n": 13,
@@ -199,7 +223,9 @@
     8.21,
     0.85
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "1",
+   "marcador": "6-0"
   },
   {
    "n": 14,
@@ -214,7 +240,9 @@
     2.0,
     0.89
    ],
-   "confianza": "media (modelo femenino nuevo)"
+   "confianza": "media (modelo femenino nuevo)",
+   "resultado": "2",
+   "marcador": "2-3"
   }
  ],
  "pleno": {
@@ -248,7 +276,9 @@
    "M-M": 0.0324
   },
   "precio": "Poisson de selecciones (validado), sin mezcla empírica",
-  "decision": "1-1 (11,0 %) es el más probable; Dinamarca gana 48,9 %. Pendiente de confirmar el Pleno oficial del boleto."
+  "decision": "1-1 (11,0 %) es el más probable; Dinamarca gana 48,9 %. Pendiente de confirmar el Pleno oficial del boleto.",
+  "pleno_jugado": "1-1",
+  "resultado_pleno": "2-M"
  },
  "boleto_final": {
   "tipo": "Directa: triple en Bosnia–Rumanía; dobles 1X en Hungría–Irlanda N. y Eire–Kosovo, 1 2 en Polonia–Suecia",
@@ -267,27 +297,32 @@
   {
    "partido": "Barcelona F – Servette F",
    "apuesta": "Gana Barcelona F",
-   "p": 0.993
+   "p": 0.993,
+   "resultado": true
   },
   {
    "partido": "Juventus F – OH Leuven F",
    "apuesta": "Gana Juventus F",
-   "p": 0.832
+   "p": 0.832,
+   "resultado": true
   },
   {
    "partido": "Real Madrid F – Inter F",
    "apuesta": "Gana Real Madrid F",
-   "p": 0.8
+   "p": 0.8,
+   "resultado": true
   },
   {
    "partido": "Chelsea F – PSG F",
    "apuesta": "Gana Chelsea F",
-   "p": 0.656
+   "p": 0.656,
+   "resultado": true
   },
   {
    "partido": "Gales – Portugal",
    "apuesta": "Gana Portugal",
-   "p": 0.633
+   "p": 0.633,
+   "resultado": true
   }
  ],
  "resultado": {
@@ -296,5 +331,36 @@
   "mejor_columna_18": 12,
   "mejor_columna_6": 12,
   "premio": "pendiente de escrutinio"
- }
+ },
+ "columnas_jugadas": [
+  "11211112112211",
+  "X1211112112211",
+  "21211112112211",
+  "11211X12112211",
+  "X1211X12112211",
+  "21211X12112211",
+  "11212112112211",
+  "X1212112112211",
+  "21212112112211",
+  "11212X12112211",
+  "X1212X12112211",
+  "21212X12112211",
+  "112X1112112211",
+  "X12X1112112211",
+  "212X1112112211",
+  "112X1X12112211",
+  "X12X1X12112211",
+  "212X1X12112211",
+  "112X2112112211",
+  "X12X2112112211",
+  "212X2112112211",
+  "112X2X12112211",
+  "X12X2X12112211",
+  "212X2X12112211"
+ ],
+ "boleto_jugado": "Directa: 3 dobles + 1 triple (18 €); alternativa de 6 columnas sencillas (4,50 €)",
+ "coste_jugado": 18,
+ "mejor_columna": 12,
+ "log_loss_publico": 0.602,
+ "premio": "12 aciertos (2 columnas) en el boleto de 18 € y 12 en las 6 columnas; importe no consultado"
 }

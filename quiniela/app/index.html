@@ -89,12 +89,14 @@
               <th data-field="jornada">Jornada</th>
               <th data-field="tipo">Tipo</th>
               <th data-field="estado">Estado</th>
+              <th data-field="boleto" class="cq-oculto-estrecho">Boleto jugado</th>
               <th data-field="coste" class="cq-num">Coste (€)</th>
               <th data-field="mejor_columna" class="cq-num">Mejor columna</th>
               <th data-field="sueltas_aciertos" class="cq-num">Sueltas acertadas</th>
-              <th data-field="pleno_jugado">Pleno</th>
-              <th data-field="log_loss_modelo" class="cq-num cq-oculto-estrecho">Log-loss modelo</th>
-              <th data-field="log_loss_mercado" class="cq-num cq-oculto-estrecho">Log-loss mercado</th>
+              <th data-field="pleno_jugado">Pleno (jugado → salió)</th>
+              <th data-field="premio" class="cq-oculto-estrecho">Premio</th>
+              <th data-field="log_loss_modelo" class="cq-num cq-oculto-estrecho">Log-loss mesa</th>
+              <th data-field="log_loss_publico" class="cq-num cq-oculto-estrecho">Log-loss público / mercado</th>
             </tr></thead>
             <tbody data-draw="tabla-jornadas"></tbody>
           </table>
@@ -319,12 +321,14 @@
       celda(tr, String(r.jornada));
       celda(tr, r.tipo ?? '—');
       celda(tr, r.estado ?? '—');
+      celda(tr, r.boleto ?? '—', 'cq-oculto-estrecho');
       celda(tr, r.coste == null ? '—' : entero(r.coste), 'cq-num');
       celda(tr, r.mejor_columna == null ? '—' : String(r.mejor_columna), 'cq-num');
-      celda(tr, r.sueltas_aciertos == null ? '—' : String(r.sueltas_aciertos), 'cq-num');
-      celda(tr, r.pleno_jugado ?? '—');
+      celda(tr, r.sueltas_aciertos == null ? '—' : `${r.sueltas_aciertos} de ${r.sueltas_total ?? 5}`, 'cq-num');
+      celda(tr, (r.pleno_jugado ?? '—') + (r.pleno_resultado ? ` → ${r.pleno_resultado}${r.pleno_jugado && r.pleno_jugado === r.pleno_resultado ? ' ✓' : ''}` : ''));
+      celda(tr, r.premio ?? '—', 'cq-oculto-estrecho');
       celda(tr, dec3(r.log_loss_modelo), 'cq-num cq-oculto-estrecho');
-      celda(tr, dec3(r.log_loss_mercado), 'cq-num cq-oculto-estrecho');
+      celda(tr, dec3(r.log_loss_publico ?? r.log_loss_mercado), 'cq-num cq-oculto-estrecho');
       tb.appendChild(tr);
     });
   });

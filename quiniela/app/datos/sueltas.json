@@ -86,7 +86,7 @@
    "apuesta": "Menos de 3,5 goles",
    "partido": "Alavés F – Eibar F",
    "p": 0.941,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 21,
@@ -94,7 +94,7 @@
    "apuesta": "Almería marca",
    "partido": "Almería – Andorra",
    "p": 0.898,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 21,
@@ -102,7 +102,7 @@
    "apuesta": "Mallorca marca",
    "partido": "Mallorca – Córdoba",
    "p": 0.869,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 21,
@@ -110,7 +110,7 @@
    "apuesta": "Atlético F marca",
    "partido": "Sevilla F – Atlético F",
    "p": 0.859,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 21,
@@ -118,7 +118,7 @@
    "apuesta": "Castellón marca",
    "partido": "Valladolid – Castellón",
    "p": 0.814,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 22,
@@ -126,7 +126,7 @@
    "apuesta": "Gana Barcelona F",
    "partido": "Barcelona F – Servette F",
    "p": 0.993,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 22,
@@ -134,7 +134,7 @@
    "apuesta": "Gana Juventus F",
    "partido": "Juventus F – OH Leuven F",
    "p": 0.832,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 22,
@@ -142,7 +142,7 @@
    "apuesta": "Gana Real Madrid F",
    "partido": "Real Madrid F – Inter F",
    "p": 0.8,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 22,
@@ -150,7 +150,7 @@
    "apuesta": "Gana Chelsea F",
    "partido": "Chelsea F – PSG F",
    "p": 0.656,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 22,
@@ -158,7 +158,7 @@
    "apuesta": "Gana Portugal",
    "partido": "Gales – Portugal",
    "p": 0.633,
-   "resultado": null
+   "resultado": true
   },
   {
    "jornada": 23,

@@ -20,7 +20,7 @@
    "proximo_n": 4,
    "p_ganar_proximo": 0.8424,
    "bajas": null,
-   "dudas": null,
+   "dudas": 1,
    "elo": null
   },
   {
@@ -42,7 +42,7 @@
    "proximo": "Real Madrid – Celta",
    "proximo_n": 3,
    "p_ganar_proximo": 0.7866,
-   "bajas": null,
+   "bajas": 1,
    "dudas": null,
    "elo": null
   },
@@ -65,7 +65,7 @@
    "proximo": "Getafe – Atlético",
    "proximo_n": 7,
    "p_ganar_proximo": 0.4586,
-   "bajas": 1,
+   "bajas": 3,
    "dudas": 2,
    "elo": null
   },
@@ -88,8 +88,8 @@
    "proximo": "Sevilla – Betis",
    "proximo_n": 15,
    "p_ganar_proximo": 0.4031,
-   "bajas": null,
-   "dudas": null,
+   "bajas": 1,
+   "dudas": 1,
    "elo": null
   },
   {
@@ -180,7 +180,7 @@
    "proximo": "Barcelona – Villarreal",
    "proximo_n": 4,
    "p_ganar_proximo": 0.0635,
-   "bajas": null,
+   "bajas": 1,
    "dudas": null,
    "elo": null
   },
@@ -226,7 +226,7 @@
    "proximo": "Racing – Real Sociedad",
    "proximo_n": 5,
    "p_ganar_proximo": 0.2799,
-   "bajas": null,
+   "bajas": 1,
    "dudas": null,
    "elo": null
   },
@@ -249,7 +249,7 @@
    "proximo": "Real Madrid – Celta",
    "proximo_n": 3,
    "p_ganar_proximo": 0.0759,
-   "bajas": null,
+   "bajas": 2,
    "dudas": null,
    "elo": null
   },
@@ -318,7 +318,7 @@
    "proximo": "Getafe – Atlético",
    "proximo_n": 7,
    "p_ganar_proximo": 0.2479,
-   "bajas": null,
+   "bajas": 1,
    "dudas": null,
    "elo": null
   },
@@ -433,7 +433,7 @@
    "proximo": "Rayo – Valencia",
    "proximo_n": 2,
    "p_ganar_proximo": 0.2024,
-   "bajas": null,
+   "bajas": 3,
    "dudas": null,
    "elo": null
   },
@@ -456,7 +456,7 @@
    "proximo": "Osasuna – Málaga",
    "proximo_n": 6,
    "p_ganar_proximo": 0.1478,
-   "bajas": null,
+   "bajas": 2,
    "dudas": null,
    "elo": null
   },
@@ -548,7 +548,7 @@
    "proximo": "Girona – Eibar",
    "proximo_n": 10,
    "p_ganar_proximo": 0.5059,
-   "bajas": null,
+   "bajas": 1,
    "dudas": 3,
    "elo": null
   },
@@ -640,7 +640,7 @@
    "proximo": "Sporting – Las Palmas",
    "proximo_n": 9,
    "p_ganar_proximo": 0.4027,
-   "bajas": 2,
+   "bajas": 5,
    "dudas": 3,
    "elo": null
   },
@@ -709,7 +709,7 @@
    "proximo": "Sporting – Las Palmas",
    "proximo_n": 9,
    "p_ganar_proximo": 0.3352,
-   "bajas": null,
+   "bajas": 1,
    "dudas": 1,
    "elo": null
   },
