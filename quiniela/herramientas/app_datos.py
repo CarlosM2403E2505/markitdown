@@ -150,13 +150,15 @@ def main():
     bajas = _leer(os.path.join(RAIZ, "app", "bajas.json"))["bajas"]
     ruta_nov = os.path.join(RAIZ, "app", "novedades.json")
     novedades = _leer(ruta_nov)["rows"] if os.path.exists(ruta_nov) else []
+    ruta_def = os.path.join(RAIZ, "app", "definitivos.json")
+    definitivos = _leer(ruta_def)["rows"] if os.path.exists(ruta_def) else []
 
     salida = os.path.join(RAIZ, "app", "datos")
     os.makedirs(salida, exist_ok=True)
     import app_equipos
     equipos = app_equipos.construir()
     print(f"equipos: {len(equipos)} filas")
-    for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas), ("novedades", novedades)):
+    for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas), ("novedades", novedades), ("definitivos", definitivos)):
         with open(os.path.join(salida, f"{nombre}.json"), "w", encoding="utf-8") as f:
             json.dump({"rows": filas}, f, ensure_ascii=False, indent=1)
         print(f"{nombre}: {len(filas)} filas")

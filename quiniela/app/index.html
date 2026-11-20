@@ -48,6 +48,13 @@
   @media (max-width: 40rem) { .cq-oculto-estrecho { display: none; } }
   [data-dash-source-state=empty] { color: transparent; }
   [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+  .cq-archivo { display: flex; flex-direction: column; gap: var(--cds-gap-sm); }
+  .cq-jornada-arch { border: 1px solid var(--color-border-line); border-radius: 8px; }
+  .cq-jornada-arch > summary { cursor: pointer; padding: var(--cds-pad-sm); font-weight: 600; }
+  .cq-jornada-arch > summary span { font-weight: 400; color: var(--color-fg-muted); margin-left: var(--cds-gap-xs); }
+  .cq-jornada-arch .cq-caja-tabla { padding: 0 var(--cds-pad-sm) var(--cds-pad-sm); }
+  .cq-jornada-arch h3 { font-size: var(--cds-font-size-body); margin: var(--cds-gap-sm) var(--cds-pad-sm) var(--cds-gap-xs); }
+  .cq-ok { color: var(--color-fg); font-weight: 700; }
 </style>
 
 <div class="cq">
@@ -60,6 +67,7 @@
     <button class="cq-pestana" role="tab" id="tab-resumen" data-tab="resumen" aria-selected="true">Resumen</button>
     <button class="cq-pestana" role="tab" id="tab-jornada" data-tab="jornada" aria-selected="false">Jornada en curso</button>
     <button class="cq-pestana" role="tab" id="tab-novedades" data-tab="novedades" aria-selected="false">Novedades de la mesa</button>
+    <button class="cq-pestana" role="tab" id="tab-anteriores" data-tab="anteriores" aria-selected="false">Pronósticos definitivos anteriores</button>
     <button class="cq-pestana" role="tab" id="tab-bajas" data-tab="bajas" aria-selected="false">Bajas</button>
     <button class="cq-pestana" role="tab" id="tab-sueltas" data-tab="sueltas" aria-selected="false">Sueltas</button>
     <button class="cq-pestana" role="tab" id="tab-equipos" data-tab="equipos" aria-selected="false">Equipos</button>
@@ -218,6 +226,14 @@
     </div>
   </section>
 
+  <section class="cq-seccion" id="anteriores" data-seccion="anteriores" hidden>
+    <div class="cq-tarjeta" id="definitivos-anteriores">
+      <h2>Pronósticos definitivos anteriores</h2>
+      <p class="cq-nota">Las tablas definitivas de cada jornada terminada. Pulsa una jornada para abrirla.</p>
+      <div class="cq-archivo" data-source="definitivos" data-draw="archivo-definitivos">—</div>
+    </div>
+  </section>
+
   <section class="cq-seccion" id="sueltas" data-seccion="sueltas" hidden>
     <div class="cq-tarjeta" id="tabla-sueltas">
       <h2>Apuestas sueltas</h2>
@@ -295,7 +311,7 @@
   };
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.tab, true)));
   const pedida = location.hash.slice(1);
-  if (['resumen', 'jornada', 'novedades', 'bajas', 'sueltas', 'equipos'].includes(pedida)) abrir(pedida, false);
+  if (['resumen', 'jornada', 'novedades', 'anteriores', 'bajas', 'sueltas', 'equipos'].includes(pedida)) abrir(pedida, false);
 
   dash.onData(() => {
     document.querySelectorAll('[data-serie]').forEach((e) => { e.style.background = dash.colors[Number(e.dataset.serie)]; });
@@ -397,6 +413,56 @@
       td.appendChild(s);
       tr.appendChild(td);
       tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('archivo-definitivos', (el) => {
+    const rows = filas('definitivos');
+    el.replaceChildren();
+    if (!rows) { el.textContent = '—'; return; }
+    if (!rows.length) { el.textContent = 'Todavía no hay ninguna jornada archivada. Cada jornada aparece aquí cuando termina.'; return; }
+    const porJornada = d3.groups(rows, (r) => r.jornada).sort((a, b) => b[0] - a[0]);
+    porJornada.forEach(([j, rs], i) => {
+      rs = [...rs].sort((a, b) => a.n - b.n);
+      const det = document.createElement('details');
+      det.className = 'cq-jornada-arch';
+      if (i === 0) det.open = true;
+      const sum = document.createElement('summary');
+      sum.textContent = `Jornada ${j}`;
+      const sp = document.createElement('span');
+      sp.textContent = rs[0].fechas ?? '';
+      sum.appendChild(sp);
+      det.appendChild(sum);
+      const tabla = (titulo, cabeceras, filaFn) => {
+        const h = document.createElement('h3'); h.textContent = titulo; det.appendChild(h);
+        const caja = document.createElement('div'); caja.className = 'cq-caja-tabla';
+        const t = document.createElement('table'); t.className = 'cq-tabla';
+        const th = document.createElement('thead'); const trh = document.createElement('tr');
+        cabeceras.forEach((c) => { const x = document.createElement('th'); x.textContent = c; trh.appendChild(x); });
+        th.appendChild(trh); t.appendChild(th);
+        const tb = document.createElement('tbody');
+        rs.forEach((r) => { const tr = document.createElement('tr'); filaFn(tr, r); tb.appendChild(tr); });
+        t.appendChild(tb); caja.appendChild(t); det.appendChild(caja);
+      };
+      const acierto = (r, signos) => r.resultado && (r.n === 15 ? signos === r.resultado : signos.includes(r.resultado));
+      tabla(rs[0].boleto ?? 'Boleto', ['Nº', 'Partido', 'Casas % 1·X·2', 'Mesa % 1·X·2', 'Boleto', 'Resultado'], (tr, r) => {
+        celda(tr, r.n === 15 ? 'P15' : String(r.n));
+        celda(tr, r.partido, 'cq-ancho');
+        celda(tr, r.casas ?? '—', 'cq-num');
+        celda(tr, r.mesa ?? '—', 'cq-num');
+        celda(tr, r.signos_boleto ?? '—', 'cq-signo');
+        celda(tr, r.resultado ? r.resultado + (acierto(r, r.signos_boleto) ? ' ✓' : '') : 'Pendiente', acierto(r, r.signos_boleto) ? 'cq-ok' : '');
+      });
+      const nS = rs[0].n_sencillas || 0;
+      if (nS) {
+        tabla(`Sencillas · ${nS} apuestas`, ['Nº', 'Partido', ...Array.from({length: nS}, (_, k) => `C${k + 1}`), 'Resultado'], (tr, r) => {
+          celda(tr, r.n === 15 ? 'P15' : String(r.n));
+          celda(tr, r.partido, 'cq-ancho');
+          (r.sencillas ?? '').split(' ').forEach((sg) => celda(tr, sg, r.resultado && sg === r.resultado ? 'cq-signo cq-ok' : 'cq-signo'));
+          celda(tr, r.resultado ?? 'Pendiente');
+        });
+      }
+      el.appendChild(det);
     });
   });
 

@@ -66,6 +66,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
   3. sube cada JSON cambiado de `app/datos/` (incluido `novedades.json`) con Artifact `asset: true`, y en un solo batch de ArtifactData actualiza `datasets/<nombre>` (`source.url` y `updated`), con `if_version`;
   4. commit y push a `quiniela-prompt-v6`.
   Si cambian signos o sencillas, regenera también el artefacto «Pronósticos definitivos» (ver abajo).
+- **Archivo de definitivos (Carlos, 20/11/2026):** cuando termina una jornada, sus tablas definitivas pasan a la sección «Pronósticos definitivos anteriores» de la app (una entrada por jornada que se abre al pulsar). Con los resultados en el JSON: `python3 herramientas/archivar_definitivos.py jornadas/jNN/jNN.json` → `app_datos.py` → subir `app/datos/definitivos.json` y actualizar `datasets/definitivos`. **El primer repaso del jueves archiva la jornada anterior si aún no está en `app/definitivos.json`.**
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
 ## 5. Estado: J23 (21-22/11/2026) · primera revisión hecha (18/11) · cierre sábado 14:00
