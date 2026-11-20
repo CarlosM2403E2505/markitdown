@@ -68,6 +68,7 @@
     <button class="cq-pestana" role="tab" id="tab-jornada" data-tab="jornada" aria-selected="false">Jornada en curso</button>
     <button class="cq-pestana" role="tab" id="tab-novedades" data-tab="novedades" aria-selected="false">Novedades de la mesa</button>
     <button class="cq-pestana" role="tab" id="tab-anteriores" data-tab="anteriores" aria-selected="false">Pronósticos definitivos anteriores</button>
+    <button class="cq-pestana" role="tab" id="tab-rendimiento" data-tab="rendimiento" aria-selected="false">Rendimiento</button>
     <button class="cq-pestana" role="tab" id="tab-bajas" data-tab="bajas" aria-selected="false">Bajas</button>
     <button class="cq-pestana" role="tab" id="tab-sueltas" data-tab="sueltas" aria-selected="false">Sueltas</button>
     <button class="cq-pestana" role="tab" id="tab-equipos" data-tab="equipos" aria-selected="false">Equipos</button>
@@ -234,6 +235,42 @@
     </div>
   </section>
 
+  <section class="cq-seccion" id="rendimiento" data-seccion="rendimiento" hidden>
+    <div class="cq-tarjeta" id="fijos">
+      <h2>¿Son fijos de verdad?</h2>
+      <p class="cq-nota">Signos únicos del boleto (sin dobles ni triples) ya jugados, agrupados por la probabilidad que les daba la mesa.</p>
+      <div class="cq-caja-tabla">
+        <table class="cq-tabla" data-source="calibracion" data-row-key="tramo">
+          <thead><tr>
+            <th data-field="tramo">Probabilidad de la mesa</th>
+            <th data-field="signos" class="cq-num">Signos</th>
+            <th data-field="aciertos" class="cq-num">Aciertos</th>
+            <th data-field="tasa" class="cq-num">Acierto real</th>
+            <th data-field="prob_media" class="cq-num">Esperado</th>
+          </tr></thead>
+          <tbody data-draw="tabla-calibracion"></tbody>
+        </table>
+      </div>
+    </div>
+    <div class="cq-tarjeta" id="empates">
+      <h2>Empates: esperados y reales</h2>
+      <p class="cq-nota">Suma de la probabilidad de X de la mesa en los partidos ya jugados de cada jornada, frente a las X que salieron, y aciertos del boleto.</p>
+      <div class="cq-caja-tabla">
+        <table class="cq-tabla" data-source="empates_jornada" data-row-key="jornada">
+          <thead><tr>
+            <th data-field="jornada" class="cq-num">Jornada</th>
+            <th data-field="jugados" class="cq-num">Jugados</th>
+            <th data-field="aciertos" class="cq-num">Aciertos del boleto</th>
+            <th data-field="x_esperadas" class="cq-num">X esperadas</th>
+            <th data-field="x_reales" class="cq-num">X reales</th>
+            <th data-field="alertas" class="cq-num cq-oculto-estrecho">Alertas de mercado</th>
+          </tr></thead>
+          <tbody data-draw="tabla-empates"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <section class="cq-seccion" id="sueltas" data-seccion="sueltas" hidden>
     <div class="cq-tarjeta" id="tabla-sueltas">
       <h2>Apuestas sueltas</h2>
@@ -294,6 +331,38 @@
     },
   });
 
+  dash.calc('calibracion', {
+    inputs: ['partidos'],
+    title: 'Acierto de los signos únicos por tramo',
+    description: 'Signos únicos del boleto (sin dobles ni triples) ya jugados, agrupados por la probabilidad que les daba la mesa.',
+    fn: (partidos) => {
+      const prob = (r) => (r.signo_boleto === '1' ? r.p1 : r.signo_boleto === 'X' ? r.px : r.p2);
+      const rs = partidos.filter((r) => r.n <= 14 && r.resultado != null && r.signo_boleto && r.signo_boleto.length === 1);
+      return [['Menos del 50 %', 0, 0.5], ['Del 50 al 65 %', 0.5, 0.65], ['65 % o más', 0.65, 2]].map(([tramo, a, b]) => {
+        const g = rs.filter((r) => prob(r) >= a && prob(r) < b);
+        const ok = g.filter((r) => r.acierto_boleto === true).length;
+        return {tramo, signos: g.length, aciertos: ok, tasa: g.length ? ok / g.length : null, prob_media: g.length ? d3.mean(g, prob) : null};
+      });
+    },
+  });
+
+  dash.calc('empates_jornada', {
+    inputs: ['partidos'],
+    title: 'Empates esperados y reales por jornada',
+    description: 'Por jornada: partidos jugados, aciertos del boleto, suma de P(X) de la mesa en los jugados, X reales y partidos con más de 10 puntos de diferencia con el mercado.',
+    fn: (partidos) => Array.from(d3.group(partidos.filter((r) => r.n <= 14), (r) => r.jornada), ([jornada, rs]) => {
+      const jug = rs.filter((r) => r.resultado != null);
+      const gap = (r) => (r.m1 == null ? 0 : Math.max(Math.abs(r.p1 - r.m1), Math.abs(r.px - r.mx), Math.abs(r.p2 - r.m2)));
+      return {
+        jornada, jugados: jug.length,
+        aciertos: jug.filter((r) => r.acierto_boleto === true).length,
+        x_esperadas: Math.round(d3.sum(jug, (r) => r.px) * 10) / 10,
+        x_reales: jug.filter((r) => r.resultado === 'X').length,
+        alertas: rs.filter((r) => gap(r) > 0.10).length,
+      };
+    }).sort((a, b) => b.jornada - a.jornada),
+  });
+
   dash.calc('discrepancias', {
     inputs: ['jornada_actual'],
     title: 'Discrepancias con el mercado',
@@ -311,7 +380,7 @@
   };
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.tab, true)));
   const pedida = location.hash.slice(1);
-  if (['resumen', 'jornada', 'novedades', 'anteriores', 'bajas', 'sueltas', 'equipos'].includes(pedida)) abrir(pedida, false);
+  if (['resumen', 'jornada', 'novedades', 'anteriores', 'rendimiento', 'bajas', 'sueltas', 'equipos'].includes(pedida)) abrir(pedida, false);
 
   dash.onData(() => {
     document.querySelectorAll('[data-serie]').forEach((e) => { e.style.background = dash.colors[Number(e.dataset.serie)]; });
@@ -463,6 +532,37 @@
         });
       }
       el.appendChild(det);
+    });
+  });
+
+  dash.draw('tabla-calibracion', (tb) => {
+    const rows = filas('calibracion');
+    tb.replaceChildren();
+    if (!rows) return;
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      celda(tr, r.tramo);
+      celda(tr, String(r.signos), 'cq-num');
+      celda(tr, String(r.aciertos), 'cq-num');
+      celda(tr, pct(r.tasa), 'cq-num');
+      celda(tr, pct(r.prob_media), 'cq-num');
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('tabla-empates', (tb) => {
+    const rows = filas('empates_jornada');
+    tb.replaceChildren();
+    if (!rows) return;
+    rows.forEach((r) => {
+      const tr = document.createElement('tr');
+      celda(tr, String(r.jornada), 'cq-num');
+      celda(tr, String(r.jugados), 'cq-num');
+      celda(tr, r.jugados ? `${r.aciertos} de ${r.jugados}` : '—', 'cq-num');
+      celda(tr, r.jugados ? r.x_esperadas.toFixed(1).replace('.', ',') : '—', 'cq-num');
+      celda(tr, r.jugados ? String(r.x_reales) : '—', 'cq-num');
+      celda(tr, String(r.alertas), 'cq-num cq-oculto-estrecho');
+      tb.appendChild(tr);
     });
   });
 
