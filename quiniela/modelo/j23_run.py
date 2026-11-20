@@ -40,7 +40,7 @@ AJ = {2: ([1.03, 0.97], "Valencia sin Gayà (roja), Jesús Vázquez, Danjuma, Ot
       7: ([0.98, 0.96], "Getafe sin Gudelj (sancionado), Uche y Juanmi; Atlético sin Lookman (rodilla, con Nigeria) ni Pubill (con España)"),
       9: ([0.96, 0.97], "Sporting sin Otero (sanción J14-15), Casas, Gelabert, Konrad y Corredera (sancionado); Las Palmas sin Opoku (roja) ni Sandro Ramírez"),
       10: ([0.98, 1.00], "Girona sin Bryan Gil, Jastin García y Álex Moreno (sancionado)"),
-      15: ([1.00, 1.00], "Viernes 20/11: Riquelme vuelve a entrenar (B) → se retira el 0,98; Ceballos, Cucho y Morante dudas (no mueven)")}
+      15: ([1.00, 0.98], "Convocatoria oficial del Betis (20/11, A): Ceballos (MC titular) y Morante fuera (−3 %); vuelven Cucho y Bernal (+1 %). Neto 0,98. Riquelme convocado")}
 
 ms = json.load(open(os.path.join(H, "..", "datos", "euro_j23.json")))["matches"]
 uefa = defaultdict(list)

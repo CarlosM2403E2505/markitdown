@@ -235,3 +235,27 @@ Lectura del Red Team:
 - convocatorias de Aubameyang, Ceballos, Cubarsí y Juan Cruz;
 - Liga F: si juega Misa y confirmar Argual–Madrid CFF;
 - congelar a las 11:00.
+
+---
+
+## Novedades del viernes por la tarde (20/11, 14:30 UTC)
+
+| Partido | Novedad | Clase | Decisión |
+|---|---|---|---|
+| **Sevilla – Betis (Pleno)** | Convocatoria oficial del Betis: **Ceballos fuera** (no se recupera) y Morante fuera; **vuelven Cucho y Bernal**; Riquelme convocado | A (club), B (prensa) | **Betis ×0,98** (Ceballos −3 %, Cucho y Bernal +1 %). Pleno: 1 35,5 · X 24,2 · 2 40,3 |
+| Sevilla – Betis | Peque, disponible (vuelve a entrenar con el grupo) | B | No mueve (ya en datos) |
+| Real Madrid – Celta | Convocatoria: **Tchouaméni entra** y **vuelve Vinícius** tras 4 partidos de sanción | B | No mueve (las vueltas no se ajustan; el 1 ya está al 79 %) |
+| Alavés – Deportivo | Aubameyang: Hidalgo dice «no parece nada importante», pero la decisión queda para última hora | B (duda) | No mueve; se mira la convocatoria |
+| Osasuna – Málaga | Juan Cruz completó el jueves la sesión con el grupo (FutbolFantasy); otras fuentes, duda | B / C | No mueve; se mantiene el 0,97 hasta la convocatoria |
+| Tenerife F – Madrid CFF | **Confirmado: Argual 2-0 Madrid CFF** (RFEF, prensa de La Palma). El Madrid CFF cae ante un equipo de Segunda Federación | A | Aviso; refuerza el 1 (75 %) |
+| Granada F – Real Madrid F | Convocatoria de la J12 aún no publicada (Misa) | — | Pendiente, sábado |
+
+**Los 14 signos no cambian.** El boleto de 18 € y las 8 sencillas siguen igual.
+
+**Pleno** (top 6):
+
+| 1-1 | 1-2 | 2-1 | 1-0 | 0-1 | 2-2 |
+|---|---|---|---|---|---|
+| **11,5 %** | 8,2 % | 8,1 % | 7,3 % | 7,2 % | 6,6 % |
+
+**Pleno de la mesa: 1-1.**
