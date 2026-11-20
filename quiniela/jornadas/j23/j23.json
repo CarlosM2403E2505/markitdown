@@ -32,7 +32,12 @@
     "Menos 3.5": 0.7099,
     "Local marca": 0.8278,
     "Visit marca": 0.616
-   }
+   },
+   "mercado": [
+    0.432,
+    0.29,
+    0.278
+   ]
   },
   {
    "n": 2,
@@ -59,7 +64,12 @@
     "Menos 3.5": 0.7556,
     "Local marca": 0.7917,
     "Visit marca": 0.6081
-   }
+   },
+   "mercado": [
+    0.494,
+    0.271,
+    0.235
+   ]
   },
   {
    "n": 3,
@@ -86,7 +96,12 @@
     "Menos 3.5": 0.5585,
     "Local marca": 0.9222,
     "Visit marca": 0.5667
-   }
+   },
+   "mercado": [
+    0.8172,
+    0.1219,
+    0.0609
+   ]
   },
   {
    "n": 4,
@@ -113,7 +128,12 @@
     "Menos 3.5": 0.3174,
     "Local marca": 0.9691,
     "Visit marca": 0.6909
-   }
+   },
+   "mercado": [
+    0.791,
+    0.129,
+    0.08
+   ]
   },
   {
    "n": 5,
@@ -142,7 +162,12 @@
     "Menos 3.5": 0.4635,
     "Local marca": 0.8108,
     "Visit marca": 0.8885
-   }
+   },
+   "mercado": [
+    0.298,
+    0.23,
+    0.472
+   ]
   },
   {
    "n": 6,
@@ -169,7 +194,12 @@
     "Menos 3.5": 0.6663,
     "Local marca": 0.8587,
     "Visit marca": 0.615
-   }
+   },
+   "mercado": [
+    0.5225,
+    0.2653,
+    0.2122
+   ]
   },
   {
    "n": 7,
@@ -196,7 +226,12 @@
     "Menos 3.5": 0.8175,
     "Local marca": 0.6013,
     "Visit marca": 0.7233
-   }
+   },
+   "mercado": [
+    0.156,
+    0.243,
+    0.601
+   ]
   },
   {
    "n": 8,
@@ -223,7 +258,12 @@
     "Menos 3.5": 0.782,
     "Local marca": 0.6031,
     "Visit marca": 0.7678
-   }
+   },
+   "mercado": [
+    0.28,
+    0.288,
+    0.432
+   ]
   },
   {
    "n": 9,
@@ -250,7 +290,12 @@
     "Menos 3.5": 0.7465,
     "Local marca": 0.7408,
     "Visit marca": 0.6993
-   }
+   },
+   "mercado": [
+    0.4505,
+    0.2707,
+    0.2787
+   ]
   },
   {
    "n": 10,
@@ -277,7 +322,12 @@
     "Menos 3.5": 0.7887,
     "Local marca": 0.7647,
     "Visit marca": 0.5954
-   }
+   },
+   "mercado": [
+    0.526,
+    0.249,
+    0.225
+   ]
   },
   {
    "n": 11,
@@ -304,7 +354,12 @@
     "Menos 3.5": 0.7232,
     "Local marca": 0.4785,
     "Visit marca": 0.8693
-   }
+   },
+   "mercado": [
+    0.104,
+    0.196,
+    0.7
+   ]
   },
   {
    "n": 12,
@@ -331,7 +386,8 @@
     "Menos 3.5": 0.6855,
     "Local marca": 0.5023,
     "Visit marca": 0.8842
-   }
+   },
+   "mercado": null
   },
   {
    "n": 13,
@@ -358,7 +414,12 @@
     "Menos 3.5": 0.6554,
     "Local marca": 0.8681,
     "Visit marca": 0.6112
-   }
+   },
+   "mercado": [
+    0.641,
+    0.205,
+    0.154
+   ]
   },
   {
    "n": 14,
@@ -385,7 +446,12 @@
     "Menos 3.5": 0.6184,
     "Local marca": 0.9068,
     "Visit marca": 0.5396
-   }
+   },
+   "mercado": [
+    0.521,
+    0.255,
+    0.224
+   ]
   }
  ],
  "pleno": {
@@ -440,7 +506,12 @@
    "M-1": 0.0621,
    "M-2": 0.0466,
    "M-M": 0.0376
-  }
+  },
+  "mercado_1x2": [
+   0.322,
+   0.276,
+   0.402
+  ]
  },
  "boleto_provisional": {
   "tipo": "Directa 3 dobles + 1 triple",
@@ -533,5 +604,6 @@
  ],
  "individuales": "8 sencillas (6 €) que no repiten ninguna columna del boleto de 18 €; Pleno 1-1 en todas (provisional, se congela el sábado)",
  "coste_total_previsto": 24.75,
- "columna_novena": "11112112X12211"
+ "columna_novena": "11112112X12211",
+ "mercado_fuente": "OddsPortal (listados de LaLiga, LaLiga2 y Liga F), leído el 20/11/2026 por la tarde; sin margen (1/cuota normalizada). Solo control: no entra en el modelo."
 }
