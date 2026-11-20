@@ -136,6 +136,24 @@ def _producto(valores):
     return total
 
 
+def _apuestas_y_bank():
+    """Apuestas sueltas de bet365 (herramientas/apuestas_valor.py) y movimientos del bank con saldo acumulado."""
+    ruta_a = os.path.join(RAIZ, "app", "apuestas.json")
+    apuestas = _leer(ruta_a)["rows"] if os.path.exists(ruta_a) else []
+    ruta_b = os.path.join(RAIZ, "app", "bank.json")
+    b = _leer(ruta_b) if os.path.exists(ruta_b) else {"inicial": 500.0, "inicio": None, "movimientos": []}
+    saldo = pico = b["inicial"]
+    filas = [{"n": 0, "fecha": b.get("inicio"), "jornada": None, "concepto": "Bank inicial", "stake": None,
+              "importe": b["inicial"], "saldo": saldo, "drawdown": 0.0}]
+    for k, m in enumerate(b["movimientos"], 1):
+        saldo = round(saldo + m["importe"], 2)
+        pico = max(pico, saldo)
+        filas.append({"n": k, "fecha": m.get("fecha"), "jornada": m.get("jornada"), "concepto": m["concepto"],
+                      "stake": m.get("stake"), "importe": m["importe"], "saldo": saldo,
+                      "drawdown": round((pico - saldo) / pico, 4)})
+    return apuestas, filas
+
+
 def main():
     historial = _leer(os.path.join(RAIZ, "app", "historial.json"))["jornadas"]
     jornadas, partidos, sueltas = list(historial), [], []
@@ -153,12 +171,15 @@ def main():
     ruta_def = os.path.join(RAIZ, "app", "definitivos.json")
     definitivos = _leer(ruta_def)["rows"] if os.path.exists(ruta_def) else []
 
+    apuestas, bank = _apuestas_y_bank()
+
     salida = os.path.join(RAIZ, "app", "datos")
     os.makedirs(salida, exist_ok=True)
     import app_equipos
     equipos = app_equipos.construir()
     print(f"equipos: {len(equipos)} filas")
-    for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas), ("novedades", novedades), ("definitivos", definitivos)):
+    for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas), ("novedades", novedades), ("definitivos", definitivos),
+                         ("apuestas", apuestas), ("bank", bank)):
         with open(os.path.join(salida, f"{nombre}.json"), "w", encoding="utf-8") as f:
             json.dump({"rows": filas}, f, ensure_ascii=False, indent=1)
         print(f"{nombre}: {len(filas)} filas")

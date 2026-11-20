@@ -1,0 +1,14 @@
+{
+ "rows": [
+  {
+   "n": 0,
+   "fecha": "2026-11-20",
+   "jornada": null,
+   "concepto": "Bank inicial",
+   "stake": null,
+   "importe": 500.0,
+   "saldo": 500.0,
+   "drawdown": 0.0
+  }
+ ]
+}

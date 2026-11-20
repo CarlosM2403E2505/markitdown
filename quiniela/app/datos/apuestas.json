@@ -1,0 +1,50 @@
+{
+ "rows": [
+  {
+   "cuota": null,
+   "cuota_minima": 3.94,
+   "cuota_estimada": 4.52,
+   "p_mercado": 0.2105,
+   "p_final": 0.2667,
+   "valor": 0.2053,
+   "estado": "Vigilar",
+   "jornada": 23,
+   "n": 7,
+   "partido": "Getafe – Atlético",
+   "competicion": "Primera",
+   "mercado": "Empate no apuesta",
+   "seleccion": "Local",
+   "p_mesa": 0.3509,
+   "cuota_justa": 2.85,
+   "stake": 7.0,
+   "ganancia_posible": null,
+   "id": "J23-01",
+   "fuente_cuota": null,
+   "resultado": null,
+   "ganancia": null
+  },
+  {
+   "cuota": null,
+   "cuota_minima": 2.13,
+   "cuota_estimada": 2.21,
+   "p_mercado": 0.43,
+   "p_final": 0.4938,
+   "valor": 0.0913,
+   "estado": "Vigilar",
+   "jornada": 23,
+   "n": 1,
+   "partido": "Alavés – Deportivo",
+   "competicion": "Primera",
+   "mercado": "1X2",
+   "seleccion": "1",
+   "p_mesa": 0.5895,
+   "cuota_justa": 1.7,
+   "stake": 9.0,
+   "ganancia_posible": null,
+   "id": "J23-02",
+   "fuente_cuota": null,
+   "resultado": null,
+   "ganancia": null
+  }
+ ]
+}
