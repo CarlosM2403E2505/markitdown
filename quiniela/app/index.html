@@ -205,7 +205,7 @@
   <section class='ql-sec' id='anteriores' hidden>
     <div class='ql-card' id='definitivos-anteriores'>
       <h3>Quiniela definitiva</h3>
-      <p class='sub'>Las tablas definitivas de cada jornada, publicadas antes del primer partido. Arriba la más reciente; pulsa una jornada para abrirla o cerrarla. Los resultados se añaden cuando termina.</p>
+      <p class='sub'>Las tablas definitivas de cada jornada, publicadas antes del primer partido. Arriba la de la jornada en curso; debajo, los definitivos anteriores. Pulsa una jornada para abrirla o cerrarla. Los resultados se añaden cuando termina.</p>
       <div class='ql-archivo' data-draw='archivo' data-source='definitivos'>—</div>
     </div>
   </section>
@@ -692,6 +692,7 @@ dash.draw('archivo', (el) => {
         tr.append(QL.el('td', null, r.resultado != null ? r.resultado : 'Pend.'));
       });
     }
+    if (i === 1) { const h = QL.el('div'); h.append(QL.el('h3', null, 'Definitivos anteriores'), det); return h; }
     return det;
   }));
 });
