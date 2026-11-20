@@ -122,3 +122,40 @@ La mesa elige las 8 sencillas **complementarias**: las 8 columnas más probables
 | **18 € + 8 complementarias (elegido)** | **32 distintas** | **1 entre 87** | **7,39 %** | **22,9 %** | **70,1 %** |
 
 Columnas en `j23.json` → `columnas_individuales`. Se revisan y congelan el sábado junto con el boleto.
+
+---
+
+## Revisión del viernes 20/11 (madrugada, noticias del jueves 19)
+
+Base: rama `quiniela-prompt-v6` (modelo `j23_run.py` reproducido: mismos precios que el 18/11). Noticias del jueves 19/11. Fuentes clase B salvo que se diga; sin Marca, Sport, Mundo Deportivo ni L'Équipe.
+
+## Noticias nuevas y decisión
+| Nº | Partido | Novedad | Clase | Efecto |
+|---|---|---|---|---|
+| 15 | Sevilla – Betis | Riquelme (faringitis superada) y Ceballos entrenan con el grupo (EFE vía Infobae; MundoBetis) | B | Se quita el −2 % al Betis. 1/X/2: 35,5/24,2/40,3 → **34,8/24,0/41,2**. Pleno sigue **1-1** |
+| 15 | Sevilla – Betis | Sevilla: Ejuke y Rubén Vargas vuelven al grupo; Carmona, Alfon, Sierra y Marcão fuera (FutbolFantasy) | B | Ya estaba en el modelo |
+| 6 | Osasuna – Málaga | Juan Cruz figura disponible (FutbolFantasy 19/11) | B | Málaga 0,97 → 0,99. 1: 64,5 → **64,0** |
+| 4 | Barcelona – Villarreal | Cubarsí y Koundé vuelven parcialmente al grupo | B | No había ajuste por ellos: sin cambio |
+| 7 | Getafe – Atlético | Lookman baja confirmada (ya contada). Cuti Romero: solo lo dice Marca | B / excluida | Sin cambio |
+| 1 | Alavés – Deportivo | Aubameyang y Casadó disponibles en el Depor (resumen, no confirmado) | C | No mueve precio; sigue en vigilancia |
+
+## Boleto: sin cambios
+- 18 € (directa 3 dobles + 1 triple) + 8 sencillas complementarias: siguen siendo las mismas 8 (comprobado con los precios nuevos).
+- 32 columnas distintas: **P(14) 1 entre 87 · P(≥13) 7,36 % · P(≥12) 22,9 % · P(≥10) 69,9 %.**
+- **P(14 y Pleno 1-1) ≈ 1 entre 770.**
+
+## Pleno al 15 (Sevilla – Betis, sábado 18:30)
+| Marcador | 1-1 | 1-2 | 2-1 | 0-1 | 1-0 | 1-M | 2-2 |
+|---|---|---|---|---|---|---|---|
+| % | **11,3** | 8,2 | 8,0 | 7,2 | 7,1 | 6,7 | 6,6 |
+
+Por qué 1-1 en las 9 apuestas y no repartir marcadores: las columnas son excluyentes (solo una puede acertar los 14), así que cada una debe llevar el Pleno más probable. Repartir marcadores bajaría la probabilidad de 14 + Pleno.
+
+## Informe del Auditor
+| Comprobación | Resultado |
+|---|---|
+| Modelo reproducido | ✅ mismos 15 precios que el 18/11 |
+| Solo A/B mueven precio; topes | ✅ cambios ≤ 1 punto |
+| Columnas | ✅ 32 distintas, las 8 sencillas siguen siendo las óptimas |
+| Pleno | ✅ 1-1, el más probable (11,3 %) |
+| Pendiente | Convocatorias oficiales (sábado), % LAE (informativo), Misa (Real Madrid F), congelar 11:00 |
