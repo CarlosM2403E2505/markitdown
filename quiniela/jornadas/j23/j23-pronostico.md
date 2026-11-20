@@ -125,7 +125,51 @@ Columnas en `j23.json` → `columnas_individuales`. Se revisan y congelan el sá
 
 ---
 
-## Revisión del viernes (20/11, rutina automática)
+## Revisión del viernes 20/11 (madrugada, noticias del jueves 19)
+
+Base: rama `quiniela-prompt-v6` (modelo `j23_run.py` reproducido: mismos precios que el 18/11). Noticias del jueves 19/11. Fuentes clase B salvo que se diga; sin Marca, Sport, Mundo Deportivo ni L'Équipe.
+
+## Noticias nuevas y decisión
+| Nº | Partido | Novedad | Clase | Efecto |
+|---|---|---|---|---|
+| 15 | Sevilla – Betis | Riquelme (faringitis superada) y Ceballos entrenan con el grupo (EFE vía Infobae; MundoBetis) | B | Se quita el −2 % al Betis. 1/X/2: 35,5/24,2/40,3 → **34,8/24,0/41,2**. Pleno sigue **1-1** |
+| 15 | Sevilla – Betis | Sevilla: Ejuke y Rubén Vargas vuelven al grupo; Carmona, Alfon, Sierra y Marcão fuera (FutbolFantasy) | B | Ya estaba en el modelo |
+| 6 | Osasuna – Málaga | Juan Cruz figura disponible (FutbolFantasy 19/11) | B | Málaga 0,97 → 0,99. 1: 64,5 → **64,0** |
+| 4 | Barcelona – Villarreal | Cubarsí y Koundé vuelven parcialmente al grupo | B | No había ajuste por ellos: sin cambio |
+| 7 | Getafe – Atlético | Lookman baja confirmada (ya contada). Cuti Romero: solo lo dice Marca | B / excluida | Sin cambio |
+| 1 | Alavés – Deportivo | Aubameyang y Casadó disponibles en el Depor (resumen, no confirmado) | C | No mueve precio; sigue en vigilancia |
+
+## Boleto: sin cambios
+- 18 € (directa 3 dobles + 1 triple) + 8 sencillas complementarias: siguen siendo las mismas 8 (comprobado con los precios nuevos).
+- 32 columnas distintas: **P(14) 1 entre 87 · P(≥13) 7,36 % · P(≥12) 22,9 % · P(≥10) 69,9 %.**
+- **P(14 y Pleno 1-1) ≈ 1 entre 770.**
+
+## Pleno al 15 (Sevilla – Betis, sábado 18:30)
+| Marcador | 1-1 | 1-2 | 2-1 | 0-1 | 1-0 | 1-M | 2-2 |
+|---|---|---|---|---|---|---|---|
+| % | **11,3** | 8,2 | 8,0 | 7,2 | 7,1 | 6,7 | 6,6 |
+
+Por qué 1-1 en las 9 apuestas y no repartir marcadores: las columnas son excluyentes (solo una puede acertar los 14), así que cada una debe llevar el Pleno más probable. Repartir marcadores bajaría la probabilidad de 14 + Pleno.
+
+## Informe del Auditor
+| Comprobación | Resultado |
+|---|---|
+| Modelo reproducido | ✅ mismos 15 precios que el 18/11 |
+| Solo A/B mueven precio; topes | ✅ cambios ≤ 1 punto |
+| Columnas | ✅ 32 distintas, las 8 sencillas siguen siendo las óptimas |
+| Pleno | ✅ 1-1, el más probable (11,3 %) |
+| Pendiente | Convocatorias oficiales (sábado), % LAE (informativo), Misa (Real Madrid F), congelar 11:00 |
+
+### Cruce con la sesión «Seguimiento de futbolín en páginas web» (20/11, 00:18)
+Investigación hecha solo con resúmenes del buscador (casi todo clase C/D). **No mueve ningún precio.**
+| Partido | Aporte | Clase | Efecto |
+|---|---|---|---|
+| Rayo – Valencia | Óscar Valentín descartado por su entrenador (rueda de prensa) | B | Ya estaba en el dossier; sin ajuste |
+| Real Madrid – Celta | Tchouaméni, seria duda | C | No mueve; vigilar convocatoria |
+| Getafe – Atlético | Control de mercado 17/25/58 (mesa 25/29/46) | control | Solo control; el X2 ya cubre los dos signos de valor |
+| Control de precios | Losilla RM–Celta 79 % (mesa 79); Barça–Villarreal 78 (84); Racing–R.Sociedad 30/24/46 (28/20/52); quiniela15 Girona–Eibar 60/26/13 (51/26/23); R.Sociedad F–Sevilla F 71/18/11 (65/18/17) | control | No entran en el modelo (instrucción 3). Ningún signo de la mesa contradice al mercado |
+| Cierre | Fuentes dicen sábado 14:00 o 20:00 | D | Se mantiene 14:00 (primer partido 14:00); confirmarlo el sábado |
+## Revisión del viernes (20/11, 10:00, rutina automática; completa la de la madrugada)
 
 ### Bajas de última hora (jornadaperfecta 20/11, prensa 17-19/11)
 | Partido | Novedad | Clase | ¿Mueve precio? |
@@ -185,7 +229,9 @@ Lectura del Red Team:
 - En el Getafe – Atlético, el X2 del boleto cubre lo que piensa el público.
 - Por el anexo H, no se toca nada.
 
+**Juan Cruz (Málaga):** la revisión de la madrugada lo daba disponible (FutbolFantasy), pero jornadaperfecta (20/11) aún lo lista como lesionado. Las fuentes se contradicen, así que se mantiene el 0,97 hasta ver la convocatoria. Supone medio punto y no cambia el signo.
+
 **Pendiente para el sábado:**
-- convocatorias de Aubameyang, Ceballos y Cubarsí;
+- convocatorias de Aubameyang, Ceballos, Cubarsí y Juan Cruz;
 - Liga F: si juega Misa y confirmar Argual–Madrid CFF;
 - congelar a las 11:00.
