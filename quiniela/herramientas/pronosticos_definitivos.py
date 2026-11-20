@@ -6,6 +6,7 @@ Uso:
     python3 pronosticos_definitivos.py jornadas/j23/j23.json salida.html --estado provisional --hora "vie 20/11 16:30"
     python3 pronosticos_definitivos.py jornadas/j23/j23.json salida.html --estado definitivo --hora "sáb 21/11 10:30"
 
+Casas: `mercado` en cada partido ([p1, pX, p2] sin margen, o null = «sin dato») y `pleno.mercado_pleno`.
 Las sencillas son `columnas_individuales` más `columna_novena` si existe.
 Criterio de publicación: el definitivo se publica 2 h 15 min antes del primer partido.
 """
@@ -71,11 +72,21 @@ def main():
     e = html.escape
     partidos = {p["n"]: p["partido"] for p in d["partidos"]}
     probs = {p["n"]: p["p"] for p in d["partidos"]}
+    casas = {p["n"]: p.get("mercado") for p in d["partidos"]}
     pleno = d["pleno"]
     boleto = d["boleto_provisional"]
     marc = pleno.get("cats") or pleno.get("empirica") or {}
     p_pleno = marc.get(boleto["pleno"])
     td_pleno = f'<td class="pr"><b>{round(p_pleno * 100)} %</b></td>' if p_pleno is not None else '<td class="pr"></td>'
+
+    pm = pleno.get("mercado_pleno")  # prob. sin margen de las casas para el marcador elegido
+    td_pleno_casas = f'<td class="pr">{round(pm * 100)} %</td>' if pm else '<td class="pr">sin dato</td>'
+
+    def td_casas(n):
+        m = casas.get(n)
+        if not m:
+            return '<td class="pr">sin dato</td>'
+        return '<td class="pr">' + ' · '.join(str(round(v * 100)) for v in m) + '</td>'
 
     def td_pr(n, marcados):
         return '<td class="pr">' + ' · '.join(
@@ -94,12 +105,12 @@ def main():
 
     # Tabla 1: boleto de 18 €
     out.append(f'<section><h2>Boleto {e(boleto["tipo"].lower())} · {boleto["apuestas"]} apuestas · {boleto["coste"]:.0f} €</h2><div class="scroll"><table>')
-    out.append('<thead><tr><th>Nº</th><th class="p">Partido</th><th>Mesa % 1·X·2</th><th>1</th><th>X</th><th>2</th></tr></thead><tbody>')
+    out.append('<thead><tr><th>Nº</th><th class="p">Partido</th><th>Casas % 1·X·2</th><th>Mesa % 1·X·2</th><th>1</th><th>X</th><th>2</th></tr></thead><tbody>')
     for n in range(1, 15):
         s = boleto["signos"][str(n)].split()
         cells = "".join(f'<td><span class="box{" on" if x in s else ""}">{x}</span></td>' for x in "1X2")
-        out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_pr(n, s)}{cells}</tr>')
-    out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno}<td colspan="3"><span class="score">{e(boleto["pleno"])}</span></td></tr>')
+        out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_casas(n)}{td_pr(n, s)}{cells}</tr>')
+    out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno_casas}{td_pleno}<td colspan="3"><span class="score">{e(boleto["pleno"])}</span></td></tr>')
     out.append("</tbody></table></div></section>")
 
     # Tabla 2: sencillas
@@ -107,15 +118,15 @@ def main():
     out.append(f'<section><h2>Sencillas · {len(cols)} apuestas · {coste:.2f} €'.replace(".", ",") + "</h2><div class=\"scroll\"><table>")
     head = '<thead>'
     if len(cols) > n_bol1:
-        head += f'<tr><th></th><th class="p"></th><th></th><th colspan="{n_bol1}">Boleto 1</th><th class="grp" colspan="{len(cols) - n_bol1}">Boleto 2</th></tr>'
-    head += '<tr><th>Nº</th><th class="p">Partido</th><th>Mesa % 1·X·2</th>' + "".join(
+        head += f'<tr><th></th><th class="p"></th><th></th><th></th><th colspan="{n_bol1}">Boleto 1</th><th class="grp" colspan="{len(cols) - n_bol1}">Boleto 2</th></tr>'
+    head += '<tr><th>Nº</th><th class="p">Partido</th><th>Casas % 1·X·2</th><th>Mesa % 1·X·2</th>' + "".join(
         f'<th{" class=\"c9\"" if i == n_bol1 else ""}>C{i + 1}</th>' for i in range(len(cols))) + "</tr></thead><tbody>"
     out.append(head)
     for n in range(1, 15):
         cells = "".join(f'<td class="sg{" c9" if i == n_bol1 else ""}">{c[n - 1]}</td>' for i, c in enumerate(cols))
-        out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_pr(n, "")}{cells}</tr>')
+        out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_casas(n)}{td_pr(n, "")}{cells}</tr>')
     cells = "".join(f'<td class="{"c9" if i == n_bol1 else ""}"><span class="score">{e(boleto["pleno"])}</span></td>' for i in range(len(cols)))
-    out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno}{cells}</tr>')
+    out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno_casas}{td_pleno}{cells}</tr>')
     out.append("</tbody></table></div></section></div>")
 
     open(a.salida, "w", encoding="utf-8").write("\n".join(out))
