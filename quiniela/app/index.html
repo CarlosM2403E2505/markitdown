@@ -59,6 +59,7 @@
   <nav class="cq-pestanas" role="tablist" aria-label="Secciones">
     <button class="cq-pestana" role="tab" id="tab-resumen" data-tab="resumen" aria-selected="true">Resumen</button>
     <button class="cq-pestana" role="tab" id="tab-jornada" data-tab="jornada" aria-selected="false">Jornada en curso</button>
+    <button class="cq-pestana" role="tab" id="tab-novedades" data-tab="novedades" aria-selected="false">Novedades de la mesa</button>
     <button class="cq-pestana" role="tab" id="tab-bajas" data-tab="bajas" aria-selected="false">Bajas</button>
     <button class="cq-pestana" role="tab" id="tab-sueltas" data-tab="sueltas" aria-selected="false">Sueltas</button>
     <button class="cq-pestana" role="tab" id="tab-equipos" data-tab="equipos" aria-selected="false">Equipos</button>
@@ -198,6 +199,25 @@
     </div>
   </section>
 
+  <section class="cq-seccion" id="novedades" data-seccion="novedades" hidden>
+    <div class="cq-tarjeta" id="tabla-novedades">
+      <h2>Novedades de la mesa</h2>
+      <p class="cq-nota">Cada aporte de la mesa, de cualquier chat o revisión programada, con lo que cambia en el boleto. Lo más reciente arriba.</p>
+      <div class="cq-caja-tabla">
+        <table class="cq-tabla" data-source="novedades" data-row-key="id">
+          <thead><tr>
+            <th data-field="fecha">Fecha</th>
+            <th data-field="jornada" class="cq-num">Jornada</th>
+            <th data-field="origen" class="cq-oculto-estrecho">Origen</th>
+            <th data-field="aporte" class="cq-ancho">Aporte</th>
+            <th data-field="cambia">¿Cambia el boleto?</th>
+          </tr></thead>
+          <tbody data-draw="tabla-novedades"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
   <section class="cq-seccion" id="sueltas" data-seccion="sueltas" hidden>
     <div class="cq-tarjeta" id="tabla-sueltas">
       <h2>Apuestas sueltas</h2>
@@ -275,7 +295,7 @@
   };
   document.querySelectorAll('[data-tab]').forEach((b) => b.addEventListener('click', () => abrir(b.dataset.tab, true)));
   const pedida = location.hash.slice(1);
-  if (['resumen', 'jornada', 'bajas', 'sueltas', 'equipos'].includes(pedida)) abrir(pedida, false);
+  if (['resumen', 'jornada', 'novedades', 'bajas', 'sueltas', 'equipos'].includes(pedida)) abrir(pedida, false);
 
   dash.onData(() => {
     document.querySelectorAll('[data-serie]').forEach((e) => { e.style.background = dash.colors[Number(e.dataset.serie)]; });
@@ -355,6 +375,27 @@
       tr.appendChild(td);
       celda(tr, r.p_mercado_fav == null ? '—' : pct(r.p_mercado_fav), 'cq-num cq-oculto-estrecho');
       celda(tr, r.resultado ?? 'Pendiente');
+      tb.appendChild(tr);
+    });
+  });
+
+  dash.draw('tabla-novedades', (tb) => {
+    const rows = filas('novedades');
+    tb.replaceChildren();
+    if (!rows) return;
+    [...rows].sort((a, b) => String(b.fecha).localeCompare(String(a.fecha))).forEach((r) => {
+      const tr = document.createElement('tr');
+      tr.dataset.key = r.id;
+      celda(tr, r.fecha ?? '—');
+      celda(tr, r.jornada == null ? '—' : String(r.jornada), 'cq-num');
+      celda(tr, r.origen ?? '—', 'cq-oculto-estrecho');
+      celda(tr, r.aporte ?? '—', 'cq-ancho');
+      const td = document.createElement('td');
+      const s = document.createElement('span');
+      s.className = 'cq-pastilla ' + (r.cambia === 'Sí' ? 'cq-r-alto' : 'cq-r-bajo');
+      s.textContent = r.cambia ?? '—';
+      td.appendChild(s);
+      tr.appendChild(td);
       tb.appendChild(tr);
     });
   });

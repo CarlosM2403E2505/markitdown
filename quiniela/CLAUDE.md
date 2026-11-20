@@ -60,6 +60,12 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **App «Control Quiniela»** (https://claude.ai/artifact/L7JpUFruxB2b3HLWoNRG6c):
   - se sube cada JSON de `app/datos/` **de uno en uno** (Artifact con `asset: true`);
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
+- **Volcado obligatorio a la app (Carlos, 20/11/2026):** todo aporte de la mesa, de cualquier chat, hilo o tarea programada, termina en la app. Al acabar cada aporte:
+  1. añade una fila a `app/novedades.json` (`id` único, `fecha` "AAAA-MM-DD HH:MM" hora peninsular, `jornada`, `origen`, `aporte` en una o dos frases, `cambia` "Sí"/"No" para el boleto);
+  2. `python3 herramientas/app_datos.py` (necesita scipy);
+  3. sube cada JSON cambiado de `app/datos/` (incluido `novedades.json`) con Artifact `asset: true`, y en un solo batch de ArtifactData actualiza `datasets/<nombre>` (`source.url` y `updated`), con `if_version`;
+  4. commit y push a `quiniela-prompt-v6`.
+  Si cambian signos o sencillas, regenera también el artefacto «Pronósticos definitivos» (ver abajo).
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
 ## 5. Estado: J23 (21-22/11/2026) · primera revisión hecha (18/11) · cierre sábado 14:00

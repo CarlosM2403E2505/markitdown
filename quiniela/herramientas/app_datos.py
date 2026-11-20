@@ -41,13 +41,24 @@ def jornada_desde_json(ruta):
     partidos = d["partidos"]
     probs = [p["p"] for p in partidos]
     mercado = _mercado(os.path.dirname(ruta))
+    if not mercado:
+        # Sin foto de bet365: control de mercado guardado en el JSON de la jornada (sin margen).
+        mercado = {p.get("n", i + 1): p["mercado"] for i, p in enumerate(d["partidos"]) if p.get("mercado")}
+        if (d.get("pleno") or {}).get("mercado_1x2"):
+            mercado[d["pleno"].get("n", 15)] = d["pleno"]["mercado_1x2"]
     forzados = qc._forzados(partidos)
     if d.get("columnas_jugadas"):
         # El boleto que de verdad se jugó (o se recomendó al congelar), no uno recalculado.
         cols = d["columnas_jugadas"]
+        # Todo lo que se juega: boleto + sencillas (+ 9.ª), sin repetir columnas.
+        extra = list(d.get("columnas_individuales") or []) + ([d["columna_novena"]] if d.get("columna_novena") else [])
+        todas = list(dict.fromkeys(cols + extra))
         nvar = sum(len({c[i] for c in cols}) > 1 for i in range(len(probs)))
-        dist = qc.evaluar_columnas(probs, cols) if nvar <= 10 else qc.simular_columnas(probs, cols, n=200000)
-        elegido = {"nombre": " · " + d.get("boleto_jugado", f"{len(cols)} columnas"), "columnas": cols, "dist": dist}
+        dist = qc.evaluar_columnas(probs, todas) if nvar <= 10 else qc.simular_columnas(probs, todas, n=200000)
+        nombre = d.get("boleto_jugado", f"{len(cols)} columnas")
+        if extra:
+            nombre += f" + {len(extra)} sencillas"
+        elegido = {"nombre": " · " + nombre, "columnas": cols, "dist": dist}
     else:
         # Jornadas antiguas: se reproduce la elección de entonces (antes del anexo H contaba la columna del público).
         _, elegido = qc.comparar_sistemas(probs, forzados, d.get("presupuesto", 12), (d.get("publico") or {}).get("columna"))
@@ -75,7 +86,7 @@ def jornada_desde_json(ruta):
     pleno = d.get("pleno")
     pleno_jugado = pleno_resultado = None
     if pleno:
-        pleno_jugado = pleno.get("pleno_jugado")
+        pleno_jugado = pleno.get("pleno_jugado") or (d.get("boleto_provisional") or {}).get("pleno")
         pleno_resultado = pleno.get("resultado_pleno")
         m = mercado.get(pleno.get("n", 15))
         filas.append({
@@ -102,7 +113,7 @@ def jornada_desde_json(ruta):
         "estado": "Cerrada" if len(jugados) == 14 else d.get("estado", "Pronóstico"),
         "boleto": ("16 columnas más probables, sin la del público" if "público" in elegido["nombre"]
                    else elegido["nombre"].split(" · ", 1)[1][:1].upper() + elegido["nombre"].split(" · ", 1)[1][1:]),
-        "coste": d.get("coste_jugado", d.get("presupuesto", 12)),
+        "coste": d.get("coste_total_previsto") or d.get("coste_jugado", d.get("presupuesto", 12)),
         "p14": round(qc.al_menos(dist, 14), 6), "p13": round(qc.al_menos(dist, 13), 5),
         "p10": round(qc.al_menos(dist, 10), 4),
         "mejor_columna": d.get("mejor_columna"),
@@ -137,13 +148,15 @@ def main():
         sueltas += s
     jornadas.sort(key=lambda j: j["jornada"])
     bajas = _leer(os.path.join(RAIZ, "app", "bajas.json"))["bajas"]
+    ruta_nov = os.path.join(RAIZ, "app", "novedades.json")
+    novedades = _leer(ruta_nov)["rows"] if os.path.exists(ruta_nov) else []
 
     salida = os.path.join(RAIZ, "app", "datos")
     os.makedirs(salida, exist_ok=True)
     import app_equipos
     equipos = app_equipos.construir()
     print(f"equipos: {len(equipos)} filas")
-    for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas)):
+    for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas), ("novedades", novedades)):
         with open(os.path.join(salida, f"{nombre}.json"), "w", encoding="utf-8") as f:
             json.dump({"rows": filas}, f, ensure_ascii=False, indent=1)
         print(f"{nombre}: {len(filas)} filas")

@@ -1,0 +1,60 @@
+{
+ "rows": [
+  {
+   "id": "j23-01",
+   "fecha": "2026-11-20 01:00",
+   "jornada": 23,
+   "origen": "Revisión del viernes (madrugada)",
+   "aporte": "Riquelme y Ceballos vuelven a entrenar (Betis, B); Juan Cruz disponible (Málaga 0,97→0,99). Pleno 1-1 (11,3 %).",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-02",
+   "fecha": "2026-11-20 01:20",
+   "jornada": 23,
+   "origen": "Chat «Seguimiento de futbolín»",
+   "aporte": "Óscar Valentín descartado (ya contado); Tchouaméni seria duda; mercado ve más al Atlético en Getafe (58 %), cubierto con X2.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-03",
+   "fecha": "2026-11-20 11:00",
+   "jornada": 23,
+   "origen": "Revisión programada del viernes 10:00",
+   "aporte": "Se quita el ajuste por Riquelme; % LAE anotado (informativo). Dudas: Aubameyang, Ceballos, Cubarsí, Juan Cruz.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-04",
+   "fecha": "2026-11-20 15:39",
+   "jornada": 23,
+   "origen": "Mesa del viernes por la tarde",
+   "aporte": "Betis sin Ceballos ni Morante (A); Juan Cruz puede jugar (B); Las Palmas sin Ale García. Alertas de mercado: Tenerife F–Madrid CFF (75 vs 52) y Alavés–Deportivo (59 vs 43). Pleno 1-1 (11,5 %).",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-05",
+   "fecha": "2026-11-20 15:48",
+   "jornada": 23,
+   "origen": "Pregunta de Carlos: C8 según las casas",
+   "aporte": "La columna favorita de las casas ya va en el boleto de 18 €; la C8 actual (X en Alavés–Deportivo) es la mejor. Sin cambios.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-06",
+   "fecha": "2026-11-20 16:20",
+   "jornada": 23,
+   "origen": "Decisión de Carlos",
+   "aporte": "Se añade la 9.ª sencilla C9 = 11112112X12211 (Getafe 1, Sporting X) en un segundo boleto. Total 24,75 €; P(14) 1 entre 85; P(≥13) 7,55 %.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j23-07",
+   "fecha": "2026-11-20 16:35",
+   "jornada": 23,
+   "origen": "Apartado «Pronósticos definitivos»",
+   "aporte": "Publicada la versión provisional con las dos tablas, probabilidades de la mesa y de las casas (OddsPortal 20/11).",
+   "cambia": "No"
+  }
+ ]
+}

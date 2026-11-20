@@ -340,7 +340,7 @@
    "defensa": 105,
    "proximo": "Osasuna – Málaga",
    "proximo_n": 6,
-   "p_ganar_proximo": 0.6451,
+   "p_ganar_proximo": 0.6401,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -455,7 +455,7 @@
    "defensa": 128,
    "proximo": "Osasuna – Málaga",
    "proximo_n": 6,
-   "p_ganar_proximo": 0.1478,
+   "p_ganar_proximo": 0.1519,
    "bajas": 2,
    "dudas": null,
    "elo": null
@@ -639,7 +639,7 @@
    "defensa": 101,
    "proximo": "Sporting – Las Palmas",
    "proximo_n": 9,
-   "p_ganar_proximo": 0.4027,
+   "p_ganar_proximo": 0.4056,
    "bajas": 5,
    "dudas": 3,
    "elo": null
@@ -708,7 +708,7 @@
    "defensa": 94,
    "proximo": "Sporting – Las Palmas",
    "proximo_n": 9,
-   "p_ganar_proximo": 0.3352,
+   "p_ganar_proximo": 0.3317,
    "bajas": 1,
    "dudas": 1,
    "elo": null
