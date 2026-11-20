@@ -70,7 +70,7 @@ def precio(n, lab, h, a, comp):
     f, txt = AJ.get(n, ([1.0, 1.0], ""))
     lam, mu = lam * f[0], mu * f[1]
     p, cats, mk = j16.finish(lam, mu, emp, DRAW[comp])
-    p = af.afinar_comp(p, "es.1" if comp == "es.1" else "otro")
+    p = af.afinar_comp(p, {"es.1": "es.1", "F": "ligaf"}.get(comp, "otro"))
     M = np.outer(poisson.pmf(G, lam), poisson.pmf(G, mu)); M[np.diag_indices_from(M)] *= DRAW[comp]; M /= M.sum()
     i, j = np.indices(M.shape)
     mk.update({"Menos 3.5": float(M[i + j <= 3].sum()), "Local marca": float(M[i >= 1].sum()), "Visit marca": float(M[j >= 1].sum())})

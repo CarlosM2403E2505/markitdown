@@ -14,5 +14,10 @@ class TestAfinado(unittest.TestCase):
     def test_defecto_es_105(self):
         self.assertEqual(af.afinar_comp([0.4, 0.3, 0.3], "uefa.cl"), af.afinar_comp([0.4, 0.3, 0.3], None))
 
+    def test_ligaf_aplana(self):
+        p = [0.75, 0.15, 0.10]
+        self.assertLess(af.afinar_comp(p, "ligaf")[0], 0.75)
+
+
 if __name__ == "__main__":
     unittest.main()

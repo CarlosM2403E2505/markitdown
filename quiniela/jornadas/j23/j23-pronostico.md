@@ -316,3 +316,22 @@ Se estudiaron las 40 columnas más probables que no están ya jugadas. Todas dan
 | **18 € + 9 sencillas** | **33** | **1 entre 85,0** | **7,55 %** | **24,75 €** |
 
 Un boleto admite como mucho 8 sencillas, así que la C9 va en un segundo boleto de sencillas. Columna guardada en `j23.json` → `columna_novena`.
+
+---
+
+## Hallazgo del viernes 20/11 (noche): la Liga F estaba sobrevalorada
+
+Los favoritos claros de la Liga F (≥ 70 %) solo han ganado el 54 % esta temporada, cuando el modelo les daba un 79 % (13 partidos). Aplanar el 1X2 (T = 0,70) mejora fuera de muestra en las dos mitades de la temporada. Detalle en `analisis/ligaf-favoritos.md`.
+
+- **Precios nuevos de la Liga F:**
+  - Eibar F – Atlético F: 17/23/60
+  - Granada F – Real Madrid F: 17/22/61
+  - Real Sociedad F – Sevilla F: 55/23/23
+  - Tenerife F – Madrid CFF: 63/21/17
+- **Signos, boleto de 18 € y las 9 sencillas: sin cambios.** Siguen siendo los mejores con los precios nuevos.
+- **Probabilidades honestas de las 33 columnas:**
+  - P(14): 1 entre 176
+  - P(≥13): 4,3 %
+  - P(≥12): 15,3 %
+  - P(≥10): 59,4 %
+  - P(14 + Pleno 1-1): 1 entre 1.540

@@ -45,6 +45,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | Aplicado 17/11 | Afinado de favoritos de Primera (T=1,15) | `analisis/afinado-favoritos.md` |
 | Aplicado 18/11 | **EURO_F 1,12** en Primera (equipo con partido UEFA en 120 días frente a uno sin él) | `analisis/pendientes-primera.md` (validación 0,9930→0,9887; prueba 0,9600→0,9560) |
 | Rechazado 18/11 | Empates ×1,20 en igualados de Primera | Empeora la validación |
+| Aplicado 20/11 | **Liga F T = 0,70** (aplanar): favoritos ≥ 70 % daban 79 % y ganaban 54 % | `analisis/ligaf-favoritos.md` (log-loss 1,0827→1,0495; mejora en las dos mitades). Revisar con más jornadas |
 
 ## 4. Cómo se ejecuta (desde `quiniela/`)
 ```bash
@@ -84,6 +85,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **Revisión del viernes 10:00 (20/11) hecha:** el ajuste del Betis ya se ha quitado en `j23_run.py` y `j23.json` se ha vuelto a generar, conservando las columnas. Los 14 signos no cambian. Pleno 1-1 (11,3 %). % LAE anotado (informativo). Dudas para el sábado: Aubameyang, Ceballos, Cubarsí y Juan Cruz (jornadaperfecta aún lo da como lesionado; el 0,97 del Málaga se mantiene hasta la convocatoria).
 - **Viernes tarde (20/11):** Ceballos fuera de la convocatoria oficial del Betis → Betis ×0,98 (con la vuelta de Cucho y Bernal). Argual 2-0 Madrid CFF confirmado. Tchouaméni y Vinícius, convocados. 14 signos y Pleno 1-1 (11,5 %) sin cambios. Pendiente para el sábado: Aubameyang, Juan Cruz, Cubarsí y Misa.
 - **Decisión del usuario (20/11, tarde), registrada por otra sesión:** 18 € + 8 sencillas + **9.ª sencilla C9 = 11112112X12211** en un segundo boleto (24,75 €). En la revisión final del sábado: conservar `columna_novena` tras correr `j23_run.py`; si cambian los precios, recalcular la C9 (la de mayor P(≥13) añadida entre las no jugadas); entregar la tabla C1..C9 con el Pleno en las 10 apuestas.
+- **Liga F aplanada (20/11 noche):** precios 11-14 más bajos, signos, boleto y 9 sencillas sin cambios; P(14) real de las 33 columnas 1/176, P(≥13) 4,3 %. La revisión del sábado ya corre `j23_run.py` con T=0,70.
 - **J23 tiene bote de 1.000.000 €** (quiniela15, 19/11).
 - **Rutina automática (el usuario pidió autonomía; foco en el Pleno):** viernes 20, 10:00 (revisión de bajas y % LAE) y sábado 21, 9:00 (revisión final y congelación, cierre a las 14:00). Solo análisis, repositorio y reporte; nunca sellar.
 - **La J22 queda cerrada por decisión del usuario** (19/11): no se persigue su escrutinio.

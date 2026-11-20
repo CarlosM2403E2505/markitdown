@@ -1007,7 +1007,7 @@
    "defensa": 57,
    "proximo": "Granada F – Real Madrid F",
    "proximo_n": 12,
-   "p_ganar_proximo": 0.7348,
+   "p_ganar_proximo": 0.6111,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -1030,7 +1030,7 @@
    "defensa": 80,
    "proximo": "Eibar F – Atlético F",
    "proximo_n": 11,
-   "p_ganar_proximo": 0.7235,
+   "p_ganar_proximo": 0.6022,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -1076,7 +1076,7 @@
    "defensa": 60,
    "proximo": "Tenerife F – Madrid CFF",
    "proximo_n": 14,
-   "p_ganar_proximo": 0.7544,
+   "p_ganar_proximo": 0.6271,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -1168,7 +1168,7 @@
    "defensa": 92,
    "proximo": "Real Sociedad F – Sevilla F",
    "proximo_n": 13,
-   "p_ganar_proximo": 0.6503,
+   "p_ganar_proximo": 0.5455,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -1214,7 +1214,7 @@
    "defensa": 105,
    "proximo": "Eibar F – Atlético F",
    "proximo_n": 11,
-   "p_ganar_proximo": 0.11,
+   "p_ganar_proximo": 0.1715,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -1237,7 +1237,7 @@
    "defensa": 105,
    "proximo": "Granada F – Real Madrid F",
    "proximo_n": 12,
-   "p_ganar_proximo": 0.1085,
+   "p_ganar_proximo": 0.1708,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -1283,7 +1283,7 @@
    "defensa": 102,
    "proximo": "Real Sociedad F – Sevilla F",
    "proximo_n": 13,
-   "p_ganar_proximo": 0.172,
+   "p_ganar_proximo": 0.2248,
    "bajas": null,
    "dudas": null,
    "elo": null
