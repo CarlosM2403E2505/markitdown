@@ -259,3 +259,47 @@ Lectura del Red Team:
 | **11,5 %** | 8,2 % | 8,1 % | 7,3 % | 7,2 % | 6,6 % |
 
 **Pleno de la mesa: 1-1.**
+
+---
+
+## Revisión de la mesa · viernes 20/11 por la tarde (Investigador, Compilador, Trader, Risk Manager, Director, Auditor)
+
+### Investigador: novedades del viernes (solo A/B mueven)
+| Nº | Partido | Novedad | Clase | Efecto |
+|---|---|---|---|---|
+| 15 | Sevilla – Betis | Betis sin Ceballos ni Morante; Cucho y Bernal vuelven. Sevilla: Vargas y Ejuke entrenan con normalidad | A/B | Se mantiene el ×0,98 de la sección anterior (35,5/24,2/40,3); Pleno **1-1 (11,5 %)** |
+| 6 | Osasuna – Málaga | Funes en rueda de prensa: Juan Cruz puede jugar (resuelve la contradicción de la sección anterior) | B | Málaga 0,97 → 0,99; 1 = 64,0 % |
+| 9 | Sporting – Las Palmas | Las Palmas también sin Ale García | B | 0,97 → 0,96; 40,6/26,3/33,2 |
+| 3 | Real Madrid – Celta | Tchouaméni y Vinicius convocados; Celta sin Borja Iglesias, Starfelt ni Miguel Román (lista oficial) | A/B | Ya estaba en el precio |
+| 5 | Racing – R. Sociedad | Racing: Maguette baja 4-6 semanas (no consta titular) | B | Sin ajuste (tope) |
+| 1 | Alavés – Deportivo | Aubameyang: «jugará si él lo decide» (Hidalgo) | B (duda) | Vigilar |
+| 12 | Granada F – Real Madrid F | **Corrección:** Misa dejó el Real Madrid en junio de 2026; la duda no aplica | B | Ninguno |
+| — | Barça, Sevilla, Liga F | Convocatorias aún no publicadas | — | Sábado |
+
+### Compilador y Trader (solo control, no entra en el modelo)
+Mercado sin margen (OddsPortal 20/11). Coincide en 11 de 15. Diverge ≥ 8 puntos en:
+- **Tenerife F – Madrid CFF:** mesa 75/14/10, mercado 52/26/22 (y LAE 43/30/27). Mayor alerta de la jornada.
+- **Alavés – Deportivo:** mesa 59/23/18, mercado 43/29/28. La sencilla C8 lleva la X.
+- **Osasuna – Málaga:** mesa 64/21/15, mercado 52/27/21.
+- **Getafe – Atlético:** mesa 25/29/46, mercado 16/24/60. Cubierto con X2.
+- Pleno: mercado 32/28/40, coincide; el 1-1 es el único resultado exacto con cuota vista (≈ 12-13 % sin margen, estimación).
+- Trader: no hay cuotas de apertura visibles → movimientos null.
+
+### Risk Manager: exposición de las 32 columnas
+Partidos a signo único con más riesgo de quedar fuera: Osasuna – Málaga (35,5 %), Real Sociedad F – Sevilla F (35,0 %), Eibar F – Atlético F (27,7 %), Granada F – Real Madrid F (26,5 %), Tenerife F – Madrid CFF (24,6 %).
+
+### Director
+- Según las reglas, el mercado y el público no cambian signos; ningún partido tiene 3 agentes en contra del modelo (Tenerife F – Madrid CFF solo el Compilador; el % LAE no cuenta). **No cambia ningún signo, ni el boleto de 18 €, ni las 8 sencillas (recalculadas: siguen siendo las óptimas), ni el Pleno 1-1.**
+- 32 columnas: **P(14) 1/87 · P(≥13) 7,37 % · P(≥12) 22,9 % · P(≥10) 69,9 % · P(14 + Pleno) ≈ 1/762**. P(ninguna X) 4,0 %; X cubierta en 6 de 14.
+- Alertas para el sábado: Tenerife F – Madrid CFF y Alavés – Deportivo (mercado), convocatorias del Sevilla, Barça y Liga F, Aubameyang.
+
+### Informe del Auditor
+| Comprobación | Resultado |
+|---|---|
+| Fuentes | ✅ A/B con URL y fecha; ninguna de los medios excluidos |
+| Ajustes | ✅ ≤ 3 % cada uno; aplicados en `modelo/j23_run.py` |
+| j23.json | ✅ precios nuevos; se conservan `columnas_jugadas` y `columnas_individuales` |
+| Sencillas | ✅ las 8 complementarias siguen siendo las más probables fuera del boleto |
+| Pleno | ✅ 1-1, el más probable (11,5 %) |
+| Coordinación | ✅ completa la sección anterior de otra sesión (mismo viernes); se conserva su ×0,98 del Betis |
+| Expediente | ⚠️ dato de Misa corregido (ya no está en el club) |

@@ -3,7 +3,7 @@
  "fechas": "21-22/11/2026",
  "tipo": "Liga (7 Primera + 3 Segunda + 4 Liga F); Pleno derbi Sevilla–Betis",
  "cierre": "sábado 21/11 14:00",
- "estado": "Revisión del viernes tarde (20/11)",
+ "estado": "Revisión del viernes por la tarde (20/11, mesa)",
  "presupuesto": 20,
  "lista": "quiniela15.com, 18/11/2026",
  "partidos": [
@@ -149,26 +149,26 @@
    "partido": "Osasuna – Málaga",
    "competicion": "Primera",
    "p": [
-    0.6451,
-    0.2071,
-    0.1478
+    0.6401,
+    0.2079,
+    0.1519
    ],
    "xg": [
     1.971,
-    0.93
+    0.949
    ],
    "ajuste": [
     1.02,
-    0.97
+    0.99
    ],
-   "bajas": "Málaga sin Juan Cruz, Lobete y Aznou (sancionado)",
+   "bajas": "Málaga sin Lobete y Aznou (sancionado); viernes 20/11 tarde: Juan Cruz puede jugar (Funes en rueda de prensa, B)",
    "notas": [],
    "mk": {
-    "Mas 2.5": 0.5493,
-    "Ambos marcan": 0.5246,
-    "Menos 3.5": 0.6707,
-    "Local marca": 0.8586,
-    "Visit marca": 0.6076
+    "Mas 2.5": 0.5537,
+    "Ambos marcan": 0.5311,
+    "Menos 3.5": 0.6663,
+    "Local marca": 0.8587,
+    "Visit marca": 0.615
    }
   },
   {
@@ -230,26 +230,26 @@
    "partido": "Sporting – Las Palmas",
    "competicion": "Segunda",
    "p": [
-    0.4027,
-    0.2621,
-    0.3352
+    0.4056,
+    0.2628,
+    0.3317
    ],
    "xg": [
     1.35,
-    1.214
+    1.202
    ],
    "ajuste": [
     0.96,
-    0.97
+    0.96
    ],
-   "bajas": "Sporting sin Otero (sanción J14-15), Casas, Gelabert, Konrad y Corredera (sancionado); Las Palmas sin Opoku (roja) ni Sandro Ramírez",
+   "bajas": "Sporting sin Otero (sanción J14-15), Casas, Gelabert, Konrad y Corredera (sancionado); Las Palmas sin Opoku (roja) Sandro Ramírez ni Ale García (20/11, B)",
    "notas": [],
    "mk": {
-    "Mas 2.5": 0.4725,
-    "Ambos marcan": 0.5208,
-    "Menos 3.5": 0.7438,
+    "Mas 2.5": 0.4693,
+    "Ambos marcan": 0.518,
+    "Menos 3.5": 0.7465,
     "Local marca": 0.7408,
-    "Visit marca": 0.703
+    "Visit marca": 0.6993
    }
   },
   {
@@ -440,8 +440,7 @@
    "M-1": 0.0621,
    "M-2": 0.0466,
    "M-M": 0.0376
-  },
-  "pleno_jugado": "1-1"
+  }
  },
  "boleto_provisional": {
   "tipo": "Directa 3 dobles + 1 triple",

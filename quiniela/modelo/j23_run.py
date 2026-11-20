@@ -36,9 +36,9 @@ AJ = {2: ([1.03, 0.97], "Valencia sin Gayà (roja), Jesús Vázquez, Danjuma, Ot
       3: ([1.03, 0.93], "Celta sin Borja Iglesias (delantero titular) ni El-Abdellaoui; Starfelt y Álvaro Núñez (defensas) fuera"),
       4: ([1.00, 0.95], "Villarreal sin Gerard Moreno, Akhomach y Foyth"),
       5: ([0.95, 1.00], "Racing sin Andrés Martín (delantero clave)"),
-      6: ([1.02, 0.97], "Málaga sin Juan Cruz, Lobete y Aznou (sancionado)"),
+      6: ([1.02, 0.99], "Málaga sin Lobete y Aznou (sancionado); viernes 20/11 tarde: Juan Cruz puede jugar (Funes en rueda de prensa, B)"),
       7: ([0.98, 0.96], "Getafe sin Gudelj (sancionado), Uche y Juanmi; Atlético sin Lookman (rodilla, con Nigeria) ni Pubill (con España)"),
-      9: ([0.96, 0.97], "Sporting sin Otero (sanción J14-15), Casas, Gelabert, Konrad y Corredera (sancionado); Las Palmas sin Opoku (roja) ni Sandro Ramírez"),
+      9: ([0.96, 0.96], "Sporting sin Otero (sanción J14-15), Casas, Gelabert, Konrad y Corredera (sancionado); Las Palmas sin Opoku (roja), Sandro Ramírez ni Ale García (20/11, B)"),
       10: ([0.98, 1.00], "Girona sin Bryan Gil, Jastin García y Álex Moreno (sancionado)"),
       15: ([1.00, 0.98], "Convocatoria oficial del Betis (20/11, A): Ceballos (MC titular) y Morante fuera (−3 %); vuelven Cucho y Bernal (+1 %). Neto 0,98. Riquelme convocado")}
 
