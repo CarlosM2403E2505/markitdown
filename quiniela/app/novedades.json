@@ -63,6 +63,14 @@
    "origen": "Apuestas bet365 y bank",
    "aporte": "Nuevas secciones «Apuestas bet365» y «Bank» (500 €). Lista provisional: Alavés gana (cuota mínima 2,13) y Getafe empate no apuesta (mínima 3,94); las definitivas salen el sábado con la cuota real de bet365.",
    "cambia": "No"
+  },
+  {
+   "id": "j23-09",
+   "fecha": "2026-11-20 17:47",
+   "jornada": 23,
+   "origen": "Apuestas bet365 (corrección de Carlos)",
+   "aporte": "Lista provisional rehecha: 29 mercados revisados por partido, solo lo que la mesa espera y nunca contra la quiniela (fuera «Getafe empate no apuesta»). 45 candidatas en 15 partidos con su cuota mínima; las definitivas, una por partido, el sábado con la cuota real.",
+   "cambia": "No"
   }
  ]
 }

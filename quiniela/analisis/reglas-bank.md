@@ -11,16 +11,19 @@
 | Stake | ¼ de Kelly, tope 2 % del bank por apuesta | Kelly entero arruina con probabilidades inexactas |
 | Exposición | máx. 10 % del bank por jornada | Evita una mala jornada catastrófica |
 | Stake mínimo | 2 €, redondeo a 0,50 € | |
+| Coherencia (Carlos, 20/11) | Solo lo que la mesa espera: la selección más probable de su mercado, y nunca a favor de un signo que la quiniela descarta | Nada de «Getafe empate no apuesta» con la quiniela en X2 |
 | Una por partido | La de más valor | Selecciones del mismo partido están correlacionadas |
 | Sencillas, no combinadas | — | El margen de la casa se multiplica en cada pata |
 | Parada | saldo < 375 € (75 %) | Se para y se revisa; nunca se sube el stake para recuperar |
 | Prueba de ventaja | cuota tomada frente a cuota de cierre (CLV) | Con pocas apuestas el saldo es ruido; batir el cierre es la señal |
 
-## Mercados que precia la mesa
-1X2, doble oportunidad, empate no apuesta, más/menos 1,5-2,5-3,5 goles, ambos marcan y hándicap ±1,5. Los de 1X2 salen del precio final de la mesa; los de goles, de la matriz de Poisson del partido (xG de `jNN.json`, factor de empate de cada competición).
+## Mercados que precia la mesa (29 por partido)
+1X2, doble oportunidad, empate no apuesta, goles 0,5 a 4,5, goles del local y del visitante (0,5-1,5-2,5), ambos marcan, hándicaps ±1,5 y ±2,5 a cada equipo, gana a cero (local y visitante), resultado y ambos marcan, resultado y goles 2,5, descanso 1X2, goles de la 1.ª parte (0,5 y 1,5), goles de la 2.ª parte (1,5), mitad con más goles y descanso/final.
+Salen de un Poisson por partes (45 % de los goles antes del descanso) con los xG de `jNN.json`, el factor de empate de cada competición y los signos reescalados al 1X2 final de la mesa, para que todo cuadre con la quiniela.
+**Sin modelo, no se apuestan todavía:** córners, tarjetas, goleadores y resultado exacto (salvo el Pleno). Haría falta un histórico por equipo y árbitro; la mesa no inventa precios.
 
 ## Flujo de cada jornada
-1. **Provisional (víspera):** `apuestas_valor.py proponer jNN.json --mercado=mercado.json` → lista «Vigilar» con cuota mínima y cuota estimada (mercado de comparadores + margen típico 5 %). Solo partidos con mercado conocido.
+1. **Provisional (víspera):** `apuestas_valor.py proponer jNN.json` → hasta 3 candidatas por partido (estado «Vigilar») con su **cuota mínima** = cuota justa de la mesa × 1,10 (y nunca menos de 1,80). Se descarta lo que la mesa ve tan seguro que la casa no pagará 1,80 (cuota justa < 1,60) y lo muy improbable (cuota mínima > 3,50). Después, `encargo jNN.json` genera el texto para leer esas cuotas en bet365.
 2. **Definitiva (día de la jornada, antes de las 10:45):** cuotas reales de bet365 (`navegador/encargo-bet365-apuestas.md`) → `proponer jNN.json cuotas.json` → estado «Propuesta». Siempre comprobar la cuota en bet365 antes de apostar.
 3. **Carlos apuesta** (la mesa nunca apuesta): se marca «Apostada» con `cuota_tomada` en `app/apuestas.json`.
 4. **Liquidar:** marcador `"marcador": "2-1"` en cada partido de `jNN.json` → `apuestas_valor.py liquidar jNN.json` → `app/bank.json` → `app_datos.py` y volcado a la app (§4).
