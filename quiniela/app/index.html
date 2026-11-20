@@ -122,7 +122,7 @@
       <button type='button' data-sec='mesa' aria-pressed='false'>Mesa</button>
       <button type='button' data-sec='rendimiento' aria-pressed='false'>Rendimiento</button>
       <button type='button' data-sec='bajas' aria-pressed='false'>Bajas</button>
-      <button type='button' data-sec='anteriores' aria-pressed='false'>Definitivos anteriores</button>
+      <button type='button' data-sec='anteriores' aria-pressed='false'>Quiniela definitiva</button>
     </nav>
   </header>
 
@@ -204,8 +204,8 @@
 
   <section class='ql-sec' id='anteriores' hidden>
     <div class='ql-card' id='definitivos-anteriores'>
-      <h3>Pronósticos definitivos anteriores</h3>
-      <p class='sub'>Las tablas definitivas de cada jornada terminada. Pulsa una jornada para abrirla.</p>
+      <h3>Quiniela definitiva</h3>
+      <p class='sub'>Las tablas definitivas de cada jornada, publicadas antes del primer partido. Arriba la más reciente; pulsa una jornada para abrirla o cerrarla. Los resultados se añaden cuando termina.</p>
       <div class='ql-archivo' data-draw='archivo' data-source='definitivos'>—</div>
     </div>
   </section>
@@ -664,7 +664,7 @@ dash.draw('bajas-lista', (el) => {
 dash.draw('archivo', (el) => {
   const df = dash.data('definitivos');
   if (df.status !== 'ok' || !Array.isArray(df.data)) { el.textContent = '—'; return; }
-  if (!df.data.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Todavía no hay ninguna jornada archivada. Cada jornada aparece aquí cuando termina.')); return; }
+  if (!df.data.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Todavía no hay ninguna quiniela definitiva. Aparece aquí 2 h 15 min antes del primer partido de la jornada.')); return; }
   const grupos = d3.groups(df.data, (r) => r.jornada).sort((a, b) => b[0] - a[0]);
   el.replaceChildren(...grupos.map(([j, rs], i) => {
     rs = rs.slice().sort((a, b) => a.n - b.n);
