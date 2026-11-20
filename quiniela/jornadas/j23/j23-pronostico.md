@@ -303,3 +303,16 @@ Partidos a signo único con más riesgo de quedar fuera: Osasuna – Málaga (35
 | Pleno | ✅ 1-1, el más probable (11,5 %) |
 | Coordinación | ✅ completa la sección anterior de otra sesión (mismo viernes); se conserva su ×0,98 del Betis |
 | Expediente | ⚠️ dato de Misa corregido (ya no está en el club) |
+
+---
+
+## Decisión del usuario (20/11, tarde): se mantiene el original y se añade una 9.ª sencilla (0,75 €)
+
+Se estudiaron las 40 columnas más probables que no están ya jugadas. Todas dan casi la misma P(14) (entre 1/84,7 y 1/85,4). Por el objetivo de la mayor P(≥13), se elige **C9 = 11112112X12211**: 1 en Getafe – Atlético y X en Sporting – Las Palmas. Pleno 1-1.
+
+| Conjunto | Columnas | P(14) | P(≥13) | Coste |
+|---|---|---|---|---|
+| 18 € + 8 sencillas | 32 | 1 entre 87,2 | 7,37 % | 24,00 € |
+| **18 € + 9 sencillas** | **33** | **1 entre 85,0** | **7,55 %** | **24,75 €** |
+
+Un boleto admite como mucho 8 sencillas, así que la C9 va en un segundo boleto de sencillas. Columna guardada en `j23.json` → `columna_novena`.
