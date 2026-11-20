@@ -3,7 +3,7 @@
  "fechas": "21-22/11/2026",
  "tipo": "Liga (7 Primera + 3 Segunda + 4 Liga F); Pleno derbi Sevilla–Betis",
  "cierre": "sábado 21/11 14:00",
- "estado": "Primera revisión (miércoles 18/11)",
+ "estado": "Revisión del viernes (20/11)",
  "presupuesto": 20,
  "lista": "quiniela15.com, 18/11/2026",
  "partidos": [
@@ -393,12 +393,12 @@
   "partido": "Sevilla – Betis",
   "competicion": "Primera",
   "p": [
-   0.3551,
-   0.2419,
-   0.4031
+   0.3481,
+   0.2399,
+   0.4119
   ],
   "lambda_local": 1.498,
-  "lambda_visitante": 1.594,
+  "lambda_visitante": 1.627,
   "factor_x": 1.08,
   "empirica": {
    "0-0": 0.06975,
@@ -419,27 +419,27 @@
    "M-M": 0.02073
   },
   "mezcla": 0.2,
-  "bajas": "Betis sin Riquelme (faringitis); Ceballos duda (clase C, no mueve)",
+  "bajas": "Viernes 20/11: Riquelme vuelve a entrenar (B) → se retira el 0,98; Ceballos, Cucho y Morante dudas (no mueven)",
   "notas": [
    "EURO_F visitante (betis)"
   ],
   "cats": {
-   "0-0": 0.0524,
-   "0-1": 0.0723,
-   "0-2": 0.0554,
-   "0-M": 0.0463,
-   "1-0": 0.0729,
-   "1-1": 0.1145,
-   "1-2": 0.082,
-   "1-M": 0.0649,
-   "2-0": 0.0538,
-   "2-1": 0.0811,
-   "2-2": 0.0655,
-   "2-M": 0.048,
-   "M-0": 0.0446,
-   "M-1": 0.0621,
-   "M-2": 0.0466,
-   "M-M": 0.0376
+   "0-0": 0.0512,
+   "0-1": 0.0716,
+   "0-2": 0.0557,
+   "0-M": 0.0477,
+   "1-0": 0.0712,
+   "1-1": 0.1134,
+   "1-2": 0.0825,
+   "1-M": 0.0671,
+   "2-0": 0.0525,
+   "2-1": 0.0803,
+   "2-2": 0.0659,
+   "2-M": 0.0497,
+   "M-0": 0.0436,
+   "M-1": 0.0615,
+   "M-2": 0.0469,
+   "M-M": 0.0389
   },
   "pleno_jugado": "1-1"
  },

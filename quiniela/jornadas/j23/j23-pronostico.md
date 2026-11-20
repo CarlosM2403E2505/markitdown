@@ -122,3 +122,70 @@ La mesa elige las 8 sencillas **complementarias**: las 8 columnas más probables
 | **18 € + 8 complementarias (elegido)** | **32 distintas** | **1 entre 87** | **7,39 %** | **22,9 %** | **70,1 %** |
 
 Columnas en `j23.json` → `columnas_individuales`. Se revisan y congelan el sábado junto con el boleto.
+
+---
+
+## Revisión del viernes (20/11, rutina automática)
+
+### Bajas de última hora (jornadaperfecta 20/11, prensa 17-19/11)
+| Partido | Novedad | Clase | ¿Mueve precio? |
+|---|---|---|---|
+| Sevilla – Betis (Pleno) | Riquelme vuelve a entrenar tras la faringitis | B | **Sí: se retira su ajuste 0,98** |
+| Sevilla – Betis (Pleno) | Ceballos: molestias musculares; el jueves entrenó parcialmente, seria duda | B (duda) | No (duda) |
+| Sevilla – Betis (Pleno) | Cucho (sóleo, vuelta inminente) y Morante (cadera): dudas o bajas de suplentes | B | No |
+| Sevilla – Betis (Pleno) | Sevilla: Sierra, Marcão, Alfon y Carmona, ya conocidas; Peque, versiones contradictorias | B / C | No (ya en datos) |
+| Barcelona – Villarreal | Cubarsí (psoas): volvió a entrenar el jueves y es probable que juegue. De Jong vuelve | B | No |
+| Alavés – Deportivo | Aubameyang: tobillo, entrenó al margen y pasa pruebas; el club no confirma la baja | B (duda) | No (duda); se mira el sábado |
+| Getafe – Atlético | Cristian Romero (DF Atlético): molestias musculares | C | No |
+| Sancionados | Gudelj, Aznou y Gayà, ya aplicados | A | Ya estaban |
+
+Fuentes:
+- [jornadaperfecta lesionados](https://www.jornadaperfecta.com/lesionados/) y [sancionados](https://www.jornadaperfecta.com/sancionados/);
+- Betis: [El Desmarque](https://www.eldesmarque.com/futbol/liga-1a-division/20261117/betis-entrena-ceballos-riquelme-mensaje_18_020731557.html), [Mucho Deporte](https://muchodeporte.com/real-betis/la-vuelta-de-ceballos-marca-el-entrenamiento-del-betis-a-dos-dias-del-derbi);
+- Sevilla: [Infobae](https://www.infobae.com/espana/agencias/2026/11/18/el-sevilla-avanza-hacia-el-derbi-con-cuatro-bajas-seguras-por-lesion/);
+- Cubarsí: [Rotowire](https://www.rotowire.com/soccer/headlines/pau-cubarsi-injury-likely-to-return-against-villarreal-547278);
+- Aubameyang: [COPE](https://www.cope.es/emisoras/galicia/a-coruna-provincia/a-coruna/deportes-coruna/noticias/aubameyang-molestias-tobillo-algodones-alaves-deportivo-20261119_3478532.html).
+
+**Resultado:**
+- se ha vuelto a correr `j23_run.py` (Pleno: 1 34,8 % · X 24,0 % · 2 41,2 %);
+- **los 14 signos no cambian**, así que el boleto de 18 € y las 8 sencillas siguen igual.
+
+### Pleno Sevilla – Betis: los 6 marcadores más probables (modelo)
+| 1-1 | 1-2 | 2-1 | 0-1 | 1-0 | 1-M |
+|---|---|---|---|---|---|
+| **11,3 %** | 8,2 % | 8,0 % | 7,2 % | 7,1 % | 6,7 % |
+
+**Pleno de la mesa: 1-1** (sin cambios).
+
+Informativo (anexo H), % de goles de LAE (quiniela15):
+- **Sevilla:** 0 → 7 %, 1 → 58 %, 2 → 30 %, M → 5 %;
+- **Betis:** 0 → 5 %, 1 → 36 %, 2 → 47 %, M → 12 %.
+
+### % LAE (quiniela15, 20/11): solo informativo, no cambia ningún signo
+| Nº | Partido | Mesa 1/X/2 | LAE 1/X/2 |
+|---|---|---|---|
+| 1 | Alavés – Deportivo | 59/23/18 | 41/36/23 |
+| 2 | Rayo – Valencia | 54/26/20 | 45/31/24 |
+| 3 | Real Madrid – Celta | 79/14/8 | 91/5/4 |
+| 4 | Barcelona – Villarreal | 84/9/6 | 87/8/5 |
+| 5 | Racing – Real Sociedad | 28/20/52 | 20/31/49 |
+| 6 | Osasuna – Málaga | 65/21/15 | 71/19/10 |
+| 7 | Getafe – Atlético | 25/29/46 | 8/16/76 |
+| 8 | Tenerife – Mallorca | 23/26/50 | 28/36/36 |
+| 9 | Sporting – Las Palmas | 40/26/34 | 49/31/20 |
+| 10 | Girona – Eibar | 51/26/23 | 59/27/14 |
+| 11 | Eibar F – Atlético F | 11/17/72 | 10/15/75 |
+| 12 | Granada F – Real Madrid F | 11/16/73 | 7/8/85 |
+| 13 | Real Sociedad F – Sevilla F | 65/18/17 | 66/23/11 |
+| 14 | Tenerife F – Madrid CFF | 75/14/10 | 43/30/27 |
+
+Lectura del Red Team:
+- Las mayores diferencias están en el **Tenerife F – Madrid CFF** (el público solo da un 43 % al 1) y en el **Getafe – Atlético** (el público da un 76 % al 2).
+- En el Tenerife F – Madrid CFF, la investigación del 20/11 (Madrid CFF en mala racha y con Copa el jueves) apoya a la mesa.
+- En el Getafe – Atlético, el X2 del boleto cubre lo que piensa el público.
+- Por el anexo H, no se toca nada.
+
+**Pendiente para el sábado:**
+- convocatorias de Aubameyang, Ceballos y Cubarsí;
+- Liga F: si juega Misa y confirmar Argual–Madrid CFF;
+- congelar a las 11:00.

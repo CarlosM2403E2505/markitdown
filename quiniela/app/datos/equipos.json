@@ -87,7 +87,7 @@
    "defensa": 93,
    "proximo": "Sevilla – Betis",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.4031,
+   "p_ganar_proximo": 0.4119,
    "bajas": 1,
    "dudas": 1,
    "elo": null
@@ -133,7 +133,7 @@
    "defensa": 108,
    "proximo": "Sevilla – Betis",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.3551,
+   "p_ganar_proximo": 0.3481,
    "bajas": null,
    "dudas": null,
    "elo": null

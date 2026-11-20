@@ -69,6 +69,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **Boleto provisional (18 €):** 1 2 en Racing–R.Sociedad, X2 en Getafe–Atlético, 1X2 en Sporting–Las Palmas, 1X en Girona–Eibar; Pleno **1-1**. P(14) 1/120; P(≥13) 5,8 %.
 - **Sábado (revisión final):** bajas de última hora (Cubarsí, Ceballos, Ejuke), % LAE (informativo), vigilar Alavés–Deportivo (59 % que el Red Team ve alto), volver a correr `j23_run.py` y `boleto_unico.py`, congelar a las 11:00.
 - **J22 cerrada (post-mortem 19/11):** mejor columna **12 aciertos** en los dos formatos (boleto de 18 € y 6 columnas). Premio pendiente del escrutinio. Modelo 11/14 (femenino 7/8). Pleno fallado (Dinamarca 2-3 Noruega). `jornadas/j22/j22-resultados.md`.
+- **Revisión del viernes (20/11) hecha:** se retira el ajuste por Riquelme (vuelve a entrenar). Los 14 signos no cambian. Pleno 1-1 (11,3 %). % LAE anotado (informativo). Dudas para el sábado: Aubameyang, Ceballos y Cubarsí.
 - **J23 tiene bote de 1.000.000 €** (quiniela15, 19/11).
 - **Rutina automática (el usuario pidió autonomía; foco en el Pleno):** viernes 20, 10:00 (revisión de bajas y % LAE) y sábado 21, 9:00 (revisión final y congelación, cierre a las 14:00). Solo análisis, repositorio y reporte; nunca sellar.
 - **La J22 queda cerrada por decisión del usuario** (19/11): no se persigue su escrutinio.
