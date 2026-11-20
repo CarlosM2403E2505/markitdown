@@ -159,3 +159,13 @@ Por qué 1-1 en las 9 apuestas y no repartir marcadores: las columnas son excluy
 | Columnas | ✅ 32 distintas, las 8 sencillas siguen siendo las óptimas |
 | Pleno | ✅ 1-1, el más probable (11,3 %) |
 | Pendiente | Convocatorias oficiales (sábado), % LAE (informativo), Misa (Real Madrid F), congelar 11:00 |
+
+### Cruce con la sesión «Seguimiento de futbolín en páginas web» (20/11, 00:18)
+Investigación hecha solo con resúmenes del buscador (casi todo clase C/D). **No mueve ningún precio.**
+| Partido | Aporte | Clase | Efecto |
+|---|---|---|---|
+| Rayo – Valencia | Óscar Valentín descartado por su entrenador (rueda de prensa) | B | Ya estaba en el dossier; sin ajuste |
+| Real Madrid – Celta | Tchouaméni, seria duda | C | No mueve; vigilar convocatoria |
+| Getafe – Atlético | Control de mercado 17/25/58 (mesa 25/29/46) | control | Solo control; el X2 ya cubre los dos signos de valor |
+| Control de precios | Losilla RM–Celta 79 % (mesa 79); Barça–Villarreal 78 (84); Racing–R.Sociedad 30/24/46 (28/20/52); quiniela15 Girona–Eibar 60/26/13 (51/26/23); R.Sociedad F–Sevilla F 71/18/11 (65/18/17) | control | No entran en el modelo (instrucción 3). Ningún signo de la mesa contradice al mercado |
+| Cierre | Fuentes dicen sábado 14:00 o 20:00 | D | Se mantiene 14:00 (primer partido 14:00); confirmarlo el sábado |
