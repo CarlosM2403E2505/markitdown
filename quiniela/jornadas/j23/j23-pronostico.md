@@ -440,3 +440,28 @@ Informativo:
 | Público, casas y árbitro | ✅ solo informativos |
 | Fuentes | ✅ sin Marca, Sport, Mundo Deportivo ni L'Équipe |
 | Pendiente | Convocatorias de la Liga F (no mueven: no hay ajuste por bajas confirmadas) |
+
+---
+
+## Liga F sábado (21/11, 09:50)
+
+**Cambia algún signo: NO.** Ninguna baja nueva A/B de una titular. No se toca `AJ` en `j23_run.py`; boleto de 18 €, 9 sencillas y Pleno 1-1 siguen igual.
+
+| Partido | Novedad | Clase | Efecto |
+|---|---|---|---|
+| Eibar F – Atlético F | Atlético sin Lola Gallardo (maternidad), Poljak, Lloris y Abelleira (cruzado, larga duración). Otermín, lesión en el aductor el viernes: duda ([VAVEL, 20/11](https://www.vavel.com/es/futbol/2026/11/20/futbol-femenino/1280012-un-duelo-de-dinamicas-opuestas-en-ipurua.html)) | B | Bajas largas ya en los datos; duda no mueve |
+| Eibar F – Atlético F | Eibar sin Alimata Bélem (motivo no dado). Porteras probables: Laura Martí y Génesis Pérez | B / C | Sin efecto |
+| Granada F – Real Madrid F | Convocatorias no legibles (granadacf.es y realmadrid.com sin lista accesible); ficha de ligaf.es sin convocadas | — | null |
+| Real Sociedad F – Sevilla F | Real Sociedad sin bajas; Sevilla, única baja Eva Llamas (recuperación); Sullastres cuestionada en portería ([El Sevillista, 21/11](https://www.elsevillista.es/2026/11/previa-j12-liga-f-moeve-real-sociedad.html)) | B | Sin efecto (Llamas ya fuera) |
+| Tenerife F – Madrid CFF | Tenerife «prácticamente con toda la plantilla disponible» (Yerai Martín, [8sports, 20/11](https://8sports.es/futbol/ud-tenerife-femenino/2026/11/20/yerai-martin-el-domingo-queremos-conseguir-la-tercera-victoria-consecutiva/)). Madrid CFF eliminado de Copa por el Argual (ya anotado) | B | Sin efecto |
+| Todas | Sin sanciones (acta J11 de la RFEF, ya anotada) | A | Sin efecto |
+
+Hora: Tenerife F – Madrid CFF figura a las 16:00 en 8sports y a las 17:00 en lasfutbolistas (sin efecto).
+
+### Informe del Auditor
+| Comprobación | Resultado |
+|---|---|
+| Fuentes | ✅ B salvo la RFEF (A); sin Marca, Sport, Mundo Deportivo ni L'Équipe |
+| Precios | ✅ sin cambios en `AJ`; no hace falta reejecutar |
+| Boleto, sencillas y Pleno | ✅ sin cambios |
+| Pendiente | ⚠️ convocatorias oficiales de Atlético F, Granada F y Real Madrid F (webs no accesibles desde el contenedor); Otermín |
