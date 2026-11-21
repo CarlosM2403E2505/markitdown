@@ -335,3 +335,108 @@ Los favoritos claros de la Liga F (≥ 70 %) solo han ganado el 54 % esta tempor
   - P(≥12): 15,3 %
   - P(≥10): 59,4 %
   - P(14 + Pleno 1-1): 1 entre 1.540
+
+---
+
+## FINAL · QUINIELA DEFINITIVA (sábado 21/11, 09:30)
+
+Las versiones anteriores de este documento pasan a ser **definitivos anteriores**.
+
+### Última hora (sábado por la mañana)
+| Partido | Novedad | Clase | Efecto |
+|---|---|---|---|
+| Sevilla – Betis | Sevilla: 24 convocados (vuelve Peque; bajas de Alfon y Carmona). Betis: 23 convocados, sin Ceballos ni Morante, con Cucho y Riquelme | A (listas oficiales) / B | Ya aplicado (Betis ×0,98) |
+| Sevilla – Betis | Árbitro: Sánchez Martínez (VAR: Muñiz Ruiz). Sus dos derbis sevillanos acabaron 1-1; el Sevilla lleva 15 partidos sin ganar con él | B | Solo aviso (árbitros no entran en el modelo) |
+| Sevilla – Betis | Onces probables: Vlachodimos; Iglesias, Salas, Sangante, Suazo; Vargas, Fofana, Agoumé, Correia; Stassin, Romero. Betis: Vallés; Bellerín, Bartra, Natan, Fran García; Roca, Fornals; Antony, Isco, Abde; Parrott | C (probables) | Sin efecto |
+| Alavés – Deportivo | Aubameyang viaja a Vitoria; la titularidad se decide el mismo día. Ede y Eddahchouri, fuera | B | Duda: no mueve |
+| Barcelona – Villarreal | Koundé y Cubarsí entrenan con el grupo y apuntan al domingo | B | Sin ajuste (no había) |
+| Liga F | Convocatorias de la J12 aún sin publicar | — | null |
+
+### % LAE del sábado (informativo, anexo H)
+| Nº | Partido | Mesa 1/X/2 | LAE 1/X/2 |
+|---|---|---|---|
+| 1 | Alavés – Deportivo | 59/23/18 | 42/35/23 |
+| 2 | Rayo – Valencia | 54/26/20 | 46/31/23 |
+| 3 | Real Madrid – Celta | 79/14/8 | 92/5/3 |
+| 4 | Barcelona – Villarreal | 84/9/6 | 88/7/5 |
+| 5 | Racing – Real Sociedad | 28/20/52 | 19/31/50 |
+| 6 | Osasuna – Málaga | 64/21/15 | 72/18/10 |
+| 7 | Getafe – Atlético | 25/29/46 | 7/16/77 |
+| 8 | Tenerife – Mallorca | 23/26/50 | 28/36/36 |
+| 9 | Sporting – Las Palmas | 41/26/33 | 49/31/20 |
+| 10 | Girona – Eibar | 51/26/23 | 61/26/13 |
+| 11 | Eibar F – Atlético F | 17/23/60 | 9/14/77 |
+| 12 | Granada F – Real Madrid F | 17/22/61 | 6/7/87 |
+| 13 | Real Sociedad F – Sevilla F | 55/23/23 | 69/21/10 |
+| 14 | Tenerife F – Madrid CFF | 63/21/17 | 46/29/25 |
+
+### Boleto de 18 € (directa 3 dobles + 1 triple, la de mayor P(≥13) de las 490 probadas)
+Signos:
+- dobles: Racing – Real Sociedad (**1 2**), Getafe – Atlético (**X2**) y Girona – Eibar (**1X**);
+- triple: Sporting – Las Palmas (**1X2**);
+- el resto a un signo: 1 1 1 1 · 1 · 2 · 2 2 1 1.
+
+**Pleno 1-1.** P(14) 1 entre 251 · P(≥13) 3,24 %.
+
+### 9 sencillas
+- C1-C7 sin cambios.
+- **C8 cambia:** sale la X de Alavés – Deportivo y entra la **X de Real Sociedad F – Sevilla F**, porque con la Liga F aplanada es más probable.
+- C9 sin cambios (11112112X12211).
+
+| Nº | Partido | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | C9 |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | Alavés – Deportivo | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 2 | Rayo – Valencia | 1 | 1 | X | 1 | 1 | 1 | 1 | 1 | 1 |
+| 3 | Real Madrid – Celta | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 4 | Barcelona – Villarreal | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 5 | Racing – Real Sociedad | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| 6 | Osasuna – Málaga | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 7 | Getafe – Atlético | 1 | 2 | 2 | 2 | 2 | 1 | 2 | 2 | 1 |
+| 8 | Tenerife – Mallorca | 2 | X | 2 | 1 | 2 | 2 | X | 2 | 2 |
+| 9 | Sporting – Las Palmas | 1 | 1 | 1 | 1 | 1 | 2 | 2 | 1 | X |
+| 10 | Girona – Eibar | 1 | 1 | 1 | 1 | 2 | 1 | 1 | 1 | 1 |
+| 11 | Eibar F – Atlético F | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| 12 | Granada F – Real Madrid F | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 |
+| 13 | Real Sociedad F – Sevilla F | 1 | 1 | 1 | 1 | 1 | 1 | 1 | X | 1 |
+| 14 | Tenerife F – Madrid CFF | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 | 1 |
+| 15 | Pleno Sevilla – Betis | 1-1 | 1-1 | 1-1 | 1-1 | 1-1 | 1-1 | 1-1 | 1-1 | 1-1 |
+
+**Conjunto (33 columnas, 24,75 €):**
+- P(14): 1 entre 175
+- P(≥13): 4,26 %
+- P(≥12): 15,3 %
+- P(≥10): 59,4 %
+- P(14 + Pleno): 1 entre 1.534
+
+**Empates:**
+- P(ninguna X): 3,0 %; X esperadas: 3,09.
+- La X está cubierta en 6 partidos (2, 7, 8, 9, 10 y 13).
+
+### Pleno al 15: Sevilla – Betis (top 6 de la mesa)
+| 1-1 | 1-2 | 2-1 | 1-0 | 0-1 | 2-2 |
+|---|---|---|---|---|---|
+| **11,5 %** | 8,2 % | 8,1 % | 7,3 % | 7,2 % | 6,6 % |
+
+Informativo:
+- goles según LAE: Sevilla 1 → 58 % · Betis 2 → 47 %;
+- marcador de la comunidad quiniela15: 1-2 23 %, 2-2 17 %, 1-1 15 %.
+
+### 5 sueltas
+| Apuesta | Probabilidad |
+|---|---|
+| Marca el Barcelona | 96,9 % |
+| Marca el Real Madrid | 92,2 % |
+| Marca el Tenerife F | 90,7 % |
+| Marca la Real Sociedad | 88,8 % |
+| Marca el Real Madrid F | 88,4 % |
+
+### Informe del Auditor
+| Comprobación | Resultado |
+|---|---|
+| Precios | ✅ `j23_run.py` reejecutado; sin bajas A/B nuevas de titulares; Liga F con T=0,70 |
+| Boleto de 18 € | ✅ el mejor P(≥13) entre 490 directas 3+1 = el que ya teníamos |
+| Sencillas | ✅ 8 complementarias recalculadas (cambia la C8) + C9; 33 columnas distintas |
+| Pleno | ✅ 1-1, el más probable de la mesa |
+| Público, casas y árbitro | ✅ solo informativos |
+| Fuentes | ✅ sin Marca, Sport, Mundo Deportivo ni L'Équipe |
+| Pendiente | Convocatorias de la Liga F (no mueven: no hay ajuste por bajas confirmadas) |
