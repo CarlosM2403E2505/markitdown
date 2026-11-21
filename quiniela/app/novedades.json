@@ -143,6 +143,22 @@
    "origen": "Boletos sellados (fotos de Carlos)",
    "aporte": "Jugado real J23: boleto de 18 € igual al definitivo; sencillas C1-C5 y C9 más 6 columnas propias (E1-E6), sin C6-C8; Pleno 1-1 en todas. 36 columnas, 27 €: P(14) 1/188, P(≥13) 4,1 %.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-primer-repaso",
+   "fecha": "2026-11-21 22:30",
+   "jornada": 24,
+   "origen": "Hilo J24 (mesa, primer repaso)",
+   "aporte": "J24 europea (mar 24-jue 26/11), lista provisional. Precios del modelo con datos hasta el 15/11: 18 € en 24 sencillas + 8 complementarias (32 columnas, 24 €), P(14) 1/150, P(≥13) 4,6 %, Pleno Atlético–Viking M-1. Prueba en 347 partidos UEFA: la mesa no sobrevalora a los favoritos en Europa.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j23-rayo-sesgo",
+   "fecha": "2026-11-21 22:30",
+   "jornada": 23,
+   "origen": "Hilo J24 (revisión tras Rayo 0-1 Valencia)",
+   "aporte": "Rayo 54 % en la mesa frente a 49 % de las casas: se apilaron EURO_F ×1,12 y bajas ×1,03. En Primera la mesa iba por encima de las casas en Alavés (+16), Osasuna (+12) y Rayo (+5). EURO_F y T=1,15 se revalidan con la J23 antes de la J25.",
+   "cambia": "No"
   }
  ]
 }

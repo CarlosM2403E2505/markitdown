@@ -199,6 +199,46 @@
    "partido": "Granada F – Real Madrid F",
    "p": 0.884,
    "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 1,
+   "apuesta": "Marca el Barcelona",
+   "partido": "Sabah – Barcelona",
+   "p": 0.982,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 2,
+   "apuesta": "Marca el Real Madrid",
+   "partido": "Real Madrid – PSV",
+   "p": 0.945,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 3,
+   "apuesta": "Marca el Atlético",
+   "partido": "Atlético – Viking",
+   "p": 0.941,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 4,
+   "apuesta": "Marca el Betis",
+   "partido": "Slovan Bratislava – Betis",
+   "p": 0.918,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 5,
+   "apuesta": "Marca el Inter",
+   "partido": "Inter – Stuttgart",
+   "p": 0.915,
+   "resultado": null
   }
  ]
 }

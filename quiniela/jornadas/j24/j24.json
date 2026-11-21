@@ -1,0 +1,502 @@
+{
+ "jornada": 24,
+ "fechas": "24–26/11/2026",
+ "tipo": "Europea (Champions J5 + Europa League)",
+ "estado": "Provisional (lista no oficial: quinielafutbol.info, 21/11, clase C)",
+ "primer_partido": "mar 24/11 21:00",
+ "definitivo": "mar 24/11 18:45",
+ "presupuesto": 18,
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Arsenal – Dortmund",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.6242,
+    0.2094,
+    0.1664
+   ],
+   "xg": [
+    1.934,
+    0.92
+   ],
+   "mk": {
+    "Mas 2.5": 0.5433,
+    "Ambos marcan": 0.5146,
+    "Local marca": 0.8554,
+    "Visit marca": 0.6016,
+    "Menos 3.5": 0.6799
+   },
+   "n_partidos_datos": [
+    153,
+    104
+   ]
+  },
+  {
+   "n": 2,
+   "partido": "Feyenoord – Oporto",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.3233,
+    0.2297,
+    0.447
+   ],
+   "xg": [
+    1.437,
+    1.71
+   ],
+   "mk": {
+    "Mas 2.5": 0.6089,
+    "Ambos marcan": 0.6244,
+    "Local marca": 0.7623,
+    "Visit marca": 0.8191,
+    "Menos 3.5": 0.6144
+   },
+   "n_partidos_datos": [
+    93,
+    92
+   ]
+  },
+  {
+   "n": 3,
+   "partido": "Man. City – Nápoles",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.6761,
+    0.1797,
+    0.1442
+   ],
+   "xg": [
+    2.272,
+    0.995
+   ],
+   "mk": {
+    "Mas 2.5": 0.6337,
+    "Ambos marcan": 0.5651,
+    "Local marca": 0.8968,
+    "Visit marca": 0.6301,
+    "Menos 3.5": 0.5878
+   },
+   "n_partidos_datos": [
+    109,
+    97
+   ]
+  },
+  {
+   "n": 4,
+   "partido": "Real Madrid – PSV",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.6883,
+    0.1513,
+    0.1604
+   ],
+   "xg": [
+    2.908,
+    1.457
+   ],
+   "mk": {
+    "Mas 2.5": 0.8106,
+    "Ambos marcan": 0.7252,
+    "Local marca": 0.9454,
+    "Visit marca": 0.7671,
+    "Menos 3.5": 0.3657
+   },
+   "n_partidos_datos": [
+    119,
+    99
+   ]
+  },
+  {
+   "n": 5,
+   "partido": "Slovan Bratislava – Betis",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.1364,
+    0.1639,
+    0.6997
+   ],
+   "xg": [
+    1.077,
+    2.503
+   ],
+   "mk": {
+    "Mas 2.5": 0.6937,
+    "Ambos marcan": 0.6055,
+    "Local marca": 0.6594,
+    "Visit marca": 0.9181,
+    "Menos 3.5": 0.5195
+   },
+   "n_partidos_datos": [
+    56,
+    108
+   ]
+  },
+  {
+   "n": 6,
+   "partido": "Sabah – Barcelona",
+   "competicion": "Champions",
+   "dia": "mié 25, 18:45",
+   "p": [
+    0.0304,
+    0.0589,
+    0.9107
+   ],
+   "xg": [
+    0.844,
+    4.033
+   ],
+   "mk": {
+    "Mas 2.5": 0.8641,
+    "Ambos marcan": 0.5597,
+    "Local marca": 0.5699,
+    "Visit marca": 0.9822,
+    "Menos 3.5": 0.2837
+   },
+   "n_partidos_datos": [
+    47,
+    118
+   ]
+  },
+  {
+   "n": 7,
+   "partido": "Slavia Praga – Villarreal",
+   "competicion": "Champions",
+   "dia": "mié 25, 18:45",
+   "p": [
+    0.3056,
+    0.2207,
+    0.4738
+   ],
+   "xg": [
+    1.466,
+    1.847
+   ],
+   "mk": {
+    "Mas 2.5": 0.6433,
+    "Ambos marcan": 0.6479,
+    "Local marca": 0.7692,
+    "Visit marca": 0.8423,
+    "Menos 3.5": 0.5774
+   },
+   "n_partidos_datos": [
+    68,
+    100
+   ]
+  },
+  {
+   "n": 8,
+   "partido": "Brujas – Liverpool",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.2756,
+    0.2083,
+    0.5161
+   ],
+   "xg": [
+    1.478,
+    2.042
+   ],
+   "mk": {
+    "Mas 2.5": 0.6829,
+    "Ambos marcan": 0.6718,
+    "Local marca": 0.772,
+    "Visit marca": 0.8702,
+    "Menos 3.5": 0.5322
+   },
+   "n_partidos_datos": [
+    93,
+    110
+   ]
+  },
+  {
+   "n": 9,
+   "partido": "Inter – Stuttgart",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.6458,
+    0.1756,
+    0.1786
+   ],
+   "xg": [
+    2.463,
+    1.288
+   ],
+   "mk": {
+    "Mas 2.5": 0.7231,
+    "Ambos marcan": 0.6626,
+    "Local marca": 0.9148,
+    "Visit marca": 0.7243,
+    "Menos 3.5": 0.4835
+   },
+   "n_partidos_datos": [
+    114,
+    88
+   ]
+  },
+  {
+   "n": 10,
+   "partido": "PSG – Roma",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.5991,
+    0.1974,
+    0.2035
+   ],
+   "xg": [
+    2.156,
+    1.223
+   ],
+   "mk": {
+    "Mas 2.5": 0.6563,
+    "Ambos marcan": 0.624,
+    "Local marca": 0.8842,
+    "Visit marca": 0.7057,
+    "Menos 3.5": 0.5629
+   },
+   "n_partidos_datos": [
+    113,
+    101
+   ]
+  },
+  {
+   "n": 11,
+   "partido": "Shakhtar – Fenerbahçe",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.3086,
+    0.2282,
+    0.4632
+   ],
+   "xg": [
+    1.404,
+    1.746
+   ],
+   "mk": {
+    "Mas 2.5": 0.6094,
+    "Ambos marcan": 0.6227,
+    "Local marca": 0.7543,
+    "Visit marca": 0.8255,
+    "Menos 3.5": 0.6138
+   },
+   "n_partidos_datos": [
+    48,
+    79
+   ]
+  },
+  {
+   "n": 12,
+   "partido": "Sporting CP – Man. United",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.4422,
+    0.2251,
+    0.3328
+   ],
+   "xg": [
+    1.757,
+    1.512
+   ],
+   "mk": {
+    "Mas 2.5": 0.6343,
+    "Ambos marcan": 0.645,
+    "Local marca": 0.8275,
+    "Visit marca": 0.7795,
+    "Menos 3.5": 0.5872
+   },
+   "n_partidos_datos": [
+    103,
+    103
+   ]
+  },
+  {
+   "n": 13,
+   "partido": "Celta – Bournemouth",
+   "competicion": "Europa League",
+   "dia": "jue 26, 18:45",
+   "p": [
+    0.2581,
+    0.239,
+    0.5028
+   ],
+   "xg": [
+    1.139,
+    1.657
+   ],
+   "mk": {
+    "Mas 2.5": 0.5295,
+    "Ambos marcan": 0.5501,
+    "Local marca": 0.6798,
+    "Visit marca": 0.8092,
+    "Menos 3.5": 0.6929
+   },
+   "n_partidos_datos": [
+    92,
+    88
+   ]
+  },
+  {
+   "n": 14,
+   "partido": "Crystal Palace – Real Sociedad",
+   "competicion": "Europa League",
+   "dia": "jue 26, 21:00",
+   "p": [
+    0.5283,
+    0.2224,
+    0.2493
+   ],
+   "xg": [
+    1.849,
+    1.23
+   ],
+   "mk": {
+    "Mas 2.5": 0.5943,
+    "Ambos marcan": 0.5963,
+    "Local marca": 0.8426,
+    "Visit marca": 0.7078,
+    "Menos 3.5": 0.6296
+   },
+   "n_partidos_datos": [
+    90,
+    104
+   ]
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "Atlético – Viking",
+  "competicion": "Champions",
+  "dia": "mié 25, 21:00",
+  "p": [
+   0.7337,
+   0.1436,
+   0.1227
+  ],
+  "xg": [
+   2.838,
+   1.176
+  ],
+  "mk": {
+   "Mas 2.5": 0.7639,
+   "Ambos marcan": 0.651,
+   "Local marca": 0.9414,
+   "Visit marca": 0.6915,
+   "Menos 3.5": 0.4308
+  },
+  "n_partidos_datos": [
+   117,
+   52
+  ],
+  "cats": {
+   "0-0": 0.0284,
+   "0-1": 0.03248,
+   "0-2": 0.02006,
+   "0-M": 0.01388,
+   "1-0": 0.06054,
+   "1-1": 0.07082,
+   "1-2": 0.04251,
+   "1-M": 0.02367,
+   "2-0": 0.07203,
+   "2-1": 0.08576,
+   "2-2": 0.05083,
+   "2-M": 0.02742,
+   "M-0": 0.14737,
+   "M-1": 0.1702,
+   "M-2": 0.1001,
+   "M-M": 0.05393
+  },
+  "factor_x": 1.0,
+  "lambda_local": 2.838,
+  "lambda_visitante": 1.176,
+  "marcador_mesa": "M-1"
+ },
+ "sueltas": [
+  {
+   "partido": "Sabah – Barcelona",
+   "apuesta": "Marca el Barcelona",
+   "p": 0.982
+  },
+  {
+   "partido": "Real Madrid – PSV",
+   "apuesta": "Marca el Real Madrid",
+   "p": 0.945
+  },
+  {
+   "partido": "Atlético – Viking",
+   "apuesta": "Marca el Atlético",
+   "p": 0.941
+  },
+  {
+   "partido": "Slovan Bratislava – Betis",
+   "apuesta": "Marca el Betis",
+   "p": 0.918
+  },
+  {
+   "partido": "Inter – Stuttgart",
+   "apuesta": "Marca el Inter",
+   "p": 0.915
+  }
+ ],
+ "datos_modelo": {
+  "fichero": "euro_j23.json",
+  "hasta": "2026-11-15",
+  "huecos": "Ligas extranjeras hasta ~1/11 (Eredivisie y Chequia hasta 20/09); sin liga eslovaca, azerí ni ucraniana 2026/27"
+ },
+ "boleto_provisional": {
+  "tipo": "24 columnas sencillas más probables",
+  "apuestas": 24,
+  "coste": 18.0,
+  "signos": {
+   "1": "1",
+   "2": "2",
+   "3": "1",
+   "4": "1",
+   "5": "2",
+   "6": "2",
+   "7": "2",
+   "8": "2",
+   "9": "1",
+   "10": "1",
+   "11": "2",
+   "12": "1",
+   "13": "2",
+   "14": "1"
+  },
+  "pleno": "M-1",
+  "p14": 0.005397,
+  "p13": 0.0386
+ },
+ "columnas_individuales": [
+  "11112221112121",
+  "11112222112111",
+  "1211222211X221",
+  "11112222112X21",
+  "11112222111221",
+  "121122221122X1",
+  "1111222211X121",
+  "12112221111121"
+ ],
+ "conjunto": {
+  "columnas": 32,
+  "coste": 24.0,
+  "p14": 0.006644,
+  "p13": 0.0464,
+  "p12": 0.1577,
+  "p10": 0.5865
+ },
+ "empates": {
+  "x_esperadas": 2.71,
+  "p_ninguna_x": 0.0482,
+  "x_cubiertas_boleto": 0
+ }
+}

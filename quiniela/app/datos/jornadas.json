@@ -164,6 +164,27 @@
    "log_loss_mercado": null,
    "log_loss_publico": null,
    "premio": null
+  },
+  {
+   "jornada": 24,
+   "fechas": "24–26/11/2026",
+   "tipo": "Europea (Champions J5 + Europa League)",
+   "estado": "Provisional (lista no oficial: quinielafutbol.info, 21/11, clase C)",
+   "boleto": "Las 24 columnas más probables",
+   "coste": 18,
+   "p14": 0.005397,
+   "p13": 0.03861,
+   "p10": 0.5477,
+   "mejor_columna": null,
+   "sueltas_aciertos": null,
+   "sueltas_total": null,
+   "sueltas_p_todas": 0.7335,
+   "pleno_jugado": "M-1",
+   "pleno_resultado": null,
+   "log_loss_modelo": null,
+   "log_loss_mercado": null,
+   "log_loss_publico": null,
+   "premio": null
   }
  ]
 }
