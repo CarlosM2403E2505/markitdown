@@ -220,7 +220,7 @@
       <p class='sub'>Apuestas sueltas en bet365 de la jornada elegida arriba. La mesa repasa 29 mercados en cada partido (1X2, doble oportunidad, empate no apuesta, goles totales y por equipo, ambos marcan, hándicaps, gana a cero, resultado combinado, descanso, cada parte y descanso/final) y solo apuesta a lo que ella espera que pase, nunca contra los signos de su quiniela. Cuota de 1,80 o más. Comprueba siempre la cuota en bet365: si paga menos que la cuota mínima, no se apuesta.</p>
       <div class='ql-kpis' id='apuestas-kpis' data-draw='apuestas-kpis' data-source='apuestas_jornada'></div>
       <div class='ql-tw' data-draw='apuestas-lista' data-source='apuestas'></div>
-      <p class='ql-note'>Estados: <b>Vigilar</b> (provisional, con cuota estimada), <b>Propuesta</b> (cuota real de bet365 leída), <b>Apostada</b> (confirmada por ti), <b>Ganada</b>, <b>Perdida</b> o <b>Nula</b> (se devuelve el stake). Valor = probabilidad × cuota − 1, con la probabilidad mezclada: 40 % mesa y 60 % mercado. En la provisional salen hasta tres candidatas por partido; la definitiva se queda con una por partido, la de más valor con la cuota real. Córners, tarjetas y goleadores no se apuestan todavía: la mesa no tiene datos medidos para preciarlos.</p>
+      <p class='ql-note'>Estados: <b>Vigilar</b> (provisional, con cuota estimada), <b>Definitiva</b> (sin cuota leída: se apuesta solo si bet365 paga la cuota mínima), <b>Propuesta</b> (cuota real de bet365 leída), <b>Descartada</b> (bet365 paga menos de la mínima), <b>Apostada</b> (confirmada por ti), <b>Ganada</b>, <b>Perdida</b> o <b>Nula</b> (se devuelve el stake). Valor = probabilidad × cuota − 1, con la probabilidad mezclada: 40 % mesa y 60 % mercado. En la provisional salen hasta tres candidatas por partido; la definitiva se queda con una por partido, la de más valor con la cuota real. Córners, tarjetas y goleadores no se apuestan todavía: la mesa no tiene datos medidos para preciarlos.</p>
     </div>
   </section>
 
@@ -766,7 +766,7 @@ dash.calc('apuestas_jornada', {
   inputs: ['apuestas'],
   fn: (apuestas) => d3.rollups(apuestas, (rs) => ({
     vigilar: rs.filter((r) => r.estado === 'Vigilar').length,
-    n: rs.filter((r) => r.estado !== 'Vigilar').length, stake: d3.sum(rs, (r) => r.stake || 0),
+    n: rs.filter((r) => r.estado !== 'Vigilar' && r.estado !== 'Descartada').length, stake: d3.sum(rs, (r) => r.stake || 0),
     exposicion: d3.sum(rs, (r) => r.stake || 0) / BANK_INICIAL,
     valor_medio: d3.mean(rs, (r) => r.valor),
   }), (r) => r.jornada).map(([jornada, v]) => ({jornada, ...v})),
@@ -855,14 +855,14 @@ dash.draw('apuestas-lista', (el) => {
     .forEach(([f, l, c]) => { const th = QL.el('th', c || '', l); th.setAttribute('data-field', f); hr.append(th); });
   const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
   const body = QL.el('tbody');
-  const ec = {Ganada: 'ql-ok', Perdida: 'ql-bad', Vigilar: 'ql-warn', Nula: '', Propuesta: '', Apostada: ''};
+  const ec = {Ganada: 'ql-ok', Perdida: 'ql-bad', Vigilar: 'ql-warn', Descartada: 'ql-bad', Nula: '', Propuesta: '', Apostada: '', Definitiva: ''};
   rs.forEach((r) => {
     const tr = QL.el('tr'); tr.setAttribute('data-key', r.id);
     const cuota = r.cuota != null ? String(r.cuota.toFixed(2)).replace('.', ',') : r.cuota_estimada != null ? '≈ ' + String(r.cuota_estimada.toFixed(2)).replace('.', ',') : '—';
     const est = QL.el('td'); est.append(QL.el('span', 'ql-est ' + (ec[r.estado] || ''), r.estado));
     tr.append(QL.el('td', 'ql-n', r.id), QL.el('td', null, r.partido), QL.el('td', 'ql-sg', r.signos_quiniela || '—'), QL.el('td', null, r.mercado), QL.el('td', null, r.seleccion),
       QL.el('td', 'num', cuota), QL.el('td', 'num', r.cuota_minima != null ? String(r.cuota_minima.toFixed(2)).replace('.', ',') : '—'),
-      QL.el('td', 'num', QL.pc1(r.p_mesa)), QL.el('td', 'num', QL.pc1(r.p_final)), QL.el('td', 'num ql-ok', QL.sgn(r.valor, QL.pc1)),
+      QL.el('td', 'num', QL.pc1(r.p_mesa)), QL.el('td', 'num', QL.pc1(r.p_final)), QL.el('td', 'num ' + (r.valor > 0 ? 'ql-ok' : r.valor < 0 ? 'ql-bad' : ''), QL.sgn(r.valor, QL.pc1)),
       QL.el('td', 'num', QL.eur(r.stake)), est,
       QL.el('td', 'num ' + (r.ganancia > 0 ? 'ql-ok' : r.ganancia < 0 ? 'ql-bad' : ''), r.ganancia == null ? '—' : QL.sgn(r.ganancia, QL.eur)));
     body.append(tr);
