@@ -6,6 +6,7 @@ Reglas: quiniela/analisis/reglas-bank.md (Carlos 20/11/2026).
 Subcomandos (desde la carpeta quiniela):
   proponer  jornadas/j23/j23.json [cuotas.json]  -> app/apuestas.json (filas de la jornada)
   liquidar  jornadas/j23/j23.json                -> usa "marcador" y "descanso" ("2-1", "1-0") de cada partido
+  definitiva jornadas/j23/j23.json [mercado.json] -> sin cuotas de bet365: una por partido con cuota mínima y stake
   encargo   jornadas/j23/j23.json                -> texto para leer en bet365 (Claude in Chrome) las cuotas de las candidatas
   bank                                           -> saldo, ROI, yield, drawdown
 
@@ -322,6 +323,55 @@ def proponer(ruta_j, ruta_cuotas=None):
     return filas, bank, revisadas
 
 
+def definitiva_sin_cuotas(ruta_j, ruta_mercado=None):
+    """Definitiva cuando no hay cuotas de bet365: una por partido (la candidata más probable para la mesa),
+    con su cuota mínima endurecida con el mercado 1X2 conocido, y stake de ¼ Kelly calculado a esa cuota mínima.
+    Se apuesta solo si bet365 paga la cuota mínima o más."""
+    d = _leer(ruta_j, None)
+    j = d["jornada"]
+    merc = (_leer(ruta_mercado, {}) if ruta_mercado else {}).get("partidos", {})
+    todo = _leer(RUTA_APUESTAS, {"rows": []})
+    cand = [r for r in todo["rows"] if r["jornada"] == j and r["estado"] == "Vigilar"]
+    bank = saldo_actual()
+    elegidas = []
+    for n in sorted({r["n"] for r in cand}):
+        r = dict(max((x for x in cand if x["n"] == n), key=lambda x: x["p_mesa"]))
+        pm = merc.get(str(n))
+        p = r["p_mesa"]
+        if pm and r["mercado"] in ("1X2", "Doble oportunidad", "Empate no apuesta"):
+            k = {"1": 0, "X": 1, "2": 2}
+            if r["mercado"] == "1X2":
+                p_mkt = pm[k[r["seleccion"]]]
+            elif r["mercado"] == "Doble oportunidad":
+                p_mkt = sum(pm[k[c]] for c in r["seleccion"])
+            else:
+                p_mkt = pm[0] if r["seleccion"] == "Local" else pm[2]
+            p = PESO_MESA * p + (1 - PESO_MESA) * p_mkt
+            r["p_mercado"] = round(p_mkt, 4)
+            r["cuota_minima"] = round(max(r["cuota_minima"], (1 + VALOR_MIN) * (1 - r["p_nula"]) / p), 2)
+        r["p_final"] = round(p, 4)
+        r["estado"] = "Definitiva"
+        r["valor"] = round(VALOR_MIN, 4)  # valor mínimo garantizado si bet365 paga la cuota mínima
+        r["stake_bruto"] = _stake((1 + VALOR_MIN) / r["cuota_minima"], 0.0, r["cuota_minima"], bank)
+        elegidas.append(r)
+    total = sum(r["stake_bruto"] for r in elegidas)
+    escala = min(1.0, TOPE_JORNADA * bank / total) if total else 1.0
+    for r in elegidas:
+        r["stake"] = max(STAKE_MIN, math.floor(r.pop("stake_bruto") * escala * 2) / 2)
+        r["ganancia_posible"] = round(r["stake"] * (r["cuota_minima"] - 1), 2)
+        r["fuente_cuota"] = "Sin cuota de bet365 leída: apostar solo si paga la cuota mínima o más"
+    while sum(r["stake"] for r in elegidas) > TOPE_JORNADA * bank + 1e-9:
+        mayor = max(elegidas, key=lambda r: r["stake"])
+        mayor["stake"] -= 0.5
+    elegidas.sort(key=lambda r: r["n"])
+    for k, r in enumerate(elegidas, 1):
+        r["id"] = f"J{j}-D{k:02d}"
+    todo["rows"] = [x for x in todo["rows"] if x["jornada"] != j or x["estado"] in ("Apostada", "Ganada", "Perdida", "Nula")]
+    todo["rows"] += elegidas
+    _guardar(RUTA_APUESTAS, todo)
+    return elegidas, bank
+
+
 def encargo(ruta_j):
     """Texto para Claude in Chrome: solo los mercados de las candidatas, con todas sus selecciones."""
     d = _leer(ruta_j, None)
@@ -410,6 +460,12 @@ if __name__ == "__main__":
                      else f'mínima {f["cuota_minima"]:.2f}')
             print(f'{f["id"]} {f["partido"]:28s} [{f["signos_quiniela"]:3s}] {f["mercado"]:26s} {f["seleccion"]:24s} '
                   f'mesa {100*f["p_mesa"]:5.1f} % justa {f["cuota_justa"]:5.2f} {extra}')
+    elif cmd == "definitiva":
+        el, bank = definitiva_sin_cuotas(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else None)
+        print(f"Bank {bank:.2f} € · {len(el)} apuestas · stake total {sum(r['stake'] for r in el):.2f} €")
+        for r in el:
+            print(f'{r["id"]} {r["partido"]:28s} {r["mercado"]:24s} {r["seleccion"]:24s} mesa {100*r["p_mesa"]:5.1f} % '
+                  f'mínima {r["cuota_minima"]:.2f} stake {r["stake"]:.2f}')
     elif cmd == "encargo":
         print(encargo(sys.argv[2]))
     elif cmd == "liquidar":

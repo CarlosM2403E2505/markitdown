@@ -103,6 +103,14 @@
    "origen": "Publicación de la quiniela definitiva",
    "aporte": "Quiniela definitiva publicada en el apartado de la barra lateral y en la app, con las probabilidades de las casas (OddsPortal 20/11) recuperadas.",
    "cambia": "No"
+  },
+  {
+   "id": "j23-ap-def",
+   "fecha": "2026-11-21 10:15",
+   "jornada": 23,
+   "origen": "Apuestas bet365 definitivas",
+   "aporte": "15 apuestas definitivas, una por partido y coherentes con la quiniela (47 €, 9,4 % del bank). Sin cuota de bet365 leída: cada una lleva su cuota mínima y solo se apuesta si bet365 la paga o más.",
+   "cambia": "No"
   }
  ]
 }
