@@ -73,6 +73,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 
 ## 5. Estado: J23 (21-22/11/2026) · **QUINIELA DEFINITIVA congelada (sábado 21/11, 09:30)** · cierre sábado 14:00
 - **DEFINITIVA:** boleto de 18 € (1 2 Racing–R.Sociedad, X2 Getafe–Atlético, 1X2 Sporting–Las Palmas, 1X Girona–Eibar) + 9 sencillas (C8 cambia a la X de Real Sociedad F–Sevilla F) + Pleno 1-1 en las 10. 33 columnas, 24,75 €: P(14) 1/175, P(≥13) 4,26 %, P(14+Pleno) 1/1.534. Sección «FINAL» de `j23-pronostico.md`. Siguiente paso: resultados del fin de semana → post-mortem.
+- **JUGADO REAL (fotos de Carlos, sábado 21/11):** boleto de 18 € igual al definitivo; sencillas C1-C5 + C9 + 6 columnas propias (E1-E6), sin C6-C8; Pleno 1-1 en todas. 36 columnas, 27 €. Guardado en `j23.json` → `jugado_real` (lo usan `archivar_definitivos.py` y `app_datos.py`). **El escrutinio se hace contra estas columnas.**
 - **Lista oficial** (quiniela15, 18/11): 7 Primera + 3 Segunda + 4 Liga F; **Pleno: Sevilla – Betis** (derbi, sábado 18:30).
 - **Archivos:** dossier `jornadas/j23/j23-equipos.md`; precios `modelo/j23_run.py` → `jornadas/j23/j23.json`; revisión `jornadas/j23/j23-pronostico.md`; datos `datos/euro_j23.json` (Segunda J14 incluida) y Liga F J11.
 - **Decisión del usuario (20/11): boleto de 18 € + 8 sencillas complementarias (6 €), 24 € en total.** Juntas: P(14) 1 entre 87, P(≥13) 7,4 %. Columnas en `j23.json` (`columnas_individuales`).

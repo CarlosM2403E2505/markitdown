@@ -591,7 +591,7 @@
   "11112122XX2211",
   "111121222X2211"
  ],
- "boleto_jugado": "Directa: 3 dobles + 1 triple (provisional, se congela el sábado)",
+ "boleto_jugado": "Directa: 3 dobles + 1 triple (sellado)",
  "coste_jugado": 18,
  "columnas_individuales": [
   "11112112112211",
@@ -614,5 +614,68 @@
   "p12": 0.153254,
   "p10": 0.59441,
   "p14_pleno": 0.0006517779461903998
+ },
+ "jugado_real": {
+  "fuente": "Fotos de los boletos sellados que envió Carlos (sábado 21/11): IMG_6961 y IMG_6962",
+  "boleto": {
+   "tipo": "Múltiple",
+   "signos": {
+    "1": "1",
+    "2": "1",
+    "3": "1",
+    "4": "1",
+    "5": "1 2",
+    "6": "1",
+    "7": "X 2",
+    "8": "2",
+    "9": "1 X 2",
+    "10": "1 X",
+    "11": "2",
+    "12": "2",
+    "13": "1",
+    "14": "1"
+   },
+   "pleno": "1-1",
+   "apuestas": 24,
+   "coste": 18.0,
+   "igual_definitivo": true,
+   "combinaciones": "3 dobles · 1 triple"
+  },
+  "sencillas": [
+   "11112112112211",
+   "1111212X112211",
+   "1X112122112211",
+   "11112121112211",
+   "11112122122211",
+   "11112112X12211",
+   "11111212X21211",
+   "XX111X2X112211",
+   "1111X122112211",
+   "2111XX22X22X1X",
+   "1X21X2X2X222X1",
+   "1221112211X122"
+  ],
+  "etiquetas": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5",
+   "C9",
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6"
+  ],
+  "boletos_sencillas": [
+   8,
+   4
+  ],
+  "pleno": "1-1",
+  "coste": 27.0,
+  "diferencias": "Iguales al definitivo: boleto de 18 €, C1-C5, C9 y el Pleno 1-1 en todas. No se jugaron C6, C7 ni C8. Se añadieron 6 columnas propias (E1-E6). 36 columnas, 27 €: P(14) 1/188 (definitivo 1/176), P(≥13) 4,07 % (definitivo 4,27 %).",
+  "dudosas": "Boleto 2, columna 6 (C9), partido 8: la cruz cae en el borde de la casilla 2 (coincide con la C9). Boleto 3 con la foto algo desenfocada, todas las casillas legibles."
  }
 }

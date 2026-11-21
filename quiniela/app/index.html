@@ -724,12 +724,14 @@ dash.draw('archivo', (el) => {
     });
     const nS = rs[0].n_sencillas || 0;
     if (nS) {
-      tabla('Sencillas · ' + nS + ' apuestas', [['Nº'], ['Partido'], ...Array.from({length: nS}, (_, k) => ['C' + (k + 1)]), ['Resultado']], (tr, r) => {
+      const etq = String(rs[0].etiquetas || '').split(' ').filter(Boolean);
+      tabla(rs[0].titulo_sencillas || ('Sencillas · ' + nS + ' apuestas'), [['Nº'], ['Partido'], ...Array.from({length: nS}, (_, k) => [etq[k] || 'C' + (k + 1)]), ['Resultado']], (tr, r) => {
         tr.append(QL.el('td', 'ql-n', r.n === 15 ? 'P15' : 'P' + r.n), QL.el('td', null, r.partido));
         String(r.sencillas || '').split(' ').forEach((sg) => tr.append(QL.el('td', 'ql-sg' + (r.resultado != null && sg === r.resultado ? ' hit' : ''), sg)));
         tr.append(QL.el('td', null, r.resultado != null ? r.resultado : 'Pend.'));
       });
     }
+    if (rs[0].nota) det.append(QL.el('p', 'ql-note', rs[0].nota));
     if (i === 1) { const h = QL.el('div'); h.append(QL.el('h3', null, 'Definitivos anteriores'), det); return h; }
     return det;
   }));
