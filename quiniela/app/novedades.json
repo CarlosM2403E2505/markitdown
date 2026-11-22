@@ -239,6 +239,14 @@
    "origen": "Histórico de cuotas bet365",
    "aporte": "Empieza el histórico de cuotas de bet365 (datos/cuotas_bet365/historico.json y .csv, herramientas/historico_cuotas.py): cada lectura con su momento y el resultado. J23 cargada (61 cuotas, 21 con resultado). Calibración en la sección Apuestas; nada entra en las reglas hasta que una ventaja medida aguante fuera de muestra.",
    "cambia": "No"
+  },
+  {
+   "id": "cuotas-historicas",
+   "fecha": "2026-11-22 04:10",
+   "jornada": 24,
+   "origen": "Cuotas históricas (Carlos)",
+   "aporte": "16.862 partidos de Primera y Segunda 2005-2026 con cuota y resultado. En Primera, con favorito de 65 % o más, la X sale 3 puntos menos de lo que dicen las cuotas (igual en las dos mitades); probado en la mesa, X ×0,82 en ese tramo mejora fuera de muestra y se aplica. No cambia la J24 (Champions).",
+   "cambia": "No"
   }
  ]
 }

@@ -25,12 +25,20 @@ class TestAfinado(unittest.TestCase):
         self.assertGreater(q[1], r[1])          # sube la X
         self.assertAlmostEqual(sum(q), 1.0, places=9)
     def test_x_templada_no_toca_claros_ni_segunda(self):
-        p = [0.80, 0.12, 0.08]
+        p = [0.58, 0.24, 0.18]  # favorito entre 60 y 65 % tras T: ni templada ni claro
         r = [v ** 1.15 for v in p]; r = [v / sum(r) for v in r]
+        self.assertTrue(0.60 <= max(r) < 0.65)
         self.assertEqual([round(v, 9) for v in af.afinar_comp(p, "es.1")], [round(v, 9) for v in r])
         p2 = [0.52, 0.26, 0.22]
         r2 = [v ** 1.05 for v in p2]; r2 = [v / sum(r2) for v in r2]
         self.assertEqual([round(v, 9) for v in af.afinar_comp(p2, "es.2")], [round(v, 9) for v in r2])
+
+    def test_x_baja_con_favorito_claro_primera(self):
+        p = [0.80, 0.12, 0.08]
+        r = [v ** 1.15 for v in p]; r = [v / sum(r) for v in r]
+        q = af.afinar_comp(p, "es.1")
+        self.assertLess(q[1], r[1]); self.assertGreater(q[0], r[0])
+        self.assertAlmostEqual(sum(q), 1.0, places=9)
 
 
 if __name__ == "__main__":

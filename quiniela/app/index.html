@@ -226,6 +226,9 @@
       <h3>Histórico de cuotas bet365</h3>
       <p class='sub'>Cada lectura de bet365 (apertura, lunes, definitiva y cierre) se guarda y se cruza con el resultado. Tabla: probabilidad que da bet365 (sin margen, 1X2) frente a lo que sale de verdad. Con pocas jornadas es ruido; solo una diferencia medida y que aguante fuera de muestra entrará en las reglas de la mesa, sobre todo para el Pleno al 15.</p>
       <div class='ql-tw' data-draw='cuotas-calib' data-source='cuotas_calibracion'></div>
+      <h3>La X según las cuotas, 2005-2026</h3>
+      <p class='sub'>16.862 partidos de Primera y Segunda con la cuota de mercado (football-data.co.uk) y su resultado. Probabilidad de X que daban las casas frente a la que salió, según lo favorito que era el favorito, y la diferencia en cada mitad (2005-15 y 2016-26). Solo cuenta lo que va igual en las dos mitades: en Primera, con favorito de 65 % o más, la X sale 3 puntos menos de lo que dicen las cuotas. La mesa lo aplica desde el 22/11 (X ×0,82 en ese tramo).</p>
+      <div class='ql-tw' data-draw='cuotas-hist' data-source='cuotas_hist'></div>
     </div>
   </section>
 
@@ -878,6 +881,20 @@ dash.draw('cuotas-calib', (el) => {
   c.data.forEach((r, i) => {
     const tr = QL.el('tr'), d = r.real - r.esperado;
     tr.append(QL.el('td', null, r.tramo), QL.el('td', 'num', String(r.n)), QL.el('td', 'num', QL.pc1(r.esperado)), QL.el('td', 'num', QL.pc1(r.real)), QL.el('td', 'num ' + (d > 0 ? 'ql-ok' : d < 0 ? 'ql-bad' : ''), QL.sgn(d, QL.pc1)));
+    t.append(tr);
+  });
+  el.replaceChildren(t);
+});
+dash.draw('cuotas-hist', (el) => {
+  const c = dash.data('cuotas_hist');
+  if (c.status !== 'ok' || !c.data || !c.data.length) { el.replaceChildren(QL.el('div', 'ql-msg', c.status === 'loading' ? 'Cargando…' : 'Sin datos.')); return; }
+  const t = QL.el('table', 'ql-t'), hd = QL.el('tr'), cl = (d) => 'num ' + (d > 0 ? 'ql-ok' : d < 0 ? 'ql-bad' : '');
+  ['Liga', 'Favorito', 'Partidos', 'X según cuotas', 'X real', 'Diferencia', '2005-15', '2016-26'].forEach((h) => hd.append(QL.el('th', null, h)));
+  t.append(hd);
+  c.data.forEach((r) => {
+    const tr = QL.el('tr');
+    tr.append(QL.el('td', null, r.liga), QL.el('td', null, r.favorito), QL.el('td', 'num', r.n.toLocaleString('es-ES')), QL.el('td', 'num', QL.pc1(r.esperado)), QL.el('td', 'num', QL.pc1(r.real)),
+      QL.el('td', cl(r.dif), QL.sgn(r.dif, QL.pc1)), QL.el('td', cl(r.dif_a), QL.sgn(r.dif_a, QL.pc1)), QL.el('td', cl(r.dif_b), QL.sgn(r.dif_b, QL.pc1)));
     t.append(tr);
   });
   el.replaceChildren(t);

@@ -181,6 +181,17 @@ def main():
     apuestas, bank = _apuestas_y_bank()
     ruta_c = os.path.join(RAIZ, "datos", "cuotas_bet365", "historico.json")
     cuotas = _leer(ruta_c)["rows"] if os.path.exists(ruta_c) else []
+    ruta_bt = os.path.join(RAIZ, "datos", "backtest_cuotas.json")
+    cuotas_hist = []
+    if os.path.exists(ruta_bt):
+        xf = _leer(ruta_bt)["x_por_favorito"]
+        mit = {(r["div"], r["favorito"], r["mitad"][0]): r["dif"] for r in xf}
+        orden = {"<45": 0, "45-55": 1, "55-65": 2, "65+": 3}
+        cuotas_hist = sorted(({"liga": "Primera" if r["div"] == "SP1" else "Segunda", "favorito": r["favorito"] + " %",
+                               "n": r["n"], "esperado": r["esperado"], "real": r["real"], "dif": r["dif"],
+                               "dif_a": mit.get((r["div"], r["favorito"], "A")), "dif_b": mit.get((r["div"], r["favorito"], "B")),
+                               "orden": orden[r["favorito"]]} for r in xf if r["mitad"] == "Todo"),
+                             key=lambda r: (r["liga"] != "Primera", r["orden"]))
 
     salida = os.path.join(RAIZ, "app", "datos")
     os.makedirs(salida, exist_ok=True)
@@ -188,7 +199,7 @@ def main():
     equipos = app_equipos.construir()
     print(f"equipos: {len(equipos)} filas")
     for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas), ("novedades", novedades), ("definitivos", definitivos),
-                         ("apuestas", apuestas), ("bank", bank), ("cuotas", cuotas)):
+                         ("apuestas", apuestas), ("bank", bank), ("cuotas", cuotas), ("cuotas_hist", cuotas_hist)):
         with open(os.path.join(salida, f"{nombre}.json"), "w", encoding="utf-8") as f:
             json.dump({"rows": filas}, f, ensure_ascii=False, indent=1)
         print(f"{nombre}: {len(filas)} filas")
