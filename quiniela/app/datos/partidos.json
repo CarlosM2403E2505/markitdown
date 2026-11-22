@@ -1403,8 +1403,8 @@
    "m1": 0.5199,
    "mx": 0.2417,
    "m2": 0.2385,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": false
   },
   {
    "jornada": 23,
