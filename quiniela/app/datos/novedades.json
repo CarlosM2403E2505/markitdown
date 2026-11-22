@@ -279,6 +279,14 @@
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
    "aporte": "J23 domingo (quiniela15): Barcelona 3-2 Villarreal, Racing 3-2 Real Sociedad, Sporting 0-2 Las Palmas, Granada F 1-5 Real Madrid F, Real Sociedad F 1-0 Sevilla F. Con 10 de 14 jugados, la mejor columna lleva 8 aciertos (máximo posible 12). Faltan Osasuna–Málaga, Getafe–Atlético, Girona–Eibar y Tenerife F–Madrid CFF.",
    "cambia": "No"
+  },
+  {
+   "id": "j23-fallo-por-fallo",
+   "fecha": "2026-11-22 19:05",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "J23 fallo por fallo (10 de 14): Rayo (mala forma, ya regla R3) y Tenerife–Mallorca (varianza, X 26 %) tumbaron los fijos; Tenerife F–Madrid CFF iba camino de fallar con el aviso mesa 63 % frente a casas 52 % (ya regla R3). Sin reglas nuevas: las dos señales ya están codificadas para la J24.",
+   "cambia": "No"
   }
  ]
 }

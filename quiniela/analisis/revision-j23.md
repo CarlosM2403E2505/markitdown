@@ -57,3 +57,20 @@ Resultados del sábado 21/11 sacados de **Flashscore.es** (abierto desde el nave
 - Los resultados del sábado vienen de Flashscore (clase A: marcador final) y el Pleno se confirmó con Soccerway. ✅
 - `proteccion.py` se comprobó sobre la J23: las cuotas se cumplen y no repite columnas del boleto. ✅
 - Datos en `datos/revision_j23.json` y `datos/x_templados.json`. ✅
+
+## 4. Fallo por fallo con 10 de 14 terminados (22/11, 18:55)
+
+| Partido | Resultado | Mesa daba a lo que salió | Casas | ¿En el boleto? | Diagnóstico |
+|---|---|---|---|---|---|
+| Rayo – Valencia | 0-1 (2) | 20 % | 24 % | ❌ (1 fijo) | El Rayo llegaba con 5 puntos de 15. Esa señal ya es regla (R3, mala forma) |
+| Tenerife – Mallorca | 0-0 (X) | 26 % | 29 % | ❌ (2 fijo) | Varianza: la mesa y las casas coincidían. La X de Segunda está calibrada |
+| Racing – Real Sociedad | 3-2 (1) | 28 % | 30 % | ✅ (doble 1 2) | Bien cubierto |
+| Sporting – Las Palmas | 0-2 (2) | 33 % | 28 % | ✅ (triple) | Bien cubierto |
+| Alavés – Deportivo | 3-1 (1) | 59 % | 43 % | ✅ | La mesa se apartó 16 puntos de las casas y acertó |
+| Real Madrid, Barcelona, Eibar F, Granada F, Real Sociedad F | 1 · 1 · 2 · 2 · 1 | 55-84 % | 64-82 % | ✅ | Favoritos cumplidos |
+| Tenerife F – Madrid CFF | 0-3 en el minuto 85 | 17 % | 22 % | (1 fijo) | Aviso del viernes: la mesa daba 63 % y las casas 52 %. Desde el 22/11 ese desajuste obliga a cubrir el partido (R3, aviso de las casas) |
+
+- Con estos 9 partidos, las casas acertaron algo más que la mesa: log-loss 0,806 frente a 0,819. Con tan pocos partidos es una diferencia pequeña.
+- Fallos del boleto: 2 de 10, los dos con fijos por debajo del 55 %. **Con las reglas de hoy (R3 y R7), ninguno de esos dos fijos iría en todas las columnas.**
+- No sale ninguna regla nueva comprobada: los dos avisos que se vieron (mala forma y desajuste con las casas) ya están codificados.
+- Pendientes: Osasuna – Málaga, Getafe – Atlético, Girona – Eibar y el final de Tenerife F – Madrid CFF.
