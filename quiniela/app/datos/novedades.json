@@ -207,6 +207,14 @@
    "origen": "Hilo J24",
    "aporte": "La página fijada «Pronósticos definitivos» muestra ya la J24 provisional (casas · mesa · 24 sencillas en 3 boletos de 8, 18 €, Pleno M-1). Se irá actualizando hasta el definitivo del mar 24/11 18:45.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-riesgo-fijos",
+   "fecha": "2026-11-22 03:20",
+   "jornada": 24,
+   "origen": "Hilo J24 (Matemático, Risk Manager, Físico)",
+   "aporte": "Los 4 fijos de las 24 columnas (City, Madrid, Betis, Barça) aciertan juntos solo el 29 %. La X está poco cubierta (se esperan 2,7 empates; 7 columnas sin X). Descansos reales el lunes.",
+   "cambia": "No"
   }
  ]
 }
