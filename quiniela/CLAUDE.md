@@ -7,8 +7,8 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 2. Siempre **los 15 pronósticos**: los 14 signos, el Pleno al 15 y **5 apuestas sueltas**.
 3. **Cuotas y pronósticos ajenos: se analizan, pero no entran en el modelo.**
 4. **La J17 (Copa del Rey) no se pronostica.**
-5. **Presupuesto:** lo fija el usuario. Desde el 14/11: **un solo boleto de hasta 20 €**, con el objetivo de la **mayor P(≥13)** (`herramientas/boleto_unico.py ... 20 p13`). Tiene que caber en un boleto, así que las sencillas van como máximo de 8 en 8. **Nunca se propone subir para recuperar.** Si juega menos, se sigue el orden de prioridad de los boletos.
-6. **La mesa elige** el sistema con el criterio fijo: de los que tienen una P(14) de al menos el 90 % de la máxima, el de mayor P(≥12). En la cartera, el boleto que más P(14) nueva añade por euro. Los boletos se recomiendan porque lo dicen los profesionales, no solo porque el usuario los pida.
+5. **Presupuesto (Carlos, 22/11/2026): máximo 18 € por jornada, todo incluido.** Decide la mesa, sin preguntar: el boleto sale solo de `herramientas/reglas_mesa.py` (reglas R1-R6, `analisis/reglas-mesa.md`). Desde la J24, el formato es el que elige el script; en la J24 son 24 sencillas optimizadas en 3 boletos de 8. **Nunca se propone subir para recuperar.**
+6. **La mesa elige (22/11/2026):** criterio fijo R2 de `reglas_mesa.py` (mayor P(≥13) entre los formatos que cumplen la diversidad R3). Sin tarjetas de decisión a Carlos sobre el boleto. El criterio anterior (P(14) ≥ 90 % → P(≥12)) y los formatos de 18 € + sencillas quedan retirados.
 7. **Los vetos de signo único se retiraron el 3/11/2026.** Se mantiene el ajuste medido de −4,5 al favorito que viene de perder. No se reabre.
 8. **No se discuten las decisiones del usuario.** Quiere profesionales que trabajen duro, sin mediocridad, y no quiere desacuerdos.
 9. **Empates:** le preocupa que se escapen. En cada jornada se informa de P(ninguna X), del número de X esperadas y de en cuántos partidos cubre la X el boleto. Se usa el signo X (no «A»).
@@ -47,6 +47,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | Rechazado 18/11 | Empates ×1,20 en igualados de Primera | Empeora la validación |
 | Aplicado 22/11 | **X templada en Primera**: favorito entre 45 y 60 % → X ×1,20 (después de T). EURO_F y T=1,15 se revalidaron y se mantienen | `analisis/revision-j23.md` (843 partidos: con el favorito al 45-55 % salía X 35 % y se daba 26 %; mejora las tres temporadas). En Segunda no mejora |
 | Regla 22/11 | **Fijos protegidos**: fijo del boleto con P < 55 % → su 2.º signo en ≥ 2 sencillas y el 3.º en 1 si pasa del 20 %. También se protege el fijo en el que la mesa supera a las casas en más de 8 puntos (`--mercado 0.08`; se aplica desde el 22/11 como opción recomendada, Carlos puede quitarlo; las cuotas no cambian ninguna probabilidad). Pleno: el marcador más probable en todas (repartirlo baja la probabilidad) | `herramientas/proteccion.py` (J23: P(≥13) 4,07 → 4,36 %) |
+| Regla 22/11 | **Reglas codificadas R1-R6** (`herramientas/reglas_mesa.py`): tope 18 €, mayor P(≥13), topes de diversidad por partido (favorito < 45 % → 60 % de las columnas; 45-55 % → 75 %; 55-65 % → 90 %), Pleno el más probable. Sustituye a `boleto_unico.py`, `cartera.py` y `proteccion.py` para elegir el boleto | `analisis/reglas-mesa.md`: en 133 bloques reales, las 24 sencillas optimizadas con R3 dan 9,27 aciertos de media frente a 8,56 de la directa de 18 € y 8,31 de la de 12 € |
 | Aplicado 20/11 | **Liga F T = 0,70** (aplanar): favoritos ≥ 70 % daban 79 % y ganaban 54 % | `analisis/ligaf-favoritos.md` (log-loss 1,0827→1,0495; mejora en las dos mitades). Revisar con más jornadas |
 
 ## 4. Cómo se ejecuta (desde `quiniela/`)
@@ -56,7 +57,7 @@ python3 modelo/j21_selecciones.py          # partido 10 y Pleno con el modelo de
 cd herramientas && python3 quiniela_calc.py boleto ../jornadas/j21/j21.json   # signos, sistemas, Pleno y sueltas
 python3 herramientas/boletos_oficiales.py jornadas/j21/j21.json 20 4   # 4 boletos oficiales (directas y reducidas) de ≤ 20 €
 python3 herramientas/cartera.py jornadas/j21/j21.json 16,16,8,8         # cartera de columnas sueltas sin repetir
-python3 herramientas/proteccion.py jornadas/j24/j24.json 8 --mercado 0.08 --guardar    # sencillas con fijos protegidos: < 55 % o mesa > casas + 8 puntos (obligatorio desde el 22/11)
+python3 herramientas/reglas_mesa.py jornadas/j24/j24.json --guardar    # EL BOLETO (desde el 22/11): reglas R1-R6, ≤ 18 €, escribe boleto_mesa (con mercado en cada partido si lo hay)
 python3 herramientas/importar_navegador.py jornadas/j21/j21.json navegador.json
 python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 ```
