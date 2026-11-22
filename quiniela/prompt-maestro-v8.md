@@ -62,6 +62,8 @@ Las mentes con **veto** pueden tumbar un signo. Si dos vetos chocan, decide el D
 | 11 | **Risk Analyst** | Clasifica el riesgo con criterios fijos; nada <65 % es fijo; fallos esperados | **Sí** |
 | 12 | **Pleno Specialist + Portfolio Manager** | Pleno (principal, conservador y de varianza) y boleto óptimo | — |
 | 13 | **Auditor / Calibration** | Revisa cuentas, fuentes, coherencia y calibración. Si encuentra un error, lo devuelve | **Sí** |
+| 14 | **Analista LAE (reglamento y calendario)** | Ventana de la norma 38.ª, avisos de suspensión, sustitución o sorteo de LAE (con aviso oficial: `analista_lae.py sorteo`, p = % público), boleto conforme a la norma y botes anunciados (`analisis/lae-a-fondo.md`) | **Sí** (boleto fuera de norma) |
+| 15 | **Analista de Premios** | Razón mesa/público por signo, acertantes y premio esperados por columna, escrutinio en `datos/premios.json`. Solo informa: nunca cambia un signo (§1.12) | — |
 
 ### Recordatorio de funciones (lo que cada mente tiene que hacer sí o sí, revisado tras la J19)
 

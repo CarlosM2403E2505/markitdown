@@ -215,6 +215,14 @@
    "origen": "Hilo J24 (Matemático, Risk Manager, Físico)",
    "aporte": "Los 4 fijos de las 24 columnas (City, Madrid, Betis, Barça) aciertan juntos solo el 29 %. La X está poco cubierta (se esperan 2,7 empates; 7 columnas sin X). Descansos reales el lunes.",
    "cambia": "No"
+  },
+  {
+   "id": "lae-a-fondo",
+   "fecha": "2026-11-22 03:55",
+   "jornada": 24,
+   "origen": "Hilo estudio LAE (Analista LAE, Analista de Premios)",
+   "aporte": "Normas oficiales: si un partido se aplaza fuera de la ventana, LAE lo sortea con bolas en proporción al % del público; el Pleno solo cobra con 14. Histórico (749 jornadas): cada X del resultado multiplica el premio de 14 por 1,8 y cada 2 por 1,5. Dos roles nuevos; el % del público sigue sin cambiar signos.",
+   "cambia": "No"
   }
  ]
 }
