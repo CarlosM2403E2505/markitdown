@@ -102,7 +102,8 @@
 .ql-arch h4{margin:10px 12px 4px;font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--color-fg-muted)}
 .ql-arch .ql-tw{padding:0 12px 10px}
 .ql-sg{font-weight:700;text-align:center}
-.ql-sg.hit{color:#fff;background:var(--ql-acc);border-radius:4px}
+.ql-sg.hit{color:#fff;background:var(--color-ok);border-radius:4px}
+.ql-sg.miss{color:#fff;background:var(--color-bad);border-radius:4px}
 .ql-note{font-size:13px;color:var(--color-fg-muted)}
 .ql-note summary{cursor:pointer;font-weight:700;color:var(--color-fg)}
 .ql-est{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:999px;border:1px solid currentColor}
@@ -728,14 +729,14 @@ dash.draw('archivo', (el) => {
     const acierto = (r, sg) => r.resultado != null && (r.n === 15 ? sg === r.resultado : String(sg).includes(r.resultado));
     tabla(rs[0].boleto || 'Boleto', [['Nº'], ['Partido'], ['Casas % 1·X·2', 'num'], ['Mesa % 1·X·2', 'num'], ['Boleto'], ['Resultado']], (tr, r) => {
       tr.append(QL.el('td', 'ql-n', r.n === 15 ? 'P15' : 'P' + r.n), QL.el('td', null, r.partido), QL.el('td', 'num', r.casas || '—'), QL.el('td', 'num', r.mesa || '—'),
-        QL.el('td', 'ql-sg', r.signos_boleto || '—'), QL.el('td', acierto(r, r.signos_boleto) ? 'ql-ok' : r.resultado != null ? 'ql-bad' : '', r.resultado != null ? r.resultado + (acierto(r, r.signos_boleto) ? ' ✓' : ' ✗') : 'Pend.'));
+        QL.el('td', 'ql-sg' + (r.resultado == null ? '' : acierto(r, r.signos_boleto) ? ' hit' : ' miss'), r.signos_boleto || '—'), QL.el('td', acierto(r, r.signos_boleto) ? 'ql-ok' : r.resultado != null ? 'ql-bad' : '', r.resultado != null ? r.resultado + (acierto(r, r.signos_boleto) ? ' ✓' : ' ✗') : 'Pend.'));
     });
     const nS = rs[0].n_sencillas || 0;
     if (nS) {
       const etq = String(rs[0].etiquetas || '').split(' ').filter(Boolean);
       tabla(rs[0].titulo_sencillas || ('Sencillas · ' + nS + ' apuestas'), [['Nº'], ['Partido'], ...Array.from({length: nS}, (_, k) => [etq[k] || 'C' + (k + 1)]), ['Resultado']], (tr, r) => {
         tr.append(QL.el('td', 'ql-n', r.n === 15 ? 'P15' : 'P' + r.n), QL.el('td', null, r.partido));
-        String(r.sencillas || '').split(' ').forEach((sg) => tr.append(QL.el('td', 'ql-sg' + (r.resultado != null && sg === r.resultado ? ' hit' : ''), sg)));
+        String(r.sencillas || '').split(' ').forEach((sg) => tr.append(QL.el('td', 'ql-sg' + (r.resultado == null ? '' : acierto(r, sg) ? ' hit' : ' miss'), sg)));
         tr.append(QL.el('td', null, r.resultado != null ? r.resultado : 'Pend.'));
       });
     }
