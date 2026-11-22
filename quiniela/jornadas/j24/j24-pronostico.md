@@ -100,3 +100,11 @@
 
 Sencillas protegidas: 12112221112112, 121122211121X2, 1211222X11211X, 12112221112121, 12112222112111, 12112222112X21, 1211222211X121, 121122221121X1.
 Conjunto: 32 columnas, 24.00 € · P(14) 1/173 · P(≥13) 4.43 % · P(≥12) 16.2 %. X cubiertas en el boleto: 1.
+
+## v2 (dom 22/11 03:20): datos de Flashscore y roles sin datos en vivo
+
+- **Datos:** `datos/euro_j24.json` (24.173 partidos, hasta el 21/11; 14 ligas extraídas de Flashscore, incluidas Eslovaquia, Azerbaiyán y Ucrania 2026/27). Los precios cambian 3 puntos como mucho.
+- **Boleto (reglas_mesa.py, R1-R6):** 24 sencillas en 3 boletos de 8, 18 €. P(14) 1/305, P(≥13) 3,3 %, P(≥12) 14 %, P(≥10) 62 %. Pleno M-1 (17 %).
+- **Matemático:** fijos en las 24 columnas: City (66 %), Madrid (67 %), Betis (74 %) y Barça (90 %). Son los únicos que pasan del 65 %, así que R3 los deja. El resto de partidos varían entre columnas.
+- **Risk Manager:** los 4 fijos aciertan juntos solo el 29 % de las veces. En el 71 % restante ninguna columna puede hacer 14, y es el riesgo principal del boleto. La X está poco cubierta: se esperan 2,7 empates, pero 7 de las 24 columnas no llevan ninguna X y solo 3 llevan dos o más. Es coherente con la UEFA (empates ×1,0), pero hay que vigilarlo cuando entren las cuotas.
+- **Físico:** todos juegan este fin de semana, y los descansos reales (3-5 días) se sabrán el lunes. Las fechas del 7-8/11 que salen en Inter, Barça, Liverpool, Sporting y otros son partidos del domingo 22 que aún no están en los datos, no descansos largos. Se revisa el lunes a las 11:00.
