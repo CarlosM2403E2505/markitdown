@@ -77,7 +77,8 @@ d["boleto_provisional"] = {"tipo": el["nombre"], "apuestas": len(el["columnas"])
                            "pleno": pleno["marcador_mesa"], "p14": round(el["p14"], 6), "p13": round(el["p13"], 4)}
 dentro = set(el["columnas"])
 pr = imp("pr", os.path.join(Q, "herramientas", "proteccion.py"))
-comp, deb, pend = pr.proteger(d, signos, 8)   # regla de fijos protegidos (22/11)
+merc = 0.08 if all(r.get("mercado") for r in partidos) else None   # --mercado 0.08 (22/11) cuando haya 1X2 de bet365 sin margen
+comp, deb, pend = pr.proteger(d, signos, 8, mercado=merc)   # regla de fijos protegidos (22/11)
 d["columnas_individuales"] = comp; d["columnas_protegidas"] = comp
 d["fijos_debiles"] = [{"n": f["i"] + 1, "fijo": f["fijo"], "cubre": f["alt"], "motivo": f["motivo"]} for f in deb]
 todas = sorted(dentro | set(comp))
