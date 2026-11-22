@@ -66,6 +66,16 @@ class TestApuestasValor(unittest.TestCase):
         self.assertAlmostEqual(r["yield"], -0.05)
         self.assertAlmostEqual(r["drawdown_max"], 10 / 509, places=4)
 
+    def test_clv(self):
+        with open(av.RUTA_APUESTAS, "w") as f:
+            json.dump({"rows": [{"id": "x", "jornada": 23, "n": 1, "mercado": "1X2", "seleccion": "1",
+                                 "estado": "Apostada", "cuota": 2.3, "cuota_tomada": 2.3, "stake": 10}]}, f)
+        ruta = os.path.join(self.tmp, "cierre.json")
+        with open(ruta, "w") as f:
+            json.dump({"partidos": [{"n": 1, "cuotas": {"1X2|1": 2.1}}]}, f)
+        av.cierre(J, ruta)
+        self.assertAlmostEqual(av.clv_medio()[0], 2.3 / 2.1 - 1, places=4)
+
 
 if __name__ == "__main__":
     unittest.main()

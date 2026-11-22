@@ -223,6 +223,14 @@
    "origen": "Hilo estudio LAE (Analista LAE, Analista de Premios)",
    "aporte": "Normas oficiales: si un partido se aplaza fuera de la ventana, LAE lo sortea con bolas en proporción al % del público; el Pleno solo cobra con 14. Histórico (749 jornadas): cada X del resultado multiplica el premio de 14 por 1,8 y cada 2 por 1,5. Dos roles nuevos; el % del público sigue sin cambiar signos.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-ap-prov",
+   "fecha": "2026-11-22 03:40",
+   "jornada": 24,
+   "origen": "Apuestas bet365 (provisional)",
+   "aporte": "J24 provisional: 45 candidatas en 15 partidos (Vigilar, cuota mínima 1,80-2,08) con el modelo de la tabla J24; la definitiva sale el martes 18:45 con las cuotas de bet365 del lunes 11:00. Nuevo: CLV (cuota tomada frente a la de cierre) en el bank.",
+   "cambia": "No"
   }
  ]
 }

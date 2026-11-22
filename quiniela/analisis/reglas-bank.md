@@ -27,6 +27,7 @@ Salen de un Poisson por partes (45 % de los goles antes del descanso) con los xG
 2. **Definitiva (día de la jornada, antes de las 10:45):** cuotas reales de bet365 (`navegador/encargo-bet365-apuestas.md`) → `proponer jNN.json cuotas.json` → estado «Propuesta». Siempre comprobar la cuota en bet365 antes de apostar.
 3. **Carlos apuesta** (la mesa nunca apuesta): se marca «Apostada» con `cuota_tomada` en `app/apuestas.json`.
 4. **Liquidar:** marcador `"marcador": "2-1"` en cada partido de `jNN.json` → `apuestas_valor.py liquidar jNN.json` → `app/bank.json` → `app_datos.py` y volcado a la app (§4).
+5. **CLV:** al apostar se anota `cuota_tomada`; justo antes del partido se leen las cuotas de cierre de bet365 (mismo formato que las de la definitiva) → `apuestas_valor.py cierre jNN.json cierre.json`. CLV = tomada / cierre − 1; sale por apuesta y de media en «Bank». Con pocas apuestas el saldo es ruido: un CLV medio positivo es la señal de ventaja.
 
 ## Aviso honesto
 Las casas ajustan las cuotas con más información que la mesa. Un +5 % calculado no es dinero seguro: con 2-5 apuestas por jornada, el saldo puede bajar varias jornadas seguidas aunque el método tenga ventaja. Por eso los topes son pequeños.

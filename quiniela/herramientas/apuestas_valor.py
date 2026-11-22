@@ -428,6 +428,26 @@ def liquidar(ruta_j):
     _guardar(RUTA_BANK, bank)
 
 
+def cierre(ruta_j, ruta_cierre):
+    """CLV: cuota tomada frente a la de cierre de bet365 (claves "mercado|selección"). No cambia ninguna apuesta."""
+    j = _leer(ruta_j, None)["jornada"]
+    c = {p["n"]: p.get("cuotas", {}) for p in _leer(ruta_cierre, {"partidos": []})["partidos"]}
+    todo = _leer(RUTA_APUESTAS, {"rows": []})
+    for r in todo["rows"]:
+        k = f'{r["mercado"]}|{r["seleccion"]}'
+        if r["jornada"] != j or r["estado"] not in ("Apostada", "Ganada", "Perdida", "Nula") or k not in c.get(r["n"], {}):
+            continue
+        r["cuota_cierre"] = c[r["n"]][k]
+        tomada = r.get("cuota_tomada") or r.get("cuota")
+        r["clv"] = round(tomada / r["cuota_cierre"] - 1, 4) if tomada else None
+    _guardar(RUTA_APUESTAS, todo)
+
+
+def clv_medio():
+    v = [r["clv"] for r in _leer(RUTA_APUESTAS, {"rows": []})["rows"] if r.get("clv") is not None]
+    return (round(sum(v) / len(v), 4), len(v)) if v else (None, 0)
+
+
 def resumen_bank():
     bank = _leer(RUTA_BANK, {"inicial": BANK_INICIAL, "movimientos": []})
     saldo, pico, dd, apostado = bank["inicial"], bank["inicial"], 0.0, 0.0
@@ -440,7 +460,7 @@ def resumen_bank():
     return {"inicial": bank["inicial"], "saldo": round(saldo, 2), "beneficio": round(ben, 2),
             "roi": round(ben / bank["inicial"], 4), "yield": round(ben / apostado, 4) if apostado else None,
             "apostado": round(apostado, 2), "drawdown_max": round(dd, 4),
-            "parada": saldo < PARADA * bank["inicial"]}
+            "parada": saldo < PARADA * bank["inicial"], "clv_medio": clv_medio()[0], "clv_n": clv_medio()[1]}
 
 
 def reglas():
@@ -470,6 +490,8 @@ if __name__ == "__main__":
         print(encargo(sys.argv[2]))
     elif cmd == "liquidar":
         liquidar(sys.argv[2])
+    elif cmd == "cierre":
+        cierre(sys.argv[2], sys.argv[3])
         print(resumen_bank())
     else:
         print(resumen_bank())

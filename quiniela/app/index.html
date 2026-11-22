@@ -742,7 +742,7 @@ dash.draw('archivo', (el) => {
 const BANK_INICIAL = 500, PARADA = 0.75;
 dash.calc('bank_kpis', {
   title: 'Resumen del bank',
-  description: 'Saldo, beneficio, ROI (sobre el bank inicial), yield (sobre lo apostado), drawdown máximo y dinero pendiente en apuestas abiertas.',
+  description: 'Saldo, beneficio, ROI (sobre el bank inicial), yield (sobre lo apostado), drawdown máximo, dinero pendiente y CLV medio (cuota tomada / cuota de cierre − 1; positivo = la mesa bate al mercado).',
   inputs: ['bank', 'apuestas'],
   fn: (bank, apuestas) => {
     const movs = bank.filter((r) => r.n > 0);
@@ -759,6 +759,7 @@ dash.calc('bank_kpis', {
       drawdown_max: bank.reduce((m, r) => Math.max(m, r.drawdown || 0), 0),
       pendiente: abiertas.reduce((t, a) => t + (a.stake || 0), 0),
       liquidadas: movs.length, ganadas: movs.filter((r) => r.importe > 0).length,
+      clv: d3.mean(apuestas.filter((a) => a.clv != null), (a) => a.clv) ?? null, clv_n: apuestas.filter((a) => a.clv != null).length,
     }];
   },
 });
@@ -789,7 +790,8 @@ dash.draw('bank-kpis', (el) => {
     QL.kpi('Yield (sobre lo apostado)', 'bank_kpis', 'yield', QL.sgn(r.yield, QL.pc1), null, col(r.yield)),
     QL.kpi('Drawdown máximo', 'bank_kpis', 'drawdown_max', QL.pc1(r.drawdown_max)),
     QL.kpi('En juego ahora', 'bank_kpis', 'pendiente', QL.eur(r.pendiente)),
-    QL.kpi('Liquidadas · ganadas', 'bank_kpis', 'liquidadas', r.liquidadas + ' · ' + r.ganadas));
+    QL.kpi('Liquidadas · ganadas', 'bank_kpis', 'liquidadas', r.liquidadas + ' · ' + r.ganadas),
+    QL.kpi('CLV medio (cuota tomada vs cierre, ' + r.clv_n + ')', 'bank_kpis', 'clv', QL.sgn(r.clv, QL.pc1), null, col(r.clv)));
   el.querySelectorAll('[data-field]').forEach((b) => b.setAttribute('data-row', '0'));
 });
 
@@ -853,7 +855,7 @@ dash.draw('apuestas-lista', (el) => {
   if (!rs.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Sin apuestas para la J' + J + '. Las definitivas se publican el día de la jornada, junto con la quiniela definitiva.')); return; }
   const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'apuestas'); tb.setAttribute('data-row-key', 'id');
   const hr = QL.el('tr');
-  [['id', 'Nº'], ['partido', 'Partido'], ['signos_quiniela', 'Quiniela'], ['mercado', 'Mercado'], ['seleccion', 'Selección'], ['cuota', 'Cuota', 'num'], ['cuota_minima', 'Cuota mínima', 'num'], ['p_mesa', 'Prob. mesa', 'num'], ['p_final', 'Prob. final', 'num'], ['valor', 'Valor', 'num'], ['stake', 'Stake', 'num'], ['estado', 'Estado'], ['ganancia', 'Ganancia', 'num']]
+  [['id', 'Nº'], ['partido', 'Partido'], ['signos_quiniela', 'Quiniela'], ['mercado', 'Mercado'], ['seleccion', 'Selección'], ['cuota', 'Cuota', 'num'], ['cuota_minima', 'Cuota mínima', 'num'], ['p_mesa', 'Prob. mesa', 'num'], ['p_final', 'Prob. final', 'num'], ['valor', 'Valor', 'num'], ['stake', 'Stake', 'num'], ['estado', 'Estado'], ['ganancia', 'Ganancia', 'num'], ['clv', 'CLV', 'num']]
     .forEach(([f, l, c]) => { const th = QL.el('th', c || '', l); th.setAttribute('data-field', f); hr.append(th); });
   const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
   const body = QL.el('tbody');
@@ -866,7 +868,8 @@ dash.draw('apuestas-lista', (el) => {
       QL.el('td', 'num', cuota), QL.el('td', 'num', r.cuota_minima != null ? String(r.cuota_minima.toFixed(2)).replace('.', ',') : '—'),
       QL.el('td', 'num', QL.pc1(r.p_mesa)), QL.el('td', 'num', QL.pc1(r.p_final)), QL.el('td', 'num ' + (r.valor > 0 ? 'ql-ok' : r.valor < 0 ? 'ql-bad' : ''), QL.sgn(r.valor, QL.pc1)),
       QL.el('td', 'num', QL.eur(r.stake)), est,
-      QL.el('td', 'num ' + (r.ganancia > 0 ? 'ql-ok' : r.ganancia < 0 ? 'ql-bad' : ''), r.ganancia == null ? '—' : QL.sgn(r.ganancia, QL.eur)));
+      QL.el('td', 'num ' + (r.ganancia > 0 ? 'ql-ok' : r.ganancia < 0 ? 'ql-bad' : ''), r.ganancia == null ? '—' : QL.sgn(r.ganancia, QL.eur)),
+      QL.el('td', 'num ' + (r.clv > 0 ? 'ql-ok' : r.clv < 0 ? 'ql-bad' : ''), r.clv == null ? '—' : QL.sgn(r.clv, QL.pc1)));
     body.append(tr);
   });
   tb.append(body); el.replaceChildren(tb);
