@@ -239,6 +239,14 @@
    "origen": "Histórico de cuotas bet365",
    "aporte": "Empieza el histórico de cuotas de bet365 (datos/cuotas_bet365/historico.json y .csv, herramientas/historico_cuotas.py): cada lectura con su momento y el resultado. J23 cargada (61 cuotas, 21 con resultado). Calibración en la sección Apuestas; nada entra en las reglas hasta que una ventaja medida aguante fuera de muestra.",
    "cambia": "No"
+  },
+  {
+   "id": "favoritos-que-fallan",
+   "fecha": "2026-11-22 04:10",
+   "jornada": 24,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "877 favoritos del 45-70 %: la mesa los clava (daba 53 %, ganaron 53-54 %). Europa entre semana y la forma del rival no separan. Solo la mala forma del favorito (≤5 de 15, como el Rayo) se repite: nueva regla, un tramo más de cobertura en R3 (no cambia la probabilidad).",
+   "cambia": "Sí"
   }
  ]
 }

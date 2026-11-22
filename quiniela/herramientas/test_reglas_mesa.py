@@ -11,6 +11,10 @@ class TestReglas(unittest.TestCase):
         self.assertEqual(rm.tope(0.40), 0.60); self.assertEqual(rm.tope(0.54), 0.75)
         self.assertEqual(rm.tope(0.60), 0.90); self.assertEqual(rm.tope(0.80), 1.0)
         self.assertEqual(rm.tope(0.60, ventaja=0.10), 0.75)   # aviso de las casas: tramo de abajo
+    def test_mala_forma_endurece(self):
+        self.assertEqual(rm.tope(0.54, forma=5), 0.60)   # Rayo J23: 54 % y 5 puntos de 15 → 60 %
+        self.assertEqual(rm.tope(0.54, forma=9), 0.75)
+        self.assertEqual(rm.tope(0.80, forma=0), 1.0)    # favorito claro: sin tope
     def test_presupuesto(self):
         self.assertEqual(int(rm.PRESUPUESTO_MAX / rm.PRECIO), 24)
     def test_optimizadas_cumplen_r3_y_son_deterministas(self):

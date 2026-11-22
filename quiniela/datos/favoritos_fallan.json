@@ -1,0 +1,185 @@
+{
+ "n": 877,
+ "rasgos": {
+  "favorito local": {
+   "sel": {
+    "n": 310,
+    "daba": 0.527,
+    "gano": 0.539,
+    "z": 0.43,
+    "daba_X": 0.253,
+    "salio_X": 0.277
+   },
+   "val": {
+    "n": 434,
+    "daba": 0.525,
+    "gano": 0.528,
+    "z": 0.12,
+    "daba_X": 0.248,
+    "salio_X": 0.237
+   }
+  },
+  "favorito visitante": {
+   "sel": {
+    "n": 44,
+    "daba": 0.516,
+    "gano": 0.523,
+    "z": 0.09,
+    "daba_X": 0.252,
+    "salio_X": 0.227
+   },
+   "val": {
+    "n": 89,
+    "daba": 0.545,
+    "gano": 0.539,
+    "z": -0.1,
+    "daba_X": 0.235,
+    "salio_X": 0.247
+   }
+  },
+  "favorito jugó UEFA hace ≤ 4 días": {
+   "sel": {
+    "n": 24,
+    "daba": 0.567,
+    "gano": 0.458,
+    "z": -1.07,
+    "daba_X": 0.251,
+    "salio_X": 0.25
+   },
+   "val": {
+    "n": 27,
+    "daba": 0.583,
+    "gano": 0.63,
+    "z": 0.5,
+    "daba_X": 0.226,
+    "salio_X": 0.185
+   }
+  },
+  "favorito juega UEFA en ≤ 4 días": {
+   "sel": {
+    "n": 29,
+    "daba": 0.554,
+    "gano": 0.517,
+    "z": -0.4,
+    "daba_X": 0.257,
+    "salio_X": 0.276
+   },
+   "val": {
+    "n": 31,
+    "daba": 0.569,
+    "gano": 0.677,
+    "z": 1.22,
+    "daba_X": 0.234,
+    "salio_X": 0.097
+   }
+  },
+  "favorito europeo y rival no (EURO_F)": {
+   "sel": {
+    "n": 69,
+    "daba": 0.553,
+    "gano": 0.551,
+    "z": -0.03,
+    "daba_X": 0.253,
+    "salio_X": 0.232
+   },
+   "val": {
+    "n": 87,
+    "daba": 0.584,
+    "gano": 0.621,
+    "z": 0.69,
+    "daba_X": 0.229,
+    "salio_X": 0.218
+   }
+  },
+  "favorito en mala forma (≤ 5 puntos de 15)": {
+   "sel": {
+    "n": 89,
+    "daba": 0.504,
+    "gano": 0.494,
+    "z": -0.18,
+    "daba_X": 0.265,
+    "salio_X": 0.303
+   },
+   "val": {
+    "n": 134,
+    "daba": 0.512,
+    "gano": 0.455,
+    "z": -1.3,
+    "daba_X": 0.258,
+    "salio_X": 0.291
+   }
+  },
+  "rival en buena forma (≥ 10 puntos de 15)": {
+   "sel": {
+    "n": 45,
+    "daba": 0.522,
+    "gano": 0.4,
+    "z": -1.64,
+    "daba_X": 0.249,
+    "salio_X": 0.378
+   },
+   "val": {
+    "n": 68,
+    "daba": 0.529,
+    "gano": 0.544,
+    "z": 0.25,
+    "daba_X": 0.241,
+    "salio_X": 0.206
+   }
+  },
+  "favorito templado (45-55 %)": {
+   "sel": {
+    "n": 266,
+    "daba": 0.495,
+    "gano": 0.466,
+    "z": -0.93,
+    "daba_X": 0.265,
+    "salio_X": 0.305
+   },
+   "val": {
+    "n": 363,
+    "daba": 0.493,
+    "gano": 0.501,
+    "z": 0.34,
+    "daba_X": 0.259,
+    "salio_X": 0.251
+   }
+  },
+  "Primera": {
+   "sel": {
+    "n": 167,
+    "daba": 0.536,
+    "gano": 0.521,
+    "z": -0.4,
+    "daba_X": 0.264,
+    "salio_X": 0.299
+   },
+   "val": {
+    "n": 236,
+    "daba": 0.547,
+    "gano": 0.538,
+    "z": -0.28,
+    "daba_X": 0.256,
+    "salio_X": 0.254
+   }
+  },
+  "Segunda": {
+   "sel": {
+    "n": 187,
+    "daba": 0.515,
+    "gano": 0.551,
+    "z": 0.97,
+    "daba_X": 0.244,
+    "salio_X": 0.246
+   },
+   "val": {
+    "n": 287,
+    "daba": 0.513,
+    "gano": 0.523,
+    "z": 0.34,
+    "daba_X": 0.238,
+    "salio_X": 0.226
+   }
+  }
+ }
+}

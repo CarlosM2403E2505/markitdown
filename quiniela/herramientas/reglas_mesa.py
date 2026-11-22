@@ -13,7 +13,9 @@ R3 DIVERSIDAD    En cada partido, el signo favorito puede ir como mucho en esta 
                    P ≥ 65 %                 → sin tope
                  Así ningún fijo con poco margen está en todas las columnas. Si la mesa da al favorito más de
                  8 puntos por encima de las casas, se aplica el tope del tramo de abajo (las cuotas no cambian
-                 ninguna probabilidad: solo obligan a cubrir más ese partido).
+                 ninguna probabilidad: solo obligan a cubrir más ese partido). Lo mismo si el favorito llega en
+                 mala forma: 5 puntos o menos en sus 5 últimos partidos de liga (campo `forma_favorito` del
+                 partido, 0-15). Prueba: modelo/favoritos_fallan.py (es precaución de cobertura, no cambia la P).
 R4 PLENO         El marcador más probable de la mesa en todas las apuestas.
 R5 PROBABILIDAD  Solo las de la mesa (modelo + noticias A/B). Las cuotas y el % del público no cambian nada.
 R6 FORMATOS      Se prueban siempre todos: directas, reducidas oficiales, directa + sencillas protegidas y
@@ -41,20 +43,24 @@ AVISO_MERCADO = 0.08
 TOPES_JORNADA = None  # topes por partido de la jornada en curso (los fija topes_partidos)
 
 
-def tope(pfav, ventaja=0.0):
+MALA_FORMA = 5  # puntos de 15 o menos en los 5 últimos de liga
+
+
+def tope(pfav, ventaja=0.0, forma=None):
     ts = [t for _, t in TOPES]
     for k, (lim, t) in enumerate(TOPES):
         if pfav < lim:
-            return ts[max(k - 1, 0)] if ventaja > AVISO_MERCADO else t
+            duro = ventaja > AVISO_MERCADO or (forma is not None and forma <= MALA_FORMA and pfav < 0.70)
+            return ts[max(k - 1, 0)] if duro else t
     return 1.0
 
 
 def topes_partidos(partidos):
-    """Tope de R3 por partido, con el aviso de las casas si hay mercado."""
+    """Tope de R3 por partido, con el aviso de las casas (si hay mercado) y la mala forma del favorito."""
     out = []
     for x in partidos:
         p = x["p"]; f = int(np.argmax(p)); m = x.get("mercado")
-        out.append(tope(max(p), (p[f] - m[f]) if m else 0.0))
+        out.append(tope(max(p), (p[f] - m[f]) if m else 0.0, x.get("forma_favorito")))
     return out
 
 
