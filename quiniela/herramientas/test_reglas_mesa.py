@@ -15,6 +15,9 @@ class TestReglas(unittest.TestCase):
         self.assertEqual(rm.tope(0.54, forma=5), 0.60)   # Rayo J23: 54 % y 5 puntos de 15 → 60 %
         self.assertEqual(rm.tope(0.54, forma=9), 0.75)
         self.assertEqual(rm.tope(0.80, forma=0), 1.0)    # favorito claro: sin tope
+    def test_r7_bloques(self):
+        b, p13 = rm.presupuesto_r7(PROBS)
+        self.assertIn(b, (6.0, 12.0, 18.0)); self.assertLess(p13[8], p13[16]); self.assertLess(p13[16], p13[24])
     def test_presupuesto(self):
         self.assertEqual(int(rm.PRESUPUESTO_MAX / rm.PRECIO), 24)
     def test_optimizadas_cumplen_r3_y_son_deterministas(self):

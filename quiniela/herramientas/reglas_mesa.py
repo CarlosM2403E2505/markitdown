@@ -20,6 +20,9 @@ R4 PLENO         El marcador más probable de la mesa en todas las apuestas.
 R5 PROBABILIDAD  Solo las de la mesa (modelo + noticias A/B). Las cuotas y el % del público no cambian nada.
 R6 FORMATOS      Se prueban siempre todos: directas, reducidas oficiales, directa + sencillas protegidas y
                  24 sencillas optimizadas (búsqueda de máxima P(≥13) con el tope de R3).
+R7 CUÁNTO JUGAR  18 € es un tope, no un objetivo. Cada euro pierde de media 0,45 €, así que se juega por bloques
+                 de 8 columnas (6, 12 o 18 €) y solo se añade un bloque si su P(≥13) por euro es al menos la
+                 mitad de la del primer bloque (EFICIENCIA_MIN). Si no, se para ahí.
 
 Uso: python3 herramientas/reglas_mesa.py jornadas/j24/j24.json [--guardar]
 """
@@ -173,6 +176,23 @@ def formatos(probs, Y, presupuesto=PRESUPUESTO_MAX):
     return out
 
 
+EFICIENCIA_MIN = 0.5
+
+
+def presupuesto_r7(probs):
+    """R7: 6, 12 o 18 € según lo que rinde cada bloque de 8 sencillas optimizadas."""
+    Y = muestras(probs, N_OPT, semilla=7); Ye = muestras(probs)
+    p13 = {n: evaluar(probs, optimizadas(probs, n, Y), Ye)["p13"] for n in (8, 16, 24)}
+    base = p13[8] / 8
+    n = 8
+    for m in (16, 24):
+        if (p13[m] - p13[m - 8]) / 8 >= EFICIENCIA_MIN * base:
+            n = m
+        else:
+            break
+    return PRECIO * n, p13
+
+
 def decidir(probs, presupuesto=PRESUPUESTO_MAX):
     Y = muestras(probs)
     tabla = []
@@ -191,15 +211,18 @@ def decidir(probs, presupuesto=PRESUPUESTO_MAX):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("jornada"); ap.add_argument("--guardar", action="store_true")
-    ap.add_argument("--presupuesto", type=float, default=PRESUPUESTO_MAX)
+    ap.add_argument("--presupuesto", type=float, help="por defecto lo fija R7")
     a = ap.parse_args()
-    assert a.presupuesto <= PRESUPUESTO_MAX, "R1: el tope es 18 €"
     d = json.load(open(a.jornada, encoding="utf-8"))
     probs = [x["p"] for x in d["partidos"]]
     global TOPES_JORNADA
     TOPES_JORNADA = topes_partidos(d["partidos"])
+    if a.presupuesto is None:
+        a.presupuesto, p13 = presupuesto_r7(probs)
+        print("R7: P(≥13) con 8/16/24 sencillas = " + " / ".join(f"{100 * v:.2f} %" for v in p13.values()) + f" → se juegan {a.presupuesto:.0f} €")
+    assert a.presupuesto <= PRESUPUESTO_MAX, "R1: el tope es 18 €"
     el, tabla = decidir(probs, a.presupuesto)
-    print(f"Jornada {d['jornada']} · reglas de la mesa (R1-R6) · tope {a.presupuesto:.0f} €\n")
+    print(f"Jornada {d['jornada']} · reglas de la mesa (R1-R7) · tope {a.presupuesto:.0f} €\n")
     print(f"{'Formato':52s} {'€':>6s} {'P(14)':>13s} {'P(≥13)':>7s} {'P(≥12)':>7s}  R3")
     for t in sorted(tabla, key=lambda t: -t["p13"]):
         print(f"{t['formato']:52s} {t['coste']:6.2f} {'1/' + format(round(1 / t['p14']), ',').replace(',', '.'):>13s} "
@@ -216,7 +239,7 @@ def main():
     pleno = max(marc, key=marc.get) if marc else pl.get("marcador")
     print(f"\nPleno (R4): {pleno} en todas las apuestas")
     if a.guardar:
-        d["boleto_mesa"] = {"reglas": "herramientas/reglas_mesa.py (R1-R6, 22/11/2026)", "formato": el["formato"],
+        d["boleto_mesa"] = {"reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026)", "formato": el["formato"],
                             "apuestas": el["apuestas"], "coste": el["coste"], "columnas": cols, "pleno": pleno,
                             "p14": round(el["p14"], 6), "p13": round(el["p13"], 4), "p12": round(el["p12"], 4),
                             "comparativa": [{k: (round(v, 6) if isinstance(v, float) else v) for k, v in t.items() if k != "columnas"} for t in tabla]}

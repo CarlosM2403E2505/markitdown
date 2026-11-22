@@ -11,6 +11,7 @@ Carlos, 22/11 a las 2:23: «tiene que ser la mesa quien decida», el máximo son
 | R3 Diversidad | Parte máxima de columnas que puede llevar el signo favorito: menos del 45 % → 60 %; entre 45 y 55 % → 75 %; entre 55 y 65 % → 90 %; desde el 65 %, sin tope. Si la mesa da al favorito más de 8 puntos por encima de las casas, se aplica el tope del tramo de abajo |
 | R4 Pleno | El marcador más probable de la mesa en todas las apuestas |
 | R5 Probabilidades | Solo las de la mesa (modelo y noticias de clase A o B). Ni las cuotas ni el % del público cambian ninguna probabilidad |
+| R7 Cuánto jugar | 18 € es un tope, no un objetivo. Se juega por bloques de 8 columnas (6, 12 o 18 €) y solo se añade un bloque si su P(≥13) por euro es al menos la mitad de la del primer bloque |
 | R6 Formatos | Se comparan siempre todos: directas, reducidas oficiales, directa o reducida con sencillas, y 24 sencillas optimizadas. Las sencillas optimizadas se buscan para la máxima P(≥13) dentro de los topes de R3 |
 
 ## ¿Sirven los formatos de 12 y 18 €? Prueba con resultados reales
@@ -42,3 +43,16 @@ Carlos, 22/11 a las 2:23: «tiene que ser la mesa quien decida», el máximo son
 - 133 bloques, todos fuera de muestra (walk-forward mensual). Cada formato se construye solo con las probabilidades de antes del partido. ✅
 - `reglas_mesa.py` es determinista (semillas fijas) y los tests comprueban R1, R3, que no haya columnas repetidas y el caso del Rayo. ✅
 - Datos en `datos/backtest_formatos.json`. ✅
+
+## R7: ¿menos columnas? (22/11, pregunta de Carlos)
+
+Cada euro jugado pierde de media 0,45 €, así que la pérdida esperada crece con lo que se juega. Lo que se compra con cada euro es probabilidad de premio, y cada bloque de 8 columnas compra menos que el anterior:
+
+| Jornada | Columnas | € | P(≥13) | P(≥13) por € | P(14 + Pleno) | Pérdida esperada |
+|---|---|---|---|---|---|---|
+| J24 | 8 | 6 | 1,68 % | 0,28 | 1 entre 4.340 | 2,70 € |
+| J24 | 16 | 12 | 2,64 % | 0,22 | 1 entre 2.323 | 5,40 € |
+| J24 | 24 | 18 | 3,45 % | 0,19 | 1 entre 1.747 | 8,10 € |
+| J23 | 8 / 16 / 24 | 6 / 12 / 18 | 1,48 / 2,27 / 2,73 % | 0,25 / 0,19 / 0,15 | — | 2,70 / 5,40 / 8,10 € |
+
+Las columnas de la 9 a la 16 rinden el 57 % de lo que rinden las 8 primeras. Las de la 17 a la 24 rinden solo el 48 %. Con la regla R7, **la J24 se juega con 16 sencillas (12 €)**: P(≥13) 2,64 % y P(14) 1 entre 405.

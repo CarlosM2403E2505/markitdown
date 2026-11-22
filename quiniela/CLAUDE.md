@@ -7,7 +7,7 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 2. Siempre **los 15 pronósticos**: los 14 signos, el Pleno al 15 y **5 apuestas sueltas**.
 3. **Cuotas y pronósticos ajenos: se analizan, pero no entran en el modelo.**
 4. **La J17 (Copa del Rey) no se pronostica.**
-5. **Presupuesto (Carlos, 22/11/2026): máximo 18 € por jornada, todo incluido.** Decide la mesa, sin preguntar: el boleto sale solo de `herramientas/reglas_mesa.py` (reglas R1-R6, `analisis/reglas-mesa.md`). Desde la J24, el formato es el que elige el script; en la J24 son 24 sencillas optimizadas en 3 boletos de 8. **Nunca se propone subir para recuperar.**
+5. **Presupuesto (Carlos, 22/11/2026): máximo 18 € por jornada, todo incluido.** Decide la mesa, sin preguntar: el boleto sale solo de `herramientas/reglas_mesa.py` (reglas R1-R6, `analisis/reglas-mesa.md`). Desde la J24, el formato y el importe (6, 12 o 18 €, regla R7) los elige el script; en la J24 son 16 sencillas optimizadas, 12 €, en 2 boletos de 8. **Nunca se propone subir para recuperar.**
 6. **La mesa elige (22/11/2026):** criterio fijo R2 de `reglas_mesa.py` (mayor P(≥13) entre los formatos que cumplen la diversidad R3). Sin tarjetas de decisión a Carlos sobre el boleto. El criterio anterior (P(14) ≥ 90 % → P(≥12)) y los formatos de 18 € + sencillas quedan retirados.
 7. **Los vetos de signo único se retiraron el 3/11/2026.** Se mantiene el ajuste medido de −4,5 al favorito que viene de perder. No se reabre.
 8. **No se discuten las decisiones del usuario.** Quiere profesionales que trabajen duro, sin mediocridad, y no quiere desacuerdos.

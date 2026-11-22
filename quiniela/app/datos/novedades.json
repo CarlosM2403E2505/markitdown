@@ -255,6 +255,14 @@
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
    "aporte": "877 favoritos del 45-70 %: la mesa los clava (daba 53 %, ganaron 53-54 %). Europa entre semana y la forma del rival no separan. Solo la mala forma del favorito (≤5 de 15, como el Rayo) se repite: nueva regla, un tramo más de cobertura en R3 (no cambia la probabilidad).",
    "cambia": "Sí"
+  },
+  {
+   "id": "r7-cuanto-jugar",
+   "fecha": "2026-11-22 04:20",
+   "jornada": 24,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "Regla R7: 18 € es un tope. Se juega por bloques de 8 sencillas y solo se añade uno si su P(≥13) por euro es al menos la mitad de la del primero. J24: de la 17 a la 24 rinden el 48 % → 16 sencillas, 12 €, P(≥13) 2,64 %, pérdida esperada 5,40 € (antes 8,10 €).",
+   "cambia": "Sí"
   }
  ]
 }
