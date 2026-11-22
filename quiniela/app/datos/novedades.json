@@ -113,19 +113,19 @@
    "cambia": "No"
   },
   {
-   "id": "j23-ap-bet365",
-   "fecha": "2026-11-21 10:55",
-   "jornada": 23,
-   "origen": "Apuestas bet365 (cuotas leídas por Carlos)",
-   "aporte": "Con las cuotas reales de bet365: Alavés gana a 2,30 (+11 % de valor, 10 €). Descartadas Rayo gana (1,95), Tenerife–Mallorca ambos marcan no (1,66) y Sevilla–Betis ambos marcan sí (1,70). Quedan 12 apuestas, 46 €.",
-   "cambia": "No"
-  },
-  {
    "id": "j23-ap-1x2",
    "fecha": "2026-11-21 10:53",
    "jornada": 23,
    "origen": "Apuestas bet365 (1X2 de bet365, fotos de Carlos)",
    "aporte": "Liga F por debajo de 1,80 descartada (Atlético F 1,30, Real Madrid F 1,25). Entran Eibar F–Atlético F ambos marcan no (mín. 1,93) y Granada F–Real Madrid F visitante más de 1,5 goles (mín. 1,96). Quedan 12 apuestas, 45.0 €.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-ap-bet365",
+   "fecha": "2026-11-21 10:55",
+   "jornada": 23,
+   "origen": "Apuestas bet365 (cuotas leídas por Carlos)",
+   "aporte": "Con las cuotas reales de bet365: Alavés gana a 2,30 (+11 % de valor, 10 €). Descartadas Rayo gana (1,95), Tenerife–Mallorca ambos marcan no (1,66) y Sevilla–Betis ambos marcan sí (1,70). Quedan 12 apuestas, 46 €.",
    "cambia": "No"
   },
   {
@@ -161,14 +161,6 @@
    "cambia": "No"
   },
   {
-   "id": "j23-revision-mesa",
-   "fecha": "2026-11-22 02:45",
-   "jornada": 23,
-   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
-   "aporte": "Sábado (Flashscore): Rayo 0-1, Tenerife 0-0, Pleno 1-1 acertado; ninguna columna sin fallo, el 14 ya no es posible. En 843 partidos de Primera, con el favorito al 45-55 % la X salía 35 % y se daba 26 %: nueva X templada ×1,20 (mejora las tres temporadas). EURO_F y T se mantienen. Nueva regla de fijos protegidos (<55 %) en las sencillas (proteccion.py). Flashscore ya es fuente de resultados y alineaciones.",
-   "cambia": "Sí"
-  },
-  {
    "id": "j24-proteccion",
    "fecha": "2026-11-22 02:20",
    "jornada": 24,
@@ -177,12 +169,20 @@
    "cambia": "Sí"
   },
   {
-   "id": "reglas-mesa-r1-r6",
-   "fecha": "2026-11-22 03:20",
-   "jornada": 24,
+   "id": "j23-revision-mesa",
+   "fecha": "2026-11-22 02:45",
+   "jornada": 23,
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
-   "aporte": "Reglas codificadas de la mesa (reglas_mesa.py): tope 18 € en total, mayor P(≥13) y topes de diversidad por partido. En 133 bloques de 14 partidos reales, 24 sencillas optimizadas dan 9,27 aciertos de media frente a 8,56 de la directa de 18 € y 8,31 de la de 12 €. J24: 24 sencillas optimizadas, 18 €, P(≥13) 3,38 %, Pleno M-1.",
+   "aporte": "Sábado (Flashscore): Rayo 0-1, Tenerife 0-0, Pleno 1-1 acertado; ninguna columna sin fallo, el 14 ya no es posible. En 843 partidos de Primera, con el favorito al 45-55 % la X salía 35 % y se daba 26 %: nueva X templada ×1,20 (mejora las tres temporadas). EURO_F y T se mantienen. Nueva regla de fijos protegidos (<55 %) en las sencillas (proteccion.py). Flashscore ya es fuente de resultados y alineaciones.",
    "cambia": "Sí"
+  },
+  {
+   "id": "tecnicas-externas-2211",
+   "fecha": "2026-11-22 03:05",
+   "jornada": "J24",
+   "origen": "Hilo «Buscar técnicas de IA y casas que no usamos»",
+   "aporte": "Comparadas IA, tipsters y casas con la mesa: el mercado de cierre (log-loss 0,998) supera a los modelos; la mesa (1,014) está al nivel de un buen modelo. Prueba UEFA (864 partidos): la mesa ya se pasa algo con los grandes favoritos (da 70 %, ganan 56 %), así que no se siguen las webs que los afilan. Propuestas: control externo, CLV en el bank y tiros a puerta en Primera.",
+   "cambia": "No"
   },
   {
    "id": "j24-flashscore-datos",
@@ -190,6 +190,14 @@
    "jornada": 24,
    "origen": "Hilo J24 (Flashscore con Claude in Chrome)",
    "aporte": "488 resultados nuevos de 14 ligas (hasta el 21/11, con Eslovaquia, Azerbaiyán y Ucrania 2026/27) en datos/euro_j24.json. Precios recalculados: cambios de 3 puntos como mucho. Boleto de la mesa (reglas R1-R6): 24 sencillas optimizadas, 18 €, P(14) 1/305, P(≥13) 3,45 %, Pleno M-1.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "reglas-mesa-r1-r6",
+   "fecha": "2026-11-22 03:20",
+   "jornada": 24,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "Reglas codificadas de la mesa (reglas_mesa.py): tope 18 € en total, mayor P(≥13) y topes de diversidad por partido. En 133 bloques de 14 partidos reales, 24 sencillas optimizadas dan 9,27 aciertos de media frente a 8,56 de la directa de 18 € y 8,31 de la de 12 €. J24: 24 sencillas optimizadas, 18 €, P(≥13) 3,38 %, Pleno M-1.",
    "cambia": "Sí"
   },
   {
