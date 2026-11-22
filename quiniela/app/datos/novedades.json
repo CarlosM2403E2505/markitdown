@@ -271,6 +271,14 @@
    "origen": "Hilo «Actualizar la app»",
    "aporte": "App al día con lo último de la mesa: J24 con 16 sencillas y 12 € (R7) en Jornadas y Partidos; el coste ahora sale del boleto de la mesa.",
    "cambia": "No"
+  },
+  {
+   "id": "j23-domingo-parcial",
+   "fecha": "2026-11-22 18:55",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "J23 domingo (quiniela15): Barcelona 3-2 Villarreal, Racing 3-2 Real Sociedad, Sporting 0-2 Las Palmas, Granada F 1-5 Real Madrid F, Real Sociedad F 1-0 Sevilla F. Con 10 de 14 jugados, la mejor columna lleva 8 aciertos (máximo posible 12). Faltan Osasuna–Málaga, Getafe–Atlético, Girona–Eibar y Tenerife F–Madrid CFF.",
+   "cambia": "No"
   }
  ]
 }
