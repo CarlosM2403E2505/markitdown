@@ -70,7 +70,7 @@
    "mesa": "84 · 9 · 6",
    "signos_boleto": "1",
    "sencillas": "1 1 1 1 1 1 1 1 1 1 1 1",
-   "resultado": null
+   "resultado": "1"
   },
   {
    "jornada": 23,
@@ -88,7 +88,7 @@
    "mesa": "28 · 20 · 52",
    "signos_boleto": "12",
    "sencillas": "2 2 2 2 2 2 1 1 X X X 1",
-   "resultado": null
+   "resultado": "1"
   },
   {
    "jornada": 23,
@@ -160,7 +160,7 @@
    "mesa": "41 · 26 · 33",
    "signos_boleto": "1X2",
    "sencillas": "1 1 1 1 1 X X 1 1 X X 1",
-   "resultado": null
+   "resultado": "2"
   },
   {
    "jornada": 23,
@@ -214,7 +214,7 @@
    "mesa": "17 · 22 · 61",
    "signos_boleto": "2",
    "sencillas": "2 2 2 2 2 2 2 2 2 X 2 1",
-   "resultado": null
+   "resultado": "2"
   },
   {
    "jornada": 23,
@@ -232,7 +232,7 @@
    "mesa": "55 · 23 · 22",
    "signos_boleto": "1",
    "sencillas": "1 1 1 1 1 1 1 1 1 1 X 2",
-   "resultado": null
+   "resultado": "1"
   },
   {
    "jornada": 23,
