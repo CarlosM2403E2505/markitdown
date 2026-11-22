@@ -201,14 +201,6 @@
    "cambia": "Sí"
   },
   {
-   "id": "j24-definitivos-provisional",
-   "fecha": "2026-11-22 03:40",
-   "jornada": 24,
-   "origen": "Hilo J24",
-   "aporte": "La página fijada «Pronósticos definitivos» muestra ya la J24 provisional (casas · mesa · 24 sencillas en 3 boletos de 8, 18 €, Pleno M-1). Se irá actualizando hasta el definitivo del mar 24/11 18:45.",
-   "cambia": "No"
-  },
-  {
    "id": "j24-riesgo-fijos",
    "fecha": "2026-11-22 03:20",
    "jornada": 24,
@@ -217,11 +209,11 @@
    "cambia": "No"
   },
   {
-   "id": "lae-a-fondo",
-   "fecha": "2026-11-22 03:55",
+   "id": "j24-definitivos-provisional",
+   "fecha": "2026-11-22 03:40",
    "jornada": 24,
-   "origen": "Hilo estudio LAE (Analista LAE, Analista de Premios)",
-   "aporte": "Normas oficiales: si un partido se aplaza fuera de la ventana, LAE lo sortea con bolas en proporción al % del público; el Pleno solo cobra con 14. Histórico (749 jornadas): cada X del resultado multiplica el premio de 14 por 1,8 y cada 2 por 1,5. Dos roles nuevos; el % del público sigue sin cambiar signos.",
+   "origen": "Hilo J24",
+   "aporte": "La página fijada «Pronósticos definitivos» muestra ya la J24 provisional (casas · mesa · 24 sencillas en 3 boletos de 8, 18 €, Pleno M-1). Se irá actualizando hasta el definitivo del mar 24/11 18:45.",
    "cambia": "No"
   },
   {
@@ -230,6 +222,14 @@
    "jornada": 24,
    "origen": "Apuestas bet365 (provisional)",
    "aporte": "J24 provisional: 45 candidatas en 15 partidos (Vigilar, cuota mínima 1,80-2,08) con el modelo de la tabla J24; la definitiva sale el martes 18:45 con las cuotas de bet365 del lunes 11:00. Nuevo: CLV (cuota tomada frente a la de cierre) en el bank.",
+   "cambia": "No"
+  },
+  {
+   "id": "lae-a-fondo",
+   "fecha": "2026-11-22 03:55",
+   "jornada": 24,
+   "origen": "Hilo estudio LAE (Analista LAE, Analista de Premios)",
+   "aporte": "Normas oficiales: si un partido se aplaza fuera de la ventana, LAE lo sortea con bolas en proporción al % del público; el Pleno solo cobra con 14. Histórico (749 jornadas): cada X del resultado multiplica el premio de 14 por 1,8 y cada 2 por 1,5. Dos roles nuevos; el % del público sigue sin cambiar signos.",
    "cambia": "No"
   },
   {
@@ -270,6 +270,30 @@
    "jornada": "24",
    "origen": "Hilo «Actualizar la app»",
    "aporte": "App al día con lo último de la mesa: J24 con 16 sencillas y 12 € (R7) en Jornadas y Partidos; el coste ahora sale del boleto de la mesa.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-domingo-parcial",
+   "fecha": "2026-11-22 18:55",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "J23 domingo (quiniela15): Barcelona 3-2 Villarreal, Racing 3-2 Real Sociedad, Sporting 0-2 Las Palmas, Granada F 1-5 Real Madrid F, Real Sociedad F 1-0 Sevilla F. Con 10 de 14 jugados, la mejor columna lleva 8 aciertos (máximo posible 12). Faltan Osasuna–Málaga, Getafe–Atlético, Girona–Eibar y Tenerife F–Madrid CFF.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-forma-favorito",
+   "fecha": "2026-11-22 19:00",
+   "jornada": 24,
+   "origen": "Hilo J24 (regla de forma del favorito)",
+   "aporte": "forma_favorito puesta en los 14 partidos (5 últimos de liga hasta el 21/11). Mala forma: Man City (4 puntos) y Crystal Palace (0). City deja de ser fijo en todas las columnas; ahora los fijos comunes son Madrid, Betis y Barça. Boleto: 16 sencillas, 12 €, P(≥13) 2,62 %, Pleno M-1. La X sigue según probabilidades (7 de 16 columnas sin X); no se sube solo por premio (§1.12).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j23-fallo-por-fallo",
+   "fecha": "2026-11-22 19:05",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "J23 fallo por fallo (10 de 14): Rayo (mala forma, ya regla R3) y Tenerife–Mallorca (varianza, X 26 %) tumbaron los fijos; Tenerife F–Madrid CFF iba camino de fallar con el aviso mesa 63 % frente a casas 52 % (ya regla R3). Sin reglas nuevas: las dos señales ya están codificadas para la J24.",
    "cambia": "No"
   }
  ]
