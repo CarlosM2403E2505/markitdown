@@ -183,6 +183,14 @@
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
    "aporte": "Reglas codificadas de la mesa (reglas_mesa.py): tope 18 € en total, mayor P(≥13) y topes de diversidad por partido. En 133 bloques de 14 partidos reales, 24 sencillas optimizadas dan 9,27 aciertos de media frente a 8,56 de la directa de 18 € y 8,31 de la de 12 €. J24: 24 sencillas optimizadas, 18 €, P(≥13) 3,38 %, Pleno M-1.",
    "cambia": "Sí"
+  },
+  {
+   "id": "tecnicas-externas-2211",
+   "fecha": "2026-11-22 03:05",
+   "jornada": "J24",
+   "origen": "Hilo «Buscar técnicas de IA y casas que no usamos»",
+   "aporte": "Comparadas IA, tipsters y casas con la mesa: el mercado de cierre (log-loss 0,998) supera a los modelos; la mesa (1,014) está al nivel de un buen modelo. Prueba UEFA (864 partidos): la mesa ya se pasa algo con los grandes favoritos (da 70 %, ganan 56 %), así que no se siguen las webs que los afilan. Propuestas: control externo, CLV en el bank y tiros a puerta en Primera.",
+   "cambia": "No"
   }
  ]
 }
