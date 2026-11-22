@@ -179,6 +179,8 @@ def main():
     definitivos = _leer(ruta_def)["rows"] if os.path.exists(ruta_def) else []
 
     apuestas, bank = _apuestas_y_bank()
+    ruta_c = os.path.join(RAIZ, "datos", "cuotas_bet365", "historico.json")
+    cuotas = _leer(ruta_c)["rows"] if os.path.exists(ruta_c) else []
 
     salida = os.path.join(RAIZ, "app", "datos")
     os.makedirs(salida, exist_ok=True)
@@ -186,7 +188,7 @@ def main():
     equipos = app_equipos.construir()
     print(f"equipos: {len(equipos)} filas")
     for nombre, filas in (("jornadas", jornadas), ("partidos", partidos), ("sueltas", sueltas), ("bajas", bajas), ("novedades", novedades), ("definitivos", definitivos),
-                         ("apuestas", apuestas), ("bank", bank)):
+                         ("apuestas", apuestas), ("bank", bank), ("cuotas", cuotas)):
         with open(os.path.join(salida, f"{nombre}.json"), "w", encoding="utf-8") as f:
             json.dump({"rows": filas}, f, ensure_ascii=False, indent=1)
         print(f"{nombre}: {len(filas)} filas")

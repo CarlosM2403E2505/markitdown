@@ -222,6 +222,11 @@
       <div class='ql-tw' data-draw='apuestas-lista' data-source='apuestas'></div>
       <p class='ql-note'>Estados: <b>Vigilar</b> (provisional, con cuota estimada), <b>Definitiva</b> (sin cuota leída: se apuesta solo si bet365 paga la cuota mínima), <b>Propuesta</b> (cuota real de bet365 leída), <b>Descartada</b> (bet365 paga menos de la mínima), <b>Apostada</b> (confirmada por ti), <b>Ganada</b>, <b>Perdida</b> o <b>Nula</b> (se devuelve el stake). Valor = probabilidad × cuota − 1, con la probabilidad mezclada: 40 % mesa y 60 % mercado. En la provisional salen hasta tres candidatas por partido; la definitiva se queda con una por partido, la de más valor con la cuota real. Córners, tarjetas y goleadores no se apuestan todavía: la mesa no tiene datos medidos para preciarlos.</p>
     </div>
+    <div class='ql-card'>
+      <h3>Histórico de cuotas bet365</h3>
+      <p class='sub'>Cada lectura de bet365 (apertura, lunes, definitiva y cierre) se guarda y se cruza con el resultado. Tabla: probabilidad que da bet365 (sin margen, 1X2) frente a lo que sale de verdad. Con pocas jornadas es ruido; solo una diferencia medida y que aguante fuera de muestra entrará en las reglas de la mesa, sobre todo para el Pleno al 15.</p>
+      <div class='ql-tw' data-draw='cuotas-calib' data-source='cuotas_calibracion'></div>
+    </div>
   </section>
 
   <section class='ql-sec' id='bank' hidden>
@@ -847,6 +852,36 @@ dash.draw('apuestas-kpis', (el) => {
     QL.kpi('Exposición del bank', 'apuestas_jornada', 'exposicion', QL.pc1(r.exposicion), w), QL.kpi('Valor medio', 'apuestas_jornada', 'valor_medio', QL.sgn(r.valor_medio, QL.pc1), w));
 });
 
+dash.calc('cuotas_calibracion', {
+  title: 'Calibración de bet365',
+  description: '1X2 sin margen, última lectura de cada selección, sin cifras dudosas: probabilidad media de bet365 frente a frecuencia real, por tramos de 20 puntos y solo para la X.',
+  inputs: ['cuotas'],
+  fn: (cuotas) => {
+    const orden = {apertura: 0, lunes: 1, definitiva: 2, cierre: 3}, ult = new Map();
+    cuotas.filter((r) => r.mercado === '1X2' && !r.dudosa && r.salio != null && r.p_implicita != null).forEach((r) => {
+      const k = [r.jornada, r.n, r.seleccion].join('|'), o = ult.get(k);
+      if (!o || orden[r.momento] > orden[o.momento]) ult.set(k, r);
+    });
+    const rs = [...ult.values()], fila = (tramo, g) => ({tramo, n: g.length, esperado: d3.mean(g, (r) => r.p_implicita), real: d3.mean(g, (r) => (r.salio ? 1 : 0))});
+    const out = d3.range(5).map((t) => fila(t * 20 + '-' + (t * 20 + 20) + ' %', rs.filter((r) => Math.min(Math.floor(r.p_implicita * 5), 4) === t))).filter((f) => f.n);
+    const x = rs.filter((r) => r.seleccion === 'X');
+    if (x.length) out.push(fila('Solo la X', x));
+    return out;
+  },
+});
+dash.draw('cuotas-calib', (el) => {
+  const c = dash.data('cuotas_calibracion');
+  if (c.status !== 'ok' || !c.data || !c.data.length) { el.replaceChildren(QL.el('div', 'ql-msg', c.status === 'loading' ? 'Cargando…' : 'Aún no hay cuotas con resultado.')); return; }
+  const t = QL.el('table', 'ql-t'), hd = QL.el('tr');
+  ['Tramo bet365', 'Selecciones', 'Prob. bet365', 'Salió de verdad', 'Diferencia'].forEach((h) => hd.append(QL.el('th', null, h)));
+  t.append(hd);
+  c.data.forEach((r, i) => {
+    const tr = QL.el('tr'), d = r.real - r.esperado;
+    tr.append(QL.el('td', null, r.tramo), QL.el('td', 'num', String(r.n)), QL.el('td', 'num', QL.pc1(r.esperado)), QL.el('td', 'num', QL.pc1(r.real)), QL.el('td', 'num ' + (d > 0 ? 'ql-ok' : d < 0 ? 'ql-bad' : ''), QL.sgn(d, QL.pc1)));
+    t.append(tr);
+  });
+  el.replaceChildren(t);
+});
 dash.draw('apuestas-lista', (el) => {
   const ap = dash.data('apuestas');
   if (ap.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', ap.status === 'loading' ? 'Cargando…' : 'No se pudieron cargar las apuestas.')); return; }
