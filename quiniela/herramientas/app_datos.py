@@ -120,7 +120,7 @@ def jornada_desde_json(ruta):
         "estado": "Cerrada" if len(jugados) == 14 else d.get("estado", "Pronóstico"),
         "boleto": ("16 columnas más probables, sin la del público" if "público" in elegido["nombre"]
                    else elegido["nombre"].split(" · ", 1)[1][:1].upper() + elegido["nombre"].split(" · ", 1)[1][1:]),
-        "coste": (d.get("jugado_real") or {}).get("coste") or d.get("coste_total_previsto") or d.get("coste_jugado", d.get("presupuesto", 12)),
+        "coste": (d.get("jugado_real") or {}).get("coste") or (d.get("boleto_mesa") or {}).get("coste") or d.get("coste_total_previsto") or d.get("coste_jugado", d.get("presupuesto", 12)),
         "p14": round(qc.al_menos(dist, 14), 6), "p13": round(qc.al_menos(dist, 13), 5),
         "p10": round(qc.al_menos(dist, 10), 4),
         "mejor_columna": d.get("mejor_columna"),

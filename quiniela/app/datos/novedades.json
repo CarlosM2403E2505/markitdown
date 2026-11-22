@@ -263,6 +263,14 @@
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
    "aporte": "Regla R7: 18 € es un tope. Se juega por bloques de 8 sencillas y solo se añade uno si su P(≥13) por euro es al menos la mitad de la del primero. J24: de la 17 a la 24 rinden el 48 % → 16 sencillas, 12 €, P(≥13) 2,64 %, pérdida esperada 5,40 € (antes 8,10 €).",
    "cambia": "Sí"
+  },
+  {
+   "id": "app-sync-2211",
+   "fecha": "2026-11-22 17:40",
+   "jornada": "24",
+   "origen": "Hilo «Actualizar la app»",
+   "aporte": "App al día con lo último de la mesa: J24 con 16 sencillas y 12 € (R7) en Jornadas y Partidos; el coste ahora sale del boleto de la mesa.",
+   "cambia": "No"
   }
  ]
 }
