@@ -271,6 +271,14 @@
    "origen": "Hilo «Actualizar la app»",
    "aporte": "App al día con lo último de la mesa: J24 con 16 sencillas y 12 € (R7) en Jornadas y Partidos; el coste ahora sale del boleto de la mesa.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-forma-favorito",
+   "fecha": "2026-11-22 19:00",
+   "jornada": 24,
+   "origen": "Hilo J24 (regla de forma del favorito)",
+   "aporte": "forma_favorito puesta en los 14 partidos (5 últimos de liga hasta el 21/11). Mala forma: Man City (4 puntos) y Crystal Palace (0). City deja de ser fijo en todas las columnas; ahora los fijos comunes son Madrid, Betis y Barça. Boleto: 16 sencillas, 12 €, P(≥13) 2,62 %, Pleno M-1. La X sigue según probabilidades (7 de 16 columnas sin X); no se sube solo por premio (§1.12).",
+   "cambia": "Sí"
   }
  ]
 }
