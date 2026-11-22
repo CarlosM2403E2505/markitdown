@@ -1,6 +1,6 @@
 """¿Está bien calibrado el modelo en partidos UEFA (Champions, Europa League, Conference)?
 Hilo «técnicas de IA y casas» (22/11/2026): las webs de predicción (PrediBall, Opta) dan a los
-grandes favoritos de la J24 bastante más que la mesa (Real Madrid–PSV 82 % frente a 69 %).
+grandes favoritos de la J24 bastante más que la mesa (Real Madrid–PSV 82 % frente a 67 %).
 Walk-forward mensual (sep. 2024 → nov. 2026), solo fase principal (sin previas), fuera de muestra.
 Prueba temperatura T y factor de empate; elige con 2024-25 + 2025-26 y valida con 2026-27.
 Uso (desde quiniela/): python3 modelo/calibracion_uefa.py  [--cache datos/calibracion_uefa.json]"""
