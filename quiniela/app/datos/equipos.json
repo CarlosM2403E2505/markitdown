@@ -18,7 +18,7 @@
    "defensa": 84,
    "proximo": "Sabah – Barcelona",
    "proximo_n": 6,
-   "p_ganar_proximo": 0.9107,
+   "p_ganar_proximo": 0.9011,
    "bajas": null,
    "dudas": 1,
    "elo": null
@@ -41,7 +41,7 @@
    "defensa": 78,
    "proximo": "Real Madrid – PSV",
    "proximo_n": 4,
-   "p_ganar_proximo": 0.6883,
+   "p_ganar_proximo": 0.6708,
    "bajas": 1,
    "dudas": 1,
    "elo": null
@@ -64,7 +64,7 @@
    "defensa": 79,
    "proximo": "Atlético – Viking",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.7337,
+   "p_ganar_proximo": 0.7397,
    "bajas": 4,
    "dudas": 2,
    "elo": null
@@ -87,7 +87,7 @@
    "defensa": 93,
    "proximo": "Slovan Bratislava – Betis",
    "proximo_n": 5,
-   "p_ganar_proximo": 0.6997,
+   "p_ganar_proximo": 0.7379,
    "bajas": 1,
    "dudas": 1,
    "elo": null
@@ -110,7 +110,7 @@
    "defensa": 106,
    "proximo": "Crystal Palace – Real Sociedad",
    "proximo_n": 14,
-   "p_ganar_proximo": 0.2493,
+   "p_ganar_proximo": 0.2582,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -179,7 +179,7 @@
    "defensa": 103,
    "proximo": "Slavia Praga – Villarreal",
    "proximo_n": 7,
-   "p_ganar_proximo": 0.4738,
+   "p_ganar_proximo": 0.461,
    "bajas": 1,
    "dudas": null,
    "elo": null
@@ -248,7 +248,7 @@
    "defensa": 93,
    "proximo": "Celta – Bournemouth",
    "proximo_n": 13,
-   "p_ganar_proximo": 0.2581,
+   "p_ganar_proximo": 0.2512,
    "bajas": 2,
    "dudas": null,
    "elo": null

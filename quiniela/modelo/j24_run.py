@@ -17,7 +17,7 @@ af = imp("af", os.path.join(H, "afinado.py"))
 sys.path.insert(0, os.path.join(Q, "herramientas"))
 bu = imp("bu", os.path.join(Q, "herramientas", "boleto_unico.py")); qc = bu.qc
 
-DS = sys.argv[1] if len(sys.argv) > 1 else os.path.join(Q, "datos", "euro_j23.json")
+DS = sys.argv[1] if len(sys.argv) > 1 else os.path.join(Q, "datos", "euro_j24.json")
 AJ = json.loads(sys.argv[2]) if len(sys.argv) > 2 else {}   # {"n": [f_local, f_visitante, "motivo (clase, fuente)"]}
 REF = date(2026, 11, 24)
 OUT = os.path.join(Q, "jornadas", "j24", "j24.json")
