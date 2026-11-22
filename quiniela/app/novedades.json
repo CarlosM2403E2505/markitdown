@@ -241,8 +241,16 @@
    "cambia": "No"
   },
   {
-   "id": "favoritos-que-fallan",
+   "id": "cuotas-historicas",
    "fecha": "2026-11-22 04:10",
+   "jornada": 24,
+   "origen": "Cuotas históricas (Carlos)",
+   "aporte": "16.862 partidos de Primera y Segunda 2005-2026 con cuota y resultado. En Primera, con favorito de 65 % o más, la X sale 3 puntos menos de lo que dicen las cuotas (igual en las dos mitades); probado en la mesa, X ×0,82 en ese tramo mejora fuera de muestra y se aplica. No cambia la J24 (Champions).",
+   "cambia": "No"
+  },
+  {
+   "id": "favoritos-que-fallan",
+   "fecha": "2026-11-22 04:15",
    "jornada": 24,
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
    "aporte": "877 favoritos del 45-70 %: la mesa los clava (daba 53 %, ganaron 53-54 %). Europa entre semana y la forma del rival no separan. Solo la mala forma del favorito (≤5 de 15, como el Rayo) se repite: nueva regla, un tramo más de cobertura en R3 (no cambia la probabilidad).",
