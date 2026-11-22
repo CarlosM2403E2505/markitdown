@@ -159,6 +159,14 @@
    "origen": "Hilo J24 (revisión tras Rayo 0-1 Valencia)",
    "aporte": "Rayo 54 % en la mesa frente a 49 % de las casas: se apilaron EURO_F ×1,12 y bajas ×1,03. En Primera la mesa iba por encima de las casas en Alavés (+16), Osasuna (+12) y Rayo (+5). EURO_F y T=1,15 se revalidan con la J23 antes de la J25.",
    "cambia": "No"
+  },
+  {
+   "id": "j23-revision-mesa",
+   "fecha": "2026-11-22 02:45",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "Sábado (Flashscore): Rayo 0-1, Tenerife 0-0, Pleno 1-1 acertado; ninguna columna sin fallo, el 14 ya no es posible. En 843 partidos de Primera, con el favorito al 45-55 % la X salía 35 % y se daba 26 %: nueva X templada ×1,20 (mejora las tres temporadas). EURO_F y T se mantienen. Nueva regla de fijos protegidos (<55 %) en las sencillas (proteccion.py). Flashscore ya es fuente de resultados y alineaciones.",
+   "cambia": "Sí"
   }
  ]
 }

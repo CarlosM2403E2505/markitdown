@@ -1,0 +1,68 @@
+{
+ "es.1": {
+  "n_seleccion": 346,
+  "n_validacion": 497,
+  "elegido": {
+   "lo": 0.45,
+   "hi": 0.6,
+   "k": 1.5
+  },
+  "seleccion": {
+   "vigente": 0.9887,
+   "nuevo": 0.9809
+  },
+  "validacion": {
+   "vigente": 0.956,
+   "nuevo": 0.952
+  },
+  "validacion_por_temporada": {
+   "2025-26": {
+    "vigente": 0.9673,
+    "nuevo": 0.9608
+   },
+   "2026-27": {
+    "vigente": 0.9195,
+    "nuevo": 0.9232
+   }
+  },
+  "tramo_validacion": {
+   "n": 216,
+   "daba_X": 0.251,
+   "nuevo_X": 0.335,
+   "salio_X": 0.315
+  }
+ },
+ "es.2": {
+  "n_seleccion": 435,
+  "n_validacion": 594,
+  "elegido": {
+   "lo": 0.4,
+   "hi": 0.6,
+   "k": 1.1
+  },
+  "seleccion": {
+   "vigente": 1.0402,
+   "nuevo": 1.0398
+  },
+  "validacion": {
+   "vigente": 1.0504,
+   "nuevo": 1.0512
+  },
+  "validacion_por_temporada": {
+   "2025-26": {
+    "vigente": 1.0644,
+    "nuevo": 1.0647
+   },
+   "2026-27": {
+    "vigente": 1.0066,
+    "nuevo": 1.0092
+   }
+  },
+  "tramo_validacion": {
+   "n": 460,
+   "daba_X": 0.248,
+   "nuevo_X": 0.266,
+   "salio_X": 0.246
+  }
+ }
+}

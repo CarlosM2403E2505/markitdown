@@ -45,6 +45,8 @@ Léelo entero antes de cada jornada. Método completo: `prompt-maestro-v8.md` (a
 | Aplicado 17/11 | Afinado de favoritos de Primera (T=1,15) | `analisis/afinado-favoritos.md` |
 | Aplicado 18/11 | **EURO_F 1,12** en Primera (equipo con partido UEFA en 120 días frente a uno sin él) | `analisis/pendientes-primera.md` (validación 0,9930→0,9887; prueba 0,9600→0,9560) |
 | Rechazado 18/11 | Empates ×1,20 en igualados de Primera | Empeora la validación |
+| Aplicado 22/11 | **X templada en Primera**: favorito entre 45 y 60 % → X ×1,20 (después de T). EURO_F y T=1,15 se revalidaron y se mantienen | `analisis/revision-j23.md` (843 partidos: con el favorito al 45-55 % salía X 35 % y se daba 26 %; mejora las tres temporadas). En Segunda no mejora |
+| Regla 22/11 | **Fijos protegidos**: fijo del boleto con P < 55 % → su 2.º signo en ≥ 2 sencillas y el 3.º en 1 si pasa del 20 %. Pleno: el marcador más probable en todas (repartirlo baja la probabilidad) | `herramientas/proteccion.py` (J23: P(≥13) 4,07 → 4,36 %) |
 | Aplicado 20/11 | **Liga F T = 0,70** (aplanar): favoritos ≥ 70 % daban 79 % y ganaban 54 % | `analisis/ligaf-favoritos.md` (log-loss 1,0827→1,0495; mejora en las dos mitades). Revisar con más jornadas |
 
 ## 4. Cómo se ejecuta (desde `quiniela/`)
@@ -54,6 +56,7 @@ python3 modelo/j21_selecciones.py          # partido 10 y Pleno con el modelo de
 cd herramientas && python3 quiniela_calc.py boleto ../jornadas/j21/j21.json   # signos, sistemas, Pleno y sueltas
 python3 herramientas/boletos_oficiales.py jornadas/j21/j21.json 20 4   # 4 boletos oficiales (directas y reducidas) de ≤ 20 €
 python3 herramientas/cartera.py jornadas/j21/j21.json 16,16,8,8         # cartera de columnas sueltas sin repetir
+python3 herramientas/proteccion.py jornadas/j24/j24.json 8 --guardar    # sencillas con fijos < 55 % protegidos (obligatorio desde el 22/11)
 python3 herramientas/importar_navegador.py jornadas/j21/j21.json navegador.json
 python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 ```
@@ -109,5 +112,6 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 | www.uefa.com | ❌ La conexión se corta (es cosa de la web) | ESPN o Wikipedia |
 | github.com (web) | ❌ Hace falta añadir el repositorio a la sesión | Usar raw.githubusercontent.com |
 
+- **Flashscore.es (22/11/2026) ✅ desde el navegador integrado de la app de escritorio de Carlos** (herramientas `Claude_Browser`, con el ordenador encendido): resultados de LaLiga, Segunda y Liga F, crónica, xG, estadísticas y **alineaciones** de cada partido. En la lista de resultados se leen con JS (`.event__match`). Desde el contenedor sigue bloqueado. Es la fuente principal de resultados y onces confirmados.
 - **WebSearch** (buscador) funciona aparte, para noticias.
 - **Para abrir más webs:** menú del entorno en la barra del título de la sesión → Editar → Network access → Allowed domains (https://code.claude.com/docs/en/cloud-environments#network-access).

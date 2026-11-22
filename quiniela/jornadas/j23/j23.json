@@ -37,7 +37,10 @@
     0.432,
     0.29,
     0.278
-   ]
+   ],
+   "resultado": "1",
+   "marcador": "3-1",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
   },
   {
    "n": 2,
@@ -69,7 +72,10 @@
     0.494,
     0.271,
     0.235
-   ]
+   ],
+   "resultado": "2",
+   "marcador": "0-1",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
   },
   {
    "n": 3,
@@ -101,7 +107,10 @@
     0.8172,
     0.1219,
     0.0609
-   ]
+   ],
+   "resultado": "1",
+   "marcador": "2-1",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
   },
   {
    "n": 4,
@@ -263,7 +272,10 @@
     0.28,
     0.288,
     0.432
-   ]
+   ],
+   "resultado": "X",
+   "marcador": "0-0",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
   },
   {
    "n": 9,
@@ -359,7 +371,10 @@
     0.104,
     0.196,
     0.7
-   ]
+   ],
+   "resultado": "2",
+   "marcador": "1-3",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
   },
   {
    "n": 12,
@@ -512,7 +527,9 @@
    0.322,
    0.276,
    0.402
-  ]
+  ],
+  "resultado_pleno": "1-1",
+  "fuente_resultado": "Flashscore.es y Soccerway, 22/11/2026"
  },
  "boleto_provisional": {
   "tipo": "Directa 3 dobles + 1 triple (DEFINITIVA)",

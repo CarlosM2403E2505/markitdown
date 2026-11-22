@@ -5,12 +5,21 @@
   - Segunda y el resto: T=1,05 (afilar NO mejora; en Segunda los favoritos no rinden de más).
   - Liga F: T=0,70 (20/11/2026, `analisis/ligaf-favoritos.md`): los favoritos claros estaban largos
     (daban 79 %, ganaban 54 %); aplanar mejora el log-loss en las dos mitades de la temporada.
+  - X templada en Primera (22/11/2026, tras la J23, `analisis/revision-j23.md`, `modelo/x_templados.py`):
+    con el favorito entre 45 y 60 % la mesa daba X 25 % y salía 31-35 %. X x1,20 en ese tramo
+    (después de T) mejora el log-loss en las tres temporadas (0,9887->0,9831; 0,9673->0,9626;
+    0,9195->0,9193). En Segunda no mejora (no se aplica).
 Uso: from afinado import afinar_comp; p2 = afinar_comp(p, 'es.1')."""
 T_POR_COMP = {"es.1": 1.15, "ligaf": 0.70}
 T_DEFECTO = 1.05
+X_TEMPLADA = {"es.1": (0.45, 0.60, 1.20)}  # (desde, hasta, factor de la X)
 
 
 def afinar_comp(p, competicion=None):
     T = T_POR_COMP.get((competicion or "").split(":")[0], T_DEFECTO)
     q = [v ** T for v in p]; z = sum(q)
-    return [v / z for v in q]
+    p = [v / z for v in q]
+    xt = X_TEMPLADA.get((competicion or "").split(":")[0])
+    if xt and xt[0] <= max(p) < xt[1]:
+        p[1] *= xt[2]; z = sum(p); p = [v / z for v in p]
+    return p

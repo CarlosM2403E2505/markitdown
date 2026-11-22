@@ -8,7 +8,7 @@ class TestAfinado(unittest.TestCase):
         for c in ("es.1", "es.2", None):
             self.assertAlmostEqual(sum(af.afinar_comp([0.5, 0.3, 0.2], c)), 1.0, places=9)
     def test_primera_afila_mas_que_segunda(self):
-        p = [0.55, 0.25, 0.20]
+        p = [0.68, 0.20, 0.12]  # fuera del tramo de X templada (45-60 %)
         f1 = af.afinar_comp(p, "es.1:2026-27")[0]; f2 = af.afinar_comp(p, "es.2:2026-27")[0]
         self.assertGreater(f1, f2)  # Primera sube más al favorito
     def test_defecto_es_105(self):
@@ -17,6 +17,20 @@ class TestAfinado(unittest.TestCase):
     def test_ligaf_aplana(self):
         p = [0.75, 0.15, 0.10]
         self.assertLess(af.afinar_comp(p, "ligaf")[0], 0.75)
+
+    def test_x_templada_primera(self):
+        p = [0.52, 0.26, 0.22]
+        q = af.afinar_comp(p, "es.1")
+        r = [v ** 1.15 for v in p]; r = [v / sum(r) for v in r]
+        self.assertGreater(q[1], r[1])          # sube la X
+        self.assertAlmostEqual(sum(q), 1.0, places=9)
+    def test_x_templada_no_toca_claros_ni_segunda(self):
+        p = [0.80, 0.12, 0.08]
+        r = [v ** 1.15 for v in p]; r = [v / sum(r) for v in r]
+        self.assertEqual([round(v, 9) for v in af.afinar_comp(p, "es.1")], [round(v, 9) for v in r])
+        p2 = [0.52, 0.26, 0.22]
+        r2 = [v ** 1.05 for v in p2]; r2 = [v / sum(r2) for v in r2]
+        self.assertEqual([round(v, 9) for v in af.afinar_comp(p2, "es.2")], [round(v, 9) for v in r2])
 
 
 if __name__ == "__main__":

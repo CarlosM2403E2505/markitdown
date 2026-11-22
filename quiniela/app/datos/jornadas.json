@@ -159,7 +159,7 @@
    "sueltas_total": null,
    "sueltas_p_todas": 0.6361,
    "pleno_jugado": "1-1",
-   "pleno_resultado": null,
+   "pleno_resultado": "1-1",
    "log_loss_modelo": null,
    "log_loss_mercado": null,
    "log_loss_publico": null,
