@@ -191,6 +191,14 @@
    "origen": "Hilo J24 (Flashscore con Claude in Chrome)",
    "aporte": "488 resultados nuevos de 14 ligas (hasta el 21/11, con Eslovaquia, Azerbaiyán y Ucrania 2026/27) en datos/euro_j24.json. Precios recalculados: cambios de 3 puntos como mucho. Boleto de la mesa (reglas R1-R6): 24 sencillas optimizadas, 18 €, P(14) 1/305, P(≥13) 3,45 %, Pleno M-1.",
    "cambia": "Sí"
+  },
+  {
+   "id": "j24-definitivos-provisional",
+   "fecha": "2026-11-22 03:40",
+   "jornada": 24,
+   "origen": "Hilo J24",
+   "aporte": "La página fijada «Pronósticos definitivos» muestra ya la J24 provisional (casas · mesa · 24 sencillas en 3 boletos de 8, 18 €, Pleno M-1). Se irá actualizando hasta el definitivo del mar 24/11 18:45.",
+   "cambia": "No"
   }
  ]
 }

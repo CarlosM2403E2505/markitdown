@@ -15,16 +15,22 @@ de verdad), se archivan esas columnas y ese Pleno, que son los que se contrastan
 import json
 import os
 import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 RAIZ = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 ARCHIVO = os.path.join(RAIZ, "app", "definitivos.json")
 
 
 def filas_jornada(d):
-    boleto = d["boleto_provisional"]
-    cols = list(d.get("columnas_individuales") or [])
-    if d.get("columna_novena"):
-        cols.append(d["columna_novena"])
+    import boleto_mesa_compat as bmc
+    bm = bmc.desde_boleto_mesa(d)
+    if bm:
+        boleto, cols = bm[0], list(bm[1])
+    else:
+        boleto = d["boleto_provisional"]
+        cols = list(d.get("columnas_individuales") or [])
+        if d.get("columna_novena"):
+            cols.append(d["columna_novena"])
     j = d["jornada"]
     real = d.get("jugado_real")
     etiquetas = [f"C{i + 1}" for i in range(len(cols))]

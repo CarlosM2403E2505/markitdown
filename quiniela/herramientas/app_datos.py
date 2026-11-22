@@ -47,6 +47,10 @@ def jornada_desde_json(ruta):
         if (d.get("pleno") or {}).get("mercado_1x2"):
             mercado[d["pleno"].get("n", 15)] = d["pleno"]["mercado_1x2"]
     forzados = qc._forzados(partidos)
+    if d.get("boleto_mesa") and not d.get("columnas_jugadas"):
+        d["columnas_jugadas"] = list(d["boleto_mesa"]["columnas"]); d["boleto_jugado"] = d["boleto_mesa"]["formato"]
+        d.setdefault("boleto_provisional", {})["pleno"] = d["boleto_mesa"]["pleno"]
+        d["columnas_individuales"] = []
     if d.get("columnas_jugadas"):
         # El boleto que de verdad se jugó (o se recomendó al congelar), no uno recalculado.
         cols = d["columnas_jugadas"]
