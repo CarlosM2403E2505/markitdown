@@ -167,6 +167,14 @@
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
    "aporte": "Sábado (Flashscore): Rayo 0-1, Tenerife 0-0, Pleno 1-1 acertado; ninguna columna sin fallo, el 14 ya no es posible. En 843 partidos de Primera, con el favorito al 45-55 % la X salía 35 % y se daba 26 %: nueva X templada ×1,20 (mejora las tres temporadas). EURO_F y T se mantienen. Nueva regla de fijos protegidos (<55 %) en las sencillas (proteccion.py). Flashscore ya es fuente de resultados y alineaciones.",
    "cambia": "Sí"
+  },
+  {
+   "id": "j24-proteccion",
+   "fecha": "2026-11-22 02:20",
+   "jornada": 24,
+   "origen": "Hilo J24 (reglas nuevas tras la J23)",
+   "aporte": "El 18 € pasa a directa 3 dobles + 1 triple (24 sencillas no caben en un boleto). 8 sencillas con fijos protegidos (Brujas–Liverpool, Celta–Bournemouth, Palace–Real Sociedad). 32 columnas, 24 €: P(14) 1/173, P(≥13) 4,4 %. Pleno M-1 en todas.",
+   "cambia": "Sí"
   }
  ]
 }

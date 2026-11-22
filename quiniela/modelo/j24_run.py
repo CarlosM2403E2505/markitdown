@@ -65,7 +65,8 @@ d = {"jornada": 24, "fechas": "24–26/11/2026", "tipo": "Europea (Champions J5 
      "datos_modelo": {"fichero": os.path.basename(DS), "hasta": max(x["date"] for x in ms),
                       "huecos": "Ligas extranjeras hasta ~1/11 (Eredivisie y Chequia hasta 20/09); sin liga eslovaca, azerí ni ucraniana 2026/27"}}
 probs = [r["p"] for r in partidos]
-cands = bu.candidatos(probs, 18); el = bu.elegir(cands, "p13")
+cands = [c for c in bu.candidatos(probs, 18) if not (c["nombre"].endswith("sencillas más probables") and len(c["columnas"]) > 8)]
+el = bu.elegir(cands, "p13")   # tiene que caber en un boleto (§1.5): fuera las >8 sencillas
 S = "1X2"
 signos = {}
 for k, r in enumerate(partidos):
@@ -75,8 +76,10 @@ for k, r in enumerate(partidos):
 d["boleto_provisional"] = {"tipo": el["nombre"], "apuestas": len(el["columnas"]), "coste": el["coste"], "signos": signos,
                            "pleno": pleno["marcador_mesa"], "p14": round(el["p14"], 6), "p13": round(el["p13"], 4)}
 dentro = set(el["columnas"])
-comp = [c for c in qc.columnas_mas_probables(probs, 60) if c not in dentro][:8]
-d["columnas_individuales"] = comp
+pr = imp("pr", os.path.join(Q, "herramientas", "proteccion.py"))
+comp, deb, pend = pr.proteger(d, signos, 8)   # regla de fijos protegidos (22/11)
+d["columnas_individuales"] = comp; d["columnas_protegidas"] = comp
+d["fijos_debiles"] = [{"n": f["i"] + 1, "fijo": f["fijo"], "cubre": f["alt"], "motivo": f["motivo"]} for f in deb]
 todas = sorted(dentro | set(comp))
 dist = qc.simular_columnas(probs, todas, n=400000)
 d["conjunto"] = {"columnas": len(todas), "coste": 0.75 * len(todas), "p14": round(qc.al_menos(dist, 14), 6),

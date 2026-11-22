@@ -74,3 +74,29 @@
 - Lista oficial SELAE; Europa League (Celta–Bournemouth, Palace–Real Sociedad) sin confirmar.
 - Resultados del 7-9/11 y 21-23/11 de las ligas (necesita las webs de §6 o el entorno «markitdown»).
 - Bajas A/B (Investigador), cuotas 1X2 de bet365 (Compilador), Risk Manager y Auditor antes del definitivo.
+
+## v1.1 · dom 22/11/2026 02:20 · reglas nuevas tras la J23 (provisional)
+
+- **Un solo boleto:** 24 sencillas no caben en un boleto (§1.5); el 18 € pasa a **directa 3 dobles + 1 triple** (P(14) 1/218, P(≥13) 3,65 %).
+- **Fijos protegidos** (`proteccion.py`, regla del 22/11): fijos débiles Brujas–Liverpool (2, 52 %), Celta–Bournemouth (2, 50 %) y Palace–Real Sociedad (1, 53 %); su 2.º signo va en 2 sencillas y el 3.º en 1.
+- **Pleno M-1 en todas las apuestas.** X templada: solo Primera, no aplica.
+
+| # | Partido | Boleto 18 € |
+|---|---|---|
+| 1 | Arsenal – Dortmund | 1 |
+| 2 | Feyenoord – Oporto | 1 X 2 |
+| 3 | Man. City – Nápoles | 1 |
+| 4 | Real Madrid – PSV | 1 |
+| 5 | Slovan Bratislava – Betis | 2 |
+| 6 | Sabah – Barcelona | 2 |
+| 7 | Slavia Praga – Villarreal | 1 2 |
+| 8 | Brujas – Liverpool | 2 |
+| 9 | Inter – Stuttgart | 1 |
+| 10 | PSG – Roma | 1 |
+| 11 | Shakhtar – Fenerbahçe | 1 2 |
+| 12 | Sporting CP – Man. United | 1 2 |
+| 13 | Celta – Bournemouth | 2 |
+| 14 | Crystal Palace – Real Sociedad | 1 |
+
+Sencillas protegidas: 12112221112112, 121122211121X2, 1211222X11211X, 12112221112121, 12112222112111, 12112222112X21, 1211222211X121, 121122221121X1.
+Conjunto: 32 columnas, 24.00 € · P(14) 1/173 · P(≥13) 4.43 % · P(≥12) 16.2 %. X cubiertas en el boleto: 1.
