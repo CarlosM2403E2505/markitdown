@@ -817,7 +817,6 @@
    "1X112222112122",
    "1X112222111121",
    "121122211121X1",
-   "1211222211X122",
    "121122X2112222",
    "X21122X2112121",
    "111122XX112121",
@@ -825,14 +824,15 @@
    "1111221211112X",
    "12112222111212",
    "1X1122X2111222",
-   "1211221221111X",
-   "X21122212X111X",
-   "X1112221221112"
+   "1X1122221X122X",
+   "1211222221XXX2",
+   "X1112221X1121X",
+   "X11122112X121X"
   ],
   "pleno": "M-1",
-  "p14": 0.003424,
-  "p13": 0.0333,
-  "p12": 0.1396,
+  "p14": 0.003336,
+  "p13": 0.0325,
+  "p12": 0.1373,
   "comparativa": [
    {
     "formato": "Directa 3 dobles + 1 triple · 24 ap.",
@@ -922,10 +922,10 @@
     "formato": "Directa 4 dobles + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.00379,
-    "p13": 0.03245,
-    "p12": 0.13625,
-    "p10": 0.5944,
+    "p14": 0.003789,
+    "p13": 0.0324,
+    "p12": 0.1361,
+    "p10": 0.5937,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1072,10 +1072,10 @@
     "formato": "Reducida 2 (7 dobles) + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.00281,
+    "p14": 0.002807,
     "p13": 0.03225,
-    "p12": 0.1413,
-    "p10": 0.62645,
+    "p12": 0.1407,
+    "p10": 0.6226,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1125,10 +1125,10 @@
     "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.002408,
-    "p13": 0.03195,
-    "p12": 0.1453,
-    "p10": 0.64525,
+    "p14": 0.002406,
+    "p13": 0.03205,
+    "p12": 0.14655,
+    "p10": 0.65055,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1136,10 +1136,10 @@
     "formato": "24 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.003424,
-    "p13": 0.03335,
-    "p12": 0.13955,
-    "p10": 0.62145,
+    "p14": 0.003336,
+    "p13": 0.0325,
+    "p12": 0.1373,
+    "p10": 0.62305,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1161,7 +1161,7 @@
      [
       2,
       0.833,
-      0.75
+      0.6
      ],
      [
       7,
@@ -1189,6 +1189,11 @@
       0.6
      ],
      [
+      12,
+      0.75,
+      0.6
+     ],
+     [
       13,
       0.875,
       0.75
@@ -1201,6 +1206,6 @@
     ]
    }
   ],
-  "nota": "23/11 Carlos pide subir P(≥13): la mesa juega el tope de 18 € (--presupuesto 18), 24 sencillas con R3."
+  "nota": "23/11: 18 € a petición de Carlos; R3b aplicada (Feyenoord–Oporto y Sporting–United al 60 %). Columnas ordenadas por acierto esperado."
  }
 }
