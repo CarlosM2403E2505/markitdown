@@ -800,9 +800,9 @@
  },
  "boleto_mesa": {
   "reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026)",
-  "formato": "16 sencillas optimizadas",
-  "apuestas": 16,
-  "coste": 12.0,
+  "formato": "24 sencillas optimizadas",
+  "apuestas": 24,
+  "coste": 18.0,
   "columnas": [
    "12112222112121",
    "12112212112121",
@@ -814,18 +814,68 @@
    "121122211121X1",
    "12112212112221",
    "1211222211X121",
+   "121122221X2121",
+   "111122XX112121",
    "1X112222111121",
+   "11112211112111",
    "121122X2111121",
+   "12112222112221",
+   "X21122X2112121",
    "1111221211112X",
-   "1111222211X112",
-   "X21122112X121X",
-   "X2112211X2X112"
+   "1211222211X122",
+   "1X1122X2111222",
+   "12112222111212",
+   "1211221221111X",
+   "X21122212X111X",
+   "X1112221221112"
   ],
   "pleno": "M-1",
-  "p14": 0.002558,
-  "p13": 0.0259,
-  "p12": 0.1152,
+  "p14": 0.003424,
+  "p13": 0.0333,
+  "p12": 0.1396,
   "comparativa": [
+   {
+    "formato": "Directa 3 dobles + 1 triple · 24 ap.",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.004664,
+    "p13": 0.03475,
+    "p12": 0.13435,
+    "p10": 0.56375,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.9
+     ],
+     [
+      11,
+      1.0,
+      0.6
+     ],
+     [
+      14,
+      1.0,
+      0.6
+     ]
+    ]
+   },
    {
     "formato": "Directa 4 dobles · 16 ap.",
     "apuestas": 16,
@@ -869,6 +919,129 @@
     ]
    },
    {
+    "formato": "Directa 4 dobles + 8 sencillas optimizadas",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.00379,
+    "p13": 0.03245,
+    "p12": 0.13625,
+    "p10": 0.5944,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      11,
+      0.667,
+      0.6
+     ],
+     [
+      14,
+      0.667,
+      0.6
+     ]
+    ]
+   },
+   {
+    "formato": "Directa 1 doble + 2 triples · 18 ap.",
+    "apuestas": 18,
+    "coste": 13.5,
+    "p14": 0.004003,
+    "p13": 0.0338,
+    "p12": 0.12695,
+    "p10": 0.5568,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.9
+     ],
+     [
+      11,
+      1.0,
+      0.6
+     ],
+     [
+      13,
+      1.0,
+      0.75
+     ],
+     [
+      14,
+      1.0,
+      0.6
+     ]
+    ]
+   },
+   {
+    "formato": "Directa 1 doble + 2 triples + 6 sencillas optimizadas",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.004052,
+    "p13": 0.03485,
+    "p12": 0.13695,
+    "p10": 0.617,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      11,
+      0.75,
+      0.6
+     ],
+     [
+      14,
+      0.75,
+      0.6
+     ]
+    ]
+   },
+   {
+    "formato": "Reducida 3 (3 dobles + 3 triples) · 24 ap.",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.002011,
+    "p13": 0.02695,
+    "p12": 0.12955,
+    "p10": 0.60305,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      11,
+      1.0,
+      0.6
+     ]
+    ]
+   },
+   {
     "formato": "Reducida 2 (7 dobles) · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
@@ -894,6 +1067,17 @@
       0.9
      ]
     ]
+   },
+   {
+    "formato": "Reducida 2 (7 dobles) + 8 sencillas optimizadas",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.00281,
+    "p13": 0.03225,
+    "p12": 0.1413,
+    "p10": 0.62645,
+    "cumple_R3": true,
+    "incumple": []
    },
    {
     "formato": "Reducida 1 (4 triples) · 9 ap.",
@@ -938,35 +1122,35 @@
     ]
    },
    {
-    "formato": "Reducida 1 (4 triples) + 7 sencillas optimizadas",
-    "apuestas": 16,
-    "coste": 12.0,
-    "p14": 0.001399,
-    "p13": 0.02135,
-    "p12": 0.11405,
-    "p10": 0.60135,
+    "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.002408,
+    "p13": 0.03195,
+    "p12": 0.1453,
+    "p10": 0.64525,
     "cumple_R3": true,
     "incumple": []
    },
    {
-    "formato": "16 sencillas optimizadas",
-    "apuestas": 16,
-    "coste": 12.0,
-    "p14": 0.002558,
-    "p13": 0.02585,
-    "p12": 0.11515,
-    "p10": 0.56305,
+    "formato": "24 sencillas optimizadas",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.003424,
+    "p13": 0.03335,
+    "p12": 0.13955,
+    "p10": 0.62145,
     "cumple_R3": true,
     "incumple": []
    },
    {
-    "formato": "16 sencillas más probables",
-    "apuestas": 16,
-    "coste": 12.0,
-    "p14": 0.004261,
-    "p13": 0.0325,
-    "p12": 0.1173,
-    "p10": 0.5103,
+    "formato": "24 sencillas más probables",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.005723,
+    "p13": 0.0396,
+    "p12": 0.13535,
+    "p10": 0.5465,
     "cumple_R3": false,
     "incumple": [
      [
@@ -975,13 +1159,18 @@
       0.9
      ],
      [
+      2,
+      0.833,
+      0.75
+     ],
+     [
       7,
-      0.75,
+      0.667,
       0.6
      ],
      [
       8,
-      0.938,
+      0.875,
       0.75
      ],
      [
@@ -991,12 +1180,12 @@
      ],
      [
       10,
-      1.0,
+      0.917,
       0.9
      ],
      [
       11,
-      0.875,
+      0.917,
       0.6
      ],
      [
@@ -1006,11 +1195,12 @@
      ],
      [
       14,
-      0.938,
+      0.917,
       0.6
      ]
     ]
    }
-  ]
+  ],
+  "nota": "23/11 Carlos pide subir P(≥13): la mesa juega el tope de 18 € (--presupuesto 18), 24 sencillas con R3."
  }
 }
