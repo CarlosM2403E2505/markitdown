@@ -108,3 +108,15 @@ Conjunto: 32 columnas, 24.00 € · P(14) 1/173 · P(≥13) 4.43 % · P(≥12) 1
 - **Matemático:** fijos en las 24 columnas: City (66 %), Madrid (67 %), Betis (74 %) y Barça (90 %). Son los únicos que pasan del 65 %, así que R3 los deja. El resto de partidos varían entre columnas.
 - **Risk Manager:** los 4 fijos aciertan juntos solo el 29 % de las veces. En el 71 % restante ninguna columna puede hacer 14, y es el riesgo principal del boleto. La X está poco cubierta: se esperan 2,7 empates, pero 7 de las 24 columnas no llevan ninguna X y solo 3 llevan dos o más. Es coherente con la UEFA (empates ×1,0), pero hay que vigilarlo cuando entren las cuotas.
 - **Físico:** todos juegan este fin de semana, y los descansos reales (3-5 días) se sabrán el lunes. Las fechas del 7-8/11 que salen en Inter, Barça, Liverpool, Sporting y otros son partidos del domingo 22 que aún no están en los datos, no descansos largos. Se revisa el lunes a las 11:00.
+
+## v3 (lun 23/11 12:00): investigación del lunes
+
+- **Lista:** confirmada con la estimación LAE de quiniela15 (mismo orden, incluidos Celta–Bournemouth y Palace–Real Sociedad, jue 18:45 y 21:00).
+- **Datos:** resultados del domingo 22/11 (Premier, Bundesliga, LaLiga, Serie A; Portugal sin jornada). Precios con cambios de 1 punto o menos.
+- **Cuotas de control:** mediana de 13 casas de Flashscore, en `cuotas_flashscore_2311.json`. La lectura parcial de bet365 de Carlos coincide. Las casas ven a los grandes más favoritos que la mesa: Madrid 81 frente a 68, PSG 69 frente a 58, City 76 frente a 70 y Atlético 86 frente a 75. Solo sirve de aviso (R5).
+- **Bajas (Flashscore, B):** ajustes en el 1, el 3, el 4 y el 7 (`bajas_2311.json`). Lo más gordo: al Nápoles le faltan Buongiorno, Di Lorenzo, Meret, Lobotka y Neres. Miércoles y jueves, sin publicar aún.
+- **Público LAE:** `publico_2311.json`. Analista de Premios (1 M€): el valor está en la X y el 2 del PSG–Roma y en el 2 del Shakhtar–Fenerbahçe. Es solo informativo (§1.12).
+- **Boleto (reglas R1-R7):** 16 sencillas, 12 €, P(≥13) 2,62 %, P(14) 1/426. Fijos: City, Madrid, Betis y Barça; los cuatro aciertan juntos el 32 % de las veces.
+- **Pleno:** M-1 (mesa 18 %, casas 20 %). Las casas ponen el M-0 por delante (30 %). Más de 3,5 goles: mesa 59 %, bet365 57 %.
+- **Amaños:** ninguna señal comprobada.
+- **Pendiente para el martes 16:30:** bajas de miércoles y jueves, alineaciones, Auditor y definitivo a las 18:45.
