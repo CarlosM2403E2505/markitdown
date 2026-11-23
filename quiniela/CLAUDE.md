@@ -68,6 +68,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **App «Control Quiniela»** (https://claude.ai/artifact/L7JpUFruxB2b3HLWoNRG6c):
   - se sube cada JSON de `app/datos/` **de uno en uno** (Artifact con `asset: true`);
   - después se actualiza `datasets/<nombre>` con ArtifactData (batch, con `if_version`).
+- **Pestaña Champions de la app (Carlos, desde Chrome, 23/11/2026): NO BORRAR.** La página de Control Quiniela ya trae la pestaña Champions (clasificación de la fase de liga, partidos de las 8 jornadas y los 89 partidos europeos de la Quiniela) y tres fuentes nuevas. Nunca republicar la página de la app desde una copia local: leerla antes (Artifact read) y conservar la pestaña y las fuentes. El volcado normal (assets + datasets) no la toca.
 - **Volcado obligatorio a la app (Carlos, 20/11/2026):** todo aporte de la mesa, de cualquier chat, hilo o tarea programada, termina en la app. Al acabar cada aporte:
   1. añade una fila a `app/novedades.json` (`id` único, `fecha` "AAAA-MM-DD HH:MM" hora peninsular, `jornada`, `origen`, `aporte` en una o dos frases, `cambia` "Sí"/"No" para el boleto);
   2. `python3 herramientas/app_datos.py` (necesita scipy);
