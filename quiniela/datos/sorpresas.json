@@ -1,0 +1,709 @@
+{
+ "n_esp": 7912,
+ "n_otras": 15773,
+ "base": {
+  "esp_2005_15": {
+   "n": 3476,
+   "sorpresa_dada": 0.466,
+   "sorpresa_real": 0.447,
+   "dif": -0.019,
+   "z": -2.3,
+   "x_dada": 0.267,
+   "x_real": 0.251
+  },
+  "esp_2016_26": {
+   "n": 4436,
+   "sorpresa_dada": 0.463,
+   "sorpresa_real": 0.44,
+   "dif": -0.023,
+   "z": -3.07,
+   "x_dada": 0.265,
+   "x_real": 0.263
+  },
+  "otras_ligas": {
+   "n": 15773,
+   "sorpresa_dada": 0.448,
+   "sorpresa_real": 0.437,
+   "dif": -0.011,
+   "z": -2.74,
+   "x_dada": 0.253,
+   "x_real": 0.249
+  }
+ },
+ "rasgos": {
+  "favorito local": {
+   "esp_2005_15": {
+    "n": 3128,
+    "sorpresa_dada": 0.468,
+    "sorpresa_real": 0.449,
+    "dif": -0.02,
+    "z": -2.21,
+    "x_dada": 0.268,
+    "x_real": 0.252,
+    "dif_rel": -0.001
+   },
+   "esp_2016_26": {
+    "n": 3726,
+    "sorpresa_dada": 0.464,
+    "sorpresa_real": 0.437,
+    "dif": -0.026,
+    "z": -3.23,
+    "x_dada": 0.267,
+    "x_real": 0.264,
+    "dif_rel": -0.003
+   },
+   "otras_ligas": {
+    "n": 11291,
+    "sorpresa_dada": 0.447,
+    "sorpresa_real": 0.438,
+    "dif": -0.009,
+    "z": -1.87,
+    "x_dada": 0.255,
+    "x_real": 0.256,
+    "dif_rel": 0.002
+   },
+   "estable": false
+  },
+  "favorito visitante": {
+   "esp_2005_15": {
+    "n": 348,
+    "sorpresa_dada": 0.448,
+    "sorpresa_real": 0.431,
+    "dif": -0.017,
+    "z": -0.63,
+    "x_dada": 0.254,
+    "x_real": 0.247,
+    "dif_rel": 0.002
+   },
+   "esp_2016_26": {
+    "n": 710,
+    "sorpresa_dada": 0.457,
+    "sorpresa_real": 0.452,
+    "dif": -0.005,
+    "z": -0.27,
+    "x_dada": 0.255,
+    "x_real": 0.255,
+    "dif_rel": 0.018
+   },
+   "otras_ligas": {
+    "n": 4482,
+    "sorpresa_dada": 0.45,
+    "sorpresa_real": 0.434,
+    "dif": -0.016,
+    "z": -2.18,
+    "x_dada": 0.249,
+    "x_real": 0.234,
+    "dif_rel": -0.005
+   },
+   "estable": false
+  },
+  "Segunda División": {
+   "esp_2005_15": {
+    "n": 1858,
+    "sorpresa_dada": 0.479,
+    "sorpresa_real": 0.454,
+    "dif": -0.025,
+    "z": -2.15,
+    "x_dada": 0.276,
+    "x_real": 0.264,
+    "dif_rel": -0.006
+   },
+   "esp_2016_26": {
+    "n": 2283,
+    "sorpresa_dada": 0.477,
+    "sorpresa_real": 0.455,
+    "dif": -0.023,
+    "z": -2.18,
+    "x_dada": 0.276,
+    "x_real": 0.275,
+    "dif_rel": 0.0
+   },
+   "otras_ligas": null,
+   "estable": false
+  },
+  "favorito 45-55 %": {
+   "esp_2005_15": {
+    "n": 2315,
+    "sorpresa_dada": 0.504,
+    "sorpresa_real": 0.482,
+    "dif": -0.023,
+    "z": -2.17,
+    "x_dada": 0.28,
+    "x_real": 0.27,
+    "dif_rel": -0.004
+   },
+   "esp_2016_26": {
+    "n": 2762,
+    "sorpresa_dada": 0.505,
+    "sorpresa_real": 0.49,
+    "dif": -0.015,
+    "z": -1.54,
+    "x_dada": 0.282,
+    "x_real": 0.287,
+    "dif_rel": 0.008
+   },
+   "otras_ligas": {
+    "n": 8436,
+    "sorpresa_dada": 0.504,
+    "sorpresa_real": 0.499,
+    "dif": -0.004,
+    "z": -0.8,
+    "x_dada": 0.273,
+    "x_real": 0.272,
+    "dif_rel": 0.007
+   },
+   "estable": false
+  },
+  "favorito 55-70 %": {
+   "esp_2005_15": {
+    "n": 1161,
+    "sorpresa_dada": 0.391,
+    "sorpresa_real": 0.378,
+    "dif": -0.013,
+    "z": -0.9,
+    "x_dada": 0.24,
+    "x_real": 0.214,
+    "dif_rel": 0.006
+   },
+   "esp_2016_26": {
+    "n": 1674,
+    "sorpresa_dada": 0.393,
+    "sorpresa_real": 0.357,
+    "dif": -0.036,
+    "z": -3.05,
+    "x_dada": 0.237,
+    "x_real": 0.222,
+    "dif_rel": -0.013
+   },
+   "otras_ligas": {
+    "n": 7337,
+    "sorpresa_dada": 0.383,
+    "sorpresa_real": 0.365,
+    "dif": -0.018,
+    "z": -3.21,
+    "x_dada": 0.23,
+    "x_real": 0.223,
+    "dif_rel": -0.007
+   },
+   "estable": false
+  },
+  "favorito en mala forma (≤5 de 15)": {
+   "esp_2005_15": {
+    "n": 948,
+    "sorpresa_dada": 0.482,
+    "sorpresa_real": 0.465,
+    "dif": -0.016,
+    "z": -1.02,
+    "x_dada": 0.271,
+    "x_real": 0.27,
+    "dif_rel": 0.003
+   },
+   "esp_2016_26": {
+    "n": 1127,
+    "sorpresa_dada": 0.482,
+    "sorpresa_real": 0.472,
+    "dif": -0.01,
+    "z": -0.65,
+    "x_dada": 0.274,
+    "x_real": 0.281,
+    "dif_rel": 0.013
+   },
+   "otras_ligas": {
+    "n": 3529,
+    "sorpresa_dada": 0.472,
+    "sorpresa_real": 0.45,
+    "dif": -0.021,
+    "z": -2.57,
+    "x_dada": 0.263,
+    "x_real": 0.252,
+    "dif_rel": -0.01
+   },
+   "estable": false
+  },
+  "favorito en gran forma (≥12 de 15)": {
+   "esp_2005_15": {
+    "n": 404,
+    "sorpresa_dada": 0.433,
+    "sorpresa_real": 0.399,
+    "dif": -0.034,
+    "z": -1.4,
+    "x_dada": 0.253,
+    "x_real": 0.225,
+    "dif_rel": -0.015
+   },
+   "esp_2016_26": {
+    "n": 571,
+    "sorpresa_dada": 0.429,
+    "sorpresa_real": 0.417,
+    "dif": -0.012,
+    "z": -0.59,
+    "x_dada": 0.247,
+    "x_real": 0.249,
+    "dif_rel": 0.011
+   },
+   "otras_ligas": {
+    "n": 2669,
+    "sorpresa_dada": 0.42,
+    "sorpresa_real": 0.419,
+    "dif": -0.001,
+    "z": -0.09,
+    "x_dada": 0.241,
+    "x_real": 0.241,
+    "dif_rel": 0.01
+   },
+   "estable": false
+  },
+  "rival en buena forma (≥10 de 15)": {
+   "esp_2005_15": {
+    "n": 422,
+    "sorpresa_dada": 0.469,
+    "sorpresa_real": 0.443,
+    "dif": -0.026,
+    "z": -1.07,
+    "x_dada": 0.265,
+    "x_real": 0.249,
+    "dif_rel": -0.007
+   },
+   "esp_2016_26": {
+    "n": 557,
+    "sorpresa_dada": 0.472,
+    "sorpresa_real": 0.469,
+    "dif": -0.003,
+    "z": -0.15,
+    "x_dada": 0.265,
+    "x_real": 0.291,
+    "dif_rel": 0.02
+   },
+   "otras_ligas": {
+    "n": 1949,
+    "sorpresa_dada": 0.452,
+    "sorpresa_real": 0.435,
+    "dif": -0.018,
+    "z": -1.57,
+    "x_dada": 0.252,
+    "x_real": 0.244,
+    "dif_rel": -0.007
+   },
+   "estable": false
+  },
+  "rival en mala forma (≤3 de 15)": {
+   "esp_2005_15": {
+    "n": 714,
+    "sorpresa_dada": 0.454,
+    "sorpresa_real": 0.434,
+    "dif": -0.02,
+    "z": -1.06,
+    "x_dada": 0.263,
+    "x_real": 0.237,
+    "dif_rel": -0.001
+   },
+   "esp_2016_26": {
+    "n": 890,
+    "sorpresa_dada": 0.455,
+    "sorpresa_real": 0.424,
+    "dif": -0.031,
+    "z": -1.87,
+    "x_dada": 0.263,
+    "x_real": 0.257,
+    "dif_rel": -0.008
+   },
+   "otras_ligas": {
+    "n": 3553,
+    "sorpresa_dada": 0.442,
+    "sorpresa_real": 0.437,
+    "dif": -0.005,
+    "z": -0.66,
+    "x_dada": 0.252,
+    "x_real": 0.244,
+    "dif_rel": 0.006
+   },
+   "estable": false
+  },
+  "Elo ve al favorito ≥8 pt por debajo de la cuota": {
+   "esp_2005_15": {
+    "n": 1110,
+    "sorpresa_dada": 0.45,
+    "sorpresa_real": 0.432,
+    "dif": -0.018,
+    "z": -1.2,
+    "x_dada": 0.26,
+    "x_real": 0.237,
+    "dif_rel": 0.001
+   },
+   "esp_2016_26": {
+    "n": 1310,
+    "sorpresa_dada": 0.456,
+    "sorpresa_real": 0.432,
+    "dif": -0.024,
+    "z": -1.76,
+    "x_dada": 0.264,
+    "x_real": 0.258,
+    "dif_rel": -0.001
+   },
+   "otras_ligas": {
+    "n": 4331,
+    "sorpresa_dada": 0.439,
+    "sorpresa_real": 0.419,
+    "dif": -0.021,
+    "z": -2.75,
+    "x_dada": 0.252,
+    "x_real": 0.237,
+    "dif_rel": -0.01
+   },
+   "estable": false
+  },
+  "Elo ve al favorito ≥8 pt por encima de la cuota": {
+   "esp_2005_15": {
+    "n": 30,
+    "sorpresa_dada": 0.507,
+    "sorpresa_real": 0.4,
+    "dif": -0.107,
+    "z": -1.17,
+    "x_dada": 0.275,
+    "x_real": 0.167,
+    "dif_rel": -0.088
+   },
+   "esp_2016_26": {
+    "n": 69,
+    "sorpresa_dada": 0.504,
+    "sorpresa_real": 0.58,
+    "dif": 0.076,
+    "z": 1.27,
+    "x_dada": 0.267,
+    "x_real": 0.304,
+    "dif_rel": 0.099
+   },
+   "otras_ligas": {
+    "n": 268,
+    "sorpresa_dada": 0.5,
+    "sorpresa_real": 0.515,
+    "dif": 0.015,
+    "z": 0.48,
+    "x_dada": 0.264,
+    "x_real": 0.272,
+    "dif_rel": 0.026
+   },
+   "estable": false
+  },
+  "pocos goles esperados (P over 2,5 < 45 %)": {
+   "esp_2005_15": {
+    "n": 1357,
+    "sorpresa_dada": 0.498,
+    "sorpresa_real": 0.496,
+    "dif": -0.002,
+    "z": -0.18,
+    "x_dada": 0.283,
+    "x_real": 0.292,
+    "dif_rel": 0.017
+   },
+   "esp_2016_26": {
+    "n": 2350,
+    "sorpresa_dada": 0.485,
+    "sorpresa_real": 0.481,
+    "dif": -0.005,
+    "z": -0.45,
+    "x_dada": 0.283,
+    "x_real": 0.293,
+    "dif_rel": 0.018
+   },
+   "otras_ligas": {
+    "n": 3093,
+    "sorpresa_dada": 0.49,
+    "sorpresa_real": 0.482,
+    "dif": -0.007,
+    "z": -0.81,
+    "x_dada": 0.283,
+    "x_real": 0.284,
+    "dif_rel": 0.004
+   },
+   "estable": false
+  },
+  "muchos goles esperados (P over 2,5 > 55 %)": {
+   "esp_2005_15": {
+    "n": 417,
+    "sorpresa_dada": 0.406,
+    "sorpresa_real": 0.357,
+    "dif": -0.048,
+    "z": -2.03,
+    "x_dada": 0.235,
+    "x_real": 0.189,
+    "dif_rel": -0.029
+   },
+   "esp_2016_26": {
+    "n": 551,
+    "sorpresa_dada": 0.407,
+    "sorpresa_real": 0.365,
+    "dif": -0.042,
+    "z": -2.05,
+    "x_dada": 0.222,
+    "x_real": 0.198,
+    "dif_rel": -0.019
+   },
+   "otras_ligas": {
+    "n": 4715,
+    "sorpresa_dada": 0.415,
+    "sorpresa_real": 0.403,
+    "dif": -0.012,
+    "z": -1.74,
+    "x_dada": 0.228,
+    "x_real": 0.222,
+    "dif_rel": -0.001
+   },
+   "estable": false
+  },
+  "favorito con ≤3 días de descanso": {
+   "esp_2005_15": {
+    "n": 180,
+    "sorpresa_dada": 0.441,
+    "sorpresa_real": 0.422,
+    "dif": -0.019,
+    "z": -0.51,
+    "x_dada": 0.255,
+    "x_real": 0.267,
+    "dif_rel": 0.0
+   },
+   "esp_2016_26": {
+    "n": 379,
+    "sorpresa_dada": 0.452,
+    "sorpresa_real": 0.409,
+    "dif": -0.043,
+    "z": -1.71,
+    "x_dada": 0.259,
+    "x_real": 0.248,
+    "dif_rel": -0.02
+   },
+   "otras_ligas": {
+    "n": 1559,
+    "sorpresa_dada": 0.443,
+    "sorpresa_real": 0.41,
+    "dif": -0.033,
+    "z": -2.68,
+    "x_dada": 0.252,
+    "x_real": 0.238,
+    "dif_rel": -0.022
+   },
+   "estable": false
+  },
+  "rival con ≥3 días más de descanso": {
+   "esp_2005_15": {
+    "n": 27,
+    "sorpresa_dada": 0.455,
+    "sorpresa_real": 0.481,
+    "dif": 0.027,
+    "z": 0.28,
+    "x_dada": 0.261,
+    "x_real": 0.111,
+    "dif_rel": 0.046
+   },
+   "esp_2016_26": {
+    "n": 90,
+    "sorpresa_dada": 0.466,
+    "sorpresa_real": 0.389,
+    "dif": -0.077,
+    "z": -1.48,
+    "x_dada": 0.266,
+    "x_real": 0.211,
+    "dif_rel": -0.054
+   },
+   "otras_ligas": {
+    "n": 399,
+    "sorpresa_dada": 0.444,
+    "sorpresa_real": 0.434,
+    "dif": -0.011,
+    "z": -0.44,
+    "x_dada": 0.253,
+    "x_real": 0.243,
+    "dif_rel": 0.0
+   },
+   "estable": false
+  },
+  "agosto-septiembre": {
+   "esp_2005_15": {
+    "n": 463,
+    "sorpresa_dada": 0.472,
+    "sorpresa_real": 0.423,
+    "dif": -0.048,
+    "z": -2.11,
+    "x_dada": 0.269,
+    "x_real": 0.218,
+    "dif_rel": -0.029
+   },
+   "esp_2016_26": {
+    "n": 724,
+    "sorpresa_dada": 0.467,
+    "sorpresa_real": 0.467,
+    "dif": -0.001,
+    "z": -0.03,
+    "x_dada": 0.267,
+    "x_real": 0.275,
+    "dif_rel": 0.022
+   },
+   "otras_ligas": {
+    "n": 2644,
+    "sorpresa_dada": 0.45,
+    "sorpresa_real": 0.446,
+    "dif": -0.004,
+    "z": -0.41,
+    "x_dada": 0.255,
+    "x_real": 0.251,
+    "dif_rel": 0.007
+   },
+   "estable": false
+  },
+  "abril-mayo (final de liga)": {
+   "esp_2005_15": {
+    "n": 919,
+    "sorpresa_dada": 0.456,
+    "sorpresa_real": 0.409,
+    "dif": -0.047,
+    "z": -2.9,
+    "x_dada": 0.262,
+    "x_real": 0.251,
+    "dif_rel": -0.028
+   },
+   "esp_2016_26": {
+    "n": 1067,
+    "sorpresa_dada": 0.457,
+    "sorpresa_real": 0.429,
+    "dif": -0.027,
+    "z": -1.81,
+    "x_dada": 0.259,
+    "x_real": 0.242,
+    "dif_rel": -0.004
+   },
+   "otras_ligas": {
+    "n": 3306,
+    "sorpresa_dada": 0.443,
+    "sorpresa_real": 0.428,
+    "dif": -0.015,
+    "z": -1.72,
+    "x_dada": 0.249,
+    "x_real": 0.236,
+    "dif_rel": -0.004
+   },
+   "estable": false
+  },
+  "mercado da X ≥ 29 %": {
+   "esp_2005_15": {
+    "n": 489,
+    "sorpresa_dada": 0.523,
+    "sorpresa_real": 0.507,
+    "dif": -0.016,
+    "z": -0.7,
+    "x_dada": 0.299,
+    "x_real": 0.323,
+    "dif_rel": 0.003
+   },
+   "esp_2016_26": {
+    "n": 881,
+    "sorpresa_dada": 0.523,
+    "sorpresa_real": 0.516,
+    "dif": -0.006,
+    "z": -0.38,
+    "x_dada": 0.301,
+    "x_real": 0.309,
+    "dif_rel": 0.017
+   },
+   "otras_ligas": {
+    "n": 1300,
+    "sorpresa_dada": 0.522,
+    "sorpresa_real": 0.512,
+    "dif": -0.01,
+    "z": -0.73,
+    "x_dada": 0.3,
+    "x_real": 0.299,
+    "dif_rel": 0.001
+   },
+   "estable": false
+  },
+  "favorito 45-55 % y pocos goles esperados": {
+   "esp_2005_15": {
+    "n": 1207,
+    "sorpresa_dada": 0.508,
+    "sorpresa_real": 0.503,
+    "dif": -0.006,
+    "z": -0.39,
+    "x_dada": 0.286,
+    "x_real": 0.296,
+    "dif_rel": 0.013
+   },
+   "esp_2016_26": {
+    "n": 1839,
+    "sorpresa_dada": 0.507,
+    "sorpresa_real": 0.506,
+    "dif": -0.001,
+    "z": -0.09,
+    "x_dada": 0.29,
+    "x_real": 0.302,
+    "dif_rel": 0.022
+   },
+   "otras_ligas": {
+    "n": 2495,
+    "sorpresa_dada": 0.508,
+    "sorpresa_real": 0.5,
+    "dif": -0.008,
+    "z": -0.77,
+    "x_dada": 0.288,
+    "x_real": 0.288,
+    "dif_rel": 0.003
+   },
+   "estable": false
+  },
+  "favorito 45-55 %, pocos goles y mala forma": {
+   "esp_2005_15": {
+    "n": 375,
+    "sorpresa_dada": 0.513,
+    "sorpresa_real": 0.528,
+    "dif": 0.015,
+    "z": 0.6,
+    "x_dada": 0.286,
+    "x_real": 0.331,
+    "dif_rel": 0.034
+   },
+   "esp_2016_26": {
+    "n": 572,
+    "sorpresa_dada": 0.509,
+    "sorpresa_real": 0.507,
+    "dif": -0.002,
+    "z": -0.09,
+    "x_dada": 0.29,
+    "x_real": 0.306,
+    "dif_rel": 0.021
+   },
+   "otras_ligas": {
+    "n": 835,
+    "sorpresa_dada": 0.51,
+    "sorpresa_real": 0.474,
+    "dif": -0.036,
+    "z": -2.07,
+    "x_dada": 0.289,
+    "x_real": 0.261,
+    "dif_rel": -0.025
+   },
+   "estable": false
+  }
+ },
+ "suben_sorpresa": [],
+ "por_n_alertas_esp": {
+  "0": {
+   "n": 7912,
+   "sorpresa_dada": 0.464,
+   "sorpresa_real": 0.443,
+   "dif": -0.021,
+   "z": -3.82,
+   "x_dada": 0.266,
+   "x_real": 0.258
+  }
+ },
+ "por_n_alertas_otras": {
+  "0": {
+   "n": 15773,
+   "sorpresa_dada": 0.448,
+   "sorpresa_real": 0.437,
+   "dif": -0.011,
+   "z": -2.74,
+   "x_dada": 0.253,
+   "x_real": 0.249
+  }
+ }
+}

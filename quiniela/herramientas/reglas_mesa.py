@@ -16,6 +16,10 @@ R3 DIVERSIDAD    En cada partido, el signo favorito puede ir como mucho en esta 
                  ninguna probabilidad: solo obligan a cubrir más ese partido). Lo mismo si el favorito llega en
                  mala forma: 5 puntos o menos en sus 5 últimos partidos de liga (campo `forma_favorito` del
                  partido, 0-15). Prueba: modelo/favoritos_fallan.py (es precaución de cobertura, no cambia la P).
+                 R3b (23/11, estudio de sorpresas): si hay mercado, el tramo se busca también con la probabilidad
+                 de las casas para el signo favorito de la mesa y se aplica el tope más estricto. Las casas están
+                 bien calibradas (7.912 favoritos 45-70 % de Primera y Segunda 2005-26: daban 46,4 % de sorpresa
+                 y salió 44,3 %), así que no es pesimismo. Prueba: modelo/sorpresas.py, analisis/sorpresas.md.
 R4 PLENO         El marcador más probable de la mesa en todas las apuestas.
 R5 PROBABILIDAD  Solo las de la mesa (modelo + noticias A/B). Las cuotas y el % del público no cambian nada.
 R6 FORMATOS      Se prueban siempre todos: directas, reducidas oficiales, directa + sencillas protegidas y
@@ -63,7 +67,10 @@ def topes_partidos(partidos):
     out = []
     for x in partidos:
         p = x["p"]; f = int(np.argmax(p)); m = x.get("mercado")
-        out.append(tope(max(p), (p[f] - m[f]) if m else 0.0, x.get("forma_favorito")))
+        t = tope(max(p), (p[f] - m[f]) if m else 0.0, x.get("forma_favorito"))
+        if m:  # R3b (23/11): el tramo se mira también con la P de las casas para ese signo; manda el más estricto
+            t = min(t, tope(m[f], 0.0, x.get("forma_favorito")))
+        out.append(t)
     return out
 
 
