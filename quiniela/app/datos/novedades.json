@@ -327,6 +327,14 @@
    "origen": "Apuestas bet365 (cuotas de Carlos, 09:53)",
    "aporte": "Con las cuotas de bet365 se descartan 6 apuestas que pagan por debajo de la mínima: Feyenoord–Oporto menos de 3,5 (1,53), Madrid–PSV más de 3,5 (1,50), Sporting–United menos de 3,5 (1,61), Celta–Bournemouth más de 2,5 (1,80), Palace–Real Sociedad más de 2,5 (1,57) y Atlético–Viking más de 3,5 (1,66). Ningún mercado leído tiene valor. Quedan 9 apuestas, 28.0 €.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-ap-bwin",
+   "fecha": "2026-11-23 13:40",
+   "jornada": 24,
+   "origen": "Apuestas bet365 (cuotas de bwin de Carlos, 13:29)",
+   "aporte": "Con las cuotas de bwin, 8 de las 9 apuestas que quedaban pagan muy por debajo de la mínima (1,41-1,63 frente a 1,80-2,02) y se descartan. Ningún mercado leído (bet365 + bwin) tiene valor. Queda 1: Slavia–Villarreal más de 2,5 (mín. 1,84), 3,5 €. Cuotas al histórico.",
+   "cambia": "No"
   }
  ]
 }
