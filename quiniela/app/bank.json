@@ -1,1 +1,14 @@
-{"inicial": 500.0, "inicio": "2026-11-20", "movimientos": []}
+{
+ "inicial": 500.0,
+ "inicio": "2026-11-20",
+ "movimientos": [
+  {
+   "id": "J23-D01",
+   "fecha": "2026-11-23",
+   "jornada": 23,
+   "concepto": "Alavés – Deportivo · 1 @ 2.3",
+   "stake": 10.0,
+   "importe": 13.0
+  }
+ ]
+}

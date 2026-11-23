@@ -31,3 +31,6 @@ Salen de un Poisson por partes (45 % de los goles antes del descanso) con los xG
 
 ## Aviso honesto
 Las casas ajustan las cuotas con más información que la mesa. Un +5 % calculado no es dinero seguro: con 2-5 apuestas por jornada, el saldo puede bajar varias jornadas seguidas aunque el método tenga ventaja. Por eso los topes son pequeños.
+
+## Bank automático (Carlos, 23/11/2026)
+La mesa lleva el bank sin preguntar: toda apuesta definitiva con una cuota leída (bet365; si no, otra casa española leída por Carlos) igual o mayor que su mínima se registra como «Apostada» a esa cuota y se liquida con el resultado (`liquidar`). Sin cuota leída que pase la mínima, no se registra. J23: solo Alavés gana @2,30, 10 € → ganada, +13 €.

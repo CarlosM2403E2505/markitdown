@@ -351,6 +351,14 @@
    "origen": "Hilo «Aprender del histórico de quinielas de Champions»",
    "aporte": "Histórico oficial LAE (91 jornadas europeas 2018-2026): X 19,6 % (fin de semana 26,7 %), grande en casa gana 78 % y fuera 63 %, premio de 14 mediano 20.479 €. Dos controles nuevos del Auditor; en la J24 marca Arsenal y PSG–Roma para protección.",
    "cambia": "No"
+  },
+  {
+   "id": "bank-j23",
+   "fecha": "2026-11-23 14:05",
+   "jornada": 23,
+   "origen": "Bank (regla de Carlos 23/11)",
+   "aporte": "Bank J23 asentado: solo Alavés gana @2,30 tenía cuota leída por encima de la mínima → apostada 10 € y ganada (3-1), +13 €. Saldo 513 €. Desde ahora la mesa registra y liquida sola las apuestas con cuota leída ≥ mínima.",
+   "cambia": "No"
   }
  ]
 }

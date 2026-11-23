@@ -9,6 +9,16 @@
    "importe": 500.0,
    "saldo": 500.0,
    "drawdown": 0.0
+  },
+  {
+   "n": 1,
+   "fecha": "2026-11-23",
+   "jornada": 23,
+   "concepto": "Alavés – Deportivo · 1 @ 2.3",
+   "stake": 10.0,
+   "importe": 13.0,
+   "saldo": 513.0,
+   "drawdown": 0.0
   }
  ]
 }
