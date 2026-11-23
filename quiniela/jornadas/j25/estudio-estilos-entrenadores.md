@@ -37,3 +37,17 @@ Origen: Carlos, hecho desde Claude in Chrome, pegado en el chat del proyecto el 
 - Horarios de Segunda: las fuentes no coinciden.
 - Cuotas de Segunda: estimaciones del autor, sin casas.
 - Cinco fijos del estudio por debajo del 65 %: Real Sociedad 46,7, Las Palmas 53, Athletic 53, Betis 55, Almería 58. Con la regla de fijos protegidos (P < 55 % → 2.º signo en ≥ 2 sencillas) la mesa los cubre dentro de los 18 €.
+
+## Veredicto de la mesa (23/11/2026, a petición de Carlos: «siempre que la mesa lo vea viable»)
+
+**¿Funciona el choque de estilos?** Hoy no se puede demostrar, y la mesa no lo mete como factor.
+- Donde el estudio cita una fuente, sus probabilidades son las del mercado o de un modelo: Málaga–Athletic 20/27/53 frente a Pinnacle sin margen 21/26/53; Elche–Atlético y Espanyol–Getafe copian el mercado; Celta y Real Sociedad copian modelos públicos. El ajuste por estilos queda en 0–2 puntos, por debajo del ruido.
+- En el resto de los partidos las cifras son estimaciones del autor sin fuente (Segunda entera), clase C. El modelo de la mesa con cuotas reales es mejor punto de partida.
+- Los propios estudios citados dicen que el estilo mueve poco y que pesan la plantilla, el campo y el contexto, que la mesa ya mide.
+
+**Lo que sí sirve y la mesa usa:**
+1. Investigador: comprobar con fuente A/B las bajas y los hechos citados (Owono sancionado 12 partidos, rotaciones tras la Champions de Atlético, Madrid, Barça y Villarreal, horarios de Segunda, cambios de banquillo recientes). Si se confirman, entran como bajas/ajustes normales.
+2. Efecto entrenador nuevo (Ceuta, Espanyol, Albacete, Osasuna): no se suma nada; la literatura dice que es regresión a la media. Sirve como aviso para no sobrerreaccionar a rachas cortas.
+3. Público: Betis 80 % al 1 y Mallorca–Castellón 44 % a la X. Lo usa el Analista de Premios cuando salga el % oficial de LAE (valor de la X del Betis), sin cambiar signos por sí solo.
+
+**Cómo se comprueba si funciona:** el estudio se guarda como pronóstico externo (`estudio_estilos.json`) y tras la J25 se puntúa con `herramientas/puntuar_externo.py jornadas/j25/j25.json jornadas/j25/estudio_estilos.json` (Brier frente a la mesa y el mercado). Peso 0 hasta que gane al mercado en 3 jornadas medidas; entonces entra con un 10 % en la mezcla. Lo mismo vale para el estudio de la J24 si se guarda en el mismo formato.
