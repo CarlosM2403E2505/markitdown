@@ -63,6 +63,17 @@ def filas_jornada(d):
                   "signos_boleto": boleto["pleno"],
                   "sencillas": " ".join(boleto["pleno"] for _ in cols),
                   "resultado": pl.get("resultado_pleno")})
+    # Fila final (Carlos, 23/11): acierto esperado por la mesa, de 0 a 100 (media de la prob. de lo marcado en los 15).
+    probs = {p["n"]: p["p"] for p in d["partidos"]}
+    pp = pm or 0.0
+
+    def acierto(sig):
+        return 100 * (sum(sum(v for x, v in zip("1X2", probs[n]) if x in sig[n - 1]) for n in range(1, 15)) + pp) / 15
+    ac = [acierto(c) for c in cols]
+    filas.append({**comun, "id": f"j{j}-16", "n": 16, "partido": "Acierto esperado por la mesa (%)",
+                  "casas": "", "mesa": f"media {sum(ac) / len(ac):.1f} · mejor {max(ac):.1f}".replace(".", ",") if ac else "",
+                  "signos_boleto": "" if (bm and bm[2]) else f'{acierto([boleto["signos"][str(n)].replace(" ", "") for n in range(1, 15)]):.0f}',
+                  "sencillas": " ".join(f"{v:.0f}" for v in ac), "resultado": None})
     return filas
 
 

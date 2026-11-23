@@ -102,7 +102,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **Rutina automática (el usuario pidió autonomía; foco en el Pleno):** viernes 20, 10:00 (revisión de bajas y % LAE) y sábado 21, 9:00 (revisión final y congelación, cierre a las 14:00). Solo análisis, repositorio y reporte; nunca sellar.
 - **La J22 queda cerrada por decisión del usuario** (19/11): no se persigue su escrutinio.
 
-- **Artefacto «Pronósticos definitivos»** (https://claude.ai/artifact/QZY62oAhw46ZKZ5u9NcqBT, fijado en la barra lateral): solo dos tablas (boleto de 18 € y sencillas), sin explicaciones; las explicaciones van en el chat. Se genera con `herramientas/pronosticos_definitivos.py <jornada.json> <salida.html> --estado provisional|definitivo --hora "..."`. **El definitivo se publica 2 h 15 min antes del primer partido** (J23: sábado 10:45), como nueva versión del mismo artefacto.
+- **Artefacto «Pronósticos definitivos»** (https://claude.ai/artifact/QZY62oAhw46ZKZ5u9NcqBT, fijado en la barra lateral): solo dos tablas (boleto de 18 € y sencillas), sin explicaciones; **al final de cada tabla, fila «Acierto esperado por la mesa (de 0 a 100)»** = media de la probabilidad de la mesa de lo marcado en los 15 (Carlos, 23/11; también en la app vía `archivar_definitivos.py`, fila 16); las explicaciones van en el chat. Se genera con `herramientas/pronosticos_definitivos.py <jornada.json> <salida.html> --estado provisional|definitivo --hora "..."`. **El definitivo se publica 2 h 15 min antes del primer partido** (J23: sábado 10:45), como nueva versión del mismo artefacto.
 
 ## 6. Fuentes desde el contenedor (probadas el 12/11/2026)
 | Web | Estado | Uso |

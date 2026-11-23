@@ -52,6 +52,7 @@ td.p,th.p{text-align:left;white-space:normal;min-width:150px}
 .box{display:inline-grid;place-items:center;width:28px;height:26px;border-radius:5px;background:var(--cell);color:var(--muted);font-weight:600;font-family:var(--f-display);font-size:16px}
 .box.on{background:var(--mark);color:var(--mark-ink)}
 .sg{font-family:var(--f-display);font-size:17px;font-weight:600}
+tr.acierto td{border-top:2px solid currentColor}
 tr.pleno td{border-top:2px solid var(--ink)}
 .score{font-family:var(--f-display);font-size:18px;font-weight:700;color:var(--mark)}
 th.grp{border-left:2px solid var(--line)}
@@ -94,6 +95,16 @@ def main():
     def td_pr(n, marcados):
         return '<td class="pr">' + ' · '.join(
             (f'<b>{round(v * 100)}</b>' if x in marcados else str(round(v * 100))) for x, v in zip('1X2', probs[n])) + '</td>'
+    pp = p_pleno or 0.0
+
+    def acierto(signos):
+        """% esperado de los 15 signos acertados (0-100): media de la prob. de la mesa de lo marcado."""
+        tot = sum(sum(v for x, v in zip('1X2', probs[n]) if x in signos[n - 1]) for n in range(1, 15)) + pp
+        return 100 * tot / 15
+
+    def tr_acierto(celdas, cols_antes=4):
+        return (f'<tr class="acierto"><td class="n">%</td><td class="p" colspan="{cols_antes - 1}">'
+                f'Acierto esperado por la mesa (de 0 a 100)</td>{celdas}</tr>')
     if bm:
         cols = bm[1]
     else:
@@ -118,6 +129,8 @@ def main():
           cells = "".join(f'<td><span class="box{" on" if x in s else ""}">{x}</span></td>' for x in "1X2")
           out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_casas(n)}{td_pr(n, s)}{cells}</tr>')
       out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno_casas}{td_pleno}<td colspan="3"><span class="score">{e(boleto["pleno"])}</span></td></tr>')
+      sb = [boleto["signos"][str(n)].split() for n in range(1, 15)]
+      out.append(tr_acierto(f'<td colspan="3"><b>{acierto(sb):.0f} %</b></td>'))
       out.append("</tbody></table></div></section>")
 
     # Tabla 2: sencillas
@@ -136,6 +149,12 @@ def main():
         out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_casas(n)}{td_pr(n, "")}{cells}</tr>')
     cells = "".join(f'<td class="{"c9" if (i and i % 8 == 0) else ""}"><span class="score">{e(boleto["pleno"])}</span></td>' for i in range(len(cols)))
     out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno_casas}{td_pleno}{cells}</tr>')
+    ac = [acierto(c) for c in cols]
+    cells = "".join(f'<td class="{"c9" if (i and i % 8 == 0) else ""}"><b>{v:.0f}</b></td>' for i, v in enumerate(ac))
+    out.append(tr_acierto(cells))
+    out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">Media de las {len(cols)} columnas: '
+               f'<b>{sum(ac) / len(ac):.1f} %</b> · mejor columna: <b>{max(ac):.1f} %</b></td>'.replace('.', ',') +
+               f'<td colspan="{len(cols)}"></td></tr>')
     out.append("</tbody></table></div></section></div>")
 
     open(a.salida, "w", encoding="utf-8").write("\n".join(out))
