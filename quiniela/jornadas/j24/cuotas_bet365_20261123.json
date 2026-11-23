@@ -1,0 +1,17 @@
+{"fuente": "bet365.es", "leido_el": "2026-11-23 09:53 (Claude in Chrome de Carlos)", "partidos": [
+  {"n": 1, "partido": "Arsenal – Dortmund", "cuotas": {"1X2|1": 1.36, "1X2|X": 5.00, "1X2|2": 8.00, "Goles 2.5|Más de 2,5": 1.66, "Goles 2.5|Menos de 2,5": 2.20}},
+  {"n": 2, "partido": "Feyenoord – Oporto", "cuotas": {"Goles 3.5|Más de 3,5": 2.50, "Goles 3.5|Menos de 3,5": 1.53}},
+  {"n": 3, "partido": "Man. City – Nápoles", "cuotas": {"Descanso 1X2|Descanso 1": 1.61, "Descanso 1X2|Descanso X": 3.00, "Descanso 1X2|Descanso 2": 8.00}},
+  {"n": 4, "partido": "Real Madrid – PSV", "cuotas": {"Goles 3.5|Más de 3,5": 1.50, "Goles 3.5|Menos de 3,5": 2.62}},
+  {"n": 5, "partido": "Slovan Bratislava – Betis", "cuotas": {"Descanso 1X2|Descanso 1": 8.50, "Descanso 1X2|Descanso X": 3.00, "Descanso 1X2|Descanso 2": 1.57}},
+  {"n": 6, "partido": "Sabah – Barcelona", "cuotas": {"Goles 4.5|Más de 4,5": 1.61, "Goles 4.5|Menos de 4,5": 2.30}},
+  {"n": 7, "partido": "Slavia Praga – Villarreal", "cuotas": {"Goles 3.5|Más de 3,5": 2.30, "Goles 3.5|Menos de 3,5": 1.61}},
+  {"n": 8, "partido": "Brujas – Liverpool", "cuotas": {}},
+  {"n": 9, "partido": "Inter – Stuttgart", "cuotas": {"Descanso 1X2|Descanso 1": 1.72, "Descanso 1X2|Descanso X": 3.10, "Descanso 1X2|Descanso 2": 5.50}},
+  {"n": 10, "partido": "PSG – Roma", "cuotas": {"1X2|1": 1.38, "1X2|X": 5.00, "1X2|2": 8.00}},
+  {"n": 11, "partido": "Shakhtar – Fenerbahçe", "cuotas": {"Goles 2.5|Más de 2,5": 1.72, "Goles 2.5|Menos de 2,5": 2.10, "1X2|1": 2.60, "1X2|X": 3.50, "1X2|2": 2.62}},
+  {"n": 12, "partido": "Sporting CP – Man. United", "cuotas": {"Goles 3.5|Más de 3,5": 2.30, "Goles 3.5|Menos de 3,5": 1.61}},
+  {"n": 13, "partido": "Celta – Bournemouth", "cuotas": {"Goles 2.5|Más de 2,5": 1.80, "Goles 2.5|Menos de 2,5": 2.00, "1X2|1": 3.60, "1X2|X": 3.40, "1X2|2": 1.90}},
+  {"n": 14, "partido": "Crystal Palace – Real Sociedad", "cuotas": {"Goles 2.5|Más de 2,5": 1.57, "Goles 2.5|Menos de 2,5": 2.37, "1X2|1": 2.00, "1X2|X": 3.60, "1X2|2": 3.10}},
+  {"n": 15, "partido": "Atlético – Viking", "cuotas": {"Goles 3.5|Más de 3,5": 1.66, "Goles 3.5|Menos de 3,5": 2.20}}
+]}
