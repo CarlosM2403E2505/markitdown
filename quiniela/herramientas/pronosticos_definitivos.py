@@ -157,6 +157,16 @@ def main():
     out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">Media de las {len(cols)} columnas: '
                f'<b>{sum(ac) / len(ac):.1f} %</b> · mejor columna: <b>{max(ac):.1f} %</b></td>'.replace('.', ',') +
                f'<td colspan="{len(cols)}"></td></tr>')
+    # Carlos 23/11: acierto esperado del boleto entero = aciertos de su mejor columna en cada simulación (14 partidos).
+    import numpy as np
+    rng = np.random.default_rng(24)
+    Pm = np.array([probs[n] for n in range(1, 15)], dtype=float)
+    Ysim = np.stack([rng.choice(3, 100000, p=r / r.sum()) for r in Pm], axis=1)
+    Cm = np.array([['1X2'.index(x) for x in c] for c in cols])
+    mejor = np.stack([(Ysim == c).sum(1) for c in Cm], axis=1).max(1)
+    out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">Boleto entero (mejor columna en cada caso): '
+               f'<b>{100 * mejor.mean() / 14:.0f} %</b> · {mejor.mean():.1f} de 14 · ≥12: {100 * (mejor >= 12).mean():.0f} % · ≥13: {100 * (mejor >= 13).mean():.1f} %</td>'.replace('.', ',') +
+               f'<td colspan="{len(cols)}"></td></tr>')
     out.append("</tbody></table></div></section></div>")
 
     open(a.salida, "w", encoding="utf-8").write("\n".join(out))
