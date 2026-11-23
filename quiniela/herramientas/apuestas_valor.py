@@ -335,17 +335,26 @@ def definitiva_sin_cuotas(ruta_j, ruta_mercado=None):
     bank = saldo_actual()
     elegidas = []
     for n in sorted({r["n"] for r in cand}):
-        r = dict(max((x for x in cand if x["n"] == n), key=lambda x: x["p_mesa"]))
         pm = merc.get(str(n))
+        k = {"1": 0, "X": 1, "2": 2}
+
+        def p_merc(x):
+            if not pm or x["mercado"] not in ("1X2", "Doble oportunidad", "Empate no apuesta"):
+                return None
+            if x["mercado"] == "1X2":
+                return pm[k[x["seleccion"]]]
+            if x["mercado"] == "Doble oportunidad":
+                return sum(pm[k[c]] for c in x["seleccion"])
+            return pm[0] / (pm[0] + pm[2]) if x["seleccion"] == "Local" else pm[2] / (pm[0] + pm[2])
+
+        # fuera las que el mercado ya paga por debajo de 1,80 (su cuota justa no llega)
+        vivas = [x for x in cand if x["n"] == n and (p_merc(x) is None or 1 / p_merc(x) >= CUOTA_MIN)]
+        if not vivas:
+            continue
+        r = dict(max(vivas, key=lambda x: x["p_mesa"]))
         p = r["p_mesa"]
-        if pm and r["mercado"] in ("1X2", "Doble oportunidad", "Empate no apuesta"):
-            k = {"1": 0, "X": 1, "2": 2}
-            if r["mercado"] == "1X2":
-                p_mkt = pm[k[r["seleccion"]]]
-            elif r["mercado"] == "Doble oportunidad":
-                p_mkt = sum(pm[k[c]] for c in r["seleccion"])
-            else:
-                p_mkt = pm[0] if r["seleccion"] == "Local" else pm[2]
+        if p_merc(r) is not None:
+            p_mkt = p_merc(r)
             p = PESO_MESA * p + (1 - PESO_MESA) * p_mkt
             r["p_mercado"] = round(p_mkt, 4)
             r["cuota_minima"] = round(max(r["cuota_minima"], (1 + VALOR_MIN) * (1 - r["p_nula"]) / p), 2)
