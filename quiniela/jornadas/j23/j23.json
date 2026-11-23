@@ -3,7 +3,7 @@
  "fechas": "21-22/11/2026",
  "tipo": "Liga (7 Primera + 3 Segunda + 4 Liga F); Pleno derbi Sevilla–Betis",
  "cierre": "sábado 21/11 14:00",
- "estado": "En juego (domingo 22/11, 19:05): 11 de 14 resultados + Pleno 1-1",
+ "estado": "Terminada (domingo 22/11): 14 de 14 resultados + Pleno 1-1",
  "presupuesto": 20,
  "lista": "quiniela15.com, 18/11/2026",
  "partidos": [
@@ -214,7 +214,10 @@
     0.5225,
     0.2653,
     0.2122
-   ]
+   ],
+   "resultado": "1",
+   "marcador": "1-0",
+   "fuente_resultado": "Flashscore.es, 23/11/2026"
   },
   {
    "n": 7,
@@ -246,7 +249,10 @@
     0.156,
     0.243,
     0.601
-   ]
+   ],
+   "resultado": "2",
+   "marcador": "0-3",
+   "fuente_resultado": "Flashscore.es, 23/11/2026"
   },
   {
    "n": 8,
@@ -348,7 +354,10 @@
     0.526,
     0.249,
     0.225
-   ]
+   ],
+   "resultado": "1",
+   "marcador": "2-1",
+   "fuente_resultado": "Flashscore.es, 23/11/2026"
   },
   {
    "n": 11,

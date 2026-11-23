@@ -295,6 +295,14 @@
    "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
    "aporte": "J23 fallo por fallo (10 de 14): Rayo (mala forma, ya regla R3) y Tenerife–Mallorca (varianza, X 26 %) tumbaron los fijos; Tenerife F–Madrid CFF iba camino de fallar con el aviso mesa 63 % frente a casas 52 % (ya regla R3). Sin reglas nuevas: las dos señales ya están codificadas para la J24.",
    "cambia": "No"
+  },
+  {
+   "id": "j23-cierre",
+   "fecha": "2026-11-23 07:30",
+   "jornada": 23,
+   "origen": "Hilo «Actualizar todo tras la J23»",
+   "aporte": "J23 cerrada: 1211112X212212 + Pleno 1-1. Boleto de 18 €: máximo 11 aciertos; sencillas: C7 11 y C2 10. Histórico de cuotas y definitivos con aciertos al día; bank sin cambios (500 €, ninguna apuesta marcada).",
+   "cambia": "No"
   }
  ]
 }

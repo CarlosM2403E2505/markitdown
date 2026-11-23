@@ -106,7 +106,7 @@
    "mesa": "64 · 21 · 15",
    "signos_boleto": "1",
    "sencillas": "1 1 1 1 1 1 2 X 1 X 2 1",
-   "resultado": null
+   "resultado": "1"
   },
   {
    "jornada": 23,
@@ -124,7 +124,7 @@
    "mesa": "25 · 29 · 46",
    "signos_boleto": "X2",
    "sencillas": "1 2 2 2 2 1 1 2 2 2 X 2",
-   "resultado": null
+   "resultado": "2"
   },
   {
    "jornada": 23,
@@ -178,7 +178,7 @@
    "mesa": "51 · 26 · 23",
    "signos_boleto": "1X",
    "sencillas": "1 1 1 1 2 1 2 1 1 2 2 1",
-   "resultado": null
+   "resultado": "1"
   },
   {
    "jornada": 23,

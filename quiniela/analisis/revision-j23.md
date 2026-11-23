@@ -74,3 +74,14 @@ Resultados del sábado 21/11 sacados de **Flashscore.es** (abierto desde el nave
 - Fallos del boleto: 2 de 10, los dos con fijos por debajo del 55 %. **Con las reglas de hoy (R3 y R7), ninguno de esos dos fijos iría en todas las columnas.**
 - No sale ninguna regla nueva comprobada: los dos avisos que se vieron (mala forma y desajuste con las casas) ya están codificados.
 - Pendientes: Osasuna – Málaga, Getafe – Atlético, Girona – Eibar y el final de Tenerife F – Madrid CFF.
+
+## 5. Cierre de la J23 (lunes 23/11, 07:30)
+
+Resultado final: **1211112X212212** + Pleno 1-1 (Flashscore). Faltaban Osasuna 1-0 Málaga (1, fijo ✅), Getafe 0-3 Atlético (2, doble X2 ✅), Girona 2-1 Eibar (1, doble 1X ✅) y Tenerife F 0-3 Madrid CFF (2, fijo ❌).
+
+- Boleto de 18 € (24 columnas): **máximo 11 aciertos** (1 columna con 11, 5 con 10, 9 con 9). Fallan en todas el 2 del Rayo, la X del Tenerife y el 2 del Tenerife F.
+- Sencillas: C7 con **11**, C2 con **10**; el resto 8-9. Premios según el escrutinio oficial.
+- Log-loss de los 13 partidos con cuota: mesa 0,851, casas 0,812. Las casas ganan esta jornada.
+- Histórico de cuotas (15 partidos): las X salieron un 13 % frente al 23 % esperado y ninguna opción por debajo del 20 % salió (10 casos). Muestra pequeña: no cambia reglas.
+- Conclusión de la mesa: los 3 fallos eran fijos por debajo del 55 % o con desajuste mesa-casas. Con R3 (mala forma y aviso de las casas) y la protección de fijos, ninguno iría hoy en todas las columnas. No sale regla nueva.
+- Bank: ninguna apuesta de la J23 se marcó como «Apostada», el bank sigue en 500 €. La propuesta D01 (Alavés 1 a 2,30, 10 €) habría ganado 13 €.
