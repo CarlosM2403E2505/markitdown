@@ -369,6 +369,14 @@
    "cambia": "Sí"
   },
   {
+   "id": "j25-01",
+   "fecha": "2026-11-23 17:40",
+   "jornada": 25,
+   "origen": "Carlos (estudio desde Claude in Chrome)",
+   "aporte": "Estudio de entrenadores y estilos de los 15 partidos de la J25 guardado (jornadas/j25). Se usa solo como ajuste de pocos puntos; su boleto de 54 € no se juega (tope 18 €).",
+   "cambia": "No"
+  },
+  {
    "id": "sorpresas-2026-11-23",
    "fecha": "2026-11-23 18:15",
    "jornada": 24,
