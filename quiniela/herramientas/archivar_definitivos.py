@@ -33,6 +33,9 @@ def filas_jornada(d):
             cols.append(d["columna_novena"])
     j = d["jornada"]
     real = d.get("jugado_real")
+    # Carlos 23/11: columnas de mayor a menor acierto esperado por la mesa (lo jugado de verdad conserva su orden).
+    _p = {p["n"]: p["p"] for p in d["partidos"]}
+    cols.sort(key=lambda c: -sum(sum(v for x, v in zip("1X2", _p[n]) if x in c[n - 1]) for n in range(1, 15)))
     etiquetas = [f"C{i + 1}" for i in range(len(cols))]
     titulo_s = None
     if real:

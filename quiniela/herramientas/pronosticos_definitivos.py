@@ -111,6 +111,8 @@ def main():
         cols = list(d["columnas_individuales"])
         if d.get("columna_novena"):
             cols.append(d["columna_novena"])
+    # Carlos 23/11: columnas de mayor a menor acierto esperado por la mesa.
+    cols = sorted(cols, key=lambda c: -acierto(c))
     n_bol1 = min(8, len(cols))
 
     out = [CSS, '<div class="wrap">']
