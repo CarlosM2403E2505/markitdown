@@ -383,6 +383,14 @@
    "origen": "Hilo «Estudiar la probabilidad de sorpresas»",
    "aporte": "Estudio de sorpresas (7.912 favoritos 45-70 % de Primera y Segunda + 15.773 de otras ligas): ningún factor sube la sorpresa por encima de la cuota. Regla R3b: el tope de columnas del favorito se mira también con la P de las casas y manda el más estricto (J24: Feyenoord–Oporto y Sporting CP–Man. United pasan del 75 al 60 %).",
    "cambia": "Sí"
+  },
+  {
+   "id": "j24-r3b-2311",
+   "fecha": "2026-11-23 17:55",
+   "jornada": 24,
+   "origen": "Mesa (R3b + estudio de estilos de Carlos)",
+   "aporte": "R3b aplicada a las 24 sencillas: Feyenoord–Oporto y Sporting–United bajan al 60 % de columnas. P(≥13) 3,33 → 3,25 %, P(14) 1/300. Estudio de estilos/banquillos: sin datos A/B ni efecto medido (cambio de entrenador +0,03 pts, solo aviso); no mueve precios. Pleno sigue M-1 (R4).",
+   "cambia": "Sí"
   }
  ]
 }
