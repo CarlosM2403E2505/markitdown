@@ -327,6 +327,14 @@
    "origen": "Apuestas bet365 (cuotas de Carlos, 09:53)",
    "aporte": "Con las cuotas de bet365 se descartan 6 apuestas que pagan por debajo de la mínima: Feyenoord–Oporto menos de 3,5 (1,53), Madrid–PSV más de 3,5 (1,50), Sporting–United menos de 3,5 (1,61), Celta–Bournemouth más de 2,5 (1,80), Palace–Real Sociedad más de 2,5 (1,57) y Atlético–Viking más de 3,5 (1,66). Ningún mercado leído tiene valor. Quedan 9 apuestas, 28.0 €.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-analisis-q15-comprobado",
+   "fecha": "2026-11-23 13:45",
+   "jornada": 24,
+   "origen": "Análisis de quiniela15 que pasó Carlos (comprobado por la mesa)",
+   "aporte": "Comprobado y aplicado: PSG sin Doué (cruzado), Barça sin Lamine Yamal y Shakhtar–Fenerbahçe en Stamford Bridge (sin ventaja de local). El United en crisis ya estaba en los datos (0-4 en Anfield). Sin confirmar: Kvaratskhelia y las bajas del United, que no se aplican. Boleto por reglas: 16 sencillas, 12 €, P(≥13) 2,59 %; en el 11 el 2 baja al 60 % de las columnas. Pleno M-1 (las casas dan aún más 0 goles al Viking que el público).",
+   "cambia": "Sí"
   }
  ]
 }
