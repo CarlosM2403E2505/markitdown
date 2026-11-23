@@ -391,6 +391,14 @@
    "origen": "Mesa (R3b + estudio de estilos de Carlos)",
    "aporte": "R3b aplicada a las 24 sencillas: Feyenoord–Oporto y Sporting–United bajan al 60 % de columnas. P(≥13) 3,33 → 3,25 %, P(14) 1/300. Estudio de estilos/banquillos: sin datos A/B ni efecto medido (cambio de entrenador +0,03 pts, solo aviso); no mueve precios. Pleno sigue M-1 (R4).",
    "cambia": "Sí"
+  },
+  {
+   "id": "j25-02",
+   "fecha": "2026-11-23 17:50",
+   "jornada": 25,
+   "origen": "Mesa (revisión del estudio de estilos)",
+   "aporte": "El choque de estilos no se puede medir: donde hay fuente el estudio copia al mercado. Peso 0 hasta ganar al mercado en 3 jornadas (puntuar_externo.py); se usan sus bajas y rotaciones tras comprobarlas y el % de público.",
+   "cambia": "No"
   }
  ]
 }
