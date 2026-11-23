@@ -13,26 +13,37 @@
    "competicion": "Champions",
    "dia": "mar 24, 21:00",
    "p": [
-    0.6209,
-    0.2115,
-    0.1676
+    0.6175,
+    0.2182,
+    0.1644
    ],
    "xg": [
-    1.912,
-    0.914
+    1.834,
+    0.858
    ],
    "mk": {
-    "Mas 2.5": 0.5368,
-    "Ambos marcan": 0.5106,
-    "Local marca": 0.8523,
-    "Visit marca": 0.5992,
-    "Menos 3.5": 0.6861
+    "Mas 2.5": 0.5045,
+    "Ambos marcan": 0.484,
+    "Local marca": 0.8403,
+    "Visit marca": 0.5761,
+    "Menos 3.5": 0.7158
    },
    "n_partidos_datos": [
     155,
     106
    ],
-   "forma_favorito": 13
+   "ajuste": [
+    0.96,
+    0.94,
+    "Saka y Zubimendi fuera; Dortmund sin Guirassy, Can y Chukwuemeka (B, Flashscore)"
+   ],
+   "forma_favorito": 13,
+   "mercado": [
+    0.6849,
+    0.189,
+    0.126
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 2,
@@ -40,26 +51,32 @@
    "competicion": "Champions",
    "dia": "mar 24, 21:00",
    "p": [
-    0.3116,
-    0.2253,
-    0.4631
+    0.3122,
+    0.2254,
+    0.4623
    ],
    "xg": [
     1.442,
-    1.78
+    1.778
    ],
    "mk": {
-    "Mas 2.5": 0.6247,
-    "Ambos marcan": 0.6348,
-    "Local marca": 0.7635,
-    "Visit marca": 0.8314,
-    "Menos 3.5": 0.5976
+    "Mas 2.5": 0.6242,
+    "Ambos marcan": 0.6345,
+    "Local marca": 0.7636,
+    "Visit marca": 0.8309,
+    "Menos 3.5": 0.5981
    },
    "n_partidos_datos": [
     99,
     93
    ],
-   "forma_favorito": 15
+   "forma_favorito": 15,
+   "mercado": [
+    0.3449,
+    0.2599,
+    0.3952
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 3,
@@ -67,26 +84,37 @@
    "competicion": "Champions",
    "dia": "mar 24, 21:00",
    "p": [
-    0.6637,
-    0.1851,
-    0.1512
+    0.7017,
+    0.1704,
+    0.1278
    ],
    "xg": [
-    2.215,
-    1.0
+    2.349,
+    0.947
    ],
    "mk": {
-    "Mas 2.5": 0.6232,
-    "Ambos marcan": 0.5632,
-    "Local marca": 0.8908,
-    "Visit marca": 0.6322,
-    "Menos 3.5": 0.5992
+    "Mas 2.5": 0.6397,
+    "Ambos marcan": 0.5535,
+    "Local marca": 0.9045,
+    "Visit marca": 0.612,
+    "Menos 3.5": 0.5813
    },
    "n_partidos_datos": [
     111,
     99
    ],
-   "forma_favorito": 4
+   "ajuste": [
+    1.06,
+    0.95,
+    "Nápoles sin Buongiorno, Di Lorenzo, Meret, Lobotka y Neres (B, Flashscore)"
+   ],
+   "forma_favorito": 4,
+   "mercado": [
+    0.7591,
+    0.146,
+    0.0949
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 4,
@@ -94,26 +122,37 @@
    "competicion": "Champions",
    "dia": "mar 24, 21:00",
    "p": [
-    0.6708,
-    0.1573,
-    0.1719
+    0.6756,
+    0.1586,
+    0.1658
    ],
    "xg": [
-    2.824,
-    1.475
+    2.763,
+    1.401
    ],
    "mk": {
-    "Mas 2.5": 0.8024,
-    "Ambos marcan": 0.7253,
-    "Local marca": 0.9406,
-    "Visit marca": 0.7711,
-    "Menos 3.5": 0.3775
+    "Mas 2.5": 0.7849,
+    "Ambos marcan": 0.706,
+    "Local marca": 0.9369,
+    "Visit marca": 0.7536,
+    "Menos 3.5": 0.4022
    },
    "n_partidos_datos": [
     120,
     105
    ],
-   "forma_favorito": 15
+   "ajuste": [
+    0.98,
+    0.95,
+    "Madrid sin Rodrygo ni Mendy; PSV sin Plea ni Schouten (B, Flashscore)"
+   ],
+   "forma_favorito": 15,
+   "mercado": [
+    0.8083,
+    0.1122,
+    0.0795
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 5,
@@ -121,26 +160,32 @@
    "competicion": "Champions",
    "dia": "mar 24, 21:00",
    "p": [
-    0.1118,
-    0.1502,
-    0.7379
+    0.1124,
+    0.1506,
+    0.737
    ],
    "xg": [
-    0.987,
-    2.614
+    0.989,
+    2.61
    ],
    "mk": {
-    "Mas 2.5": 0.6975,
-    "Ambos marcan": 0.5815,
-    "Local marca": 0.6275,
-    "Visit marca": 0.9268,
-    "Menos 3.5": 0.5149
+    "Mas 2.5": 0.697,
+    "Ambos marcan": 0.5818,
+    "Local marca": 0.6279,
+    "Visit marca": 0.9265,
+    "Menos 3.5": 0.5156
    },
    "n_partidos_datos": [
     71,
     109
    ],
-   "forma_favorito": 8
+   "forma_favorito": 8,
+   "mercado": [
+    0.0871,
+    0.1463,
+    0.7666
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 6,
@@ -148,26 +193,32 @@
    "competicion": "Champions",
    "dia": "mié 25, 18:45",
    "p": [
-    0.0348,
-    0.0641,
-    0.9011
+    0.0351,
+    0.0644,
+    0.9004
    ],
    "xg": [
-    0.881,
-    3.952
+    0.886,
+    3.951
    ],
    "mk": {
-    "Mas 2.5": 0.8601,
-    "Ambos marcan": 0.5742,
-    "Local marca": 0.5855,
+    "Mas 2.5": 0.8606,
+    "Ambos marcan": 0.5764,
+    "Local marca": 0.5878,
     "Visit marca": 0.9807,
-    "Menos 3.5": 0.2901
+    "Menos 3.5": 0.2894
    },
    "n_partidos_datos": [
     58,
-    118
+    119
    ],
-   "forma_favorito": 12
+   "forma_favorito": 12,
+   "mercado": [
+    0.0412,
+    0.0729,
+    0.8859
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 7,
@@ -175,26 +226,37 @@
    "competicion": "Champions",
    "dia": "mié 25, 18:45",
    "p": [
-    0.3144,
-    0.2246,
-    0.461
+    0.3281,
+    0.2324,
+    0.4395
    ],
    "xg": [
-    1.458,
-    1.786
+    1.426,
+    1.67
    ],
    "mk": {
-    "Mas 2.5": 0.6292,
-    "Ambos marcan": 0.6387,
-    "Local marca": 0.7672,
-    "Visit marca": 0.8324,
-    "Menos 3.5": 0.5927
+    "Mas 2.5": 0.5981,
+    "Ambos marcan": 0.6169,
+    "Local marca": 0.7598,
+    "Visit marca": 0.8118,
+    "Menos 3.5": 0.6256
    },
    "n_partidos_datos": [
     74,
-    100
+    101
    ],
-   "forma_favorito": 7
+   "ajuste": [
+    0.98,
+    0.93,
+    "Villarreal sin G. Moreno, Foyth y Akhomach; Slavia sin Chory (B, Flashscore)"
+   ],
+   "forma_favorito": 7,
+   "mercado": [
+    0.3077,
+    0.2502,
+    0.4422
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 8,
@@ -202,26 +264,32 @@
    "competicion": "Champions",
    "dia": "mié 25, 21:00",
    "p": [
-    0.2711,
-    0.2059,
-    0.5229
+    0.2632,
+    0.2043,
+    0.5325
    ],
    "xg": [
-    1.485,
-    2.079
+    1.467,
+    2.104
    ],
    "mk": {
-    "Mas 2.5": 0.6908,
-    "Ambos marcan": 0.6767,
-    "Local marca": 0.7734,
-    "Visit marca": 0.875,
-    "Menos 3.5": 0.5229
+    "Mas 2.5": 0.692,
+    "Ambos marcan": 0.6755,
+    "Local marca": 0.7693,
+    "Visit marca": 0.8781,
+    "Menos 3.5": 0.5215
    },
    "n_partidos_datos": [
     95,
-    111
+    112
    ],
-   "forma_favorito": 9
+   "forma_favorito": 12,
+   "mercado": [
+    0.2244,
+    0.2086,
+    0.567
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 9,
@@ -229,26 +297,32 @@
    "competicion": "Champions",
    "dia": "mié 25, 21:00",
    "p": [
-    0.6492,
-    0.1772,
-    0.1736
+    0.647,
+    0.1761,
+    0.1769
    ],
    "xg": [
-    2.417,
-    1.233
+    2.448,
+    1.27
    ],
    "mk": {
-    "Mas 2.5": 0.706,
-    "Ambos marcan": 0.6454,
-    "Local marca": 0.9108,
-    "Visit marca": 0.7086,
-    "Menos 3.5": 0.5047
+    "Mas 2.5": 0.7175,
+    "Ambos marcan": 0.6569,
+    "Local marca": 0.9135,
+    "Visit marca": 0.7191,
+    "Menos 3.5": 0.4905
    },
    "n_partidos_datos": [
-    115,
+    116,
     90
    ],
-   "forma_favorito": 12
+   "forma_favorito": 10,
+   "mercado": [
+    0.6738,
+    0.1715,
+    0.1546
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 10,
@@ -256,26 +330,32 @@
    "competicion": "Champions",
    "dia": "mié 25, 21:00",
    "p": [
-    0.5788,
-    0.2015,
-    0.2197
+    0.5806,
+    0.2012,
+    0.2182
    ],
    "xg": [
-    2.117,
-    1.275
+    2.12,
+    1.27
    ],
    "mk": {
-    "Mas 2.5": 0.6588,
-    "Ambos marcan": 0.6339,
-    "Local marca": 0.8796,
-    "Visit marca": 0.7206,
-    "Menos 3.5": 0.56
+    "Mas 2.5": 0.6582,
+    "Ambos marcan": 0.6328,
+    "Local marca": 0.88,
+    "Visit marca": 0.7191,
+    "Menos 3.5": 0.5606
    },
    "n_partidos_datos": [
     115,
     103
    ],
-   "forma_favorito": 15
+   "forma_favorito": 15,
+   "mercado": [
+    0.6915,
+    0.1742,
+    0.1343
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 11,
@@ -283,26 +363,32 @@
    "competicion": "Champions",
    "dia": "mié 25, 21:00",
    "p": [
-    0.3089,
+    0.3086,
     0.2364,
-    0.4547
+    0.455
    ],
    "xg": [
-    1.333,
+    1.331,
     1.647
    ],
    "mk": {
-    "Mas 2.5": 0.5723,
-    "Ambos marcan": 0.5945,
-    "Local marca": 0.7362,
+    "Mas 2.5": 0.5719,
+    "Ambos marcan": 0.5941,
+    "Local marca": 0.7359,
     "Visit marca": 0.8074,
-    "Menos 3.5": 0.6517
+    "Menos 3.5": 0.6521
    },
    "n_partidos_datos": [
     61,
     81
    ],
-   "forma_favorito": 7
+   "forma_favorito": 7,
+   "mercado": [
+    0.3613,
+    0.2704,
+    0.3683
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 12,
@@ -310,26 +396,32 @@
    "competicion": "Champions",
    "dia": "mié 25, 21:00",
    "p": [
-    0.4398,
-    0.223,
-    0.3372
+    0.4522,
+    0.2214,
+    0.3264
    ],
    "xg": [
-    1.78,
-    1.548
+    1.815,
+    1.53
    ],
    "mk": {
-    "Mas 2.5": 0.6461,
-    "Ambos marcan": 0.6545,
-    "Local marca": 0.8313,
-    "Visit marca": 0.7873,
-    "Menos 3.5": 0.5743
+    "Mas 2.5": 0.6495,
+    "Ambos marcan": 0.6558,
+    "Local marca": 0.8372,
+    "Visit marca": 0.7834,
+    "Menos 3.5": 0.5705
    },
    "n_partidos_datos": [
     104,
-    104
+    105
    ],
-   "forma_favorito": 10
+   "forma_favorito": 10,
+   "mercado": [
+    0.3779,
+    0.2588,
+    0.3633
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 13,
@@ -337,26 +429,32 @@
    "competicion": "Europa League",
    "dia": "jue 26, 18:45",
    "p": [
-    0.2512,
-    0.2381,
-    0.5107
+    0.2514,
+    0.2382,
+    0.5104
    ],
    "xg": [
     1.12,
-    1.669
+    1.668
    ],
    "mk": {
-    "Mas 2.5": 0.528,
-    "Ambos marcan": 0.5468,
+    "Mas 2.5": 0.5276,
+    "Ambos marcan": 0.5466,
     "Local marca": 0.6737,
-    "Visit marca": 0.8117,
-    "Menos 3.5": 0.6943
+    "Visit marca": 0.8114,
+    "Menos 3.5": 0.6946
    },
    "n_partidos_datos": [
     93,
     90
    ],
-   "forma_favorito": 15
+   "forma_favorito": 15,
+   "mercado": [
+    0.2516,
+    0.266,
+    0.4824
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   },
   {
    "n": 14,
@@ -364,26 +462,32 @@
    "competicion": "Europa League",
    "dia": "jue 26, 21:00",
    "p": [
-    0.5202,
-    0.2216,
-    0.2582
+    0.5267,
+    0.2195,
+    0.2538
    ],
    "xg": [
-    1.858,
-    1.274
+    1.885,
+    1.273
    ],
    "mk": {
-    "Mas 2.5": 0.6057,
-    "Ambos marcan": 0.6079,
-    "Local marca": 0.844,
-    "Visit marca": 0.7202,
-    "Menos 3.5": 0.6178
+    "Mas 2.5": 0.6113,
+    "Ambos marcan": 0.6107,
+    "Local marca": 0.8481,
+    "Visit marca": 0.7201,
+    "Menos 3.5": 0.6119
    },
    "n_partidos_datos": [
     92,
-    104
+    105
    ],
-   "forma_favorito": 0
+   "forma_favorito": 0,
+   "mercado": [
+    0.46,
+    0.2505,
+    0.2895
+   ],
+   "mercado_fuente": "Flashscore.es, comparador de cuotas (mediana de 13 casas), lun 23/11 ~10:30"
   }
  ],
  "pleno": {
@@ -392,47 +496,71 @@
   "competicion": "Champions",
   "dia": "mié 25, 21:00",
   "p": [
-   0.7397,
-   0.1399,
-   0.1204
+   0.7468,
+   0.137,
+   0.1161
   ],
   "xg": [
-   2.909,
-   1.199
+   2.943,
+   1.189
   ],
   "mk": {
-   "Mas 2.5": 0.7772,
-   "Ambos marcan": 0.6605,
-   "Local marca": 0.9454,
-   "Visit marca": 0.6986,
-   "Menos 3.5": 0.4128
+   "Mas 2.5": 0.7806,
+   "Ambos marcan": 0.6589,
+   "Local marca": 0.9473,
+   "Visit marca": 0.6955,
+   "Menos 3.5": 0.4082
   },
   "n_partidos_datos": [
-   117,
+   118,
    54
   ],
   "cats": {
-   "0-0": 0.0271,
-   "0-1": 0.03123,
-   "0-2": 0.01954,
-   "0-M": 0.01373,
-   "1-0": 0.05781,
-   "1-1": 0.06843,
-   "1-2": 0.04169,
-   "1-M": 0.02369,
-   "2-0": 0.06946,
-   "2-1": 0.08394,
-   "2-2": 0.05067,
-   "2-M": 0.02795,
-   "M-0": 0.14827,
-   "M-1": 0.17441,
-   "M-2": 0.10441,
-   "M-M": 0.05769
+   "0-0": 0.02678,
+   "0-1": 0.03071,
+   "0-2": 0.01916,
+   "0-M": 0.01346,
+   "1-0": 0.05734,
+   "1-1": 0.06748,
+   "1-2": 0.04088,
+   "1-M": 0.02307,
+   "2-0": 0.06942,
+   "2-1": 0.08332,
+   "2-2": 0.04996,
+   "2-M": 0.02731,
+   "M-0": 0.15158,
+   "M-1": 0.17697,
+   "M-2": 0.10511,
+   "M-M": 0.05746
   },
   "factor_x": 1.0,
-  "lambda_local": 2.909,
-  "lambda_visitante": 1.199,
-  "marcador_mesa": "M-1"
+  "lambda_local": 2.943,
+  "lambda_visitante": 1.189,
+  "marcador_mesa": "M-1",
+  "mercado_1x2": [
+   0.8592,
+   0.0954,
+   0.0454
+  ],
+  "mercado_cats": {
+   "M-0": 0.2972,
+   "M-1": 0.2024,
+   "2-0": 0.084,
+   "M-2": 0.0816,
+   "2-1": 0.06,
+   "1-0": 0.0573,
+   "M-M": 0.0482,
+   "1-1": 0.0371,
+   "1-M": 0.0217,
+   "0-M": 0.0209,
+   "2-2": 0.0203,
+   "2-M": 0.0195,
+   "0-0": 0.0175,
+   "1-2": 0.0137,
+   "0-1": 0.0124,
+   "0-2": 0.0062
+  },
+  "mercado_pleno": 0.2024
  },
  "sueltas": [
   {
@@ -443,27 +571,27 @@
   {
    "partido": "Atlético – Viking",
    "apuesta": "Marca el Atlético",
-   "p": 0.945
+   "p": 0.947
   },
   {
    "partido": "Real Madrid – PSV",
    "apuesta": "Marca el Real Madrid",
-   "p": 0.941
+   "p": 0.937
   },
   {
    "partido": "Slovan Bratislava – Betis",
    "apuesta": "Marca el Betis",
-   "p": 0.927
+   "p": 0.926
   },
   {
    "partido": "Inter – Stuttgart",
    "apuesta": "Marca el Inter",
-   "p": 0.911
+   "p": 0.913
   }
  ],
  "datos_modelo": {
   "fichero": "euro_j24.json",
-  "hasta": "2026-11-21",
+  "hasta": "2026-11-22",
   "huecos": "Ligas extranjeras hasta ~1/11 (Eredivisie y Chequia hasta 20/09); sin liga eslovaca, azerí ni ucraniana 2026/27"
  },
  "boleto_provisional": {
@@ -487,28 +615,28 @@
    "14": "1"
   },
   "pleno": "M-1",
-  "p14": 0.004478,
-  "p13": 0.0358
+  "p14": 0.004835,
+  "p13": 0.0381
  },
  "columnas_individuales": [
   "12112221112112",
   "121122211121X2",
   "1211222X11211X",
+  "121122X2112121",
   "12112221112121",
-  "12112222112X21",
-  "12112222112122",
   "12112222112111",
-  "121122X2112121"
+  "12112222112X21",
+  "1X112222112121"
  ],
  "columnas_protegidas": [
   "12112221112112",
   "121122211121X2",
   "1211222X11211X",
+  "121122X2112121",
   "12112221112121",
-  "12112222112X21",
-  "12112222112122",
   "12112222112111",
-  "121122X2112121"
+  "12112222112X21",
+  "1X112222112121"
  ],
  "fijos_debiles": [
   {
@@ -518,7 +646,7 @@
     "1",
     "X"
    ],
-   "motivo": "P 52 % < 55 %"
+   "motivo": "P 53 % < 55 %"
   },
   {
    "n": 13,
@@ -536,20 +664,20 @@
     "2",
     "X"
    ],
-   "motivo": "P 52 % < 55 %"
+   "motivo": "P 53 % < 55 %"
   }
  ],
  "conjunto": {
   "columnas": 32,
   "coste": 24.0,
-  "p14": 0.005637,
-  "p13": 0.0439,
-  "p12": 0.158,
-  "p10": 0.6131
+  "p14": 0.006058,
+  "p13": 0.0465,
+  "p12": 0.1653,
+  "p10": 0.625
  },
  "empates": {
   "x_esperadas": 2.72,
-  "p_ninguna_x": 0.0475,
+  "p_ninguna_x": 0.0477,
   "x_cubiertas_boleto": 1
  },
  "boleto_mesa": {
@@ -562,41 +690,36 @@
    "1211222211X121",
    "12112222111121",
    "12112212112221",
-   "121122111121X1",
-   "1111222211122X",
-   "11112222112121",
+   "12112221112121",
+   "11112222112221",
+   "121122X2112122",
+   "1X112222112122",
+   "121122X21121X1",
+   "11112212111111",
+   "111122X2112121",
    "121122X2112222",
-   "1211222X112121",
-   "121122X2111121",
-   "11112212111122",
-   "1X112222112121",
-   "12112222111212",
-   "12112222112222",
-   "22212221X22212",
-   "X221222XX22212"
+   "1111222211122X",
+   "121122211111XX",
+   "X21122X1XXX122",
+   "X21122212X111X"
   ],
   "pleno": "M-1",
-  "p14": 0.002363,
+  "p14": 0.002346,
   "p13": 0.0262,
-  "p12": 0.1115,
+  "p12": 0.1146,
   "comparativa": [
    {
     "formato": "Directa 4 dobles · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.00342,
-    "p13": 0.02895,
-    "p12": 0.1113,
-    "p10": 0.50475,
+    "p14": 0.003692,
+    "p13": 0.03025,
+    "p12": 0.1163,
+    "p10": 0.5159,
     "cumple_R3": false,
     "incumple": [
      [
       1,
-      1.0,
-      0.9
-     ],
-     [
-      3,
       1.0,
       0.9
      ],
@@ -631,19 +754,14 @@
     "formato": "Reducida 2 (7 dobles) · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.001446,
-    "p13": 0.02335,
-    "p12": 0.11175,
-    "p10": 0.55755,
+    "p14": 0.001528,
+    "p13": 0.0247,
+    "p12": 0.11485,
+    "p10": 0.56605,
     "cumple_R3": false,
     "incumple": [
      [
       1,
-      1.0,
-      0.9
-     ],
-     [
-      3,
       1.0,
       0.9
      ],
@@ -663,19 +781,14 @@
     "formato": "Reducida 1 (4 triples) · 9 ap.",
     "apuestas": 9,
     "coste": 6.75,
-    "p14": 0.001054,
-    "p13": 0.01675,
-    "p12": 0.08615,
-    "p10": 0.5046,
+    "p14": 0.001148,
+    "p13": 0.0173,
+    "p12": 0.09245,
+    "p10": 0.5191,
     "cumple_R3": false,
     "incumple": [
      [
       1,
-      1.0,
-      0.9
-     ],
-     [
-      3,
       1.0,
       0.9
      ],
@@ -710,10 +823,10 @@
     "formato": "Reducida 1 (4 triples) + 7 sencillas optimizadas",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.001646,
-    "p13": 0.0233,
-    "p12": 0.113,
-    "p10": 0.5806,
+    "p14": 0.00156,
+    "p13": 0.0227,
+    "p12": 0.11505,
+    "p10": 0.60335,
     "cumple_R3": true,
     "incumple": []
    },
@@ -721,10 +834,10 @@
     "formato": "16 sencillas optimizadas",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.002363,
-    "p13": 0.02625,
-    "p12": 0.1115,
-    "p10": 0.5518,
+    "p14": 0.002346,
+    "p13": 0.0262,
+    "p12": 0.1146,
+    "p10": 0.56875,
     "cumple_R3": true,
     "incumple": []
    },
@@ -732,10 +845,10 @@
     "formato": "16 sencillas más probables",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.003823,
-    "p13": 0.03075,
-    "p12": 0.10955,
-    "p10": 0.48975,
+    "p14": 0.004088,
+    "p13": 0.0334,
+    "p12": 0.12135,
+    "p10": 0.5236,
     "cumple_R3": false,
     "incumple": [
      [
@@ -744,19 +857,9 @@
       0.9
      ],
      [
-      2,
-      0.812,
-      0.75
-     ],
-     [
-      3,
-      1.0,
-      0.9
-     ],
-     [
       7,
-      0.812,
-      0.75
+      0.688,
+      0.6
      ],
      [
       8,
@@ -775,26 +878,124 @@
      ],
      [
       11,
-      0.812,
-      0.75
-     ],
-     [
-      12,
-      0.688,
+      0.75,
       0.6
      ],
      [
       13,
-      0.875,
+      0.938,
       0.75
      ],
      [
       14,
-      0.938,
+      1.0,
       0.6
      ]
     ]
    }
   ]
+ },
+ "publico": {
+  "fuente": "quiniela15.com/pronostico-quiniela (estimación LAE), lun 23/11 ~11:15, clase B",
+  "porcentajes": {
+   "1": {
+    "lae": [
+     70,
+     17,
+     13
+    ]
+   },
+   "2": {
+    "lae": [
+     32,
+     31,
+     37
+    ]
+   },
+   "3": {
+    "lae": [
+     73,
+     15,
+     12
+    ]
+   },
+   "4": {
+    "lae": [
+     77,
+     12,
+     11
+    ]
+   },
+   "5": {
+    "lae": [
+     18,
+     21,
+     61
+    ]
+   },
+   "6": {
+    "lae": [
+     16,
+     11,
+     73
+    ]
+   },
+   "7": {
+    "lae": [
+     26,
+     26,
+     48
+    ]
+   },
+   "8": {
+    "lae": [
+     27,
+     23,
+     50
+    ]
+   },
+   "9": {
+    "lae": [
+     69,
+     18,
+     13
+    ]
+   },
+   "10": {
+    "lae": [
+     75,
+     14,
+     11
+    ]
+   },
+   "11": {
+    "lae": [
+     36,
+     32,
+     32
+    ]
+   },
+   "12": {
+    "lae": [
+     42,
+     27,
+     31
+    ]
+   },
+   "13": {
+    "lae": [
+     36,
+     22,
+     42
+    ]
+   },
+   "14": {
+    "lae": [
+     45,
+     28,
+     27
+    ]
+   }
+  }
  }
 }
