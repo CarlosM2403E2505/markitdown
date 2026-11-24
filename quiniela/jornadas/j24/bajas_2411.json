@@ -1,0 +1,70 @@
+{
+ "fuente": "Claude in Chrome de Carlos, mar 24/11 13:10. Partidos 1-12 y 15: Flashscore BAJAS (B). 13-14: FútbolFantasy y Metropolitano.gal (B), El Gol Digital (B), Khel Now (C, no mueve precio). Ninguna fuente excluida.",
+ "ajustes": {
+  "1": [
+   0.94,
+   0.97,
+   "Arsenal sin Raya (portero), Saka y Zubimendi; Dortmund ya sin Guirassy en la lista de bajas (B, Flashscore 24/11)"
+  ],
+  "3": [
+   1.06,
+   0.95,
+   "Nápoles sin Buongiorno, Di Lorenzo, Meret, Lobotka (B, Flashscore)"
+  ],
+  "4": [
+   0.97,
+   0.95,
+   "Madrid sin Rodrygo, Mendy, Endrick, Asencio; PSV sin Plea ni Schouten (B, Flashscore)"
+  ],
+  "6": [
+   1.0,
+   0.95,
+   "Barça sin Lamine Yamal, Rodri y Christensen (B, Flashscore)"
+  ],
+  "7": [
+   0.98,
+   0.93,
+   "Villarreal sin G. Moreno, Foyth, Akhomach; Slavia sin Chory (B, Flashscore)"
+  ],
+  "8": [
+   0.99,
+   0.95,
+   "Liverpool sin Ekitike, Gravenberch y Bradley; Brujas sin Ordóñez (B, Flashscore 24/11)"
+  ],
+  "9": [
+   0.96,
+   1.0,
+   "Inter sin Calhanoglu ni Bonny (B, Flashscore 24/11)"
+  ],
+  "10": [
+   0.91,
+   0.98,
+   "PSG sin Doué ni Kvaratskhelia (confirmado, B Flashscore 24/11); Roma sin Lo. Pellegrini"
+  ],
+  "11": [
+   0.907,
+   1.102,
+   "Campo neutral: Stamford Bridge (A); bajas repartidas en los dos"
+  ],
+  "12": [
+   0.98,
+   0.93,
+   "United sin Sesko, Cunha (roja), Ugarte, Baleba; Sporting sin Debast y N. Santos (B, Flashscore 24/11)"
+  ],
+  "13": [
+   0.96,
+   0.97,
+   "Celta sin Borja Iglesias (Giráldez, B: FútbolFantasy/Metropolitano.gal); Bournemouth sin Juanlu, J. Araujo y Tóth (B)"
+  ],
+  "14": [
+   1.0,
+   0.96,
+   "Real Sociedad sin Barrenetxea, Odriozola y Yangel Herrera; duda Aramburu (B: FútbolFantasy/El Gol Digital)"
+  ],
+  "15": [
+   0.97,
+   1.0,
+   "Atlético sin Lookman, Pubill y C. Romero (B, Flashscore 24/11)"
+  ]
+ }
+}

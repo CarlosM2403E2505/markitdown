@@ -41,7 +41,7 @@
    "defensa": 78,
    "proximo": "Real Madrid – PSV",
    "proximo_n": 4,
-   "p_ganar_proximo": 0.6756,
+   "p_ganar_proximo": 0.6708,
    "bajas": 1,
    "dudas": 1,
    "elo": null
@@ -64,7 +64,7 @@
    "defensa": 79,
    "proximo": "Atlético – Viking",
    "proximo_n": 15,
-   "p_ganar_proximo": 0.7468,
+   "p_ganar_proximo": 0.7336,
    "bajas": 4,
    "dudas": 2,
    "elo": null
@@ -110,7 +110,7 @@
    "defensa": 106,
    "proximo": "Crystal Palace – Real Sociedad",
    "proximo_n": 14,
-   "p_ganar_proximo": 0.2538,
+   "p_ganar_proximo": 0.2419,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -248,7 +248,7 @@
    "defensa": 93,
    "proximo": "Celta – Bournemouth",
    "proximo_n": 13,
-   "p_ganar_proximo": 0.2514,
+   "p_ganar_proximo": 0.2482,
    "bajas": 2,
    "dudas": null,
    "elo": null
