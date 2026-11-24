@@ -46,7 +46,7 @@ import boletos_oficiales as bo
 
 S = "1X2"
 PRECIO = 0.75
-PRESUPUESTO_MAX = 18.0
+PRESUPUESTO_MAX = 36.0  # Carlos 24/11: J24 a 36 € (antes 18 €)
 TOPES = [(0.45, 0.60), (0.55, 0.75), (0.65, 0.90), (1.01, 1.00)]  # (P favorito por debajo de, tope)
 N_MUESTRAS = 20000
 N_CANDIDATAS = 1000
@@ -250,7 +250,7 @@ def main():
     if a.presupuesto is None:
         a.presupuesto, p13 = presupuesto_r7(probs)
         print("R7: P(≥13) con 8/16/24 sencillas = " + " / ".join(f"{100 * v:.2f} %" for v in p13.values()) + f" → se juegan {a.presupuesto:.0f} €")
-    assert a.presupuesto <= PRESUPUESTO_MAX, "R1: el tope es 18 €"
+    assert a.presupuesto <= PRESUPUESTO_MAX, f"R1: el tope es {PRESUPUESTO_MAX:.0f} €"
     el, tabla = decidir(probs, a.presupuesto)
     print(f"Jornada {d['jornada']} · reglas de la mesa (R1-R7) · tope {a.presupuesto:.0f} €\n")
     print(f"{'Formato':52s} {'€':>6s} {'P(14)':>13s} {'P(≥13)':>7s} {'P(≥12)':>7s}  R3")

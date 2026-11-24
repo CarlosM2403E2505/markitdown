@@ -855,9 +855,9 @@
  "boleto_mesa": {
   "reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026; R5b casas 24/11)",
   "probabilidad": "casas en 14 partidos, mesa en el resto",
-  "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
-  "apuestas": 24,
-  "coste": 18.0,
+  "formato": "Reducida 1 (4 triples) + 39 sencillas optimizadas",
+  "apuestas": 48,
+  "coste": 36.0,
   "columnas": [
    "11112212111121",
    "111122X211X221",
@@ -875,19 +875,43 @@
    "1211222X112211",
    "12112221112XX1",
    "121122221X1221",
+   "121122X21122X1",
    "121122X2112122",
    "1211222211X12X",
    "1211222211X2X2",
-   "121122121XX122",
+   "1X112212111122",
+   "22112222112121",
+   "12112212111211",
+   "121122221112XX",
+   "12112211111121",
+   "1211221211X22X",
+   "1X1122221121X2",
+   "1211222X1111X1",
+   "11112222111222",
+   "12112222111X11",
+   "X2112222112121",
+   "1X1122221112X1",
+   "111122X2112211",
+   "121122121XX121",
+   "111122X211X1X1",
+   "1211222X112X22",
+   "1211222211XX22",
+   "1X11222211122X",
+   "111122221X1121",
+   "121122121X2X21",
+   "1X1122221X212X",
    "111122211X212X",
-   "X2X12221X22122",
-   "X221221XXX11X2",
-   "X1X1221XXX221X"
+   "121122211X2211",
+   "11X12221XX2122",
+   "12212211XXX2XX",
+   "X2X122112X2122",
+   "X2X122X1XX1122",
+   "X1X12211XX2122"
   ],
   "pleno": "M-1",
-  "p14": 0.003456,
-  "p13": 0.0454,
-  "p12": 0.1905,
+  "p14": 0.005741,
+  "p13": 0.0712,
+  "p12": 0.2625,
   "comparativa": [
    {
     "formato": "Directa 3 dobles + 1 triple · 24 ap.",
@@ -937,6 +961,17 @@
     ]
    },
    {
+    "formato": "Directa 3 dobles + 1 triple + 24 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.008051,
+    "p13": 0.06635,
+    "p12": 0.23965,
+    "p10": 0.7698,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
     "formato": "Directa 4 dobles · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
@@ -984,21 +1019,15 @@
     ]
    },
    {
-    "formato": "Directa 4 dobles + 8 sencillas optimizadas",
-    "apuestas": 24,
-    "coste": 18.0,
-    "p14": 0.005058,
-    "p13": 0.0409,
-    "p12": 0.1601,
-    "p10": 0.6461,
-    "cumple_R3": false,
-    "incumple": [
-     [
-      14,
-      0.667,
-      0.6
-     ]
-    ]
+    "formato": "Directa 4 dobles + 32 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.007994,
+    "p13": 0.0686,
+    "p12": 0.247,
+    "p10": 0.77915,
+    "cumple_R3": true,
+    "incumple": []
    },
    {
     "formato": "Directa 1 doble + 2 triples · 18 ap.",
@@ -1053,26 +1082,15 @@
     ]
    },
    {
-    "formato": "Directa 1 doble + 2 triples + 6 sencillas optimizadas",
-    "apuestas": 24,
-    "coste": 18.0,
-    "p14": 0.005364,
-    "p13": 0.04295,
-    "p12": 0.16545,
-    "p10": 0.6631,
-    "cumple_R3": false,
-    "incumple": [
-     [
-      2,
-      0.75,
-      0.6
-     ],
-     [
-      14,
-      0.75,
-      0.6
-     ]
-    ]
+    "formato": "Directa 1 doble + 2 triples + 30 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.0077,
+    "p13": 0.0683,
+    "p12": 0.249,
+    "p10": 0.78835,
+    "cumple_R3": true,
+    "incumple": []
    },
    {
     "formato": "Reducida 3 (3 dobles + 3 triples) · 24 ap.",
@@ -1112,6 +1130,17 @@
     ]
    },
    {
+    "formato": "Reducida 3 (3 dobles + 3 triples) + 24 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.005469,
+    "p13": 0.07005,
+    "p12": 0.2632,
+    "p10": 0.80365,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
     "formato": "Reducida 2 (7 dobles) · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
@@ -1144,13 +1173,13 @@
     ]
    },
    {
-    "formato": "Reducida 2 (7 dobles) + 8 sencillas optimizadas",
-    "apuestas": 24,
-    "coste": 18.0,
-    "p14": 0.002825,
-    "p13": 0.0388,
-    "p12": 0.17805,
-    "p10": 0.69895,
+    "formato": "Reducida 2 (7 dobles) + 32 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.00609,
+    "p13": 0.06865,
+    "p12": 0.2606,
+    "p10": 0.8001,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1202,35 +1231,35 @@
     ]
    },
    {
-    "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
-    "apuestas": 24,
-    "coste": 18.0,
-    "p14": 0.003456,
-    "p13": 0.0454,
-    "p12": 0.19055,
-    "p10": 0.72365,
+    "formato": "Reducida 1 (4 triples) + 39 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.005741,
+    "p13": 0.07125,
+    "p12": 0.26245,
+    "p10": 0.80245,
     "cumple_R3": true,
     "incumple": []
    },
    {
-    "formato": "24 sencillas optimizadas",
-    "apuestas": 24,
-    "coste": 18.0,
-    "p14": 0.003594,
-    "p13": 0.0436,
-    "p12": 0.1844,
-    "p10": 0.7087,
+    "formato": "48 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.006075,
+    "p13": 0.069,
+    "p12": 0.2518,
+    "p10": 0.7937,
     "cumple_R3": true,
     "incumple": []
    },
    {
-    "formato": "24 sencillas más probables",
-    "apuestas": 24,
-    "coste": 18.0,
-    "p14": 0.007256,
-    "p13": 0.0522,
-    "p12": 0.1781,
-    "p10": 0.6184,
+    "formato": "48 sencillas más probables",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.012605,
+    "p13": 0.0784,
+    "p12": 0.23645,
+    "p10": 0.7025,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1240,7 +1269,7 @@
      ],
      [
       2,
-      0.75,
+      0.771,
       0.6
      ],
      [
@@ -1250,7 +1279,7 @@
      ],
      [
       7,
-      0.833,
+      0.75,
       0.6
      ],
      [
@@ -1270,7 +1299,7 @@
      ],
      [
       13,
-      0.917,
+      0.833,
       0.75
      ],
      [
@@ -1280,8 +1309,6 @@
      ]
     ]
    }
-  ],
-  "sellar": "sencillas",
-  "nota_sellado": "Las 24 columnas se sellan como 24 sencillas (3 boletos de 8, 18 €): las 9 de la reducida van entre ellas."
+  ]
  }
 }

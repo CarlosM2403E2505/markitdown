@@ -431,6 +431,14 @@
    "origen": "Hilo «Aprender de todas las jornadas jugadas»",
    "aporte": "Revisión J14-J23: la mesa no infla favoritos (43 ganados, 37,6 esperados); lo que tumba es el signo sin cubrir (8 de 14, X). Las casas aciertan más que la mesa (1.372 partidos: 0,966 frente a 1,014) → regla R5b: con cuota, el boleto usa la P de las casas. J24 rehecha: P(≥13) 3,92 → 4,54 % (medido con casas), 18 €.",
    "cambia": "Sí"
+  },
+  {
+   "id": "j24-36e",
+   "fecha": "2026-11-24 17:50",
+   "jornada": 24,
+   "origen": "Carlos (orden: «Vamos con 36 euros»)",
+   "aporte": "J24 a 36 €: 48 apuestas (Reducida 1 de 4 triples + 39 sencillas optimizadas, R3 y R5b). P(≥13) 4,5 → 7,1 % con las casas (3,0 → 4,3 % con la mesa); P(14) 1/289 → 1/174. Pleno M-1.",
+   "cambia": "Sí"
   }
  ]
 }
