@@ -439,6 +439,14 @@
    "origen": "Carlos (orden: «Vamos con 36 euros»)",
    "aporte": "J24 a 36 €: 48 apuestas (Reducida 1 de 4 triples + 39 sencillas optimizadas, R3 y R5b). P(≥13) 4,5 → 7,1 % con las casas (3,0 → 4,3 % con la mesa); P(14) 1/289 → 1/174. Pleno M-1.",
    "cambia": "Sí"
+  },
+  {
+   "id": "j24-36e-separado",
+   "fecha": "2026-11-24 18:20",
+   "jornada": 24,
+   "origen": "Carlos («Vuelve a hacerlo por separado»)",
+   "aporte": "J24: el artefacto y la app muestran por separado el boleto de la Reducida 1 oficial (9 apuestas, 6,75 €; triples en 2, 7, 11 y 12) y las 39 sencillas en 5 boletos (29,25 €). Total 48 apuestas, 36 €.",
+   "cambia": "No"
   }
  ]
 }

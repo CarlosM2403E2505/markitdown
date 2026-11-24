@@ -124,7 +124,7 @@ def main():
 
     # Tabla 1: boleto de 18 € (no hay si la mesa juega solo sencillas)
     if not solo_sencillas:
-      out.append(f'<section><h2>Boleto {e(boleto["tipo"].lower())} · {boleto["apuestas"]} apuestas · {boleto["coste"]:.0f} €</h2><div class="scroll"><table>')
+      out.append(f'<section><h2>Boleto {e(boleto["tipo"].lower())} · {boleto["apuestas"]} apuestas · {boleto["coste"]:.2f} €'.replace(".", ",") + (f' <span class="meta">(total con las sencillas: {boleto["total_apuestas"]} apuestas · {boleto["total_coste"]:.0f} €)</span>' if boleto.get("total_apuestas") else "") + '</h2><div class="scroll"><table>')
       out.append('<thead><tr><th>Nº</th><th class="p">Partido</th><th>Casas % 1·X·2</th><th>Mesa % 1·X·2</th><th>1</th><th>X</th><th>2</th></tr></thead><tbody>')
       for n in range(1, 15):
           s = boleto["signos"][str(n)].split()
@@ -162,9 +162,10 @@ def main():
     rng = np.random.default_rng(24)
     Pm = np.array([probs[n] for n in range(1, 15)], dtype=float)
     Ysim = np.stack([rng.choice(3, 100000, p=r / r.sum()) for r in Pm], axis=1)
-    Cm = np.array([['1X2'.index(x) for x in c] for c in cols])
+    todas = d["boleto_mesa"]["columnas"] if boleto.get("total_apuestas") else cols  # reducida + sencillas juntas
+    Cm = np.array([['1X2'.index(x) for x in c] for c in todas])
     mejor = np.stack([(Ysim == c).sum(1) for c in Cm], axis=1).max(1)
-    out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">Boleto entero (mejor columna en cada caso): '
+    out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">{"Todo lo jugado (reducida + sencillas, " if boleto.get("total_apuestas") else "Boleto entero ("}mejor columna en cada caso): '
                f'<b>{100 * mejor.mean() / 14:.0f} %</b> · {mejor.mean():.1f} de 14 · ≥12: {100 * (mejor >= 12).mean():.0f} % · ≥13: {100 * (mejor >= 13).mean():.1f} %</td>'.replace('.', ',') +
                f'<td colspan="{len(cols)}"></td></tr>')
     out.append("</tbody></table></div></section></div>")
