@@ -43,7 +43,10 @@ def hamming74():
 
 
 def ternario42():
-    return [(a, b, (a + b) % 3, (a + 2 * b) % 3) for a in range(3) for b in range(3)]
+    """Reducción primera OFICIAL (BOE 9/1/2006, norma 21.ª B; sin cambios en la Resolución de 6/7/2009):
+    partido 1.º 111XXX222 · 2.º 1X21X21X2 · 3.º 1X2X2121X · 4.º 1X221XX21. Los triples se asignan por orden
+    creciente de partido (norma 21.ª C). Con 1→0, X→1, 2→2: (a, b, a+b, 2a+b) mod 3, en el orden oficial."""
+    return [(a, b, (a + b) % 3, (2 * a + b) % 3) for a in range(3) for b in range(3)]
 
 
 FORMATOS = [  # nombre, dobles, triples, código (None = directa)

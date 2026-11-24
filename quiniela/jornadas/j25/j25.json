@@ -1,0 +1,180 @@
+{
+ "jornada": 25,
+ "fechas": "2026-11-28/30",
+ "tipo": "Liga",
+ "estado": "provisional",
+ "nota": "P provisional = estudio de estilos de Carlos (clase C) hasta tener cuotas (R5b). Partido 13 sin dato.",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Betis – Rayo",
+   "competicion": "Primera",
+   "p": [
+    0.55,
+    0.25,
+    0.2
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 2,
+   "partido": "Málaga – Athletic",
+   "competicion": "Primera",
+   "p": [
+    0.2,
+    0.27,
+    0.53
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 3,
+   "partido": "Elche – Atlético",
+   "competicion": "Primera",
+   "p": [
+    0.1738,
+    0.2148,
+    0.6114
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 4,
+   "partido": "Real Madrid – Alavés",
+   "competicion": "Primera",
+   "p": [
+    0.74,
+    0.16,
+    0.1
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 5,
+   "partido": "Valencia – Osasuna",
+   "competicion": "Primera",
+   "p": [
+    0.38,
+    0.33,
+    0.29
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 6,
+   "partido": "Deportivo – Barcelona",
+   "competicion": "Primera",
+   "p": [
+    0.12,
+    0.17,
+    0.71
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 7,
+   "partido": "Celta – Villarreal",
+   "competicion": "Primera",
+   "p": [
+    0.309,
+    0.29,
+    0.401
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 8,
+   "partido": "Real Sociedad – Sevilla",
+   "competicion": "Primera",
+   "p": [
+    0.4675,
+    0.2503,
+    0.2823
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 9,
+   "partido": "Las Palmas – Andorra",
+   "competicion": "Segunda",
+   "p": [
+    0.53,
+    0.26,
+    0.21
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 10,
+   "partido": "Albacete – Tenerife",
+   "competicion": "Segunda",
+   "p": [
+    0.4,
+    0.33,
+    0.27
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 11,
+   "partido": "Eibar – Burgos",
+   "competicion": "Segunda",
+   "p": [
+    0.44,
+    0.3,
+    0.26
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 12,
+   "partido": "Granada – Ceuta",
+   "competicion": "Segunda",
+   "p": [
+    0.66,
+    0.21,
+    0.13
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  },
+  {
+   "n": 13,
+   "partido": "Mallorca – Castellón",
+   "competicion": "Segunda",
+   "p": [
+    0.45,
+    0.29,
+    0.26
+   ],
+   "fuente_p": "sin dato: base local Segunda 45/29/26"
+  },
+  {
+   "n": 14,
+   "partido": "Almería – Sporting",
+   "competicion": "Segunda",
+   "p": [
+    0.58,
+    0.24,
+    0.18
+   ],
+   "fuente_p": "estudio de estilos (clase C)"
+  }
+ ],
+ "pleno": {
+  "partido": "Espanyol – Getafe",
+  "marcador_mesa": "1-0",
+  "p": [
+   0.462,
+   0.298,
+   0.24
+  ],
+  "fuente": "estudio_estilos pleno_poisson (1-0 18,7 %)"
+ },
+ "pendientes": [
+  "Lista oficial SELAE de la J25 sin confirmar (orden de partidos y Pleno, clase C)",
+  "Probabilidades de la mesa (modelo) sin correr: P provisional = estudio de estilos (clase C)",
+  "Onces y bajas (rotaciones post-Champions de Atlético, Madrid, Barça y Villarreal)",
+  "% del público LAE (quiniela15), informativo",
+  "Horarios de Segunda sin confirmar"
+ ]
+}
