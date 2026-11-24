@@ -455,6 +455,14 @@
    "origen": "Mesa (definitivo programado)",
    "aporte": "J24 DEFINITIVA: Reducida 1 oficial (triples en 2, 7, 11 y 12; 9 ap., 6,75 €) + 39 sencillas en 5 boletos (29,25 €), Pleno M-1. 48 apuestas, 36 €. P(≥13) 7,1 % casas / 4,3 % mesa, P(14) 1/174. Sin bajas nuevas desde las 13:10.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-sellado",
+   "fecha": "2026-11-24 20:02",
+   "jornada": 24,
+   "origen": "Carlos («Hice los 4 primeros boletos y la reducida»)",
+   "aporte": "J24 sellada: Reducida 1 oficial (9 ap.) + boletos 1-4 de sencillas (32 ap.); el boleto 5 no se jugó. 41 apuestas, 30,75 €, Pleno M-1. P(≥13) 6,80 %, P(14) 1/181 (casas). El escrutinio se hace solo con lo sellado.",
+   "cambia": "Sí"
   }
  ]
 }

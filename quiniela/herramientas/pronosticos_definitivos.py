@@ -113,6 +113,11 @@ def main():
             cols.append(d["columna_novena"])
     # Carlos 23/11: columnas de mayor a menor acierto esperado por la mesa.
     cols = sorted(cols, key=lambda c: -acierto(c))
+    real = d.get("jugado_real")
+    no_jugadas = []
+    if real and bm and boleto.get("total_apuestas"):  # Carlos 24/11: lo sellado de verdad manda
+        no_jugadas = [c for c in cols if c not in real["sencillas"]]
+        cols = [c for c in cols if c in real["sencillas"]]
     n_bol1 = min(8, len(cols))
 
     out = [CSS, '<div class="wrap">']
@@ -124,7 +129,7 @@ def main():
 
     # Tabla 1: boleto de 18 € (no hay si la mesa juega solo sencillas)
     if not solo_sencillas:
-      out.append(f'<section><h2>Boleto {e(boleto["tipo"].lower())} · {boleto["apuestas"]} apuestas · {boleto["coste"]:.2f} €'.replace(".", ",") + (f' <span class="meta">(total con las sencillas: {boleto["total_apuestas"]} apuestas · {boleto["total_coste"]:.0f} €)</span>' if boleto.get("total_apuestas") else "") + '</h2><div class="scroll"><table>')
+      out.append(f'<section><h2>Boleto {e(boleto["tipo"].lower())} · {boleto["apuestas"]} apuestas · {boleto["coste"]:.2f} €'.replace(".", ",") + (f' <span class="meta">(total con las sencillas: {boleto["total_apuestas"] - len((d.get("jugado_real") or {}).get("no_jugadas") or [])} apuestas · {format((d.get("jugado_real") or {}).get("coste") or boleto["total_coste"], ".2f").replace(".", ",")} €)</span>' if boleto.get("total_apuestas") else "") + '</h2><div class="scroll"><table>')
       out.append('<thead><tr><th>Nº</th><th class="p">Partido</th><th>Casas % 1·X·2</th><th>Mesa % 1·X·2</th><th>1</th><th>X</th><th>2</th></tr></thead><tbody>')
       for n in range(1, 15):
           s = boleto["signos"][str(n)].split()
@@ -137,7 +142,7 @@ def main():
 
     # Tabla 2: sencillas
     coste = len(cols) * 0.75
-    out.append(f'<section><h2>Sencillas · {len(cols)} apuestas · {coste:.2f} €'.replace(".", ",") + "</h2><div class=\"scroll\"><table>")
+    out.append(f'<section><h2>Sencillas{" jugadas" if no_jugadas else ""} · {len(cols)} apuestas · {coste:.2f} €'.replace(".", ",") + (f' <span class="meta">(el boleto 5, {len(no_jugadas)} sencillas, no se jugó · total sellado {real["coste"]:.2f} €)</span>'.replace(".", ",") if no_jugadas else "") + "</h2><div class=\"scroll\"><table>")
     head = '<thead>'
     if len(cols) > n_bol1:
         grp = ' class="grp"'
@@ -162,7 +167,7 @@ def main():
     rng = np.random.default_rng(24)
     Pm = np.array([probs[n] for n in range(1, 15)], dtype=float)
     Ysim = np.stack([rng.choice(3, 100000, p=r / r.sum()) for r in Pm], axis=1)
-    todas = d["boleto_mesa"]["columnas"] if boleto.get("total_apuestas") else cols  # reducida + sencillas juntas
+    todas = (d["boleto_mesa"]["columnas"][:boleto["apuestas"]] + cols) if boleto.get("total_apuestas") else cols  # reducida + sencillas juntas
     Cm = np.array([['1X2'.index(x) for x in c] for c in todas])
     mejor = np.stack([(Ysim == c).sum(1) for c in Cm], axis=1).max(1)
     out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">{"Todo lo jugado (reducida + sencillas, " if boleto.get("total_apuestas") else "Boleto entero ("}mejor columna en cada caso): '
