@@ -447,6 +447,14 @@
    "origen": "Carlos («Vuelve a hacerlo por separado»)",
    "aporte": "J24: el artefacto y la app muestran por separado el boleto de la Reducida 1 oficial (9 apuestas, 6,75 €; triples en 2, 7, 11 y 12) y las 39 sencillas en 5 boletos (29,25 €). Total 48 apuestas, 36 €.",
    "cambia": "No"
+  },
+  {
+   "id": "j24-definitivo",
+   "fecha": "2026-11-24 18:45",
+   "jornada": 24,
+   "origen": "Mesa (definitivo programado)",
+   "aporte": "J24 DEFINITIVA: Reducida 1 oficial (triples en 2, 7, 11 y 12; 9 ap., 6,75 €) + 39 sencillas en 5 boletos (29,25 €), Pleno M-1. 48 apuestas, 36 €. P(≥13) 7,1 % casas / 4,3 % mesa, P(14) 1/174. Sin bajas nuevas desde las 13:10.",
+   "cambia": "No"
   }
  ]
 }

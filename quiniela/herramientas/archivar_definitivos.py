@@ -44,7 +44,7 @@ def filas_jornada(d):
         boleto = {**boleto, **{k: v for k, v in real["boleto"].items() if k in ("tipo", "signos", "pleno", "apuestas", "coste")}}
         titulo_s = f'Sencillas jugadas (sellado real) · {len(cols)} apuestas · {len(cols) * 0.75:.2f} €'.replace(".", ",")
     comun = {"jornada": j, "fechas": d.get("fechas"),
-             "boleto": f'{boleto["tipo"]} · {boleto["apuestas"]} apuestas · {boleto["coste"]:.0f} €' + (" · sellado real" if real else ""),
+             "boleto": f'{boleto["tipo"]} · {boleto["apuestas"]} apuestas · ' + f'{boleto["coste"]:.2f}'.replace(".", ",").replace(",00", "") + ' €' + (" · sellado real" if real else ""),
              "coste_total": (real or {}).get("coste") or d.get("coste_total_previsto") or d.get("coste_jugado"), "n_sencillas": len(cols),
              "etiquetas": " ".join(etiquetas), "titulo_sencillas": titulo_s, "nota": (real or {}).get("diferencias")}
     filas = []
