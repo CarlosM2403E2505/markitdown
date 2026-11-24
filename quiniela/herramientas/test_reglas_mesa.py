@@ -37,5 +37,11 @@ class TestReglas(unittest.TestCase):
         a = rm.optimizadas(PROBS, 24, Y)
         self.assertLessEqual(sum(c[1] == "1" for c in a), 18)   # Rayo 54 % → como mucho el 75 %
 
+class TestR5b(unittest.TestCase):
+    def test_casas_si_hay_mercado(self):
+        ps = [{"p": [0.5, 0.3, 0.2], "mercado": [0.4, 0.3, 0.3]}, {"p": [0.6, 0.2, 0.2]}]
+        self.assertEqual(rm.probabilidades(ps), [[0.4, 0.3, 0.3], [0.6, 0.2, 0.2]])
+        self.assertEqual(rm.probabilidades(ps, casas=False), [[0.5, 0.3, 0.2], [0.6, 0.2, 0.2]])
+
 if __name__ == "__main__":
     unittest.main()

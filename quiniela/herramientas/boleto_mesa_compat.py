@@ -12,4 +12,5 @@ def desde_boleto_mesa(d):
     signos = {str(i + 1): " ".join(s for s in S if any(c[i] == s for c in cols)) for i in range(14)}
     boleto = {"tipo": b["formato"], "apuestas": b["apuestas"], "coste": b["coste"], "signos": signos, "pleno": b["pleno"],
               "p14": b.get("p14"), "p13": b.get("p13")}
-    return boleto, cols, "sencillas" in b["formato"] and "+" not in b["formato"]
+    # Cualquier formato con sencillas se puede sellar como columnas sencillas (mismas columnas, mismo coste)
+    return boleto, cols, b.get("sellar") == "sencillas" or ("sencillas" in b["formato"] and "+" not in b["formato"])

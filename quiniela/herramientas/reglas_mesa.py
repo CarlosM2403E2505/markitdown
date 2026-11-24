@@ -21,7 +21,15 @@ R3 DIVERSIDAD    En cada partido, el signo favorito puede ir como mucho en esta 
                  bien calibradas (7.912 favoritos 45-70 % de Primera y Segunda 2005-26: daban 46,4 % de sorpresa
                  y salió 44,3 %), así que no es pesimismo. Prueba: modelo/sorpresas.py, analisis/sorpresas.md.
 R4 PLENO         El marcador más probable de la mesa en todas las apuestas.
-R5 PROBABILIDAD  Solo las de la mesa (modelo + noticias A/B). Las cuotas y el % del público no cambian nada.
+R5 PROBABILIDAD  Las de la mesa (modelo + noticias A/B). El % del público no cambia nada.
+R5b CASAS (24/11) Si el partido trae `mercado` (1X2 de las casas sin margen), el boleto se calcula con esa
+                 probabilidad y no con la de la mesa. Medido: en 1.372 partidos de Primera y Segunda 2024-26
+                 (fuera de muestra) las casas tienen log-loss 0,966 y la mesa 1,014 (−0,047 por partido, z ≈ 7,5,
+                 igual en 2024-25 y 2025-26); en las jornadas jugadas J19 y J23 (25 partidos con cuota) 0,756 frente
+                 a 0,821. Cualquier mezcla mesa-casas empeora frente a las casas solas. Los topes de R3 y el aviso
+                 de las casas se siguen calculando con la P de la mesa (más cobertura, nunca menos). Sin cuota
+                 (Liga F, Champions F) y en el Pleno manda la mesa. `--solo-mesa` vuelve al cálculo anterior.
+                 Prueba: analisis/revision-jornadas.md, modelo/revision_jornadas.py.
 R6 FORMATOS      Se prueban siempre todos: directas, reducidas oficiales, directa + sencillas protegidas y
                  24 sencillas optimizadas (búsqueda de máxima P(≥13) con el tope de R3).
 R7 CUÁNTO JUGAR  18 € es un tope, no un objetivo. Cada euro pierde de media 0,45 €, así que se juega por bloques
@@ -217,13 +225,26 @@ def decidir(probs, presupuesto=PRESUPUESTO_MAX):
     return el, tabla
 
 
+def probabilidades(partidos, casas=True):
+    """R5b: la P de las casas (sin margen) si el partido la trae; si no, la de la mesa."""
+    out = []
+    for x in partidos:
+        m = x.get("mercado") if casas else None
+        out.append([v / sum(m) for v in m] if m and len(m) == 3 else x["p"])
+    return out
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("jornada"); ap.add_argument("--guardar", action="store_true")
     ap.add_argument("--presupuesto", type=float, help="por defecto lo fija R7")
+    ap.add_argument("--solo-mesa", action="store_true", help="no aplicar R5b (probabilidades de las casas)")
     a = ap.parse_args()
     d = json.load(open(a.jornada, encoding="utf-8"))
-    probs = [x["p"] for x in d["partidos"]]
+    probs = probabilidades(d["partidos"], not a.solo_mesa)
+    n_casas = sum(1 for x in d["partidos"] if x.get("mercado")) if not a.solo_mesa else 0
+    if n_casas:
+        print(f"R5b: {n_casas} de 14 partidos con la probabilidad de las casas")
     global TOPES_JORNADA
     TOPES_JORNADA = topes_partidos(d["partidos"])
     if a.presupuesto is None:
@@ -248,7 +269,8 @@ def main():
     pleno = max(marc, key=marc.get) if marc else pl.get("marcador")
     print(f"\nPleno (R4): {pleno} en todas las apuestas")
     if a.guardar:
-        d["boleto_mesa"] = {"reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026)", "formato": el["formato"],
+        d["boleto_mesa"] = {"reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026; R5b casas 24/11)" if n_casas else "herramientas/reglas_mesa.py (R1-R7, 22/11/2026)",
+                            "probabilidad": f"casas en {n_casas} partidos, mesa en el resto" if n_casas else "mesa", "formato": el["formato"],
                             "apuestas": el["apuestas"], "coste": el["coste"], "columnas": cols, "pleno": pleno,
                             "p14": round(el["p14"], 6), "p13": round(el["p13"], 4), "p12": round(el["p12"], 4),
                             "comparativa": [{k: (round(v, 6) if isinstance(v, float) else v) for k, v in t.items() if k != "columnas"} for t in tabla]}

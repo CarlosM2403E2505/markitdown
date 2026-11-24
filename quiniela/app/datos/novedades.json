@@ -423,6 +423,14 @@
    "origen": "Mesa (orden de Carlos: asegurar fijos)",
    "aporte": "Triple revisión de fijos (mesa, casas, forma, bajas). Se mantienen Betis y Barça (24/24) y Madrid (23/24). City deja de ser fijo: 70 % pero 4 de 15 puntos de forma → 21×1, 2×X, 1×2. P(≥13) 3,03 → 3,02 %. 6 partidos ya llevan los tres signos repartidos.",
    "cambia": "Sí"
+  },
+  {
+   "id": "revision-jornadas-2411",
+   "fecha": "2026-11-24 16:40",
+   "jornada": 24,
+   "origen": "Hilo «Aprender de todas las jornadas jugadas»",
+   "aporte": "Revisión J14-J23: la mesa no infla favoritos (43 ganados, 37,6 esperados); lo que tumba es el signo sin cubrir (8 de 14, X). Las casas aciertan más que la mesa (1.372 partidos: 0,966 frente a 1,014) → regla R5b: con cuota, el boleto usa la P de las casas. J24 rehecha: P(≥13) 3,92 → 4,54 % (medido con casas), 18 €.",
+   "cambia": "Sí"
   }
  ]
 }
