@@ -70,6 +70,8 @@ def topes_partidos(partidos):
         t = tope(max(p), (p[f] - m[f]) if m else 0.0, x.get("forma_favorito"))
         if m:  # R3b (23/11): el tramo se mira también con la P de las casas para ese signo; manda el más estricto
             t = min(t, tope(m[f], 0.0, x.get("forma_favorito")))
+        if x.get("tope_mesa"):  # 24/11 (orden de Carlos: asegurar fijos): tope fijado por la mesa para ese partido
+            t = min(t, float(x["tope_mesa"]))
         out.append(t)
     return out
 

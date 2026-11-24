@@ -114,7 +114,9 @@
     0.1511,
     0.1111
    ],
-   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06"
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "tope_mesa": 0.9,
+   "tope_mesa_motivo": "City 70 % pero 4 de 15 puntos en sus 5 últimos de liga (justo encima del corte de mala forma, 70 %): la mesa lo protege como fijo en mala forma (orden de Carlos 24/11)"
   },
   {
    "n": 4,
@@ -877,14 +879,14 @@
    "121122X211122X",
    "12112222111212",
    "X211222212X22X",
-   "1X112222X21212",
-   "X111221222121X",
-   "X11122112X1X1X"
+   "11X12222X21212",
+   "X1X122122X121X",
+   "X121221122X2X2"
   ],
   "pleno": "M-1",
-  "p14": 0.002782,
-  "p13": 0.0303,
-  "p12": 0.1363,
+  "p14": 0.00278,
+  "p13": 0.0302,
+  "p12": 0.1357,
   "comparativa": [
    {
     "formato": "Directa 3 dobles + 1 triple · 24 ap.",
@@ -898,6 +900,11 @@
     "incumple": [
      [
       1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
       1.0,
       0.9
      ],
@@ -944,6 +951,11 @@
       0.9
      ],
      [
+      3,
+      1.0,
+      0.9
+     ],
+     [
       9,
       1.0,
       0.9
@@ -974,10 +986,10 @@
     "formato": "Directa 4 dobles + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.003484,
-    "p13": 0.03005,
-    "p12": 0.12765,
-    "p10": 0.5726,
+    "p14": 0.003481,
+    "p13": 0.0299,
+    "p12": 0.1268,
+    "p10": 0.56845,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1004,6 +1016,11 @@
     "incumple": [
      [
       1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
       1.0,
       0.9
      ],
@@ -1043,10 +1060,10 @@
     "formato": "Directa 1 doble + 2 triples + 6 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.003634,
-    "p13": 0.0299,
-    "p12": 0.12645,
-    "p10": 0.5981,
+    "p14": 0.003632,
+    "p13": 0.02995,
+    "p12": 0.12605,
+    "p10": 0.59245,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1073,6 +1090,11 @@
     "incumple": [
      [
       1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
       1.0,
       0.9
      ],
@@ -1109,6 +1131,11 @@
       0.9
      ],
      [
+      3,
+      1.0,
+      0.9
+     ],
+     [
       9,
       1.0,
       0.9
@@ -1124,10 +1151,10 @@
     "formato": "Reducida 2 (7 dobles) + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.002333,
-    "p13": 0.02925,
-    "p12": 0.13255,
-    "p10": 0.62075,
+    "p14": 0.002318,
+    "p13": 0.0291,
+    "p12": 0.1318,
+    "p10": 0.61355,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1143,6 +1170,11 @@
     "incumple": [
      [
       1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
       1.0,
       0.9
      ],
@@ -1177,10 +1209,10 @@
     "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.002102,
-    "p13": 0.02865,
-    "p12": 0.13865,
-    "p10": 0.6456,
+    "p14": 0.002097,
+    "p13": 0.02855,
+    "p12": 0.13755,
+    "p10": 0.63955,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1188,10 +1220,10 @@
     "formato": "24 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.002782,
-    "p13": 0.03035,
-    "p12": 0.13635,
-    "p10": 0.619,
+    "p14": 0.00278,
+    "p13": 0.03025,
+    "p12": 0.1357,
+    "p10": 0.61555,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1214,6 +1246,11 @@
       2,
       0.792,
       0.6
+     ],
+     [
+      3,
+      1.0,
+      0.9
      ],
      [
       7,
@@ -1258,6 +1295,6 @@
     ]
    }
   ],
-  "nota": "24/11 13:10: bajas de Chrome (bajas_2411.json), cuotas bet365 y % LAE nuevos. 18 € con R3b. Columnas por acierto esperado."
+  "nota": "24/11 14:15: orden de Carlos (asegurar fijos). City protegido (tope 90 %, forma 4/15). Columnas por acierto esperado."
  }
 }
