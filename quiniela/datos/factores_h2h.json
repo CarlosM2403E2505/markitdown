@@ -1,0 +1,224 @@
+{
+ "fuente": "football-data.co.uk (espejo xgabora, clase B), SP1+SP2",
+ "hasta": "2026-09-03",
+ "pruebas": [
+  {
+   "factores": [
+    "h2h_dif"
+   ],
+   "n_ajuste": 9815,
+   "n_prueba": 7673,
+   "ll_casas": 1.0036,
+   "ll_casas_recal": 1.00312,
+   "ll_con_factor": 1.0033,
+   "mejora": -0.00018,
+   "mejora_2016_20_y_2021_26": [
+    -0.00029,
+    -9e-05
+   ],
+   "coef": [
+    0.0528,
+    0.0344,
+    -0.0063,
+    0.0307
+   ]
+  },
+  {
+   "factores": [
+    "h2h_x"
+   ],
+   "n_ajuste": 9815,
+   "n_prueba": 7673,
+   "ll_casas": 1.0036,
+   "ll_casas_recal": 1.00312,
+   "ll_con_factor": 1.00333,
+   "mejora": -0.00021,
+   "mejora_2016_20_y_2021_26": [
+    -0.00021,
+    -0.00022
+   ],
+   "coef": [
+    0.0465,
+    0.0162,
+    -0.0469,
+    0.1349
+   ]
+  },
+  {
+   "factores": [
+    "ult_sig",
+    "hay_ult"
+   ],
+   "n_ajuste": 9815,
+   "n_prueba": 7673,
+   "ll_casas": 1.0036,
+   "ll_casas_recal": 1.00312,
+   "ll_con_factor": 1.00418,
+   "mejora": -0.00106,
+   "mejora_2016_20_y_2021_26": [
+    -0.00142,
+    -0.00072
+   ],
+   "coef": [
+    0.0626,
+    0.034,
+    -0.0293,
+    0.0564,
+    -0.041,
+    -0.111
+   ]
+  },
+  {
+   "factores": [
+    "h2h_dif",
+    "h2h_x",
+    "ult_sig",
+    "hay_ult"
+   ],
+   "n_ajuste": 9815,
+   "n_prueba": 7673,
+   "ll_casas": 1.0036,
+   "ll_casas_recal": 1.00312,
+   "ll_con_factor": 1.00462,
+   "mejora": -0.0015,
+   "mejora_2016_20_y_2021_26": [
+    -0.00197,
+    -0.00106
+   ],
+   "coef": [
+    0.0615,
+    0.0248,
+    0.0147,
+    0.0268,
+    -0.0299,
+    0.031,
+    0.0509,
+    0.1127,
+    -0.0541,
+    -0.1111
+   ]
+  }
+ ],
+ "j25": [
+  {
+   "n": 1,
+   "partido": "Betis – Rayo",
+   "duelos_6": 6,
+   "h2h": "09/23 1-0 · 03/24 0-2 fuera · 12/24 1-1 · 05/25 2-2 fuera · 12/25 0-0 fuera · 02/26 1-1",
+   "balance": "1-4-1",
+   "temporada_pasada": "1-1"
+  },
+  {
+   "n": 2,
+   "partido": "Málaga – Athletic",
+   "duelos_6": 0,
+   "h2h": "",
+   "balance": "0-0-0",
+   "temporada_pasada": "no se jugó"
+  },
+  {
+   "n": 3,
+   "partido": "Elche – Atlético",
+   "duelos_6": 6,
+   "h2h": "08/21 0-1 fuera · 05/22 0-2 · 12/22 0-2 fuera · 05/23 1-0 · 08/25 1-1 fuera · 04/26 3-2",
+   "balance": "2-1-3",
+   "temporada_pasada": "3-2"
+  },
+  {
+   "n": 4,
+   "partido": "Real Madrid – Alavés",
+   "duelos_6": 6,
+   "h2h": "12/23 1-0 fuera · 05/24 5-0 · 09/24 3-2 · 04/25 1-0 fuera · 12/25 2-1 fuera · 04/26 2-1",
+   "balance": "6-0-0",
+   "temporada_pasada": "2-1"
+  },
+  {
+   "n": 5,
+   "partido": "Valencia – Osasuna",
+   "duelos_6": 6,
+   "h2h": "08/23 1-2 · 04/24 1-0 fuera · 09/24 0-0 · 03/25 3-3 fuera · 08/25 0-1 fuera · 03/26 1-0",
+   "balance": "2-2-2",
+   "temporada_pasada": "1-0"
+  },
+  {
+   "n": 6,
+   "partido": "Deportivo – Barcelona",
+   "duelos_6": 0,
+   "h2h": "",
+   "balance": "0-0-0",
+   "temporada_pasada": "no se jugó"
+  },
+  {
+   "n": 7,
+   "partido": "Celta – Villarreal",
+   "duelos_6": 6,
+   "h2h": "12/23 2-3 fuera · 05/24 3-2 · 08/24 3-4 fuera · 04/25 3-0 · 08/25 1-1 · 04/26 1-2 fuera",
+   "balance": "2-1-3",
+   "temporada_pasada": "1-1"
+  },
+  {
+   "n": 8,
+   "partido": "Real Sociedad – Sevilla",
+   "duelos_6": 6,
+   "h2h": "11/23 2-1 · 03/24 2-3 fuera · 11/24 2-0 fuera · 03/25 0-1 · 10/25 2-1 · 05/26 0-1 fuera",
+   "balance": "3-0-3",
+   "temporada_pasada": "2-1"
+  },
+  {
+   "n": 9,
+   "partido": "Las Palmas – Andorra",
+   "duelos_6": 4,
+   "h2h": "08/22 2-0 · 03/23 0-0 fuera · 08/25 1-1 · 05/26 1-5 fuera",
+   "balance": "1-2-1",
+   "temporada_pasada": "1-1"
+  },
+  {
+   "n": 10,
+   "partido": "Albacete – Tenerife",
+   "duelos_6": 6,
+   "h2h": "10/22 1-1 · 02/23 0-1 fuera · 09/23 0-2 fuera · 04/24 1-0 · 11/24 2-1 · 02/25 1-3 fuera",
+   "balance": "2-1-3",
+   "temporada_pasada": "no se jugó"
+  },
+  {
+   "n": 11,
+   "partido": "Eibar – Burgos",
+   "duelos_6": 6,
+   "h2h": "09/23 0-1 fuera · 03/24 0-1 · 11/24 0-1 fuera · 05/25 1-0 · 01/26 0-1 fuera · 03/26 0-0",
+   "balance": "1-1-4",
+   "temporada_pasada": "0-0"
+  },
+  {
+   "n": 12,
+   "partido": "Granada – Ceuta",
+   "duelos_6": 2,
+   "h2h": "12/25 1-1 · 02/26 1-2 fuera",
+   "balance": "0-1-1",
+   "temporada_pasada": "1-1"
+  },
+  {
+   "n": 13,
+   "partido": "Mallorca – Castellón",
+   "duelos_6": 2,
+   "h2h": "12/20 3-1 · 04/21 0-1 fuera",
+   "balance": "1-0-1",
+   "temporada_pasada": "no se jugó"
+  },
+  {
+   "n": 14,
+   "partido": "Almería – Sporting",
+   "duelos_6": 6,
+   "h2h": "11/21 1-0 fuera · 04/22 1-0 · 08/24 1-1 · 02/25 1-1 fuera · 09/25 2-1 · 05/26 1-3 fuera",
+   "balance": "3-2-1",
+   "temporada_pasada": "2-1"
+  },
+  {
+   "n": 15,
+   "partido": "Espanyol – Getafe",
+   "duelos_6": 6,
+   "h2h": "01/23 2-1 fuera · 04/23 1-0 · 12/24 0-1 fuera · 04/25 1-0 · 12/25 1-0 fuera · 03/26 1-2",
+   "balance": "4-0-2",
+   "temporada_pasada": "1-2"
+  }
+ ]
+}

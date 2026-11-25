@@ -209,6 +209,35 @@ def cifras(r):
             f'<span>P(≥12) <b>{pct(r["p12"])}</b></span>')
 
 
+def tabla_datos(d):
+    e = html.escape
+    filas = [(x.get("n", 15), x["partido"], x["datos"]) for x in d["partidos"] + [d.get("pleno") or {}] if x.get("datos")]
+    if not filas:
+        return ""
+    h = ['<section><h2>Datos por partido</h2><div class="scroll"><table class="datos"><thead><tr><th class="n">#</th><th class="p">Partido</th>'
+         '<th>Duelos (6 años, goles del local de hoy)</th><th>L-X-V</th><th>Temporada pasada</th><th>Entrenador nuevo</th><th>Carga (hasta 22/11) y Europa</th><th>Riesgo de rotación</th></tr></thead><tbody>']
+    for n, pa, x in filas:
+        h.append(f'<tr><td class="n">{n}</td><td class="p">{e(pa)}</td><td class="h2h">{e(x["h2h_6"])}</td><td>{e(x["balance_LXV"])}</td>'
+                 f'<td>{e(x["temporada_pasada"])}</td><td>{e(x["entrenador_nuevo"])}</td>'
+                 f'<td class="h2h">{e(x.get("carga", "—"))}</td><td class="h2h">{e(x.get("rotacion", "—"))}</td></tr>')
+    h.append("</tbody></table></div></section>")
+    m = d.get("medicion_factores")
+    if m:
+        nom = {"h2h_dif": "Balance de duelos", "h2h_x": "Empates en duelos", "ult_sig": "Temporada pasada", "hay_ult": None}
+        h.append('<section><h2>¿Mejora a las cuotas? (Primera y Segunda, fuera de muestra 2016-26)</h2><div class="scroll"><table><thead><tr>'
+                 '<th class="p">Dato</th><th>Partidos</th><th>Log-loss casas</th><th>Con el dato</th><th>Mejora</th><th>2016-20 / 2021-26</th><th>Entra</th></tr></thead><tbody>')
+        for t in m["pruebas"]:
+            nm = " + ".join(nom[c] for c in t["factores"] if nom[c]) if len(t["factores"]) < 4 else "Los tres juntos"
+            ok = t["mejora"] > 0 and min(t["mejora_2016_20_y_2021_26"]) > 0
+            h.append(f'<tr><td class="p">{e(nm)}</td><td>{t["n_prueba"]}</td><td>{t["ll_casas_recal"]:.4f}</td><td>{t["ll_con_factor"]:.4f}</td>'
+                     f'<td class="{"bien" if ok else "mal"}">{t["mejora"]:+.4f}</td><td>{" / ".join(f"{v:+.4f}" for v in t["mejora_2016_20_y_2021_26"])}</td>'
+                     f'<td class="{"bien" if ok else "mal"}">{"Sí" if ok else "No"}</td></tr>')
+        for nm, res, fu in m.get("otros", []):
+            h.append(f'<tr><td class="p">{e(nm)}</td><td colspan="5" class="h2h">{e(res)} · {e(fu)}</td><td class="{"bien" if res.startswith("Sí") else "mal"}">{"Sí" if res.startswith("Sí") else "No"}</td></tr>')
+        h.append("</tbody></table></div></section>")
+    return "".join(h)
+
+
 def pagina(d, probs, o):
     e = html.escape
     tope = 18.0
@@ -257,11 +286,12 @@ td.c{{font-family:ui-monospace,Menlo,monospace}} td.alt{{color:var(--alt);font-w
 tr.pleno td{{border-top:2px solid var(--line)}} tr.acierto td{{color:var(--mut);font-size:12px}}
 .cifras{{display:flex;flex-wrap:wrap;gap:6px 16px;margin:0 0 8px;color:var(--mut)}} .cifras b{{color:var(--fg)}}
 .comp td:first-child{{text-align:left;font-weight:600}} td.mal{{color:var(--mal);font-weight:700}} td.bien{{color:var(--acc)}}
-td.tipo{{text-align:left;font-weight:600}} .falta td{{white-space:normal;text-align:left}}
+td.tipo{{text-align:left;font-weight:600}} td.h2h{{white-space:normal;min-width:260px;font-size:12px;text-align:left}} .falta td{{white-space:normal;text-align:left}}
 </style></head><body><main>
 <header><h1>Pronósticos por reducida · J{d['jornada']}</h1><p>{e(estado)} · {e(d.get('fechas', ''))} · Pleno {e((d.get('pleno') or {}).get('partido', ''))}</p></header>
 {''.join(falta)}
 {''.join(comp)}
+{tabla_datos(d)}
 <h3 class="grupo">Opción A · 3 Reducidas 1 oficiales</h3>
 {cifras_total(o['A']['total'])}
 {''.join(secs)}

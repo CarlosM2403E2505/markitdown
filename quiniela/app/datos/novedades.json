@@ -463,6 +463,14 @@
    "origen": "Carlos («Hice los 4 primeros boletos y la reducida»)",
    "aporte": "J24 sellada: Reducida 1 oficial (9 ap.) + boletos 1-4 de sencillas (32 ap.); el boleto 5 no se jugó. 41 apuestas, 30,75 €, Pleno M-1. P(≥13) 6,80 %, P(14) 1/181 (casas). El escrutinio se hace solo con lo sellado.",
    "cambia": "Sí"
+  },
+  {
+   "id": "j25-02",
+   "fecha": "2026-11-25 01:45",
+   "jornada": 25,
+   "origen": "Hilo Pronósticos por reducida",
+   "aporte": "Enfrentamientos (6 años) y mismo partido la temporada pasada de los 15 partidos; medidos frente a las cuotas en 7.673 partidos 2016-26: no mejoran (log-loss −0,0002 a −0,0015), no cambian nada. Nuevo artefacto Pronósticos por reducida y Reducida 1 corregida a la tabla oficial (J24 rehecha).",
+   "cambia": "No"
   }
  ]
 }

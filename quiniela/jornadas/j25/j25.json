@@ -14,7 +14,15 @@
     0.25,
     0.2
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "09/23 1-0 · 03/24 0-2 fuera · 12/24 1-1 · 05/25 2-2 fuera · 12/25 0-0 fuera · 02/26 1-1",
+    "balance_LXV": "1-4-1",
+    "temporada_pasada": "1-1",
+    "entrenador_nuevo": "—",
+    "carga": "Betis: 1 en 14 días, último 21/11 · Europa League mar 24 | Rayo: 1 en 14 días, último 21/11",
+    "rotacion": "Betis media (EL mar 24)"
+   }
   },
   {
    "n": 2,
@@ -25,7 +33,15 @@
     0.27,
     0.53
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "sin duelos en 6 años",
+    "balance_LXV": "0-0-0",
+    "temporada_pasada": "no se jugó",
+    "entrenador_nuevo": "—",
+    "carga": "Málaga: 1 en 14 días, último 22/11 | Athletic: 1 en 14 días, último 20/11",
+    "rotacion": "—"
+   }
   },
   {
    "n": 3,
@@ -36,7 +52,15 @@
     0.2148,
     0.6114
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "08/21 0-1 fuera · 05/22 0-2 · 12/22 0-2 fuera · 05/23 1-0 · 08/25 1-1 fuera · 04/26 3-2",
+    "balance_LXV": "2-1-3",
+    "temporada_pasada": "3-2",
+    "entrenador_nuevo": "—",
+    "carga": "Elche: 0 en 14 días, último 08/11 | Atlético: 1 en 14 días, último 22/11 · Champions mié 25",
+    "rotacion": "Atlético alta (Champions mié 25)"
+   }
   },
   {
    "n": 4,
@@ -47,7 +71,15 @@
     0.16,
     0.1
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "12/23 1-0 fuera · 05/24 5-0 · 09/24 3-2 · 04/25 1-0 fuera · 12/25 2-1 fuera · 04/26 2-1",
+    "balance_LXV": "6-0-0",
+    "temporada_pasada": "2-1",
+    "entrenador_nuevo": "—",
+    "carga": "Real Madrid: 1 en 14 días, último 21/11 · Champions mar 24 | Alavés: 1 en 14 días, último 21/11",
+    "rotacion": "Real Madrid media (Champions mar 24)"
+   }
   },
   {
    "n": 5,
@@ -58,7 +90,15 @@
     0.33,
     0.29
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "08/23 1-2 · 04/24 1-0 fuera · 09/24 0-0 · 03/25 3-3 fuera · 08/25 0-1 fuera · 03/26 1-0",
+    "balance_LXV": "2-2-2",
+    "temporada_pasada": "1-0",
+    "entrenador_nuevo": "Osasuna",
+    "carga": "Valencia: 1 en 14 días, último 21/11 | Osasuna: 1 en 14 días, último 22/11",
+    "rotacion": "—"
+   }
   },
   {
    "n": 6,
@@ -69,7 +109,15 @@
     0.17,
     0.71
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "sin duelos en 6 años",
+    "balance_LXV": "0-0-0",
+    "temporada_pasada": "no se jugó",
+    "entrenador_nuevo": "—",
+    "carga": "Deportivo: 1 en 14 días, último 21/11 | Barcelona: 1 en 14 días, último 22/11 · Champions mié 25",
+    "rotacion": "Barcelona alta (Champions mié 25)"
+   }
   },
   {
    "n": 7,
@@ -80,7 +128,15 @@
     0.29,
     0.401
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "12/23 2-3 fuera · 05/24 3-2 · 08/24 3-4 fuera · 04/25 3-0 · 08/25 1-1 · 04/26 1-2 fuera",
+    "balance_LXV": "2-1-3",
+    "temporada_pasada": "1-1",
+    "entrenador_nuevo": "—",
+    "carga": "Celta: 1 en 14 días, último 21/11 · Europa League jue 26 | Villarreal: 1 en 14 días, último 22/11 · Champions mié 25",
+    "rotacion": "Celta muy alta (EL jue 26) · Villarreal alta (Champions mié 25)"
+   }
   },
   {
    "n": 8,
@@ -91,7 +147,15 @@
     0.2503,
     0.2823
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "11/23 2-1 · 03/24 2-3 fuera · 11/24 2-0 fuera · 03/25 0-1 · 10/25 2-1 · 05/26 0-1 fuera",
+    "balance_LXV": "3-0-3",
+    "temporada_pasada": "2-1",
+    "entrenador_nuevo": "—",
+    "carga": "Real Sociedad: 1 en 14 días, último 22/11 · Europa League jue 26 | Sevilla: 1 en 14 días, último 21/11",
+    "rotacion": "Real Sociedad muy alta (EL jue 26)"
+   }
   },
   {
    "n": 9,
@@ -102,7 +166,15 @@
     0.26,
     0.21
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "08/22 2-0 · 03/23 0-0 fuera · 08/25 1-1 · 05/26 1-5 fuera",
+    "balance_LXV": "1-2-1",
+    "temporada_pasada": "1-1",
+    "entrenador_nuevo": "—",
+    "carga": "Las Palmas: 2 en 14 días, último 15/11 | Andorra: 1 en 14 días, último 14/11",
+    "rotacion": "—"
+   }
   },
   {
    "n": 10,
@@ -113,7 +185,15 @@
     0.33,
     0.27
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "10/22 1-1 · 02/23 0-1 fuera · 09/23 0-2 fuera · 04/24 1-0 · 11/24 2-1 · 02/25 1-3 fuera",
+    "balance_LXV": "2-1-3",
+    "temporada_pasada": "no se jugó",
+    "entrenador_nuevo": "Albacete",
+    "carga": "Albacete: 0 en 14 días, último 07/11 | Tenerife: 1 en 14 días, último 15/11",
+    "rotacion": "—"
+   }
   },
   {
    "n": 11,
@@ -124,7 +204,15 @@
     0.3,
     0.26
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "09/23 0-1 fuera · 03/24 0-1 · 11/24 0-1 fuera · 05/25 1-0 · 01/26 0-1 fuera · 03/26 0-0",
+    "balance_LXV": "1-1-4",
+    "temporada_pasada": "0-0",
+    "entrenador_nuevo": "—",
+    "carga": "Eibar: 1 en 14 días, último 15/11 | Burgos: 1 en 14 días, último 13/11",
+    "rotacion": "—"
+   }
   },
   {
    "n": 12,
@@ -135,7 +223,15 @@
     0.21,
     0.13
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "12/25 1-1 · 02/26 1-2 fuera",
+    "balance_LXV": "0-1-1",
+    "temporada_pasada": "1-1",
+    "entrenador_nuevo": "Ceuta",
+    "carga": "Granada: 1 en 14 días, último 15/11 | Ceuta: 1 en 14 días, último 15/11",
+    "rotacion": "—"
+   }
   },
   {
    "n": 13,
@@ -146,7 +242,15 @@
     0.29,
     0.26
    ],
-   "fuente_p": "sin dato: base local Segunda 45/29/26"
+   "fuente_p": "sin dato: base local Segunda 45/29/26",
+   "datos": {
+    "h2h_6": "12/20 3-1 · 04/21 0-1 fuera",
+    "balance_LXV": "1-0-1",
+    "temporada_pasada": "no se jugó",
+    "entrenador_nuevo": "—",
+    "carga": "Mallorca: 1 en 14 días, último 14/11 | Castellón: 1 en 14 días, último 14/11",
+    "rotacion": "—"
+   }
   },
   {
    "n": 14,
@@ -157,7 +261,15 @@
     0.24,
     0.18
    ],
-   "fuente_p": "estudio de estilos (clase C)"
+   "fuente_p": "estudio de estilos (clase C)",
+   "datos": {
+    "h2h_6": "11/21 1-0 fuera · 04/22 1-0 · 08/24 1-1 · 02/25 1-1 fuera · 09/25 2-1 · 05/26 1-3 fuera",
+    "balance_LXV": "3-2-1",
+    "temporada_pasada": "2-1",
+    "entrenador_nuevo": "—",
+    "carga": "Almería: 1 en 14 días, último 14/11 | Sporting: 1 en 14 días, último 14/11",
+    "rotacion": "—"
+   }
   }
  ],
  "pleno": {
@@ -168,13 +280,153 @@
    0.298,
    0.24
   ],
-  "fuente": "estudio_estilos pleno_poisson (1-0 18,7 %)"
+  "fuente": "estudio_estilos pleno_poisson (1-0 18,7 %)",
+  "datos": {
+   "h2h_6": "01/23 2-1 fuera · 04/23 1-0 · 12/24 0-1 fuera · 04/25 1-0 · 12/25 1-0 fuera · 03/26 1-2",
+   "balance_LXV": "4-0-2",
+   "temporada_pasada": "1-2",
+   "entrenador_nuevo": "Espanyol",
+   "carga": "Espanyol: 1 en 14 días, último 20/11 | Getafe: 1 en 14 días, último 22/11",
+   "rotacion": "—"
+  }
  },
  "pendientes": [
   "Lista oficial SELAE de la J25 sin confirmar (orden de partidos y Pleno, clase C)",
   "Probabilidades de la mesa (modelo) sin correr: P provisional = estudio de estilos (clase C)",
-  "Onces y bajas (rotaciones post-Champions de Atlético, Madrid, Barça y Villarreal)",
   "% del público LAE (quiniela15), informativo",
-  "Horarios de Segunda sin confirmar"
- ]
+  "Horarios de Segunda sin confirmar",
+  "Onces y bajas (rotaciones post-Champions de Atlético, Madrid, Barça y Villarreal)",
+  "% de la plantilla que sigue de la temporada pasada: sin dato (Transfermarkt, navegador integrado); sin histórico para medirlo",
+  "Entrenador de la temporada pasada por equipo: solo el estudio (clase C) marca nuevos en Ceuta, Espanyol, Albacete y Osasuna; sin histórico para medirlo",
+  "Carga: Copa del Rey y partidos del 23-30/11 sin dato; minutos de los titulares (alineaciones Flashscore, navegador integrado); horarios de la J25 para contar días de descanso",
+  "Rotaciones posibles: falta saber qué titulares clave descansan (minutos, tarjetas al límite, partido grande la semana siguiente); se marca el riesgo por calendario"
+ ],
+ "medicion_factores": {
+  "fuente": "datos/factores_h2h.json (modelo/factores_h2h.py)",
+  "pruebas": [
+   {
+    "factores": [
+     "h2h_dif"
+    ],
+    "n_ajuste": 9815,
+    "n_prueba": 7673,
+    "ll_casas": 1.0036,
+    "ll_casas_recal": 1.00312,
+    "ll_con_factor": 1.0033,
+    "mejora": -0.00018,
+    "mejora_2016_20_y_2021_26": [
+     -0.00029,
+     -9e-05
+    ],
+    "coef": [
+     0.0528,
+     0.0344,
+     -0.0063,
+     0.0307
+    ]
+   },
+   {
+    "factores": [
+     "h2h_x"
+    ],
+    "n_ajuste": 9815,
+    "n_prueba": 7673,
+    "ll_casas": 1.0036,
+    "ll_casas_recal": 1.00312,
+    "ll_con_factor": 1.00333,
+    "mejora": -0.00021,
+    "mejora_2016_20_y_2021_26": [
+     -0.00021,
+     -0.00022
+    ],
+    "coef": [
+     0.0465,
+     0.0162,
+     -0.0469,
+     0.1349
+    ]
+   },
+   {
+    "factores": [
+     "ult_sig",
+     "hay_ult"
+    ],
+    "n_ajuste": 9815,
+    "n_prueba": 7673,
+    "ll_casas": 1.0036,
+    "ll_casas_recal": 1.00312,
+    "ll_con_factor": 1.00418,
+    "mejora": -0.00106,
+    "mejora_2016_20_y_2021_26": [
+     -0.00142,
+     -0.00072
+    ],
+    "coef": [
+     0.0626,
+     0.034,
+     -0.0293,
+     0.0564,
+     -0.041,
+     -0.111
+    ]
+   },
+   {
+    "factores": [
+     "h2h_dif",
+     "h2h_x",
+     "ult_sig",
+     "hay_ult"
+    ],
+    "n_ajuste": 9815,
+    "n_prueba": 7673,
+    "ll_casas": 1.0036,
+    "ll_casas_recal": 1.00312,
+    "ll_con_factor": 1.00462,
+    "mejora": -0.0015,
+    "mejora_2016_20_y_2021_26": [
+     -0.00197,
+     -0.00106
+    ],
+    "coef": [
+     0.0615,
+     0.0248,
+     0.0147,
+     0.0268,
+     -0.0299,
+     0.031,
+     0.0509,
+     0.1127,
+     -0.0541,
+     -0.1111
+    ]
+   }
+  ],
+  "otros": [
+   [
+    "Descanso ≤ 3 días del favorito",
+    "No: sorpresa 0,0 / −2,0 / −2,2 puntos frente a la cuota (al revés)",
+    "analisis/sorpresas.md, 7.912 + 15.773 partidos"
+   ],
+   [
+    "Cansancio por Europa o Copa",
+    "No: empeoraba el modelo fuera de muestra; retirado",
+    "quiniela/CLAUDE.md §3"
+   ],
+   [
+    "Estilos enfrentados (estudio)",
+    "Peso 0 hasta ganar a las casas en Brier 3 jornadas",
+    "herramientas/puntuar_externo.py"
+   ],
+   [
+    "Entrenador nuevo",
+    "Solo aviso (estudio de quiniela-mesa); efecto corto, ~10 partidos",
+    "analisis/rescate-quiniela-mesa.md"
+   ],
+   [
+    "% plantilla que sigue, minutos de titulares",
+    "Sin medir: falta histórico",
+    "—"
+   ]
+  ]
+ }
 }
