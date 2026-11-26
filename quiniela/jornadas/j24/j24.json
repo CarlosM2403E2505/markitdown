@@ -515,7 +515,9 @@
     0.265,
     0.4771
    ],
-   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06"
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "2",
+   "marcador": "1-2"
   },
   {
    "n": 14,
@@ -553,7 +555,9 @@
     0.242,
     0.286
    ],
-   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06"
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "1",
+   "marcador": "2-1"
   }
  ],
  "pleno": {

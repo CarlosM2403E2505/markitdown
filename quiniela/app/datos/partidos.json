@@ -1669,8 +1669,8 @@
    "m1": 0.2579,
    "mx": 0.265,
    "m2": 0.4771,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 24,
@@ -1688,8 +1688,8 @@
    "m1": 0.4719,
    "mx": 0.242,
    "m2": 0.286,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 24,

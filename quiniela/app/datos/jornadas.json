@@ -169,7 +169,7 @@
    "jornada": 24,
    "fechas": "24–26/11/2026",
    "tipo": "Europea (Champions J5 + Europa League)",
-   "estado": "Provisional (lista no oficial: quinielafutbol.info, 21/11, clase C)",
+   "estado": "Cerrada",
    "boleto": "Reducida 1 oficial (4 triples) + 32 sencillas",
    "coste": 30.75,
    "p14": 0.003212,
@@ -181,7 +181,7 @@
    "sueltas_p_todas": 0.7211,
    "pleno_jugado": "M-1",
    "pleno_resultado": "2-0",
-   "log_loss_modelo": null,
+   "log_loss_modelo": 0.8416,
    "log_loss_mercado": null,
    "log_loss_publico": null,
    "premio": null
