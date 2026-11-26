@@ -239,6 +239,46 @@
    "partido": "Inter – Stuttgart",
    "p": 0.905,
    "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 1,
+   "apuesta": "Marca el Barcelona",
+   "partido": "Deportivo – Barcelona",
+   "p": 0.954,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 2,
+   "apuesta": "Marca el Real Madrid",
+   "partido": "Real Madrid – Alavés",
+   "p": 0.95,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 3,
+   "apuesta": "Marca el Real Sociedad",
+   "partido": "Real Sociedad – Sevilla",
+   "p": 0.892,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 4,
+   "apuesta": "Marca el Almería",
+   "partido": "Almería – Sporting",
+   "p": 0.863,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 5,
+   "apuesta": "Marca el Granada",
+   "partido": "Granada – Ceuta",
+   "p": 0.86,
+   "resultado": null
   }
  ]
 }

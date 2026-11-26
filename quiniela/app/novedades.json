@@ -503,6 +503,14 @@
    "origen": "Mesa (idea de Carlos)",
    "aporte": "Seguro de favoritos: 4 sencillas con la X en 2 de los favoritos del 55-75 % y el 1 en otros 2. Probado en J24 (mejor columna 9→10) y J23 (igual), sin bajar la P(≥13). Pasa a regla desde la J25.",
    "cambia": "Sí"
+  },
+  {
+   "id": "j25-02",
+   "fecha": "2026-11-26 18:30",
+   "jornada": 25,
+   "origen": "Primer repaso del jueves (rutina)",
+   "aporte": "Lista J25 confirmada, modelo j25_run.py con cuotas OddsPortal (R5b) y bajas de jornadaperfecta. Boleto 24 sencillas, 18 €, Pleno 1-0; P(≥13) 1,50 %.",
+   "cambia": "Sí"
   }
  ]
 }

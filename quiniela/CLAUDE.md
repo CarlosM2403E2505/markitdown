@@ -86,7 +86,13 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **Encargos para Claude in Chrome (Carlos, 22/11/2026):** todo encargo nuevo (`encargo-*.md`) se añade también al artefacto «Encargos» (https://claude.ai/artifact/D5YMdo176NdDKM9Cz8y2MZ, fuente `/mnt/project-files/encargos/encargos.html`), agrupado por jornada, con botón de copiar y cuándo usarlo; el de la jornada vigente arriba y los pasados plegados como archivados. Republicar la misma ruta para mantener el enlace.
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
-## 5. Estado: J23 (21-22/11/2026) · **QUINIELA DEFINITIVA congelada (sábado 21/11, 09:30)** · cierre sábado 14:00
+## 5. Estado: **J25 (28-30/11/2026) · primer repaso hecho (jueves 26/11 tarde)** · cierre sábado 28/11 13:00 (particulares)
+- Lista confirmada (quiniela15 y eduardolosilla, 26/11): 8 Primera + 6 Segunda, Pleno Espanyol–Getafe (lun 21:00). Horarios laliga.com. Bote 1,1 M€. Definitivo: sáb 11:45.
+- Modelo `modelo/j25_run.py` (patrón J23; bajas en `jornadas/j25/bajas_2611.json`, solo A/B) → `j25.json`; cuotas OddsPortal 26/11 (`cuotas_oddsportal_2611.json`) en `mercado` (R5b). Ojo: correr j25_run.py conserva `mercado` y `publico` de los 14, pero hay que volver a poner el del Pleno y correr `reglas_mesa.py --guardar` (borra boleto_mesa).
+- Boleto (reglas_mesa.py): 24 sencillas optimizadas, 18 €, 3 boletos de 8 en serpentina (cada boleto con protección); Pleno 1-0 (13,4 %, 1-1 13,3 %). P(14) 1/956, P(≥13) 1,50 %. Entrega en `jornadas/j25/j25-pronostico.md`.
+- Pendiente: bet365 y % LAE (Chrome), onces y rotaciones, 8 resultados de la J15 de Segunda en los datos, H2 del Pleno antes del definitivo.
+
+## 5b. Estado anterior: J23 (21-22/11/2026) · **QUINIELA DEFINITIVA congelada (sábado 21/11, 09:30)** · cierre sábado 14:00
 - **DEFINITIVA:** boleto de 18 € (1 2 Racing–R.Sociedad, X2 Getafe–Atlético, 1X2 Sporting–Las Palmas, 1X Girona–Eibar) + 9 sencillas (C8 cambia a la X de Real Sociedad F–Sevilla F) + Pleno 1-1 en las 10. 33 columnas, 24,75 €: P(14) 1/175, P(≥13) 4,26 %, P(14+Pleno) 1/1.534. Sección «FINAL» de `j23-pronostico.md`. Siguiente paso: resultados del fin de semana → post-mortem.
 - **JUGADO REAL (fotos de Carlos, sábado 21/11):** boleto de 18 € igual al definitivo; sencillas C1-C5 + C9 + 6 columnas propias (E1-E6), sin C6-C8; Pleno 1-1 en todas. 36 columnas, 27 €. Guardado en `j23.json` → `jugado_real` (lo usan `archivar_definitivos.py` y `app_datos.py`). **El escrutinio se hace contra estas columnas.**
 - **Lista oficial** (quiniela15, 18/11): 7 Primera + 3 Segunda + 4 Liga F; **Pleno: Sevilla – Betis** (derbi, sábado 18:30).
