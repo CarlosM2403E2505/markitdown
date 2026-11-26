@@ -112,7 +112,13 @@ def main():
         if d.get("columna_novena"):
             cols.append(d["columna_novena"])
     # Carlos 23/11: columnas de mayor a menor acierto esperado por la mesa.
-    cols = sorted(cols, key=lambda c: -acierto(c))
+    # Lección J24 (24/11): si boleto_mesa trae 'boletos' (protección repartida), se respeta ese reparto
+    # y solo se ordena por acierto dentro de cada boleto de 8.
+    bl = d.get("boleto_mesa", {}).get("boletos")
+    if bl and sorted(sum(bl, [])) == sorted(cols):
+        cols = [c for b in bl for c in sorted(b, key=lambda c: -acierto(c))]
+    else:
+        cols = sorted(cols, key=lambda c: -acierto(c))
     real = d.get("jugado_real")
     no_jugadas = []
     if real and bm and boleto.get("total_apuestas"):  # Carlos 24/11: lo sellado de verdad manda
