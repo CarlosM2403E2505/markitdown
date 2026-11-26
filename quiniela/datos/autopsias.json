@@ -9,7 +9,8 @@
   "lesion_en_partido",
   "rival_superior_xg",
   "dato_entrada",
-  "cobertura_boleto"
+  "cobertura_boleto",
+  "rotacion_favorito"
  ],
  "hipotesis": [
   {
@@ -17,7 +18,7 @@
    "etiqueta": "cobertura_boleto",
    "texto": "Favoritos 55-75 % en Champions: la X en al menos P(X)·N columnas",
    "casos": 2,
-   "estado": "abierta"
+   "estado": "cubierta por la regla Seguro de favoritos (26/11, analisis/seguro-favoritos.md)"
   },
   {
    "id": "H2",
@@ -25,6 +26,13 @@
    "texto": "El Pleno de la mesa da demasiado al local con 3 o más goles cuando un grande juega en casa (J24: 47 % frente al 32 % del histórico LAE europeo, 18 de 56). Probar la calibración de P(local ≥ 3) fuera de muestra antes del Pleno de la J25",
    "casos": 1,
    "estado": "abierta, prioridad Pleno"
+  },
+  {
+   "id": "H3",
+   "etiqueta": "rotacion_favorito",
+   "texto": "Favorito de Champions que deja 4 o más titulares habituales en el banquillo: comprobar si empata o pierde más de lo que da la cuota de cierre. Las alineaciones salen 1 h antes y el definitivo va 2 h 15 min antes, así que solo serviría con un aviso de rotación previo",
+   "casos": 3,
+   "estado": "abierta"
   }
  ],
  "rojos": [
@@ -42,8 +50,13 @@
     0.92
    ],
    "clasificacion": "varianza",
-   "etiqueta": "cobertura_boleto",
-   "fuente": "The Analyst (Opta), Sky Sports"
+   "etiqueta": "rotacion_favorito",
+   "fuente": "The Analyst (Opta), Sky Sports; Flashscore (Opta/AFP), aportado por Carlos 26/11 21:46",
+   "xg_flashscore": [
+    2.83,
+    1.15
+   ],
+   "detalle": "Arsenal con Eze, Merino, Saliba, Timber, Havertz y Calafiori en el banquillo; 30 remates (4 a puerta), palo de Rice; gol de J. Bellingham anulado por fuera de juego. Raya era baja previa (no lesión en el partido)"
   },
   {
    "jornada": 24,
@@ -59,8 +72,13 @@
     0.61
    ],
    "clasificacion": "varianza",
-   "etiqueta": "cobertura_boleto",
-   "fuente": "The Analyst (Opta), Sky Sports"
+   "etiqueta": "rotacion_favorito",
+   "fuente": "The Analyst (Opta), Sky Sports; Flashscore (Opta/AFP), aportado por Carlos 26/11 21:46",
+   "xg_flashscore": [
+    1.35,
+    0.71
+   ],
+   "detalle": "City con Foden, Doku, Dias, Kovačić y Aït-Nouri suplentes; Nápoles con 8 bajas se adelantó dos veces"
   },
   {
    "jornada": 24,
@@ -73,8 +91,13 @@
    "columnas": "6/32",
    "xg": null,
    "clasificacion": "causa",
-   "etiqueta": "penalti_var",
-   "fuente": "Flashscore"
+   "etiqueta": "rival_superior_xg",
+   "fuente": "Flashscore; Flashscore (Opta/AFP), aportado por Carlos 26/11 21:46",
+   "xg_flashscore": [
+    1.73,
+    2.65
+   ],
+   "detalle": "Roma ganó el xG (2,65-1,73) con 6 cambios; PSG con Dembélé, Marquinhos y Zaire-Emery suplentes y sin Doué ni Kvaratskhelia (bajas ya vistas); dos penaltis (62' y 78' tras VAR)"
   },
   {
    "jornada": 24,
@@ -86,9 +109,14 @@
    "p_casas": 0.262,
    "columnas": "5/32",
    "xg": null,
-   "clasificacion": "causa",
+   "clasificacion": "varianza",
    "etiqueta": "penalti_var",
-   "fuente": "ESPN (incompleto)"
+   "fuente": "ESPN (incompleto); Flashscore (Opta/AFP), aportado por Carlos 26/11 21:46",
+   "xg_flashscore": [
+    2.52,
+    1.08
+   ],
+   "detalle": "El Sporting (favorito de la mesa, 47 %) ganó el xG; tres penaltis (uno fallado), dos goles del United anulados (decisiones cuestionables), roja a Tielemans 90+3'"
   },
   {
    "jornada": 24,
