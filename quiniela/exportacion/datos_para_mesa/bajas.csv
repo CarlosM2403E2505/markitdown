@@ -1,0 +1,31 @@
+equipo,jugador,posicion,tipo,fecha_regreso,fecha_fuente,fuente,clase,estado,partido,fecha_obtencion
+Bayern de Múnich,Saibari,,lesion,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»; The Washington Post, 2026-11-02, «Michael Olise trains and joins Bayern for Atletico game but Diaz stays on long injury list»",B,confirmada,Atlético – Bayern (Pleno),2026-11-03
+Bayern de Múnich,Gnabry,,lesion,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",B,confirmada,Atlético – Bayern (Pleno),2026-11-03
+Bayern de Múnich,Musiala,,lesion,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",B,confirmada,Atlético – Bayern (Pleno),2026-11-03
+Bayern de Múnich,Díaz,,lesion,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»; The Washington Post, 2026-11-02, «Michael Olise trains and joins Bayern for Atletico game but Diaz stays on long injury list»",B,confirmada,Atlético – Bayern (Pleno),2026-11-03
+Bayern de Múnich,Bara Ndiaye,,lesion,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",B,confirmada,Atlético – Bayern (Pleno),2026-11-03
+Bayern de Múnich,Neuer,portero,vuelve_a_entrenar,,2026-11-02,"Goal.com, «Officially: Bayern Munich settles Olise's fate for the clash with Atletico Madrid» y Bulinews, «Bayern boss gives fresh injury update on Olise and Neuer»; Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups» (suplente: Urbig)",B,duda,Atlético – Bayern (Pleno),2026-11-03
+Bayern de Múnich,Olise,,vuelve_a_entrenar,,2026-11-02,"Goal.com, «Officially: Bayern Munich settles Olise's fate for the clash with Atletico Madrid» y Bulinews, «Bayern boss gives fresh injury update on Olise and Neuer»; The Washington Post, 2026-11-02, «Michael Olise trains and joins Bayern for Atletico game but Diaz stays on long injury list»",B,duda,Atlético – Bayern (Pleno),2026-11-03
+Atlético de Madrid,Hjulmand,,sancion,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups» (roja contra el Stuttgart)",B,confirmada,Atlético – Bayern (Pleno),2026-11-03
+Atlético de Madrid,Johnny Cardoso,,duda,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",B,duda,Atlético – Bayern (Pleno),2026-11-03
+Atlético de Madrid,Koke,,duda,,2026-11-02,"Yahoo Sports, «Atletico Madrid vs. Bayern Munich preview: Team news and predicted lineups»",B,duda,Atlético – Bayern (Pleno),2026-11-03
+España,Rodri,centrocampista,lesion,,2026-11-06,"meridiano.net y sportaragon.com (convocatoria de De la Fuente, 6/11/2026)",B,confirmada,España – Inglaterra (Pleno),2026-11-11
+España,Dani Olmo,,lesion,,2026-11-06,"meridiano.net y sportaragon.com (convocatoria de De la Fuente, 6/11/2026)",B,confirmada,España – Inglaterra (Pleno),2026-11-11
+Inglaterra,Guéhi,defensa central,lesion,,2026-11-06,ESPN y englandfootball.com (9/11/2026): baja por la cadera; le sustituye Dan Burn,B,confirmada,España – Inglaterra (Pleno),2026-11-11
+Bélgica,Courtois,portero,,,2026-11-06,worldsoccertalk.com: no juega la Nations League (baja larga: sin ajuste para no contarla dos veces),B,confirmada,Bélgica – Italia,2026-11-11
+Bélgica,Openda,,lesion,,2026-11-11,fotmob.com (lista de plantilla; fecha poco fiable),C,duda,Bélgica – Italia,2026-11-11
+Bélgica,Debast,,lesion,,2026-11-11,fotmob.com (lista de plantilla; fecha poco fiable),C,duda,Bélgica – Italia,2026-11-11
+Granada,Pau Casadesús,,lesion,,2026-11-06,futbolfantasy.com (lesionados de LaLiga 2),B,confirmada,Granada – Las Palmas,2026-11-11
+Granada,Baïla Diallo,,lesion,,2026-11-06,futbolfantasy.com (lesionados de LaLiga 2),B,confirmada,Granada – Las Palmas,2026-11-11
+Las Palmas,José Arnáiz,,duda,,2026-11-06,futbolfantasy.com (lesionados de LaLiga 2),B,duda,Granada – Las Palmas,2026-11-11
+Castellón,Ousmane Camara,,lesion,,2026-11-11,jornadaperfecta.com (sin fecha clara),C,duda,Valladolid – Castellón,2026-11-11
+Almería,João Carvalho,,duda,,2026-11-11,jornadaperfecta.com (sin fecha clara),C,duda,Almería – Andorra,2026-11-11
+Sporting,Antonio Casas,,,,2026-11-11,"fotmob.com (listado del partido, sin confirmar)",C,confirmada,Real Sociedad B – Sporting,2026-11-11
+Sporting,Juan Otero,,sancion,,2026-11-11,"fotmob.com (listado del partido, sin confirmar)",C,confirmada,Real Sociedad B – Sporting,2026-11-11
+Sporting,César Gelabert,,,,2026-11-11,"fotmob.com (listado del partido, sin confirmar)",C,duda,Real Sociedad B – Sporting,2026-11-11
+Sporting,Pablo García,,,,2026-11-11,"fotmob.com (listado del partido, sin confirmar)",C,duda,Real Sociedad B – Sporting,2026-11-11
+Sporting,Konrad de la Fuente,,,,2026-11-11,"fotmob.com (listado del partido, sin confirmar)",C,duda,Real Sociedad B – Sporting,2026-11-11
+Girona,David López,,sancion,,2026-11-11,jornadaperfecta.com (sanciones sin fecha clara),C,duda,Oviedo – Girona,2026-11-11
+Girona,Rubén Pulido,,,,2026-11-11,jornadaperfecta.com (sanciones sin fecha clara),C,duda,Oviedo – Girona,2026-11-11
+Girona,Bryan Gil,,,,2026-11-11,jornadaperfecta.com (sin fecha clara),C,duda,Oviedo – Girona,2026-11-11
+Italia,Nicolò Zaniolo,,,,2026-11-11,"sport.sky.it (titular, 11/11/2026)",C,confirmada,Bélgica – Italia,2026-11-11

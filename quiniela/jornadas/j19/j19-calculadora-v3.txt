@@ -1,0 +1,117 @@
+# Jornada 19 · presupuesto 12 €
+Suma de P(X): 3.23
+
+## Los 14 signos
+ 1. Barcelona – Aston Villa          1  52.6% X  21.6% 2  25.8%  → 1 ⚠️  riesgo Moderado
+ 2. Bodø/Glimt – Lille               1  37.3% X  26.1% 2  36.6%  → 1 ⚠️  riesgo Muy alto
+ 3. Man. United – Roma               1  42.6% X  25.9% 2  31.6%  → 1 ⚠️  riesgo Alto
+ 4. Villarreal – PSG                 1  26.9% X  21.1% 2  51.9%  → 2 ⚠️  riesgo Moderado
+ 5. AEK Atenas – Real Madrid         1  15.4% X  18.6% 2  66.0%  → 2  riesgo Bajo
+ 6. Fenerbahçe – Liverpool           1  18.6% X  18.7% 2  62.7%  → 2 ⚠️  riesgo Moderado
+ 7. B. Dortmund – Betis              1  51.4% X  22.5% 2  26.1%  → 1 ⚠️  riesgo Moderado
+ 8. Oporto – Nápoles                 1  43.2% X  28.2% 2  28.7%  → 1 ⚠️  riesgo Alto
+ 9. Lens – Como                      1  34.3% X  26.9% 2  38.8%  → 2 ⚠️  riesgo Muy alto
+10. Leipzig – Man. City              1  22.4% X  20.2% 2  57.4%  → 2 ⚠️  riesgo Moderado
+11. Slavia Praga – Arsenal           1  12.2% X  19.0% 2  68.8%  → 2  riesgo Bajo
+12. Real Sociedad – Lyon             1  39.8% X  23.4% 2  36.8%  → 1 ⚠️  riesgo Muy alto
+13. Celta – Union SG                 1  37.2% X  26.2% 2  36.5%  → 1 ⚠️  riesgo Muy alto
+14. Getafe – Brighton                1  19.1% X  24.9% 2  56.0%  → 2 ⚠️  riesgo Moderado
+Fallos esperados con los 14 signos individuales: 6.94
+
+## Boleto A · 4 dobles completos: 16 apuestas, 12.00 €
+  P(≥14) = 0.072% (1 entre 1.385)
+  P(≥13) = 0.788% (1 entre 127)
+  P(≥12) =   4.0%
+  P(≥11) =  12.9%
+  P(≥10) =  29.2%
+  Aciertos esperados de la mejor columna: 8.50
+  Dobles: Bodø/Glimt – Lille (12), Lens – Como (12), Real Sociedad – Lyon (12), Celta – Union SG (12)
+  Columnas:
+     1. 11122211222112
+     2. 11122211222122
+     3. 11122211222212
+     4. 11122211222222
+     5. 11122211122112
+     6. 11122211122122
+     7. 11122211122212
+     8. 11122211122222
+     9. 12122211222112
+    10. 12122211222122
+    11. 12122211222212
+    12. 12122211222222
+    13. 12122211122112
+    14. 12122211122122
+    15. 12122211122212
+    16. 12122211122222
+
+## Boleto B · reducida de 7 dobles al 13: 16 apuestas, 12.00 €
+  P(≥14) = 0.040% (1 entre 2.516)
+  P(≥13) = 0.704% (1 entre 142)
+  P(≥12) =   4.4%
+  P(≥11) =  15.2%
+  P(≥10) =  35.1%
+  Aciertos esperados de la mejor columna: 8.86
+  Dobles: Bodø/Glimt – Lille (12), Man. United – Roma (12), Villarreal – PSG (12), Oporto – Nápoles (12), Lens – Como (12), Real Sociedad – Lyon (12), Celta – Union SG (12)
+  Columnas:
+     1. 11122211222112
+     2. 11122212122222
+     3. 11112211122212
+     4. 11112212222122
+     5. 11222211122122
+     6. 11222212222212
+     7. 11212211222222
+     8. 11212212122112
+     9. 12122211222222
+    10. 12122212122112
+    11. 12112211122122
+    12. 12112212222212
+    13. 12222211122212
+    14. 12222212222122
+    15. 12212211222112
+    16. 12212212122222
+
+(Reducida: 27456 combinaciones evaluadas; objetivo p14.)
+
+## Comparación de sistemas (12 €)
+  Sistema                                       P(14)   P(≥13)   P(≥12)   P(≥10)
+  A · 4 dobles completos                1 entre 1.385     0.8%     4.0%    29.2%
+  B · reducida de 7 dobles al 13        1 entre 2.516     0.7%     4.4%    35.1%
+  C · las 16 columnas más probables     1 entre 1.385     0.8%     4.0%    29.2%
+  C+X · 16 columnas, 2 con empate       1 entre 1.402     0.8%     4.1%    29.9%
+  C+X · 16 columnas, 4 con empate       1 entre 1.426     0.8%     4.0%    29.6%
+  C+X · 16 columnas, 8 con empate       1 entre 1.509     0.7%     3.9%    29.3%
+  C sin la columna del público · 16 columnas  1 entre 1.410     0.8%     4.1%    29.8%  ← ELEGIDO
+  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).
+  Columnas del sistema elegido (apuestas sencillas):
+     1. 12122211222112
+     2. 11122211222122
+     3. 12122211222122
+     4. 11122211222212
+     5. 12122211222212
+     6. 11122211222222
+     7. 12122211222222
+     8. 11122211122112
+     9. 12122211122112
+    10. 11122211122122
+    11. 12122211122122
+    12. 11122211122212
+    13. 12122211122212
+    14. 11122211122222
+    15. 12122211122222
+    16. 11222211222112
+
+## Pleno al 15 · Atlético de Madrid – Bayern de Múnich
+  1X2 del partido: 1  36.1% · X  21.9% · 2  42.1%
+  principal    1-1    9.3%
+  conservador  0-1    5.6%
+  varianza     M-M    6.2%
+  Se juega solo el principal, el mismo en todas las columnas.
+  P(14 y Pleno) con el sistema elegido: 0.007% (1 entre 15.139)
+
+## Apuestas sueltas
+  Liverpool marca                           90.8%
+  Real Madrid marca                         89.9%
+  Man. City marca                           88.9%
+  Arsenal marca                             88.1%
+  Barcelona marca                           86.6%
+  Aciertos esperados: 4.44 de 5 · P(todas) =  55.4%

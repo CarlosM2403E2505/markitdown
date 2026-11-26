@@ -1,0 +1,416 @@
+{
+ "jornada": 20,
+ "fechas": "7–8/11",
+ "tipo": "Doméstica (7 Primera + 3 Segunda + 4 Liga F)",
+ "estado": "Cerrada (sin premio; premios oficiales pendientes)",
+ "presupuesto": 12,
+ "lista": "Fuentes no oficiales coincidentes (eduardolosilla.es, quinielafutbol.info, pronósticos del 5/11): confirmar con el boleto oficial",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Málaga – Racing",
+   "competicion": "Primera",
+   "p": [
+    0.4808,
+    0.229,
+    0.2902
+   ],
+   "p_sin_T": [
+    0.4735,
+    0.2336,
+    0.2929
+   ],
+   "lambda_local": 1.935,
+   "lambda_visitante": 1.488,
+   "factor_empates": 1.08,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "1-2"
+  },
+  {
+   "n": 2,
+   "partido": "Osasuna – Athletic",
+   "competicion": "Primera",
+   "p": [
+    0.3977,
+    0.2778,
+    0.3245
+   ],
+   "p_sin_T": [
+    0.3946,
+    0.2803,
+    0.3251
+   ],
+   "lambda_local": 1.358,
+   "lambda_visitante": 1.207,
+   "factor_empates": 1.08,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "X",
+   "marcador": "1-1"
+  },
+  {
+   "n": 3,
+   "partido": "Valencia – Real Madrid",
+   "competicion": "Primera",
+   "p": [
+    0.2154,
+    0.2299,
+    0.5547
+   ],
+   "p_sin_T": [
+    0.2209,
+    0.2351,
+    0.5439
+   ],
+   "lambda_local": 1.146,
+   "lambda_visitante": 1.918,
+   "factor_empates": 1.08,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "0-3"
+  },
+  {
+   "n": 4,
+   "partido": "Elche – Betis",
+   "competicion": "Primera",
+   "p": [
+    0.3983,
+    0.2637,
+    0.338
+   ],
+   "p_sin_T": [
+    0.3952,
+    0.2668,
+    0.338
+   ],
+   "lambda_local": 1.466,
+   "lambda_visitante": 1.337,
+   "factor_empates": 1.08,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "0-2"
+  },
+  {
+   "n": 5,
+   "partido": "Real Sociedad – Rayo",
+   "competicion": "Primera",
+   "p": [
+    0.5088,
+    0.246,
+    0.2452
+   ],
+   "p_sin_T": [
+    0.5001,
+    0.2504,
+    0.2495
+   ],
+   "lambda_local": 1.742,
+   "lambda_visitante": 1.162,
+   "factor_empates": 1.08,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "1",
+   "marcador": "1-0"
+  },
+  {
+   "n": 6,
+   "partido": "Celta – Levante",
+   "competicion": "Primera",
+   "p": [
+    0.5397,
+    0.24,
+    0.2203
+   ],
+   "p_sin_T": [
+    0.5296,
+    0.2447,
+    0.2256
+   ],
+   "lambda_local": 1.806,
+   "lambda_visitante": 1.098,
+   "factor_empates": 1.08,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "X",
+   "marcador": "0-0"
+  },
+  {
+   "n": 7,
+   "partido": "Villarreal – Getafe",
+   "competicion": "Primera",
+   "p": [
+    0.5862,
+    0.2397,
+    0.1741
+   ],
+   "p_sin_T": [
+    0.5742,
+    0.245,
+    0.1807
+   ],
+   "lambda_local": 1.777,
+   "lambda_visitante": 0.883,
+   "factor_empates": 1.08,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "1",
+   "marcador": "2-0"
+  },
+  {
+   "n": 8,
+   "partido": "Cádiz – Oviedo",
+   "competicion": "Segunda",
+   "p": [
+    0.2948,
+    0.2692,
+    0.436
+   ],
+   "p_sin_T": [
+    0.2969,
+    0.2723,
+    0.4309
+   ],
+   "lambda_local": 1.069,
+   "lambda_visitante": 1.347,
+   "factor_empates": 1.0,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "2",
+   "marcador": "1-2"
+  },
+  {
+   "n": 9,
+   "partido": "Girona – Almería",
+   "competicion": "Segunda",
+   "p": [
+    0.5275,
+    0.2216,
+    0.2509
+   ],
+   "p_sin_T": [
+    0.518,
+    0.2268,
+    0.2552
+   ],
+   "lambda_local": 1.858,
+   "lambda_visitante": 1.242,
+   "factor_empates": 1.0,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "2"
+  },
+  {
+   "n": 10,
+   "partido": "Sporting – Valladolid",
+   "competicion": "Segunda",
+   "p": [
+    0.5384,
+    0.2309,
+    0.2307
+   ],
+   "p_sin_T": [
+    0.5283,
+    0.2359,
+    0.2357
+   ],
+   "lambda_local": 1.748,
+   "lambda_visitante": 1.087,
+   "factor_empates": 1.0,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "2"
+  },
+  {
+   "n": 11,
+   "partido": "Athletic F – Real Madrid F",
+   "competicion": "Liga F",
+   "p": [
+    0.1738,
+    0.1635,
+    0.6627
+   ],
+   "p_sin_T": [
+    0.1812,
+    0.1709,
+    0.648
+   ],
+   "lambda_local": 1.092,
+   "lambda_visitante": 2.221,
+   "factor_empates": 0.85,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "X"
+  },
+  {
+   "n": 12,
+   "partido": "Logroño F – Sevilla F",
+   "competicion": "Liga F",
+   "p": [
+    0.3713,
+    0.2637,
+    0.365
+   ],
+   "p_sin_T": [
+    0.3696,
+    0.2668,
+    0.3636
+   ],
+   "lambda_local": 1.054,
+   "lambda_visitante": 1.043,
+   "factor_empates": 0.85,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "X"
+  },
+  {
+   "n": 13,
+   "partido": "Eibar F – Real Sociedad F",
+   "competicion": "Liga F",
+   "p": [
+    0.335,
+    0.2635,
+    0.4015
+   ],
+   "p_sin_T": [
+    0.3351,
+    0.2667,
+    0.3982
+   ],
+   "lambda_local": 0.987,
+   "lambda_visitante": 1.104,
+   "factor_empates": 0.85,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "2"
+  },
+  {
+   "n": 14,
+   "partido": "Tenerife F – Alavés F",
+   "competicion": "Liga F",
+   "p": [
+    0.6464,
+    0.2239,
+    0.1297
+   ],
+   "p_sin_T": [
+    0.6325,
+    0.2304,
+    0.1371
+   ],
+   "lambda_local": 1.488,
+   "lambda_visitante": 0.533,
+   "factor_empates": 0.85,
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "veto_unico": false,
+   "resultado": "1"
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "Atlético – Barcelona",
+  "competicion": "Primera",
+  "p": [
+   0.3732,
+   0.223,
+   0.4038
+  ],
+  "lambda_local": 1.837,
+  "lambda_visitante": 1.911,
+  "factor_x": 1.08,
+  "empirica": {
+   "0-0": 0.06975,
+   "0-1": 0.0774,
+   "0-2": 0.05035,
+   "0-M": 0.04236,
+   "1-0": 0.0977,
+   "1-1": 0.113,
+   "1-2": 0.0706,
+   "1-M": 0.04168,
+   "2-0": 0.06903,
+   "2-1": 0.08662,
+   "2-2": 0.05289,
+   "2-M": 0.02832,
+   "M-0": 0.07123,
+   "M-1": 0.06815,
+   "M-2": 0.0402,
+   "M-M": 0.02071
+  },
+  "mezcla": 0.2,
+  "resultado_pleno": "1-2"
+ },
+ "sueltas": [
+  {
+   "partido": "Athletic F – Real Madrid F",
+   "apuesta": "Real Madrid F marca",
+   "p": 0.894
+  },
+  {
+   "partido": "Málaga – Racing",
+   "apuesta": "Málaga marca",
+   "p": 0.856
+  },
+  {
+   "partido": "Valencia – Real Madrid",
+   "apuesta": "Real Madrid marca",
+   "p": 0.852
+  },
+  {
+   "partido": "Girona – Almería",
+   "apuesta": "Girona marca",
+   "p": 0.844
+  },
+  {
+   "partido": "Villarreal – Getafe",
+   "apuesta": "1X (Villarreal o empate)",
+   "p": 0.826
+  }
+ ],
+ "combinacion_fuente": "elperiodicodeceuta.es (combinación de SELAE) y lotoluck.com, consultados el 8/11/2026",
+ "mejor_columna": 7
+}

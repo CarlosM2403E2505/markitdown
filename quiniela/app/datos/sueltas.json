@@ -1,0 +1,284 @@
+{
+ "rows": [
+  {
+   "jornada": 19,
+   "n": 1,
+   "apuesta": "Liverpool marca",
+   "partido": "Fenerbahçe – Liverpool",
+   "p": 0.908,
+   "resultado": true
+  },
+  {
+   "jornada": 19,
+   "n": 2,
+   "apuesta": "Real Madrid marca",
+   "partido": "AEK Atenas – Real Madrid",
+   "p": 0.899,
+   "resultado": true
+  },
+  {
+   "jornada": 19,
+   "n": 3,
+   "apuesta": "Man. City marca",
+   "partido": "Leipzig – Man. City",
+   "p": 0.889,
+   "resultado": true
+  },
+  {
+   "jornada": 19,
+   "n": 4,
+   "apuesta": "Arsenal marca",
+   "partido": "Slavia Praga – Arsenal",
+   "p": 0.881,
+   "resultado": true
+  },
+  {
+   "jornada": 19,
+   "n": 5,
+   "apuesta": "Barcelona marca",
+   "partido": "Barcelona – Aston Villa",
+   "p": 0.866,
+   "resultado": true
+  },
+  {
+   "jornada": 20,
+   "n": 1,
+   "apuesta": "Real Madrid F marca",
+   "partido": "Athletic F – Real Madrid F",
+   "p": 0.894,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 2,
+   "apuesta": "Málaga marca",
+   "partido": "Málaga – Racing",
+   "p": 0.856,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 3,
+   "apuesta": "Real Madrid marca",
+   "partido": "Valencia – Real Madrid",
+   "p": 0.852,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 4,
+   "apuesta": "Girona marca",
+   "partido": "Girona – Almería",
+   "p": 0.844,
+   "resultado": null
+  },
+  {
+   "jornada": 20,
+   "n": 5,
+   "apuesta": "1X (Villarreal o empate)",
+   "partido": "Villarreal – Getafe",
+   "p": 0.826,
+   "resultado": null
+  },
+  {
+   "jornada": 21,
+   "n": 1,
+   "apuesta": "Menos de 3,5 goles",
+   "partido": "Alavés F – Eibar F",
+   "p": 0.941,
+   "resultado": true
+  },
+  {
+   "jornada": 21,
+   "n": 2,
+   "apuesta": "Almería marca",
+   "partido": "Almería – Andorra",
+   "p": 0.898,
+   "resultado": true
+  },
+  {
+   "jornada": 21,
+   "n": 3,
+   "apuesta": "Mallorca marca",
+   "partido": "Mallorca – Córdoba",
+   "p": 0.869,
+   "resultado": true
+  },
+  {
+   "jornada": 21,
+   "n": 4,
+   "apuesta": "Atlético F marca",
+   "partido": "Sevilla F – Atlético F",
+   "p": 0.859,
+   "resultado": true
+  },
+  {
+   "jornada": 21,
+   "n": 5,
+   "apuesta": "Castellón marca",
+   "partido": "Valladolid – Castellón",
+   "p": 0.814,
+   "resultado": true
+  },
+  {
+   "jornada": 22,
+   "n": 1,
+   "apuesta": "Gana Barcelona F",
+   "partido": "Barcelona F – Servette F",
+   "p": 0.993,
+   "resultado": true
+  },
+  {
+   "jornada": 22,
+   "n": 2,
+   "apuesta": "Gana Juventus F",
+   "partido": "Juventus F – OH Leuven F",
+   "p": 0.832,
+   "resultado": true
+  },
+  {
+   "jornada": 22,
+   "n": 3,
+   "apuesta": "Gana Real Madrid F",
+   "partido": "Real Madrid F – Inter F",
+   "p": 0.8,
+   "resultado": true
+  },
+  {
+   "jornada": 22,
+   "n": 4,
+   "apuesta": "Gana Chelsea F",
+   "partido": "Chelsea F – PSG F",
+   "p": 0.656,
+   "resultado": true
+  },
+  {
+   "jornada": 22,
+   "n": 5,
+   "apuesta": "Gana Portugal",
+   "partido": "Gales – Portugal",
+   "p": 0.633,
+   "resultado": true
+  },
+  {
+   "jornada": 23,
+   "n": 1,
+   "apuesta": "Marca el Barcelona",
+   "partido": "Barcelona – Villarreal",
+   "p": 0.969,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 2,
+   "apuesta": "Marca el Real Madrid",
+   "partido": "Real Madrid – Celta",
+   "p": 0.922,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 3,
+   "apuesta": "Marca el Tenerife F",
+   "partido": "Tenerife F – Madrid CFF",
+   "p": 0.907,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 4,
+   "apuesta": "Marca la Real Sociedad",
+   "partido": "Racing – Real Sociedad",
+   "p": 0.888,
+   "resultado": null
+  },
+  {
+   "jornada": 23,
+   "n": 5,
+   "apuesta": "Marca el Real Madrid F",
+   "partido": "Granada F – Real Madrid F",
+   "p": 0.884,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 1,
+   "apuesta": "Marca el Barcelona",
+   "partido": "Sabah – Barcelona",
+   "p": 0.977,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 2,
+   "apuesta": "Marca el Atlético",
+   "partido": "Atlético – Viking",
+   "p": 0.942,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 3,
+   "apuesta": "Marca el Real Madrid",
+   "partido": "Real Madrid – PSV",
+   "p": 0.935,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 4,
+   "apuesta": "Marca el Betis",
+   "partido": "Slovan Bratislava – Betis",
+   "p": 0.926,
+   "resultado": null
+  },
+  {
+   "jornada": 24,
+   "n": 5,
+   "apuesta": "Marca el Inter",
+   "partido": "Inter – Stuttgart",
+   "p": 0.905,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 1,
+   "apuesta": "Marca el Barcelona",
+   "partido": "Deportivo – Barcelona",
+   "p": 0.954,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 2,
+   "apuesta": "Marca el Real Madrid",
+   "partido": "Real Madrid – Alavés",
+   "p": 0.95,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 3,
+   "apuesta": "Marca el Real Sociedad",
+   "partido": "Real Sociedad – Sevilla",
+   "p": 0.892,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 4,
+   "apuesta": "Marca el Almería",
+   "partido": "Almería – Sporting",
+   "p": 0.863,
+   "resultado": null
+  },
+  {
+   "jornada": 25,
+   "n": 5,
+   "apuesta": "Marca el Granada",
+   "partido": "Granada – Ceuta",
+   "p": 0.86,
+   "resultado": null
+  }
+ ]
+}

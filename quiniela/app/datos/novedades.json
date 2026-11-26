@@ -1,0 +1,516 @@
+{
+ "rows": [
+  {
+   "id": "j23-01",
+   "fecha": "2026-11-20 01:00",
+   "jornada": 23,
+   "origen": "Revisión del viernes (madrugada)",
+   "aporte": "Riquelme y Ceballos vuelven a entrenar (Betis, B); Juan Cruz disponible (Málaga 0,97→0,99). Pleno 1-1 (11,3 %).",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-02",
+   "fecha": "2026-11-20 01:20",
+   "jornada": 23,
+   "origen": "Chat «Seguimiento de futbolín»",
+   "aporte": "Óscar Valentín descartado (ya contado); Tchouaméni seria duda; mercado ve más al Atlético en Getafe (58 %), cubierto con X2.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-03",
+   "fecha": "2026-11-20 11:00",
+   "jornada": 23,
+   "origen": "Revisión programada del viernes 10:00",
+   "aporte": "Se quita el ajuste por Riquelme; % LAE anotado (informativo). Dudas: Aubameyang, Ceballos, Cubarsí, Juan Cruz.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-04",
+   "fecha": "2026-11-20 15:39",
+   "jornada": 23,
+   "origen": "Mesa del viernes por la tarde",
+   "aporte": "Betis sin Ceballos ni Morante (A); Juan Cruz puede jugar (B); Las Palmas sin Ale García. Alertas de mercado: Tenerife F–Madrid CFF (75 vs 52) y Alavés–Deportivo (59 vs 43). Pleno 1-1 (11,5 %).",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-05",
+   "fecha": "2026-11-20 15:48",
+   "jornada": 23,
+   "origen": "Pregunta de Carlos: C8 según las casas",
+   "aporte": "La columna favorita de las casas ya va en el boleto de 18 €; la C8 actual (X en Alavés–Deportivo) es la mejor. Sin cambios.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-06",
+   "fecha": "2026-11-20 16:20",
+   "jornada": 23,
+   "origen": "Decisión de Carlos",
+   "aporte": "Se añade la 9.ª sencilla C9 = 11112112X12211 (Getafe 1, Sporting X) en un segundo boleto. Total 24,75 €; P(14) 1 entre 85; P(≥13) 7,55 %.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j23-07",
+   "fecha": "2026-11-20 16:35",
+   "jornada": 23,
+   "origen": "Apartado «Pronósticos definitivos»",
+   "aporte": "Publicada la versión provisional con las dos tablas, probabilidades de la mesa y de las casas (OddsPortal 20/11).",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-08",
+   "fecha": "2026-11-20 17:20",
+   "jornada": 23,
+   "origen": "Apuestas bet365 y bank",
+   "aporte": "Nuevas secciones «Apuestas bet365» y «Bank» (500 €). Lista provisional: Alavés gana (cuota mínima 2,13) y Getafe empate no apuesta (mínima 3,94); las definitivas salen el sábado con la cuota real de bet365.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-09",
+   "fecha": "2026-11-20 17:47",
+   "jornada": 23,
+   "origen": "Apuestas bet365 (corrección de Carlos)",
+   "aporte": "Lista provisional rehecha: 29 mercados revisados por partido, solo lo que la mesa espera y nunca contra la quiniela (fuera «Getafe empate no apuesta»). 45 candidatas en 15 partidos con su cuota mínima; las definitivas, una por partido, el sábado con la cuota real.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-10",
+   "fecha": "2026-11-20 23:30",
+   "jornada": 23,
+   "origen": "Mesa (Estadístico)",
+   "aporte": "Liga F: los favoritos de ≥70 % daban 79 % y ganaban 54 %. Se aplana el 1X2 (T=0,70), validado en las dos mitades de la temporada. Precios 11-14 más bajos; signos, boleto y sencillas sin cambios.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-11",
+   "fecha": "2026-11-21 09:15",
+   "jornada": 23,
+   "origen": "Revisión final (sábado)",
+   "aporte": "Convocatorias: Sevilla con Peque (24 convocados); Betis sin Ceballos ni Morante, con Cucho y Riquelme; Aubameyang viaja, titularidad en duda; Cubarsí y Koundé apuntan al Villarreal. Árbitro del derbi: Sánchez Martínez (sus dos derbis acabaron 1-1, solo aviso). Ningún precio cambia.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-12",
+   "fecha": "2026-11-21 09:50",
+   "jornada": 23,
+   "origen": "Tarea del sábado: Liga F (convocatorias y bajas)",
+   "aporte": "Sin bajas A/B nuevas de titulares en la Liga F. Atlético F: Otermín duda (aductor, B); Lloris y Abelleira (cruzado) y Lola Gallardo ya fuera. Sevilla F solo sin Eva Llamas; Real Sociedad F y Tenerife F sin bajas. Sin cambios.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-def-publicada",
+   "fecha": "2026-11-21 10:15",
+   "jornada": 23,
+   "origen": "Publicación de la quiniela definitiva",
+   "aporte": "Quiniela definitiva publicada en el apartado de la barra lateral y en la app, con las probabilidades de las casas (OddsPortal 20/11) recuperadas.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-ap-def",
+   "fecha": "2026-11-21 10:15",
+   "jornada": 23,
+   "origen": "Apuestas bet365 definitivas",
+   "aporte": "15 apuestas definitivas, una por partido y coherentes con la quiniela (47 €, 9,4 % del bank). Sin cuota de bet365 leída: cada una lleva su cuota mínima y solo se apuesta si bet365 la paga o más.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-ap-1x2",
+   "fecha": "2026-11-21 10:53",
+   "jornada": 23,
+   "origen": "Apuestas bet365 (1X2 de bet365, fotos de Carlos)",
+   "aporte": "Liga F por debajo de 1,80 descartada (Atlético F 1,30, Real Madrid F 1,25). Entran Eibar F–Atlético F ambos marcan no (mín. 1,93) y Granada F–Real Madrid F visitante más de 1,5 goles (mín. 1,96). Quedan 12 apuestas, 45.0 €.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-ap-bet365",
+   "fecha": "2026-11-21 10:55",
+   "jornada": 23,
+   "origen": "Apuestas bet365 (cuotas leídas por Carlos)",
+   "aporte": "Con las cuotas reales de bet365: Alavés gana a 2,30 (+11 % de valor, 10 €). Descartadas Rayo gana (1,95), Tenerife–Mallorca ambos marcan no (1,66) y Sevilla–Betis ambos marcan sí (1,70). Quedan 12 apuestas, 46 €.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-bet365-sabado",
+   "fecha": "2026-11-21 10:55",
+   "jornada": 23,
+   "origen": "Cuotas bet365 de Carlos (capturas)",
+   "aporte": "1X2 de bet365 de los 15 partidos: el favorito coincide con la mesa en todos. Mayores diferencias: Alavés–Deportivo (mesa 59, casas 41), Getafe–Atlético, Osasuna–Málaga, Granada F–Real Madrid F y Tenerife F–Madrid CFF. Solo control.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-jugado-real",
+   "fecha": "2026-11-21 13:20",
+   "jornada": 23,
+   "origen": "Boletos sellados (fotos de Carlos)",
+   "aporte": "Jugado real J23: boleto de 18 € igual al definitivo; sencillas C1-C5 y C9 más 6 columnas propias (E1-E6), sin C6-C8; Pleno 1-1 en todas. 36 columnas, 27 €: P(14) 1/188, P(≥13) 4,1 %.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-primer-repaso",
+   "fecha": "2026-11-21 22:30",
+   "jornada": 24,
+   "origen": "Hilo J24 (mesa, primer repaso)",
+   "aporte": "J24 europea (mar 24-jue 26/11), lista provisional. Precios del modelo con datos hasta el 15/11: 18 € en 24 sencillas + 8 complementarias (32 columnas, 24 €), P(14) 1/150, P(≥13) 4,6 %, Pleno Atlético–Viking M-1. Prueba en 347 partidos UEFA: la mesa no sobrevalora a los favoritos en Europa.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j23-rayo-sesgo",
+   "fecha": "2026-11-21 22:30",
+   "jornada": 23,
+   "origen": "Hilo J24 (revisión tras Rayo 0-1 Valencia)",
+   "aporte": "Rayo 54 % en la mesa frente a 49 % de las casas: se apilaron EURO_F ×1,12 y bajas ×1,03. En Primera la mesa iba por encima de las casas en Alavés (+16), Osasuna (+12) y Rayo (+5). EURO_F y T=1,15 se revalidan con la J23 antes de la J25.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-proteccion",
+   "fecha": "2026-11-22 02:20",
+   "jornada": 24,
+   "origen": "Hilo J24 (reglas nuevas tras la J23)",
+   "aporte": "El 18 € pasa a directa 3 dobles + 1 triple (24 sencillas no caben en un boleto). 8 sencillas con fijos protegidos (Brujas–Liverpool, Celta–Bournemouth, Palace–Real Sociedad). 32 columnas, 24 €: P(14) 1/173, P(≥13) 4,4 %. Pleno M-1 en todas.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j23-revision-mesa",
+   "fecha": "2026-11-22 02:45",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "Sábado (Flashscore): Rayo 0-1, Tenerife 0-0, Pleno 1-1 acertado; ninguna columna sin fallo, el 14 ya no es posible. En 843 partidos de Primera, con el favorito al 45-55 % la X salía 35 % y se daba 26 %: nueva X templada ×1,20 (mejora las tres temporadas). EURO_F y T se mantienen. Nueva regla de fijos protegidos (<55 %) en las sencillas (proteccion.py). Flashscore ya es fuente de resultados y alineaciones.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "tecnicas-externas-2211",
+   "fecha": "2026-11-22 03:05",
+   "jornada": 24,
+   "origen": "Hilo «Buscar técnicas de IA y casas que no usamos»",
+   "aporte": "Comparadas IA, tipsters y casas con la mesa: el mercado de cierre (log-loss 0,998) supera a los modelos; la mesa (1,014) está al nivel de un buen modelo. Prueba UEFA (864 partidos): la mesa ya se pasa algo con los grandes favoritos (da 70 %, ganan 56 %), así que no se siguen las webs que los afilan. Propuestas: control externo, CLV en el bank y tiros a puerta en Primera.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-flashscore-datos",
+   "fecha": "2026-11-22 03:15",
+   "jornada": 24,
+   "origen": "Hilo J24 (Flashscore con Claude in Chrome)",
+   "aporte": "488 resultados nuevos de 14 ligas (hasta el 21/11, con Eslovaquia, Azerbaiyán y Ucrania 2026/27) en datos/euro_j24.json. Precios recalculados: cambios de 3 puntos como mucho. Boleto de la mesa (reglas R1-R6): 24 sencillas optimizadas, 18 €, P(14) 1/305, P(≥13) 3,45 %, Pleno M-1.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "reglas-mesa-r1-r6",
+   "fecha": "2026-11-22 03:20",
+   "jornada": 24,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "Reglas codificadas de la mesa (reglas_mesa.py): tope 18 € en total, mayor P(≥13) y topes de diversidad por partido. En 133 bloques de 14 partidos reales, 24 sencillas optimizadas dan 9,27 aciertos de media frente a 8,56 de la directa de 18 € y 8,31 de la de 12 €. J24: 24 sencillas optimizadas, 18 €, P(≥13) 3,38 %, Pleno M-1.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j24-riesgo-fijos",
+   "fecha": "2026-11-22 03:20",
+   "jornada": 24,
+   "origen": "Hilo J24 (Matemático, Risk Manager, Físico)",
+   "aporte": "Los 4 fijos de las 24 columnas (City, Madrid, Betis, Barça) aciertan juntos solo el 29 %. La X está poco cubierta (se esperan 2,7 empates; 7 columnas sin X). Descansos reales el lunes.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-definitivos-provisional",
+   "fecha": "2026-11-22 03:40",
+   "jornada": 24,
+   "origen": "Hilo J24",
+   "aporte": "La página fijada «Pronósticos definitivos» muestra ya la J24 provisional (casas · mesa · 24 sencillas en 3 boletos de 8, 18 €, Pleno M-1). Se irá actualizando hasta el definitivo del mar 24/11 18:45.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-ap-prov",
+   "fecha": "2026-11-22 03:40",
+   "jornada": 24,
+   "origen": "Apuestas bet365 (provisional)",
+   "aporte": "J24 provisional: 45 candidatas en 15 partidos (Vigilar, cuota mínima 1,80-2,08) con el modelo de la tabla J24; la definitiva sale el martes 18:45 con las cuotas de bet365 del lunes 11:00. Nuevo: CLV (cuota tomada frente a la de cierre) en el bank.",
+   "cambia": "No"
+  },
+  {
+   "id": "lae-a-fondo",
+   "fecha": "2026-11-22 03:55",
+   "jornada": 24,
+   "origen": "Hilo estudio LAE (Analista LAE, Analista de Premios)",
+   "aporte": "Normas oficiales: si un partido se aplaza fuera de la ventana, LAE lo sortea con bolas en proporción al % del público; el Pleno solo cobra con 14. Histórico (749 jornadas): cada X del resultado multiplica el premio de 14 por 1,8 y cada 2 por 1,5. Dos roles nuevos; el % del público sigue sin cambiar signos.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-hist-cuotas",
+   "fecha": "2026-11-22 03:55",
+   "jornada": 24,
+   "origen": "Histórico de cuotas bet365",
+   "aporte": "Empieza el histórico de cuotas de bet365 (datos/cuotas_bet365/historico.json y .csv, herramientas/historico_cuotas.py): cada lectura con su momento y el resultado. J23 cargada (61 cuotas, 21 con resultado). Calibración en la sección Apuestas; nada entra en las reglas hasta que una ventaja medida aguante fuera de muestra.",
+   "cambia": "No"
+  },
+  {
+   "id": "cuotas-historicas",
+   "fecha": "2026-11-22 04:10",
+   "jornada": 24,
+   "origen": "Cuotas históricas (Carlos)",
+   "aporte": "16.862 partidos de Primera y Segunda 2005-2026 con cuota y resultado. En Primera, con favorito de 65 % o más, la X sale 3 puntos menos de lo que dicen las cuotas (igual en las dos mitades); probado en la mesa, X ×0,82 en ese tramo mejora fuera de muestra y se aplica. No cambia la J24 (Champions).",
+   "cambia": "No"
+  },
+  {
+   "id": "favoritos-que-fallan",
+   "fecha": "2026-11-22 04:15",
+   "jornada": 24,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "877 favoritos del 45-70 %: la mesa los clava (daba 53 %, ganaron 53-54 %). Europa entre semana y la forma del rival no separan. Solo la mala forma del favorito (≤5 de 15, como el Rayo) se repite: nueva regla, un tramo más de cobertura en R3 (no cambia la probabilidad).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "r7-cuanto-jugar",
+   "fecha": "2026-11-22 04:20",
+   "jornada": 24,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "Regla R7: 18 € es un tope. Se juega por bloques de 8 sencillas y solo se añade uno si su P(≥13) por euro es al menos la mitad de la del primero. J24: de la 17 a la 24 rinden el 48 % → 16 sencillas, 12 €, P(≥13) 2,64 %, pérdida esperada 5,40 € (antes 8,10 €).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "app-sync-2211",
+   "fecha": "2026-11-22 17:40",
+   "jornada": "24",
+   "origen": "Hilo «Actualizar la app»",
+   "aporte": "App al día con lo último de la mesa: J24 con 16 sencillas y 12 € (R7) en Jornadas y Partidos; el coste ahora sale del boleto de la mesa.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-domingo-parcial",
+   "fecha": "2026-11-22 18:55",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "J23 domingo (quiniela15): Barcelona 3-2 Villarreal, Racing 3-2 Real Sociedad, Sporting 0-2 Las Palmas, Granada F 1-5 Real Madrid F, Real Sociedad F 1-0 Sevilla F. Con 10 de 14 jugados, la mejor columna lleva 8 aciertos (máximo posible 12). Faltan Osasuna–Málaga, Getafe–Atlético, Girona–Eibar y Tenerife F–Madrid CFF.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-forma-favorito",
+   "fecha": "2026-11-22 19:00",
+   "jornada": 24,
+   "origen": "Hilo J24 (regla de forma del favorito)",
+   "aporte": "forma_favorito puesta en los 14 partidos (5 últimos de liga hasta el 21/11). Mala forma: Man City (4 puntos) y Crystal Palace (0). City deja de ser fijo en todas las columnas; ahora los fijos comunes son Madrid, Betis y Barça. Boleto: 16 sencillas, 12 €, P(≥13) 2,62 %, Pleno M-1. La X sigue según probabilidades (7 de 16 columnas sin X); no se sube solo por premio (§1.12).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j23-fallo-por-fallo",
+   "fecha": "2026-11-22 19:05",
+   "jornada": 23,
+   "origen": "Hilo «Corregir la mesa tras los fallos de la J23»",
+   "aporte": "J23 fallo por fallo (10 de 14): Rayo (mala forma, ya regla R3) y Tenerife–Mallorca (varianza, X 26 %) tumbaron los fijos; Tenerife F–Madrid CFF iba camino de fallar con el aviso mesa 63 % frente a casas 52 % (ya regla R3). Sin reglas nuevas: las dos señales ya están codificadas para la J24.",
+   "cambia": "No"
+  },
+  {
+   "id": "j23-cierre",
+   "fecha": "2026-11-23 07:30",
+   "jornada": 23,
+   "origen": "Hilo «Actualizar todo tras la J23»",
+   "aporte": "J23 cerrada: 1211112X212212 + Pleno 1-1. Boleto de 18 €: máximo 11 aciertos; sencillas: C7 11 y C2 10. Histórico de cuotas y definitivos con aciertos al día; bank sin cambios (500 €, ninguna apuesta marcada).",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-lunes-investigacion",
+   "fecha": "2026-11-23 12:00",
+   "jornada": 24,
+   "origen": "Hilo J24 (investigación del lunes)",
+   "aporte": "Resultados del domingo metidos (13 partidos). Cuotas de 13 casas (Flashscore) sin margen en los 15 y marcador del Pleno. Bajas publicadas: ajustes en Arsenal–Dortmund, City–Nápoles (Nápoles sin 5 titulares), Madrid–PSV y Slavia–Villarreal. % LAE de quiniela15. Boleto por reglas: 16 sencillas, 12 €, P(≥13) 2,62 %, fijos City, Madrid, Betis y Barça. Pleno M-1 (mesa 18 %, casas 20 %; las casas dan M-0 30 %). Las casas ven a los grandes más favoritos que la mesa (Madrid 81 vs 68, PSG 69 vs 58, City 76 vs 70).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j24-ap-def",
+   "fecha": "2026-11-23 11:35",
+   "jornada": 24,
+   "origen": "Apuestas bet365 (definitiva con cuotas de mercado)",
+   "aporte": "Sin cuotas de bet365, la definitiva de la J24 sale con la mediana de 13 casas (Flashscore, lunes): 15 apuestas, 47 €, cada una solo si bet365 paga la cuota mínima. Arsenal gana y PSG gana fuera (pagan 1,38 y 1,36); entran Arsenal marca más de 1,5 y PSG–Roma más de 1,5 goles en la 2.ª parte. Cuotas al histórico (momento lunes).",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-ap-bet365",
+   "fecha": "2026-11-23 11:45",
+   "jornada": 24,
+   "origen": "Apuestas bet365 (cuotas de Carlos, 09:53)",
+   "aporte": "Con las cuotas de bet365 se descartan 6 apuestas que pagan por debajo de la mínima: Feyenoord–Oporto menos de 3,5 (1,53), Madrid–PSV más de 3,5 (1,50), Sporting–United menos de 3,5 (1,61), Celta–Bournemouth más de 2,5 (1,80), Palace–Real Sociedad más de 2,5 (1,57) y Atlético–Viking más de 3,5 (1,66). Ningún mercado leído tiene valor. Quedan 9 apuestas, 28.0 €.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-analisis-q15-comprobado",
+   "fecha": "2026-11-23 13:45",
+   "jornada": 24,
+   "origen": "Análisis de quiniela15 que pasó Carlos (comprobado por la mesa)",
+   "aporte": "Comprobado y aplicado: PSG sin Doué (cruzado), Barça sin Lamine Yamal y Shakhtar–Fenerbahçe en Stamford Bridge (sin ventaja de local). El United en crisis ya estaba en los datos (0-4 en Anfield). Sin confirmar: Kvaratskhelia y las bajas del United, que no se aplican. Boleto por reglas: 16 sencillas, 12 €, P(≥13) 2,59 %; en el 11 el 2 baja al 60 % de las columnas. Pleno M-1 (las casas dan aún más 0 goles al Viking que el público).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j24-ap-bwin",
+   "fecha": "2026-11-23 13:40",
+   "jornada": 24,
+   "origen": "Apuestas bet365 (cuotas de bwin de Carlos, 13:29)",
+   "aporte": "Con las cuotas de bwin, 8 de las 9 apuestas que quedaban pagan muy por debajo de la mínima (1,41-1,63 frente a 1,80-2,02) y se descartan. Ningún mercado leído (bet365 + bwin) tiene valor. Queda 1: Slavia–Villarreal más de 2,5 (mín. 1,84), 3,5 €. Cuotas al histórico.",
+   "cambia": "No"
+  },
+  {
+   "id": "n-2026-11-23-historico-europeo",
+   "fecha": "2026-11-23 14:05",
+   "jornada": 24,
+   "origen": "Hilo «Aprender del histórico de quinielas de Champions»",
+   "aporte": "Histórico oficial LAE (91 jornadas europeas 2018-2026): X 19,6 % (fin de semana 26,7 %), grande en casa gana 78 % y fuera 63 %, premio de 14 mediano 20.479 €. Dos controles nuevos del Auditor; en la J24 marca Arsenal y PSG–Roma para protección.",
+   "cambia": "No"
+  },
+  {
+   "id": "bank-j23",
+   "fecha": "2026-11-23 14:05",
+   "jornada": 23,
+   "origen": "Bank (regla de Carlos 23/11)",
+   "aporte": "Bank J23 asentado: solo Alavés gana @2,30 tenía cuota leída por encima de la mínima → apostada 10 € y ganada (3-1), +13 €. Saldo 513 €. Desde ahora la mesa registra y liquida sola las apuestas con cuota leída ≥ mínima.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-18eur-2311",
+   "fecha": "2026-11-23 14:35",
+   "jornada": 24,
+   "origen": "Mesa (petición de Carlos: subir opciones)",
+   "aporte": "La mesa sube al tope de 18 €: 24 sencillas optimizadas con R3. P(≥13) 2,6 % → 3,3 %, P(14) 1/391 → 1/292, P(≥12) 11,5 % → 14,0 %. Pleno M-1. Acierto esperado medio 51,8 %.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j25-01",
+   "fecha": "2026-11-23 17:40",
+   "jornada": 25,
+   "origen": "Carlos (estudio desde Claude in Chrome)",
+   "aporte": "Estudio de entrenadores y estilos de los 15 partidos de la J25 guardado (jornadas/j25). Se usa solo como ajuste de pocos puntos; su boleto de 54 € no se juega (tope 18 €).",
+   "cambia": "No"
+  },
+  {
+   "id": "sorpresas-2026-11-23",
+   "fecha": "2026-11-23 18:15",
+   "jornada": 24,
+   "origen": "Hilo «Estudiar la probabilidad de sorpresas»",
+   "aporte": "Estudio de sorpresas (7.912 favoritos 45-70 % de Primera y Segunda + 15.773 de otras ligas): ningún factor sube la sorpresa por encima de la cuota. Regla R3b: el tope de columnas del favorito se mira también con la P de las casas y manda el más estricto (J24: Feyenoord–Oporto y Sporting CP–Man. United pasan del 75 al 60 %).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j24-r3b-2311",
+   "fecha": "2026-11-23 17:55",
+   "jornada": 24,
+   "origen": "Mesa (R3b + estudio de estilos de Carlos)",
+   "aporte": "R3b aplicada a las 24 sencillas: Feyenoord–Oporto y Sporting–United bajan al 60 % de columnas. P(≥13) 3,33 → 3,25 %, P(14) 1/300. Estudio de estilos/banquillos: sin datos A/B ni efecto medido (cambio de entrenador +0,03 pts, solo aviso); no mueve precios. Pleno sigue M-1 (R4).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j25-02",
+   "fecha": "2026-11-23 17:50",
+   "jornada": 25,
+   "origen": "Mesa (revisión del estudio de estilos)",
+   "aporte": "El choque de estilos no se puede medir: donde hay fuente el estudio copia al mercado. Peso 0 hasta ganar al mercado en 3 jornadas (puntuar_externo.py); se usan sus bajas y rotaciones tras comprobarlas y el % de público.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-grok-2411",
+   "fecha": "2026-11-24 10:05",
+   "jornada": 24,
+   "origen": "Mesa (opinión de Grok que pasó Carlos)",
+   "aporte": "Pronóstico ajeno no verificado (§1.3): Arsenal 62 % ya es el de la mesa; Madrid y PSG ya van a 1 (24/24 y 21/24). Rechazados Feyenoord 1X y Celta 1X (casas y mesa dan favorito al visitante) y Pleno 1-0/2-0. Sin cambios.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-rev-2411",
+   "fecha": "2026-11-24 14:00",
+   "jornada": 24,
+   "origen": "Revisión final (Claude in Chrome de Carlos, 13:10)",
+   "aporte": "Bajas nuevas aplicadas (Raya/Saka/Zubimendi, Kvaratskhelia, Calhanoglu, Ekitike/Gravenberch, Sesko/Cunha/Ugarte, Lookman, Borja Iglesias, Barrenetxea). Precios: Arsenal 62→60, Brujas–Liverpool 2 53→51, Sporting 45→47. 24 sencillas rehechas: P(≥13) 3,25→3,03 %, P(14) 1/359. Pleno M-1 (17,1 %; casas M-0 39 %). Fuentes de prensa 13-14 no excluidas (FútbolFantasy, Metropolitano.gal, El Gol Digital B; Khel Now C).",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j24-fijos-2411",
+   "fecha": "2026-11-24 14:15",
+   "jornada": 24,
+   "origen": "Mesa (orden de Carlos: asegurar fijos)",
+   "aporte": "Triple revisión de fijos (mesa, casas, forma, bajas). Se mantienen Betis y Barça (24/24) y Madrid (23/24). City deja de ser fijo: 70 % pero 4 de 15 puntos de forma → 21×1, 2×X, 1×2. P(≥13) 3,03 → 3,02 %. 6 partidos ya llevan los tres signos repartidos.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "revision-jornadas-2411",
+   "fecha": "2026-11-24 16:40",
+   "jornada": 24,
+   "origen": "Hilo «Aprender de todas las jornadas jugadas»",
+   "aporte": "Revisión J14-J23: la mesa no infla favoritos (43 ganados, 37,6 esperados); lo que tumba es el signo sin cubrir (8 de 14, X). Las casas aciertan más que la mesa (1.372 partidos: 0,966 frente a 1,014) → regla R5b: con cuota, el boleto usa la P de las casas. J24 rehecha: P(≥13) 3,92 → 4,54 % (medido con casas), 18 €.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j24-36e",
+   "fecha": "2026-11-24 17:50",
+   "jornada": 24,
+   "origen": "Carlos (orden: «Vamos con 36 euros»)",
+   "aporte": "J24 a 36 €: 48 apuestas (Reducida 1 de 4 triples + 39 sencillas optimizadas, R3 y R5b). P(≥13) 4,5 → 7,1 % con las casas (3,0 → 4,3 % con la mesa); P(14) 1/289 → 1/174. Pleno M-1.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j24-36e-separado",
+   "fecha": "2026-11-24 18:20",
+   "jornada": 24,
+   "origen": "Carlos («Vuelve a hacerlo por separado»)",
+   "aporte": "J24: el artefacto y la app muestran por separado el boleto de la Reducida 1 oficial (9 apuestas, 6,75 €; triples en 2, 7, 11 y 12) y las 39 sencillas en 5 boletos (29,25 €). Total 48 apuestas, 36 €.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-definitivo",
+   "fecha": "2026-11-24 18:45",
+   "jornada": 24,
+   "origen": "Mesa (definitivo programado)",
+   "aporte": "J24 DEFINITIVA: Reducida 1 oficial (triples en 2, 7, 11 y 12; 9 ap., 6,75 €) + 39 sencillas en 5 boletos (29,25 €), Pleno M-1. 48 apuestas, 36 €. P(≥13) 7,1 % casas / 4,3 % mesa, P(14) 1/174. Sin bajas nuevas desde las 13:10.",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-sellado",
+   "fecha": "2026-11-24 20:02",
+   "jornada": 24,
+   "origen": "Carlos («Hice los 4 primeros boletos y la reducida»)",
+   "aporte": "J24 sellada: Reducida 1 oficial (9 ap.) + boletos 1-4 de sencillas (32 ap.); el boleto 5 no se jugó. 41 apuestas, 30,75 €, Pleno M-1. P(≥13) 6,80 %, P(14) 1/181 (casas). El escrutinio se hace solo con lo sellado.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j25-02",
+   "fecha": "2026-11-25 01:45",
+   "jornada": 25,
+   "origen": "Hilo Pronósticos por reducida",
+   "aporte": "Enfrentamientos (6 años) y mismo partido la temporada pasada de los 15 partidos; medidos frente a las cuotas en 7.673 partidos 2016-26: no mejoran (log-loss −0,0002 a −0,0015), no cambian nada. Nuevo artefacto Pronósticos por reducida y Reducida 1 corregida a la tabla oficial (J24 rehecha).",
+   "cambia": "No"
+  },
+  {
+   "id": "j24-escrutinio-12",
+   "fecha": "2026-11-26 03:05",
+   "jornada": 24,
+   "origen": "Escrutinio (Carlos: «resuelve hasta los partidos terminados»)",
+   "aporte": "J24, 12 de 14 jugados: mejor columna 9 aciertos (2 sencillas), ninguna llega a 13. Fallos clave: City 2-2 (1 en las 41), Arsenal 1-1 (1 en 39), PSG 2-2, Sporting 2-2. Pleno Atlético 2-0 Viking: M-1 fallado. Faltan Celta–Bournemouth y Palace–R. Sociedad.",
+   "cambia": "No"
+  },
+  {
+   "id": "2026-11-26-autopsia-r8",
+   "fecha": "2026-11-26 09:55",
+   "jornada": 24,
+   "origen": "Hilo «Añadir autopsia de fallos a la mesa»",
+   "aporte": "Regla R8: autopsia de cada rojo por los 12 miembros, con el Periodista deportivo nuevo y prompt de Google. J24: Arsenal, City y Pleno por varianza (el favorito ganó el xG); PSG–Roma y Sporting–United con penaltis y VAR. Ninguna regla cambia; hipótesis H1 (cubrir la X en favoritos de Champions) abierta.",
+   "cambia": "No"
+  },
+  {
+   "id": "j25-03",
+   "fecha": "2026-11-26 12:15",
+   "jornada": 25,
+   "origen": "Carlos (encargo J25)",
+   "aporte": "Encargo J25 ampliado: últimos 10 partidos y cambios en el once de los equipos con Europa (Barça, Madrid, Villarreal, Atlético, Betis, Celta, Real Sociedad, Getafe) y últimos 6 del resto, con Copa. Getafe (Conference) añadido al riesgo de rotación. Se mide frente a las casas antes de cambiar signos.",
+   "cambia": "No"
+  },
+  {
+   "id": "j25-seguro",
+   "fecha": "2026-11-26 12:00",
+   "jornada": 25,
+   "origen": "Mesa (idea de Carlos)",
+   "aporte": "Seguro de favoritos: 4 sencillas con la X en 2 de los favoritos del 55-75 % y el 1 en otros 2. Probado en J24 (mejor columna 9→10) y J23 (igual), sin bajar la P(≥13). Pasa a regla desde la J25.",
+   "cambia": "Sí"
+  },
+  {
+   "id": "j25-04",
+   "fecha": "2026-11-26 18:30",
+   "jornada": 25,
+   "origen": "Primer repaso del jueves (rutina)",
+   "aporte": "Lista J25 confirmada, modelo j25_run.py con cuotas OddsPortal (R5b) y bajas de jornadaperfecta. Boleto 24 sencillas, 18 €, Pleno 1-0; P(≥13) 1,50 %.",
+   "cambia": "Sí"
+  }
+ ]
+}

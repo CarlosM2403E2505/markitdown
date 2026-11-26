@@ -1,0 +1,188 @@
+"""Genera la página «Pronósticos definitivos» (artefacto del proyecto) a partir del JSON de una jornada.
+
+Solo dos tablas, sin explicaciones: el boleto de 18 € y las sencillas.
+
+Uso:
+    python3 pronosticos_definitivos.py jornadas/j23/j23.json salida.html --estado provisional --hora "vie 20/11 16:30"
+    python3 pronosticos_definitivos.py jornadas/j23/j23.json salida.html --estado definitivo --hora "sáb 21/11 10:30"
+
+Casas: `mercado` en cada partido ([p1, pX, p2] sin margen, o null = «sin dato») y `pleno.mercado_pleno`.
+Las sencillas son `columnas_individuales` más `columna_novena` si existe.
+Criterio de publicación: el definitivo se publica 2 h 15 min antes del primer partido.
+"""
+import argparse
+import html
+import json
+
+CSS = """
+<title>Pronósticos definitivos</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: dos hojas de boleto apiladas, cuadrícula 1·X·2 como en el impreso de la Quiniela */
+:root{
+  --bg:#f3f5f2; --paper:#ffffff; --ink:#1b2420; --muted:#5f6b65; --line:#d5dcd7;
+  --mark:#c8102e; --mark-ink:#ffffff; --cell:#eef2ef; --prov:#b26b00; --prov-bg:#fff3dc; --def:#1d7a46; --def-bg:#e2f4e9;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif; --f-body:"Inter",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#121614; --paper:#1a201d; --ink:#e7ece9; --muted:#9aa6a0; --line:#2f3833;
+  --mark:#e0364f; --mark-ink:#ffffff; --cell:#232b27; --prov:#f0b34a; --prov-bg:#3a2c12; --def:#5cc98a; --def-bg:#163525; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121614; --paper:#1a201d; --ink:#e7ece9; --muted:#9aa6a0; --line:#2f3833;
+  --mark:#e0364f; --mark-ink:#ffffff; --cell:#232b27; --prov:#f0b34a; --prov-bg:#3a2c12; --def:#5cc98a; --def-bg:#163525; color-scheme:dark}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:14px}
+.wrap{max-width:860px;margin:0 auto;padding-block:20px 40px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:20px}
+header{display:flex;flex-wrap:wrap;align-items:baseline;gap:8px 14px}
+h1{font-family:var(--f-display);font-size:30px;font-weight:700;margin:0;letter-spacing:.01em;text-wrap:balance}
+.meta{color:var(--muted);font-size:13px}
+.pill{font-size:12px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+.pill.provisional{color:var(--prov);background:var(--prov-bg)}
+.pill.definitivo{color:var(--def);background:var(--def-bg)}
+section{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:14px 0 6px;min-width:0}
+h2{font-family:var(--f-display);font-size:20px;font-weight:600;margin:0 14px 10px;letter-spacing:.02em}
+.scroll{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+th,td{padding:6px 8px;border-top:1px solid var(--line);text-align:center;white-space:nowrap}
+thead th{border-top:none;font-size:11px;font-weight:600;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+td.n{color:var(--muted);width:28px}
+td.pr{font-size:13px;color:var(--muted);letter-spacing:.01em}
+td.pr b{color:var(--ink);font-weight:600}
+td.p,th.p{text-align:left;white-space:normal;min-width:150px}
+.box{display:inline-grid;place-items:center;width:28px;height:26px;border-radius:5px;background:var(--cell);color:var(--muted);font-weight:600;font-family:var(--f-display);font-size:16px}
+.box.on{background:var(--mark);color:var(--mark-ink)}
+.sg{font-family:var(--f-display);font-size:17px;font-weight:600}
+tr.acierto td{border-top:2px solid currentColor}
+tr.pleno td{border-top:2px solid var(--ink)}
+.score{font-family:var(--f-display);font-size:18px;font-weight:700;color:var(--mark)}
+th.grp{border-left:2px solid var(--line)}
+td.c9,th.c9{border-left:2px solid var(--line)}
+</style>
+"""
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("json")
+    ap.add_argument("salida")
+    ap.add_argument("--estado", choices=["provisional", "definitivo"], required=True)
+    ap.add_argument("--hora", required=True, help="hora peninsular de la versión, p. ej. 'sáb 21/11 10:30'")
+    a = ap.parse_args()
+
+    d = json.load(open(a.json, encoding="utf-8"))
+    e = html.escape
+    partidos = {p["n"]: p["partido"] for p in d["partidos"]}
+    probs = {p["n"]: p["p"] for p in d["partidos"]}
+    casas = {p["n"]: p.get("mercado") for p in d["partidos"]}
+    pleno = d["pleno"]
+    import boleto_mesa_compat as bmc
+    bm = bmc.desde_boleto_mesa(d)
+    boleto = bm[0] if bm else d["boleto_provisional"]
+    solo_sencillas = bool(bm and bm[2])
+    marc = pleno.get("cats") or pleno.get("empirica") or {}
+    p_pleno = marc.get(boleto["pleno"])
+    td_pleno = f'<td class="pr"><b>{round(p_pleno * 100)} %</b></td>' if p_pleno is not None else '<td class="pr"></td>'
+
+    pm = pleno.get("mercado_pleno")  # prob. sin margen de las casas para el marcador elegido
+    td_pleno_casas = f'<td class="pr">{round(pm * 100)} %</td>' if pm else '<td class="pr">sin dato</td>'
+
+    def td_casas(n):
+        m = casas.get(n)
+        if not m:
+            return '<td class="pr">sin dato</td>'
+        return '<td class="pr">' + ' · '.join(str(round(v * 100)) for v in m) + '</td>'
+
+    def td_pr(n, marcados):
+        return '<td class="pr">' + ' · '.join(
+            (f'<b>{round(v * 100)}</b>' if x in marcados else str(round(v * 100))) for x, v in zip('1X2', probs[n])) + '</td>'
+    pp = p_pleno or 0.0
+
+    def acierto(signos):
+        """% esperado de los 15 signos acertados (0-100): media de la prob. de la mesa de lo marcado."""
+        tot = sum(sum(v for x, v in zip('1X2', probs[n]) if x in signos[n - 1]) for n in range(1, 15)) + pp
+        return 100 * tot / 15
+
+    def tr_acierto(celdas, cols_antes=4):
+        return (f'<tr class="acierto"><td class="n">%</td><td class="p" colspan="{cols_antes - 1}">'
+                f'Acierto esperado por la mesa (de 0 a 100)</td>{celdas}</tr>')
+    if bm:
+        cols = bm[1]
+    else:
+        cols = list(d["columnas_individuales"])
+        if d.get("columna_novena"):
+            cols.append(d["columna_novena"])
+    # Carlos 23/11: columnas de mayor a menor acierto esperado por la mesa.
+    # Lección J24 (24/11): si boleto_mesa trae 'boletos' (protección repartida), se respeta ese reparto
+    # y solo se ordena por acierto dentro de cada boleto de 8.
+    bl = d.get("boleto_mesa", {}).get("boletos")
+    if bl and sorted(sum(bl, [])) == sorted(cols):
+        cols = [c for b in bl for c in sorted(b, key=lambda c: -acierto(c))]
+    else:
+        cols = sorted(cols, key=lambda c: -acierto(c))
+    real = d.get("jugado_real")
+    no_jugadas = []
+    if real and bm and boleto.get("total_apuestas"):  # Carlos 24/11: lo sellado de verdad manda
+        no_jugadas = [c for c in cols if c not in real["sencillas"]]
+        cols = [c for c in cols if c in real["sencillas"]]
+    n_bol1 = min(8, len(cols))
+
+    out = [CSS, '<div class="wrap">']
+    out.append(
+        f'<header><h1>Jornada {d["jornada"]} · {e(d["fechas"])}</h1>'
+        f'<span class="pill {a.estado}">{a.estado}</span>'
+        f'<span class="meta">Actualizado {e(a.hora)} (hora peninsular)</span></header>'
+    )
+
+    # Tabla 1: boleto de 18 € (no hay si la mesa juega solo sencillas)
+    if not solo_sencillas:
+      out.append(f'<section><h2>Boleto {e(boleto["tipo"].lower())} · {boleto["apuestas"]} apuestas · {boleto["coste"]:.2f} €'.replace(".", ",") + (f' <span class="meta">(total con las sencillas: {boleto["total_apuestas"] - len((d.get("jugado_real") or {}).get("no_jugadas") or [])} apuestas · {format((d.get("jugado_real") or {}).get("coste") or boleto["total_coste"], ".2f").replace(".", ",")} €)</span>' if boleto.get("total_apuestas") else "") + '</h2><div class="scroll"><table>')
+      out.append('<thead><tr><th>Nº</th><th class="p">Partido</th><th>Casas % 1·X·2</th><th>Mesa % 1·X·2</th><th>1</th><th>X</th><th>2</th></tr></thead><tbody>')
+      for n in range(1, 15):
+          s = boleto["signos"][str(n)].split()
+          cells = "".join(f'<td><span class="box{" on" if x in s else ""}">{x}</span></td>' for x in "1X2")
+          out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_casas(n)}{td_pr(n, s)}{cells}</tr>')
+      out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno_casas}{td_pleno}<td colspan="3"><span class="score">{e(boleto["pleno"])}</span></td></tr>')
+      sb = [boleto["signos"][str(n)].split() for n in range(1, 15)]
+      out.append(tr_acierto(f'<td colspan="3"><b>{acierto(sb):.0f} %</b></td>'))
+      out.append("</tbody></table></div></section>")
+
+    # Tabla 2: sencillas
+    coste = len(cols) * 0.75
+    out.append(f'<section><h2>Sencillas{" jugadas" if no_jugadas else ""} · {len(cols)} apuestas · {coste:.2f} €'.replace(".", ",") + (f' <span class="meta">(el boleto 5, {len(no_jugadas)} sencillas, no se jugó · total sellado {real["coste"]:.2f} €)</span>'.replace(".", ",") if no_jugadas else "") + "</h2><div class=\"scroll\"><table>")
+    head = '<thead>'
+    if len(cols) > n_bol1:
+        grp = ' class="grp"'
+        grupos = "".join(f'<th{grp if k else ""} colspan="{min(8, len(cols) - 8 * k)}">Boleto {k + 1}</th>' for k in range((len(cols) + 7) // 8))
+        head += f'<tr><th></th><th class="p"></th><th></th><th></th>{grupos}</tr>'
+    head += '<tr><th>Nº</th><th class="p">Partido</th><th>Casas % 1·X·2</th><th>Mesa % 1·X·2</th>' + "".join(
+        f'<th{" class=\"c9\"" if (i and i % 8 == 0) else ""}>C{i + 1}</th>' for i in range(len(cols))) + "</tr></thead><tbody>"
+    out.append(head)
+    for n in range(1, 15):
+        cells = "".join(f'<td class="sg{" c9" if (i and i % 8 == 0) else ""}">{c[n - 1]}</td>' for i, c in enumerate(cols))
+        out.append(f'<tr><td class="n">{n}</td><td class="p">{e(partidos[n])}</td>{td_casas(n)}{td_pr(n, "")}{cells}</tr>')
+    cells = "".join(f'<td class="{"c9" if (i and i % 8 == 0) else ""}"><span class="score">{e(boleto["pleno"])}</span></td>' for i in range(len(cols)))
+    out.append(f'<tr class="pleno"><td class="n">P15</td><td class="p">{e(pleno["partido"])}</td>{td_pleno_casas}{td_pleno}{cells}</tr>')
+    ac = [acierto(c) for c in cols]
+    cells = "".join(f'<td class="{"c9" if (i and i % 8 == 0) else ""}"><b>{v:.0f}</b></td>' for i, v in enumerate(ac))
+    out.append(tr_acierto(cells))
+    out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">Media de las {len(cols)} columnas: '
+               f'<b>{sum(ac) / len(ac):.1f} %</b> · mejor columna: <b>{max(ac):.1f} %</b></td>'.replace('.', ',') +
+               f'<td colspan="{len(cols)}"></td></tr>')
+    # Carlos 23/11: acierto esperado del boleto entero = aciertos de su mejor columna en cada simulación (14 partidos).
+    import numpy as np
+    rng = np.random.default_rng(24)
+    Pm = np.array([probs[n] for n in range(1, 15)], dtype=float)
+    Ysim = np.stack([rng.choice(3, 100000, p=r / r.sum()) for r in Pm], axis=1)
+    todas = (d["boleto_mesa"]["columnas"][:boleto["apuestas"]] + cols) if boleto.get("total_apuestas") else cols  # reducida + sencillas juntas
+    Cm = np.array([['1X2'.index(x) for x in c] for c in todas])
+    mejor = np.stack([(Ysim == c).sum(1) for c in Cm], axis=1).max(1)
+    out.append(f'<tr class="acierto"><td class="n"></td><td class="p" colspan="3">{"Todo lo jugado (reducida + sencillas, " if boleto.get("total_apuestas") else "Boleto entero ("}mejor columna en cada caso): '
+               f'<b>{100 * mejor.mean() / 14:.0f} %</b> · {mejor.mean():.1f} de 14 · ≥12: {100 * (mejor >= 12).mean():.0f} % · ≥13: {100 * (mejor >= 13).mean():.1f} %</td>'.replace('.', ',') +
+               f'<td colspan="{len(cols)}"></td></tr>')
+    out.append("</tbody></table></div></section></div>")
+
+    open(a.salida, "w", encoding="utf-8").write("\n".join(out))
+
+
+if __name__ == "__main__":
+    main()

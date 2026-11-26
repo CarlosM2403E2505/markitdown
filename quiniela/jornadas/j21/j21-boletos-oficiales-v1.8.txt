@@ -1,0 +1,70 @@
+
+Boleto 1: Directa (4 dobles) · 16 apuestas · 12.00 €
+  P(14) 1 entre 1744 · P(≥13) 0.64 % · P(≥12) 3.4 % · P(≥10) 26.3 %
+   1. Valladolid – Castellón         2    
+   2. Real Sociedad B – Sporting     12   DOBLE
+   3. Almería – Andorra              1    
+   4. Mallorca – Córdoba             1    
+   5. Oviedo – Girona                12   DOBLE
+   6. Tenerife – Ceuta               1    
+   7. Granada – Las Palmas           12   DOBLE
+   8. Eibar – Cádiz                  1    
+   9. Eldense – Sabadell             12   DOBLE
+  10. Bélgica – Italia               1    
+  11. Alavés F – Eibar F             1    
+  12. Real Sociedad F – Athletic F   1    
+  13. Sevilla F – Atlético F         2    
+  14. Valencia F – Granada F         2    
+
+Boleto 2: Directa (3 dobles + 1 triple) · 24 apuestas · 18.00 €
+  P(14) 1 entre 1433 · P(≥13) 0.77 % · P(≥12) 4.0 % · P(≥10) 29.5 %
+   1. Valladolid – Castellón         2    
+   2. Real Sociedad B – Sporting     12   DOBLE
+   3. Almería – Andorra              1    
+   4. Mallorca – Córdoba             1    
+   5. Oviedo – Girona                1X2  TRIPLE
+   6. Tenerife – Ceuta               1    
+   7. Granada – Las Palmas           1    
+   8. Eibar – Cádiz                  1    
+   9. Eldense – Sabadell             X2   DOBLE
+  10. Bélgica – Italia               1    
+  11. Alavés F – Eibar F             1    
+  12. Real Sociedad F – Athletic F   1    
+  13. Sevilla F – Atlético F         2    
+  14. Valencia F – Granada F         12   DOBLE
+
+Boleto 3: Reducida 1 oficial (4 triples) · 9 apuestas · 6.75 €
+  P(14) 1 entre 6367 · P(≥13) 0.29 % · P(≥12) 2.1 % · P(≥10) 24.0 %
+   1. Valladolid – Castellón         2    
+   2. Real Sociedad B – Sporting     1X2  TRIPLE
+   3. Almería – Andorra              1    
+   4. Mallorca – Córdoba             1    
+   5. Oviedo – Girona                1    
+   6. Tenerife – Ceuta               1    
+   7. Granada – Las Palmas           1    
+   8. Eibar – Cádiz                  1    
+   9. Eldense – Sabadell             1X2  TRIPLE
+  10. Bélgica – Italia               1    
+  11. Alavés F – Eibar F             1X2  TRIPLE
+  12. Real Sociedad F – Athletic F   1    
+  13. Sevilla F – Atlético F         2    
+  14. Valencia F – Granada F         1X2  TRIPLE
+
+Boleto 4: Reducida 3 oficial (3 dobles + 3 triples) · 24 apuestas · 18.00 €
+  P(14) 1 entre 2458 · P(≥13) 0.71 % · P(≥12) 4.4 % · P(≥10) 35.8 %
+   1. Valladolid – Castellón         12   DOBLE
+   2. Real Sociedad B – Sporting     1X2  TRIPLE
+   3. Almería – Andorra              1    
+   4. Mallorca – Córdoba             1    
+   5. Oviedo – Girona                1X2  TRIPLE
+   6. Tenerife – Ceuta               1    
+   7. Granada – Las Palmas           1X2  TRIPLE
+   8. Eibar – Cádiz                  1    
+   9. Eldense – Sabadell             12   DOBLE
+  10. Bélgica – Italia               1    
+  11. Alavés F – Eibar F             1X   DOBLE
+  12. Real Sociedad F – Athletic F   1    
+  13. Sevilla F – Atlético F         2    
+  14. Valencia F – Granada F         2    
+
+Los 4 juntos: 54.75 € · 69 columnas distintas · P(14) 1 entre 598 · P(≥13) 1.73 % · P(≥12) 8.4 % · P(≥10) 48.0 %

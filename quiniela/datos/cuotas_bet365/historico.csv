@@ -1,0 +1,212 @@
+jornada,n,partido,mercado,seleccion,cuota,p_implicita,momento,leido,fuente,dudosa,resultado,salio
+23,1,Alavés – Deportivo,1X2,1,2.3,0.414,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-1,True
+23,1,Alavés – Deportivo,1X2,2,3.25,0.293,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-1,False
+23,1,Alavés – Deportivo,1X2,X,3.25,0.293,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-1,False
+23,2,Rayo – Valencia,1X2,1,1.95,0.4861,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-1,False
+23,2,Rayo – Valencia,1X2,2,3.9,0.2431,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-1,True
+23,2,Rayo – Valencia,1X2,X,3.5,0.2708,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-1,False
+23,2,Rayo – Valencia,Ambos marcan,No,1.95,,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-1,True
+23,2,Rayo – Valencia,Ambos marcan,Sí,1.8,,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,True,0-1,False
+23,3,Real Madrid – Celta,1X2,1,1.16,0.8159,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,2-1,True
+23,3,Real Madrid – Celta,1X2,2,13.0,0.0728,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,2-1,False
+23,3,Real Madrid – Celta,1X2,X,8.5,0.1113,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,2-1,False
+23,3,Real Madrid – Celta,Ambos marcan,No,1.8,,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,True,2-1,False
+23,3,Real Madrid – Celta,Ambos marcan,Sí,1.85,,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,True,2-1,True
+23,4,Barcelona – Villarreal,1X2,1,1.2,0.7812,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,True
+23,4,Barcelona – Villarreal,1X2,2,10.0,0.0938,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,False
+23,4,Barcelona – Villarreal,1X2,X,7.5,0.125,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,False
+23,4,Barcelona – Villarreal,Ambos marcan,No,2.62,0.3547,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,False
+23,4,Barcelona – Villarreal,Ambos marcan,Sí,1.44,0.6453,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,True
+23,5,Racing – Real Sociedad,1X2,1,3.2,0.2975,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,True
+23,5,Racing – Real Sociedad,1X2,2,2.0,0.4759,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,False
+23,5,Racing – Real Sociedad,1X2,X,4.2,0.2266,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,3-2,False
+23,5,Racing – Real Sociedad,Ambos marcan,No,3.25,,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,True,3-2,False
+23,5,Racing – Real Sociedad,Ambos marcan,Sí,1.33,,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,True,3-2,True
+23,6,Osasuna – Málaga,1X2,1,1.8,0.522,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-0,True
+23,6,Osasuna – Málaga,1X2,2,4.33,0.217,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-0,False
+23,6,Osasuna – Málaga,1X2,X,3.6,0.261,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-0,False
+23,7,Getafe – Atlético,1X2,1,6.25,0.1507,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,False
+23,7,Getafe – Atlético,1X2,2,1.55,0.6077,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,True
+23,7,Getafe – Atlético,1X2,X,3.9,0.2415,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,False
+23,7,Getafe – Atlético,Ambos marcan,No,1.75,0.5333,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,True
+23,7,Getafe – Atlético,Ambos marcan,Sí,2.0,0.4667,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,False
+23,8,Tenerife – Mallorca,1X2,1,3.3,0.2863,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-0,False
+23,8,Tenerife – Mallorca,1X2,2,2.37,0.3987,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-0,False
+23,8,Tenerife – Mallorca,1X2,X,3.0,0.315,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-0,True
+23,8,Tenerife – Mallorca,Ambos marcan,No,1.66,0.5585,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-0,True
+23,8,Tenerife – Mallorca,Ambos marcan,Sí,2.1,0.4415,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-0,False
+23,9,Sporting – Las Palmas,1X2,1,2.1,0.4437,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-2,False
+23,9,Sporting – Las Palmas,1X2,2,3.3,0.2823,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-2,True
+23,9,Sporting – Las Palmas,1X2,X,3.4,0.274,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-2,False
+23,9,Sporting – Las Palmas,Ambos marcan,No,2.0,0.4624,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-2,True
+23,9,Sporting – Las Palmas,Ambos marcan,Sí,1.72,0.5376,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-2,False
+23,10,,1X2,1,1.8,0.5222,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,2-1,True
+23,10,,1X2,2,4.2,0.2238,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,2-1,False
+23,10,,1X2,X,3.7,0.254,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,2-1,False
+23,11,,1X2,1,8.0,0.112,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-3,False
+23,11,,1X2,2,1.3,0.689,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-3,True
+23,11,,1X2,X,4.5,0.199,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-3,False
+23,12,,1X2,1,9.0,0.1009,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-5,False
+23,12,,1X2,2,1.25,0.7262,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-5,True
+23,12,,1X2,X,5.25,0.1729,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-5,False
+23,13,,1X2,1,1.53,0.5866,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-0,True
+23,13,,1X2,2,4.75,0.189,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-0,False
+23,13,,1X2,X,4.0,0.2244,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-0,False
+23,14,,1X2,1,1.72,0.5199,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,False
+23,14,,1X2,2,3.75,0.2385,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,True
+23,14,,1X2,X,3.7,0.2417,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,0-3,False
+23,15,Sevilla – Betis,1X2,1,2.87,0.3316,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-1,False
+23,15,Sevilla – Betis,1X2,2,2.45,0.3885,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-1,False
+23,15,Sevilla – Betis,1X2,X,3.4,0.2799,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-1,True
+23,15,Sevilla – Betis,Ambos marcan,No,2.05,0.4533,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-1,False
+23,15,Sevilla – Betis,Ambos marcan,Sí,1.7,0.5467,definitiva,"2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",bet365.es,False,1-1,True
+24,1,Arsenal – Dortmund,1X2,1,1.36,0.6935,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,1,Arsenal – Dortmund,1X2,2,8.0,0.1179,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,1,Arsenal – Dortmund,1X2,X,5.0,0.1886,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,1,Arsenal – Dortmund,Goles 2.5,"Menos de 2,5",2.2,0.4301,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,1,Arsenal – Dortmund,Goles 2.5,"Más de 2,5",1.66,0.5699,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,1,Arsenal – Dortmund,Goles local 1.5,"Local menos de 1,5",2.55,0.3641,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,1,Arsenal – Dortmund,Goles local 1.5,"Local más de 1,5",1.46,0.6359,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,2,Feyenoord – Oporto,1X2,1,2.75,0.3449,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,2,Feyenoord – Oporto,1X2,2,2.4,0.3952,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,2,Feyenoord – Oporto,1X2,X,3.65,0.2599,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,2,Feyenoord – Oporto,Goles 3.5,"Menos de 3,5",1.53,0.6203,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,2,Feyenoord – Oporto,Goles 3.5,"Más de 3,5",2.5,0.3797,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,2,Feyenoord – Oporto,Goles local 1.5,"Local menos de 1,5",1.66,0.5585,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,2,Feyenoord – Oporto,Goles local 1.5,"Local más de 1,5",2.1,0.4415,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,2,Feyenoord – Oporto,Goles visitante 1.5,"Visitante menos de 1,5",1.75,0.5308,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,2,Feyenoord – Oporto,Goles visitante 1.5,"Visitante más de 1,5",1.98,0.4692,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,1X2,1,1.25,0.7591,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,3,Man. City – Nápoles,1X2,2,10,0.0949,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,3,Man. City – Nápoles,1X2,X,6.5,0.146,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,3,Man. City – Nápoles,Descanso 1X2,Descanso 1,1.61,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,3,Man. City – Nápoles,Descanso 1X2,Descanso 2,8.0,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,3,Man. City – Nápoles,Descanso 1X2,Descanso X,3.0,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,3,Man. City – Nápoles,Goles 2.ª parte 1.5,"2.ª parte menos de 1,5",2.35,0.3928,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,Goles 2.ª parte 1.5,"2.ª parte más de 1,5",1.52,0.6072,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,Resultado y goles 2.5,"1 y menos de 2,5",4.8,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,Resultado y goles 2.5,"1 y más de 2,5",1.55,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,Resultado y goles 2.5,"2 y menos de 2,5",17.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,Resultado y goles 2.5,"2 y más de 2,5",11.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,Resultado y goles 2.5,"X y menos de 2,5",8.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,3,Man. City – Nápoles,Resultado y goles 2.5,"X y más de 2,5",13.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,1X2,1,1.18,0.8083,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,4,Real Madrid – PSV,1X2,2,12,0.0795,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,4,Real Madrid – PSV,1X2,X,8.5,0.1122,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,4,Real Madrid – PSV,Goles 1.ª parte 1.5,"1.ª parte menos de 1,5",2.2,0.418,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,Goles 1.ª parte 1.5,"1.ª parte más de 1,5",1.58,0.582,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,Goles 3.5,"Menos de 3,5",2.62,0.3641,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,4,Real Madrid – PSV,Goles 3.5,"Más de 3,5",1.5,0.6359,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,4,Real Madrid – PSV,Resultado y goles 2.5,"1 y menos de 2,5",7.25,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,Resultado y goles 2.5,"1 y más de 2,5",1.33,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,Resultado y goles 2.5,"2 y menos de 2,5",23.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,Resultado y goles 2.5,"2 y más de 2,5",11.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,Resultado y goles 2.5,"X y menos de 2,5",13.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,4,Real Madrid – PSV,Resultado y goles 2.5,"X y más de 2,5",12.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,1X2,1,11,0.0871,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,5,Slovan Bratislava – Betis,1X2,2,1.25,0.7666,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,5,Slovan Bratislava – Betis,1X2,X,6.55,0.1463,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,5,Slovan Bratislava – Betis,Descanso 1X2,Descanso 1,8.5,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,5,Slovan Bratislava – Betis,Descanso 1X2,Descanso 2,1.57,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,5,Slovan Bratislava – Betis,Descanso 1X2,Descanso X,3.0,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,5,Slovan Bratislava – Betis,Goles 2.ª parte 1.5,"2.ª parte menos de 1,5",2.3,0.4026,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,Goles 2.ª parte 1.5,"2.ª parte más de 1,5",1.55,0.5974,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,Resultado y goles 2.5,"1 y menos de 2,5",17.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,Resultado y goles 2.5,"1 y más de 2,5",11.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,Resultado y goles 2.5,"2 y menos de 2,5",4.75,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,Resultado y goles 2.5,"2 y más de 2,5",1.58,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,Resultado y goles 2.5,"X y menos de 2,5",8.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,5,Slovan Bratislava – Betis,Resultado y goles 2.5,"X y más de 2,5",13.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,6,Sabah – Barcelona,1X2,1,23,0.0412,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,6,Sabah – Barcelona,1X2,2,1.07,0.8859,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,6,Sabah – Barcelona,1X2,X,13,0.0729,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,6,Sabah – Barcelona,Goles 4.5,"Menos de 4,5",2.3,0.4118,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,6,Sabah – Barcelona,Goles 4.5,"Más de 4,5",1.61,0.5882,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,6,Sabah – Barcelona,Hándicap visitante -2.5,"Local +2,5",2.15,0.4297,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,6,Sabah – Barcelona,Hándicap visitante -2.5,"Visitante -2,5",1.62,0.5703,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,6,Sabah – Barcelona,Mitad con más goles,1.ª parte,2.65,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,6,Sabah – Barcelona,Mitad con más goles,2.ª parte,1.9,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,6,Sabah – Barcelona,Mitad con más goles,Igual,4.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,7,Slavia Praga – Villarreal,1X2,1,3.09,0.3077,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,7,Slavia Praga – Villarreal,1X2,2,2.15,0.4422,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,7,Slavia Praga – Villarreal,1X2,X,3.8,0.2502,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,7,Slavia Praga – Villarreal,Goles 3.5,"Menos de 3,5",1.61,0.5882,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,7,Slavia Praga – Villarreal,Goles 3.5,"Más de 3,5",2.3,0.4118,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,7,Slavia Praga – Villarreal,Goles local 1.5,"Local menos de 1,5",1.62,0.5703,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,7,Slavia Praga – Villarreal,Goles local 1.5,"Local más de 1,5",2.15,0.4297,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,7,Slavia Praga – Villarreal,Goles visitante 1.5,"Visitante menos de 1,5",1.93,0.4798,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,7,Slavia Praga – Villarreal,Goles visitante 1.5,"Visitante más de 1,5",1.78,0.5202,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,8,Brujas – Liverpool,1X2,1,4.22,0.2244,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,8,Brujas – Liverpool,1X2,2,1.67,0.567,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,8,Brujas – Liverpool,1X2,X,4.54,0.2086,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,8,Brujas – Liverpool,Goles 2.ª parte 1.5,"2.ª parte menos de 1,5",2.5,0.3703,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,8,Brujas – Liverpool,Goles 2.ª parte 1.5,"2.ª parte más de 1,5",1.47,0.6297,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,8,Brujas – Liverpool,Goles local 1.5,"Local menos de 1,5",1.62,0.5703,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,8,Brujas – Liverpool,Goles local 1.5,"Local más de 1,5",2.15,0.4297,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,8,Brujas – Liverpool,Goles visitante 1.5,"Visitante menos de 1,5",2.8,0.3317,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,8,Brujas – Liverpool,Goles visitante 1.5,"Visitante más de 1,5",1.39,0.6683,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,1X2,1,1.4,0.6738,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,9,Inter – Stuttgart,1X2,2,6.1,0.1546,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,9,Inter – Stuttgart,1X2,X,5.5,0.1715,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,9,Inter – Stuttgart,Descanso 1X2,Descanso 1,1.72,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,9,Inter – Stuttgart,Descanso 1X2,Descanso 2,5.5,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,9,Inter – Stuttgart,Descanso 1X2,Descanso X,3.1,,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,9,Inter – Stuttgart,Goles 2.ª parte 1.5,"2.ª parte menos de 1,5",2.65,0.3473,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,Goles 2.ª parte 1.5,"2.ª parte más de 1,5",1.41,0.6527,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,Resultado y goles 2.5,"1 y menos de 2,5",6.75,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,Resultado y goles 2.5,"1 y más de 2,5",1.66,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,Resultado y goles 2.5,"2 y menos de 2,5",16.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,Resultado y goles 2.5,"2 y más de 2,5",6.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,Resultado y goles 2.5,"X y menos de 2,5",8.75,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,9,Inter – Stuttgart,Resultado y goles 2.5,"X y más de 2,5",8.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,10,PSG – Roma,1X2,1,1.38,0.6904,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,10,PSG – Roma,1X2,2,8.0,0.1191,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,10,PSG – Roma,1X2,X,5.0,0.1905,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,10,PSG – Roma,Goles 2.ª parte 1.5,"2.ª parte menos de 1,5",2.4,0.3846,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,10,PSG – Roma,Goles 2.ª parte 1.5,"2.ª parte más de 1,5",1.5,0.6154,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,10,PSG – Roma,Mitad con más goles,1.ª parte,3.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,10,PSG – Roma,Mitad con más goles,2.ª parte,1.9,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,10,PSG – Roma,Mitad con más goles,Igual,3.9,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,11,Shakhtar – Fenerbahçe,1X2,1,2.6,0.3656,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,11,Shakhtar – Fenerbahçe,1X2,2,2.62,0.3628,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,11,Shakhtar – Fenerbahçe,1X2,X,3.5,0.2716,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,11,Shakhtar – Fenerbahçe,Goles 2.5,"Menos de 2,5",2.1,0.4503,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,11,Shakhtar – Fenerbahçe,Goles 2.5,"Más de 2,5",1.72,0.5497,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,11,Shakhtar – Fenerbahçe,Goles local 1.5,"Local menos de 1,5",1.63,0.5688,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,11,Shakhtar – Fenerbahçe,Goles local 1.5,"Local más de 1,5",2.15,0.4312,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,12,Sporting CP – Man. United,1X2,1,2.5,0.3779,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,12,Sporting CP – Man. United,1X2,2,2.6,0.3633,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,12,Sporting CP – Man. United,1X2,X,3.65,0.2588,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,12,Sporting CP – Man. United,Goles 2.ª parte 1.5,"2.ª parte menos de 1,5",1.98,0.4634,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,12,Sporting CP – Man. United,Goles 2.ª parte 1.5,"2.ª parte más de 1,5",1.71,0.5366,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,12,Sporting CP – Man. United,Goles 3.5,"Menos de 3,5",1.61,0.5882,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,12,Sporting CP – Man. United,Goles 3.5,"Más de 3,5",2.3,0.4118,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,12,Sporting CP – Man. United,Goles visitante 1.5,"Visitante menos de 1,5",1.75,0.527,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,12,Sporting CP – Man. United,Goles visitante 1.5,"Visitante más de 1,5",1.95,0.473,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,13,Celta – Bournemouth,1X2,1,3.6,0.2529,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,13,Celta – Bournemouth,1X2,2,1.9,0.4792,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,13,Celta – Bournemouth,1X2,X,3.4,0.2678,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,13,Celta – Bournemouth,Goles 2.5,"Menos de 2,5",2.0,0.4737,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,13,Celta – Bournemouth,Goles 2.5,"Más de 2,5",1.8,0.5263,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,13,Celta – Bournemouth,Goles visitante 1.5,"Visitante menos de 1,5",1.8,0.5135,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,13,Celta – Bournemouth,Goles visitante 1.5,"Visitante más de 1,5",1.9,0.4865,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,14,Crystal Palace – Real Sociedad,1X2,1,2.0,0.4544,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,14,Crystal Palace – Real Sociedad,1X2,2,3.1,0.2932,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,14,Crystal Palace – Real Sociedad,1X2,X,3.6,0.2524,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,14,Crystal Palace – Real Sociedad,Goles 2.5,"Menos de 2,5",2.37,0.3985,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,14,Crystal Palace – Real Sociedad,Goles 2.5,"Más de 2,5",1.57,0.6015,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,14,Crystal Palace – Real Sociedad,Goles local 1.5,"Local menos de 1,5",1.98,0.4692,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,14,Crystal Palace – Real Sociedad,Goles local 1.5,"Local más de 1,5",1.75,0.5308,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,1X2,1,1.11,0.8592,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,15,Atlético – Viking,1X2,2,21,0.0454,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,15,Atlético – Viking,1X2,X,10,0.0954,lunes,2026-11-23 10:30,"Flashscore.es (mediana de 13 casas, no bet365)",False,,
+24,15,Atlético – Viking,Goles 3.5,"Menos de 3,5",2.2,0.4301,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,15,Atlético – Viking,Goles 3.5,"Más de 3,5",1.66,0.5699,lunes,2026-11-23 09:53 (Claude in Chrome de Carlos),bet365.es,False,,
+24,15,Atlético – Viking,Goles local 2.5,"Local menos de 2,5",2.6,0.3564,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,Goles local 2.5,"Local más de 2,5",1.44,0.6436,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,Resultado y goles 2.5,"1 y menos de 2,5",5.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,Resultado y goles 2.5,"1 y más de 2,5",1.33,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,Resultado y goles 2.5,"2 y menos de 2,5",29.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,Resultado y goles 2.5,"2 y más de 2,5",23.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,Resultado y goles 2.5,"X y menos de 2,5",11.5,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,
+24,15,Atlético – Viking,Resultado y goles 2.5,"X y más de 2,5",21.0,,lunes,2026-11-23 13:29 (Claude in Chrome de Carlos),bwin.es,False,,

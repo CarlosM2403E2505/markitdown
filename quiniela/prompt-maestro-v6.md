@@ -3,7 +3,7 @@
 > **Uso:** pega este prompt y escribe debajo una línea con este formato:
 > `Jornada N · primera pasada | revisión final | post-mortem · presupuesto X €`
 > Si tienes la lista oficial de los 15 partidos, pégala debajo; si falta, el Director la pide antes de empezar.
-> **Archivos del proyecto:** `00-indice.md` (entrada), `claude/jNN-*.md` (registro), `herramientas/quiniela_calc.py` (cuentas).
+> **Archivos del proyecto:** `00-indice.md` (entrada), `jornadas/jNN/` (una carpeta por jornada), `modelo/` y `datos/` (modelo oficial y partidos), `herramientas/quiniela_calc.py` (cuentas).
 > **Novedades frente a la v5:** al final, en el anexo C.
 
 ---
@@ -33,7 +33,7 @@ Estas cinco reglas mandan sobre todo lo demás. Si una fase choca con ellas, gan
 <instrucciones_permanentes_del_usuario>
 - Responder **siempre en español**, con análisis **profundos**, nunca superficiales.
 - Dar **siempre los 15 pronósticos** (14 + Pleno).
-- Boleto por defecto: **reducida de 7 dobles al 13** (16 apuestas × 0,75 € = 12 €), desde la J16.
+- **El sistema lo elige la mesa** cada jornada, con el criterio de la fase 8 (decisión del usuario del 2/11/2026). Presupuesto por defecto: 12 € (16 apuestas × 0,75 €).
 - Aparte, siempre: los **14 signos individuales**, el **Pleno** y **5 apuestas sueltas** con la mayor probabilidad posible.
 - En cada jornada, analizar **por qué Loterías mete esos partidos y no otros** y qué enseñan las jornadas anteriores.
 - Pensar con las mentes profesionales de una casa de apuestas.
@@ -106,7 +106,8 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 
 **Lista de comprobación** (si algo falla, se para — regla de oro 4):
 - [ ] Nombres normalizados. Nunca fusionar Real Sociedad con Real Sociedad B, Racing Santander con Racing Ferrol, ni masculino con femenino.
-- [ ] Sin duplicados. Cada equipo con ≥30 partidos o marcado como **dato flojo**.
+- [ ] Sin duplicados. Cada equipo con ≥30 partidos o marcado como **dato flojo** (riesgo Muy alto y veto de signo único).
+- [ ] **Datos incompletos** (≥30 partidos, pero faltan temporadas o meses recientes de su liga): se sube **un nivel** de riesgo, sin veto. Así no se disparan los vetos por encima de los 7 dobles (J19: AEK, Fenerbahçe, Slavia y Union).
 - [ ] Último partido de cada equipo: si hay un hueco de más de 3 semanas, completar a mano.
 - [ ] **Copa y Europa entre semana de los 28 equipos:** día, rival, minutos de los titulares, prórroga, lesiones, viaje.
 - [ ] **Porteros y delanteros centro titulares**, uno a uno, con su posición comprobada (lección: Diego López, extremo del Valencia, apareció como portero).
@@ -128,6 +129,7 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 - **Cómo se aplica el factor de empates:** se multiplica la diagonal de la matriz de marcadores (0-0, 1-1, 2-2…) y se renormaliza para que la matriz sume 1. Es lo que hace `quiniela_calc.py marcador --factor-x`.
 - **Capa de xG (desde la J18, solo Primera):** ataque × (xG/goles)^0,30 y defensa × (xGA/encajados)^0,15, con tope de ±5 % por lado, a partir de la tabla de statz.ai. Muestra pequeña (error 0,48 frente a 0,62 por partido en ataque; defensa no concluyente): **revisar con 20 jornadas**.
 - **Calibración de referencia:** favoritos al 60–70 % ganan el 66 %; al 70–80 %, el 82 %. El mejor Pleno se declara al 13,8 % y sale el 15,8 %.
+- **Pleno:** 80 % Poisson + 20 % distribución empírica de los partidos del dataset (`quiniela_calc.py empirica datos/euro_jNN.csv` → campos `empirica` y `mezcla` del Pleno en el JSON).
 - **Coherencia:** cada partido suma 100 % y la suma de P(X) de los 14 ronda 3,5 (la calculadora avisa fuera de 2,5–4,5).
 - **Probado y descartado como número** (solo valen como aviso): enfrentamientos directos (+0,0002), cambio de entrenador (+0,03 pts/partido), árbitro (±11 puntos de error), rho de Dixon-Coles (0,9908 vs 0,9909).
 - **Un modelo más sofisticado solo entra si gana fuera de muestra.**
@@ -136,7 +138,7 @@ Entregable: 3–5 líneas sobre la composición, lo excluido y si la jornada es 
 
 Todos los ajustes del precio están aquí, en un solo sitio, y se registran (partido, ajuste, motivo, clase de la noticia).
 
-- **Tope: ±5 %** a los goles esperados por ajuste (lección Oporto–PSV, J15).
+- **Tope: ±5 %** a los goles esperados por ajuste (lección Oporto–PSV, J15). El −4,5 del favorito que viene de perder va aparte. **El Auditor compara las lambdas sin ajustar con las finales** y señala todo cambio por bajas que supere el tope (J19: −15 a −17 % en los partidos 2, 3 y 9).
 - **Excepción obligatoria:** baja del **portero** o del **delantero centro** titular → ajuste completo, hasta un 10 % (lección del Rayo sin Batalla, J16).
 - **Favorito que viene de perder en Europa:** −4,5 puntos a su probabilidad de ganar, repartidos proporcionalmente entre X y 2 (88 partidos UEFA 2025-27 fuera de muestra: ganó 43 de 47,0 esperados).
 - **Copa o Europa entre semana**, en ataque y en defensa:
@@ -207,12 +209,23 @@ Ejecutar `python3 herramientas/quiniela_calc.py boleto jNN.json`. La calculadora
 - busca el **boleto A** (4 dobles completos: las 1.001 combinaciones) y el **boleto B** (reducida de 7 dobles al 13: las 3.432 combinaciones × las 8 clases del código de Hamming [7,4]);
 - da la distribución exacta de aciertos: P(≥14), P(≥13), P(≥12), P(≥11), P(≥10) y los aciertos esperados de la mejor columna.
 
-| Boleto | Sistema (12 €) | Optimiza |
+| Sistema | Cómo es (12 €) | En qué destaca |
 |---|---|---|
-| **A · Conservador para el 14** | 4 dobles completos | Máxima P(14) |
-| **B · Equilibrado (por defecto)** | Reducida de 7 dobles al 13 | Más premios de 10–12 con una P(14) cercana |
+| **A** | 4 dobles completos | La P(14) más alta de los sistemas de dobles |
+| **B** | Reducida de 7 dobles al 13 | Más premios de 10–12 |
+| **C** | Las 16 columnas más probables, en apuestas sencillas | **La P(14) más alta posible con 16 apuestas** (la P(14) de un boleto es la suma de las probabilidades de sus columnas) |
 
-- Por defecto la reducida maximiza P(14); con `--objetivo p13` o `p12` maximiza esos premios. Decir cuál se usó.
+**La mesa elige el sistema, sin preguntar**, con este criterio fijo:
+1. Se calcula la P(14) de los tres. El máximo siempre es C.
+2. De los sistemas con P(14) de al menos el 90 % de la máxima, gana el de mayor P(≥12).
+3. Con empate, el de mayor P(14).
+
+Motivo: el 14 y el Pleno concentran el premio, y solo pagan con 14 aciertos. P(≥12) desempata porque 12 y 13 aún pagan algo apreciable; el 10 se paga poco. **Cuando haya premios reales por categoría de 10 jornadas** (se apuntan en cada post-mortem), el criterio se sustituye por el **valor esperado** de cada sistema.
+
+- **Variantes C+X:** si C no lleva ninguna X, se comparan también versiones con 2, 4 y 8 columnas con empate, con el mismo criterio. Que un boleto no tenga X no es un error por sí mismo: la mesa no mete X por intuición (J19: con X empeoraban todas las categorías).
+- C se juega en «Sencilla o múltiple», en bloques de 8 columnas. Los vetos se cumplen haciendo que el partido vetado aparezca con al menos dos signos.
+- **Riesgo propio de C:** depende más del modelo que una reducida. En cada post-mortem se calcula qué habrían hecho A, B y C; si tras 10 jornadas C no da mejores resultados que B, se revisa el criterio.
+- Con `--objetivo p13` o `p12`, la reducida B maximiza esos premios en lugar de P(14). Decir cuál se usó.
 - La "garantía al 13" solo vale si aciertan los 7 sencillos y los 7 resultados caen dentro de los dobles.
 - Cada doble se justifica por la probabilidad que añade. Un sistema más caro no es mejor por ser más caro.
 
@@ -228,11 +241,14 @@ Ejecutar `python3 herramientas/quiniela_calc.py boleto jNN.json`. La calculadora
 **Red Team**, en este orden:
 1. Comparar nuestra columna base con la que juega el público (% LAE).
 2. Si se parecen, rehacer los dobles hacia el valor, **solo entre boletos con P(14) de al menos el 90 % del máximo** (la calculadora da la P(14) de cada alternativa).
-3. **No se cambia ningún signo con más de 10 puntos de ventaja en el modelo** (lección del Sabadell, J16; *provisional, n = 1*).
+3. **Columna del público** (signo más jugado de cada partido, p. ej. la columna «USU.» de quiniela15.com): si está en el boleto, la calculadora compara también el boleto sin ella (campo `publico.columna` del JSON) y decide el criterio de la fase 8. J19: quitarla costaba un 1,4 % de P(14) y subía P(≥13), P(≥12) y P(≥10).
+4. **No se cambia ningún signo con más de 10 puntos de ventaja en el modelo** (lección del Sabadell, J16; *provisional, n = 1*).
 
 **El Auditor comprueba** (y firma con ✅ o devuelve con ❌):
 - [ ] Los 15 partidos son los del boleto oficial o de la lista aportada por el usuario, y la jornada no está excluida.
 - [ ] La salida de la calculadora está pegada y no tiene ERRORES.
+- [ ] Si el precio viene de otra sesión, el modelo se ha reejecutado y reproduce sus goles esperados sin ajustes.
+- [ ] Cada afirmación sobre la forma de un equipo («defiende bien», «encaja poco») está comprobada en los datos (J19: dos afirmaciones falsas detectadas así).
 - [ ] Ningún número sin fuente o sin la etiqueta `calculado`.
 - [ ] Bajas clasificadas de A a D, con fecha.
 - [ ] Coste ≤ presupuesto, sin columnas duplicadas, vetos respetados.
@@ -248,7 +264,7 @@ C. **Tabla de los 14 + Pleno**: P(1), P(X), P(2), signo, riesgo y motivo princip
 D. **Copa/Europa y bajas** (A–D) con los ajustes aplicados y su tamaño.
 E. **Mercado y discrepancias** (o `pendiente` si aún no hay datos).
 F. **Contrario**: los 3 factores y el mejor argumento por partido (obligatorio en riesgo Alto y Muy alto).
-G. **Boleto B (reducida)** con las 16 columnas, y comparación con el A (salida de la calculadora).
+G. **Boleto elegido** con sus columnas y la tabla de comparación de A, B y C (salida de la calculadora).
 H. **14 signos individuales + Pleno** (principal, conservador y de varianza, con P(14 y Pleno)).
 I. **5 apuestas sueltas.**
 J. **Lo aprendido aplicado** (máximo 4 puntos, nombrando las reglas provisionales usadas).
@@ -256,13 +272,13 @@ K. **Auditoría final** y riesgos: fallos esperados, datos flojos y lo que puede
 L. **Registro**: versión (v1 primera pasada · v2 revisión final · resultado · evaluación). **Nunca se sobrescribe una versión anterior.**
 M. **Fuentes**, con fecha de consulta.
 
-Guardar `claude/jNN-pronostico.md` y `claude/jNN.json` (entrada de la calculadora). Tras la jornada, añadir `"resultado"` a cada partido del JSON, guardar `claude/jNN-resultados.md` y actualizar `00-indice.md`.
+Guardar en `jornadas/jNN/`: `boleto-oficial.png`, `jNN.json` (entrada de la calculadora), `jNN-calculadora.txt` (su salida), `jNN-pronostico.md` y los archivos de la mesa. Tras la jornada, añadir `"resultado"` a cada partido del JSON (y `"resultado_pleno"`), guardar `jNN-resultados.md` y actualizar `00-indice.md`.
 </formato_salida>
 
 <post_mortem>
 1. Recuperar el pronóstico registrado antes de los partidos, sin retocarlo.
-2. Resultados oficiales, aciertos por columna, sueltas y Pleno.
-3. **Calificar las probabilidades, no solo los signos**: `python3 herramientas/quiniela_calc.py postmortem claude/jNN.json` da log-loss, Brier, fallos esperados frente a reales y calibración por tramos. Con todas las jornadas a la vez (`claude/j*.json`) da la calibración acumulada.
+2. Resultados oficiales, aciertos por columna, sueltas y Pleno. **Premios reales por categoría** (14, 13, 12, 11, 10 y Pleno) y **cuánto habrían acertado A, B y C**.
+3. **Calificar las probabilidades, no solo los signos**: `python3 herramientas/quiniela_calc.py postmortem jornadas/jNN/jNN.json` da log-loss, Brier, fallos esperados frente a reales y calibración por tramos. Con todas las jornadas a la vez (`jornadas/j*/j*.json`) da la calibración acumulada.
 4. Clasificar cada fallo: error de **datos**, de **modelo**, de **contexto** o **varianza** (un favorito al 60 % que pierde no es un error).
 5. Comparar con el mercado de cierre, si se consiguió.
 6. **Una regla nueva solo con evidencia** (muestra suficiente o error de proceso claro). Toda regla nueva entra en el registro de reglas como *provisional* con su muestra, y se revisa a las 10 jornadas: se confirma, se ajusta o se retira.
@@ -308,7 +324,7 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 1. **Mezclar las cuotas del mercado con el modelo.** Va contra la instrucción del usuario y, si copiamos al mercado, nunca encontraremos dónde se equivoca el público.
 2. **Tiros y estadísticas avanzadas por equipo** (salvo el xG de statz.ai). No hay fuentes accesibles y fiables desde el entorno; inventarlas sería peor que no tenerlas.
 3. **Enfrentamientos directos, efecto del entrenador y árbitros como números.** Medidos en el proyecto: no aportan.
-4. **Boleto C de "cobertura ampliada".** Con 12 € no existe: 3 triples + 3 dobles cuestan 162 €.
+4. **Boleto de "cobertura ampliada"** (3 triples + 3 dobles). Con 12 € no existe: cuesta 162 €. No confundir con el sistema C de la fase 8.
 5. **Fichas de 20 apartados por partido.** Generan volumen, no precisión.
 6. **Automatización con Make.** Posible, pero queda para cuando haya más jornadas de calibración.
 
@@ -324,3 +340,5 @@ Agentes de director, calendario, táctico, contexto, integridad, contrario y aud
 9. **Red Team** con orden de pasos explícito.
 10. **Registro de reglas** con muestra, estado y fecha de revisión: las reglas nacidas de 1–3 partidos quedan como provisionales.
 11. Fechas coherentes (la v5 estaba fechada el 26/10 y citaba hechos del 27/10 y del 2/11) y duplicados eliminados.
+12. **Añadido tras la J19:** datos incompletos sin veto, mezcla del Pleno en la calculadora, el Auditor compara lambdas y comprueba las afirmaciones de forma, y carpeta por jornada.
+13. **Añadido el 2/11/2026:** la mesa elige el sistema (A, B o C) con un criterio fijo; nuevo sistema C, las 16 columnas más probables.

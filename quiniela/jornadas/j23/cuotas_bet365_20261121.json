@@ -1,0 +1,159 @@
+{
+ "fuente": "bet365.es",
+ "leido_el": "2026-11-21 10:37 (1X2, Claude in Chrome de Carlos) y fotos de pantalla de Carlos ~10:45 (Ambos marcan) y fotos 1X2 de Primera, Segunda y Liga F ~10:50",
+ "nota": "Solo lo legible. Fotos de Liga F ilegibles: fuera. Las cifras marcadas como dudosas no se usan para decidir.",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Alavés – Deportivo",
+   "cuotas": {
+    "1X2|1": 2.3,
+    "1X2|X": 3.25,
+    "1X2|2": 3.25
+   }
+  },
+  {
+   "n": 2,
+   "partido": "Rayo – Valencia",
+   "cuotas": {
+    "1X2|1": 1.95,
+    "1X2|X": 3.5,
+    "1X2|2": 3.9,
+    "Ambos marcan|No": 1.95
+   },
+   "dudosas": {
+    "Ambos marcan|Sí": 1.8
+   }
+  },
+  {
+   "n": 3,
+   "partido": "Real Madrid – Celta",
+   "cuotas": {
+    "1X2|1": 1.16,
+    "1X2|X": 8.5,
+    "1X2|2": 13.0
+   },
+   "dudosas": {
+    "Ambos marcan|Sí": 1.85,
+    "Ambos marcan|No": 1.8
+   }
+  },
+  {
+   "n": 4,
+   "partido": "Barcelona – Villarreal",
+   "cuotas": {
+    "1X2|1": 1.2,
+    "1X2|X": 7.5,
+    "1X2|2": 10.0,
+    "Ambos marcan|Sí": 1.44,
+    "Ambos marcan|No": 2.62
+   }
+  },
+  {
+   "n": 5,
+   "partido": "Racing – Real Sociedad",
+   "cuotas": {
+    "1X2|1": 3.2,
+    "1X2|X": 4.2,
+    "1X2|2": 2.0
+   },
+   "dudosas": {
+    "Ambos marcan|Sí": 1.33,
+    "Ambos marcan|No": 3.25
+   }
+  },
+  {
+   "n": 6,
+   "partido": "Osasuna – Málaga",
+   "cuotas": {
+    "1X2|1": 1.8,
+    "1X2|X": 3.6,
+    "1X2|2": 4.33
+   }
+  },
+  {
+   "n": 7,
+   "partido": "Getafe – Atlético",
+   "cuotas": {
+    "1X2|1": 6.25,
+    "1X2|X": 3.9,
+    "1X2|2": 1.55,
+    "Ambos marcan|Sí": 2.0,
+    "Ambos marcan|No": 1.75
+   }
+  },
+  {
+   "n": 8,
+   "partido": "Tenerife – Mallorca",
+   "cuotas": {
+    "Ambos marcan|Sí": 2.1,
+    "Ambos marcan|No": 1.66,
+    "1X2|1": 3.3,
+    "1X2|X": 3.0,
+    "1X2|2": 2.37
+   }
+  },
+  {
+   "n": 9,
+   "partido": "Sporting – Las Palmas",
+   "cuotas": {
+    "Ambos marcan|Sí": 1.72,
+    "Ambos marcan|No": 2.0,
+    "1X2|1": 2.1,
+    "1X2|X": 3.4,
+    "1X2|2": 3.3
+   }
+  },
+  {
+   "n": 10,
+   "cuotas": {
+    "1X2|1": 1.8,
+    "1X2|X": 3.7,
+    "1X2|2": 4.2
+   }
+  },
+  {
+   "n": 11,
+   "cuotas": {
+    "1X2|1": 8.0,
+    "1X2|X": 4.5,
+    "1X2|2": 1.3
+   }
+  },
+  {
+   "n": 12,
+   "cuotas": {
+    "1X2|1": 9.0,
+    "1X2|X": 5.25,
+    "1X2|2": 1.25
+   }
+  },
+  {
+   "n": 13,
+   "cuotas": {
+    "1X2|1": 1.53,
+    "1X2|X": 4.0,
+    "1X2|2": 4.75
+   }
+  },
+  {
+   "n": 14,
+   "cuotas": {
+    "1X2|1": 1.72,
+    "1X2|X": 3.7,
+    "1X2|2": 3.75
+   }
+  },
+  {
+   "n": 15,
+   "partido": "Sevilla – Betis",
+   "cuotas": {
+    "1X2|1": 2.87,
+    "1X2|X": 3.4,
+    "1X2|2": 2.45,
+    "Ambos marcan|Sí": 1.7,
+    "Ambos marcan|No": 2.05
+   }
+  }
+ ]
+}

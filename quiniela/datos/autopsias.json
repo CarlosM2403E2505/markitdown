@@ -1,0 +1,108 @@
+{
+ "regla": "R8 autopsia de rojos (analisis/autopsia-rojos.md). Una etiqueta con 5 o más casos pasa a prueba fuera de muestra; solo entra si mejora.",
+ "etiquetas": [
+  "varianza",
+  "baja_no_vista",
+  "rotacion",
+  "expulsion",
+  "penalti_var",
+  "lesion_en_partido",
+  "rival_superior_xg",
+  "dato_entrada",
+  "cobertura_boleto"
+ ],
+ "hipotesis": [
+  {
+   "id": "H1",
+   "etiqueta": "cobertura_boleto",
+   "texto": "Favoritos 55-75 % en Champions: la X en al menos P(X)·N columnas",
+   "casos": 2,
+   "estado": "abierta"
+  },
+  {
+   "id": "H2",
+   "etiqueta": "pleno_goles_local",
+   "texto": "El Pleno de la mesa da demasiado al local con 3 o más goles cuando un grande juega en casa (J24: 47 % frente al 32 % del histórico LAE europeo, 18 de 56). Probar la calibración de P(local ≥ 3) fuera de muestra antes del Pleno de la J25",
+   "casos": 1,
+   "estado": "abierta, prioridad Pleno"
+  }
+ ],
+ "rojos": [
+  {
+   "jornada": 24,
+   "n": 1,
+   "partido": "Arsenal – Dortmund",
+   "real": "X",
+   "marcador": "1-1",
+   "p_mesa": 0.223,
+   "p_casas": 0.199,
+   "columnas": "1/32",
+   "xg": [
+    2.34,
+    0.92
+   ],
+   "clasificacion": "varianza",
+   "etiqueta": "cobertura_boleto",
+   "fuente": "The Analyst (Opta), Sky Sports"
+  },
+  {
+   "jornada": 24,
+   "n": 3,
+   "partido": "Man. City – Nápoles",
+   "real": "X",
+   "marcador": "2-2",
+   "p_mesa": 0.17,
+   "p_casas": 0.151,
+   "columnas": "0/32",
+   "xg": [
+    1.41,
+    0.61
+   ],
+   "clasificacion": "varianza",
+   "etiqueta": "cobertura_boleto",
+   "fuente": "The Analyst (Opta), Sky Sports"
+  },
+  {
+   "jornada": 24,
+   "n": 10,
+   "partido": "PSG – Roma",
+   "real": "X",
+   "marcador": "2-2",
+   "p_mesa": 0.216,
+   "p_casas": 0.199,
+   "columnas": "6/32",
+   "xg": null,
+   "clasificacion": "causa",
+   "etiqueta": "penalti_var",
+   "fuente": "Flashscore"
+  },
+  {
+   "jornada": 24,
+   "n": 12,
+   "partido": "Sporting CP – Man. United",
+   "real": "X",
+   "marcador": "2-2",
+   "p_mesa": 0.226,
+   "p_casas": 0.262,
+   "columnas": "5/32",
+   "xg": null,
+   "clasificacion": "causa",
+   "etiqueta": "penalti_var",
+   "fuente": "ESPN (incompleto)"
+  },
+  {
+   "jornada": 24,
+   "n": 15,
+   "partido": "Pleno Atlético – Viking",
+   "real": "2-0",
+   "marcador": "2-0",
+   "p_mesa": 0.071,
+   "p_casas": null,
+   "columnas": "0 (M-1)",
+   "xg": null,
+   "clasificacion": "varianza",
+   "etiqueta": "varianza",
+   "fuente": "Flashscore"
+  }
+ ]
+}

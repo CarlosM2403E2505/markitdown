@@ -1,0 +1,930 @@
+<meta name='dash-one-writer'>
+<style>
+.ql{--ql-acc:#e8114b;--ql-head:#0f2633;font-family:var(--font-anthropic-sans);color:var(--color-fg)}
+.ql-top{background:var(--ql-head);color:#fff;border-radius:var(--cds-radius);padding:10px 14px;display:flex;flex-wrap:wrap;align-items:center;gap:8px 18px}
+.ql-logo{font-weight:700;letter-spacing:.04em;font-size:18px;margin:0}
+.ql-logo b{color:var(--ql-acc)}
+.ql-nav{display:flex;gap:2px;flex-wrap:wrap}
+.ql-nav button{background:transparent;color:#cfd8dc;border:0;padding:6px 10px;border-radius:6px;font:inherit;font-size:12px;font-weight:700;cursor:pointer;text-transform:uppercase;letter-spacing:.03em}
+.ql-nav button[aria-pressed=true]{background:rgba(255,255,255,.12);color:#fff;box-shadow:inset 0 -2px 0 var(--ql-acc)}
+.ql-strip{display:flex;gap:6px;overflow-x:auto;padding:10px 0 6px}
+.ql-jbtn{flex:0 0 auto;border:1px solid var(--color-border-line);background:var(--color-panel);color:var(--color-fg);border-radius:8px;padding:5px 12px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;text-align:center;min-width:60px}
+.ql-jbtn small{display:block;color:var(--color-fg-muted);font-size:11px;font-weight:500}
+.ql-jbtn[aria-pressed=true]{background:var(--ql-acc);border-color:var(--ql-acc);color:#fff}
+.ql-jbtn[aria-pressed=true] small{color:#ffe3ea}
+.ql-frase{margin:4px 0 10px;font-size:var(--cds-font-size-body);color:var(--color-fg-muted)}
+.ql-frase b{color:var(--color-fg)}
+.ql-filt{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 10px}
+.ql-filt button{border:1px solid var(--color-border-line);background:transparent;color:var(--color-fg);border-radius:999px;padding:4px 12px;font:inherit;font-size:12px;font-weight:700;cursor:pointer}
+.ql-filt button[aria-pressed=true]{background:var(--color-fg);color:var(--color-bg);border-color:var(--color-fg)}
+.ql-kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:12px;min-height:64px}
+.ql-kpi{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:8px 12px}
+.ql-kpi span{display:block;font-size:var(--cds-font-size-caption);color:var(--color-fg-muted)}
+.ql-kpi b{font-family:var(--font-anthropic-serif);font-weight:400;font-size:22px;font-variant-numeric:tabular-nums}
+.ql-kpi b span{display:inline;font-size:inherit;color:inherit}
+.ql-list{border:1px solid var(--color-border-line);border-radius:var(--cds-radius);overflow:hidden;background:var(--color-panel);min-height:120px}
+.ql-msg{padding:16px;color:var(--color-fg-muted);font-size:14px}
+.ql-comp{display:flex;align-items:center;gap:8px;padding:7px 12px;background:var(--color-bg);border-top:1px solid var(--color-border-line);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.ql-comp:first-child{border-top:0}
+.ql-comp i{width:4px;height:14px;border-radius:2px;background:var(--ql-acc)}
+.ql-comp em{margin-left:auto;font-style:normal;font-weight:500;color:var(--color-fg-muted);text-transform:none;letter-spacing:0}
+.ql-row{display:grid;grid-template-columns:34px minmax(0,1fr) 50px auto 24px;align-items:center;gap:8px;padding:7px 12px;border-top:1px solid var(--color-border-line);cursor:pointer}
+.ql-row:hover,.ql-row.open{background:var(--color-bg)}
+.ql-row:focus-visible{outline:2px solid var(--ql-acc);outline-offset:-2px}
+.ql-n{font-size:12px;color:var(--color-fg-muted);font-weight:700}
+.ql-teams div{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-size:14px;line-height:1.4}
+.ql-teams .w{font-weight:700}
+.ql-score{text-align:center;font-weight:700;color:var(--ql-acc);font-variant-numeric:tabular-nums;font-size:15px}
+.ql-score.pend{color:var(--color-fg-muted);font-weight:500;font-size:12px}
+.ql-odds{display:flex;gap:4px}
+.ql-o{width:46px;text-align:center;border:1px solid var(--color-border-line);border-radius:6px;padding:2px 0;font-size:12px;font-variant-numeric:tabular-nums;line-height:1.25}
+.ql-o small{display:block;font-size:10px;color:var(--color-fg-muted);font-weight:700}
+.ql-o.sel{background:var(--ql-acc);border-color:var(--ql-acc);color:#fff}
+.ql-o.sel small{color:#ffe3ea}
+.ql-o.res{box-shadow:0 0 0 2px var(--color-ok)}
+.ql-o.wide{width:146px}
+.ql-ic{text-align:center;font-weight:700;font-size:15px}
+.ql-ok{color:var(--color-ok)}
+.ql-bad{color:var(--color-bad)}
+.ql-warn{color:var(--color-warn)}
+.ql-tag{display:inline-block;font-size:10px;font-weight:700;padding:0 5px;border-radius:4px;margin-left:6px;vertical-align:1px;border:1px solid currentColor;line-height:1.5}
+.ql-det{padding:12px;border-top:1px dashed var(--color-border-line);background:var(--color-bg);cursor:default}
+.ql-dtabs{display:flex;gap:4px;border-bottom:1px solid var(--color-border-line);margin-bottom:10px;flex-wrap:wrap}
+.ql-dtabs button{background:transparent;border:0;padding:6px 10px;font:inherit;font-size:12px;font-weight:700;color:var(--color-fg-muted);cursor:pointer;text-transform:uppercase}
+.ql-dtabs button[aria-pressed=true]{color:var(--color-fg);box-shadow:inset 0 -2px 0 var(--ql-acc)}
+.ql-meta{font-size:13px;color:var(--color-fg-muted);margin-bottom:10px}
+.ql-meta b{color:var(--color-fg)}
+.ql-bars{display:grid;grid-template-columns:22px 1fr;gap:6px 10px;align-items:center;max-width:520px}
+.ql-bars .lab{font-weight:700;text-align:center}
+.ql-track{display:flex;flex-direction:column;gap:3px}
+.ql-bar{display:flex;align-items:center;gap:6px;font-size:12px;font-variant-numeric:tabular-nums}
+.ql-bar i{display:block;height:9px;border-radius:3px;min-width:2px}
+.ql-legend{display:flex;gap:14px;font-size:12px;color:var(--color-fg-muted);margin-top:8px}
+.ql-legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:5px;vertical-align:-1px}
+.ql-alert{margin-top:10px;padding:8px 10px;border-radius:6px;border:1px solid var(--color-warn);font-size:13px}
+.ql-baja{display:grid;grid-template-columns:26px 1fr;gap:2px 8px;padding:7px 0;border-top:1px solid var(--color-border-line);font-size:13px}
+.ql-baja:first-child{border-top:0}
+.ql-cl{grid-row:span 2;width:22px;height:22px;border-radius:5px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:12px;color:#fff}
+.ql-cl.A{background:#1f9d55}.ql-cl.B{background:#2f6fde}.ql-cl.C{background:#e08a00}.ql-cl.D{background:#7a7a7a}
+.ql-baja small{color:var(--color-fg-muted)}
+.ql-baja a{color:inherit}
+.ql-tw{overflow-x:auto}
+.ql-t{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.ql-t th{text-align:left;font-size:11px;text-transform:uppercase;color:var(--color-fg-muted);font-weight:700;padding:6px 8px;border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.ql-t td{padding:6px 8px;border-bottom:1px solid var(--color-border-line);white-space:nowrap}
+.ql-t td.num,.ql-t th.num{text-align:right}
+.ql-t tr.hl td{background:var(--color-bg)}
+.ql-t tr.z1 td:first-child{box-shadow:inset 3px 0 0 #2f6fde}
+.ql-t tr.z3 td:first-child{box-shadow:inset 3px 0 0 var(--color-bad)}
+.ql-f{display:inline-flex;gap:2px}
+.ql-f i{width:16px;height:16px;border-radius:3px;font-style:normal;font-size:10px;font-weight:700;color:#fff;display:inline-flex;align-items:center;justify-content:center}
+.ql-f .V{background:#1f9d55}.ql-f .E{background:#8a8f94}.ql-f .D{background:#d63b3b}
+.ql-card{background:var(--color-panel);border:1px solid var(--color-border-line);border-radius:var(--cds-radius);padding:var(--cds-pad-lg);margin-bottom:12px}
+.ql-card h3{margin:0 0 4px;font-size:var(--cds-font-size-heading)}
+.ql-card p.sub{margin:0 0 10px;color:var(--color-fg-muted);font-size:13px}
+.ql-tl{list-style:none;margin:0;padding:0}
+.ql-tl li{border-left:2px solid var(--color-border-line);padding:0 0 12px 12px;position:relative;font-size:13px}
+.ql-tl li::before{content:'';position:absolute;left:-6px;top:3px;width:10px;height:10px;border-radius:50%;background:var(--color-border-line)}
+.ql-tl li.si::before{background:var(--ql-acc)}
+.ql-tl small{color:var(--color-fg-muted);display:block}
+.ql-chart{position:relative;min-height:220px}
+.ql-tip{position:absolute;pointer-events:none;background:var(--cds-surface-popover);border:1px solid var(--cds-border);box-shadow:var(--cds-shadow-popover);border-radius:6px;padding:6px 8px;font-size:12px;white-space:nowrap}
+.ql-chart text{fill:var(--cds-text-secondary);font-size:11px}
+.ql-sel-row{display:flex;gap:10px;align-items:center;margin:12px 0 8px}
+.ql-sec{padding-top:10px}
+.ql-buscar{flex:1;min-width:0;max-width:280px}
+.ql-archivo{display:flex;flex-direction:column;gap:8px}
+.ql-arch{border:1px solid var(--color-border-line);border-radius:var(--cds-radius);background:var(--color-panel);overflow:hidden}
+.ql-arch>summary{cursor:pointer;padding:10px 12px;font-weight:700;display:flex;gap:10px;align-items:baseline;list-style:none}
+.ql-arch>summary::before{content:'▸';color:var(--ql-acc)}
+.ql-arch[open]>summary::before{content:'▾'}
+.ql-arch>summary small{font-weight:500;color:var(--color-fg-muted)}
+.ql-arch h4{margin:10px 12px 4px;font-size:13px;text-transform:uppercase;letter-spacing:.03em;color:var(--color-fg-muted)}
+.ql-arch .ql-tw{padding:0 12px 10px}
+.ql-sg{font-weight:700;text-align:center}
+.ql-sg.hit{color:#fff;background:var(--color-ok);border-radius:4px}
+.ql-sg.miss{color:#fff;background:var(--color-bad);border-radius:4px}
+.ql-note{font-size:13px;color:var(--color-fg-muted)}
+.ql-note summary{cursor:pointer;font-weight:700;color:var(--color-fg)}
+.ql-est{display:inline-block;font-size:11px;font-weight:700;padding:1px 6px;border-radius:999px;border:1px solid currentColor}
+.ql-t td.wrap{white-space:normal;min-width:140px}
+@media (max-width:540px){
+.ql-row{grid-template-columns:28px minmax(0,1fr) 44px 20px}
+.ql-odds{grid-column:2 / 5;grid-row:2}
+.ql-ic{grid-column:4;grid-row:1}
+}
+@media print{.ql-nav,.ql-filt{display:none}.ql-sec{break-before:page}}
+</style>
+
+<div class='ql' id='control-quiniela'>
+  <header class='ql-top'>
+    <h1 class='ql-logo'>CONTROL <b>QUINIELA</b></h1>
+    <nav class='ql-nav' aria-label='Secciones'>
+      <button type='button' data-sec='partidos' aria-pressed='true'>Partidos</button>
+      <button type='button' data-sec='clasificacion' aria-pressed='false'>Clasificación</button>
+      <button type='button' data-sec='mesa' aria-pressed='false'>Mesa</button>
+      <button type='button' data-sec='rendimiento' aria-pressed='false'>Rendimiento</button>
+      <button type='button' data-sec='bajas' aria-pressed='false'>Bajas</button>
+      <button type='button' data-sec='anteriores' aria-pressed='false'>Quiniela definitiva</button>
+      <button type='button' data-sec='apuestas' aria-pressed='false'>Apuestas bet365</button>
+      <button type='button' data-sec='bank' aria-pressed='false'>Bank</button>
+    </nav>
+  </header>
+
+  <div class='ql-strip' id='jornadas' data-draw='jstrip' data-source='partidos jornadas'></div>
+  <p class='ql-frase' id='frase' data-draw='frase' data-source='jornadas'>—</p>
+
+  <section class='ql-sec' id='partidos'>
+    <div class='ql-kpis' id='kpis' data-draw='kpis' data-source='jornadas jornada_resumen'></div>
+    <div class='ql-filt' role='group' aria-label='Filtrar partidos'>
+      <button type='button' data-f='todos' aria-pressed='true'>Todos</button>
+      <button type='button' data-f='pend' aria-pressed='false'>Pendientes</button>
+      <button type='button' data-f='ok' aria-pressed='false'>Acertados</button>
+      <button type='button' data-f='bad' aria-pressed='false'>Fallados</button>
+      <button type='button' data-f='alert' aria-pressed='false'>⚠ Alertas de mercado</button>
+    </div>
+    <div class='ql-list' id='lista-partidos' data-draw='lista' data-source='partidos equipos bajas discrepancia'></div>
+    <p class='ql-note'>Cada casilla 1 · X · 2 es la probabilidad de la mesa. En rojo, los signos que lleva el boleto; con borde verde, el resultado. Toca un partido para ver el detalle, las bajas y la clasificación.</p>
+  </section>
+
+  <section class='ql-sec' id='clasificacion' hidden>
+    <div class='ql-sel-row'>
+      <select class='dash-select ql-compsel' aria-label='Competición'>
+        <option value='Primera'>Primera</option>
+        <option value='Segunda'>Segunda</option>
+        <option value='Liga F'>Liga F</option>
+      </select>
+      <span class='ql-note'>Resaltados, los equipos de la jornada elegida.</span>
+    </div>
+    <div class='ql-tw' id='tabla-clasificacion' data-draw='tabla' data-source='equipos partidos'></div>
+    <p class='ql-note'>Ataque y defensa son índices del modelo: 100 es la media de la liga; más ataque es mejor y menos defensa es mejor.</p>
+  </section>
+
+  <section class='ql-sec' id='mesa' hidden>
+    <div class='ql-card' id='sueltas-card'>
+      <h3>Apuestas sueltas de la jornada</h3>
+      <p class='sub'>Las 5 de mayor probabilidad que propuso la mesa.</p>
+      <div data-draw='sueltas' data-source='sueltas jornadas'></div>
+    </div>
+    <div class='ql-card' id='novedades-card'>
+      <h3>Novedades de la mesa</h3>
+      <p class='sub'>Cada aporte y si cambió el boleto (punto rojo).</p>
+      <div data-draw='novedades' data-source='novedades'></div>
+    </div>
+  </section>
+
+  <section class='ql-sec' id='rendimiento' hidden>
+    <div class='ql-card' id='mejor-columna'>
+      <h3>Mejor columna por jornada</h3>
+      <p class='sub'>Aciertos de la mejor columna jugada. La línea marca los 10 aciertos, desde donde se cobra.</p>
+      <div class='ql-chart' data-draw='chart' data-source='jornadas'></div>
+    </div>
+    <div class='ql-card' id='calibracion-card'>
+      <h3>¿Son fijos de verdad?</h3>
+      <p class='sub'>Signos únicos del boleto ya jugados, por la probabilidad que les daba la mesa. En rojo, un tramo que acierta más de 5 puntos por debajo de lo esperado.</p>
+      <div class='ql-tw' data-draw='calib' data-source='calibracion'></div>
+    </div>
+    <div class='ql-card' id='empates-card'>
+      <h3>Empates: esperados y reales</h3>
+      <p class='sub'>Suma de la probabilidad de X de la mesa en los partidos ya jugados frente a las X que salieron.</p>
+      <div class='ql-tw' data-draw='emp' data-source='jornada_resumen'></div>
+    </div>
+    <div class='ql-card' id='historial-card'>
+      <h3>Historial de boletos</h3>
+      <div class='ql-tw' data-draw='hist' data-source='jornadas'></div>
+    </div>
+  </section>
+
+  <section class='ql-sec' id='bajas' hidden>
+    <div class='ql-card' id='bajas-card'>
+      <h3>Bajas y dudas</h3>
+      <p class='sub'>Clase de la noticia: A oficial, B medio fiable, C rumor, D especulación. Solo A y B mueven el precio. Se muestran las de la jornada elegida arriba.</p>
+      <div class='ql-sel-row'>
+        <label class='ql-note' for='buscar-bajas'>Buscar</label>
+        <input class='dash-input ql-buscar' id='buscar-bajas' type='search' placeholder='Equipo o jugador' autocomplete='off'>
+      </div>
+      <div data-draw='bajas-lista' data-source='bajas'></div>
+    </div>
+  </section>
+
+  <section class='ql-sec' id='anteriores' hidden>
+    <div class='ql-card' id='definitivos-anteriores'>
+      <h3>Quiniela definitiva</h3>
+      <p class='sub'>Las tablas definitivas de cada jornada, publicadas antes del primer partido. Arriba la de la jornada en curso; debajo, los definitivos anteriores. Pulsa una jornada para abrirla o cerrarla. Los resultados se añaden cuando termina.</p>
+      <div class='ql-archivo' data-draw='archivo' data-source='definitivos'>—</div>
+    </div>
+  </section>
+
+  <section class='ql-sec' id='apuestas' hidden>
+    <div class='ql-card' id='apuestas-card'>
+      <h3>Apuestas a realizar</h3>
+      <p class='sub'>Apuestas sueltas en bet365 de la jornada elegida arriba. La mesa repasa 29 mercados en cada partido (1X2, doble oportunidad, empate no apuesta, goles totales y por equipo, ambos marcan, hándicaps, gana a cero, resultado combinado, descanso, cada parte y descanso/final) y solo apuesta a lo que ella espera que pase, nunca contra los signos de su quiniela. Cuota de 1,80 o más. Comprueba siempre la cuota en bet365: si paga menos que la cuota mínima, no se apuesta.</p>
+      <div class='ql-kpis' id='apuestas-kpis' data-draw='apuestas-kpis' data-source='apuestas_jornada'></div>
+      <div class='ql-tw' data-draw='apuestas-lista' data-source='apuestas'></div>
+      <p class='ql-note'>Estados: <b>Vigilar</b> (provisional, con cuota estimada), <b>Definitiva</b> (sin cuota leída: se apuesta solo si bet365 paga la cuota mínima), <b>Propuesta</b> (cuota real de bet365 leída), <b>Descartada</b> (bet365 paga menos de la mínima), <b>Apostada</b> (confirmada por ti), <b>Ganada</b>, <b>Perdida</b> o <b>Nula</b> (se devuelve el stake). Valor = probabilidad × cuota − 1, con la probabilidad mezclada: 40 % mesa y 60 % mercado. En la provisional salen hasta tres candidatas por partido; la definitiva se queda con una por partido, la de más valor con la cuota real. Córners, tarjetas y goleadores no se apuestan todavía: la mesa no tiene datos medidos para preciarlos.</p>
+    </div>
+    <div class='ql-card'>
+      <h3>Histórico de cuotas bet365</h3>
+      <p class='sub'>Cada lectura de bet365 (apertura, lunes, definitiva y cierre) se guarda y se cruza con el resultado. Tabla: probabilidad que da bet365 (sin margen, 1X2) frente a lo que sale de verdad. Con pocas jornadas es ruido; solo una diferencia medida y que aguante fuera de muestra entrará en las reglas de la mesa, sobre todo para el Pleno al 15.</p>
+      <div class='ql-tw' data-draw='cuotas-calib' data-source='cuotas_calibracion'></div>
+      <h3>La X según las cuotas, 2005-2026</h3>
+      <p class='sub'>16.862 partidos de Primera y Segunda con la cuota de mercado (football-data.co.uk) y su resultado. Probabilidad de X que daban las casas frente a la que salió, según lo favorito que era el favorito, y la diferencia en cada mitad (2005-15 y 2016-26). Solo cuenta lo que va igual en las dos mitades: en Primera, con favorito de 65 % o más, la X sale 3 puntos menos de lo que dicen las cuotas. La mesa lo aplica desde el 22/11 (X ×0,82 en ese tramo).</p>
+      <div class='ql-tw' data-draw='cuotas-hist' data-source='cuotas_hist'></div>
+    </div>
+  </section>
+
+  <section class='ql-sec' id='bank' hidden>
+    <div class='ql-kpis' id='bank-kpis' data-draw='bank-kpis' data-source='bank_kpis'></div>
+    <div class='ql-card' id='bank-evolucion'>
+      <h3>Evolución del saldo</h3>
+      <p class='sub'>Saldo tras cada apuesta liquidada. La línea discontinua marca el bank inicial y la roja el punto de parada (75 % del inicial).</p>
+      <div class='ql-chart' data-draw='bank-chart' data-source='bank'></div>
+    </div>
+    <div class='ql-card' id='bank-historial'>
+      <h3>Historial de ganancias y pérdidas</h3>
+      <div class='ql-tw' data-draw='bank-tabla' data-source='bank'></div>
+    </div>
+    <details class='ql-note ql-card' id='bank-reglas'>
+      <summary>Reglas del bank</summary>
+      <ul>
+        <li>Bank inicial de 500 €. Solo apuestas sencillas, nunca combinadas (el margen de la casa se multiplica).</li>
+        <li>Cuota mínima 1,80 y valor esperado de al menos +5 %. La probabilidad que cuenta mezcla la de la mesa (40 %) con la del mercado sin margen (60 %), porque el mercado ha medido mejor que la mesa en las jornadas comparadas.</li>
+        <li>Stake: un cuarto de Kelly, con un tope de 2 % del bank por apuesta y 10 % por jornada. Mínimo 2 €; se redondea a 0,50 €.</li>
+        <li>Una apuesta por partido como máximo, para no apilar selecciones que dependen del mismo resultado.</li>
+        <li>Si el saldo baja de 375 € (75 % del inicial) se para y se revisa el método. Nunca se sube el stake para recuperar.</li>
+        <li>Se anota la cuota tomada y la de cierre: ganar a la cuota de cierre de forma sostenida es la prueba de que hay ventaja, más que el saldo de unas pocas jornadas.</li>
+      </ul>
+    </details>
+  </section>
+</div>
+
+<script>
+window.QL = {j: null, f: 'todos', open: null, dt: 'res', comp: 'Primera', sec: 'partidos'};
+QL.el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text != null) e.textContent = text; return e; };
+QL.pct = (v) => v == null ? '—' : Math.round(v * 100) + ' %';
+QL.pct2 = (v) => v == null ? '—' : (v * 100).toFixed(2).replace('.', ',') + ' %';
+QL.where = (r) => 'jornada=' + r.jornada + '&n=' + r.n;
+QL.mark = (e, src, field, where) => { e.setAttribute('data-source', src); e.setAttribute('data-field', field); if (where) e.setAttribute('data-where', where); return e; };
+QL.teams = (r) => { let s = r.partido || ''; const k = s.indexOf(' (Pleno)'); if (k >= 0) s = s.slice(0, k); const p = s.split(' – '); return [p[0] || s, p[1] || '']; };
+QL.eqId = (comp, name) => { let c = comp, nm = name; if (nm.slice(-2) === ' F') { nm = nm.slice(0, -2); c = 'Liga F'; } if (nm === 'Rayo') nm = 'Rayo Vallecano'; return c + '|' + nm; };
+QL.gap = (r) => r.m1 == null ? 0 : Math.max(Math.abs(r.p1 - r.m1), Math.abs(r.px - r.mx), Math.abs(r.p2 - r.m2));
+QL.curJ = (rows) => { if (QL.j == null && rows.length) QL.j = d3.max(rows, (r) => r.jornada); return QL.j; };
+QL.rows = (id) => { const d = dash.data(id); return d.status === 'ok' && Array.isArray(d.data) ? d.data : []; };
+QL.redraw = () => ['jstrip', 'frase', 'kpis', 'lista', 'tabla', 'sueltas', 'novedades', 'bajas-lista', 'apuestas-lista', 'apuestas-kpis'].forEach((n) => dash.draw(n));
+QL.forma = (s) => { const w = QL.el('span', 'ql-f'); (s || '').split('').forEach((c) => w.append(QL.el('i', c, c))); return w; };
+
+QL.row = (r) => {
+  const w = QL.where(r), res = r.resultado, g = QL.gap(r), isOpen = QL.open === r.n;
+  const row = QL.el('div', 'ql-row' + (isOpen ? ' open' : ''));
+  row.tabIndex = 0; row.setAttribute('role', 'button'); row.setAttribute('aria-expanded', String(isOpen));
+  row.append(QL.el('div', 'ql-n', r.n === 15 ? 'P15' : 'P' + r.n));
+  const [a, b] = QL.teams(r);
+  const t = QL.el('div', 'ql-teams');
+  const da = QL.el('div', res === '1' ? 'w' : '', a), db = QL.el('div', res === '2' ? 'w' : '', b);
+  if (r.riesgo === 'Muy alto' || r.riesgo === 'Alto') da.append(QL.el('span', 'ql-tag', 'Riesgo ' + r.riesgo.toLowerCase()));
+  if (g >= 0.10) db.append(QL.el('span', 'ql-tag ql-warn', '⚠ mercado'));
+  t.append(da, db); row.append(t);
+  const sc = QL.el('div', 'ql-score' + (res == null ? ' pend' : ''), res == null ? 'Pend.' : res);
+  if (res != null) QL.mark(sc, 'partidos', 'resultado', w);
+  row.append(sc);
+  const od = QL.el('div', 'ql-odds');
+  if (r.n <= 14) {
+    [['1', 'p1'], ['X', 'px'], ['2', 'p2']].forEach(([s, f]) => {
+      const o = QL.el('div', 'ql-o' + ((r.signo_boleto || '').includes(s) ? ' sel' : '') + (res === s ? ' res' : ''));
+      o.append(QL.el('small', null, s), QL.mark(QL.el('span', null, QL.pct(r[f])), 'partidos', f, w));
+      od.append(o);
+    });
+  } else {
+    const o = QL.el('div', 'ql-o sel wide');
+    o.append(QL.el('small', null, 'Pleno jugado'), QL.mark(QL.el('span', null, r.signo_boleto || '—'), 'partidos', 'signo_boleto', w));
+    od.append(o);
+  }
+  row.append(od);
+  const ok = r.acierto_boleto;
+  const ic = QL.el('div', 'ql-ic ' + (ok === true ? 'ql-ok' : ok === false ? 'ql-bad' : ''), ok === true ? '✓' : ok === false ? '✗' : '·');
+  ic.setAttribute('aria-label', ok === true ? 'Acertado' : ok === false ? 'Fallado' : 'Pendiente');
+  row.append(ic);
+  const tog = () => { QL.open = isOpen ? null : r.n; QL.dt = 'res'; dash.draw('lista'); };
+  row.onclick = tog;
+  row.onkeydown = (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); tog(); } };
+  return row;
+};
+
+QL.detail = (r) => {
+  const d = QL.el('div', 'ql-det'), w = QL.where(r);
+  d.onclick = (e) => e.stopPropagation();
+  const bl = QL.rows('bajas').filter((b) => b.jornada === r.jornada && b.partido === r.partido);
+  const tabs = QL.el('div', 'ql-dtabs');
+  [['res', 'Resumen'], ['bajas', 'Bajas (' + bl.length + ')'], ['clas', 'Clasificación']].forEach(([k, l]) => {
+    const b = QL.el('button', null, l); b.type = 'button'; b.setAttribute('aria-pressed', String(QL.dt === k));
+    b.onclick = () => { QL.dt = k; dash.draw('lista'); };
+    tabs.append(b);
+  });
+  d.append(tabs);
+  if (QL.dt === 'res') {
+    const m = QL.el('div', 'ql-meta');
+    m.append(document.createTextNode(r.competicion + ' · Riesgo: '));
+    m.append(QL.mark(QL.el('b', null, r.riesgo || '—'), 'partidos', 'riesgo', w));
+    m.append(document.createTextNode(' · Signo de la mesa: '));
+    m.append(QL.mark(QL.el('b', null, r.signo_modelo || '—'), 'partidos', 'signo_modelo', w));
+    m.append(document.createTextNode(' · Boleto: '));
+    m.append(QL.mark(QL.el('b', null, r.signo_boleto || '—'), 'partidos', 'signo_boleto', w));
+    if (r.dia) m.append(document.createTextNode(' · ' + r.dia));
+    d.append(m);
+    const bars = QL.el('div', 'ql-bars');
+    [['1', 'p1', 'm1'], ['X', 'px', 'mx'], ['2', 'p2', 'm2']].forEach(([s, f, mf]) => {
+      bars.append(QL.el('div', 'lab', s));
+      const tr = QL.el('div', 'ql-track');
+      [[f, dash.colors[0]], [mf, dash.colors[1]]].forEach(([k, col]) => {
+        const v = r[k], bar = QL.el('div', 'ql-bar'), i = QL.el('i');
+        i.style.width = (v == null ? 0 : Math.max(1, v * 70)) + '%'; i.style.background = col;
+        bar.append(i, QL.mark(QL.el('span', null, QL.pct(v)), 'partidos', k, w));
+        tr.append(bar);
+      });
+      bars.append(tr);
+    });
+    d.append(bars);
+    const lg = QL.el('div', 'ql-legend');
+    [['Mesa', dash.colors[0]], ['Mercado sin margen', dash.colors[1]]].forEach(([l, c]) => { const s = QL.el('span'); const i = QL.el('i'); i.style.background = c; s.append(i, document.createTextNode(l)); lg.append(s); });
+    d.append(lg);
+    if (r.m1 == null) d.append(QL.el('p', 'ql-note', 'Sin precio de mercado guardado para este partido.'));
+    const disc = QL.rows('discrepancia').find((x) => x.clave === r.jornada + '-' + r.n);
+    if (disc && disc.gap >= 10) {
+      const al = QL.el('div', 'ql-alert');
+      al.append(document.createTextNode('⚠ La mesa y el mercado discrepan '));
+      al.append(QL.mark(QL.el('b', null, String(disc.gap)), 'discrepancia', 'gap', 'clave=' + disc.clave));
+      al.append(document.createTextNode(' puntos en el ' + disc.signo + ' (' + disc.lado + '). Revisar bajas y noticias antes de congelar el boleto.'));
+      d.append(al);
+    }
+  } else if (QL.dt === 'bajas') {
+    if (!bl.length) d.append(QL.el('p', 'ql-note', 'La mesa no tiene bajas registradas para este partido.'));
+    bl.forEach((b) => {
+      const it = QL.el('div', 'ql-baja');
+      const cl = QL.el('div', 'ql-cl ' + (b.clase || 'D'), b.clase || '?');
+      cl.title = 'Clase de la noticia: A oficial, B medio fiable, C rumor, D no verificable';
+      it.append(cl);
+      const top = QL.el('div'); const nm = QL.el('b', null, b.jugador); top.append(nm, document.createTextNode(' · ' + b.equipo + ' · '));
+      const st = QL.el('span', b.estado === 'Confirmada' ? 'ql-bad' : b.estado === 'Disponible' ? 'ql-ok' : 'ql-warn', b.estado || ''); top.append(st);
+      it.append(top);
+      const sm = QL.el('small'); sm.append(document.createTextNode((b.tipo || '') + ' · ' + (b.fecha || '') + ' · '));
+      const src = String(b.fuente || '');
+      if (src.indexOf('https:') === 0 || src.indexOf('http:') === 0) { const a = QL.el('a', null, 'fuente'); a.href = src; a.target = '_blank'; a.rel = 'noopener'; sm.append(a); } else sm.append(document.createTextNode(src));
+      it.append(sm);
+      d.append(it);
+    });
+  } else {
+    const [a, b] = QL.teams(r); const eq = QL.rows('equipos');
+    const ts = [a, b].map((n) => eq.find((x) => x.id === QL.eqId(r.competicion, n))).filter(Boolean);
+    if (!ts.length) { d.append(QL.el('p', 'ql-note', 'Sin clasificación guardada para esta competición.')); return d; }
+    const wrap = QL.el('div', 'ql-tw'), tb = QL.el('table', 'ql-t');
+    tb.setAttribute('data-source', 'equipos'); tb.setAttribute('data-row-key', 'id');
+    const hr = QL.el('tr');
+    [['equipo', 'Equipo'], ['posicion', 'Pos'], ['pts', 'Pts'], ['pj', 'PJ'], ['dg', 'DG'], ['forma', 'Forma'], ['ataque', 'Ataque'], ['defensa', 'Defensa'], ['bajas', 'Bajas'], ['dudas', 'Dudas']].forEach(([f, l]) => { const th = QL.el('th', f === 'equipo' || f === 'forma' ? '' : 'num', l); th.setAttribute('data-field', f); hr.append(th); });
+    const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+    const bd = QL.el('tbody');
+    ts.forEach((x) => {
+      const tr = QL.el('tr'); tr.setAttribute('data-key', x.id);
+      tr.append(QL.el('td', null, x.equipo), QL.el('td', 'num', x.posicion), QL.el('td', 'num', x.pts), QL.el('td', 'num', x.pj), QL.el('td', 'num', (x.dg > 0 ? '+' : '') + x.dg));
+      const tf = QL.el('td'); tf.append(QL.forma(x.forma)); tr.append(tf);
+      tr.append(QL.el('td', 'num', x.ataque == null ? '—' : x.ataque), QL.el('td', 'num', x.defensa == null ? '—' : x.defensa), QL.el('td', 'num', x.bajas == null ? '—' : x.bajas), QL.el('td', 'num', x.dudas == null ? '—' : x.dudas));
+      bd.append(tr);
+    });
+    tb.append(bd); wrap.append(tb); d.append(wrap);
+  }
+  return d;
+};
+</script>
+
+<script>
+dash.calc('jornada_resumen', {
+  inputs: ['partidos'],
+  title: 'Resumen de cada jornada',
+  description: 'Aciertos del boleto, empates esperados y reales y alertas de mercado en los 14 partidos de cada jornada.',
+  fn: (partidos) => {
+    const by = d3.group(partidos.filter((r) => r.n <= 14), (r) => r.jornada);
+    return Array.from(by, ([j, rs]) => {
+      const jug = rs.filter((r) => r.resultado != null);
+      const gap = (r) => r.m1 == null ? 0 : Math.max(Math.abs(r.p1 - r.m1), Math.abs(r.px - r.mx), Math.abs(r.p2 - r.m2));
+      return {
+        jornada: j,
+        jugados: jug.length,
+        aciertos: jug.filter((r) => r.acierto_boleto === true).length,
+        x_esperadas_total: Math.round(d3.sum(rs, (r) => r.px) * 10) / 10,
+        x_esperadas: Math.round(d3.sum(jug, (r) => r.px) * 10) / 10,
+        x_reales: jug.filter((r) => r.resultado === 'X').length,
+        alertas: rs.filter((r) => gap(r) >= 0.10).length
+      };
+    }).sort((a, b) => a.jornada - b.jornada);
+  }
+});
+
+dash.calc('calibracion', {
+  inputs: ['partidos'],
+  title: 'Acierto de los signos únicos por tramo',
+  description: 'Signos únicos del boleto (sin dobles ni triples) ya jugados, agrupados por la probabilidad que les daba la mesa.',
+  fn: (partidos) => {
+    const prob = (r) => r.signo_boleto === '1' ? r.p1 : r.signo_boleto === 'X' ? r.px : r.p2;
+    const rs = partidos.filter((r) => r.n <= 14 && r.resultado != null && r.signo_boleto && r.signo_boleto.length === 1);
+    return [['Menos del 50 %', 0, 0.5], ['Del 50 al 65 %', 0.5, 0.65], ['65 % o más', 0.65, 2]].map(([t, a, b]) => {
+      const g = rs.filter((r) => prob(r) >= a && prob(r) < b);
+      const ok = g.filter((r) => r.acierto_boleto === true).length;
+      return { tramo: t, signos: g.length, aciertos: ok, tasa: g.length ? ok / g.length : null, prob_media: g.length ? d3.mean(g, prob) : null };
+    });
+  }
+});
+
+dash.calc('discrepancia', {
+  inputs: ['partidos'],
+  title: 'Discrepancia mesa–mercado',
+  description: 'Mayor diferencia, en puntos, entre la probabilidad de la mesa y la del mercado sin margen en cada partido con precio.',
+  fn: (partidos) => partidos.filter((r) => r.m1 != null).map((r) => {
+    const d = [['1', r.p1 - r.m1], ['X', r.px - r.mx], ['2', r.p2 - r.m2]];
+    let b = d[0]; d.forEach((x) => { if (Math.abs(x[1]) > Math.abs(b[1])) b = x; });
+    return { clave: r.jornada + '-' + r.n, jornada: r.jornada, n: r.n, gap: Math.round(Math.abs(b[1]) * 100), signo: b[0], lado: b[1] > 0 ? 'la mesa lo ve más probable' : 'el mercado lo ve más probable' };
+  })
+});
+</script>
+
+<script>
+dash.draw('jstrip', (el) => {
+  const rows = QL.rows('partidos');
+  if (!rows.length) { el.textContent = '—'; return; }
+  const J = QL.curJ(rows);
+  const info = new Map(QL.rows('jornadas').map((r) => [r.jornada, r]));
+  const js = Array.from(new Set(rows.map((r) => r.jornada))).sort((a, b) => a - b);
+  el.replaceChildren(...js.map((j) => {
+    const b = QL.el('button', 'ql-jbtn', 'J' + j); b.type = 'button';
+    b.append(QL.el('small', null, (info.get(j) || {}).fechas || ''));
+    b.setAttribute('aria-pressed', String(j === J));
+    b.onclick = () => { QL.j = j; QL.open = null; QL.redraw(); };
+    return b;
+  }));
+});
+
+dash.draw('frase', (el) => {
+  const rows = QL.rows('partidos'), jo = QL.rows('jornadas');
+  const J = QL.curJ(rows); const r = jo.find((x) => x.jornada === J);
+  if (!r) { el.textContent = '—'; return; }
+  const w = 'jornada=' + J;
+  el.replaceChildren(QL.el('b', null, 'Jornada ' + J + ' · '), QL.mark(QL.el('span', null, r.tipo || ''), 'jornadas', 'tipo', w), document.createTextNode(' · '), QL.mark(QL.el('span', null, r.estado || ''), 'jornadas', 'estado', w));
+  if (r.boleto) { el.append(document.createTextNode(' · Boleto: '), QL.mark(QL.el('span', null, r.boleto), 'jornadas', 'boleto', w)); }
+});
+
+dash.draw('kpis', (el) => {
+  const J = QL.curJ(QL.rows('partidos'));
+  const jr = QL.rows('jornadas').find((x) => x.jornada === J) || {};
+  const rs = QL.rows('jornada_resumen').find((x) => x.jornada === J);
+  const wj = 'jornada=' + J;
+  const card = (lab, ...nodes) => { const c = QL.el('div', 'ql-kpi'); c.append(QL.el('span', null, lab)); const b = QL.el('b'); b.append(...nodes); c.append(b); return c; };
+  const m = (txt, src, f) => QL.mark(QL.el('span', null, txt), src, f, wj);
+  const out = [];
+  if (rs) {
+    out.push(card('Aciertos (jugados)', m(String(rs.aciertos), 'jornada_resumen', 'aciertos'), document.createTextNode(' / '), m(String(rs.jugados), 'jornada_resumen', 'jugados')));
+    if (rs.jugados > 0) out.push(card('Empates reales / esperados', m(String(rs.x_reales), 'jornada_resumen', 'x_reales'), document.createTextNode(' / '), m(String(rs.x_esperadas).replace('.', ','), 'jornada_resumen', 'x_esperadas')));
+    else out.push(card('Empates esperados', m(String(rs.x_esperadas_total).replace('.', ','), 'jornada_resumen', 'x_esperadas_total')));
+    out.push(card('Alertas de mercado', m(String(rs.alertas), 'jornada_resumen', 'alertas')));
+  }
+  if (jr.p14 != null) out.push(card('Prob. de 14', m(QL.pct2(jr.p14), 'jornadas', 'p14')));
+  if (jr.p13 != null) out.push(card('Prob. de 13 o más', m(QL.pct2(jr.p13), 'jornadas', 'p13')));
+  if (jr.coste != null) out.push(card('Coste', m(String(jr.coste).replace('.', ',') + ' €', 'jornadas', 'coste')));
+  if (jr.mejor_columna != null) out.push(card('Mejor columna', m(String(jr.mejor_columna), 'jornadas', 'mejor_columna')));
+  if (!out.length) { el.replaceChildren(QL.el('div', 'ql-msg', 'Sin resumen para esta jornada.')); return; }
+  el.replaceChildren(...out);
+});
+
+dash.draw('lista', (el) => {
+  const p = dash.data('partidos');
+  if (p.status === 'loading') { el.replaceChildren(QL.el('div', 'ql-msg', 'Cargando partidos…')); return; }
+  if (p.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', 'No se pudieron cargar los partidos.')); return; }
+  const J = QL.curJ(p.data), f = QL.f;
+  let rs = p.data.filter((r) => r.jornada === J).sort((a, b) => a.n - b.n);
+  rs = rs.filter((r) => f === 'todos' || (f === 'pend' && r.resultado == null) || (f === 'ok' && r.acierto_boleto === true) || (f === 'bad' && r.acierto_boleto === false) || (f === 'alert' && QL.gap(r) >= 0.10));
+  if (!rs.length) { el.replaceChildren(QL.el('div', 'ql-msg', 'Ningún partido de la J' + J + ' con este filtro.')); return; }
+  const groups = [];
+  rs.forEach((r) => { const k = r.n === 15 ? 'Pleno al 15' : r.competicion; let G = groups.find((x) => x.k === k); if (!G) { G = { k: k, rows: [] }; groups.push(G); } G.rows.push(r); });
+  const out = [];
+  groups.forEach((G) => {
+    const h = QL.el('div', 'ql-comp'); h.append(QL.el('i'), document.createTextNode(G.k), QL.el('em', null, G.rows.length + (G.rows.length === 1 ? ' partido' : ' partidos')));
+    out.push(h);
+    G.rows.forEach((r) => { out.push(QL.row(r)); if (QL.open === r.n) out.push(QL.detail(r)); });
+  });
+  el.replaceChildren(...out);
+});
+
+dash.draw('tabla', (el) => {
+  const eq = dash.data('equipos');
+  if (eq.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', eq.status === 'loading' ? 'Cargando clasificación…' : 'No se pudo cargar la clasificación.')); return; }
+  const ps = QL.rows('partidos'), J = QL.curJ(ps);
+  const playing = new Set();
+  ps.filter((r) => r.jornada === J).forEach((r) => QL.teams(r).forEach((n) => playing.add(QL.eqId(r.competicion, n))));
+  const rs = eq.data.filter((x) => x.competicion === QL.comp).sort((a, b) => a.posicion - b.posicion);
+  const N = rs.length;
+  const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'equipos'); tb.setAttribute('data-row-key', 'id');
+  const hr = QL.el('tr');
+  [['posicion', '#'], ['equipo', 'Equipo'], ['pj', 'PJ'], ['g', 'G'], ['e', 'E'], ['p', 'P'], ['gf', 'GF'], ['gc', 'GC'], ['dg', 'DG'], ['pts', 'Pts'], ['forma', 'Forma'], ['ataque', 'Ataque'], ['defensa', 'Defensa'], ['proximo', 'En la quiniela']].forEach(([f, l]) => { const th = QL.el('th', ['equipo', 'forma', 'proximo'].includes(f) ? '' : 'num', l); th.setAttribute('data-field', f); hr.append(th); });
+  const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+  const bd = QL.el('tbody');
+  const top = QL.comp === 'Segunda' ? 2 : 4, down = QL.comp === 'Segunda' ? 4 : QL.comp === 'Liga F' ? 2 : 3;
+  rs.forEach((x) => {
+    const tr = QL.el('tr', (playing.has(x.id) ? 'hl ' : '') + (x.posicion <= top ? 'z1' : x.posicion > N - down ? 'z3' : ''));
+    tr.setAttribute('data-key', x.id);
+    const nm = QL.el('td'); const b = QL.el(playing.has(x.id) ? 'b' : 'span', null, x.equipo); nm.append(b);
+    tr.append(QL.el('td', 'num', x.posicion), nm);
+    ['pj', 'g', 'e', 'p', 'gf', 'gc'].forEach((k) => tr.append(QL.el('td', 'num', x[k])));
+    tr.append(QL.el('td', 'num', (x.dg > 0 ? '+' : '') + x.dg));
+    const pt = QL.el('td', 'num'); pt.append(QL.el('b', null, x.pts)); tr.append(pt);
+    const tf = QL.el('td'); tf.append(QL.forma(x.forma)); tr.append(tf);
+    tr.append(QL.el('td', 'num', x.ataque == null ? '—' : x.ataque), QL.el('td', 'num', x.defensa == null ? '—' : x.defensa));
+    tr.append(QL.el('td', null, x.proximo_n ? 'P' + x.proximo_n + ' · ' + x.proximo : ''));
+    bd.append(tr);
+  });
+  tb.append(bd);
+  el.replaceChildren(tb);
+});
+
+dash.draw('sueltas', (el) => {
+  const s = dash.data('sueltas');
+  if (s.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', s.status === 'loading' ? 'Cargando…' : 'No se pudieron cargar las sueltas.')); return; }
+  const J = QL.curJ(QL.rows('partidos'));
+  const rs = s.data.filter((r) => r.jornada === J).sort((a, b) => a.n - b.n);
+  if (!rs.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Sin apuestas sueltas guardadas para la J' + J + '.')); return; }
+  const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'sueltas'); tb.setAttribute('data-row-key', 'jornada,n');
+  const hr = QL.el('tr');
+  [['apuesta', 'Apuesta'], ['partido', 'Partido'], ['p', 'Prob.'], ['resultado', '']].forEach(([f, l]) => { const th = QL.el('th', f === 'p' ? 'num' : '', l); th.setAttribute('data-field', f); hr.append(th); });
+  const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+  const bd = QL.el('tbody');
+  rs.forEach((r) => {
+    const tr = QL.el('tr'); tr.setAttribute('data-key', r.jornada + ',' + r.n);
+    tr.append(QL.el('td', null, r.apuesta), QL.el('td', null, r.partido), QL.el('td', 'num', QL.pct(r.p)));
+    tr.append(QL.el('td', r.resultado === true ? 'ql-ok' : r.resultado === false ? 'ql-bad' : '', r.resultado === true ? '✓' : r.resultado === false ? '✗' : 'Pend.'));
+    bd.append(tr);
+  });
+  tb.append(bd);
+  const wrap = QL.el('div', 'ql-tw'); wrap.append(tb);
+  const jr = QL.rows('jornadas').find((x) => x.jornada === J);
+  const out = [wrap];
+  if (jr && jr.sueltas_p_todas != null) { const p = QL.el('p', 'ql-note'); p.append(document.createTextNode('Probabilidad de acertar las 5: '), QL.mark(QL.el('b', null, QL.pct(jr.sueltas_p_todas)), 'jornadas', 'sueltas_p_todas', 'jornada=' + J)); out.push(p); }
+  el.replaceChildren(...out);
+});
+
+dash.draw('novedades', (el) => {
+  const nv = dash.data('novedades');
+  if (nv.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', nv.status === 'loading' ? 'Cargando…' : 'No se pudieron cargar las novedades.')); return; }
+  const J = QL.curJ(QL.rows('partidos'));
+  let rs = nv.data.filter((r) => r.jornada === J);
+  if (!rs.length) { el.replaceChildren(QL.el('p', 'ql-note', 'La mesa no registró novedades en la J' + J + '.')); return; }
+  rs = rs.slice().sort((a, b) => String(b.fecha).localeCompare(String(a.fecha)));
+  const ul = QL.el('ul', 'ql-tl');
+  rs.forEach((r) => {
+    const li = QL.el('li', r.cambia === 'Sí' ? 'si' : '');
+    li.append(QL.el('small', null, r.fecha + ' · ' + r.origen + (r.cambia === 'Sí' ? ' · cambia el boleto' : '')), document.createTextNode(r.aporte));
+    ul.append(li);
+  });
+  el.replaceChildren(ul);
+});
+
+dash.draw('chart', (el) => {
+  const jd = dash.data('jornadas');
+  if (jd.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', jd.status === 'loading' ? 'Cargando…' : 'No se pudo cargar el historial.')); return; }
+  const rs = jd.data.filter((r) => r.mejor_columna != null).sort((a, b) => a.jornada - b.jornada);
+  if (!rs.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Aún no hay jornadas cerradas.')); return; }
+  const PREMIO = 10;
+  const W = Math.max(280, el.clientWidth), H = 220, mg = { t: 16, r: 10, b: 26, l: 28 };
+  const x = d3.scaleBand().domain(rs.map((r) => 'J' + r.jornada)).range([mg.l, W - mg.r]).padding(0.3);
+  const y = d3.scaleLinear().domain([0, 14]).range([H - mg.b, mg.t]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', '0 0 ' + W + ' ' + H).attr('role', 'img').attr('aria-label', 'Aciertos de la mejor columna en cada jornada cerrada');
+  svg.append('g').selectAll('line').data([0, 2, 4, 6, 8, 10, 12, 14]).join('line').attr('x1', mg.l).attr('x2', W - mg.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d)).style('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data([0, 4, 8, 10, 14]).join('text').attr('x', mg.l - 6).attr('y', (d) => y(d) + 4).attr('text-anchor', 'end').text((d) => d);
+  const tip = QL.el('div', 'ql-tip'); tip.hidden = true;
+  svg.append('g').selectAll('rect').data(rs).join('rect')
+    .attr('x', (r) => x('J' + r.jornada)).attr('width', x.bandwidth()).attr('y', (r) => y(r.mejor_columna)).attr('height', (r) => y(0) - y(r.mejor_columna)).attr('rx', 3)
+    .style('fill', (r) => r.mejor_columna >= PREMIO ? dash.colors[0] : 'var(--cds-chart-muted)')
+    .on('pointerenter pointermove', (ev, r) => { tip.hidden = false; tip.textContent = 'J' + r.jornada + ': ' + r.mejor_columna + ' aciertos' + (r.premio ? ' · ' + r.premio : ''); const [px, py] = d3.pointer(ev, el); tip.style.left = Math.min(px + 10, W - 200) + 'px'; tip.style.top = Math.max(0, py - 34) + 'px'; })
+    .on('pointerleave', () => { tip.hidden = true; });
+  svg.append('g').selectAll('text').data(rs).join('text').attr('x', (r) => x('J' + r.jornada) + x.bandwidth() / 2).attr('y', (r) => y(r.mejor_columna) - 4).attr('text-anchor', 'middle').style('fill', 'var(--color-fg)').text((r) => r.mejor_columna);
+  svg.append('g').selectAll('text').data(rs).join('text').attr('x', (r) => x('J' + r.jornada) + x.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text((r) => 'J' + r.jornada);
+  svg.append('line').attr('x1', mg.l).attr('x2', W - mg.r).attr('y1', y(PREMIO)).attr('y2', y(PREMIO)).style('stroke', 'var(--cds-chart-reference)').style('stroke-dasharray', '4 3');
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('calib', (el) => {
+  const c = dash.data('calibracion');
+  if (c.status !== 'ok' || !Array.isArray(c.data)) { el.textContent = '—'; return; }
+  const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'calibracion'); tb.setAttribute('data-row-key', 'tramo');
+  const hr = QL.el('tr');
+  [['tramo', 'Probabilidad de la mesa'], ['signos', 'Signos'], ['aciertos', 'Aciertos'], ['tasa', 'Acierto real'], ['prob_media', 'Esperado']].forEach(([f, l]) => { const th = QL.el('th', f === 'tramo' ? '' : 'num', l); th.setAttribute('data-field', f); hr.append(th); });
+  const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+  const bd = QL.el('tbody');
+  c.data.forEach((r) => {
+    const tr = QL.el('tr'); tr.setAttribute('data-key', r.tramo);
+    const low = r.tasa != null && r.prob_media != null && r.tasa < r.prob_media - 0.05;
+    tr.append(QL.el('td', null, r.tramo), QL.el('td', 'num', r.signos), QL.el('td', 'num', r.aciertos), QL.el('td', 'num' + (low ? ' ql-bad' : ''), QL.pct(r.tasa)), QL.el('td', 'num', QL.pct(r.prob_media)));
+    bd.append(tr);
+  });
+  tb.append(bd); el.replaceChildren(tb);
+});
+
+dash.draw('emp', (el) => {
+  const c = dash.data('jornada_resumen');
+  if (c.status !== 'ok' || !Array.isArray(c.data)) { el.textContent = '—'; return; }
+  const rs = c.data.filter((r) => r.jugados > 0);
+  const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'jornada_resumen'); tb.setAttribute('data-row-key', 'jornada');
+  const hr = QL.el('tr');
+  [['jornada', 'Jornada'], ['jugados', 'Jugados'], ['x_esperadas', 'X esperadas'], ['x_reales', 'X reales'], ['aciertos', 'Aciertos del boleto']].forEach(([f, l]) => { const th = QL.el('th', f === 'jornada' ? '' : 'num', l); th.setAttribute('data-field', f); hr.append(th); });
+  const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+  const bd = QL.el('tbody');
+  rs.forEach((r) => {
+    const tr = QL.el('tr'); tr.setAttribute('data-key', String(r.jornada));
+    tr.append(QL.el('td', null, r.jornada), QL.el('td', 'num', r.jugados), QL.el('td', 'num', String(r.x_esperadas).replace('.', ',')), QL.el('td', 'num' + (r.x_reales > r.x_esperadas + 1 ? ' ql-bad' : ''), r.x_reales), QL.el('td', 'num', r.aciertos));
+    bd.append(tr);
+  });
+  tb.append(bd); el.replaceChildren(tb);
+});
+
+dash.draw('hist', (el) => {
+  const jd = dash.data('jornadas');
+  if (jd.status !== 'ok') { el.textContent = '—'; return; }
+  const rs = jd.data.slice().sort((a, b) => b.jornada - a.jornada);
+  const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'jornadas'); tb.setAttribute('data-row-key', 'jornada');
+  const hr = QL.el('tr');
+  [['jornada', 'J'], ['tipo', 'Tipo'], ['boleto', 'Boleto'], ['coste', 'Coste'], ['mejor_columna', 'Mejor'], ['pleno_jugado', 'Pleno jugado'], ['pleno_resultado', 'Pleno real'], ['premio', 'Premio']].forEach(([f, l]) => { const th = QL.el('th', f === 'coste' || f === 'mejor_columna' ? 'num' : '', l); th.setAttribute('data-field', f); hr.append(th); });
+  const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+  const bd = QL.el('tbody');
+  rs.forEach((r) => {
+    const tr = QL.el('tr'); tr.setAttribute('data-key', String(r.jornada));
+    tr.append(QL.el('td', null, r.jornada), QL.el('td', null, r.tipo || '—'), QL.el('td', null, r.boleto || '—'), QL.el('td', 'num', r.coste == null ? '—' : String(r.coste).replace('.', ',') + ' €'), QL.el('td', 'num', r.mejor_columna == null ? '—' : r.mejor_columna), QL.el('td', null, r.pleno_jugado || '—'), QL.el('td', null, r.pleno_resultado || '—'), QL.el('td', null, r.premio || '—'));
+    bd.append(tr);
+  });
+  tb.append(bd); el.replaceChildren(tb);
+});
+</script>
+
+<script>
+(() => {
+  const secs = () => document.querySelectorAll('.ql-sec');
+  const btns = document.querySelectorAll('.ql-nav button');
+  const open = (id) => {
+    QL.sec = id;
+    secs().forEach((s) => { s.hidden = s.id !== id; });
+    btns.forEach((b) => b.setAttribute('aria-pressed', String(b.getAttribute('data-sec') === id)));
+  };
+  btns.forEach((b) => b.addEventListener('click', () => { const id = b.getAttribute('data-sec'); open(id); dash.setLink(id); }));
+  const h = (location.hash || '').slice(1);
+  const target = h ? document.getElementById(h) : null;
+  if (target && target.classList.contains('ql-sec')) open(h);
+  document.querySelectorAll('.ql-filt button').forEach((b) => b.addEventListener('click', () => {
+    QL.f = b.getAttribute('data-f'); QL.open = null;
+    document.querySelectorAll('.ql-filt button').forEach((x) => x.setAttribute('aria-pressed', String(x === b)));
+    dash.draw('lista');
+  }));
+  const sel = document.querySelector('.ql-compsel');
+  if (sel) sel.addEventListener('change', () => { QL.comp = sel.value; dash.draw('tabla'); });
+  window.addEventListener('beforeprint', () => secs().forEach((s) => { s.hidden = false; }));
+  window.addEventListener('afterprint', () => open(QL.sec));
+})();
+</script>
+
+<script>
+let busquedaBajas = '';
+document.querySelectorAll('#buscar-bajas').forEach((inp) => inp.addEventListener('input', () => { busquedaBajas = inp.value.trim().toLowerCase(); dash.draw('bajas-lista'); }));
+dash.draw('bajas-lista', (el) => {
+  const bj = dash.data('bajas');
+  if (bj.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', bj.status === 'loading' ? 'Cargando…' : 'No se pudieron cargar las bajas.')); return; }
+  const J = QL.curJ(QL.rows('partidos'));
+  const rs = bj.data.filter((b) => b.jornada === J && (!busquedaBajas || (b.equipo + ' ' + b.jugador + ' ' + b.partido).toLowerCase().includes(busquedaBajas)))
+    .sort((a, b) => String(a.partido).localeCompare(String(b.partido), 'es') || String(a.equipo).localeCompare(String(b.equipo), 'es'));
+  if (!rs.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Sin bajas registradas para la J' + J + (busquedaBajas ? ' con esta búsqueda.' : '.'))); return; }
+  const out = [];
+  let ultimo = null;
+  rs.forEach((b) => {
+    if (b.partido !== ultimo) { const h = QL.el('div', 'ql-comp'); h.append(QL.el('i'), document.createTextNode(b.partido || '—')); out.push(h); ultimo = b.partido; }
+    const it = QL.el('div', 'ql-baja');
+    it.append(QL.el('div', 'ql-cl ' + (b.clase || 'D'), b.clase || '?'));
+    const top = QL.el('div'); top.append(QL.el('b', null, b.jugador), document.createTextNode(' · ' + b.equipo + ' · '), QL.el('span', b.estado === 'Confirmada' ? 'ql-bad' : b.estado === 'Disponible' ? 'ql-ok' : 'ql-warn', b.estado || ''));
+    it.append(top);
+    it.append(QL.el('small', null, [b.tipo, b.fuente, b.fecha].filter(Boolean).join(' · ')));
+    out.push(it);
+  });
+  el.replaceChildren(...out);
+});
+
+dash.draw('archivo', (el) => {
+  const df = dash.data('definitivos');
+  if (df.status !== 'ok' || !Array.isArray(df.data)) { el.textContent = '—'; return; }
+  if (!df.data.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Todavía no hay ninguna quiniela definitiva. Aparece aquí 2 h 15 min antes del primer partido de la jornada.')); return; }
+  const grupos = d3.groups(df.data, (r) => r.jornada).sort((a, b) => b[0] - a[0]);
+  el.replaceChildren(...grupos.map(([j, rs], i) => {
+    rs = rs.slice().sort((a, b) => a.n - b.n);
+    const det = QL.el('details', 'ql-arch'); if (i === 0) det.open = true;
+    const sm = QL.el('summary'); sm.append(document.createTextNode('Jornada ' + j), QL.el('small', null, rs[0].fechas || ''));
+    det.append(sm);
+    const tabla = (titulo, cab, filaFn) => {
+      det.append(QL.el('h4', null, titulo));
+      const w = QL.el('div', 'ql-tw'), t = QL.el('table', 'ql-t'), th = QL.el('thead'), tr0 = QL.el('tr');
+      cab.forEach(([l, c]) => tr0.append(QL.el('th', c || '', l)));
+      th.append(tr0); t.append(th);
+      const bd = QL.el('tbody'); rs.forEach((r) => { const tr = QL.el('tr'); filaFn(tr, r); bd.append(tr); });
+      t.append(bd); w.append(t); det.append(w);
+    };
+    const acierto = (r, sg) => r.resultado != null && (r.n === 15 ? sg === r.resultado : String(sg).includes(r.resultado));
+    tabla(rs[0].boleto || 'Boleto', [['Nº'], ['Partido'], ['Casas % 1·X·2', 'num'], ['Mesa % 1·X·2', 'num'], ['Boleto'], ['Resultado']], (tr, r) => {
+      tr.append(QL.el('td', 'ql-n', r.n === 15 ? 'P15' : 'P' + r.n), QL.el('td', null, r.partido), QL.el('td', 'num', r.casas || '—'), QL.el('td', 'num', r.mesa || '—'),
+        QL.el('td', 'ql-sg' + (r.resultado == null ? '' : acierto(r, r.signos_boleto) ? ' hit' : ' miss'), r.signos_boleto || '—'), QL.el('td', acierto(r, r.signos_boleto) ? 'ql-ok' : r.resultado != null ? 'ql-bad' : '', r.resultado != null ? r.resultado + (acierto(r, r.signos_boleto) ? ' ✓' : ' ✗') : 'Pend.'));
+    });
+    const nS = rs[0].n_sencillas || 0;
+    if (nS) {
+      const etq = String(rs[0].etiquetas || '').split(' ').filter(Boolean);
+      tabla(rs[0].titulo_sencillas || ('Sencillas · ' + nS + ' apuestas'), [['Nº'], ['Partido'], ...Array.from({length: nS}, (_, k) => [etq[k] || 'C' + (k + 1)]), ['Resultado']], (tr, r) => {
+        tr.append(QL.el('td', 'ql-n', r.n === 15 ? 'P15' : 'P' + r.n), QL.el('td', null, r.partido));
+        String(r.sencillas || '').split(' ').forEach((sg) => tr.append(QL.el('td', 'ql-sg' + (r.resultado == null ? '' : acierto(r, sg) ? ' hit' : ' miss'), sg)));
+        tr.append(QL.el('td', null, r.resultado != null ? r.resultado : 'Pend.'));
+      });
+    }
+    if (rs[0].nota) det.append(QL.el('p', 'ql-note', rs[0].nota));
+    if (i === 1) { const h = QL.el('div'); h.append(QL.el('h3', null, 'Definitivos anteriores'), det); return h; }
+    return det;
+  }));
+});
+</script>
+
+<script>
+const BANK_INICIAL = 500, PARADA = 0.75;
+dash.calc('bank_kpis', {
+  title: 'Resumen del bank',
+  description: 'Saldo, beneficio, ROI (sobre el bank inicial), yield (sobre lo apostado), drawdown máximo, dinero pendiente y CLV medio (cuota tomada / cuota de cierre − 1; positivo = la mesa bate al mercado).',
+  inputs: ['bank', 'apuestas'],
+  fn: (bank, apuestas) => {
+    const movs = bank.filter((r) => r.n > 0);
+    const ult = bank.length ? bank.reduce((a, b) => (b.n > a.n ? b : a)) : null;
+    const inicial = bank.find((r) => r.n === 0);
+    const ini = inicial ? inicial.importe : null;
+    const saldo = ult ? ult.saldo : ini;
+    const apostado = movs.reduce((t, r) => t + (r.stake || 0), 0);
+    const ben = saldo != null && ini != null ? saldo - ini : null;
+    const abiertas = apuestas.filter((a) => a.estado === 'Apostada');
+    return [{
+      saldo, beneficio: ben, roi: ben != null && ini ? ben / ini : null,
+      yield: apostado ? ben / apostado : null, apostado,
+      drawdown_max: bank.reduce((m, r) => Math.max(m, r.drawdown || 0), 0),
+      pendiente: abiertas.reduce((t, a) => t + (a.stake || 0), 0),
+      liquidadas: movs.length, ganadas: movs.filter((r) => r.importe > 0).length,
+      clv: d3.mean(apuestas.filter((a) => a.clv != null), (a) => a.clv) ?? null, clv_n: apuestas.filter((a) => a.clv != null).length,
+    }];
+  },
+});
+dash.calc('apuestas_jornada', {
+  title: 'Apuestas por jornada',
+  description: 'Candidatas a vigilar, apuestas con cuota real, stake total y exposición sobre el bank inicial de cada jornada.',
+  inputs: ['apuestas'],
+  fn: (apuestas) => d3.rollups(apuestas, (rs) => ({
+    vigilar: rs.filter((r) => r.estado === 'Vigilar').length,
+    n: rs.filter((r) => r.estado !== 'Vigilar' && r.estado !== 'Descartada').length, stake: d3.sum(rs, (r) => r.stake || 0),
+    exposicion: d3.sum(rs, (r) => r.stake || 0) / BANK_INICIAL,
+    valor_medio: d3.mean(rs, (r) => r.valor),
+  }), (r) => r.jornada).map(([jornada, v]) => ({jornada, ...v})),
+});
+QL.eur = (v) => v == null ? '—' : v.toLocaleString('es-ES', {minimumFractionDigits: 2, maximumFractionDigits: 2}) + ' €';
+QL.sgn = (v, f) => v == null ? '—' : (v > 0 ? '+' : '') + f(v);
+QL.pc1 = (v) => v == null ? '—' : (v * 100).toLocaleString('es-ES', {maximumFractionDigits: 1}) + ' %';
+QL.kpi = (lab, src, field, txt, where, cls) => { const k = QL.el('div', 'ql-kpi'); k.append(QL.el('span', null, lab)); const b = QL.mark(QL.el('b', cls || null, txt), src, field, where); k.append(b); return k; };
+
+dash.draw('bank-kpis', (el) => {
+  const c = dash.data('bank_kpis');
+  if (c.status !== 'ok' || !c.data || !c.data.length) { el.replaceChildren(QL.el('div', 'ql-msg', c.status === 'error' ? 'No se pudo cargar el bank.' : '—')); return; }
+  const r = c.data[0], col = (v) => v == null || v === 0 ? '' : v > 0 ? 'ql-ok' : 'ql-bad';
+  el.replaceChildren(
+    QL.kpi('Saldo', 'bank_kpis', 'saldo', QL.eur(r.saldo), null, r.saldo != null && r.saldo < BANK_INICIAL * PARADA ? 'ql-bad' : ''),
+    QL.kpi('Ganancias / pérdidas', 'bank_kpis', 'beneficio', QL.sgn(r.beneficio, QL.eur), null, col(r.beneficio)),
+    QL.kpi('ROI (sobre 500 €)', 'bank_kpis', 'roi', QL.sgn(r.roi, QL.pc1), null, col(r.roi)),
+    QL.kpi('Yield (sobre lo apostado)', 'bank_kpis', 'yield', QL.sgn(r.yield, QL.pc1), null, col(r.yield)),
+    QL.kpi('Drawdown máximo', 'bank_kpis', 'drawdown_max', QL.pc1(r.drawdown_max)),
+    QL.kpi('En juego ahora', 'bank_kpis', 'pendiente', QL.eur(r.pendiente)),
+    QL.kpi('Liquidadas · ganadas', 'bank_kpis', 'liquidadas', r.liquidadas + ' · ' + r.ganadas),
+    QL.kpi('CLV medio (cuota tomada vs cierre, ' + r.clv_n + ')', 'bank_kpis', 'clv', QL.sgn(r.clv, QL.pc1), null, col(r.clv)));
+  el.querySelectorAll('[data-field]').forEach((b) => b.setAttribute('data-row', '0'));
+});
+
+dash.draw('bank-chart', (el) => {
+  const bd = dash.data('bank');
+  if (bd.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', bd.status === 'loading' ? 'Cargando…' : 'No se pudo cargar el bank.')); return; }
+  const rs = bd.data.slice().sort((a, b) => a.n - b.n);
+  if (rs.length < 2) { el.replaceChildren(QL.el('p', 'ql-note', 'Aún no hay apuestas liquidadas. El saldo empieza en ' + QL.eur(rs.length ? rs[0].saldo : BANK_INICIAL) + '; la línea aparece con la primera liquidación.')); return; }
+  const W = Math.max(280, el.clientWidth), H = 220, mg = {t: 14, r: 12, b: 24, l: 48};
+  const x = d3.scaleLinear().domain([0, rs[rs.length - 1].n]).range([mg.l, W - mg.r]);
+  const lo = Math.min(BANK_INICIAL * PARADA, d3.min(rs, (r) => r.saldo)), hi = Math.max(BANK_INICIAL, d3.max(rs, (r) => r.saldo));
+  const y = d3.scaleLinear().domain([lo * 0.98, hi * 1.02]).nice(4).range([H - mg.b, mg.t]);
+  const svg = d3.create('svg').attr('width', '100%').attr('viewBox', '0 0 ' + W + ' ' + H).attr('role', 'img').attr('aria-label', 'Saldo del bank tras cada apuesta liquidada');
+  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('x1', mg.l).attr('x2', W - mg.r).attr('y1', y).attr('y2', y).style('stroke', 'var(--cds-chart-grid)');
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('x', mg.l - 6).attr('y', (d) => y(d) + 4).attr('text-anchor', 'end').text((d) => d + ' €');
+  svg.append('line').attr('x1', mg.l).attr('x2', W - mg.r).attr('y1', y(BANK_INICIAL)).attr('y2', y(BANK_INICIAL)).style('stroke', 'var(--cds-chart-reference)').style('stroke-dasharray', '4 3');
+  svg.append('line').attr('x1', mg.l).attr('x2', W - mg.r).attr('y1', y(BANK_INICIAL * PARADA)).attr('y2', y(BANK_INICIAL * PARADA)).style('stroke', 'var(--cds-chart-status-critical)').style('stroke-dasharray', '4 3');
+  svg.append('path').datum(rs).attr('d', d3.line().x((r) => x(r.n)).y((r) => y(r.saldo))).style('fill', 'none').style('stroke', dash.colors[0]).style('stroke-width', 2);
+  const tip = QL.el('div', 'ql-tip'); tip.hidden = true;
+  svg.append('g').selectAll('circle').data(rs).join('circle').attr('cx', (r) => x(r.n)).attr('cy', (r) => y(r.saldo)).attr('r', 4).style('fill', dash.colors[0])
+    .on('pointerenter pointermove', (ev, r) => { tip.hidden = false; tip.textContent = (r.fecha || '') + ' · ' + r.concepto + ' · ' + QL.sgn(r.importe, QL.eur) + ' → ' + QL.eur(r.saldo); const [px, py] = d3.pointer(ev, el); tip.style.left = Math.max(0, Math.min(px + 10, W - 260)) + 'px'; tip.style.top = Math.max(0, py - 34) + 'px'; })
+    .on('pointerleave', () => { tip.hidden = true; });
+  el.replaceChildren(svg.node(), tip);
+});
+
+dash.draw('bank-tabla', (el) => {
+  const bd = dash.data('bank');
+  if (bd.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', bd.status === 'loading' ? 'Cargando…' : 'No se pudo cargar el historial.')); return; }
+  const rs = bd.data.slice().sort((a, b) => b.n - a.n);
+  const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'bank'); tb.setAttribute('data-row-key', 'n');
+  const hr = QL.el('tr');
+  [['fecha', 'Fecha'], ['jornada', 'J'], ['concepto', 'Apuesta'], ['stake', 'Stake', 'num'], ['importe', 'Ganancia', 'num'], ['saldo', 'Saldo', 'num'], ['drawdown', 'Drawdown', 'num']].forEach(([f, l, c]) => { const th = QL.el('th', c || '', l); th.setAttribute('data-field', f); hr.append(th); });
+  const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+  const body = QL.el('tbody');
+  rs.forEach((r) => {
+    const tr = QL.el('tr'); tr.setAttribute('data-key', String(r.n));
+    tr.append(QL.el('td', null, r.fecha || '—'), QL.el('td', null, r.jornada == null ? '—' : r.jornada), QL.el('td', 'wrap', r.concepto),
+      QL.el('td', 'num', QL.eur(r.stake)), QL.el('td', 'num ' + (r.n === 0 ? '' : r.importe > 0 ? 'ql-ok' : r.importe < 0 ? 'ql-bad' : ''), r.n === 0 ? QL.eur(r.importe) : QL.sgn(r.importe, QL.eur)),
+      QL.el('td', 'num', QL.eur(r.saldo)), QL.el('td', 'num', QL.pc1(r.drawdown)));
+    body.append(tr);
+  });
+  tb.append(body); el.replaceChildren(tb);
+});
+
+dash.draw('apuestas-kpis', (el) => {
+  const c = dash.data('apuestas_jornada');
+  if (c.status !== 'ok' || !c.data) { el.replaceChildren(QL.el('div', 'ql-msg', c.status === 'error' ? 'No se pudieron cargar las apuestas.' : '—')); return; }
+  const J = QL.curJ(QL.rows('partidos'));
+  const r = c.data.find((x) => x.jornada === J);
+  if (!r) { el.replaceChildren(QL.el('p', 'ql-note', 'La mesa no ha propuesto apuestas para la J' + J + '.')); return; }
+  const w = 'jornada=' + J;
+  el.replaceChildren(QL.kpi('Candidatas a vigilar', 'apuestas_jornada', 'vigilar', String(r.vigilar), w), QL.kpi('Apuestas con cuota real', 'apuestas_jornada', 'n', String(r.n), w), QL.kpi('Stake total', 'apuestas_jornada', 'stake', QL.eur(r.stake), w),
+    QL.kpi('Exposición del bank', 'apuestas_jornada', 'exposicion', QL.pc1(r.exposicion), w), QL.kpi('Valor medio', 'apuestas_jornada', 'valor_medio', QL.sgn(r.valor_medio, QL.pc1), w));
+});
+
+dash.calc('cuotas_calibracion', {
+  title: 'Calibración de bet365',
+  description: '1X2 sin margen, última lectura de cada selección, sin cifras dudosas: probabilidad media de bet365 frente a frecuencia real, por tramos de 20 puntos y solo para la X.',
+  inputs: ['cuotas'],
+  fn: (cuotas) => {
+    const orden = {apertura: 0, lunes: 1, definitiva: 2, cierre: 3}, ult = new Map();
+    cuotas.filter((r) => r.mercado === '1X2' && !r.dudosa && r.salio != null && r.p_implicita != null).forEach((r) => {
+      const k = [r.jornada, r.n, r.seleccion].join('|'), o = ult.get(k);
+      if (!o || orden[r.momento] > orden[o.momento]) ult.set(k, r);
+    });
+    const rs = [...ult.values()], fila = (tramo, g) => ({tramo, n: g.length, esperado: d3.mean(g, (r) => r.p_implicita), real: d3.mean(g, (r) => (r.salio ? 1 : 0))});
+    const out = d3.range(5).map((t) => fila(t * 20 + '-' + (t * 20 + 20) + ' %', rs.filter((r) => Math.min(Math.floor(r.p_implicita * 5), 4) === t))).filter((f) => f.n);
+    const x = rs.filter((r) => r.seleccion === 'X');
+    if (x.length) out.push(fila('Solo la X', x));
+    return out;
+  },
+});
+dash.draw('cuotas-calib', (el) => {
+  const c = dash.data('cuotas_calibracion');
+  if (c.status !== 'ok' || !c.data || !c.data.length) { el.replaceChildren(QL.el('div', 'ql-msg', c.status === 'loading' ? 'Cargando…' : 'Aún no hay cuotas con resultado.')); return; }
+  const t = QL.el('table', 'ql-t'), hd = QL.el('tr');
+  ['Tramo bet365', 'Selecciones', 'Prob. bet365', 'Salió de verdad', 'Diferencia'].forEach((h) => hd.append(QL.el('th', null, h)));
+  t.append(hd);
+  c.data.forEach((r, i) => {
+    const tr = QL.el('tr'), d = r.real - r.esperado;
+    tr.append(QL.el('td', null, r.tramo), QL.el('td', 'num', String(r.n)), QL.el('td', 'num', QL.pc1(r.esperado)), QL.el('td', 'num', QL.pc1(r.real)), QL.el('td', 'num ' + (d > 0 ? 'ql-ok' : d < 0 ? 'ql-bad' : ''), QL.sgn(d, QL.pc1)));
+    t.append(tr);
+  });
+  el.replaceChildren(t);
+});
+dash.draw('cuotas-hist', (el) => {
+  const c = dash.data('cuotas_hist');
+  if (c.status !== 'ok' || !c.data || !c.data.length) { el.replaceChildren(QL.el('div', 'ql-msg', c.status === 'loading' ? 'Cargando…' : 'Sin datos.')); return; }
+  const t = QL.el('table', 'ql-t'), hd = QL.el('tr'), cl = (d) => 'num ' + (d > 0 ? 'ql-ok' : d < 0 ? 'ql-bad' : '');
+  ['Liga', 'Favorito', 'Partidos', 'X según cuotas', 'X real', 'Diferencia', '2005-15', '2016-26'].forEach((h) => hd.append(QL.el('th', null, h)));
+  t.append(hd);
+  c.data.forEach((r) => {
+    const tr = QL.el('tr');
+    tr.append(QL.el('td', null, r.liga), QL.el('td', null, r.favorito), QL.el('td', 'num', r.n.toLocaleString('es-ES')), QL.el('td', 'num', QL.pc1(r.esperado)), QL.el('td', 'num', QL.pc1(r.real)),
+      QL.el('td', cl(r.dif), QL.sgn(r.dif, QL.pc1)), QL.el('td', cl(r.dif_a), QL.sgn(r.dif_a, QL.pc1)), QL.el('td', cl(r.dif_b), QL.sgn(r.dif_b, QL.pc1)));
+    t.append(tr);
+  });
+  el.replaceChildren(t);
+});
+dash.draw('apuestas-lista', (el) => {
+  const ap = dash.data('apuestas');
+  if (ap.status !== 'ok') { el.replaceChildren(QL.el('div', 'ql-msg', ap.status === 'loading' ? 'Cargando…' : 'No se pudieron cargar las apuestas.')); return; }
+  const J = QL.curJ(QL.rows('partidos'));
+  const rs = ap.data.filter((r) => r.jornada === J).sort((a, b) => String(a.id).localeCompare(String(b.id)));
+  if (!rs.length) { el.replaceChildren(QL.el('p', 'ql-note', 'Sin apuestas para la J' + J + '. Las definitivas se publican el día de la jornada, junto con la quiniela definitiva.')); return; }
+  const tb = QL.el('table', 'ql-t'); tb.setAttribute('data-source', 'apuestas'); tb.setAttribute('data-row-key', 'id');
+  const hr = QL.el('tr');
+  [['id', 'Nº'], ['partido', 'Partido'], ['signos_quiniela', 'Quiniela'], ['mercado', 'Mercado'], ['seleccion', 'Selección'], ['cuota', 'Cuota', 'num'], ['cuota_minima', 'Cuota mínima', 'num'], ['p_mesa', 'Prob. mesa', 'num'], ['p_final', 'Prob. final', 'num'], ['valor', 'Valor', 'num'], ['stake', 'Stake', 'num'], ['estado', 'Estado'], ['ganancia', 'Ganancia', 'num'], ['clv', 'CLV', 'num']]
+    .forEach(([f, l, c]) => { const th = QL.el('th', c || '', l); th.setAttribute('data-field', f); hr.append(th); });
+  const th0 = QL.el('thead'); th0.append(hr); tb.append(th0);
+  const body = QL.el('tbody');
+  const ec = {Ganada: 'ql-ok', Perdida: 'ql-bad', Vigilar: 'ql-warn', Descartada: 'ql-bad', Nula: '', Propuesta: '', Apostada: '', Definitiva: ''};
+  rs.forEach((r) => {
+    const tr = QL.el('tr'); tr.setAttribute('data-key', r.id);
+    const cuota = r.cuota != null ? String(r.cuota.toFixed(2)).replace('.', ',') : r.cuota_estimada != null ? '≈ ' + String(r.cuota_estimada.toFixed(2)).replace('.', ',') : '—';
+    const est = QL.el('td'); est.append(QL.el('span', 'ql-est ' + (ec[r.estado] || ''), r.estado));
+    tr.append(QL.el('td', 'ql-n', r.id), QL.el('td', null, r.partido), QL.el('td', 'ql-sg', r.signos_quiniela || '—'), QL.el('td', null, r.mercado), QL.el('td', null, r.seleccion),
+      QL.el('td', 'num', cuota), QL.el('td', 'num', r.cuota_minima != null ? String(r.cuota_minima.toFixed(2)).replace('.', ',') : '—'),
+      QL.el('td', 'num', QL.pc1(r.p_mesa)), QL.el('td', 'num', QL.pc1(r.p_final)), QL.el('td', 'num ' + (r.valor > 0 ? 'ql-ok' : r.valor < 0 ? 'ql-bad' : ''), QL.sgn(r.valor, QL.pc1)),
+      QL.el('td', 'num', QL.eur(r.stake)), est,
+      QL.el('td', 'num ' + (r.ganancia > 0 ? 'ql-ok' : r.ganancia < 0 ? 'ql-bad' : ''), r.ganancia == null ? '—' : QL.sgn(r.ganancia, QL.eur)),
+      QL.el('td', 'num ' + (r.clv > 0 ? 'ql-ok' : r.clv < 0 ? 'ql-bad' : ''), r.clv == null ? '—' : QL.sgn(r.clv, QL.pc1)));
+    body.append(tr);
+  });
+  tb.append(body); el.replaceChildren(tb);
+});
+</script>

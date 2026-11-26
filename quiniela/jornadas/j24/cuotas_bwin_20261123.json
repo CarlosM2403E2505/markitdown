@@ -1,0 +1,172 @@
+{
+ "fuente": "bwin.es",
+ "leido_el": "2026-11-23 13:29 (Claude in Chrome de Carlos)",
+ "partidos": [
+  {
+   "n": 1,
+   "cuotas": {
+    "Goles local 1.5|Local más de 1,5": 1.46,
+    "Goles local 1.5|Local menos de 1,5": 2.55
+   },
+   "partido": "Arsenal – Dortmund"
+  },
+  {
+   "n": 2,
+   "cuotas": {
+    "Goles local 1.5|Local más de 1,5": 2.1,
+    "Goles local 1.5|Local menos de 1,5": 1.66,
+    "Goles visitante 1.5|Visitante más de 1,5": 1.98,
+    "Goles visitante 1.5|Visitante menos de 1,5": 1.75
+   },
+   "partido": "Feyenoord – Oporto"
+  },
+  {
+   "n": 3,
+   "cuotas": {
+    "Goles 2.ª parte 1.5|2.ª parte más de 1,5": 1.52,
+    "Goles 2.ª parte 1.5|2.ª parte menos de 1,5": 2.35,
+    "Resultado y goles 2.5|1 y más de 2,5": 1.55,
+    "Resultado y goles 2.5|1 y menos de 2,5": 4.8,
+    "Resultado y goles 2.5|X y más de 2,5": 13.0,
+    "Resultado y goles 2.5|X y menos de 2,5": 8.5,
+    "Resultado y goles 2.5|2 y más de 2,5": 11.5,
+    "Resultado y goles 2.5|2 y menos de 2,5": 17.0
+   },
+   "partido": "Man. City – Nápoles"
+  },
+  {
+   "n": 4,
+   "cuotas": {
+    "Goles 1.ª parte 1.5|1.ª parte más de 1,5": 1.58,
+    "Goles 1.ª parte 1.5|1.ª parte menos de 1,5": 2.2,
+    "Resultado y goles 2.5|1 y más de 2,5": 1.33,
+    "Resultado y goles 2.5|1 y menos de 2,5": 7.25,
+    "Resultado y goles 2.5|X y más de 2,5": 12.5,
+    "Resultado y goles 2.5|X y menos de 2,5": 13.0,
+    "Resultado y goles 2.5|2 y más de 2,5": 11.0,
+    "Resultado y goles 2.5|2 y menos de 2,5": 23.0
+   },
+   "partido": "Real Madrid – PSV"
+  },
+  {
+   "n": 5,
+   "cuotas": {
+    "Goles 2.ª parte 1.5|2.ª parte más de 1,5": 1.55,
+    "Goles 2.ª parte 1.5|2.ª parte menos de 1,5": 2.3,
+    "Resultado y goles 2.5|1 y más de 2,5": 11.5,
+    "Resultado y goles 2.5|1 y menos de 2,5": 17.5,
+    "Resultado y goles 2.5|X y más de 2,5": 13.0,
+    "Resultado y goles 2.5|X y menos de 2,5": 8.0,
+    "Resultado y goles 2.5|2 y más de 2,5": 1.58,
+    "Resultado y goles 2.5|2 y menos de 2,5": 4.75
+   },
+   "partido": "Slovan Bratislava – Betis"
+  },
+  {
+   "n": 6,
+   "cuotas": {
+    "Hándicap visitante -2.5|Visitante -2,5": 1.62,
+    "Hándicap visitante -2.5|Local +2,5": 2.15,
+    "Mitad con más goles|1.ª parte": 2.65,
+    "Mitad con más goles|2.ª parte": 1.9,
+    "Mitad con más goles|Igual": 4.5
+   },
+   "partido": "Sabah – Barcelona"
+  },
+  {
+   "n": 7,
+   "cuotas": {
+    "Goles local 1.5|Local más de 1,5": 2.15,
+    "Goles local 1.5|Local menos de 1,5": 1.62,
+    "Goles visitante 1.5|Visitante más de 1,5": 1.78,
+    "Goles visitante 1.5|Visitante menos de 1,5": 1.93
+   },
+   "partido": "Slavia Praga – Villarreal"
+  },
+  {
+   "n": 8,
+   "cuotas": {
+    "Goles visitante 1.5|Visitante más de 1,5": 1.39,
+    "Goles visitante 1.5|Visitante menos de 1,5": 2.8,
+    "Goles 2.ª parte 1.5|2.ª parte más de 1,5": 1.47,
+    "Goles 2.ª parte 1.5|2.ª parte menos de 1,5": 2.5,
+    "Goles local 1.5|Local más de 1,5": 2.15,
+    "Goles local 1.5|Local menos de 1,5": 1.62
+   },
+   "partido": "Brujas – Liverpool"
+  },
+  {
+   "n": 9,
+   "cuotas": {
+    "Goles 2.ª parte 1.5|2.ª parte más de 1,5": 1.41,
+    "Goles 2.ª parte 1.5|2.ª parte menos de 1,5": 2.65,
+    "Resultado y goles 2.5|1 y más de 2,5": 1.66,
+    "Resultado y goles 2.5|1 y menos de 2,5": 6.75,
+    "Resultado y goles 2.5|X y más de 2,5": 8.5,
+    "Resultado y goles 2.5|X y menos de 2,5": 8.75,
+    "Resultado y goles 2.5|2 y más de 2,5": 6.5,
+    "Resultado y goles 2.5|2 y menos de 2,5": 16.5
+   },
+   "partido": "Inter – Stuttgart"
+  },
+  {
+   "n": 10,
+   "cuotas": {
+    "Goles 2.ª parte 1.5|2.ª parte más de 1,5": 1.5,
+    "Goles 2.ª parte 1.5|2.ª parte menos de 1,5": 2.4,
+    "Mitad con más goles|1.ª parte": 3.0,
+    "Mitad con más goles|2.ª parte": 1.9,
+    "Mitad con más goles|Igual": 3.9
+   },
+   "partido": "PSG – Roma"
+  },
+  {
+   "n": 11,
+   "cuotas": {
+    "Goles local 1.5|Local más de 1,5": 2.15,
+    "Goles local 1.5|Local menos de 1,5": 1.63
+   },
+   "partido": "Shakhtar – Fenerbahçe"
+  },
+  {
+   "n": 12,
+   "cuotas": {
+    "Goles 2.ª parte 1.5|2.ª parte más de 1,5": 1.71,
+    "Goles 2.ª parte 1.5|2.ª parte menos de 1,5": 1.98,
+    "Goles visitante 1.5|Visitante más de 1,5": 1.95,
+    "Goles visitante 1.5|Visitante menos de 1,5": 1.75
+   },
+   "partido": "Sporting CP – Man. United"
+  },
+  {
+   "n": 13,
+   "cuotas": {
+    "Goles visitante 1.5|Visitante más de 1,5": 1.9,
+    "Goles visitante 1.5|Visitante menos de 1,5": 1.8
+   },
+   "partido": "Celta – Bournemouth"
+  },
+  {
+   "n": 14,
+   "cuotas": {
+    "Goles local 1.5|Local más de 1,5": 1.75,
+    "Goles local 1.5|Local menos de 1,5": 1.98
+   },
+   "partido": "Crystal Palace – Real Sociedad"
+  },
+  {
+   "n": 15,
+   "cuotas": {
+    "Resultado y goles 2.5|1 y más de 2,5": 1.33,
+    "Resultado y goles 2.5|1 y menos de 2,5": 5.0,
+    "Resultado y goles 2.5|X y más de 2,5": 21.0,
+    "Resultado y goles 2.5|X y menos de 2,5": 11.5,
+    "Resultado y goles 2.5|2 y más de 2,5": 23.0,
+    "Resultado y goles 2.5|2 y menos de 2,5": 29.0,
+    "Goles local 2.5|Local más de 2,5": 1.44,
+    "Goles local 2.5|Local menos de 2,5": 2.6
+   },
+   "partido": "Atlético – Viking"
+  }
+ ]
+}

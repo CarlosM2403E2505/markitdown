@@ -1,0 +1,15 @@
+9|Granada|Atletico|1|1
+9|Valencia|Eibar|2|1
+9|Espanyol|Logrono|2|1
+9|Madrid CFF|Deportivo|2|1
+9|Alaves|Real Sociedad|1|1
+9|Badalona|Barcelona|0|4
+9|Sevilla|Real Madrid|1|3
+9|Tenerife|Athletic|2|0
+10|Granada|Espanyol|0|1
+10|Athletic|Real Madrid|1|1
+10|Eibar|Real Sociedad|1|2
+10|Logrono|Sevilla|2|2
+10|Barcelona|Madrid CFF|5|1
+10|Atletico|Badalona|3|0
+10|Deportivo|Valencia|0|2

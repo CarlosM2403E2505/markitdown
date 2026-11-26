@@ -92,6 +92,96 @@ class TestBoletos(unittest.TestCase):
             qc.mejor_boleto_a(_probs_aleatorias(5), [0, 1, 2, 3, 4])
 
 
+class TestColumnasMasProbables(unittest.TestCase):
+    def _p_columna(self, probs, col):
+        p = 1.0
+        for pr, s in zip(probs, col):
+            p *= pr[qc.SIGNOS.index(s)]
+        return p
+
+    def test_p14_es_la_suma_de_las_columnas(self):
+        probs = _probs_aleatorias(6)
+        cols = qc.columnas_mas_probables(probs, 16)
+        self.assertEqual(len(set(cols)), 16)
+        exacta = qc.simular_columnas(probs, cols)[14]
+        self.assertAlmostEqual(exacta, sum(self._p_columna(probs, c) for c in cols))
+
+    def test_son_las_mas_probables_de_todas(self):
+        probs = _probs_aleatorias(7, n=6)
+        todas = sorted(("".join(c) for c in itertools.product(qc.SIGNOS, repeat=6)),
+                       key=lambda c: -self._p_columna(probs, c))
+        cols = qc.columnas_mas_probables(probs, 16)
+        self.assertAlmostEqual(sum(self._p_columna(probs, c) for c in cols),
+                               sum(self._p_columna(probs, c) for c in todas[:16]))
+
+    def test_supera_a_los_otros_sistemas_en_p14(self):
+        for semilla in range(8, 13):
+            probs = _probs_aleatorias(semilla)
+            sistemas, _ = qc.comparar_sistemas(probs, [])
+            c = [s for s in sistemas if s["nombre"].startswith("C")][0]
+            for s in sistemas:
+                self.assertGreaterEqual(c["p14"] + 1e-12, s["p14"])
+
+    def test_cumple_los_vetos(self):
+        probs = _probs_aleatorias(14)
+        probs[0] = [0.85, 0.10, 0.05]  # muy favorito: sin veto saldría siempre 1
+        cols = qc.columnas_mas_probables(probs, 16, forzados=[0])
+        self.assertGreaterEqual(len({c[0] for c in cols}), 2)
+        self.assertEqual(len(set(cols)), 16)
+
+
+class TestVariantesConEmpate(unittest.TestCase):
+    def test_se_comparan_cuando_c_no_lleva_x(self):
+        probs = [[0.50 - 0.01 * i, 0.20, 0.30 + 0.01 * i] for i in range(14)]
+        sistemas, _ = qc.comparar_sistemas(probs, [0, 1])
+        variantes = [s for s in sistemas if s["nombre"].startswith("C+X")]
+        self.assertTrue(variantes)
+        for s in variantes:
+            self.assertTrue(any("X" in c for c in s["columnas"]))
+            self.assertEqual(len(set(s["columnas"])), 16)
+            for f in (0, 1):
+                self.assertGreaterEqual(len({c[f] for c in s["columnas"]}), 2)
+
+
+class TestSimulacion(unittest.TestCase):
+    def test_simulacion_se_parece_a_la_exacta(self):
+        probs = _probs_aleatorias(15)
+        cols = qc.columnas_mas_probables(probs, 16)
+        sim = qc.simular_columnas(probs, cols)
+        exacta = qc.evaluar_columnas(probs, cols)
+        self.assertAlmostEqual(sim[14], exacta[14])
+        for k in (13, 12, 10):
+            self.assertAlmostEqual(qc.al_menos(sim, k), qc.al_menos(exacta, k), delta=0.01)
+
+
+class TestColumnaDelPublico(unittest.TestCase):
+    def test_variante_sin_la_columna_del_publico(self):
+        probs = _probs_aleatorias(16)
+        base = "".join(qc.SIGNOS[qc._orden(p)[0]] for p in probs)
+        sistemas, _ = qc.comparar_sistemas(probs, [0], publico=base)
+        v = [s for s in sistemas if "público" in s["nombre"]]
+        self.assertEqual(len(v), 1)
+        self.assertNotIn(base, v[0]["columnas"])
+        self.assertEqual(len(set(v[0]["columnas"])), 16)
+        self.assertGreaterEqual(len({c[0] for c in v[0]["columnas"]}), 2)
+
+
+class TestAfinarYValor(unittest.TestCase):
+    def test_afinar_sube_al_favorito_y_suma_uno(self):
+        q = qc.afinar([0.5, 0.3, 0.2])
+        self.assertAlmostEqual(sum(q), 1.0)
+        self.assertGreater(q[0], 0.5)
+        self.assertEqual(qc.afinar([0.5, 0.3, 0.2], 1.0), [0.5, 0.3, 0.2])
+
+    def test_valor_esperado_cuenta_cada_columna(self):
+        probs = [[1.0, 0.0, 0.0]] * 14
+        premios = {"14": 100.0, "13": 10.0}
+        una = qc.valor_esperado(probs, ["1" * 14], premios)
+        dos = qc.valor_esperado(probs, ["1" * 14, "1" * 13 + "2"], premios)
+        self.assertAlmostEqual(una, 100.0)
+        self.assertAlmostEqual(dos, 110.0)
+
+
 class TestPostmortem(unittest.TestCase):
     def test_puntuacion_de_un_acierto_y_un_fallo(self):
         partidos = [{"partido": "A", "p": [0.5, 0.3, 0.2], "resultado": "1"},

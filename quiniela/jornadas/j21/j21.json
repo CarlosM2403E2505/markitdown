@@ -1,0 +1,611 @@
+{
+ "jornada": 21,
+ "fechas": "14–15/11",
+ "tipo": "Parón de selecciones (9 Segunda + 4 Liga F + 2 selecciones)",
+ "estado": "Pronóstico v2.2 FINAL y CERRADO: 2 boletos (12 € + 6 €), Pleno 1-0",
+ "presupuesto": 12,
+ "lista": "Orden según quinielafutbol.info, quiniela15.com y loterias1fuengirola.com (10/11/2026): Bélgica–Italia es el 10. Confirmar con el boleto oficial",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Valladolid – Castellón",
+   "competicion": "Segunda",
+   "p": [
+    0.2711,
+    0.2361,
+    0.4928
+   ],
+   "p_sin_T": [
+    0.2809,
+    0.2372,
+    0.4819
+   ],
+   "lambda_local": 1.259,
+   "lambda_visitante": 1.718,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.208,
+    1.682
+   ],
+   "ajuste": "Valladolid sin Latasa (lesión) ni Iván Alejo (sanción): ataque ×0,96; Castellón sin Orozco (roja): ×0,98 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "2",
+   "marcador": "0-1"
+  },
+  {
+   "n": 2,
+   "partido": "Real Sociedad B – Sporting",
+   "competicion": "Segunda",
+   "p": [
+    0.3855,
+    0.255,
+    0.3596
+   ],
+   "p_sin_T": [
+    0.369,
+    0.2546,
+    0.3764
+   ],
+   "lambda_local": 1.375,
+   "lambda_visitante": 1.391,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "xg": [
+    1.374,
+    1.32
+   ],
+   "ajuste": "Sporting sin Juan Otero (roja directa) ni Antonio Casas (lesión de grado 3): ataque ×0,95 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "X",
+   "marcador": "2-2"
+  },
+  {
+   "n": 3,
+   "partido": "Almería – Andorra",
+   "competicion": "Segunda",
+   "p": [
+    0.6052,
+    0.1896,
+    0.2051
+   ],
+   "p_sin_T": [
+    0.5666,
+    0.2054,
+    0.228
+   ],
+   "lambda_local": 2.154,
+   "lambda_visitante": 1.311,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    2.283,
+    1.311
+   ],
+   "ajuste": "Andorra sin su portero Owono (roja) ni Lautaro de León (doble amarilla): Almería ×1,05; Andorra ×0,97, y ×1,02 por la sanción de Marcos Luna (Almería): ×0,99 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "1",
+   "marcador": "2-1"
+  },
+  {
+   "n": 4,
+   "partido": "Mallorca – Córdoba",
+   "competicion": "Segunda",
+   "p": [
+    0.6437,
+    0.1998,
+    0.1565
+   ],
+   "p_sin_T": [
+    0.6297,
+    0.2065,
+    0.1637
+   ],
+   "lambda_local": 2.031,
+   "lambda_visitante": 0.927,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    2.03,
+    0.927
+   ],
+   "resultado": "X",
+   "marcador": "3-3"
+  },
+  {
+   "n": 5,
+   "partido": "Oviedo – Girona",
+   "competicion": "Segunda",
+   "p": [
+    0.3654,
+    0.2758,
+    0.3589
+   ],
+   "p_sin_T": [
+    0.3638,
+    0.2783,
+    0.3579
+   ],
+   "lambda_local": 1.194,
+   "lambda_visitante": 1.182,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "xg": [
+    1.194,
+    1.181
+   ],
+   "resultado": "2",
+   "marcador": "1-2"
+  },
+  {
+   "n": 6,
+   "partido": "Tenerife – Ceuta",
+   "competicion": "Segunda",
+   "p": [
+    0.4932,
+    0.2434,
+    0.2634
+   ],
+   "p_sin_T": [
+    0.4956,
+    0.2506,
+    0.2537
+   ],
+   "lambda_local": 1.587,
+   "lambda_visitante": 1.06,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.609,
+    1.128
+   ],
+   "ajuste": "Tenerife sin su portero Dani Martín (doble amarilla): Ceuta ×1,05 (jornadaperfecta.com, 12/11/2026, clase B)",
+   "resultado": "1",
+   "marcador": "2-0"
+  },
+  {
+   "n": 7,
+   "partido": "Granada – Las Palmas",
+   "competicion": "Segunda",
+   "p": [
+    0.426,
+    0.2534,
+    0.3206
+   ],
+   "p_sin_T": [
+    0.4132,
+    0.2554,
+    0.3313
+   ],
+   "lambda_local": 1.454,
+   "lambda_visitante": 1.275,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.453,
+    1.237
+   ],
+   "ajuste": "Las Palmas sin Sandro Ramírez (delantero, microrrotura en el gemelo): ataque ×0,97 (jornadaperfecta.com, 14/11/2026, clase B)",
+   "resultado": "1",
+   "marcador": "1-0"
+  },
+  {
+   "n": 8,
+   "partido": "Eibar – Cádiz",
+   "competicion": "Segunda",
+   "p": [
+    0.5394,
+    0.2509,
+    0.2098
+   ],
+   "p_sin_T": [
+    0.5295,
+    0.2553,
+    0.2153
+   ],
+   "lambda_local": 1.555,
+   "lambda_visitante": 0.889,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "aviso": "Un equipo tuvo su partido de la jornada 13 aplazado (más descanso; sin ajuste)",
+   "xg": [
+    1.554,
+    0.889
+   ],
+   "resultado": "X",
+   "marcador": "1-1"
+  },
+  {
+   "n": 9,
+   "partido": "Eldense – Sabadell",
+   "competicion": "Segunda",
+   "p": [
+    0.3536,
+    0.2837,
+    0.3627
+   ],
+   "p_sin_T": [
+    0.3527,
+    0.286,
+    0.3613
+   ],
+   "lambda_local": 1.126,
+   "lambda_visitante": 1.143,
+   "factor_empates": 1.0,
+   "veto_unico": false,
+   "riesgo": "Muy alto",
+   "nota_riesgo": "Sabadell: 13 partidos en los datos (dato flojo)",
+   "xg": [
+    1.126,
+    1.143
+   ],
+   "resultado": "1",
+   "marcador": "2-0"
+  },
+  {
+   "n": 10,
+   "partido": "Bélgica – Italia",
+   "competicion": "Selecciones",
+   "p": [
+    0.501,
+    0.2421,
+    0.2568
+   ],
+   "lambda_local": 1.622,
+   "lambda_visitante": 0.778,
+   "riesgo": "Muy alto",
+   "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo)",
+   "veto_unico": false,
+   "control_mercado": "Mercado de predicciones (robinhood.com, 10/11): Bélgica 44, empate 18, Italia 31 céntimos; normalizado ≈ 47/19/33. Solo control. FIFA: Bélgica 8.ª, Italia 15.ª (sofascore.com).",
+   "xg": [
+    1.674,
+    1.129
+   ],
+   "resultado": "1",
+   "marcador": "4-1"
+  },
+  {
+   "n": 11,
+   "partido": "Alavés F – Eibar F",
+   "competicion": "Liga F",
+   "p": [
+    0.4865,
+    0.3239,
+    0.1896
+   ],
+   "p_sin_T": [
+    0.4793,
+    0.3254,
+    0.1953
+   ],
+   "lambda_local": 0.945,
+   "lambda_visitante": 0.489,
+   "factor_empates": 0.85,
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    0.945,
+    0.489
+   ],
+   "resultado": "1",
+   "marcador": "2-1"
+  },
+  {
+   "n": 12,
+   "partido": "Real Sociedad F – Athletic F",
+   "competicion": "Liga F",
+   "p": [
+    0.5772,
+    0.2112,
+    0.2116
+   ],
+   "p_sin_T": [
+    0.5655,
+    0.2171,
+    0.2175
+   ],
+   "lambda_local": 1.641,
+   "lambda_visitante": 0.915,
+   "factor_empates": 0.85,
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    1.641,
+    0.915
+   ],
+   "resultado": "2",
+   "marcador": "1-4"
+  },
+  {
+   "n": 13,
+   "partido": "Sevilla F – Atlético F",
+   "competicion": "Liga F",
+   "p": [
+    0.1947,
+    0.1849,
+    0.6205
+   ],
+   "p_sin_T": [
+    0.2013,
+    0.1916,
+    0.6071
+   ],
+   "lambda_local": 1.02,
+   "lambda_visitante": 1.936,
+   "factor_empates": 0.85,
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    1.02,
+    1.936
+   ],
+   "resultado": "2",
+   "marcador": "1-2"
+  },
+  {
+   "n": 14,
+   "partido": "Valencia F – Granada F",
+   "competicion": "Liga F",
+   "p": [
+    0.3286,
+    0.234,
+    0.4373
+   ],
+   "p_sin_T": [
+    0.3293,
+    0.2384,
+    0.4323
+   ],
+   "lambda_local": 1.14,
+   "lambda_visitante": 1.347,
+   "factor_empates": 0.85,
+   "veto_unico": false,
+   "modelo_ligaf": "ligaf_modelo.py (temporada 2025/26 partido a partido, 11/11/2026)",
+   "xg": [
+    1.14,
+    1.347
+   ],
+   "resultado": "X",
+   "marcador": "0-0"
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "España – Inglaterra",
+  "competicion": "Selecciones",
+  "p": [
+   0.5322,
+   0.2464,
+   0.2214
+  ],
+  "lambda_local": 1.637,
+  "lambda_visitante": 0.961,
+  "factor_x": 1.0,
+  "empirica": {
+   "0-0": 0.06977,
+   "0-1": 0.07737,
+   "0-2": 0.05037,
+   "0-M": 0.04238,
+   "1-0": 0.0977,
+   "1-1": 0.11299,
+   "1-2": 0.0707,
+   "1-M": 0.04171,
+   "2-0": 0.06905,
+   "2-1": 0.08658,
+   "2-2": 0.05286,
+   "2-M": 0.02831,
+   "M-0": 0.0712,
+   "M-1": 0.06812,
+   "M-2": 0.04019,
+   "M-M": 0.02071
+  },
+  "mezcla": 0.0,
+  "precio": "Poisson de selecciones (modelo/selecciones_modelo.py, datos martj42 hasta el 6/10/2026; validado: log-loss 0,795 frente a 0,810 del Elo); Pleno sin mezcla empírica (validado)",
+  "ajuste": "España sin Rodri ni Olmo (×0,97) e Inglaterra sin Guéhi (×1,02 a los goles de España), clase B.",
+  "decision": "1-0 en los 4 boletos: es el marcador más probable según la mesa (12,2 %). El % del público no interviene (anexo H).",
+  "pleno_jugado": "1-0",
+  "resultado_pleno": "2-M"
+ },
+ "sueltas": [
+  {
+   "partido": "Alavés F – Eibar F",
+   "apuesta": "Menos de 3,5 goles",
+   "p": 0.941,
+   "resultado": true
+  },
+  {
+   "partido": "Almería – Andorra",
+   "apuesta": "Almería marca",
+   "p": 0.898,
+   "resultado": true
+  },
+  {
+   "partido": "Mallorca – Córdoba",
+   "apuesta": "Mallorca marca",
+   "p": 0.869,
+   "resultado": true
+  },
+  {
+   "partido": "Sevilla F – Atlético F",
+   "apuesta": "Atlético F marca",
+   "p": 0.859,
+   "resultado": true
+  },
+  {
+   "partido": "Valladolid – Castellón",
+   "apuesta": "Castellón marca",
+   "p": 0.814,
+   "resultado": true
+  }
+ ],
+ "publico": {
+  "fuente": "quiniela15.com, % LAE, leído el sábado 14/11/2026 (441 quinielistas)",
+  "porcentajes": {
+   "1": {
+    "lae": [
+     28,
+     25,
+     47
+    ]
+   },
+   "2": {
+    "lae": [
+     26,
+     27,
+     47
+    ]
+   },
+   "3": {
+    "lae": [
+     84,
+     9,
+     7
+    ]
+   },
+   "4": {
+    "lae": [
+     74,
+     16,
+     10
+    ]
+   },
+   "5": {
+    "lae": [
+     44,
+     32,
+     24
+    ]
+   },
+   "6": {
+    "lae": [
+     78,
+     13,
+     9
+    ]
+   },
+   "7": {
+    "lae": [
+     55,
+     27,
+     18
+    ]
+   },
+   "8": {
+    "lae": [
+     75,
+     15,
+     10
+    ]
+   },
+   "9": {
+    "lae": [
+     39,
+     37,
+     24
+    ]
+   },
+   "10": {
+    "lae": [
+     40,
+     28,
+     32
+    ]
+   },
+   "11": {
+    "lae": [
+     35,
+     34,
+     31
+    ]
+   },
+   "12": {
+    "lae": [
+     39,
+     34,
+     27
+    ]
+   },
+   "13": {
+    "lae": [
+     12,
+     15,
+     73
+    ]
+   },
+   "14": {
+    "lae": [
+     38,
+     25,
+     37
+    ]
+   }
+  },
+  "columna": "22111111111121",
+  "pleno_goles_lae": {
+   "local": {
+    "0": 3,
+    "1": 19,
+    "2": 53,
+    "M": 25
+   },
+   "visitante": {
+    "0": 12,
+    "1": 54,
+    "2": 26,
+    "M": 8
+   }
+  }
+ },
+ "boleto_final": {
+  "tipo": "Boleto 1: directa 4 dobles (P2, P5, P9, P14: 1 2) · Boleto 2: 8 sencillas nuevas",
+  "apuestas": 24,
+  "coste": 18.0,
+  "pleno": "1-0",
+  "p14": 0.0008169934640522876,
+  "p13": 0.00875,
+  "p12": 0.0444,
+  "columnas_boleto2": [
+   "21111111X11122",
+   "21112111X11122",
+   "2111X111211122",
+   "21111121211122",
+   "21112121211122",
+   "2111X111111122",
+   "21111121111122",
+   "22111111X11122"
+  ]
+ },
+ "columnas_jugadas": [
+  "21111111111121",
+  "21111111111122",
+  "21111111211121",
+  "21111111211122",
+  "21112111111121",
+  "21112111111122",
+  "21112111211121",
+  "21112111211122",
+  "22111111111121",
+  "22111111111122",
+  "22111111211121",
+  "22111111211122",
+  "22112111111121",
+  "22112111111122",
+  "22112111211121",
+  "22112111211122",
+  "21111111X11122",
+  "21112111X11122",
+  "2111X111211122",
+  "21111121211122",
+  "21112121211122",
+  "2111X111111122",
+  "21111121111122",
+  "22111111X11122"
+ ],
+ "boleto_jugado": "2 boletos: directa de 4 dobles (12 €) + 8 columnas sencillas (6 €)",
+ "coste_jugado": 18,
+ "mejor_columna": 9,
+ "log_loss_publico": 1.011,
+ "premio": "Sin premio (9 aciertos)"
+}

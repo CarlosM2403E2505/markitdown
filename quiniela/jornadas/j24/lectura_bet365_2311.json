@@ -1,0 +1,90 @@
+{
+ "fuente": "bet365.es, leído por Carlos con Claude in Chrome (sin sesión), lun 23/11 09:53",
+ "nota": "Lectura parcial: 1X2 solo en 1, 10, 11, 13 y 14 (coinciden con la mediana de 13 casas de Flashscore ±0,05); el resto, goles o descanso. No usar como foto bet365_*.json (dejaría sin mercado los otros partidos).",
+ "1x2": {
+  "1": [
+   1.36,
+   5.0,
+   8.0
+  ],
+  "10": [
+   1.38,
+   5.0,
+   8.0
+  ],
+  "11": [
+   2.6,
+   3.5,
+   2.62
+  ],
+  "13": [
+   3.6,
+   3.4,
+   1.9
+  ],
+  "14": [
+   2.0,
+   3.6,
+   3.1
+  ]
+ },
+ "goles": {
+  "1": {
+   "mas2.5": 1.66,
+   "menos2.5": 2.2
+  },
+  "2": {
+   "mas3.5": 2.5,
+   "menos3.5": 1.53
+  },
+  "4": {
+   "mas3.5": 1.5,
+   "menos3.5": 2.62
+  },
+  "6": {
+   "mas4.5": 1.61,
+   "menos4.5": 2.3
+  },
+  "7": {
+   "mas3.5": 2.3,
+   "menos3.5": 1.61
+  },
+  "11": {
+   "mas2.5": 1.72,
+   "menos2.5": 2.1
+  },
+  "12": {
+   "mas3.5": 2.3,
+   "menos3.5": 1.61
+  },
+  "13": {
+   "mas2.5": 1.8,
+   "menos2.5": 2.0
+  },
+  "14": {
+   "mas2.5": 1.57,
+   "menos2.5": 2.37
+  },
+  "15": {
+   "mas3.5": 1.66,
+   "menos3.5": 2.2
+  }
+ },
+ "descanso": {
+  "3": [
+   1.61,
+   3.0,
+   8.0
+  ],
+  "5": [
+   8.5,
+   3.0,
+   1.57
+  ],
+  "9": [
+   1.72,
+   3.1,
+   5.5
+  ]
+ }
+}

@@ -1,0 +1,51 @@
+{
+ "fuente": "Flashscore.es, pestaña Alineaciones/BAJAS (clase B), lun 23/11 ~11:00. Miércoles y jueves aún sin publicar en varios partidos. · Añadido 23/11 13:30 con lo comprobado del análisis de quiniela15 que pasó Carlos.",
+ "bajas": {
+  "1": "Arsenal: Saka, Zubimendi. Dortmund: Guirassy, Can, Chukwuemeka, Inácio, Konstantelias, Lerma",
+  "2": "Lista mezclada: Beelen, Bos, Moder, Nieuwkoop, St. Juste, Wessels (Feyenoord); Gabriel Mec, Prpic, Smalling, V. Sousa, William Gomes",
+  "3": "City: Nunes, Semenyo. Nápoles: Buongiorno, Di Lorenzo, Lobotka, Neres, Meret, Marín (roja), Vergara, Alisson Santos",
+  "4": "Madrid: Asencio, Mendy, Rodrygo. PSV: Plea, Schouten, Ouaissa, Nagalo",
+  "5": "Slovan: Cerepkai, Medvedev. Betis: Ceballos, Losada, Morante",
+  "6": "Sabah/Barça: McCarthy (roja), Bardghji, Christensen, Espart, Rodri",
+  "7": "Slavia: Chory (técnica), Moses, Ogbu, Kante, Chaloupek. Villarreal: G. Moreno, Foyth, Akhomach, Diatta",
+  "9": "Inter: Bonny, Zielinski. Stuttgart: Jaquez, Stiller",
+  "8,10,11,12,13,14,15": "Sin bajas publicadas aún (se revisa el martes 16:30)"
+ },
+ "ajustes": {
+  "1": [
+   0.96,
+   0.94,
+   "Saka y Zubimendi fuera; Dortmund sin Guirassy, Can y Chukwuemeka (B, Flashscore)"
+  ],
+  "3": [
+   1.06,
+   0.95,
+   "Nápoles sin Buongiorno, Di Lorenzo, Meret, Lobotka y Neres (B, Flashscore)"
+  ],
+  "4": [
+   0.98,
+   0.95,
+   "Madrid sin Rodrygo ni Mendy; PSV sin Plea ni Schouten (B, Flashscore)"
+  ],
+  "7": [
+   0.98,
+   0.93,
+   "Villarreal sin G. Moreno, Foyth y Akhomach; Slavia sin Chory (B, Flashscore)"
+  ],
+  "6": [
+   1.0,
+   0.95,
+   "Lamine Yamal baja por molestias en el tobillo (B: Goal, Barça Universal, 23/11)"
+  ],
+  "10": [
+   0.94,
+   1.0,
+   "PSG sin Doué, rotura del cruzado en Niza (B: Libertad Digital, Infobae, 22/11). Kvaratskhelia sin confirmar"
+  ],
+  "11": [
+   0.907,
+   1.102,
+   "Campo neutral: el Shakhtar juega en Stamford Bridge, Londres (A: shakhtar.com, chelseafc.com); se quita la ventaja de local del modelo"
+  ]
+ }
+}

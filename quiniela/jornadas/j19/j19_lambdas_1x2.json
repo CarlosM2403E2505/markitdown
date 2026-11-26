@@ -1,0 +1,326 @@
+{
+ "jornada": 19,
+ "version": "v1 · lunes 2/11/2026 15:15 Canarias (provisional; revisión final martes 3/11 antes de las 10:30)",
+ "metodo": "Poisson independiente con factor de empates en la diagonal y renormalizado (G = 0..10). 1X2 = suma de la matriz.",
+ "factor_empates_por_competicion": {
+  "Champions League": 1.0,
+  "Europa League": 1.0,
+  "Conference League": 1.0,
+  "_referencia_no_aplica_en_J19": {
+   "Primera/Segunda": 1.08,
+   "Liga F": 0.85
+  }
+ },
+ "nota_lambdas": "En P1, P2, P3, P4, P8 y P9 el precio final lleva ajustes (bajas A/B y −4,5 puntos al favorito que viene de perder en Europa) aplicados sobre el 1X2. Sus lambdas son las equivalentes que reproducen exactamente ese 1X2 con el método indicado; las xG del modelo sin ajustes van aparte. Error máximo de reproducción: 0,0002.",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Barcelona – Aston Villa",
+   "competicion": "Champions League",
+   "dia": "mar 3, 21:00 (hora peninsular)",
+   "lambda_local": 2.013,
+   "lambda_visitante": 1.36,
+   "factor_empates": 1.0,
+   "p": [
+    0.5263,
+    0.2157,
+    0.258
+   ],
+   "veto_unico": true,
+   "motivo_veto": "Favorito (Barça) que viene de perder en Europa (4-2 en París)",
+   "signo_boleto_18eur": "12",
+   "lambdas_ajustadas": true,
+   "xg_modelo_sin_ajustes": [
+    2.423,
+    1.492
+   ]
+  },
+  {
+   "n": 2,
+   "partido": "Bodø/Glimt – Lille",
+   "competicion": "Champions League",
+   "dia": "mar 3, 21:00 (hora peninsular)",
+   "lambda_local": 1.332,
+   "lambda_visitante": 1.318,
+   "factor_empates": 1.0,
+   "p": [
+    0.3728,
+    0.2609,
+    0.3663
+   ],
+   "veto_unico": true,
+   "motivo_veto": "Campo nórdico (Bodø, césped artificial) y favorito que viene de perder (4-3 en Nápoles)",
+   "signo_boleto_18eur": "12",
+   "lambdas_ajustadas": true,
+   "xg_modelo_sin_ajustes": [
+    1.568,
+    1.436
+   ]
+  },
+  {
+   "n": 3,
+   "partido": "Man. United – Roma",
+   "competicion": "Champions League",
+   "dia": "mar 3, 21:00 (hora peninsular)",
+   "lambda_local": 1.447,
+   "lambda_visitante": 1.209,
+   "factor_empates": 1.0,
+   "p": [
+    0.4259,
+    0.2585,
+    0.3156
+   ],
+   "veto_unico": true,
+   "motivo_veto": "Favorito (Man. United) que viene de perder en Europa (4-1 en Como)",
+   "signo_boleto_18eur": "12",
+   "lambdas_ajustadas": true,
+   "xg_modelo_sin_ajustes": [
+    1.697,
+    1.286
+   ]
+  },
+  {
+   "n": 4,
+   "partido": "Villarreal – PSG",
+   "competicion": "Champions League",
+   "dia": "mar 3, 21:00 (hora peninsular)",
+   "lambda_local": 1.46,
+   "lambda_visitante": 2.082,
+   "factor_empates": 1.0,
+   "p": [
+    0.2692,
+    0.2113,
+    0.5195
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "2",
+   "lambdas_ajustadas": true,
+   "xg_modelo_sin_ajustes": [
+    1.493,
+    2.164
+   ]
+  },
+  {
+   "n": 5,
+   "partido": "AEK Atenas – Real Madrid",
+   "competicion": "Champions League",
+   "dia": "mié 4, 18:45 (hora peninsular)",
+   "lambda_local": 1.017,
+   "lambda_visitante": 2.291,
+   "factor_empates": 1.0,
+   "p": [
+    0.154,
+    0.1864,
+    0.6596
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "2"
+  },
+  {
+   "n": 6,
+   "partido": "Fenerbahçe – Liverpool",
+   "competicion": "Champions League",
+   "dia": "mié 4, 18:45 (hora peninsular)",
+   "lambda_local": 1.238,
+   "lambda_visitante": 2.382,
+   "factor_empates": 1.0,
+   "p": [
+    0.1855,
+    0.1871,
+    0.6274
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "2"
+  },
+  {
+   "n": 7,
+   "partido": "B. Dortmund – Betis",
+   "competicion": "Champions League",
+   "dia": "mié 4, 21:00 (hora peninsular)",
+   "lambda_local": 1.887,
+   "lambda_visitante": 1.289,
+   "factor_empates": 1.0,
+   "p": [
+    0.5142,
+    0.2246,
+    0.2612
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "1"
+  },
+  {
+   "n": 8,
+   "partido": "Oporto – Nápoles",
+   "competicion": "Champions League",
+   "dia": "mié 4, 21:00 (hora peninsular)",
+   "lambda_local": 1.284,
+   "lambda_visitante": 0.991,
+   "factor_empates": 1.0,
+   "p": [
+    0.4316,
+    0.2816,
+    0.2868
+   ],
+   "veto_unico": true,
+   "motivo_veto": "Favorito (Oporto) que viene de perder en Europa (0-1 con el PSV)",
+   "signo_boleto_18eur": "1X2",
+   "lambdas_ajustadas": true,
+   "xg_modelo_sin_ajustes": [
+    1.478,
+    1.109
+   ]
+  },
+  {
+   "n": 9,
+   "partido": "Lens – Como",
+   "competicion": "Champions League",
+   "dia": "mié 4, 21:00 (hora peninsular)",
+   "lambda_local": 1.209,
+   "lambda_visitante": 1.305,
+   "factor_empates": 1.0,
+   "p": [
+    0.3428,
+    0.2688,
+    0.3884
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "2",
+   "lambdas_ajustadas": true,
+   "xg_modelo_sin_ajustes": [
+    1.452,
+    1.394
+   ]
+  },
+  {
+   "n": 10,
+   "partido": "Leipzig – Man. City",
+   "competicion": "Champions League",
+   "dia": "mié 4, 21:00 (hora peninsular)",
+   "lambda_local": 1.316,
+   "lambda_visitante": 2.194,
+   "factor_empates": 1.0,
+   "p": [
+    0.2237,
+    0.2025,
+    0.5738
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "2"
+  },
+  {
+   "n": 11,
+   "partido": "Slavia Praga – Arsenal",
+   "competicion": "Champions League",
+   "dia": "mié 4, 21:00 (hora peninsular)",
+   "lambda_local": 0.766,
+   "lambda_visitante": 2.127,
+   "factor_empates": 1.0,
+   "p": [
+    0.1223,
+    0.1898,
+    0.6879
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "2"
+  },
+  {
+   "n": 12,
+   "partido": "Real Sociedad – Lyon",
+   "competicion": "Europa League",
+   "dia": "jue 5, 18:45 (hora peninsular)",
+   "lambda_local": 1.635,
+   "lambda_visitante": 1.565,
+   "factor_empates": 1.0,
+   "p": [
+    0.3979,
+    0.2341,
+    0.368
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "1"
+  },
+  {
+   "n": 13,
+   "partido": "Celta – Union SG",
+   "competicion": "Europa League",
+   "dia": "jue 5, 21:00 (hora peninsular)",
+   "lambda_local": 1.32,
+   "lambda_visitante": 1.304,
+   "factor_empates": 1.0,
+   "p": [
+    0.3725,
+    0.2625,
+    0.365
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "1"
+  },
+  {
+   "n": 14,
+   "partido": "Getafe – Brighton",
+   "competicion": "Conference League",
+   "dia": "jue 5, 21:00 (hora peninsular)",
+   "lambda_local": 0.821,
+   "lambda_visitante": 1.609,
+   "factor_empates": 1.0,
+   "p": [
+    0.1906,
+    0.2489,
+    0.5605
+   ],
+   "veto_unico": false,
+   "signo_boleto_18eur": "2"
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "Atlético de Madrid – Bayern de Múnich",
+  "competicion": "Champions League",
+  "dia": "mar 3, 21:00 (hora peninsular)",
+  "lambda_local": 1.728,
+  "lambda_visitante": 1.877,
+  "factor_empates": 1.0,
+  "p": [
+   0.3606,
+   0.2186,
+   0.4208
+  ],
+  "ajustes": "Bayern sin Saibari, Gnabry, Musiala ni Díaz (λ visitante ×0,925); Atlético sin Hjulmand (λ local ×0,985). Pendiente: portero del Bayern y Olise.",
+  "marcadores_top8": [
+   {
+    "marcador": "1-1",
+    "prob": 0.0932
+   },
+   {
+    "marcador": "1-2",
+    "prob": 0.0803
+   },
+   {
+    "marcador": "1-M",
+    "prob": 0.0796
+   },
+   {
+    "marcador": "2-1",
+    "prob": 0.0783
+   },
+   {
+    "marcador": "M-1",
+    "prob": 0.0711
+   },
+   {
+    "marcador": "2-2",
+    "prob": 0.0678
+   },
+   {
+    "marcador": "2-M",
+    "prob": 0.0672
+   },
+   {
+    "marcador": "M-M",
+    "prob": 0.0622
+   }
+  ],
+  "nota_marcadores": "M = 3 o más goles. Probabilidades de marcador con mezcla 80% Poisson + 20% distribución empírica de marcadores del modelo.",
+  "pleno_jugado": "1-1"
+ }
+}

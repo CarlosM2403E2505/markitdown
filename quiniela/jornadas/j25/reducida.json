@@ -1,0 +1,217 @@
+{
+ "jornada": 25,
+ "estado": "provisional",
+ "pleno": "1-0",
+ "base": "12211221111111",
+ "A": {
+  "reducidas": [
+   {
+    "triples": [
+     5,
+     7,
+     10,
+     13
+    ],
+    "columnas": [
+     "12211211111111",
+     "122112X11X11X1",
+     "12211221121121",
+     "1221X2111X1121",
+     "1221X2X1121111",
+     "1221X2211111X1",
+     "122122111211X1",
+     "122122X1111121",
+     "122122211X1111"
+    ],
+    "apuestas": 9,
+    "coste": 6.75,
+    "p14": 0.0004343073371540987,
+    "p13": 0.007225166520190175,
+    "p12": 0.04498329754396431,
+    "p10": 0.3623947051271092,
+    "distintas": 9
+   },
+   {
+    "triples": [
+     2,
+     8,
+     10,
+     11
+    ],
+    "columnas": [
+     "11211221111111",
+     "1121122X1XX111",
+     "11211222122111",
+     "1X2112211X2111",
+     "1X21122X121111",
+     "1X21122211X111",
+     "1221122112X111",
+     "1221122X112111",
+     "122112221X1111"
+    ],
+    "apuestas": 9,
+    "coste": 6.75,
+    "p14": 0.0002678428632770082,
+    "p13": 0.004784969283120928,
+    "p12": 0.03267040066408633,
+    "p10": 0.31094273655513877,
+    "distintas": 9
+   },
+   {
+    "triples": [
+     1,
+     3,
+     9,
+     14
+    ],
+    "columnas": [
+     "12111221111111",
+     "12X11221X1111X",
+     "12211221211112",
+     "X2111221X11112",
+     "X2X11221211111",
+     "X221122111111X",
+     "2211122121111X",
+     "22X11221111112",
+     "22211221X11111"
+    ],
+    "apuestas": 9,
+    "coste": 6.75,
+    "p14": 0.00010553140969021844,
+    "p13": 0.0021366695373440945,
+    "p12": 0.01689252844799263,
+    "p10": 0.21618921476994596,
+    "distintas": 9
+   }
+  ],
+  "total": {
+   "apuestas": 27,
+   "coste": 20.25,
+   "p14": 0.0008076816101213253,
+   "p13": 0.013636374524693812,
+   "p12": 0.07921051245885105,
+   "p10": 0.5068473119234491,
+   "distintas": 27
+  }
+ },
+ "B": {
+  "reducida": [
+   "12211211111111",
+   "122112X11X11X1",
+   "12211221121121",
+   "1221X2111X1121",
+   "1221X2X1121111",
+   "1221X2211111X1",
+   "122122111211X1",
+   "122122X1111121",
+   "122122211X1111"
+  ],
+  "triples": [
+   5,
+   7,
+   10,
+   13
+  ],
+  "sencillas": [
+   "XXX11222XXX112",
+   "XX21X22XX1X11X",
+   "122112X1112111",
+   "1221X22111X111",
+   "12211221111121",
+   "122122211111X1",
+   "1221X21111111X",
+   "12X12221111111",
+   "X2212222111111",
+   "1221121XX11111",
+   "1X2122X111X111",
+   "1X211221X1X111",
+   "12X1X2111XX111",
+   "1X211222X22111",
+   "1X21X212X1X1X1",
+   "1X212212XX2111"
+  ],
+  "total": {
+   "apuestas": 25,
+   "coste": 18.75,
+   "p14": 0.0008316650073369716,
+   "p13": 0.012668624536543853,
+   "p12": 0.07428309168335735,
+   "p10": 0.5021714647116036,
+   "distintas": 25
+  }
+ },
+ "falta": [
+  [
+   "Dato",
+   "Cuotas de las casas (R5b) en 14 de 14 partidos: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14"
+  ],
+  [
+   "Dato",
+   "P13 Mallorca – Castellón: sin probabilidad propia (base de Segunda)"
+  ],
+  [
+   "Dato",
+   "Lista oficial SELAE de la J25 sin confirmar (orden de partidos y Pleno, clase C)"
+  ],
+  [
+   "Dato",
+   "Probabilidades de la mesa (modelo) sin correr: P provisional = estudio de estilos (clase C)"
+  ],
+  [
+   "Dato",
+   "% del público LAE (quiniela15), informativo"
+  ],
+  [
+   "Dato",
+   "Horarios de Segunda sin confirmar"
+  ],
+  [
+   "Dato",
+   "Onces y bajas (rotaciones post-Champions de Atlético, Madrid, Barça y Villarreal)"
+  ],
+  [
+   "Dato",
+   "% de la plantilla que sigue de la temporada pasada: sin dato (Transfermarkt, navegador integrado); sin histórico para medirlo"
+  ],
+  [
+   "Dato",
+   "Entrenador de la temporada pasada por equipo: solo el estudio (clase C) marca nuevos en Ceuta, Espanyol, Albacete y Osasuna; sin histórico para medirlo"
+  ],
+  [
+   "Dato",
+   "Carga: Copa del Rey y partidos del 23-30/11 sin dato; minutos de los titulares (alineaciones Flashscore, navegador integrado); horarios de la J25 para contar días de descanso"
+  ],
+  [
+   "Dato",
+   "Rotaciones posibles: falta saber qué titulares clave descansan (minutos, tarjetas al límite, partido grande la semana siguiente); se marca el riesgo por calendario"
+  ],
+  [
+   "Dato",
+   "Rotaciones por competición (últimos 10 partidos, cambios en el once tras Europa o Copa) de los 8 equipos europeos y del resto: encargo J25 apartados D y E"
+  ],
+  [
+   "Signo sin cubrir",
+   "Opción A: P4 Real Madrid – Alavés sin X/2 (26 %)"
+  ],
+  [
+   "Signo sin cubrir",
+   "Opción A: P6 Deportivo – Barcelona sin 1/X (29 %)"
+  ],
+  [
+   "Signo sin cubrir",
+   "Opción A: P12 Granada – Ceuta sin X/2 (34 %)"
+  ],
+  [
+   "Signo sin cubrir",
+   "Opción B: P4 Real Madrid – Alavés sin X/2 (26 %)"
+  ],
+  [
+   "Signo sin cubrir",
+   "Opción B: P6 Deportivo – Barcelona sin 1/X (29 %)"
+  ],
+  [
+   "Signo sin cubrir",
+   "Opción B: P12 Granada – Ceuta sin X/2 (34 %)"
+  ]
+ ]
+}

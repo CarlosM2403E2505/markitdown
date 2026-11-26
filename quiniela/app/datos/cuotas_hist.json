@@ -1,0 +1,92 @@
+{
+ "rows": [
+  {
+   "liga": "Primera",
+   "favorito": "<45 %",
+   "n": 2911,
+   "esperado": 0.2923,
+   "real": 0.3002,
+   "dif": 0.008,
+   "dif_a": -0.0038,
+   "dif_b": 0.0198,
+   "orden": 0
+  },
+  {
+   "liga": "Primera",
+   "favorito": "45-55 %",
+   "n": 2042,
+   "esperado": 0.2747,
+   "real": 0.2684,
+   "dif": -0.0063,
+   "dif_a": -0.0158,
+   "dif_b": 0.0032,
+   "orden": 1
+  },
+  {
+   "liga": "Primera",
+   "favorito": "55-65 %",
+   "n": 1250,
+   "esperado": 0.2412,
+   "real": 0.228,
+   "dif": -0.0132,
+   "dif_a": -0.0339,
+   "dif_b": 0.0031,
+   "orden": 2
+  },
+  {
+   "liga": "Primera",
+   "favorito": "65+ %",
+   "n": 1428,
+   "esperado": 0.1643,
+   "real": 0.1352,
+   "dif": -0.0292,
+   "dif_a": -0.0295,
+   "dif_b": -0.0288,
+   "orden": 3
+  },
+  {
+   "liga": "Segunda",
+   "favorito": "<45 %",
+   "n": 5014,
+   "esperado": 0.3066,
+   "real": 0.3207,
+   "dif": 0.0141,
+   "dif_a": 0.0109,
+   "dif_b": 0.0172,
+   "orden": 0
+  },
+  {
+   "liga": "Segunda",
+   "favorito": "45-55 %",
+   "n": 3035,
+   "esperado": 0.2857,
+   "real": 0.2867,
+   "dif": 0.001,
+   "dif_a": 0.0025,
+   "dif_b": -0.0006,
+   "orden": 1
+  },
+  {
+   "liga": "Segunda",
+   "favorito": "55-65 %",
+   "n": 986,
+   "esperado": 0.254,
+   "real": 0.2333,
+   "dif": -0.0207,
+   "dif_a": -0.0272,
+   "dif_b": -0.0156,
+   "orden": 2
+  },
+  {
+   "liga": "Segunda",
+   "favorito": "65+ %",
+   "n": 196,
+   "esperado": 0.1984,
+   "real": 0.1276,
+   "dif": -0.0709,
+   "dif_a": -0.0847,
+   "dif_b": -0.0508,
+   "orden": 3
+  }
+ ]
+}

@@ -15,6 +15,7 @@ import argparse
 import itertools
 import json
 import math
+import os
 import sys
 
 SIGNOS = "1X2"
@@ -45,6 +46,16 @@ def matriz_marcadores(lam_local, lam_visitante, factor_x=1.0, max_goles=10):
     return [[v / total for v in fila] for fila in m]
 
 
+TEMPERATURA = 1.05  # calibración fuera de muestra (J19): el modelo era tímido con los favoritos
+
+
+def afinar(p, T=TEMPERATURA):
+    """Eleva el 1X2 a la potencia T y renormaliza (T > 1 = más rotundo con el favorito).
+    T = 1,05 se eligió en mar–jun de 2026 y mejoró el log-loss en jul–oct (1.155 partidos)."""
+    q = [v ** T for v in p]
+    return [v / sum(q) for v in q]
+
+
 def uno_x_dos(m):
     p1 = sum(m[i][j] for i in range(len(m)) for j in range(len(m)) if i > j)
     px = sum(m[i][i] for i in range(len(m)))
@@ -62,6 +73,27 @@ def categorias_pleno(m):
         for j, v in enumerate(fila):
             p[f"{_categoria(i)}-{_categoria(j)}"] += v
     return p
+
+
+def mezclar(p_cat, empirica, mezcla):
+    """(1 - mezcla) × Poisson + mezcla × distribución empírica, como el modelo oficial (0,2)."""
+    return {r: (1 - mezcla) * v + mezcla * empirica.get(r, 0.0) for r, v in p_cat.items()}
+
+
+def empirica_desde_csv(ruta):
+    """Distribución de resultados del Pleno en un CSV con columnas goles_local y goles_visitante."""
+    import csv
+    cuenta = {f"{a}-{b}": 0 for a in CATEGORIAS_PLENO for b in CATEGORIAS_PLENO}
+    n = 0
+    with open(ruta, encoding="utf-8") as f:
+        for fila in csv.DictReader(f):
+            try:
+                gl, gv = int(fila["goles_local"]), int(fila["goles_visitante"])
+            except (KeyError, ValueError):
+                continue
+            cuenta[f"{_categoria(gl)}-{_categoria(gv)}"] += 1
+            n += 1
+    return {r: c / n for r, c in cuenta.items()}
 
 
 def _signo_pleno(resultado):
@@ -131,6 +163,51 @@ def evaluar_columnas(probs, columnas, max_variables=10):
         for b, pb in enumerate(dist_var):
             total[a + b] += pa * pb
     return total
+
+
+def simular_columnas(probs, columnas, n=40000, semilla=19):
+    """Como evaluar_columnas, pero por simulación (para boletos que varían en muchos
+    partidos). P(14) se corrige con su valor exacto: la suma de las columnas."""
+    import random
+    rnd = random.Random(semilla)
+    idx = [[SIGNOS.index(s) for s in c] for c in columnas]
+    dist = [0] * (len(probs) + 1)
+    acumuladas = [(p[0], p[0] + p[1]) for p in probs]
+    for _ in range(n):
+        res = [0 if (u := rnd.random()) < a else (1 if u < b else 2) for a, b in acumuladas]
+        mejor = max(sum(r == c for r, c in zip(res, col)) for col in idx)
+        dist[mejor] += 1
+    dist = [v / n for v in dist]
+    p14 = 0.0
+    for col in idx:
+        v = 1.0
+        for p, s in zip(probs, col):
+            v *= p[s]
+        p14 += v
+    dist[13] = max(0.0, dist[13] + dist[14] - p14)
+    dist[14] = p14
+    return dist
+
+
+def valor_esperado(probs, columnas, premios, p_pleno=0.0):
+    """Euros esperados de un boleto: cada columna cobra su categoría por separado.
+
+    premios: {"14": €, "13": €, "12": €, "11": €, "10": €, "pleno": €}. Si se da
+    p_pleno (probabilidad del Pleno jugado), una columna con 14 cobra además el Pleno.
+    """
+    total = 0.0
+    for col in columnas:
+        dist = _poisson_binomial([p[SIGNOS.index(s)] for p, s in zip(probs, col)])
+        for k in (10, 11, 12, 13, 14):
+            total += dist[k] * premios.get(str(k), 0.0)
+        total += dist[14] * p_pleno * premios.get("pleno", 0.0)
+    return total
+
+
+def valor_publico(p, pct):
+    """Valor de cada signo: probabilidad del modelo / % que juega el público (fase 4).
+    Por encima de 1,3, el público desprecia ese signo. pct en tanto por cien (0–100)."""
+    return [p[i] / (pct[i] / 100) if pct[i] else None for i in range(3)]
 
 
 def al_menos(dist, k):
@@ -261,6 +338,136 @@ def mejor_boleto_b(probs, forzados, objetivo="p14", n_dobles=7, finalistas=40):
     return mejor[1], mejor[2], len(candidatos)
 
 
+def _k_mejores(probs, orden, k, fijo=None):
+    """Las k combinaciones de rangos más probables (0 = signo más probable de cada partido).
+
+    fijo=(partido, rango) obliga a ese partido a llevar ese rango."""
+    import heapq
+
+    def prob(rangos):
+        v = 1.0
+        for i, r in enumerate(rangos):
+            v *= probs[i][orden[i][r]]
+        return v
+
+    inicio = [0] * len(probs)
+    if fijo:
+        inicio[fijo[0]] = fijo[1]
+    inicio = tuple(inicio)
+    monton, vistos, salida = [(-prob(inicio), inicio)], {inicio}, []
+    while monton and len(salida) < k:
+        p, rangos = heapq.heappop(monton)
+        salida.append((-p, rangos))
+        for i in range(len(probs)):
+            if rangos[i] < 2 and not (fijo and i == fijo[0]):
+                nuevo = rangos[:i] + (rangos[i] + 1,) + rangos[i + 1:]
+                if nuevo not in vistos:
+                    vistos.add(nuevo)
+                    heapq.heappush(monton, (-prob(nuevo), nuevo))
+    return salida
+
+
+def columnas_mas_probables(probs, k=16, forzados=()):
+    """Las k columnas distintas más probables (máxima P(14) posible con k apuestas).
+
+    P(14) de un conjunto de columnas es la suma de sus probabilidades, porque como
+    mucho una acierta las 14. Con vetos, cada partido vetado tiene que aparecer con
+    al menos dos signos: por cada veto que no se cumple, la columna menos probable
+    que no haga falta para otro veto se cambia por la mejor que lo cumple.
+    """
+    orden = [_orden(p) for p in probs]
+    elegidas = _k_mejores(probs, orden, k)
+
+    def cumple(lista, g):
+        return len({r[g] for _, r in lista}) >= 2
+
+    for f in forzados:
+        if cumple(elegidas, f):
+            continue
+        ya = {r for _, r in elegidas}
+        nueva = next(c for c in _k_mejores(probs, orden, k + 1, fijo=(f, 1)) if c[1] not in ya)
+        for j in range(len(elegidas) - 1, -1, -1):
+            prueba = elegidas[:j] + elegidas[j + 1:] + [nueva]
+            if all(cumple(prueba, g) for g in forzados if cumple(elegidas, g) or g == f):
+                elegidas = prueba
+                break
+        else:
+            raise ValueError(f"No se puede cumplir el veto del partido {f + 1} con {k} columnas")
+    elegidas.sort(key=lambda c: -c[0])
+    return ["".join(SIGNOS[orden[i][r]] for i, r in enumerate(rangos)) for _, rangos in elegidas]
+
+
+def comparar_sistemas(probs, forzados, presupuesto=12, publico=None):
+    """Evalúa los sistemas posibles con el presupuesto y elige según el criterio del prompt.
+
+    Criterio: entre los sistemas cuya P(14) es al menos el 90 % de la máxima, el de
+    mayor P(≥12); con empate, el de mayor P(14).
+    """
+    k = int(round(presupuesto / PRECIO_APUESTA))
+    sistemas = []
+    if k >= 16:
+        try:
+            dobles, cols = mejor_boleto_a(probs, forzados)
+            sistemas.append(("A · 4 dobles completos", cols, dobles))
+        except ValueError:
+            pass
+        try:
+            dobles, cols, _ = mejor_boleto_b(probs, forzados)
+            sistemas.append(("B · reducida de 7 dobles al 13", cols, dobles))
+        except ValueError:
+            pass
+    cols = columnas_mas_probables(probs, k, forzados)
+    sistemas.append((f"C · las {k} columnas más probables", cols, None))
+    # Variantes de C con empates: las columnas menos probables se cambian por las
+    # mejores que llevan alguna X. Entran solo si siguen cumpliendo los vetos.
+    if all("X" not in c for c in cols):
+        orden = [_orden(p) for p in probs]
+        con_x = [c for c in ("".join(SIGNOS[orden[i][x]] for i, x in enumerate(r))
+                             for _, r in _k_mejores(probs, orden, 4000)) if "X" in c]
+        def cumple(lista):
+            return all(len({c[f] for c in lista}) >= 2 for f in forzados)
+
+        for n in (2, 4, 8):
+            if len(con_x) < n:
+                continue
+            variante = list(cols)
+            for nueva in con_x[:n]:
+                # Se quita la menos probable cuya salida no rompa ningún veto.
+                for j in range(len(variante) - 1, -1, -1):
+                    if "X" in variante[j]:
+                        continue
+                    prueba = variante[:j] + variante[j + 1:] + [nueva]
+                    if cumple(prueba):
+                        variante = prueba
+                        break
+            if sum("X" in c for c in variante) == n:
+                sistemas.append((f"C+X · {k} columnas, {n} con empate", variante, None))
+
+    # Red Team: si la columna que más juega el público está en el boleto, se compara
+    # también el boleto sin ella (un 14 con esa columna se reparte entre muchos).
+    if publico and publico in cols:
+        orden = [_orden(p) for p in probs]
+        for _, r in _k_mejores(probs, orden, len(cols) + 200):
+            c = "".join(SIGNOS[orden[i][x]] for i, x in enumerate(r))
+            nueva = [x for x in cols if x != publico] + [c]
+            if c not in cols and c != publico and all(len({x[f] for x in nueva}) >= 2 for f in forzados):
+                sistemas.append((f"C sin la columna del público · {k} columnas", nueva, None))
+                break
+
+    resultado = []
+    for nombre, cols, dobles in sistemas:
+        variables = sum(len({c[i] for c in cols}) > 1 for i in range(len(probs)))
+        simulado = variables > 10
+        dist = simular_columnas(probs, cols) if simulado else evaluar_columnas(probs, cols)
+        resultado.append({"nombre": nombre + (" (P≥13 a P≥10 simuladas)" if simulado else ""), "columnas": cols, "dobles": dobles, "dist": dist,
+                          "p14": al_menos(dist, 14), "p13": al_menos(dist, 13), "p12": al_menos(dist, 12),
+                          "p10": al_menos(dist, 10)})
+    maximo = max(s["p14"] for s in resultado)
+    candidatos = [s for s in resultado if s["p14"] >= 0.9 * maximo]
+    elegido = max(candidatos, key=lambda s: (round(s["p12"], 6), s["p14"]))
+    return resultado, elegido
+
+
 # ------------------------------------------------------------- comprobaciones
 
 def comprobar(datos):
@@ -360,13 +567,35 @@ def cmd_boleto(args):
                       f"  → {signo}{marca}  riesgo {_riesgo(p['p'])}{veto}")
     salida.append(f"Fallos esperados con los 14 signos individuales: {fallos:.2f}")
 
-    dobles_a, cols_a = mejor_boleto_a(probs, forzados)
-    dist_a = evaluar_columnas(probs, cols_a)
-    dobles_b, cols_b, n_cand = mejor_boleto_b(probs, forzados, args.objetivo)
-    dist_b = evaluar_columnas(probs, cols_b)
+    porcentajes = (datos.get("publico") or {}).get("porcentajes") or {}
+    if porcentajes:
+        salida.append("\n## Lo que juega el público (solo informativo: no cambia ningún signo ni el Pleno)")
+        for i, p in enumerate(partidos, 1):
+            lae = (porcentajes.get(str(p.get("n", i))) or {}).get("lae")
+            if not lae:
+                salida.append(f"{i:2d}. {p['partido']:<32} sin porcentajes")
+                continue
+            v = valor_publico(p["p"], lae)
+            marcas = "  ← valor en " + ", ".join(SIGNOS[k] for k in range(3) if v[k] and v[k] > 1.3) if any(x and x > 1.3 for x in v) else ""
+            salida.append(f"{i:2d}. {p['partido']:<32} público {lae[0]:.0f}/{lae[1]:.0f}/{lae[2]:.0f}  valor "
+                          + " ".join(f"{SIGNOS[k]} {v[k]:.2f}" if v[k] else f"{SIGNOS[k]} —" for k in range(3)) + marcas)
 
-    for nombre, cols, dist, dobles in (("Boleto A · 4 dobles completos", cols_a, dist_a, dobles_a),
-                                       ("Boleto B · reducida de 7 dobles al 13", cols_b, dist_b, dobles_b)):
+    boletos, n_cand = [], 0
+    for nombre, construir in (("Boleto A · 4 dobles completos", lambda: mejor_boleto_a(probs, forzados)),
+                              ("Boleto B · reducida de 7 dobles al 13",
+                               lambda: mejor_boleto_b(probs, forzados, args.objetivo))):
+        try:
+            hecho = construir()
+        except ValueError as e:
+            salida.append(f"\n## {nombre}: no disponible ({e})")
+            continue
+        dobles, cols = hecho[0], hecho[1]
+        if len(hecho) == 3:
+            n_cand = hecho[2]
+        dist = evaluar_columnas(probs, cols)
+        boletos.append((nombre, cols, dist, dobles))
+
+    for nombre, cols, dist, dobles in boletos:
         coste = len(cols) * PRECIO_APUESTA
         if coste > presupuesto:
             print(f"ERROR: {nombre} cuesta {coste:.2f} €, más que el presupuesto ({presupuesto} €).")
@@ -382,10 +611,37 @@ def cmd_boleto(args):
         salida += [f"    {n:2d}. {c}" for n, c in enumerate(cols, 1)]
     salida.append(f"\n(Reducida: {n_cand} combinaciones evaluadas; objetivo {args.objetivo}.)")
 
+    # Decisión del usuario (14/11/2026): decide la mesa, no el público. La columna del público
+    # ya no genera candidatos («C sin público»); los % de LAE solo se informan.
+    sistemas, elegido = comparar_sistemas(probs, forzados, presupuesto, None)
+    salida.append(f"\n## Comparación de sistemas ({presupuesto} €)")
+    salida.append(f"  {'Sistema':<36} {'P(14)':>14} {'P(≥13)':>8} {'P(≥12)':>8} {'P(≥10)':>8}")
+    for s in sistemas:
+        marca = "  ← ELEGIDO" if s is elegido else ""
+        salida.append(f"  {s['nombre']:<36} {'1 entre ' + format(round(1 / s['p14']), ',').replace(',', '.'):>14}"
+                      f" {_pct(s['p13']):>8} {_pct(s['p12']):>8} {_pct(s['p10']):>8}{marca}")
+    salida.append("  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).")
+    # Actuario (J21, rescate de «quiniela-mesa»): el valor esperado con premios medios no es válido.
+    # Los premios altos salen justo en las jornadas raras, cuando nuestras columnas aciertan poco;
+    # con la J13 en el registro daba 37,75 € por 12 €, imposible. Solo se informa del retorno medio.
+    salida.append("  Retorno: la Quiniela devuelve de media unos 0,55 € por euro jugado (lo que va a premios).")
+    salida.append("  Ningún sistema lo cambia; el valor solo mejora jugando lo que el público no juega (fase 4).")
+    if forzados:
+        salida.append("  Vetos en el sistema elegido (columnas con un signo distinto del principal):")
+        for f in forzados:
+            principal = SIGNOS[_orden(probs[f])[0]]
+            otras = sum(c[f] != principal for c in elegido["columnas"])
+            salida.append(f"    {f + 1:2d}. {partidos[f]['partido']}: {otras} de {len(elegido['columnas'])}")
+    if elegido["dobles"] is None:
+        salida.append(f"  Columnas del sistema elegido (apuestas sencillas):")
+        salida += [f"    {n:2d}. {c}" for n, c in enumerate(elegido["columnas"], 1)]
+
     pleno = datos.get("pleno")
     if pleno:
         m = matriz_marcadores(pleno["lambda_local"], pleno["lambda_visitante"], pleno.get("factor_x", 1.0))
         p_cat = categorias_pleno(m)
+        if pleno.get("empirica"):
+            p_cat = mezclar(p_cat, pleno["empirica"], pleno.get("mezcla", 0.2))
         p_1x2 = uno_x_dos(m)
         tres = tres_plenos(p_cat, _signo_mas_probable(p_1x2))
         salida.append(f"\n## Pleno al 15 · {pleno['partido']}")
@@ -394,7 +650,7 @@ def cmd_boleto(args):
             salida.append(f"  {tipo:<12} {r}  {_pct(p_cat[r])}")
         p_principal = p_cat[tres["principal"]]
         salida.append("  Se juega solo el principal, el mismo en todas las columnas.")
-        salida.append(f"  P(14 y Pleno) con el boleto B: {_prob(al_menos(dist_b, 14) * p_principal)}")
+        salida.append(f"  P(14 y Pleno) con el sistema elegido: {_prob(elegido['p14'] * p_principal)}")
 
     sueltas = datos.get("sueltas")
     if sueltas:
@@ -473,7 +729,13 @@ def main(argv=None):
     b.add_argument("entrada", help="JSON de la jornada (ver ejemplo-jornada.json)")
     b.add_argument("--objetivo", choices=["p14", "p13", "p12"], default="p14",
                    help="qué maximiza la reducida (por defecto, P(14))")
+    b.add_argument("--premios", help="tabla de premios (por defecto, datos/premios.json)")
     b.set_defaults(funcion=cmd_boleto)
+
+    e = sub.add_parser("empirica", help="distribución empírica del Pleno desde el CSV de partidos")
+    e.add_argument("csv", help="CSV con columnas goles_local y goles_visitante")
+    e.set_defaults(funcion=lambda a: print(json.dumps(
+        {r: round(v, 5) for r, v in empirica_desde_csv(a.csv).items()}, ensure_ascii=False)))
 
     p = sub.add_parser("postmortem", help="log-loss, Brier y calibración de una o varias jornadas")
     p.add_argument("entradas", nargs="+", help="JSON de jornada con 'resultado' (1, X o 2) en cada partido")

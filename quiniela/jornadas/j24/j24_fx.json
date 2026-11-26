@@ -1,0 +1,124 @@
+{
+"fixtures": [
+{
+"n": 1,
+"label": "Arsenal – Dortmund",
+"home": "arsenal",
+"away": "dortmund",
+"dia": "mar 24, 21:00",
+"comp": "Champions"
+},
+{
+"n": 2,
+"label": "Feyenoord – Oporto",
+"home": "feyenoord",
+"away": "porto",
+"dia": "mar 24, 21:00",
+"comp": "Champions"
+},
+{
+"n": 3,
+"label": "Man. City – Nápoles",
+"home": "man city",
+"away": "napoli",
+"dia": "mar 24, 21:00",
+"comp": "Champions"
+},
+{
+"n": 4,
+"label": "Real Madrid – PSV",
+"home": "real madrid",
+"away": "psv",
+"dia": "mar 24, 21:00",
+"comp": "Champions"
+},
+{
+"n": 5,
+"label": "Slovan Bratislava – Betis",
+"home": "slovan bratislava",
+"away": "betis",
+"dia": "mar 24, 21:00",
+"comp": "Champions"
+},
+{
+"n": 6,
+"label": "Sabah – Barcelona",
+"home": "sabah",
+"away": "barcelona",
+"dia": "mié 25, 18:45",
+"comp": "Champions"
+},
+{
+"n": 7,
+"label": "Slavia Praga – Villarreal",
+"home": "slavia praha",
+"away": "villarreal",
+"dia": "mié 25, 18:45",
+"comp": "Champions"
+},
+{
+"n": 8,
+"label": "Brujas – Liverpool",
+"home": "brugge",
+"away": "liverpool",
+"dia": "mié 25, 21:00",
+"comp": "Champions"
+},
+{
+"n": 9,
+"label": "Inter – Stuttgart",
+"home": "inter",
+"away": "stuttgart",
+"dia": "mié 25, 21:00",
+"comp": "Champions"
+},
+{
+"n": 10,
+"label": "PSG – Roma",
+"home": "psg",
+"away": "roma",
+"dia": "mié 25, 21:00",
+"comp": "Champions"
+},
+{
+"n": 11,
+"label": "Shakhtar – Fenerbahçe",
+"home": "shakhtar",
+"away": "fenerbahce",
+"dia": "mié 25, 21:00",
+"comp": "Champions"
+},
+{
+"n": 12,
+"label": "Sporting CP – Man. United",
+"home": "sporting cp",
+"away": "man united",
+"dia": "mié 25, 21:00",
+"comp": "Champions"
+},
+{
+"n": 13,
+"label": "Celta – Bournemouth",
+"home": "celta",
+"away": "bournemouth",
+"dia": "jue 26, 18:45",
+"comp": "Europa League"
+},
+{
+"n": 14,
+"label": "Crystal Palace – Real Sociedad",
+"home": "crystal palace",
+"away": "real sociedad",
+"dia": "jue 26, 21:00",
+"comp": "Europa League"
+},
+{
+"n": 15,
+"label": "Atlético – Viking",
+"home": "atletico",
+"away": "viking",
+"dia": "mié 25, 21:00",
+"comp": "Champions"
+}
+]
+}

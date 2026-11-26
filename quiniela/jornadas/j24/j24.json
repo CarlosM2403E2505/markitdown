@@ -1,0 +1,1457 @@
+{
+ "jornada": 24,
+ "fechas": "24–26/11/2026",
+ "tipo": "Europea (Champions J5 + Europa League)",
+ "estado": "Provisional (lista no oficial: quinielafutbol.info, 21/11, clase C)",
+ "primer_partido": "mar 24/11 21:00",
+ "definitivo": "mar 24/11 18:45",
+ "presupuesto": 18,
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Arsenal – Dortmund",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.6014,
+    0.2232,
+    0.1754
+   ],
+   "xg": [
+    1.796,
+    0.886
+   ],
+   "mk": {
+    "Mas 2.5": 0.5019,
+    "Ambos marcan": 0.49,
+    "Local marca": 0.834,
+    "Visit marca": 0.5875,
+    "Menos 3.5": 0.7181
+   },
+   "n_partidos_datos": [
+    155,
+    106
+   ],
+   "ajuste": [
+    0.94,
+    0.97,
+    "Arsenal sin Raya (portero), Saka y Zubimendi; Dortmund ya sin Guirassy en la lista de bajas (B, Flashscore 24/11)"
+   ],
+   "forma_favorito": 13,
+   "mercado": [
+    0.6505,
+    0.1986,
+    0.1509
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "X",
+   "marcador": "1-1"
+  },
+  {
+   "n": 2,
+   "partido": "Feyenoord – Oporto",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.3122,
+    0.2254,
+    0.4623
+   ],
+   "xg": [
+    1.442,
+    1.778
+   ],
+   "mk": {
+    "Mas 2.5": 0.6242,
+    "Ambos marcan": 0.6345,
+    "Local marca": 0.7636,
+    "Visit marca": 0.8309,
+    "Menos 3.5": 0.5981
+   },
+   "n_partidos_datos": [
+    99,
+    93
+   ],
+   "forma_favorito": 15,
+   "mercado": [
+    0.2951,
+    0.2552,
+    0.4497
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "2",
+   "marcador": "0-1"
+  },
+  {
+   "n": 3,
+   "partido": "Man. City – Nápoles",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.7017,
+    0.1704,
+    0.1278
+   ],
+   "xg": [
+    2.349,
+    0.947
+   ],
+   "mk": {
+    "Mas 2.5": 0.6397,
+    "Ambos marcan": 0.5535,
+    "Local marca": 0.9045,
+    "Visit marca": 0.612,
+    "Menos 3.5": 0.5813
+   },
+   "n_partidos_datos": [
+    111,
+    99
+   ],
+   "ajuste": [
+    1.06,
+    0.95,
+    "Nápoles sin Buongiorno, Di Lorenzo, Meret, Lobotka (B, Flashscore)"
+   ],
+   "forma_favorito": 4,
+   "mercado": [
+    0.7378,
+    0.1511,
+    0.1111
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "tope_mesa": 0.9,
+   "tope_mesa_motivo": "City 70 % pero 4 de 15 puntos en sus 5 últimos de liga (justo encima del corte de mala forma, 70 %): la mesa lo protege como fijo en mala forma (orden de Carlos 24/11)",
+   "resultado": "X",
+   "marcador": "2-2"
+  },
+  {
+   "n": 4,
+   "partido": "Real Madrid – PSV",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.6708,
+    0.1604,
+    0.1688
+   ],
+   "xg": [
+    2.735,
+    1.401
+   ],
+   "mk": {
+    "Mas 2.5": 0.7811,
+    "Ambos marcan": 0.7046,
+    "Local marca": 0.9351,
+    "Visit marca": 0.7536,
+    "Menos 3.5": 0.4075
+   },
+   "n_partidos_datos": [
+    120,
+    105
+   ],
+   "ajuste": [
+    0.97,
+    0.95,
+    "Madrid sin Rodrygo, Mendy, Endrick, Asencio; PSV sin Plea ni Schouten (B, Flashscore)"
+   ],
+   "forma_favorito": 15,
+   "mercado": [
+    0.8322,
+    0.0949,
+    0.073
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "1",
+   "marcador": "5-1"
+  },
+  {
+   "n": 5,
+   "partido": "Slovan Bratislava – Betis",
+   "competicion": "Champions",
+   "dia": "mar 24, 21:00",
+   "p": [
+    0.1124,
+    0.1506,
+    0.737
+   ],
+   "xg": [
+    0.989,
+    2.61
+   ],
+   "mk": {
+    "Mas 2.5": 0.697,
+    "Ambos marcan": 0.5818,
+    "Local marca": 0.6279,
+    "Visit marca": 0.9265,
+    "Menos 3.5": 0.5156
+   },
+   "n_partidos_datos": [
+    71,
+    109
+   ],
+   "forma_favorito": 8,
+   "mercado": [
+    0.1056,
+    0.1462,
+    0.7482
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "2",
+   "marcador": "0-2"
+  },
+  {
+   "n": 6,
+   "partido": "Sabah – Barcelona",
+   "competicion": "Champions",
+   "dia": "mié 25, 18:45",
+   "p": [
+    0.0408,
+    0.0729,
+    0.8862
+   ],
+   "xg": [
+    0.886,
+    3.753
+   ],
+   "mk": {
+    "Mas 2.5": 0.8413,
+    "Ambos marcan": 0.574,
+    "Local marca": 0.5878,
+    "Visit marca": 0.9765,
+    "Menos 3.5": 0.3198
+   },
+   "n_partidos_datos": [
+    58,
+    119
+   ],
+   "ajuste": [
+    1.0,
+    0.95,
+    "Barça sin Lamine Yamal, Rodri y Christensen (B, Flashscore)"
+   ],
+   "forma_favorito": 12,
+   "mercado": [
+    0.0362,
+    0.0784,
+    0.8855
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "2",
+   "marcador": "1-4"
+  },
+  {
+   "n": 7,
+   "partido": "Slavia Praga – Villarreal",
+   "competicion": "Champions",
+   "dia": "mié 25, 18:45",
+   "p": [
+    0.3281,
+    0.2324,
+    0.4395
+   ],
+   "xg": [
+    1.426,
+    1.67
+   ],
+   "mk": {
+    "Mas 2.5": 0.5981,
+    "Ambos marcan": 0.6169,
+    "Local marca": 0.7598,
+    "Visit marca": 0.8118,
+    "Menos 3.5": 0.6256
+   },
+   "n_partidos_datos": [
+    74,
+    101
+   ],
+   "ajuste": [
+    0.98,
+    0.93,
+    "Villarreal sin G. Moreno, Foyth, Akhomach; Slavia sin Chory (B, Flashscore)"
+   ],
+   "forma_favorito": 7,
+   "mercado": [
+    0.3057,
+    0.243,
+    0.4513
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "2",
+   "marcador": "0-1"
+  },
+  {
+   "n": 8,
+   "partido": "Brujas – Liverpool",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.2766,
+    0.2112,
+    0.5122
+   ],
+   "xg": [
+    1.452,
+    1.999
+   ],
+   "mk": {
+    "Mas 2.5": 0.67,
+    "Ambos marcan": 0.6621,
+    "Local marca": 0.7659,
+    "Visit marca": 0.8645,
+    "Menos 3.5": 0.5473
+   },
+   "n_partidos_datos": [
+    95,
+    112
+   ],
+   "ajuste": [
+    0.99,
+    0.95,
+    "Liverpool sin Ekitike, Gravenberch y Bradley; Brujas sin Ordóñez (B, Flashscore 24/11)"
+   ],
+   "forma_favorito": 12,
+   "mercado": [
+    0.2173,
+    0.1981,
+    0.5845
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "2",
+   "marcador": "0-3"
+  },
+  {
+   "n": 9,
+   "partido": "Inter – Stuttgart",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.6281,
+    0.1834,
+    0.1884
+   ],
+   "xg": [
+    2.35,
+    1.27
+   ],
+   "mk": {
+    "Mas 2.5": 0.7007,
+    "Ambos marcan": 0.6505,
+    "Local marca": 0.9046,
+    "Visit marca": 0.7191,
+    "Menos 3.5": 0.511
+   },
+   "n_partidos_datos": [
+    116,
+    90
+   ],
+   "ajuste": [
+    0.96,
+    1.0,
+    "Inter sin Calhanoglu ni Bonny (B, Flashscore 24/11)"
+   ],
+   "forma_favorito": 10,
+   "mercado": [
+    0.6763,
+    0.1722,
+    0.1515
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "1",
+   "marcador": "2-0"
+  },
+  {
+   "n": 10,
+   "partido": "PSG – Roma",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.5438,
+    0.2159,
+    0.2402
+   ],
+   "xg": [
+    1.929,
+    1.244
+   ],
+   "mk": {
+    "Mas 2.5": 0.6145,
+    "Ambos marcan": 0.6084,
+    "Local marca": 0.8547,
+    "Visit marca": 0.7119,
+    "Menos 3.5": 0.6084
+   },
+   "n_partidos_datos": [
+    115,
+    103
+   ],
+   "ajuste": [
+    0.91,
+    0.98,
+    "PSG sin Doué ni Kvaratskhelia (confirmado, B Flashscore 24/11); Roma sin Lo. Pellegrini"
+   ],
+   "forma_favorito": 15,
+   "mercado": [
+    0.6659,
+    0.1991,
+    0.1351
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "X",
+   "marcador": "2-2"
+  },
+  {
+   "n": 11,
+   "partido": "Shakhtar – Fenerbahçe",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.2493,
+    0.2251,
+    0.5256
+   ],
+   "xg": [
+    1.207,
+    1.815
+   ],
+   "mk": {
+    "Mas 2.5": 0.5818,
+    "Ambos marcan": 0.5869,
+    "Local marca": 0.701,
+    "Visit marca": 0.8371,
+    "Menos 3.5": 0.6422
+   },
+   "n_partidos_datos": [
+    61,
+    81
+   ],
+   "ajuste": [
+    0.907,
+    1.102,
+    "Campo neutral: Stamford Bridge (A); bajas repartidas en los dos"
+   ],
+   "forma_favorito": 7,
+   "mercado": [
+    0.3656,
+    0.2716,
+    0.3628
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "2",
+   "marcador": "0-1"
+  },
+  {
+   "n": 12,
+   "partido": "Sporting CP – Man. United",
+   "competicion": "Champions",
+   "dia": "mié 25, 21:00",
+   "p": [
+    0.467,
+    0.2257,
+    0.3073
+   ],
+   "xg": [
+    1.779,
+    1.423
+   ],
+   "mk": {
+    "Mas 2.5": 0.6204,
+    "Ambos marcan": 0.6308,
+    "Local marca": 0.8312,
+    "Visit marca": 0.7589,
+    "Menos 3.5": 0.6022
+   },
+   "n_partidos_datos": [
+    104,
+    105
+   ],
+   "ajuste": [
+    0.98,
+    0.93,
+    "United sin Sesko, Cunha (roja), Ugarte, Baleba; Sporting sin Debast y N. Santos (B, Flashscore 24/11)"
+   ],
+   "forma_favorito": 10,
+   "mercado": [
+    0.3776,
+    0.2622,
+    0.3603
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06",
+   "resultado": "X",
+   "marcador": "2-2"
+  },
+  {
+   "n": 13,
+   "partido": "Celta – Bournemouth",
+   "competicion": "Europa League",
+   "dia": "jue 26, 18:45",
+   "p": [
+    0.2482,
+    0.2432,
+    0.5086
+   ],
+   "xg": [
+    1.075,
+    1.618
+   ],
+   "mk": {
+    "Mas 2.5": 0.5047,
+    "Ambos marcan": 0.5281,
+    "Local marca": 0.6587,
+    "Visit marca": 0.8017,
+    "Menos 3.5": 0.7156
+   },
+   "n_partidos_datos": [
+    93,
+    90
+   ],
+   "ajuste": [
+    0.96,
+    0.97,
+    "Celta sin Borja Iglesias (Giráldez, B: FútbolFantasy/Metropolitano.gal); Bournemouth sin Juanlu, J. Araujo y Tóth (B)"
+   ],
+   "forma_favorito": 15,
+   "mercado": [
+    0.2579,
+    0.265,
+    0.4771
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06"
+  },
+  {
+   "n": 14,
+   "partido": "Crystal Palace – Real Sociedad",
+   "competicion": "Europa League",
+   "dia": "jue 26, 21:00",
+   "p": [
+    0.5387,
+    0.2194,
+    0.2419
+   ],
+   "xg": [
+    1.885,
+    1.222
+   ],
+   "mk": {
+    "Mas 2.5": 0.6004,
+    "Ambos marcan": 0.5983,
+    "Local marca": 0.8481,
+    "Visit marca": 0.7055,
+    "Menos 3.5": 0.6232
+   },
+   "n_partidos_datos": [
+    92,
+    105
+   ],
+   "ajuste": [
+    1.0,
+    0.96,
+    "Real Sociedad sin Barrenetxea, Odriozola y Yangel Herrera; duda Aramburu (B: FútbolFantasy/El Gol Digital)"
+   ],
+   "forma_favorito": 0,
+   "mercado": [
+    0.4719,
+    0.242,
+    0.286
+   ],
+   "mercado_fuente": "bet365.es vía Claude in Chrome de Carlos, mar 24/11 13:06"
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "Atlético – Viking",
+  "competicion": "Champions",
+  "dia": "mié 25, 21:00",
+  "p": [
+   0.7336,
+   0.1431,
+   0.1233
+  ],
+  "xg": [
+   2.855,
+   1.189
+  ],
+  "mk": {
+   "Mas 2.5": 0.7682,
+   "Ambos marcan": 0.6555,
+   "Local marca": 0.9424,
+   "Visit marca": 0.6955,
+   "Menos 3.5": 0.425
+  },
+  "n_partidos_datos": [
+   118,
+   54
+  ],
+  "ajuste": [
+   0.97,
+   1.0,
+   "Atlético sin Lookman, Pubill y C. Romero (B, Flashscore 24/11)"
+  ],
+  "cats": {
+   "0-0": 0.02796,
+   "0-1": 0.03212,
+   "0-2": 0.02,
+   "0-M": 0.01392,
+   "1-0": 0.05958,
+   "1-1": 0.07015,
+   "1-2": 0.04247,
+   "1-M": 0.02394,
+   "2-0": 0.07096,
+   "2-1": 0.08515,
+   "2-2": 0.05105,
+   "2-M": 0.0279,
+   "M-0": 0.1466,
+   "M-1": 0.17105,
+   "M-2": 0.1016,
+   "M-M": 0.05553
+  },
+  "factor_x": 1.0,
+  "lambda_local": 2.855,
+  "lambda_visitante": 1.189,
+  "marcador_mesa": "M-1",
+  "mercado_1x2": [
+   0.8941,
+   0.0782,
+   0.0276
+  ],
+  "mercado_cats": {
+   "M-0": 0.394,
+   "M-1": 0.2029,
+   "2-0": 0.0962,
+   "M-2": 0.0724,
+   "1-0": 0.0555,
+   "2-1": 0.0481,
+   "1-1": 0.0314,
+   "0-0": 0.0249,
+   "2-2": 0.0176,
+   "M-M": 0.0165,
+   "0-1": 0.0141,
+   "1-2": 0.0141,
+   "0-2": 0.0048,
+   "2-M": 0.0048,
+   "1-M": 0.0029
+  },
+  "mercado_pleno": 0.2029,
+  "resultado_pleno": "2-0",
+  "marcador": "2-0"
+ },
+ "sueltas": [
+  {
+   "partido": "Sabah – Barcelona",
+   "apuesta": "Marca el Barcelona",
+   "p": 0.977
+  },
+  {
+   "partido": "Atlético – Viking",
+   "apuesta": "Marca el Atlético",
+   "p": 0.942
+  },
+  {
+   "partido": "Real Madrid – PSV",
+   "apuesta": "Marca el Real Madrid",
+   "p": 0.935
+  },
+  {
+   "partido": "Slovan Bratislava – Betis",
+   "apuesta": "Marca el Betis",
+   "p": 0.926
+  },
+  {
+   "partido": "Inter – Stuttgart",
+   "apuesta": "Marca el Inter",
+   "p": 0.905
+  }
+ ],
+ "datos_modelo": {
+  "fichero": "euro_j24.json",
+  "hasta": "2026-11-22",
+  "huecos": "Ligas extranjeras hasta ~1/11 (Eredivisie y Chequia hasta 20/09); sin liga eslovaca, azerí ni ucraniana 2026/27"
+ },
+ "boleto_provisional": {
+  "tipo": "Directa: 3 doble(s) + 1 triple(s)",
+  "apuestas": 24,
+  "coste": 18.0,
+  "signos": {
+   "1": "1",
+   "2": "1 2",
+   "3": "1",
+   "4": "1",
+   "5": "2",
+   "6": "2",
+   "7": "1 X 2",
+   "8": "1 2",
+   "9": "1",
+   "10": "1",
+   "11": "2",
+   "12": "1 2",
+   "13": "2",
+   "14": "1"
+  },
+  "pleno": "M-1",
+  "p14": 0.004302,
+  "p13": 0.0347
+ },
+ "columnas_individuales": [],
+ "columnas_protegidas": [
+  "12112222121112",
+  "121122221211X2",
+  "121122221XX11X",
+  "12112222112111",
+  "1X112222112121",
+  "12112222112X21",
+  "121122221121X1",
+  "12112222111121"
+ ],
+ "fijos_debiles": [
+  {
+   "n": 10,
+   "fijo": "1",
+   "cubre": [
+    "2",
+    "X"
+   ],
+   "motivo": "P 54 % < 55 %"
+  },
+  {
+   "n": 11,
+   "fijo": "2",
+   "cubre": [
+    "1",
+    "X"
+   ],
+   "motivo": "P 53 % < 55 %"
+  },
+  {
+   "n": 13,
+   "fijo": "2",
+   "cubre": [
+    "1",
+    "X"
+   ],
+   "motivo": "P 51 % < 55 %"
+  },
+  {
+   "n": 14,
+   "fijo": "1",
+   "cubre": [
+    "2",
+    "X"
+   ],
+   "motivo": "P 54 % < 55 %"
+  }
+ ],
+ "conjunto": {
+  "columnas": 32,
+  "coste": 24.0,
+  "p14": 0.005423,
+  "p13": 0.0425,
+  "p12": 0.1549,
+  "p10": 0.6149
+ },
+ "empates": {
+  "x_esperadas": 2.76,
+  "p_ninguna_x": 0.0454,
+  "x_cubiertas_boleto": 1
+ },
+ "publico": {
+  "fuente": "quiniela15.com (LAE), mar 24/11 13:10 vía Claude in Chrome, clase B",
+  "porcentajes": {
+   "1": {
+    "lae": [
+     75,
+     15,
+     10
+    ]
+   },
+   "2": {
+    "lae": [
+     31,
+     29,
+     40
+    ]
+   },
+   "3": {
+    "lae": [
+     81,
+     11,
+     8
+    ]
+   },
+   "4": {
+    "lae": [
+     86,
+     8,
+     6
+    ]
+   },
+   "5": {
+    "lae": [
+     13,
+     18,
+     69
+    ]
+   },
+   "6": {
+    "lae": [
+     8,
+     7,
+     85
+    ]
+   },
+   "7": {
+    "lae": [
+     22,
+     24,
+     54
+    ]
+   },
+   "8": {
+    "lae": [
+     23,
+     21,
+     56
+    ]
+   },
+   "9": {
+    "lae": [
+     76,
+     15,
+     9
+    ]
+   },
+   "10": {
+    "lae": [
+     83,
+     10,
+     7
+    ]
+   },
+   "11": {
+    "lae": [
+     35,
+     32,
+     33
+    ]
+   },
+   "12": {
+    "lae": [
+     46,
+     24,
+     30
+    ]
+   },
+   "13": {
+    "lae": [
+     34,
+     21,
+     45
+    ]
+   },
+   "14": {
+    "lae": [
+     45,
+     26,
+     29
+    ]
+   }
+  },
+  "pleno_goles": {
+   "local": {
+    "0": 3,
+    "1": 10,
+    "2": 28,
+    "M": null
+   },
+   "visitante": {
+    "0": 46,
+    "1": 42,
+    "2": 9,
+    "M": 3
+   }
+  }
+ },
+ "boleto_mesa": {
+  "reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026; R5b casas 24/11)",
+  "probabilidad": "casas en 14 partidos, mesa en el resto",
+  "formato": "Reducida 1 (4 triples) + 39 sencillas optimizadas",
+  "apuestas": 48,
+  "coste": 36.0,
+  "columnas": [
+   "11112212111121",
+   "111122X211XX21",
+   "11112222112221",
+   "1X11221211X221",
+   "1X1122X2112121",
+   "1X112222111X21",
+   "12112212112X21",
+   "121122X2111221",
+   "1211222211X121",
+   "12112222112121",
+   "11112222111111",
+   "12112222111222",
+   "1111222211222X",
+   "1211222X112211",
+   "12112221112XX1",
+   "121122221X1221",
+   "121122X21122X1",
+   "121122X2112122",
+   "1211222211X12X",
+   "1211222211X2X2",
+   "1X112212111122",
+   "22112222112121",
+   "12112212111211",
+   "121122221112XX",
+   "12112211111121",
+   "1211221211X22X",
+   "1X1122221121X2",
+   "1211222X1111X1",
+   "11112222111222",
+   "12112222111X11",
+   "X2112222112121",
+   "1X1122221112X1",
+   "111122X2112211",
+   "121122121XX121",
+   "111122X211X1X1",
+   "1211222X112X22",
+   "1211222211XX22",
+   "1X11222211122X",
+   "111122221X1121",
+   "121122121X2X21",
+   "1X1122221X212X",
+   "111122211X212X",
+   "121122211X2211",
+   "11X12221XX2122",
+   "12212211XXX2XX",
+   "X2X122112X2122",
+   "X2X122X1XX1122",
+   "X1X12211XX2122"
+  ],
+  "pleno": "M-1",
+  "p14": 0.005741,
+  "p13": 0.0712,
+  "p12": 0.2625,
+  "comparativa": [
+   {
+    "formato": "Directa 3 dobles + 1 triple · 24 ap.",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.006523,
+    "p13": 0.04755,
+    "p12": 0.1721,
+    "p10": 0.6255,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.75
+     ],
+     [
+      13,
+      1.0,
+      0.75
+     ],
+     [
+      14,
+      1.0,
+      0.6
+     ]
+    ]
+   },
+   {
+    "formato": "Directa 3 dobles + 1 triple + 24 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.008051,
+    "p13": 0.06635,
+    "p12": 0.23965,
+    "p10": 0.7698,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
+    "formato": "Directa 4 dobles · 16 ap.",
+    "apuestas": 16,
+    "coste": 12.0,
+    "p14": 0.004751,
+    "p13": 0.0367,
+    "p12": 0.14075,
+    "p10": 0.5592,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.75
+     ],
+     [
+      13,
+      1.0,
+      0.75
+     ],
+     [
+      14,
+      1.0,
+      0.6
+     ]
+    ]
+   },
+   {
+    "formato": "Directa 4 dobles + 32 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.007994,
+    "p13": 0.0686,
+    "p12": 0.247,
+    "p10": 0.77915,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
+    "formato": "Directa 1 doble + 2 triples · 18 ap.",
+    "apuestas": 18,
+    "coste": 13.5,
+    "p14": 0.005338,
+    "p13": 0.0424,
+    "p12": 0.1597,
+    "p10": 0.61695,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      2,
+      1.0,
+      0.6
+     ],
+     [
+      3,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.75
+     ],
+     [
+      13,
+      1.0,
+      0.75
+     ],
+     [
+      14,
+      1.0,
+      0.6
+     ]
+    ]
+   },
+   {
+    "formato": "Directa 1 doble + 2 triples + 30 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.0077,
+    "p13": 0.0683,
+    "p12": 0.249,
+    "p10": 0.78835,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
+    "formato": "Reducida 3 (3 dobles + 3 triples) · 24 ap.",
+    "apuestas": 24,
+    "coste": 18.0,
+    "p14": 0.003304,
+    "p13": 0.04635,
+    "p12": 0.19125,
+    "p10": 0.6975,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.75
+     ]
+    ]
+   },
+   {
+    "formato": "Reducida 3 (3 dobles + 3 triples) + 24 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.005469,
+    "p13": 0.07005,
+    "p12": 0.2632,
+    "p10": 0.80365,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
+    "formato": "Reducida 2 (7 dobles) · 16 ap.",
+    "apuestas": 16,
+    "coste": 12.0,
+    "p14": 0.002029,
+    "p13": 0.02995,
+    "p12": 0.1454,
+    "p10": 0.6278,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
+      1.0,
+      0.9
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.75
+     ]
+    ]
+   },
+   {
+    "formato": "Reducida 2 (7 dobles) + 32 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.00609,
+    "p13": 0.06865,
+    "p12": 0.2606,
+    "p10": 0.8001,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
+    "formato": "Reducida 1 (4 triples) · 9 ap.",
+    "apuestas": 9,
+    "coste": 6.75,
+    "p14": 0.001734,
+    "p13": 0.0244,
+    "p12": 0.12315,
+    "p10": 0.60135,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      3,
+      1.0,
+      0.9
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.75
+     ],
+     [
+      13,
+      1.0,
+      0.75
+     ],
+     [
+      14,
+      1.0,
+      0.6
+     ]
+    ]
+   },
+   {
+    "formato": "Reducida 1 (4 triples) + 39 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.005741,
+    "p13": 0.07125,
+    "p12": 0.26245,
+    "p10": 0.80245,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
+    "formato": "48 sencillas optimizadas",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.006075,
+    "p13": 0.069,
+    "p12": 0.2518,
+    "p10": 0.7937,
+    "cumple_R3": true,
+    "incumple": []
+   },
+   {
+    "formato": "48 sencillas más probables",
+    "apuestas": 48,
+    "coste": 36.0,
+    "p14": 0.012605,
+    "p13": 0.0784,
+    "p12": 0.23645,
+    "p10": 0.7025,
+    "cumple_R3": false,
+    "incumple": [
+     [
+      1,
+      1.0,
+      0.9
+     ],
+     [
+      2,
+      0.771,
+      0.6
+     ],
+     [
+      3,
+      1.0,
+      0.9
+     ],
+     [
+      7,
+      0.75,
+      0.6
+     ],
+     [
+      8,
+      1.0,
+      0.75
+     ],
+     [
+      9,
+      1.0,
+      0.9
+     ],
+     [
+      10,
+      1.0,
+      0.75
+     ],
+     [
+      13,
+      0.833,
+      0.75
+     ],
+     [
+      14,
+      0.833,
+      0.6
+     ]
+    ]
+   }
+  ],
+  "nota_reducida": "25/11: columnas de la Reducida 1 corregidas a la tabla oficial (BOE 9/1/2006, norma 21.ª B); antes 6 de 9 no coincidían con lo sellado."
+ },
+ "coste_total_previsto": 30.75,
+ "columnas_jugadas": [
+  "11112212111121",
+  "111122X211XX21",
+  "11112222112221",
+  "1X11221211X221",
+  "1X1122X2112121",
+  "1X112222111X21",
+  "12112212112X21",
+  "121122X2111221",
+  "1211222211X121"
+ ],
+ "boleto_jugado": "Reducida 1 oficial (4 triples)",
+ "jugado_real": {
+  "fuente": "Carlos en el chat (mar 24/11 20:02): «Hice los 4 primeros boletos y la reducida»",
+  "boleto": {
+   "tipo": "Reducida 1 oficial (4 triples)",
+   "signos": {
+    "1": "1",
+    "2": "1 X 2",
+    "3": "1",
+    "4": "1",
+    "5": "2",
+    "6": "2",
+    "7": "1 X 2",
+    "8": "2",
+    "9": "1",
+    "10": "1",
+    "11": "1 X 2",
+    "12": "1 X 2",
+    "13": "2",
+    "14": "1"
+   },
+   "pleno": "M-1",
+   "apuestas": 9,
+   "coste": 6.75,
+   "igual_definitivo": true
+  },
+  "sencillas": [
+   "12112222112121",
+   "X2112222112121",
+   "22112222112121",
+   "121122X2112122",
+   "1211222211X12X",
+   "12112211111121",
+   "1111222211222X",
+   "121122X21122X1",
+   "121122121X2X21",
+   "11112222111111",
+   "1211222X112211",
+   "12112222111222",
+   "121122121XX121",
+   "12112221112XX1",
+   "111122221X1121",
+   "121122221X1221",
+   "111122X2112211",
+   "12112222111X11",
+   "1X1122221121X2",
+   "12112212111211",
+   "1211222211XX22",
+   "1211222X112X22",
+   "1211222X1111X1",
+   "11112222111222",
+   "1X1122221X212X",
+   "1211221211X22X",
+   "1X112212111122",
+   "111122X211X1X1",
+   "1X1122221112X1",
+   "121122211X2211",
+   "1X11222211122X",
+   "121122221112XX"
+  ],
+  "etiquetas": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5",
+   "C6",
+   "C7",
+   "C8",
+   "C9",
+   "C10",
+   "C11",
+   "C12",
+   "C13",
+   "C14",
+   "C15",
+   "C16",
+   "C17",
+   "C18",
+   "C19",
+   "C20",
+   "C21",
+   "C22",
+   "C23",
+   "C24",
+   "C25",
+   "C26",
+   "C27",
+   "C28",
+   "C29",
+   "C30",
+   "C31",
+   "C32"
+  ],
+  "boletos_sencillas": [
+   8,
+   8,
+   8,
+   8
+  ],
+  "no_jugadas": [
+   "1211222211X2X2",
+   "111122211X212X",
+   "11X12221XX2122",
+   "X2X122112X2122",
+   "X1X12211XX2122",
+   "X2X122X1XX1122",
+   "12212211XXX2XX"
+  ],
+  "pleno": "M-1",
+  "coste": 30.75,
+  "diferencias": "Igual al definitivo salvo el boleto 5 de sencillas (C33-C39), que no se jugó. 41 apuestas, 30,75 €: P(≥13) 6,80 % (definitivo 6,95 %), P(14) 1/181 (1/176), con la P de las casas."
+ }
+}

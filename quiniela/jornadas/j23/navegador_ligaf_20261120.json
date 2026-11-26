@@ -1,0 +1,305 @@
+{
+ "jornada": 23,
+ "leido_el": "2026-11-20T00:35",
+ "fuente": "Investigador (usuario con Claude en el navegador), 20/11/2026",
+ "bajas": [
+  [
+   "Eibar F – Atlético F",
+   "Atlético F",
+   "Alexia",
+   "DF",
+   "lesion",
+   "Esguince de tobillo derecho; baja desde el 30-10; sin parte posterior",
+   null,
+   "A",
+   "https://www.atleticodemadrid.com/noticias-primer-equipo-femenino",
+   "2026-10-30"
+  ],
+  [
+   "Eibar F – Atlético F",
+   "Atlético F",
+   "Synne Jensen",
+   "DL",
+   "vuelve",
+   "Recuperada (glúteo medio); titular en J11; 8 goles",
+   true,
+   "A",
+   "https://www.atleticodemadrid.com/noticias/otra-victoria-mas-esta-vez-en-sevilla",
+   "2026-11-15"
+  ],
+  [
+   "Granada F – Real Madrid F",
+   "Real Madrid F",
+   "Misa",
+   "PT",
+   "convocatoria",
+   "No convocada en J11 (porteras Frohms y Laia); motivo no publicado",
+   null,
+   "A",
+   "https://www.realmadrid.com/es-ES/noticias/futbol/primer-equipo-femenino/convocatorias/convocatoria-del-real-madrid-contra-el-badalona-14-11-2026",
+   "2026-11-14"
+  ],
+  [
+   "Real Sociedad F – Sevilla F",
+   "Sevilla F",
+   "Fatou Kanteh",
+   "DL",
+   "vuelve",
+   "Reapareció en J11 tras lesión de isquiotibiales",
+   false,
+   "B",
+   "https://lasfutbolistas.com/cronica-sevilla-fc-1-2-atletico-de-madrid-arranque-rojiblanco-jesus-navas/",
+   "2026-11-15"
+  ],
+  [
+   "Real Sociedad F – Sevilla F",
+   "Real Sociedad F",
+   "Ainhoa Moraza",
+   null,
+   "vuelve",
+   "Titular en J11 tras lesión",
+   true,
+   "B",
+   "https://www.noticiasdegipuzkoa.eus/femenino/2026/11/15/racha-derbi-1-4-11758716.html",
+   "2026-11-15"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Tenerife F",
+   "Pola (Bárbara Martínez)",
+   null,
+   "lesion",
+   "Operada del cruzado; larga duración",
+   null,
+   "B",
+   "https://www.vavel.com/es/futbol/2026/11/14/futbol-femenino/1279254-remontada-del-costa-adeje-en-la-ciutat-esportiva-dani-jarque.html",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Tenerife F",
+   "Érika González",
+   null,
+   "lesion",
+   "Baja en J11; lesionada desde J8",
+   null,
+   "B",
+   "https://www.vavel.com/es/futbol/2026/11/14/futbol-femenino/1279254-remontada-del-costa-adeje-en-la-ciutat-esportiva-dani-jarque.html",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Tenerife F",
+   "Aithiara Carballo",
+   null,
+   "lesion",
+   "Baja en J11; lesionada desde J8",
+   null,
+   "B",
+   "https://www.vavel.com/es/futbol/2026/11/14/futbol-femenino/1279254-remontada-del-costa-adeje-en-la-ciutat-esportiva-dani-jarque.html",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Tenerife F",
+   "Iratxe Pérez",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://www.vavel.com/es/futbol/2026/11/14/futbol-femenino/1279254-remontada-del-costa-adeje-en-la-ciutat-esportiva-dani-jarque.html",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Tenerife F",
+   "Fatou Dembele",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://www.vavel.com/es/futbol/2026/11/14/futbol-femenino/1279254-remontada-del-costa-adeje-en-la-ciutat-esportiva-dani-jarque.html",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Tenerife F",
+   "Koko Ange N'Guessan",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://www.vavel.com/es/futbol/2026/11/14/futbol-femenino/1279254-remontada-del-costa-adeje-en-la-ciutat-esportiva-dani-jarque.html",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Tenerife F",
+   "Marina Martí",
+   null,
+   "vuelve",
+   "Reapareció en el 90' de J11",
+   false,
+   "B",
+   "https://www.vavel.com/es/futbol/2026/11/14/futbol-femenino/1279254-remontada-del-costa-adeje-en-la-ciutat-esportiva-dani-jarque.html",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Madrid CFF",
+   "Mia Asenjo",
+   null,
+   "lesion",
+   "Recuperándose del cruzado",
+   null,
+   "B",
+   "https://lasfutbolistas.com/madrid-cff-logrono-united-horario-donde-ver-previa-jornada-11-liga-f-2026/",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Madrid CFF",
+   "Nicole Stoop",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://lasfutbolistas.com/madrid-cff-logrono-united-horario-donde-ver-previa-jornada-11-liga-f-2026/",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Madrid CFF",
+   "Annelie Leitner",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://lasfutbolistas.com/madrid-cff-logrono-united-horario-donde-ver-previa-jornada-11-liga-f-2026/",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Madrid CFF",
+   "Milagros Martín",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://lasfutbolistas.com/madrid-cff-logrono-united-horario-donde-ver-previa-jornada-11-liga-f-2026/",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Madrid CFF",
+   "Andrea Colomina",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://lasfutbolistas.com/madrid-cff-logrono-united-horario-donde-ver-previa-jornada-11-liga-f-2026/",
+   "2026-11-14"
+  ],
+  [
+   "Tenerife F – Madrid CFF",
+   "Madrid CFF",
+   "Flavine Mawete",
+   null,
+   "duda",
+   "Baja en J11, motivo no detallado",
+   null,
+   "B",
+   "https://lasfutbolistas.com/madrid-cff-logrono-united-horario-donde-ver-previa-jornada-11-liga-f-2026/",
+   "2026-11-14"
+  ]
+ ],
+ "entre_semana": [
+  [
+   "Real Madrid F",
+   "Champions F",
+   "Inter",
+   "3-1 (con rotaciones)",
+   "2026-11-18"
+  ],
+  [
+   "Eibar F",
+   "Copa de la Reina",
+   "Levante (fuera)",
+   "0-1",
+   "2026-11-18"
+  ],
+  [
+   "Madrid CFF",
+   "Copa de la Reina",
+   "CD Argual (La Palma)",
+   "2-0, eliminado (por confirmar)",
+   "2026-11-19"
+  ],
+  [
+   "Real Sociedad F",
+   "Europa Cup",
+   "null (en Turquía)",
+   "victoria, clasificada a cuartos",
+   "2026-11-11"
+  ]
+ ],
+ "lectura_mesa": "Las 'duda' (bajas en J11 sin motivo) son B como dato de la J11, pero para la J12 la mesa las trata como no confirmadas (no mueven precio).",
+ "contexto": [
+  [
+   "Todos",
+   "Acta J11 (RFEF): sin suspensiones, solo amonestaciones",
+   "A",
+   "2026-11-18"
+  ],
+  [
+   "Atlético F",
+   "Previa oficial sin bajas; si gana, 2.º provisional",
+   "A",
+   "2026-11-19"
+  ],
+  [
+   "Granada F",
+   "4 jornadas sin ganar; Laura Sánchez (PT) figura en el 0-0 de Valencia",
+   "B",
+   "2026-11-15"
+  ],
+  [
+   "Real Madrid F",
+   "Ganó al Inter con rotaciones (Laia en portería); doblete de Bruun desde el banquillo",
+   "A",
+   "2026-11-18"
+  ],
+  [
+   "Real Sociedad F",
+   "Calendario cargado y rotaciones; cayó 1-4 en el derbi; máxima goleadora Nerea Eizagirre (4)",
+   "A/B",
+   "2026-11-19"
+  ],
+  [
+   "Sevilla F",
+   "7 jornadas sin ganar; 14.º a 1 punto del descenso",
+   "B",
+   "2026-11-15"
+  ],
+  [
+   "Madrid CFF",
+   "4 puntos en los últimos 5; eliminado de Copa por un equipo de categoría inferior (por confirmar)",
+   "B",
+   "2026-11-15"
+  ],
+  [
+   "Tenerife F",
+   "Remontó 1-3 en el campo del Espanyol; tiene un partido aplazado con el Alavés",
+   "B",
+   "2026-11-14"
+  ]
+ ],
+ "cruce_auditor": "resultados_j11 (8) y clasificación (16) idénticos a datos/ligaf.json"
+}

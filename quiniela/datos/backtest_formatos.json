@@ -1,0 +1,61 @@
+{
+ "bloques": 133,
+ "desde": "2024-09-01",
+ "hasta": "2026-11-15",
+ "formatos": {
+  "18 € directa 3 dobles + 1 triple (formato de Carlos)": {
+   "media_aciertos": 8.56,
+   ">=10": 40,
+   ">=11": 17,
+   ">=12": 3,
+   ">=13": 1,
+   ">=14": 0,
+   "p13_esperada_por_la_mesa": 0.008
+  },
+  "12 € directa 4 dobles": {
+   "media_aciertos": 8.31,
+   ">=10": 31,
+   ">=11": 13,
+   ">=12": 3,
+   ">=13": 1,
+   ">=14": 0,
+   "p13_esperada_por_la_mesa": 0.006
+  },
+  "12 € reducida 7 dobles": {
+   "media_aciertos": 8.74,
+   ">=10": 40,
+   ">=11": 17,
+   ">=12": 4,
+   ">=13": 1,
+   ">=14": 0,
+   "p13_esperada_por_la_mesa": 0.0054
+  },
+  "18 € 24 sencillas más probables": {
+   "media_aciertos": 8.59,
+   ">=10": 39,
+   ">=11": 19,
+   ">=12": 5,
+   ">=13": 1,
+   ">=14": 0,
+   "p13_esperada_por_la_mesa": 0.0084
+  },
+  "18 € 24 sencillas optimizadas SIN tope R3": {
+   "media_aciertos": 9.16,
+   ">=10": 57,
+   ">=11": 22,
+   ">=12": 9,
+   ">=13": 1,
+   ">=14": 0,
+   "p13_esperada_por_la_mesa": 0.0068
+  },
+  "18 € 24 sencillas optimizadas CON tope R3 (reglas_mesa)": {
+   "media_aciertos": 9.27,
+   ">=10": 57,
+   ">=11": 22,
+   ">=12": 8,
+   ">=13": 1,
+   ">=14": 0,
+   "p13_esperada_por_la_mesa": 0.0059
+  }
+ }
+}

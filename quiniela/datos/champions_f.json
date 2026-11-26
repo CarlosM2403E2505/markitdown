@@ -1,0 +1,635 @@
+{
+ "fuente": "en.wikipedia.org, '..._UEFA_Women's_Champions_League_league_phase' (wikitext), descargado 17/11/2026",
+ "partidos": [
+  {
+   "temporada": "2026-27",
+   "local": "Bayern",
+   "visitante": "Manchester City",
+   "goles_local": 2,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Inter Milan",
+   "visitante": "Häcken",
+   "goles_local": 1,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Arsenal",
+   "visitante": "HB Køge",
+   "goles_local": 1,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Real Madrid",
+   "visitante": "Paris Saint-Germain",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Juventus",
+   "visitante": "Benfica",
+   "goles_local": 1,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2026-27",
+   "local": "OH Leuven",
+   "visitante": "Roma",
+   "goles_local": 0,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Servette",
+   "visitante": "Lyon",
+   "goles_local": 0,
+   "goles_visitante": 8
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Barcelona",
+   "visitante": "Paris FC",
+   "goles_local": 5,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Chelsea",
+   "visitante": "Austria Wien",
+   "goles_local": 1,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Roma",
+   "visitante": "Barcelona",
+   "goles_local": 0,
+   "goles_visitante": 6
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Häcken",
+   "visitante": "Juventus",
+   "goles_local": 0,
+   "goles_visitante": 3
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Paris FC",
+   "visitante": "Arsenal",
+   "goles_local": 2,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Lyon",
+   "visitante": "Chelsea",
+   "goles_local": 0,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Benfica",
+   "visitante": "Bayern",
+   "goles_local": 0,
+   "goles_visitante": 3
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Austria Wien",
+   "visitante": "Inter Milan",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "HB Køge",
+   "visitante": "Servette",
+   "goles_local": 5,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Paris Saint-Germain",
+   "visitante": "OH Leuven",
+   "goles_local": 5,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Manchester City",
+   "visitante": "Real Madrid",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Servette",
+   "visitante": "OH Leuven",
+   "goles_local": 5,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Chelsea",
+   "visitante": "Roma",
+   "goles_local": 2,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Bayern",
+   "visitante": "Real Madrid",
+   "goles_local": 2,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Arsenal",
+   "visitante": "Benfica",
+   "goles_local": 3,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Lyon",
+   "visitante": "Inter Milan",
+   "goles_local": 6,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Austria Wien",
+   "visitante": "Juventus",
+   "goles_local": 1,
+   "goles_visitante": 4
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Paris FC",
+   "visitante": "Häcken",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Manchester City",
+   "visitante": "Paris Saint-Germain",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "HB Køge",
+   "visitante": "Barcelona",
+   "goles_local": 0,
+   "goles_visitante": 8
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Real Madrid",
+   "visitante": "Paris FC",
+   "goles_local": 3,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Häcken",
+   "visitante": "Chelsea",
+   "goles_local": 0,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Paris Saint-Germain",
+   "visitante": "Bayern",
+   "goles_local": 1,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Roma",
+   "visitante": "Servette",
+   "goles_local": 2,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Inter Milan",
+   "visitante": "Manchester City",
+   "goles_local": 1,
+   "goles_visitante": 4
+  },
+  {
+   "temporada": "2026-27",
+   "local": "OH Leuven",
+   "visitante": "HB Køge",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Juventus",
+   "visitante": "Lyon",
+   "goles_local": 0,
+   "goles_visitante": 6
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Barcelona",
+   "visitante": "Arsenal",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2026-27",
+   "local": "Benfica",
+   "visitante": "Austria Wien",
+   "goles_local": 3,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Juventus",
+   "visitante": "Benfica",
+   "goles_local": 2,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Arsenal",
+   "visitante": "Lyon",
+   "goles_local": 1,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Barcelona",
+   "visitante": "Bayern",
+   "goles_local": 7,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Paris FC",
+   "visitante": "OH Leuven",
+   "goles_local": 2,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Twente",
+   "visitante": "Chelsea",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Real Madrid",
+   "visitante": "Roma",
+   "goles_local": 6,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "St. Pölten",
+   "visitante": "Atlético Madrid",
+   "goles_local": 0,
+   "goles_visitante": 6
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Manchester United",
+   "visitante": "Vålerenga",
+   "goles_local": 1,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Wolfsburg",
+   "visitante": "Paris Saint-Germain",
+   "goles_local": 4,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Lyon",
+   "visitante": "St. Pölten",
+   "goles_local": 3,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Vålerenga",
+   "visitante": "Wolfsburg",
+   "goles_local": 1,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Chelsea",
+   "visitante": "Paris FC",
+   "goles_local": 4,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Roma",
+   "visitante": "Barcelona",
+   "goles_local": 0,
+   "goles_visitante": 4
+  },
+  {
+   "temporada": "2025-26",
+   "local": "OH Leuven",
+   "visitante": "Twente",
+   "goles_local": 2,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Atlético Madrid",
+   "visitante": "Manchester United",
+   "goles_local": 0,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Bayern",
+   "visitante": "Juventus",
+   "goles_local": 2,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Paris Saint-Germain",
+   "visitante": "Real Madrid",
+   "goles_local": 1,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Benfica",
+   "visitante": "Arsenal",
+   "goles_local": 0,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Roma",
+   "visitante": "Vålerenga",
+   "goles_local": 0,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Lyon",
+   "visitante": "Wolfsburg",
+   "goles_local": 3,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Real Madrid",
+   "visitante": "Paris FC",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "St. Pölten",
+   "visitante": "Chelsea",
+   "goles_local": 0,
+   "goles_visitante": 6
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Barcelona",
+   "visitante": "OH Leuven",
+   "goles_local": 3,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Bayern",
+   "visitante": "Arsenal",
+   "goles_local": 3,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Benfica",
+   "visitante": "Twente",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Manchester United",
+   "visitante": "Paris Saint-Germain",
+   "goles_local": 2,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Atlético Madrid",
+   "visitante": "Juventus",
+   "goles_local": 1,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Wolfsburg",
+   "visitante": "Manchester United",
+   "goles_local": 5,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Juventus",
+   "visitante": "Lyon",
+   "goles_local": 3,
+   "goles_visitante": 3
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Arsenal",
+   "visitante": "Real Madrid",
+   "goles_local": 2,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Vålerenga",
+   "visitante": "St. Pölten",
+   "goles_local": 2,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Paris FC",
+   "visitante": "Benfica",
+   "goles_local": 2,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Twente",
+   "visitante": "Atlético Madrid",
+   "goles_local": 0,
+   "goles_visitante": 4
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Chelsea",
+   "visitante": "Barcelona",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Paris Saint-Germain",
+   "visitante": "Bayern",
+   "goles_local": 1,
+   "goles_visitante": 3
+  },
+  {
+   "temporada": "2025-26",
+   "local": "OH Leuven",
+   "visitante": "Roma",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "St. Pölten",
+   "visitante": "Juventus",
+   "goles_local": 0,
+   "goles_visitante": 5
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Arsenal",
+   "visitante": "Twente",
+   "goles_local": 1,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Paris Saint-Germain",
+   "visitante": "OH Leuven",
+   "goles_local": 0,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Real Madrid",
+   "visitante": "Wolfsburg",
+   "goles_local": 2,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Barcelona",
+   "visitante": "Benfica",
+   "goles_local": 3,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Vålerenga",
+   "visitante": "Paris FC",
+   "goles_local": 0,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Chelsea",
+   "visitante": "Roma",
+   "goles_local": 6,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Manchester United",
+   "visitante": "Lyon",
+   "goles_local": 0,
+   "goles_visitante": 3
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Atlético Madrid",
+   "visitante": "Bayern",
+   "goles_local": 2,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Lyon",
+   "visitante": "Atlético Madrid",
+   "goles_local": 4,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Bayern",
+   "visitante": "Vålerenga",
+   "goles_local": 3,
+   "goles_visitante": 0
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Wolfsburg",
+   "visitante": "Chelsea",
+   "goles_local": 1,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Juventus",
+   "visitante": "Manchester United",
+   "goles_local": 0,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Benfica",
+   "visitante": "Paris Saint-Germain",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Roma",
+   "visitante": "St. Pölten",
+   "goles_local": 6,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Twente",
+   "visitante": "Real Madrid",
+   "goles_local": 1,
+   "goles_visitante": 1
+  },
+  {
+   "temporada": "2025-26",
+   "local": "Paris FC",
+   "visitante": "Barcelona",
+   "goles_local": 0,
+   "goles_visitante": 2
+  },
+  {
+   "temporada": "2025-26",
+   "local": "OH Leuven",
+   "visitante": "Arsenal",
+   "goles_local": 0,
+   "goles_visitante": 3
+  }
+ ]
+}

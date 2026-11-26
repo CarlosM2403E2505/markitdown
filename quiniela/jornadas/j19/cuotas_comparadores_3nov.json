@@ -1,0 +1,10 @@
+{
+ "nota": "Búsqueda web del 2026-11-03. Son comparadores: mejor cuota de cada signo en casas distintas, sin hora de la foto. Calidad baja: solo control. null = no consta.",
+ "consultado": "2026-11-03",
+ "fuentes": ["https://livesportsodds.com/football/europe", "https://www.sportytrader.com/en/odds/"],
+ "partidos": [
+  {"n": 12, "partido": "Real Sociedad – Lyon", "cuota_1": 1.94, "cuota_X": 4.00, "cuota_2": null, "casas": "1: no consta; X: Betway; 2: no consta (el comparador no deja claro a qué signo va 4,03 en Pinnacle)"},
+  {"n": 13, "partido": "Celta – Union SG", "cuota_1": 2.25, "cuota_X": 3.78, "cuota_2": 3.21, "casas": "1: Shangrila; X: 1xbet; 2: 1xbet"},
+  {"n": 14, "partido": "Getafe – Brighton", "cuota_1": 6.25, "cuota_X": 4.00, "cuota_2": 1.66, "casas": "1: bet365; X: Betway; 2: 22bet. Una de las páginas aparece con unos 500 días: puede estar desactualizada"}
+ ]
+}

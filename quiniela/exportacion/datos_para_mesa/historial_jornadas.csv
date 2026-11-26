@@ -1,0 +1,5 @@
+jornada,fechas,tipo,estado,boleto,coste_eur,mejor_columna,sueltas_acertadas,sueltas_jugadas,log_loss_modelo,log_loss_mercado,fuente,fecha_obtencion
+15,,,Cerrada,,,9,,,,,"Prompt maestro v5 del usuario, registro de errores (J15: «Mejor columna: 9»)",2026-11-02
+16,,,Cerrada,Reducida 7 dobles,12,8,4,5,,,"Prompt maestro v5 del usuario, registro de errores (J16: «Mejor columna: 8 de 13. Sueltas: 4/5»), fase 9 e instrucciones permanentes («reducida de 7 dobles al 13 [...] desde la J16»)",2026-11-02
+17,27–29/10,Copa del Rey,No se pronostica,,,,,,,,Instrucciones permanentes del usuario (J17 no se pronostica),2026-11-02
+18,,Doméstica,Cerrada,,,,,,0.897,0.786,"Mesa de claude.ai, paquete quiniela_mesa_j19.zip, README.md («log-loss 0,786 frente a 0,897»; j18_run.py: «Jornada doméstica»)",2026-11-02

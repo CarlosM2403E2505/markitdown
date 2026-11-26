@@ -1,0 +1,6 @@
+jornada,apuesta,partido,probabilidad,resultado,fuente,fecha_obtencion
+19,Liverpool marca,Fenerbahçe – Liverpool,0.908,,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (matriz de marcadores de cada partido),2026-11-02
+19,Real Madrid marca,AEK Atenas – Real Madrid,0.899,,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (matriz de marcadores de cada partido),2026-11-02
+19,Man. City marca,Leipzig – Man. City,0.889,,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (matriz de marcadores de cada partido),2026-11-02
+19,Arsenal marca,Slavia Praga – Arsenal,0.881,,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (matriz de marcadores de cada partido),2026-11-02
+19,Barcelona marca,Barcelona – Aston Villa,0.866,,Calculado en Claude Code con herramientas/quiniela_calc.py sobre el precio de la mesa (matriz de marcadores de cada partido),2026-11-02

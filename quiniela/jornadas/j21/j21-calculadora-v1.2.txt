@@ -1,0 +1,117 @@
+# Jornada 21 · presupuesto 12 €
+Suma de P(X): 3.39
+
+## Los 14 signos
+ 1. Valladolid – Castellón           1  27.8% X  23.3% 2  49.0%  → 2 ⚠️  riesgo Alto
+ 2. Real Sociedad B – Sporting       1  37.1% X  25.1% 2  37.8%  → 2 ⚠️  riesgo Muy alto
+ 3. Almería – Andorra                1  57.8% X  19.9% 2  22.2%  → 1 ⚠️  riesgo Moderado
+ 4. Mallorca – Córdoba               1  64.4% X  20.0% 2  15.7%  → 1 ⚠️  riesgo Moderado
+ 5. Oviedo – Girona                  1  36.5% X  27.6% 2  35.9%  → 1 ⚠️  riesgo Muy alto
+ 6. Tenerife – Ceuta                 1  50.4% X  24.6% 2  24.9%  → 1 ⚠️  riesgo Moderado
+ 7. Granada – Las Palmas             1  41.7% X  25.2% 2  33.1%  → 1 ⚠️  riesgo Alto
+ 8. Eibar – Cádiz                    1  53.9% X  25.1% 2  21.0%  → 1 ⚠️  riesgo Moderado
+ 9. Eldense – Sabadell               1  35.4% X  28.4% 2  36.3%  → 2 ⚠️  riesgo Muy alto
+10. Bélgica – Italia                 1  57.5% X  24.7% 2  17.8%  → 1 ⚠️  riesgo Moderado
+11. Alavés F – Eibar F               1  48.6% X  32.4% 2  19.0%  → 1 ⚠️  riesgo Alto
+12. Real Sociedad F – Athletic F     1  57.7% X  21.1% 2  21.2%  → 1 ⚠️  riesgo Moderado
+13. Sevilla F – Atlético F           1  19.5% X  18.5% 2  62.0%  → 2 ⚠️  riesgo Moderado
+14. Valencia F – Granada F           1  32.9% X  23.4% 2  43.7%  → 2 ⚠️  riesgo Alto
+Fallos esperados con los 14 signos individuales: 7.02
+
+## Boleto A · 4 dobles completos: 16 apuestas, 12.00 €
+  P(≥14) = 0.063% (1 entre 1.583)
+  P(≥13) = 0.697% (1 entre 143)
+  P(≥12) =   3.6%
+  P(≥11) =  11.8%
+  P(≥10) =  27.2%
+  Aciertos esperados de la mejor columna: 8.39
+  Dobles: Real Sociedad B – Sporting (12), Oviedo – Girona (12), Granada – Las Palmas (12), Eldense – Sabadell (12)
+  Columnas:
+     1. 22111111211122
+     2. 22111111111122
+     3. 22111121211122
+     4. 22111121111122
+     5. 22112111211122
+     6. 22112111111122
+     7. 22112121211122
+     8. 22112121111122
+     9. 21111111211122
+    10. 21111111111122
+    11. 21111121211122
+    12. 21111121111122
+    13. 21112111211122
+    14. 21112111111122
+    15. 21112121211122
+    16. 21112121111122
+
+## Boleto B · reducida de 7 dobles al 13: 16 apuestas, 12.00 €
+  P(≥14) = 0.036% (1 entre 2.769)
+  P(≥13) = 0.642% (1 entre 156)
+  P(≥12) =   4.1%
+  P(≥11) =  14.3%
+  P(≥10) =  33.5%
+  Aciertos esperados de la mejor columna: 8.79
+  Dobles: Valladolid – Castellón (12), Real Sociedad B – Sporting (12), Oviedo – Girona (12), Granada – Las Palmas (12), Eldense – Sabadell (12), Alavés F – Eibar F (1X), Valencia F – Granada F (12)
+  Columnas:
+     1. 22111111211122
+     2. 2211112111X121
+     3. 2211211111X122
+     4. 22112121211121
+     5. 21111111111121
+     6. 2111112121X122
+     7. 2111211121X121
+     8. 21112121111122
+     9. 1211111121X121
+    10. 12111121111122
+    11. 12112111111121
+    12. 1211212121X122
+    13. 1111111111X122
+    14. 11111121211121
+    15. 11112111211122
+    16. 1111212111X121
+
+(Reducida: 27456 combinaciones evaluadas; objetivo p14.)
+
+## Comparación de sistemas (12 €)
+  Sistema                                       P(14)   P(≥13)   P(≥12)   P(≥10)
+  A · 4 dobles completos                1 entre 1.583     0.7%     3.6%    27.2%
+  B · reducida de 7 dobles al 13        1 entre 2.769     0.6%     4.1%    33.5%
+  C · las 16 columnas más probables     1 entre 1.577     0.7%     3.7%    28.4%  ← ELEGIDO
+  Criterio: de los sistemas con P(14) ≥ 90 % de la máxima, el de mayor P(≥12).
+  Valor esperado con la media de 1 jornada(s) del registro de premios (informativo; cada columna cobra por separado):
+    A · 4 dobles completos                           9.25 € por 12.00 €
+    B · reducida de 7 dobles al 13                   5.53 € por 12.00 €
+    C · las 16 columnas más probables                9.28 € por 12.00 €
+  Columnas del sistema elegido (apuestas sencillas):
+     1. 22111111211122
+     2. 22112111211122
+     3. 21111111211122
+     4. 22111111111122
+     5. 21112111211122
+     6. 22112111111122
+     7. 21111111111122
+     8. 21112111111122
+     9. 22111121211122
+    10. 22111111X11122
+    11. 22112121211122
+    12. 21111121211122
+    13. 22111121111122
+    14. 22112111X11122
+    15. 21111111X11122
+    16. 21112121211122
+
+## Pleno al 15 · España – Inglaterra
+  1X2 del partido: 1  69.8% · X  20.6% · 2   9.7%
+  principal    1-0   15.5%
+  conservador  1-0   15.5%
+  varianza     M-1    8.6%
+  Se juega solo el principal, el mismo en todas las columnas.
+  P(14 y Pleno) con el sistema elegido: 0.010% (1 entre 10.155)
+
+## Apuestas sueltas
+  Menos de 3,5 goles                        94.1%
+  Almería marca                             88.4%
+  Mallorca marca                            86.9%
+  Castellón marca                           82.1%
+  Atlético F marca                          85.9%
+  Aciertos esperados: 4.37 de 5 · P(todas) =  51.0%

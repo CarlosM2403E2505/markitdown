@@ -1,0 +1,726 @@
+{
+ "jornada": 23,
+ "fechas": "21-22/11/2026",
+ "tipo": "Liga (7 Primera + 3 Segunda + 4 Liga F); Pleno derbi Sevilla–Betis",
+ "cierre": "sábado 21/11 14:00",
+ "estado": "Terminada (domingo 22/11): 14 de 14 resultados + Pleno 1-1",
+ "presupuesto": 20,
+ "lista": "quiniela15.com, 18/11/2026",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Alavés – Deportivo",
+   "competicion": "Primera",
+   "p": [
+    0.5895,
+    0.2317,
+    0.1788
+   ],
+   "xg": [
+    1.771,
+    0.952
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.507,
+    "Ambos marcan": 0.5134,
+    "Menos 3.5": 0.7099,
+    "Local marca": 0.8278,
+    "Visit marca": 0.616
+   },
+   "mercado": [
+    0.432,
+    0.29,
+    0.278
+   ],
+   "resultado": "1",
+   "marcador": "3-1",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
+  },
+  {
+   "n": 2,
+   "partido": "Rayo – Valencia",
+   "competicion": "Primera",
+   "p": [
+    0.5423,
+    0.2553,
+    0.2024
+   ],
+   "xg": [
+    1.58,
+    0.933
+   ],
+   "ajuste": [
+    1.03,
+    0.97
+   ],
+   "bajas": "Valencia sin Gayà (roja), Jesús Vázquez, Danjuma, Otorbi y Diego López",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4545,
+    "Ambos marcan": 0.4856,
+    "Menos 3.5": 0.7556,
+    "Local marca": 0.7917,
+    "Visit marca": 0.6081
+   },
+   "mercado": [
+    0.494,
+    0.271,
+    0.235
+   ],
+   "resultado": "2",
+   "marcador": "0-1",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
+  },
+  {
+   "n": 3,
+   "partido": "Real Madrid – Celta",
+   "competicion": "Primera",
+   "p": [
+    0.7866,
+    0.1375,
+    0.0759
+   ],
+   "xg": [
+    2.576,
+    0.83
+   ],
+   "ajuste": [
+    1.03,
+    0.93
+   ],
+   "bajas": "Celta sin Borja Iglesias (delantero titular) ni El-Abdellaoui; Starfelt y Álvaro Núñez (defensas) fuera",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.6574,
+    "Ambos marcan": 0.5243,
+    "Menos 3.5": 0.5585,
+    "Local marca": 0.9222,
+    "Visit marca": 0.5667
+   },
+   "mercado": [
+    0.8172,
+    0.1219,
+    0.0609
+   ],
+   "resultado": "1",
+   "marcador": "2-1",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
+  },
+  {
+   "n": 4,
+   "partido": "Barcelona – Villarreal",
+   "competicion": "Primera",
+   "p": [
+    0.8424,
+    0.0941,
+    0.0635
+   ],
+   "xg": [
+    3.492,
+    1.168
+   ],
+   "ajuste": [
+    1.0,
+    0.95
+   ],
+   "bajas": "Villarreal sin Gerard Moreno, Akhomach y Foyth",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.841,
+    "Ambos marcan": 0.6701,
+    "Menos 3.5": 0.3174,
+    "Local marca": 0.9691,
+    "Visit marca": 0.6909
+   },
+   "mercado": [
+    0.791,
+    0.129,
+    0.08
+   ],
+   "resultado": "1",
+   "marcador": "3-2",
+   "fuente_resultado": "quiniela15.com (tabla de resultados de la J23), 22/11/2026 18:50"
+  },
+  {
+   "n": 5,
+   "partido": "Racing – Real Sociedad",
+   "competicion": "Primera",
+   "p": [
+    0.2799,
+    0.202,
+    0.5181
+   ],
+   "xg": [
+    1.658,
+    2.193
+   ],
+   "ajuste": [
+    0.95,
+    1.0
+   ],
+   "bajas": "Racing sin Andrés Martín (delantero clave)",
+   "notas": [
+    "EURO_F visitante (real sociedad)"
+   ],
+   "mk": {
+    "Mas 2.5": 0.7356,
+    "Ambos marcan": 0.7219,
+    "Menos 3.5": 0.4635,
+    "Local marca": 0.8108,
+    "Visit marca": 0.8885
+   },
+   "mercado": [
+    0.298,
+    0.23,
+    0.472
+   ],
+   "resultado": "1",
+   "marcador": "3-2",
+   "fuente_resultado": "quiniela15.com (tabla de resultados de la J23), 22/11/2026 18:50"
+  },
+  {
+   "n": 6,
+   "partido": "Osasuna – Málaga",
+   "competicion": "Primera",
+   "p": [
+    0.6401,
+    0.2079,
+    0.1519
+   ],
+   "xg": [
+    1.971,
+    0.949
+   ],
+   "ajuste": [
+    1.02,
+    0.99
+   ],
+   "bajas": "Málaga sin Lobete y Aznou (sancionado); viernes 20/11 tarde: Juan Cruz puede jugar (Funes en rueda de prensa, B)",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5537,
+    "Ambos marcan": 0.5311,
+    "Menos 3.5": 0.6663,
+    "Local marca": 0.8587,
+    "Visit marca": 0.615
+   },
+   "mercado": [
+    0.5225,
+    0.2653,
+    0.2122
+   ],
+   "resultado": "1",
+   "marcador": "1-0",
+   "fuente_resultado": "Flashscore.es, 23/11/2026"
+  },
+  {
+   "n": 7,
+   "partido": "Getafe – Atlético",
+   "competicion": "Primera",
+   "p": [
+    0.2479,
+    0.2934,
+    0.4586
+   ],
+   "xg": [
+    0.919,
+    1.294
+   ],
+   "ajuste": [
+    0.98,
+    0.96
+   ],
+   "bajas": "Getafe sin Gudelj (sancionado), Uche y Juanmi; Atlético sin Lookman (rodilla, con Nigeria) ni Pubill (con España)",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.3757,
+    "Ambos marcan": 0.4401,
+    "Menos 3.5": 0.8175,
+    "Local marca": 0.6013,
+    "Visit marca": 0.7233
+   },
+   "mercado": [
+    0.156,
+    0.243,
+    0.601
+   ],
+   "resultado": "2",
+   "marcador": "0-3",
+   "fuente_resultado": "Flashscore.es, 23/11/2026"
+  },
+  {
+   "n": 8,
+   "partido": "Tenerife – Mallorca",
+   "competicion": "Segunda",
+   "p": [
+    0.2339,
+    0.2615,
+    0.5046
+   ],
+   "xg": [
+    0.924,
+    1.46
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4262,
+    "Ambos marcan": 0.4631,
+    "Menos 3.5": 0.782,
+    "Local marca": 0.6031,
+    "Visit marca": 0.7678
+   },
+   "mercado": [
+    0.28,
+    0.288,
+    0.432
+   ],
+   "resultado": "X",
+   "marcador": "0-0",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
+  },
+  {
+   "n": 9,
+   "partido": "Sporting – Las Palmas",
+   "competicion": "Segunda",
+   "p": [
+    0.4056,
+    0.2628,
+    0.3317
+   ],
+   "xg": [
+    1.35,
+    1.202
+   ],
+   "ajuste": [
+    0.96,
+    0.96
+   ],
+   "bajas": "Sporting sin Otero (sanción J14-15), Casas, Gelabert, Konrad y Corredera (sancionado); Las Palmas sin Opoku (roja), Sandro Ramírez ni Ale García (20/11, B)",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4693,
+    "Ambos marcan": 0.518,
+    "Menos 3.5": 0.7465,
+    "Local marca": 0.7408,
+    "Visit marca": 0.6993
+   },
+   "mercado": [
+    0.4505,
+    0.2707,
+    0.2787
+   ],
+   "resultado": "2",
+   "marcador": "0-2",
+   "fuente_resultado": "quiniela15.com (tabla de resultados de la J23), 22/11/2026 18:50"
+  },
+  {
+   "n": 10,
+   "partido": "Girona – Eibar",
+   "competicion": "Segunda",
+   "p": [
+    0.5059,
+    0.2633,
+    0.2308
+   ],
+   "xg": [
+    1.447,
+    0.905
+   ],
+   "ajuste": [
+    0.98,
+    1.0
+   ],
+   "bajas": "Girona sin Bryan Gil, Jastin García y Álex Moreno (sancionado)",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.4176,
+    "Ambos marcan": 0.4553,
+    "Menos 3.5": 0.7887,
+    "Local marca": 0.7647,
+    "Visit marca": 0.5954
+   },
+   "mercado": [
+    0.526,
+    0.249,
+    0.225
+   ],
+   "resultado": "1",
+   "marcador": "2-1",
+   "fuente_resultado": "Flashscore.es, 23/11/2026"
+  },
+  {
+   "n": 11,
+   "partido": "Eibar F – Atlético F",
+   "competicion": "Liga F",
+   "p": [
+    0.1715,
+    0.2262,
+    0.6022
+   ],
+   "xg": [
+    0.661,
+    1.984
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5025,
+    "Ambos marcan": 0.41,
+    "Menos 3.5": 0.7232,
+    "Local marca": 0.4785,
+    "Visit marca": 0.8693
+   },
+   "mercado": [
+    0.104,
+    0.196,
+    0.7
+   ],
+   "resultado": "2",
+   "marcador": "1-3",
+   "fuente_resultado": "Flashscore.es (navegador del ordenador de Carlos), 22/11/2026 02:00"
+  },
+  {
+   "n": 12,
+   "partido": "Granada F – Real Madrid F",
+   "competicion": "Liga F",
+   "p": [
+    0.1708,
+    0.2181,
+    0.6111
+   ],
+   "xg": [
+    0.708,
+    2.108
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5437,
+    "Ambos marcan": 0.4388,
+    "Menos 3.5": 0.6855,
+    "Local marca": 0.5023,
+    "Visit marca": 0.8842
+   },
+   "mercado": null,
+   "resultado": "2",
+   "marcador": "1-5",
+   "fuente_resultado": "quiniela15.com (tabla de resultados de la J23), 22/11/2026 18:50"
+  },
+  {
+   "n": 13,
+   "partido": "Real Sociedad F – Sevilla F",
+   "competicion": "Liga F",
+   "p": [
+    0.5455,
+    0.2297,
+    0.2248
+   ],
+   "xg": [
+    1.998,
+    0.956
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.5759,
+    "Ambos marcan": 0.525,
+    "Menos 3.5": 0.6554,
+    "Local marca": 0.8681,
+    "Visit marca": 0.6112
+   },
+   "mercado": [
+    0.641,
+    0.205,
+    0.154
+   ],
+   "resultado": "1",
+   "marcador": "1-0",
+   "fuente_resultado": "quiniela15.com (tabla de resultados de la J23), 22/11/2026 18:50"
+  },
+  {
+   "n": 14,
+   "partido": "Tenerife F – Madrid CFF",
+   "competicion": "Liga F",
+   "p": [
+    0.6271,
+    0.2051,
+    0.1678
+   ],
+   "xg": [
+    2.328,
+    0.787
+   ],
+   "ajuste": [
+    1.0,
+    1.0
+   ],
+   "bajas": "",
+   "notas": [],
+   "mk": {
+    "Mas 2.5": 0.611,
+    "Ambos marcan": 0.4852,
+    "Menos 3.5": 0.6184,
+    "Local marca": 0.9068,
+    "Visit marca": 0.5396
+   },
+   "mercado": [
+    0.521,
+    0.255,
+    0.224
+   ],
+   "resultado": "2",
+   "marcador": "0-3",
+   "fuente_resultado": "Carlos (22/11 19:05): perdió el Tenerife F; marcador 0-3 visto al 84′"
+  }
+ ],
+ "pleno": {
+  "n": 15,
+  "partido": "Sevilla – Betis",
+  "competicion": "Primera",
+  "p": [
+   0.3551,
+   0.2419,
+   0.4031
+  ],
+  "lambda_local": 1.498,
+  "lambda_visitante": 1.594,
+  "factor_x": 1.08,
+  "empirica": {
+   "0-0": 0.06975,
+   "0-1": 0.07743,
+   "0-2": 0.05033,
+   "0-M": 0.04239,
+   "1-0": 0.09766,
+   "1-1": 0.11294,
+   "1-2": 0.07072,
+   "1-M": 0.04167,
+   "2-0": 0.06916,
+   "2-1": 0.08659,
+   "2-2": 0.0529,
+   "2-M": 0.02829,
+   "M-0": 0.07118,
+   "M-1": 0.0681,
+   "M-2": 0.04015,
+   "M-M": 0.02073
+  },
+  "mezcla": 0.2,
+  "bajas": "Convocatoria oficial del Betis (20/11, A): Ceballos (MC titular) y Morante fuera (−3 %); vuelven Cucho y Bernal (+1 %). Neto 0,98. Riquelme convocado",
+  "notas": [
+   "EURO_F visitante (betis)"
+  ],
+  "cats": {
+   "0-0": 0.0524,
+   "0-1": 0.0723,
+   "0-2": 0.0554,
+   "0-M": 0.0463,
+   "1-0": 0.0729,
+   "1-1": 0.1145,
+   "1-2": 0.082,
+   "1-M": 0.0649,
+   "2-0": 0.0538,
+   "2-1": 0.0811,
+   "2-2": 0.0655,
+   "2-M": 0.048,
+   "M-0": 0.0446,
+   "M-1": 0.0621,
+   "M-2": 0.0466,
+   "M-M": 0.0376
+  },
+  "pleno_jugado": null,
+  "mercado_1x2": [
+   0.322,
+   0.276,
+   0.402
+  ],
+  "resultado_pleno": "1-1",
+  "fuente_resultado": "Flashscore.es y Soccerway, 22/11/2026",
+  "marcador": "1-1"
+ },
+ "boleto_provisional": {
+  "tipo": "Directa 3 dobles + 1 triple (DEFINITIVA)",
+  "apuestas": 24,
+  "coste": 18.0,
+  "signos": {
+   "1": "1",
+   "2": "1",
+   "3": "1",
+   "4": "1",
+   "5": "1 2",
+   "6": "1",
+   "7": "X 2",
+   "8": "2",
+   "9": "1 X 2",
+   "10": "1 X",
+   "11": "2",
+   "12": "2",
+   "13": "1",
+   "14": "1"
+  },
+  "pleno": "1-1",
+  "p14": 0.003976,
+  "p13": 0.0324
+ },
+ "sueltas": [
+  {
+   "partido": "Barcelona – Villarreal",
+   "apuesta": "Marca el Barcelona",
+   "p": 0.969
+  },
+  {
+   "partido": "Real Madrid – Celta",
+   "apuesta": "Marca el Real Madrid",
+   "p": 0.922
+  },
+  {
+   "partido": "Tenerife F – Madrid CFF",
+   "apuesta": "Marca el Tenerife F",
+   "p": 0.907
+  },
+  {
+   "partido": "Racing – Real Sociedad",
+   "apuesta": "Marca la Real Sociedad",
+   "p": 0.888
+  },
+  {
+   "partido": "Granada F – Real Madrid F",
+   "apuesta": "Marca el Real Madrid F",
+   "p": 0.884
+  }
+ ],
+ "columnas_jugadas": [
+  "111111X2112211",
+  "111111X2X12211",
+  "111111X2212211",
+  "111111X21X2211",
+  "111111X2XX2211",
+  "111111X22X2211",
+  "11111122112211",
+  "11111122X12211",
+  "11111122212211",
+  "111111221X2211",
+  "11111122XX2211",
+  "111111222X2211",
+  "111121X2112211",
+  "111121X2X12211",
+  "111121X2212211",
+  "111121X21X2211",
+  "111121X2XX2211",
+  "111121X22X2211",
+  "11112122112211",
+  "11112122X12211",
+  "11112122212211",
+  "111121221X2211",
+  "11112122XX2211",
+  "111121222X2211"
+ ],
+ "boleto_jugado": "Directa: 3 dobles + 1 triple (sellado)",
+ "coste_jugado": 18,
+ "columnas_individuales": [
+  "11112112112211",
+  "1111212X112211",
+  "1X112122112211",
+  "11112121112211",
+  "11112122122211",
+  "11112112212211",
+  "1111212X212211",
+  "111121221122X1"
+ ],
+ "individuales": "9 sencillas complementarias al boleto de 18 € (C1-C8 en un boleto, C9 en otro); Pleno 1-1 en las 10 apuestas. DEFINITIVA 21/11",
+ "coste_total_previsto": 24.75,
+ "columna_novena": "11112112X12211",
+ "mercado_fuente": "OddsPortal (listados de LaLiga, LaLiga2 y Liga F), leído el 20/11/2026 por la tarde; sin margen (1/cuota normalizada). Solo control: no entra en el modelo.",
+ "conjunto_definitivo": {
+  "columnas": 33,
+  "p14": 0.005692383809523142,
+  "p13": 0.04264,
+  "p12": 0.153254,
+  "p10": 0.59441,
+  "p14_pleno": 0.0006517779461903998
+ },
+ "jugado_real": {
+  "fuente": "Fotos de los boletos sellados que envió Carlos (sábado 21/11): IMG_6961 y IMG_6962",
+  "boleto": {
+   "tipo": "Múltiple",
+   "signos": {
+    "1": "1",
+    "2": "1",
+    "3": "1",
+    "4": "1",
+    "5": "1 2",
+    "6": "1",
+    "7": "X 2",
+    "8": "2",
+    "9": "1 X 2",
+    "10": "1 X",
+    "11": "2",
+    "12": "2",
+    "13": "1",
+    "14": "1"
+   },
+   "pleno": "1-1",
+   "apuestas": 24,
+   "coste": 18.0,
+   "igual_definitivo": true,
+   "combinaciones": "3 dobles · 1 triple"
+  },
+  "sencillas": [
+   "11112112112211",
+   "1111212X112211",
+   "1X112122112211",
+   "11112121112211",
+   "11112122122211",
+   "11112112X12211",
+   "11111212X21211",
+   "XX111X2X112211",
+   "1111X122112211",
+   "2111XX22X22X1X",
+   "1X21X2X2X222X1",
+   "1221112211X122"
+  ],
+  "etiquetas": [
+   "C1",
+   "C2",
+   "C3",
+   "C4",
+   "C5",
+   "C9",
+   "E1",
+   "E2",
+   "E3",
+   "E4",
+   "E5",
+   "E6"
+  ],
+  "boletos_sencillas": [
+   8,
+   4
+  ],
+  "pleno": "1-1",
+  "coste": 27.0,
+  "diferencias": "Iguales al definitivo: boleto de 18 €, C1-C5, C9 y el Pleno 1-1 en todas. No se jugaron C6, C7 ni C8. Se añadieron 6 columnas propias (E1-E6). 36 columnas, 27 €: P(14) 1/188 (definitivo 1/176), P(≥13) 4,07 % (definitivo 4,27 %).",
+  "dudosas": "Boleto 2, columna 6 (C9), partido 8: la cruz cae en el borde de la casilla 2 (coincide con la C9). Boleto 3 con la foto algo desenfocada, todas las casillas legibles."
+ }
+}
