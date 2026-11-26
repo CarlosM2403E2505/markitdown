@@ -138,3 +138,12 @@ Lista: quiniela15.com y eduardolosilla.es (26/11); horarios laliga.com (A). Cier
 | Pendiente viernes/sábado | — | bet365 y % LAE (Chrome), onces y rotaciones (Atlético, Madrid, Barça y Villarreal tras Europa; Getafe juega Conference el jueves), resultados de la J24 europea (Celta, R. Sociedad) |
 
 El formato de la rutina (directa de 18 € + 8 sencillas) quedó retirado por Carlos el 22/11: tope 18 € en total y el boleto lo elige `reglas_mesa.py`.
+
+---
+## Versión 2 (jueves 26/11, 23:45) · lecciones de la J24
+
+| Lección | Resultado | ¿Cambia el boleto? |
+|---|---|---|
+| H2: goles del local en el Pleno | Corregirlos empeora fuera de muestra (1.176 partidos) → no entra | No: Pleno 1-0 |
+| Seguro de favoritos (Betis, Real Sociedad, Granada, Almería) | Ninguna forma cumple R3: el boleto ya los cubre más | No |
+| H3: rotación del favorito | Aviso pedido en el encargo de Chrome (apartado F) | Solo si llega una noticia A/B antes del definitivo |

@@ -1,0 +1,66 @@
+{
+ "n": 1176,
+ "tramos": [
+  {
+   "p_local_gana": "0-45 %",
+   "n": 605,
+   "P3_mesa": 0.148,
+   "P3_real": 0.117,
+   "goles_mesa": 1.31,
+   "goles_real": 1.21
+  },
+  {
+   "p_local_gana": "45-60 %",
+   "n": 422,
+   "P3_mesa": 0.229,
+   "P3_real": 0.209,
+   "goles_mesa": 1.64,
+   "goles_real": 1.58
+  },
+  {
+   "p_local_gana": "60-75 %",
+   "n": 108,
+   "P3_mesa": 0.378,
+   "P3_real": 0.407,
+   "goles_mesa": 2.21,
+   "goles_real": 2.19
+  },
+  {
+   "p_local_gana": "75-100 %",
+   "n": 41,
+   "P3_mesa": 0.561,
+   "P3_real": 0.439,
+   "goles_mesa": 2.97,
+   "goles_real": 2.66
+  }
+ ],
+ "prueba": [
+  {
+   "grupo": "todos",
+   "n_ajuste": 597,
+   "n_prueba": 579,
+   "k": 0.9,
+   "ll_prueba_sin": -1.53648,
+   "ll_prueba_con": -1.54377,
+   "mejora": false
+  },
+  {
+   "grupo": "local < 45 %",
+   "n_ajuste": 298,
+   "n_prueba": 307,
+   "k": 0.86,
+   "ll_prueba_sin": -1.45327,
+   "ll_prueba_con": -1.46286,
+   "mejora": false
+  },
+  {
+   "grupo": "local >= 75 %",
+   "n_ajuste": 26,
+   "n_prueba": 15,
+   "k": 0.8,
+   "ll_prueba_sin": -1.79755,
+   "ll_prueba_con": -1.91756,
+   "mejora": false
+  }
+ ]
+}

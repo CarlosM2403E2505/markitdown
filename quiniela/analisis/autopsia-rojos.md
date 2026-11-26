@@ -122,3 +122,18 @@ Carlos aportó resultado, xG, tarjetas, alineaciones y la crónica de Opta/AFP d
 ### Cierre de la J24 (jueves 26/11)
 
 Resultado final X2X122221X2X21, Pleno 2-0. Celta – Bournemouth (2) y Crystal Palace – Real Sociedad (1) se acertaron: **no hay rojos nuevos**. Shakhtar – Fenerbahçe (2) iba en 17 de las 41 apuestas y en el triple de la reducida, así que no es rojo. Mejor columna: 11 aciertos (2 sencillas). La autopsia de la J24 queda cerrada con 4 empates y el Pleno; la lección de cobertura ya está en el Seguro de favoritos y en la memoria «protección en los primeros boletos».
+
+### H2 probada (jueves 26/11 noche, antes del Pleno de la J25)
+
+`modelo/h2_goles_local.py` (datos en `datos/h2_goles_local.json`): 1.176 partidos de Primera y Segunda predichos fuera de muestra (cortes 1/1/25, 10/8/25, 1/12/25 y 10/8/26, 120 días cada uno).
+
+| Local gana (mesa) | Partidos | P(local ≥ 3) mesa | Real | Goles local mesa | Real |
+|---|---|---|---|---|---|
+| < 45 % | 605 | 14,8 % | 11,7 % | 1,31 | 1,21 |
+| 45-60 % | 422 | 22,9 % | 20,9 % | 1,64 | 1,58 |
+| 60-75 % | 108 | 37,8 % | 40,7 % | 2,21 | 2,19 |
+| ≥ 75 % | 41 | 56,1 % | 43,9 % | 2,97 | 2,66 |
+
+- La mesa da algo más de goles al local (unas 0,1 por partido), y más con el grande muy favorito, pero **un factor corrector ajustado en la primera mitad empeora la segunda** en los tres grupos (todos k=0,90; local < 45 % k=0,86; ≥ 75 % k=0,80, solo 41 casos). **H2 no entra**: el Pleno de la J25 sigue con el marcador más probable (1-0). Se vuelve a probar cuando haya más casos de grande en casa (≥ 75 %).
+- **H3 (rotación del favorito):** no se puede medir aún (3 casos). Se pide el aviso en el encargo de Chrome (apartado F de la J25); solo una noticia A/B antes del definitivo movería el precio.
+- **Seguro de favoritos en la J25:** hay 4 favoritos entre 55 y 75 % (Betis, Real Sociedad, Granada, Almería), pero ninguna de las 15 formas cumple R3: el boleto ya cubre a esos favoritos más que el seguro (Real Sociedad sin el 1 en 10 de 24 columnas; Betis, Granada y Almería con el 2.º signo en 3). No se aplica (`herramientas/seguro_favoritos.py`).

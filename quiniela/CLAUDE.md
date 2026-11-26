@@ -90,7 +90,8 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - Lista confirmada (quiniela15 y eduardolosilla, 26/11): 8 Primera + 6 Segunda, Pleno Espanyol–Getafe (lun 21:00). Horarios laliga.com. Bote 1,1 M€. Definitivo: sáb 11:45.
 - Modelo `modelo/j25_run.py` (patrón J23; bajas en `jornadas/j25/bajas_2611.json`, solo A/B) → `j25.json`; cuotas OddsPortal 26/11 (`cuotas_oddsportal_2611.json`) en `mercado` (R5b). Ojo: correr j25_run.py conserva `mercado` y `publico` de los 14, pero hay que volver a poner el del Pleno y correr `reglas_mesa.py --guardar` (borra boleto_mesa).
 - Boleto (reglas_mesa.py): 24 sencillas optimizadas, 18 €, 3 boletos de 8 en serpentina (cada boleto con protección); Pleno 1-0 (13,4 %, 1-1 13,3 %). P(14) 1/956, P(≥13) 1,50 %. Entrega en `jornadas/j25/j25-pronostico.md`.
-- Pendiente: bet365 y % LAE (Chrome), onces y rotaciones, 8 resultados de la J15 de Segunda en los datos, H2 del Pleno antes del definitivo.
+- 26/11 noche (lecciones J24): H2 probada (`modelo/h2_goles_local.py`): corregir goles del local empeora fuera de muestra → no entra, Pleno 1-0. Seguro de favoritos (`herramientas/seguro_favoritos.py jNN.json --guardar`, correr después de reglas_mesa): en la J25 no aplica porque rompería R3. Encargo J25 con apartado F (aviso de rotación, H3).
+- Pendiente: bet365 y % LAE (Chrome), onces y rotaciones (apartado F), 8 resultados de la J15 de Segunda en los datos.
 
 ## 5b. Estado anterior: J23 (21-22/11/2026) · **QUINIELA DEFINITIVA congelada (sábado 21/11, 09:30)** · cierre sábado 14:00
 - **DEFINITIVA:** boleto de 18 € (1 2 Racing–R.Sociedad, X2 Getafe–Atlético, 1X2 Sporting–Las Palmas, 1X Girona–Eibar) + 9 sencillas (C8 cambia a la X de Real Sociedad F–Sevilla F) + Pleno 1-1 en las 10. 33 columnas, 24,75 €: P(14) 1/175, P(≥13) 4,26 %, P(14+Pleno) 1/1.534. Sección «FINAL» de `j23-pronostico.md`. Siguiente paso: resultados del fin de semana → post-mortem.
