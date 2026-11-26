@@ -479,6 +479,14 @@
    "origen": "Escrutinio (Carlos: «resuelve hasta los partidos terminados»)",
    "aporte": "J24, 12 de 14 jugados: mejor columna 9 aciertos (2 sencillas), ninguna llega a 13. Fallos clave: City 2-2 (1 en las 41), Arsenal 1-1 (1 en 39), PSG 2-2, Sporting 2-2. Pleno Atlético 2-0 Viking: M-1 fallado. Faltan Celta–Bournemouth y Palace–R. Sociedad.",
    "cambia": "No"
+  },
+  {
+   "id": "2026-11-26-autopsia-r8",
+   "fecha": "2026-11-26 09:55",
+   "jornada": 24,
+   "origen": "Hilo «Añadir autopsia de fallos a la mesa»",
+   "aporte": "Regla R8: autopsia de cada rojo por los 12 miembros, con el Periodista deportivo nuevo y prompt de Google. J24: Arsenal, City y Pleno por varianza (el favorito ganó el xG); PSG–Roma y Sporting–United con penaltis y VAR. Ninguna regla cambia; hipótesis H1 (cubrir la X en favoritos de Champions) abierta.",
+   "cambia": "No"
   }
  ]
 }

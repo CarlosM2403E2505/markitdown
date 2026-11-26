@@ -12,6 +12,7 @@ Carlos, 22/11 a las 2:23: «tiene que ser la mesa quien decida», el máximo son
 | R4 Pleno | El marcador más probable de la mesa en todas las apuestas |
 | R5 Probabilidades | Solo las de la mesa (modelo y noticias de clase A o B). Ni las cuotas ni el % del público cambian ninguna probabilidad |
 | R7 Cuánto jugar | 18 € es un tope, no un objetivo. Se juega por bloques de 8 columnas (6, 12 o 18 €) y solo se añade un bloque si su P(≥13) por euro es al menos la mitad de la del primer bloque |
+| R8 Autopsia de rojos (26/11) | Tras cada rojo, cada miembro contesta su pregunta fija y el Periodista deportivo (miembro 12) clasifica el rojo (varianza o causa con etiqueta) en `datos/autopsias.json`. Una etiqueta con 5 casos o más pasa a prueba fuera de muestra y solo entra si mejora. Detalle y prompt de Google en `analisis/autopsia-rojos.md` |
 | R6 Formatos | Se comparan siempre todos: directas, reducidas oficiales, directa o reducida con sencillas, y 24 sencillas optimizadas. Las sencillas optimizadas se buscan para la máxima P(≥13) dentro de los topes de R3 |
 
 ## ¿Sirven los formatos de 12 y 18 €? Prueba con resultados reales

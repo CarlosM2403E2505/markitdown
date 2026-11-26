@@ -35,6 +35,24 @@
    "real": "2-M",
    "acierto": false,
    "nota": "Dinamarca 2-3 Noruega; el 2-M tenía un 3,4 % (puesto 14 de 16)"
+  },
+  {
+   "jornada": 23,
+   "partido": "Sevilla – Betis",
+   "nuestro": "1-1",
+   "p_nuestro": 0.115,
+   "real": "1-1",
+   "acierto": true,
+   "nota": "Acertado; solo cobra con 14 (mejor columna 11)"
+  },
+  {
+   "jornada": 24,
+   "partido": "Atlético – Viking",
+   "nuestro": "M-1",
+   "p_nuestro": 0.171,
+   "real": "2-0",
+   "acierto": false,
+   "nota": "2-0 tenía 7,1 %. Mesa daba al local 3 o más un 47 %; histórico LAE con grande en casa en europeas, 32 % (H2, autopsia R8)"
   }
  ]
 }
