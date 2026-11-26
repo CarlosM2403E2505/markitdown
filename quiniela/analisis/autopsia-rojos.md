@@ -101,3 +101,20 @@ Rojos de lo jugado (Reducida 1 + 32 sencillas): **4 empates y el Pleno**. Fuente
 - **Lo que llevamos:** J19 fallado (0-2), J21 fallado (2-M), J22 fallado (2-M), **J23 acertado (1-1)**, J24 fallado (2-0); J20 sin registrar. Esperábamos unos 0,6 aciertos en 5 (la elección más probable ronda el 11-17 %) y llevamos 1. **No es mala suerte excepcional: el Pleno es difícil por naturaleza.** En el histórico LAE (609 jornadas), el marcador más repetido, 1-1, sale solo el 11,2 % de las veces.
 - **Lo que sí sale medible (hipótesis H2, prioridad):** para Atlético – Viking la mesa daba al Atlético **3 goles o más en el 47 %** de los casos (M-0, M-1, M-2, M-M). En el histórico LAE de europeas con un grande en casa, el local mete 3 o más en el **32 %** (18 de 56). Si la mesa infla los goles del grande en casa, el Pleno se va a «M» cuando lo normal es 1-0, 2-0 o 2-1 (juntos, un 32 % con grande en casa). Se prueba la calibración de P(local ≥ 3) fuera de muestra **antes del Pleno de la J25**; solo cambia si mejora.
 - **Por qué LAE eligió Atlético – Viking como Pleno:** es la pauta de LAE en semanas europeas: mete a los españoles y a los grandes, y pone a un grande en el Pleno en 8 de cada 14 jornadas. (dato de `lae-a-fondo.md`, clase A sobre el histórico; el porqué exacto de esta jornada no consta). Con un grande en casa, el histórico dice 2-1, 1-0 o M-1 por este orden.
+
+### Revisión con Flashscore (Carlos, 26/11 21:46)
+
+Carlos aportó resultado, xG, tarjetas, alineaciones y la crónica de Opta/AFP de los cuatro empates. Cambia lo siguiente:
+
+| Partido | xG Flashscore | Lo nuevo | Clasificación |
+|---|---|---|---|
+| Arsenal – Dortmund | 2,83 a 1,15 | 6 titulares habituales en el banquillo (Eze, Merino, Saliba, Timber, Havertz, Calafiori); palo de Rice; gol del Dortmund anulado. **Raya era baja previa**, no se lesionó en el partido (corrige lo de Sky) | Varianza + `rotacion_favorito` |
+| Man. City – Nápoles | 1,35 a 0,71 | Foden, Doku, Dias, Kovačić y Aït-Nouri suplentes; el Nápoles, con 8 bajas, marcó primero dos veces | Varianza + `rotacion_favorito` |
+| PSG – Roma | **1,73 a 2,65 (más la Roma)** | Dembélé, Marquinhos y Zaire-Emery suplentes; dos penaltis | **Causa: `rival_superior_xg`** (antes `penalti_var`) |
+| Sporting – Man. United | 2,52 a 1,08 | El Sporting, favorito de la mesa, mereció ganar; tres penaltis, dos goles anulados, roja a Tielemans | Varianza (`penalti_var`) |
+
+- **Investigador:** las bajas previas (Raya, Saka, Doué, Kvaratskhelia, Lobotka, Šeško) ya estaban en `bajas_2411.json`: no hubo baja sin ver.
+- **Matemático:** que empaten tres favoritos concretos tiene alrededor del 0,5 %, pero lo que cuenta es que salgan 4 X o más entre los 12, y eso tenía un **18 %**. Jornada dura, no imposible.
+- **Hipótesis H3 (nueva, 3 casos):** favorito de Champions con 4 o más titulares en el banquillo. Solo sirve si hay un aviso de rotación antes del definitivo, porque las alineaciones salen 1 h antes.
+- **H1 (cobertura de la X)** ya la cubre la regla **Seguro de favoritos** (26/11, `analisis/seguro-favoritos.md`).
+- **Diferencias con el informe de Carlos:** la mesa daba al 1 un 60 % (Arsenal), 70 % (City) y 54 % (PSG); el 69/75/69 % se parece más a las casas. El Pleno jugado fue **M-1**, no M-0 (`jugado_real` de la J24).

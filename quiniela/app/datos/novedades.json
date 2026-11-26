@@ -511,6 +511,14 @@
    "origen": "Primer repaso del jueves (rutina)",
    "aporte": "Lista J25 confirmada, modelo j25_run.py con cuotas OddsPortal (R5b) y bajas de jornadaperfecta. Boleto 24 sencillas, 18 €, Pleno 1-0; P(≥13) 1,50 %.",
    "cambia": "Sí"
+  },
+  {
+   "id": "2026-11-26-autopsia-flashscore",
+   "fecha": "2026-11-26 21:55",
+   "jornada": 24,
+   "origen": "Hilo «Añadir autopsia de fallos a la mesa» (datos de Flashscore de Carlos)",
+   "aporte": "Autopsia J24 revisada con Flashscore: Arsenal y City empataron con rotaciones (6 y 5 titulares en el banquillo) y ganando el xG; PSG–Roma, la Roma tuvo más xG (2,65-1,73); Sporting mereció ganar. Nueva hipótesis H3 (rotación del favorito); H1 queda cubierta por el Seguro de favoritos.",
+   "cambia": "No"
   }
  ]
 }
