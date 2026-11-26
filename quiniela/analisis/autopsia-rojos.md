@@ -118,3 +118,7 @@ Carlos aportó resultado, xG, tarjetas, alineaciones y la crónica de Opta/AFP d
 - **Hipótesis H3 (nueva, 3 casos):** favorito de Champions con 4 o más titulares en el banquillo. Solo sirve si hay un aviso de rotación antes del definitivo, porque las alineaciones salen 1 h antes.
 - **H1 (cobertura de la X)** ya la cubre la regla **Seguro de favoritos** (26/11, `analisis/seguro-favoritos.md`).
 - **Diferencias con el informe de Carlos:** la mesa daba al 1 un 60 % (Arsenal), 70 % (City) y 54 % (PSG); el 69/75/69 % se parece más a las casas. El Pleno jugado fue **M-1**, no M-0 (`jugado_real` de la J24).
+
+### Cierre de la J24 (jueves 26/11)
+
+Resultado final X2X122221X2X21, Pleno 2-0. Celta – Bournemouth (2) y Crystal Palace – Real Sociedad (1) se acertaron: **no hay rojos nuevos**. Shakhtar – Fenerbahçe (2) iba en 17 de las 41 apuestas y en el triple de la reducida, así que no es rojo. Mejor columna: 11 aciertos (2 sencillas). La autopsia de la J24 queda cerrada con 4 empates y el Pleno; la lección de cobertura ya está en el Seguro de favoritos y en la memoria «protección en los primeros boletos».
