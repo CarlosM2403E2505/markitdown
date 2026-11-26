@@ -286,8 +286,8 @@
    "balance_LXV": "4-0-2",
    "temporada_pasada": "1-2",
    "entrenador_nuevo": "Espanyol",
-   "carga": "Espanyol: 1 en 14 días, último 20/11 | Getafe: 1 en 14 días, último 22/11",
-   "rotacion": "—"
+   "carga": "Espanyol: 1 en 14 días, último 20/11 | Getafe: 1 en 14 días, último 22/11 · Conference jue 26",
+   "rotacion": "Getafe media (Conference jue 26, juega el lunes)"
   }
  },
  "pendientes": [
@@ -299,7 +299,8 @@
   "% de la plantilla que sigue de la temporada pasada: sin dato (Transfermarkt, navegador integrado); sin histórico para medirlo",
   "Entrenador de la temporada pasada por equipo: solo el estudio (clase C) marca nuevos en Ceuta, Espanyol, Albacete y Osasuna; sin histórico para medirlo",
   "Carga: Copa del Rey y partidos del 23-30/11 sin dato; minutos de los titulares (alineaciones Flashscore, navegador integrado); horarios de la J25 para contar días de descanso",
-  "Rotaciones posibles: falta saber qué titulares clave descansan (minutos, tarjetas al límite, partido grande la semana siguiente); se marca el riesgo por calendario"
+  "Rotaciones posibles: falta saber qué titulares clave descansan (minutos, tarjetas al límite, partido grande la semana siguiente); se marca el riesgo por calendario",
+  "Rotaciones por competición (últimos 10 partidos, cambios en el once tras Europa o Copa) de los 8 equipos europeos y del resto: encargo J25 apartados D y E"
  ],
  "medicion_factores": {
   "fuente": "datos/factores_h2h.json (modelo/factores_h2h.py)",
