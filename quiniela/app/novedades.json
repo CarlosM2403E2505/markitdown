@@ -471,6 +471,14 @@
    "origen": "Hilo Pronósticos por reducida",
    "aporte": "Enfrentamientos (6 años) y mismo partido la temporada pasada de los 15 partidos; medidos frente a las cuotas en 7.673 partidos 2016-26: no mejoran (log-loss −0,0002 a −0,0015), no cambian nada. Nuevo artefacto Pronósticos por reducida y Reducida 1 corregida a la tabla oficial (J24 rehecha).",
    "cambia": "No"
+  },
+  {
+   "id": "j24-escrutinio-12",
+   "fecha": "2026-11-26 03:05",
+   "jornada": 24,
+   "origen": "Escrutinio (Carlos: «resuelve hasta los partidos terminados»)",
+   "aporte": "J24, 12 de 14 jugados: mejor columna 9 aciertos (2 sencillas), ninguna llega a 13. Fallos clave: City 2-2 (1 en las 41), Arsenal 1-1 (1 en 39), PSG 2-2, Sporting 2-2. Pleno Atlético 2-0 Viking: M-1 fallado. Faltan Celta–Bournemouth y Palace–R. Sociedad.",
+   "cambia": "No"
   }
  ]
 }
