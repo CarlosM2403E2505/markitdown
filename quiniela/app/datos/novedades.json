@@ -495,6 +495,14 @@
    "origen": "Carlos (encargo J25)",
    "aporte": "Encargo J25 ampliado: últimos 10 partidos y cambios en el once de los equipos con Europa (Barça, Madrid, Villarreal, Atlético, Betis, Celta, Real Sociedad, Getafe) y últimos 6 del resto, con Copa. Getafe (Conference) añadido al riesgo de rotación. Se mide frente a las casas antes de cambiar signos.",
    "cambia": "No"
+  },
+  {
+   "id": "j25-seguro",
+   "fecha": "2026-11-26 12:00",
+   "jornada": 25,
+   "origen": "Mesa (idea de Carlos)",
+   "aporte": "Seguro de favoritos: 4 sencillas con la X en 2 de los favoritos del 55-75 % y el 1 en otros 2. Probado en J24 (mejor columna 9→10) y J23 (igual), sin bajar la P(≥13). Pasa a regla desde la J25.",
+   "cambia": "Sí"
   }
  ]
 }
