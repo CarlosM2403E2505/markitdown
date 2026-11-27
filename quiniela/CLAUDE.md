@@ -87,6 +87,7 @@ python3 herramientas/app_datos.py && python3 herramientas/exportar.py
 - **Selecciones:** antes de cada jornada se añaden a `datos/selecciones/results.csv` los partidos que falten. La copia de raw.githubusercontent.com puede ir por detrás.
 
 ## 5. Estado: **J25 (28-30/11/2026) · primer repaso hecho (jueves 26/11 tarde)** · cierre sábado 28/11 13:00 (particulares)
+- **Decisiones de Carlos (27/11):** (1) J25 con los **18 € de siempre**; no se aplica la propuesta de jugar menos en las jornadas difíciles. (2) **Pleno = el marcador más probable de la mesa**, también en los empates: se mantiene la regla 12 y el público no desempata.
 - Lista confirmada (quiniela15 y eduardolosilla, 26/11): 8 Primera + 6 Segunda, Pleno Espanyol–Getafe (lun 21:00). Horarios laliga.com. Bote 1,1 M€. Definitivo: sáb 11:45.
 - Modelo `modelo/j25_run.py` (patrón J23; bajas en `jornadas/j25/bajas_2611.json`, solo A/B) → `j25.json`; cuotas OddsPortal 26/11 (`cuotas_oddsportal_2611.json`) en `mercado` (R5b). Ojo: correr j25_run.py conserva `mercado` y `publico` de los 14, pero hay que volver a poner el del Pleno y correr `reglas_mesa.py --guardar` (borra boleto_mesa).
 - Boleto (reglas_mesa.py): 24 sencillas optimizadas, 18 €, 3 boletos de 8 en serpentina (cada boleto con protección); Pleno 1-0 (13,4 %, 1-1 13,3 %). P(14) 1/956, P(≥13) 1,50 %. Entrega en `jornadas/j25/j25-pronostico.md`.
