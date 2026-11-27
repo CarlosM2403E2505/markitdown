@@ -535,6 +535,14 @@
    "origen": "Lecciones de la J24 (hilo J25)",
    "aporte": "H2 probada fuera de muestra: corregir los goles del local no mejora, Pleno sigue 1-0. Seguro de favoritos no aplica (rompería R3; el boleto ya cubre más). Encargo J25 con aviso de rotación (H3).",
    "cambia": "No"
+  },
+  {
+   "id": "j25-firecrawl-2711",
+   "fecha": "2026-11-27 12:00",
+   "jornada": 25,
+   "origen": "Mesa (Firecrawl)",
+   "aporte": "Bajas nuevas B: Atlético sin Sorloth ni Cuti Romero, Alavés sin Benavidez, Celta sin Yoel Lago (y perdió el jueves). Real Sociedad perdió 2-1 en Londres. Cambios de 1-2 puntos, sin cambio de signos; se aplican al correr j25_run.py el sábado. % LAE del viernes guardado.",
+   "cambia": "No"
   }
  ]
 }

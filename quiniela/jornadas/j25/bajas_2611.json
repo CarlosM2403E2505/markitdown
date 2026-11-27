@@ -23,5 +23,29 @@
   "clase": "B",
   "txt": "Espanyol sin Kike García (lesión, delantero) ni Riedel (sancionado) ×0,97; Getafe sin Djené (roja directa, central titular) ×1,03 a favor del Espanyol: neto 1,00 (jornadaperfecta 26/11)"
  },
- "notas_C": "Dudas sin confirmar (no mueven precio): Ceballos, Lo Celso, Morante (Betis); Óscar Valentín (Rayo); Calero (Málaga); Yeray, Sannadi (Athletic); Cuti Romero y Sorloth (Atlético); Starfelt, Borja Iglesias (Celta); Urko (Espanyol); Boselli, Abqar (Getafe). Filas de Real Madrid, Valencia, Villarreal, Real Sociedad y Sevilla leídas solo de resumen (sin verificar)."
+ "notas_C": "Dudas sin confirmar (no mueven precio): Ceballos, Lo Celso, Morante (Betis); Óscar Valentín (Rayo); Calero (Málaga); Yeray, Sannadi (Athletic); Cuti Romero y Sorloth (Atlético); Starfelt, Borja Iglesias (Celta); Urko (Espanyol); Boselli, Abqar (Getafe). Filas de Real Madrid, Valencia, Villarreal, Real Sociedad y Sevilla leídas solo de resumen (sin verificar). | 27/11 (Firecrawl): Real Sociedad perdió 2-1 en Londres el jueves (Palace) sin Odriozola, Barrenetxea ni Yangel Herrera; Aramburu duda (contusión). Betis: Lo Celso y Ceballos dudas. Barcelona: Balde y Christensen dudas. Villarreal: Foyth y Akhomach dudas. Solo avisos.",
+ "3": {
+  "f": [
+   1.02,
+   0.97
+  ],
+  "clase": "B",
+  "txt": "Atlético sin Sorloth (gemelo) ni Cuti Romero: baja confirmada para la J14 (futbolfantasy.com/laliga/lesionados, 27/11)"
+ },
+ "4": {
+  "f": [
+   1.02,
+   1.0
+  ],
+  "clase": "B",
+  "txt": "Alavés sin Benavidez (aductor, baja confirmada); Abqar y Carvajal (Real Madrid) dudas (futbolfantasy 27/11)"
+ },
+ "7": {
+  "f": [
+   1.0,
+   1.03
+  ],
+  "clase": "B",
+  "txt": "Celta sin Yoel Lago (central titular, 1.305 min; comuniate 27/11); Starfelt duda. El Celta perdió 1-2 con el Bournemouth el jueves (futbolfantasy)"
+ }
 }
