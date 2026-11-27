@@ -1,0 +1,403 @@
+{
+ "fecha": "2026-11-27",
+ "fuentes": {
+  "forebet": "forebet.com (Primera y Segunda), leído 27/11 con Firecrawl",
+  "casas": "OddsPortal 26/11 sin margen (ya en j25.json)",
+  "lae": "quiniela15 27/11",
+  "fbref": "fbref.com: forma y goles (sin xG en la tabla)"
+ },
+ "nota": "Solo control (regla 3): no entra en el modelo",
+ "partidos": [
+  {
+   "n": 1,
+   "partido": "Betis – Rayo",
+   "mesa": [
+    63,
+    21,
+    16
+   ],
+   "casas": [
+    61,
+    22,
+    16
+   ],
+   "forebet": [
+    58,
+    27,
+    15
+   ],
+   "lae": [
+    79,
+    14,
+    7
+   ],
+   "signo_mesa": "1",
+   "alertas": []
+  },
+  {
+   "n": 2,
+   "partido": "Málaga – Athletic",
+   "mesa": [
+    28,
+    27,
+    45
+   ],
+   "casas": [
+    20,
+    25,
+    55
+   ],
+   "forebet": [
+    23,
+    35,
+    42
+   ],
+   "lae": [
+    16,
+    25,
+    59
+   ],
+   "signo_mesa": "2",
+   "alertas": []
+  },
+  {
+   "n": 3,
+   "partido": "Elche – Atlético",
+   "mesa": [
+    23,
+    27,
+    50
+   ],
+   "casas": [
+    16,
+    20,
+    64
+   ],
+   "forebet": [
+    14,
+    11,
+    76
+   ],
+   "lae": [
+    8,
+    12,
+    80
+   ],
+   "signo_mesa": "2",
+   "alertas": []
+  },
+  {
+   "n": 4,
+   "partido": "Real Madrid – Alavés",
+   "mesa": [
+    86,
+    9,
+    6
+   ],
+   "casas": [
+    84,
+    10,
+    6
+   ],
+   "forebet": [
+    62,
+    28,
+    11
+   ],
+   "lae": [
+    91,
+    5,
+    4
+   ],
+   "signo_mesa": "1",
+   "alertas": []
+  },
+  {
+   "n": 5,
+   "partido": "Valencia – Osasuna",
+   "mesa": [
+    47,
+    30,
+    24
+   ],
+   "casas": [
+    44,
+    29,
+    27
+   ],
+   "forebet": [
+    37,
+    30,
+    33
+   ],
+   "lae": [
+    53,
+    32,
+    15
+   ],
+   "signo_mesa": "1",
+   "alertas": []
+  },
+  {
+   "n": 6,
+   "partido": "Deportivo – Barcelona",
+   "mesa": [
+    8,
+    10,
+    82
+   ],
+   "casas": [
+    10,
+    13,
+    77
+   ],
+   "forebet": [
+    17,
+    21,
+    62
+   ],
+   "lae": [
+    8,
+    8,
+    84
+   ],
+   "signo_mesa": "2",
+   "alertas": []
+  },
+  {
+   "n": 7,
+   "partido": "Celta – Villarreal",
+   "mesa": [
+    43,
+    28,
+    29
+   ],
+   "casas": [
+    34,
+    27,
+    38
+   ],
+   "forebet": [
+    33,
+    36,
+    31
+   ],
+   "lae": [
+    29,
+    34,
+    37
+   ],
+   "signo_mesa": "1",
+   "alertas": [
+    "Forebet X",
+    "casas 2"
+   ]
+  },
+  {
+   "n": 8,
+   "partido": "Real Sociedad – Sevilla",
+   "mesa": [
+    63,
+    19,
+    18
+   ],
+   "casas": [
+    45,
+    26,
+    29
+   ],
+   "forebet": [
+    36,
+    38,
+    26
+   ],
+   "lae": [
+    52,
+    30,
+    18
+   ],
+   "signo_mesa": "1",
+   "alertas": [
+    "Forebet X"
+   ]
+  },
+  {
+   "n": 9,
+   "partido": "Las Palmas – Andorra",
+   "mesa": [
+    49,
+    24,
+    27
+   ],
+   "casas": [
+    43,
+    27,
+    29
+   ],
+   "forebet": [
+    51,
+    32,
+    17
+   ],
+   "lae": [
+    78,
+    14,
+    8
+   ],
+   "signo_mesa": "1",
+   "alertas": []
+  },
+  {
+   "n": 10,
+   "partido": "Albacete – Tenerife",
+   "mesa": [
+    44,
+    26,
+    29
+   ],
+   "casas": [
+    44,
+    29,
+    27
+   ],
+   "forebet": [
+    22,
+    42,
+    37
+   ],
+   "lae": [
+    38,
+    35,
+    27
+   ],
+   "signo_mesa": "1",
+   "alertas": [
+    "Forebet X"
+   ]
+  },
+  {
+   "n": 11,
+   "partido": "Eibar – Burgos",
+   "mesa": [
+    43,
+    29,
+    28
+   ],
+   "casas": [
+    51,
+    28,
+    21
+   ],
+   "forebet": [
+    35,
+    34,
+    31
+   ],
+   "lae": [
+    51,
+    32,
+    17
+   ],
+   "signo_mesa": "1",
+   "alertas": []
+  },
+  {
+   "n": 12,
+   "partido": "Granada – Ceuta",
+   "mesa": [
+    60,
+    21,
+    19
+   ],
+   "casas": [
+    61,
+    22,
+    17
+   ],
+   "forebet": [
+    70,
+    18,
+    12
+   ],
+   "lae": [
+    85,
+    9,
+    6
+   ],
+   "signo_mesa": "1",
+   "alertas": []
+  },
+  {
+   "n": 13,
+   "partido": "Mallorca – Castellón",
+   "mesa": [
+    50,
+    25,
+    25
+   ],
+   "casas": [
+    42,
+    28,
+    30
+   ],
+   "forebet": [
+    28,
+    30,
+    42
+   ],
+   "lae": [
+    35,
+    32,
+    33
+   ],
+   "signo_mesa": "1",
+   "alertas": [
+    "Forebet 2"
+   ]
+  },
+  {
+   "n": 14,
+   "partido": "Almería – Sporting",
+   "mesa": [
+    56,
+    21,
+    23
+   ],
+   "casas": [
+    57,
+    24,
+    19
+   ],
+   "forebet": [
+    52,
+    25,
+    23
+   ],
+   "lae": [
+    74,
+    16,
+    10
+   ],
+   "signo_mesa": "1",
+   "alertas": []
+  },
+  {
+   "n": 15,
+   "partido": "Espanyol – Getafe",
+   "mesa": [
+    43,
+    34,
+    23
+   ],
+   "casas": null,
+   "forebet": [
+    50,
+    27,
+    23
+   ],
+   "lae": null,
+   "signo_mesa": "1",
+   "alertas": []
+  }
+ ]
+}

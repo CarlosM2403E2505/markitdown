@@ -543,6 +543,14 @@
    "origen": "Mesa (Firecrawl)",
    "aporte": "Bajas nuevas B: Atlético sin Sorloth ni Cuti Romero, Alavés sin Benavidez, Celta sin Yoel Lago (y perdió el jueves). Real Sociedad perdió 2-1 en Londres. Cambios de 1-2 puntos, sin cambio de signos; se aplican al correr j25_run.py el sábado. % LAE del viernes guardado.",
    "cambia": "No"
+  },
+  {
+   "id": "j25-control-2711",
+   "fecha": "2026-11-27 13:30",
+   "jornada": 25,
+   "origen": "Mesa (Firecrawl: Forebet, FBref, OddsPortal, LAE)",
+   "aporte": "Control estadístico: las casas y Forebet contradicen a la mesa en Celta–Villarreal (casas 2, Forebet X), Real Sociedad–Sevilla (mesa 63 % frente a 45 % de las casas) y Mallorca–Castellón (Forebet 2). No cambia signos; son los fijos a proteger el sábado.",
+   "cambia": "No"
   }
  ]
 }

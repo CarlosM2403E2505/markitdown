@@ -147,3 +147,27 @@ El formato de la rutina (directa de 18 € + 8 sencillas) quedó retirado por Ca
 | H2: goles del local en el Pleno | Corregirlos empeora fuera de muestra (1.176 partidos) → no entra | No: Pleno 1-0 |
 | Seguro de favoritos (Betis, Real Sociedad, Granada, Almería) | Ninguna forma cumple R3: el boleto ya los cubre más | No |
 | H3: rotación del favorito | Aviso pedido en el encargo de Chrome (apartado F) | Solo si llega una noticia A/B antes del definitivo |
+
+---
+
+## Control estadístico (viernes 27/11, con Firecrawl) · solo control, no entra en el modelo (regla 3)
+
+Fuentes:
+- **Forebet**: modelo matemático, Primera y Segunda;
+- **casas**: OddsPortal del 26/11, sin margen;
+- **% LAE**: quiniela15 del 27/11;
+- **FBref**: forma y goles; la tabla no da xG.
+
+Datos en `jornadas/j25/control_estadistico_2711.json`. El superordenador de Opta aún no tenía publicada la jornada.
+
+| Nº | Partido | Mesa | Casas | Forebet | LAE | Alerta |
+|---|---|---|---|---|---|---|
+| 7 | Celta – Villarreal | 43/28/29 | 34/27/38 | 33/36/31 | 29/34/37 | ⚠️ **Casas al 2, Forebet a la X.** Además, el Celta perdió el jueves y no tendrá a Yoel Lago |
+| 8 | Real Sociedad – Sevilla | 63/19/18 | 45/26/29 | 36/38/26 | 52/30/18 | ⚠️ **La mesa va 18 puntos por encima de las casas.** La Real perdió el jueves en Londres y tiene 3 bajas |
+| 13 | Mallorca – Castellón | 50/25/25 | 42/28/30 | 28/30/42 | 35/32/33 | ⚠️ Forebet al 2. El Castellón solo ha encajado 5 goles en 14 partidos |
+| 10 | Albacete – Tenerife | 44/26/29 | 44/29/27 | 22/42/37 | 38/35/27 | Forebet a la X |
+| 3 | Elche – Atlético | 23/27/50 | 16/20/64 | 14/11/76 | 8/12/80 | Todos ven al Atlético más favorito que la mesa (el signo coincide) |
+
+Lectura para la revisión del sábado:
+- Ningún signo cambia por estos datos.
+- Pero los partidos 7, 8 y 13 son los fijos más expuestos de la jornada. Deben ir protegidos, con su segundo signo en varias sencillas, según la regla de fijos protegidos con `--mercado 0.08`.
