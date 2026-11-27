@@ -23,7 +23,7 @@
   "clase": "B",
   "txt": "Espanyol sin Kike García (lesión, delantero) ni Riedel (sancionado) ×0,97; Getafe sin Djené (roja directa, central titular) ×1,03 a favor del Espanyol: neto 1,00 (jornadaperfecta 26/11)"
  },
- "notas_C": "Dudas sin confirmar (no mueven precio): Ceballos, Lo Celso, Morante (Betis); Óscar Valentín (Rayo); Calero (Málaga); Yeray, Sannadi (Athletic); Cuti Romero y Sorloth (Atlético); Starfelt, Borja Iglesias (Celta); Urko (Espanyol); Boselli, Abqar (Getafe). Filas de Real Madrid, Valencia, Villarreal, Real Sociedad y Sevilla leídas solo de resumen (sin verificar). | 27/11 (Firecrawl): Real Sociedad perdió 2-1 en Londres el jueves (Palace) sin Odriozola, Barrenetxea ni Yangel Herrera; Aramburu duda (contusión). Betis: Lo Celso y Ceballos dudas. Barcelona: Balde y Christensen dudas. Villarreal: Foyth y Akhomach dudas. Solo avisos.",
+ "notas_C": "Dudas sin confirmar (no mueven precio): Ceballos, Lo Celso, Morante (Betis); Óscar Valentín (Rayo); Calero (Málaga); Yeray, Sannadi (Athletic); Cuti Romero y Sorloth (Atlético); Starfelt, Borja Iglesias (Celta); Urko (Espanyol); Boselli, Abqar (Getafe). Filas de Real Madrid, Valencia, Villarreal, Real Sociedad y Sevilla leídas solo de resumen (sin verificar). | 27/11 (Firecrawl): Real Sociedad perdió 2-1 en Londres el jueves (Palace) sin Odriozola, Barrenetxea ni Yangel Herrera; Aramburu duda (contusión). Betis: Lo Celso y Ceballos dudas. Barcelona: Balde y Christensen dudas. Villarreal: Foyth y Akhomach dudas. Solo avisos. | 27/11 prensa local (Firecrawl): Betis sin Lo Celso (descartado, Estadio Deportivo) y Rayo sin Óscar Valentín (Relevo): se compensan, sin ajuste. Osasuna: Aimar Oroz y Rosier dudas (Superdeporte). Villarreal: Pau Navarro sancionado, Saliba y Diatta fuera, vuelve Gerard Moreno, rotaciones tras la Champions. Almería sin Dzodic, Ely ni Melamed (La Voz de Almería). Mallorca recupera a David López, Cerdà y Alberto Moreno (Diario de Mallorca).",
  "3": {
   "f": [
    1.02,
@@ -47,5 +47,13 @@
   ],
   "clase": "B",
   "txt": "Celta sin Yoel Lago (central titular, 1.305 min; comuniate 27/11); Starfelt duda. El Celta perdió 1-2 con el Bournemouth el jueves (futbolfantasy)"
+ },
+ "12": {
+  "f": [
+   1.0,
+   0.95
+  ],
+  "clase": "B",
+  "txt": "Ceuta sin Jordi Escobar (goleador titular, cruzado; Ideal 26/11) ×0,93; Granada sin Sergio López (titular, al margen; Ideal 27/11) ×1,02 para el Ceuta: neto 0,95"
  }
 }

@@ -551,6 +551,14 @@
    "origen": "Mesa (Firecrawl: Forebet, FBref, OddsPortal, LAE)",
    "aporte": "Control estadístico: las casas y Forebet contradicen a la mesa en Celta–Villarreal (casas 2, Forebet X), Real Sociedad–Sevilla (mesa 63 % frente a 45 % de las casas) y Mallorca–Castellón (Forebet 2). No cambia signos; son los fijos a proteger el sábado.",
    "cambia": "No"
+  },
+  {
+   "id": "j25-prensa-2711",
+   "fecha": "2026-11-27 19:00",
+   "jornada": 25,
+   "origen": "Mesa (prensa nacional y local, Firecrawl)",
+   "aporte": "Novedad que mueve precio: el Ceuta pierde a su goleador Jordi Escobar (cruzado) y el Granada a Sergio López → Ceuta ×0,95. Avisos: Betis sin Lo Celso y Rayo sin Óscar Valentín (se compensan), rotaciones del Villarreal, bajas del Almería, el Mallorca recupera a 3. Sin cambio de signos.",
+   "cambia": "No"
   }
  ]
 }
