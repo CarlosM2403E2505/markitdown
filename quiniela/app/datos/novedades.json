@@ -535,6 +535,38 @@
    "origen": "Lecciones de la J24 (hilo J25)",
    "aporte": "H2 probada fuera de muestra: corregir los goles del local no mejora, Pleno sigue 1-0. Seguro de favoritos no aplica (rompería R3; el boleto ya cubre más). Encargo J25 con aviso de rotación (H3).",
    "cambia": "No"
+  },
+  {
+   "id": "j25-firecrawl-2711",
+   "fecha": "2026-11-27 12:00",
+   "jornada": 25,
+   "origen": "Mesa (Firecrawl)",
+   "aporte": "Bajas nuevas B: Atlético sin Sorloth ni Cuti Romero, Alavés sin Benavidez, Celta sin Yoel Lago (y perdió el jueves). Real Sociedad perdió 2-1 en Londres. Cambios de 1-2 puntos, sin cambio de signos; se aplican al correr j25_run.py el sábado. % LAE del viernes guardado.",
+   "cambia": "No"
+  },
+  {
+   "id": "j25-control-2711",
+   "fecha": "2026-11-27 13:30",
+   "jornada": 25,
+   "origen": "Mesa (Firecrawl: Forebet, FBref, OddsPortal, LAE)",
+   "aporte": "Control estadístico: las casas y Forebet contradicen a la mesa en Celta–Villarreal (casas 2, Forebet X), Real Sociedad–Sevilla (mesa 63 % frente a 45 % de las casas) y Mallorca–Castellón (Forebet 2). No cambia signos; son los fijos a proteger el sábado.",
+   "cambia": "No"
+  },
+  {
+   "id": "j25-prensa-2711",
+   "fecha": "2026-11-27 19:00",
+   "jornada": 25,
+   "origen": "Mesa (prensa nacional y local, Firecrawl)",
+   "aporte": "Novedad que mueve precio: el Ceuta pierde a su goleador Jordi Escobar (cruzado) y el Granada a Sergio López → Ceuta ×0,95. Avisos: Betis sin Lo Celso y Rayo sin Óscar Valentín (se compensan), rotaciones del Villarreal, bajas del Almería, el Mallorca recupera a 3. Sin cambio de signos.",
+   "cambia": "No"
+  },
+  {
+   "id": "j25-decision-2711",
+   "fecha": "2026-11-27 20:00",
+   "jornada": 25,
+   "origen": "Decisión de Carlos",
+   "aporte": "J25 con los 18 € de siempre. El Pleno sigue siendo el marcador más probable de la mesa, también cuando hay empate entre dos resultados (el público no desempata).",
+   "cambia": "No"
   }
  ]
 }

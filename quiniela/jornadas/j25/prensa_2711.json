@@ -1,0 +1,212 @@
+{
+ "fuente": "Firecrawl agent (prensa nacional y local), 27/11/2026, lotes 1 (1-5) y 2 (6-15)",
+ "partidos": {
+  "1": {
+   "Betis": {
+    "bajas": [
+     "Lo Celso (contusión de rodilla, descartado; Estadio Deportivo 27/11)"
+    ],
+    "contexto": [
+     "Jugó en Bratislava (Champions) entre semana; Abde y Ceballos vuelven a entrenar y pueden ir convocados"
+    ]
+   },
+   "Rayo": {
+    "bajas": [
+     "Batalla (fractura)",
+     "Luiz Felipe (cruzado)",
+     "Óscar Valentín (rodilla, titular) — Relevo 26/11"
+    ]
+   }
+  },
+  "2": {
+   "Málaga": {
+    "bajas": [
+     "Lobete",
+     "Ochoa",
+     "Rafita",
+     "Calero (isquios)"
+    ]
+   },
+   "Athletic": {
+    "bajas": [
+     "Vivian (sóleo, titular)",
+     "Guruzeta (cruzado, titular)",
+     "Egiluz",
+     "Sannadi"
+    ]
+   }
+  },
+  "3": {
+   "Elche": {
+    "bajas": [
+     "Marc Aguado",
+     "Lemar",
+     "Ali Houary",
+     "Rubén Sánchez"
+    ]
+   },
+   "Atlético": {
+    "bajas": [
+     "Lookman (rodilla, titular)",
+     "Cuti Romero (muscular, titular)"
+    ]
+   }
+  },
+  "4": {
+   "Real Madrid": {
+    "bajas": [
+     "Asencio",
+     "Rodrygo (cruzado)",
+     "Endrick (aductor)"
+    ]
+   },
+   "Alavés": {
+    "bajas": [
+     "Garcés",
+     "Mikel Rodríguez",
+     "Hugo Novoa (isquios)",
+     "Protesoni (Quique en rueda de prensa)"
+    ]
+   }
+  },
+  "5": {
+   "Osasuna": {
+    "bajas": [
+     "Catena (sanción, titular)"
+    ],
+    "dudas": [
+     "Aimar Oroz (se retiró del entrenamiento)",
+     "Rosier (no entrenó) — Superdeporte 25/11"
+    ]
+   }
+  },
+  "6": {
+   "Deportivo": {
+    "bajas": [
+     "Bright Ede"
+    ]
+   },
+   "Barcelona": {
+    "bajas": [
+     "Fermín (sanción, titular)",
+     "Espart",
+     "Roony"
+    ],
+    "dudas": [
+     "Christensen",
+     "Balde"
+    ]
+   }
+  },
+  "7": {
+   "Celta": {
+    "bajas": [
+     "Yoel Lago (sanción)",
+     "Hugo González",
+     "Miguel Román"
+    ],
+    "dudas": [
+     "Starfelt",
+     "Borja Iglesias"
+    ]
+   },
+   "Villarreal": {
+    "bajas": [
+     "Diatta",
+     "Saliba",
+     "Pau Navarro (sanción)"
+    ],
+    "dudas": [
+     "Foyth",
+     "Akhomach"
+    ],
+    "contexto": [
+     "Varios cambios tras la Champions; vuelve Gerard Moreno"
+    ]
+   }
+  },
+  "8": {
+   "Real Sociedad": {
+    "bajas": [
+     "Odriozola",
+     "Yangel Herrera",
+     "Barrenetxea"
+    ],
+    "dudas": [
+     "Aramburu"
+    ]
+   },
+   "Sevilla": {
+    "bajas": [
+     "Marcão",
+     "Carmona",
+     "Sierra",
+     "Alfon"
+    ]
+   }
+  },
+  "12": {
+   "Granada": {
+    "bajas": [
+     "Sergio López (titular; Ideal 27/11)"
+    ],
+    "dudas": [
+     "Alejandro Marqués"
+    ]
+   },
+   "Ceuta": {
+    "bajas": [
+     "Jordi Escobar (goleador, cruzado; Ideal 26/11)"
+    ]
+   }
+  },
+  "13": {
+   "Mallorca": {
+    "contexto": [
+     "Recupera a David López, Cerdà y Alberto Moreno (Diario de Mallorca 27/11)"
+    ]
+   }
+  },
+  "14": {
+   "Almería": {
+    "bajas": [
+     "Dzodic",
+     "Rodrigo Ely",
+     "Melamed"
+    ],
+    "dudas": [
+     "Jorge Pulido"
+    ]
+   }
+  },
+  "15": {
+   "Espanyol": {
+    "bajas": [
+     "Riedel (sanción)",
+     "Calatrava",
+     "Kike García"
+    ],
+    "dudas": [
+     "Urko"
+    ]
+   },
+   "Getafe": {
+    "bajas": [
+     "Djené (sanción, titular)",
+     "Uche",
+     "Juanmi",
+     "Carvajal"
+    ],
+    "dudas": [
+     "Boselli",
+     "Abqar"
+    ]
+   }
+  }
+ },
+ "sin_datos": [
+  "9 Las Palmas–Andorra",
+  "10 Albacete–Tenerife",
+  "11 Eibar–Burgos"
+ ]
+}
