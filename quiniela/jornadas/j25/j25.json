@@ -204,9 +204,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    79,
-    14,
-    7
+    81,
+    13,
+    6
    ],
    "mercado_oddsportal": [
     0.5995,
@@ -262,9 +262,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    16,
-    25,
-    59
+    15,
+    24,
+    61
    ],
    "mercado_oddsportal": [
     0.1998,
@@ -322,9 +322,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    8,
-    12,
-    80
+    7,
+    11,
+    82
    ],
    "mercado_oddsportal": [
     0.1479,
@@ -382,9 +382,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    91,
-    5,
-    4
+    93,
+    4,
+    3
    ],
    "mercado_oddsportal": [
     0.8483,
@@ -500,9 +500,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    8,
-    8,
-    84
+    6,
+    7,
+    87
    ],
    "mercado_oddsportal": [
     0.0888,
@@ -558,9 +558,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    29,
-    34,
-    37
+    27,
+    33,
+    40
    ],
    "mercado_oddsportal": [
     0.3438,
@@ -676,8 +676,8 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    78,
-    14,
+    79,
+    13,
     8
    ],
    "mercado_oddsportal": [
@@ -734,9 +734,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    38,
+    39,
     35,
-    27
+    26
    ],
    "mercado_oddsportal": [
     0.4505,
@@ -793,8 +793,8 @@
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     51,
-    32,
-    17
+    33,
+    16
    ],
    "mercado_oddsportal": [
     0.5101,
@@ -850,9 +850,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    85,
-    9,
-    6
+    87,
+    8,
+    5
    ],
    "mercado_oddsportal": [
     0.6135,
@@ -961,9 +961,9 @@
    ],
    "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
-    74,
-    16,
-    10
+    76,
+    15,
+    9
    ],
    "mercado_oddsportal": [
     0.5695,
@@ -1039,7 +1039,22 @@
   ],
   "mercado_fuente": "bet365 sáb 28/11 09:57",
   "mercado_pleno": 0.123,
-  "mercado_pleno_fuente": "bet365 resultado correcto 28/11 09:57"
+  "mercado_pleno_fuente": "bet365 resultado correcto 28/11 09:57",
+  "publico_goles": {
+   "local": {
+    "0": 7,
+    "1": 39,
+    "2": 47,
+    "M": null
+   },
+   "visit": {
+    "0": 33,
+    "1": 54,
+    "2": 11,
+    "M": 2
+   },
+   "fuente": "quiniela15 LAE 28/11 10:17"
+  }
  },
  "sueltas": [
   {

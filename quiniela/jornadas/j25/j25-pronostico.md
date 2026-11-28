@@ -215,3 +215,5 @@ Lecturas de bet365 de Carlos con Claude in Chrome a las 09:57 y a las 10:03, id�
 - **Pleno:** 1-0 (mesa 13,4 %). bet365 da 1-0 y 1-1 a 6,00 (12,3 % cada uno sin margen) y 0-0 a 7,00.
 - **Seguro de favoritos:** no aplica.
 - **Bajas de Flashscore** (partidos 1, 2, 3, 9, 10 y 11): coinciden con las ya cargadas. Nuevas sin peso en el precio: Albacete con la duda de San Bartolomé; Tenerife sin Diocou, Manjam ni V. Moreno; Eibar sin García de Albéniz. Onces: salen 1 h antes de cada partido.
+
+**10:17 (Chrome, revisión completa):** cuotas bet365 iguales; % LAE actualizado en `publico` (informativo, §1.12); bajas de los 15 en Flashscore. Novedades: Valencia sin Canós, Foulquier, Diego López ni Vázquez (duda Gayà/G. Rodríguez); Barça además sin Bardghji (duda Bernal); Real Sociedad con Aramburu de baja (duda Astiazaran); Ceuta con dudas Koné y Lapeña; Granada sin Casadesús. Las cuotas de bet365 ya recogen estas bajas y no se mueven: el boleto (R5b) no cambia.
