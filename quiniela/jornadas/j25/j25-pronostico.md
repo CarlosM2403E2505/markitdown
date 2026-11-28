@@ -204,3 +204,14 @@ Cambios desde el jueves: convocatorias oficiales (Betis sin Lo Celso, Ceballos n
 - Sueltas: Marca el Barcelona 95 %, Marca el Real Madrid 95 %, Marca la Real Sociedad 89 %, Marca el Almería 86 %, Marca el Granada 86 %.
 
 **Informe del Auditor (sábado):** datos de Primera hasta el 22/11 y de Segunda hasta el 15/11 más 3 resultados de la J23 (faltan 8 partidos de la J15 de Segunda). Sin convocatorias de Segunda. Divergencias grandes mesa/casas en 8 (Real Sociedad 63 frente a 45), 7, 3 y 13; el boleto usa las casas y los cubre. Nadie garantiza el pleno al 15.
+
+---
+## Versión 4 · bet365 (sábado 28/11, 10:15 peninsular)
+
+Lecturas de bet365 de Carlos con Claude in Chrome a las 09:57 y a las 10:03, idénticas. Datos en `cuotas_bet365_20261128.json` y en el histórico (momento «definitiva»). Ahora `mercado` = bet365 sin margen; OddsPortal queda en `mercado_oddsportal`.
+
+- **Signos base:** ninguno cambia. Mayor movimiento: Mallorca–Castellón, el 2 sube del 30 al 31 % (el 1 sigue favorito, 40 %).
+- **Boleto (R2):** pasa a **24 sencillas optimizadas, 3 boletos de 8** (en serpentina por la P de las casas; cada boleto lleva el 2.º signo de todos los partidos con favorito por debajo del 70 %). Motivo: P(≥13) 1,60 % frente a 1,64 % de Reducida 1 + 15 (empate al redondear a 3 decimales); desempata P(14): 1/927 frente a 1/1.070. 18 €.
+- **Pleno:** 1-0 (mesa 13,4 %). bet365 da 1-0 y 1-1 a 6,00 (12,3 % cada uno sin margen) y 0-0 a 7,00.
+- **Seguro de favoritos:** no aplica.
+- **Bajas de Flashscore** (partidos 1, 2, 3, 9, 10 y 11): coinciden con las ya cargadas. Nuevas sin peso en el precio: Albacete con la duda de San Bartolomé; Tenerife sin Diocou, Manjam ni V. Moreno; Eibar sin García de Albéniz. Onces: salen 1 h antes de cada partido.

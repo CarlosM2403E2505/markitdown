@@ -146,7 +146,7 @@
  "primer_partido": "sáb 28/11 14:00",
  "definitivo": "sáb 28/11 11:45",
  "bote": "1.100.000 € (quiniela15 y eduardolosilla, 26/11)",
- "estado": "Revisión del sábado 28/11 (convocatorias)",
+ "estado": "Sábado 28/11 10:15: bet365 (Chrome) en R5b → 24 sencillas optimizadas (3 boletos de 8), Pleno 1-0",
  "presupuesto": 18,
  "lista": "quiniela15.com y eduardolosilla.es, 26/11/2026; horarios laliga.com (A)",
  "datos_modelo": {
@@ -198,15 +198,20 @@
     0.2
    ],
    "mercado": [
-    0.5995,
-    0.2207,
-    0.1798
+    0.5932,
+    0.226,
+    0.1808
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     79,
     14,
     7
+   ],
+   "mercado_oddsportal": [
+    0.5995,
+    0.2207,
+    0.1798
    ]
   },
   {
@@ -251,15 +256,20 @@
     0.53
    ],
    "mercado": [
-    0.1998,
-    0.2491,
-    0.5511
+    0.1989,
+    0.2519,
+    0.5492
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     16,
     25,
     59
+   ],
+   "mercado_oddsportal": [
+    0.1998,
+    0.2491,
+    0.5511
    ]
   },
   {
@@ -306,15 +316,20 @@
     0.6114
    ],
    "mercado": [
-    0.1479,
-    0.2024,
-    0.6497
+    0.146,
+    0.1997,
+    0.6543
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     8,
     12,
     80
+   ],
+   "mercado_oddsportal": [
+    0.1479,
+    0.2024,
+    0.6497
    ]
   },
   {
@@ -361,15 +376,20 @@
     0.1
    ],
    "mercado": [
-    0.8483,
-    0.0975,
-    0.0542
+    0.8427,
+    0.0944,
+    0.0629
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     91,
     5,
     4
+   ],
+   "mercado_oddsportal": [
+    0.8483,
+    0.0975,
+    0.0542
    ]
   },
   {
@@ -414,15 +434,20 @@
     0.29
    ],
    "mercado": [
-    0.4402,
-    0.298,
-    0.2618
+    0.4407,
+    0.2961,
+    0.2632
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     53,
     32,
     15
+   ],
+   "mercado_oddsportal": [
+    0.4402,
+    0.298,
+    0.2618
    ]
   },
   {
@@ -469,15 +494,20 @@
     0.71
    ],
    "mercado": [
-    0.0888,
-    0.1302,
-    0.7811
+    0.086,
+    0.1261,
+    0.788
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     8,
     8,
     84
+   ],
+   "mercado_oddsportal": [
+    0.0888,
+    0.1302,
+    0.7811
    ]
   },
   {
@@ -522,15 +552,20 @@
     0.401
    ],
    "mercado": [
-    0.3438,
-    0.2712,
-    0.385
+    0.3397,
+    0.2798,
+    0.3805
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     29,
     34,
     37
+   ],
+   "mercado_oddsportal": [
+    0.3438,
+    0.2712,
+    0.385
    ]
   },
   {
@@ -577,15 +612,20 @@
     0.2823
    ],
    "mercado": [
-    0.4479,
-    0.2603,
-    0.2918
+    0.4485,
+    0.2616,
+    0.2898
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     52,
     30,
     18
+   ],
+   "mercado_oddsportal": [
+    0.4479,
+    0.2603,
+    0.2918
    ]
   },
   {
@@ -630,15 +670,20 @@
     0.21
    ],
    "mercado": [
-    0.4277,
-    0.2688,
-    0.3035
+    0.4432,
+    0.2659,
+    0.2909
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     78,
     14,
     8
+   ],
+   "mercado_oddsportal": [
+    0.4277,
+    0.2688,
+    0.3035
    ]
   },
   {
@@ -683,15 +728,20 @@
     0.27
    ],
    "mercado": [
-    0.4505,
+    0.4545,
     0.2867,
-    0.2628
+    0.2588
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     38,
     35,
     27
+   ],
+   "mercado_oddsportal": [
+    0.4505,
+    0.2867,
+    0.2628
    ]
   },
   {
@@ -736,15 +786,20 @@
     0.26
    ],
    "mercado": [
-    0.5101,
-    0.2791,
-    0.2108
+    0.5142,
+    0.2767,
+    0.2091
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     51,
     32,
     17
+   ],
+   "mercado_oddsportal": [
+    0.5101,
+    0.2791,
+    0.2108
    ]
   },
   {
@@ -789,15 +844,20 @@
     0.13
    ],
    "mercado": [
-    0.6135,
-    0.2211,
-    0.1654
+    0.5994,
+    0.2295,
+    0.1711
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     85,
     9,
     6
+   ],
+   "mercado_oddsportal": [
+    0.6135,
+    0.2211,
+    0.1654
    ]
   },
   {
@@ -837,15 +897,20 @@
     "rotacion": "—"
    },
    "mercado": [
-    0.414,
-    0.2885,
-    0.2975
+    0.4007,
+    0.2854,
+    0.3139
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     35,
     32,
     33
+   ],
+   "mercado_oddsportal": [
+    0.414,
+    0.2885,
+    0.2975
    ]
   },
   {
@@ -890,15 +955,20 @@
     0.18
    ],
    "mercado": [
-    0.5695,
-    0.2392,
-    0.1913
+    0.5653,
+    0.247,
+    0.1877
    ],
-   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
+   "mercado_fuente": "bet365 sáb 28/11 09:57 (Chrome)",
    "publico": [
     74,
     16,
     10
+   ],
+   "mercado_oddsportal": [
+    0.5695,
+    0.2392,
+    0.1913
    ]
   }
  ],
@@ -963,11 +1033,13 @@
    ]
   },
   "mercado": [
-   0.4585,
-   0.3009,
-   0.2407
+   0.4727,
+   0.2909,
+   0.2364
   ],
-  "mercado_fuente": "OddsPortal sáb 28/11 ~09:15"
+  "mercado_fuente": "bet365 sáb 28/11 09:57",
+  "mercado_pleno": 0.123,
+  "mercado_pleno_fuente": "bet365 resultado correcto 28/11 09:57"
  },
  "sueltas": [
   {
@@ -1003,48 +1075,48 @@
  "boleto_mesa": {
   "reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026; R5b casas 24/11)",
   "probabilidad": "casas en 14 partidos, mesa en el resto",
-  "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
+  "formato": "24 sencillas optimizadas",
   "apuestas": 24,
   "coste": 18.0,
   "columnas": [
-   "12211211111111",
-   "122112X1X111X1",
-   "12211221211121",
-   "1221X211X11121",
-   "1221X2X1211111",
-   "1221X2211111X1",
-   "122122112111X1",
-   "122122X1111121",
-   "12212221X11111",
-   "12211221111111",
-   "122112211211X1",
-   "122112111X1111",
-   "1X211222XXX111",
-   "1X211222122112",
-   "1XX1X22X12X112",
-   "XXX112221XXX11",
+   "122112111111X1",
    "1221X221111111",
    "122112X1112111",
+   "12211221X11111",
+   "122112211X1111",
+   "1221X211111111",
+   "122122211111X1",
+   "12211221X11121",
+   "1221121X111121",
+   "122112221X1111",
+   "X2211221111111",
+   "122112111211X1",
+   "12211212X11111",
    "1X21122X111111",
-   "1X21121211X1X1",
-   "1XX112222XX111",
-   "1X1112221X21X1",
-   "21X1X2222XXX11",
-   "XXX1X2122X2X22"
+   "1221X21111111X",
+   "1X21122111X1X1",
+   "1X211221X22111",
+   "1121121111X111",
+   "1XX12222XXX121",
+   "11X1X22X2XX121",
+   "1XX1222X22X1X1",
+   "1XX1X22X2XXX11",
+   "XXX1X21XXXXX12",
+   "X1X1221XXXXX2X"
   ],
   "pleno": "1-0",
-  "p14": 0.001101,
-  "p13": 0.0158,
-  "p12": 0.0823,
+  "p14": 0.001079,
+  "p13": 0.016,
+  "p12": 0.0783,
   "comparativa": [
    {
     "formato": "Directa 3 dobles + 1 triple · 24 ap.",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.002012,
-    "p13": 0.0183,
-    "p12": 0.08155,
-    "p10": 0.4445,
+    "p14": 0.001958,
+    "p13": 0.0177,
+    "p12": 0.0808,
+    "p10": 0.44005,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1093,10 +1165,10 @@
     "formato": "Directa 4 dobles · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.001431,
-    "p13": 0.01415,
-    "p12": 0.0618,
-    "p10": 0.382,
+    "p14": 0.001399,
+    "p13": 0.0137,
+    "p12": 0.0621,
+    "p10": 0.37945,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1145,10 +1217,10 @@
     "formato": "Directa 4 dobles + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001452,
-    "p13": 0.0146,
-    "p12": 0.0675,
-    "p10": 0.4483,
+    "p14": 0.001428,
+    "p13": 0.01425,
+    "p12": 0.06865,
+    "p10": 0.44065,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1177,10 +1249,10 @@
     "formato": "Directa 1 doble + 2 triples · 18 ap.",
     "apuestas": 18,
     "coste": 13.5,
-    "p14": 0.001646,
-    "p13": 0.0162,
-    "p12": 0.07425,
-    "p10": 0.43245,
+    "p14": 0.001642,
+    "p13": 0.01575,
+    "p12": 0.0756,
+    "p10": 0.43185,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1199,12 +1271,12 @@
       0.75
      ],
      [
-      5,
+      8,
       1.0,
       0.6
      ],
      [
-      8,
+      9,
       1.0,
       0.6
      ],
@@ -1234,10 +1306,10 @@
     "formato": "Directa 1 doble + 2 triples + 6 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001652,
-    "p13": 0.0163,
-    "p12": 0.07615,
-    "p10": 0.47135,
+    "p14": 0.001647,
+    "p13": 0.0159,
+    "p12": 0.0778,
+    "p10": 0.47375,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1246,12 +1318,12 @@
       0.6
      ],
      [
-      5,
+      8,
       0.75,
       0.6
      ],
      [
-      8,
+      9,
       0.75,
       0.6
      ],
@@ -1271,10 +1343,10 @@
     "formato": "Reducida 3 (3 dobles + 3 triples) · 24 ap.",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.00115,
-    "p13": 0.01825,
-    "p12": 0.0966,
-    "p10": 0.51705,
+    "p14": 0.001114,
+    "p13": 0.01765,
+    "p12": 0.0919,
+    "p10": 0.52075,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1313,10 +1385,10 @@
     "formato": "Reducida 2 (7 dobles) · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.000751,
-    "p13": 0.01265,
-    "p12": 0.0715,
-    "p10": 0.461,
+    "p14": 0.000725,
+    "p13": 0.0125,
+    "p12": 0.07105,
+    "p10": 0.45375,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1350,10 +1422,10 @@
     "formato": "Reducida 2 (7 dobles) + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.000858,
-    "p13": 0.0141,
-    "p12": 0.0818,
-    "p10": 0.52215,
+    "p14": 0.000831,
+    "p13": 0.015,
+    "p12": 0.08365,
+    "p10": 0.5178,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1367,10 +1439,10 @@
     "formato": "Reducida 1 (4 triples) · 9 ap.",
     "apuestas": 9,
     "coste": 6.75,
-    "p14": 0.000573,
-    "p13": 0.01005,
-    "p12": 0.055,
-    "p10": 0.4131,
+    "p14": 0.000563,
+    "p13": 0.00985,
+    "p12": 0.0547,
+    "p10": 0.40875,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1419,10 +1491,10 @@
     "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001101,
-    "p13": 0.01585,
-    "p12": 0.08225,
-    "p10": 0.5345,
+    "p14": 0.000935,
+    "p13": 0.0164,
+    "p12": 0.08465,
+    "p10": 0.53945,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1430,10 +1502,10 @@
     "formato": "24 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001093,
-    "p13": 0.01495,
-    "p12": 0.08085,
-    "p10": 0.5196,
+    "p14": 0.001079,
+    "p13": 0.016,
+    "p12": 0.07825,
+    "p10": 0.50265,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1441,10 +1513,10 @@
     "formato": "24 sencillas más probables",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.002365,
-    "p13": 0.01855,
-    "p12": 0.0752,
-    "p10": 0.40375,
+    "p14": 0.002313,
+    "p13": 0.01885,
+    "p12": 0.07885,
+    "p10": 0.4239,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1464,12 +1536,12 @@
      ],
      [
       5,
-      0.833,
+      0.792,
       0.6
      ],
      [
       8,
-      0.833,
+      0.875,
       0.6
      ],
      [
@@ -1479,7 +1551,7 @@
      ],
      [
       10,
-      0.833,
+      0.875,
       0.6
      ],
      [
@@ -1494,7 +1566,7 @@
      ],
      [
       13,
-      0.833,
+      0.75,
       0.6
      ],
      [
@@ -1507,25 +1579,36 @@
   ],
   "boletos": [
    [
-    "12211221111111",
-    "122112211211X1",
-    "122112111X1111",
-    "1X211222XXX111",
-    "1X211222122112",
-    "1XX1X22X12X112",
-    "XXX112221XXX11"
+    "1221X221111111",
+    "12211221X11121",
+    "122122211111X1",
+    "12211212X11111",
+    "122112X1112111",
+    "1X211221X22111",
+    "1XX12222XXX121",
+    "X1X1221XXXXX2X"
    ],
    [
-    "1221X221111111",
-    "122112X1112111",
+    "122112111111X1",
+    "1221X211111111",
+    "1221121X111121",
+    "122112111211X1",
     "1X21122X111111",
-    "1X21121211X1X1",
-    "1XX112222XX111",
-    "1X1112221X21X1",
-    "21X1X2222XXX11",
-    "XXX1X2122X2X22"
+    "1121121111X111",
+    "11X1X22X2XX121",
+    "XXX1X21XXXXX12"
+   ],
+   [
+    "122112211X1111",
+    "12211221X11111",
+    "122112221X1111",
+    "X2211221111111",
+    "1221X21111111X",
+    "1X21122111X1X1",
+    "1XX1222X22X1X1",
+    "1XX1X22X2XXX11"
    ]
   ],
-  "orden_boletos": "Reducida 1 oficial (9) + sencillas en 2 boletos (8 y 7) en serpentina: protección en los dos"
+  "orden_boletos": "3 boletos de 8 en serpentina por P de las casas (protección repartida en los tres)"
  }
 }

@@ -575,6 +575,14 @@
    "origen": "Mesa (convocatorias oficiales, OddsPortal, reglas_mesa)",
    "aporte": "Revisión del sábado: convocatorias de Primera (Betis sin Lo Celso ni Ceballos, Madrid sin Trent ni Rodrygo, Atlético sin Sørloth ni Cuti Romero). Cuotas del sábado. Boleto nuevo: Reducida 1 (triples en 5, 7, 9 y 13) + 15 sencillas en 2 boletos, 18 €, Pleno 1-0. P(≥13) 1,6 %.",
    "cambia": "Sí"
+  },
+  {
+   "id": "j25-b365-2811",
+   "fecha": "2026-11-28 10:15",
+   "jornada": 25,
+   "origen": "Hilo encargo J25 (Chrome de Carlos)",
+   "aporte": "bet365 1X2 de los 15 y resultado correcto del Pleno (09:57 y 10:03, iguales) en R5b e histórico de cuotas. Ningún signo base cambia; R2 elige 24 sencillas optimizadas (3 boletos de 8) en lugar de Reducida 1 + 15 (P(≥13) 1,60 % frente a 1,64 %, empate a 3 decimales, gana P(14) 1/927). Pleno 1-0 (bet365 1-0 y 1-1 empatados a 6,00). Bajas de Flashscore de los 6 de hoy sin novedad.",
+   "cambia": "Sí"
   }
  ]
 }
