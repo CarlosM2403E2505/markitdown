@@ -1726,8 +1726,8 @@
    "m1": 0.5932,
    "mx": 0.226,
    "m2": 0.1808,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": false
   },
   {
    "jornada": 25,
@@ -1745,8 +1745,8 @@
    "m1": 0.1989,
    "mx": 0.2519,
    "m2": 0.5492,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "2",
+   "acierto_boleto": true
   },
   {
    "jornada": 25,
@@ -1878,8 +1878,8 @@
    "m1": 0.4432,
    "mx": 0.2659,
    "m2": 0.2909,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 25,
@@ -1897,8 +1897,8 @@
    "m1": 0.4545,
    "mx": 0.2867,
    "m2": 0.2588,
-   "resultado": null,
-   "acierto_boleto": null
+   "resultado": "1",
+   "acierto_boleto": true
   },
   {
    "jornada": 25,
