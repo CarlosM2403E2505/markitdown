@@ -146,7 +146,7 @@
  "primer_partido": "sáb 28/11 14:00",
  "definitivo": "sáb 28/11 11:45",
  "bote": "1.100.000 € (quiniela15 y eduardolosilla, 26/11)",
- "estado": "Primer repaso (jueves 26/11)",
+ "estado": "Revisión del sábado 28/11 (convocatorias)",
  "presupuesto": 18,
  "lista": "quiniela15.com y eduardolosilla.es, 26/11/2026; horarios laliga.com (A)",
  "datos_modelo": {
@@ -160,29 +160,29 @@
    "competicion": "Primera",
    "hora": "sáb 28/11 14:00",
    "p": [
-    0.6283,
-    0.2108,
-    0.1609
+    0.6188,
+    0.2152,
+    0.166
    ],
    "xg": [
-    1.957,
+    1.918,
     0.982
    ],
    "ajuste": [
-    1.0,
+    0.98,
     1.0
    ],
-   "bajas": "",
+   "bajas": "Convocatoria oficial del Betis (27/11): sin Lo Celso (rodilla) ni Ceballos; vuelve Morante, Abde disponible (futbolfantasy 155647). Rayo sin Óscar Valentín (Relevo, 27/11) y Batalla: no se compensa del todo → Betis ×0,98",
    "notas": [
     "EURO_F local (betis)"
    ],
    "forma_favorito": 8,
    "mk": {
-    "Mas 2.5": 0.5583,
-    "Ambos marcan": 0.5407,
-    "Menos 3.5": 0.6618,
-    "Local marca": 0.857,
-    "Visit marca": 0.6276
+    "Mas 2.5": 0.5492,
+    "Ambos marcan": 0.5372,
+    "Menos 3.5": 0.6706,
+    "Local marca": 0.8513,
+    "Visit marca": 0.6275
    },
    "datos": {
     "h2h_6": "09/23 1-0 · 03/24 0-2 fuera · 12/24 1-1 · 05/25 2-2 fuera · 12/25 0-0 fuera · 02/26 1-1",
@@ -198,15 +198,15 @@
     0.2
    ],
    "mercado": [
-    0.6134,
-    0.223,
-    0.1636
+    0.5995,
+    0.2207,
+    0.1798
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    78,
-    16,
-    6
+    79,
+    14,
+    7
    ]
   },
   {
@@ -251,15 +251,15 @@
     0.53
    ],
    "mercado": [
-    0.2034,
-    0.2477,
-    0.5489
+    0.1998,
+    0.2491,
+    0.5511
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    18,
-    26,
-    56
+    16,
+    25,
+    59
    ]
   },
   {
@@ -268,29 +268,29 @@
    "competicion": "Primera",
    "hora": "sáb 28/11 18:30",
    "p": [
-    0.2323,
-    0.2685,
-    0.4992
+    0.247,
+    0.2739,
+    0.4791
    ],
    "xg": [
-    1.21,
-    1.774
+    1.234,
+    1.721
    ],
    "ajuste": [
-    1.0,
-    1.0
+    1.02,
+    0.97
    ],
-   "bajas": "",
+   "bajas": "Atlético sin Sorloth (gemelo) ni Cuti Romero: baja confirmada para la J14 (futbolfantasy.com/laliga/lesionados, 27/11)",
    "notas": [
     "EURO_F visitante (atletico)"
    ],
    "forma_favorito": 12,
    "mk": {
-    "Mas 2.5": 0.5686,
-    "Ambos marcan": 0.5864,
-    "Menos 3.5": 0.6514,
-    "Local marca": 0.7032,
-    "Visit marca": 0.8296
+    "Mas 2.5": 0.562,
+    "Ambos marcan": 0.5857,
+    "Menos 3.5": 0.6578,
+    "Local marca": 0.7101,
+    "Visit marca": 0.8204
    },
    "datos": {
     "h2h_6": "08/21 0-1 fuera · 05/22 0-2 · 12/22 0-2 fuera · 05/23 1-0 · 08/25 1-1 fuera · 04/26 3-2",
@@ -306,15 +306,15 @@
     0.6114
    ],
    "mercado": [
-    0.16,
-    0.2,
-    0.64
+    0.1479,
+    0.2024,
+    0.6497
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    4,
+    8,
     12,
-    84
+    80
    ]
   },
   {
@@ -323,28 +323,28 @@
    "competicion": "Primera",
    "hora": "sáb 28/11 21:00",
    "p": [
-    0.8589,
-    0.0861,
-    0.055
+    0.8652,
+    0.0826,
+    0.0522
    ],
    "xg": [
-    3.028,
+    3.089,
     0.854
    ],
    "ajuste": [
-    1.0,
+    1.02,
     1.0
    ],
-   "bajas": "",
+   "bajas": "Alavés sin Benavidez (aductor, baja confirmada); Abqar y Carvajal (Real Madrid) dudas (futbolfantasy 27/11)",
    "notas": [
     "EURO_F local (real madrid)"
    ],
    "forma_favorito": 15,
    "mk": {
-    "Mas 2.5": 0.7406,
-    "Ambos marcan": 0.5491,
-    "Menos 3.5": 0.4585,
-    "Local marca": 0.9504,
+    "Mas 2.5": 0.7499,
+    "Ambos marcan": 0.5506,
+    "Menos 3.5": 0.4465,
+    "Local marca": 0.9533,
     "Visit marca": 0.5766
    },
    "datos": {
@@ -361,15 +361,15 @@
     0.1
    ],
    "mercado": [
-    0.8424,
-    0.1011,
-    0.0565
+    0.8483,
+    0.0975,
+    0.0542
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    94,
-    4,
-    2
+    91,
+    5,
+    4
    ]
   },
   {
@@ -414,15 +414,15 @@
     0.29
    ],
    "mercado": [
-    0.4357,
-    0.2905,
-    0.2739
+    0.4402,
+    0.298,
+    0.2618
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    52,
-    34,
-    14
+    53,
+    32,
+    15
    ]
   },
   {
@@ -469,15 +469,15 @@
     0.71
    ],
    "mercado": [
-    0.0974,
-    0.1298,
-    0.7728
+    0.0888,
+    0.1302,
+    0.7811
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    2,
-    7,
-    91
+    8,
+    8,
+    84
    ]
   },
   {
@@ -486,27 +486,27 @@
    "competicion": "Primera",
    "hora": "dom 29/11 18:30",
    "p": [
-    0.4309,
-    0.276,
-    0.2931
+    0.4417,
+    0.24,
+    0.3184
    ],
    "xg": [
     1.668,
-    1.377
+    1.419
    ],
    "ajuste": [
     1.0,
-    1.0
+    1.03
    ],
-   "bajas": "",
+   "bajas": "Celta sin Yoel Lago (central titular, 1.305 min; comuniate 27/11); Starfelt duda. El Celta perdió 1-2 con el Bournemouth el jueves (futbolfantasy)",
    "notas": [],
    "forma_favorito": 5,
    "mk": {
-    "Mas 2.5": 0.5823,
-    "Ambos marcan": 0.6103,
-    "Menos 3.5": 0.6375,
-    "Local marca": 0.8111,
-    "Visit marca": 0.7488
+    "Mas 2.5": 0.5914,
+    "Ambos marcan": 0.6186,
+    "Menos 3.5": 0.6282,
+    "Local marca": 0.8113,
+    "Visit marca": 0.7589
    },
    "datos": {
     "h2h_6": "12/23 2-3 fuera · 05/24 3-2 · 08/24 3-4 fuera · 04/25 3-0 · 08/25 1-1 · 04/26 1-2 fuera",
@@ -522,15 +522,15 @@
     0.401
    ],
    "mercado": [
-    0.3425,
-    0.274,
-    0.3836
+    0.3438,
+    0.2712,
+    0.385
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    32,
+    29,
     34,
-    34
+    37
    ]
   },
   {
@@ -577,15 +577,15 @@
     0.2823
    ],
    "mercado": [
-    0.4463,
-    0.2629,
-    0.2908
+    0.4479,
+    0.2603,
+    0.2918
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    53,
-    33,
-    14
+    52,
+    30,
+    18
    ]
   },
   {
@@ -630,15 +630,15 @@
     0.21
    ],
    "mercado": [
-    0.4337,
-    0.2726,
-    0.2936
+    0.4277,
+    0.2688,
+    0.3035
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
     78,
-    13,
-    9
+    14,
+    8
    ]
   },
   {
@@ -683,15 +683,15 @@
     0.27
    ],
    "mercado": [
-    0.4396,
-    0.2864,
-    0.274
+    0.4505,
+    0.2867,
+    0.2628
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    39,
-    36,
-    25
+    38,
+    35,
+    27
    ]
   },
   {
@@ -740,11 +740,11 @@
     0.2791,
     0.2108
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    55,
-    31,
-    14
+    51,
+    32,
+    17
    ]
   },
   {
@@ -753,27 +753,27 @@
    "competicion": "Segunda",
    "hora": "dom 29/11 14:00",
    "p": [
-    0.6045,
-    0.2092,
-    0.1863
+    0.6173,
+    0.2077,
+    0.175
    ],
    "xg": [
     1.968,
-    1.03
+    0.979
    ],
    "ajuste": [
     1.0,
-    1.0
+    0.95
    ],
-   "bajas": "",
+   "bajas": "Ceuta sin Jordi Escobar (goleador titular, cruzado; Ideal 26/11) ×0,93; Granada sin Sergio López (titular, al margen; Ideal 27/11) ×1,02 para el Ceuta: neto 0,95",
    "notas": [],
    "forma_favorito": 15,
    "mk": {
-    "Mas 2.5": 0.5765,
-    "Ambos marcan": 0.5532,
-    "Menos 3.5": 0.6475,
+    "Mas 2.5": 0.5649,
+    "Ambos marcan": 0.537,
+    "Menos 3.5": 0.6591,
     "Local marca": 0.8603,
-    "Visit marca": 0.6431
+    "Visit marca": 0.6242
    },
    "datos": {
     "h2h_6": "12/25 1-1 · 02/26 1-2 fuera",
@@ -793,11 +793,11 @@
     0.2211,
     0.1654
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
     85,
-    10,
-    5
+    9,
+    6
    ]
   },
   {
@@ -837,15 +837,15 @@
     "rotacion": "—"
    },
    "mercado": [
-    0.4188,
-    0.2772,
-    0.304
+    0.414,
+    0.2885,
+    0.2975
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    37,
-    31,
-    32
+    35,
+    32,
+    33
    ]
   },
   {
@@ -890,14 +890,14 @@
     0.18
    ],
    "mercado": [
-    0.5724,
-    0.2376,
-    0.19
+    0.5695,
+    0.2392,
+    0.1913
    ],
-   "mercado_fuente": "OddsPortal 26/11 (media de lista, sin margen)",
+   "mercado_fuente": "OddsPortal sáb 28/11 ~09:15",
    "publico": [
-    70,
-    20,
+    74,
+    16,
     10
    ]
   }
@@ -963,11 +963,11 @@
    ]
   },
   "mercado": [
-   0.4633,
-   0.2994,
-   0.2373
+   0.4585,
+   0.3009,
+   0.2407
   ],
-  "mercado_fuente": "OddsPortal 26/11"
+  "mercado_fuente": "OddsPortal sáb 28/11 ~09:15"
  },
  "sueltas": [
   {
@@ -978,7 +978,7 @@
   {
    "partido": "Real Madrid – Alavés",
    "apuesta": "Marca el Real Madrid",
-   "p": 0.95
+   "p": 0.953
   },
   {
    "partido": "Real Sociedad – Sevilla",
@@ -997,54 +997,54 @@
   }
  ],
  "empates": {
-  "x_esperadas": 3.15,
-  "p_ninguna_x": 0.027
+  "x_esperadas": 3.12,
+  "p_ninguna_x": 0.0281
  },
  "boleto_mesa": {
   "reglas": "herramientas/reglas_mesa.py (R1-R7, 22/11/2026; R5b casas 24/11)",
   "probabilidad": "casas en 14 partidos, mesa en el resto",
-  "formato": "24 sencillas optimizadas",
+  "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
   "apuestas": 24,
   "coste": 18.0,
   "columnas": [
-   "1221X221111111",
-   "12211221X111X1",
-   "1221X211111111",
-   "1221122X121111",
-   "1221121XX11111",
-   "1X212211111121",
-   "1X21121112X111",
-   "XXX1X2122XXX2X",
-   "1221122111X111",
-   "122112X1112111",
+   "12211211111111",
+   "122112X1X111X1",
+   "12211221211121",
+   "1221X211X11121",
+   "1221X2X1211111",
+   "1221X2211111X1",
+   "122122112111X1",
+   "122122X1111121",
+   "12212221X11111",
+   "12211221111111",
    "122112211211X1",
-   "122122211111X1",
-   "12X12221X11111",
-   "1X21122211X111",
-   "1XX1X2XXXX2111",
-   "XXX1X2122X2X22",
-   "11211221111111",
-   "12211221X11111",
-   "122112221X1111",
-   "12211221X11121",
-   "1221122X1X1121",
-   "1X211211112111",
-   "1XX1221XX2X121",
-   "XXX1X2222XXX2X"
+   "122112111X1111",
+   "1X211222XXX111",
+   "1X211222122112",
+   "1XX1X22X12X112",
+   "XXX112221XXX11",
+   "1221X221111111",
+   "122112X1112111",
+   "1X21122X111111",
+   "1X21121211X1X1",
+   "1XX112222XX111",
+   "1X1112221X21X1",
+   "21X1X2222XXX11",
+   "XXX1X2122X2X22"
   ],
   "pleno": "1-0",
-  "p14": 0.001046,
-  "p13": 0.015,
-  "p12": 0.0776,
+  "p14": 0.001101,
+  "p13": 0.0158,
+  "p12": 0.0823,
   "comparativa": [
    {
     "formato": "Directa 3 dobles + 1 triple · 24 ap.",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001891,
-    "p13": 0.0175,
-    "p12": 0.0781,
-    "p10": 0.43335,
+    "p14": 0.002012,
+    "p13": 0.0183,
+    "p12": 0.08155,
+    "p10": 0.4445,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1093,10 +1093,10 @@
     "formato": "Directa 4 dobles · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.001366,
-    "p13": 0.01375,
-    "p12": 0.05985,
-    "p10": 0.37475,
+    "p14": 0.001431,
+    "p13": 0.01415,
+    "p12": 0.0618,
+    "p10": 0.382,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1145,10 +1145,10 @@
     "formato": "Directa 4 dobles + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001395,
-    "p13": 0.0142,
-    "p12": 0.06625,
-    "p10": 0.4427,
+    "p14": 0.001452,
+    "p13": 0.0146,
+    "p12": 0.0675,
+    "p10": 0.4483,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1177,10 +1177,10 @@
     "formato": "Directa 1 doble + 2 triples · 18 ap.",
     "apuestas": 18,
     "coste": 13.5,
-    "p14": 0.001562,
-    "p13": 0.01545,
-    "p12": 0.0719,
-    "p10": 0.42465,
+    "p14": 0.001646,
+    "p13": 0.0162,
+    "p12": 0.07425,
+    "p10": 0.43245,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1234,10 +1234,10 @@
     "formato": "Directa 1 doble + 2 triples + 6 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001569,
-    "p13": 0.0155,
-    "p12": 0.07355,
-    "p10": 0.46845,
+    "p14": 0.001652,
+    "p13": 0.0163,
+    "p12": 0.07615,
+    "p10": 0.47135,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1271,10 +1271,10 @@
     "formato": "Reducida 3 (3 dobles + 3 triples) · 24 ap.",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001113,
-    "p13": 0.0174,
-    "p12": 0.0942,
-    "p10": 0.51115,
+    "p14": 0.00115,
+    "p13": 0.01825,
+    "p12": 0.0966,
+    "p10": 0.51705,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1313,10 +1313,10 @@
     "formato": "Reducida 2 (7 dobles) · 16 ap.",
     "apuestas": 16,
     "coste": 12.0,
-    "p14": 0.000723,
-    "p13": 0.0123,
-    "p12": 0.06965,
-    "p10": 0.45315,
+    "p14": 0.000751,
+    "p13": 0.01265,
+    "p12": 0.0715,
+    "p10": 0.461,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1350,10 +1350,10 @@
     "formato": "Reducida 2 (7 dobles) + 8 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.000856,
-    "p13": 0.01385,
-    "p12": 0.0805,
-    "p10": 0.514,
+    "p14": 0.000858,
+    "p13": 0.0141,
+    "p12": 0.0818,
+    "p10": 0.52215,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1367,10 +1367,10 @@
     "formato": "Reducida 1 (4 triples) · 9 ap.",
     "apuestas": 9,
     "coste": 6.75,
-    "p14": 0.000552,
-    "p13": 0.00975,
-    "p12": 0.0539,
-    "p10": 0.40625,
+    "p14": 0.000573,
+    "p13": 0.01005,
+    "p12": 0.055,
+    "p10": 0.4131,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1419,10 +1419,10 @@
     "formato": "Reducida 1 (4 triples) + 15 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.000966,
-    "p13": 0.0153,
-    "p12": 0.0815,
-    "p10": 0.5278,
+    "p14": 0.001101,
+    "p13": 0.01585,
+    "p12": 0.08225,
+    "p10": 0.5345,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1430,10 +1430,10 @@
     "formato": "24 sencillas optimizadas",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.001046,
-    "p13": 0.015,
-    "p12": 0.07765,
-    "p10": 0.4993,
+    "p14": 0.001093,
+    "p13": 0.01495,
+    "p12": 0.08085,
+    "p10": 0.5196,
     "cumple_R3": true,
     "incumple": []
    },
@@ -1441,10 +1441,10 @@
     "formato": "24 sencillas más probables",
     "apuestas": 24,
     "coste": 18.0,
-    "p14": 0.002314,
-    "p13": 0.01835,
-    "p12": 0.0731,
-    "p10": 0.3986,
+    "p14": 0.002365,
+    "p13": 0.01855,
+    "p12": 0.0752,
+    "p10": 0.40375,
     "cumple_R3": false,
     "incumple": [
      [
@@ -1507,36 +1507,25 @@
   ],
   "boletos": [
    [
-    "1221X221111111",
-    "12211221X111X1",
-    "1221X211111111",
-    "1221122X121111",
-    "1221121XX11111",
-    "1X212211111121",
-    "1X21121112X111",
-    "XXX1X2122XXX2X"
-   ],
-   [
-    "1221122111X111",
-    "122112X1112111",
+    "12211221111111",
     "122112211211X1",
-    "122122211111X1",
-    "12X12221X11111",
-    "1X21122211X111",
-    "1XX1X2XXXX2111",
-    "XXX1X2122X2X22"
+    "122112111X1111",
+    "1X211222XXX111",
+    "1X211222122112",
+    "1XX1X22X12X112",
+    "XXX112221XXX11"
    ],
    [
-    "11211221111111",
-    "12211221X11111",
-    "122112221X1111",
-    "12211221X11121",
-    "1221122X1X1121",
-    "1X211211112111",
-    "1XX1221XX2X121",
-    "XXX1X2222XXX2X"
+    "1221X221111111",
+    "122112X1112111",
+    "1X21122X111111",
+    "1X21121211X1X1",
+    "1XX112222XX111",
+    "1X1112221X21X1",
+    "21X1X2222XXX11",
+    "XXX1X2122X2X22"
    ]
   ],
-  "orden_boletos": "Serpentina por desviación del favorito de las casas: cada boleto lleva protección (feedback J24)"
+  "orden_boletos": "Reducida 1 oficial (9) + sencillas en 2 boletos (8 y 7) en serpentina: protección en los dos"
  }
 }

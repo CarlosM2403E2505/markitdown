@@ -41,7 +41,7 @@
    "defensa": 78,
    "proximo": "Real Madrid – Alavés",
    "proximo_n": 4,
-   "p_ganar_proximo": 0.8589,
+   "p_ganar_proximo": 0.8652,
    "bajas": 1,
    "dudas": 1,
    "elo": null
@@ -64,7 +64,7 @@
    "defensa": 79,
    "proximo": "Elche – Atlético",
    "proximo_n": 3,
-   "p_ganar_proximo": 0.4992,
+   "p_ganar_proximo": 0.4791,
    "bajas": 4,
    "dudas": 2,
    "elo": null
@@ -87,7 +87,7 @@
    "defensa": 93,
    "proximo": "Betis – Rayo",
    "proximo_n": 1,
-   "p_ganar_proximo": 0.6283,
+   "p_ganar_proximo": 0.6188,
    "bajas": 1,
    "dudas": 1,
    "elo": null
@@ -179,7 +179,7 @@
    "defensa": 103,
    "proximo": "Celta – Villarreal",
    "proximo_n": 7,
-   "p_ganar_proximo": 0.2931,
+   "p_ganar_proximo": 0.3184,
    "bajas": 1,
    "dudas": null,
    "elo": null
@@ -248,7 +248,7 @@
    "defensa": 93,
    "proximo": "Celta – Villarreal",
    "proximo_n": 7,
-   "p_ganar_proximo": 0.4309,
+   "p_ganar_proximo": 0.4417,
    "bajas": 2,
    "dudas": null,
    "elo": null
@@ -271,7 +271,7 @@
    "defensa": 101,
    "proximo": "Real Madrid – Alavés",
    "proximo_n": 4,
-   "p_ganar_proximo": 0.055,
+   "p_ganar_proximo": 0.0522,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -409,7 +409,7 @@
    "defensa": 101,
    "proximo": "Elche – Atlético",
    "proximo_n": 3,
-   "p_ganar_proximo": 0.2323,
+   "p_ganar_proximo": 0.247,
    "bajas": null,
    "dudas": null,
    "elo": null
@@ -524,7 +524,7 @@
    "defensa": 100,
    "proximo": "Granada – Ceuta",
    "proximo_n": 12,
-   "p_ganar_proximo": 0.6045,
+   "p_ganar_proximo": 0.6173,
    "bajas": 2,
    "dudas": null,
    "elo": null
@@ -961,7 +961,7 @@
    "defensa": 129,
    "proximo": "Granada – Ceuta",
    "proximo_n": 12,
-   "p_ganar_proximo": 0.1863,
+   "p_ganar_proximo": 0.175,
    "bajas": null,
    "dudas": null,
    "elo": null

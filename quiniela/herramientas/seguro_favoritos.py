@@ -30,7 +30,11 @@ def seguro(d, n_sim=200000):
     mesa = [x["p"] for x in d["partidos"]]
     rm.TOPES_JORNADA = rm.topes_partidos(d["partidos"])
     probs = probabilidades(d["partidos"], True)
-    cols = list(d["boleto_mesa"]["columnas"])
+    todas = list(d["boleto_mesa"]["columnas"])
+    import re
+    m = re.match(r".+? \+ (\d+) sencillas", d["boleto_mesa"]["formato"])
+    fijas = todas[:len(todas) - int(m.group(1))] if m else []   # reducida/directa oficial: no se toca
+    cols = todas[len(fijas):]
     favs = [(max(p), i) for i, p in enumerate(mesa) if 0.55 <= max(p) <= 0.75]
     if len(favs) < 4:
         return None, f"solo {len(favs)} favoritos entre 55 y 75 % (hacen falta 4)"
@@ -45,7 +49,7 @@ def seguro(d, n_sim=200000):
     pares = list(itertools.combinations(favs, 2))
     quitar = sorted(cols, key=lambda c: p_col(probs, c))[:4]
     resto = [c for c in cols if c not in quitar]
-    d0 = qc.simular_columnas(probs, cols, n=n_sim)
+    d0 = qc.simular_columnas(probs, fijas + cols, n=n_sim)
     ref = {"p13": qc.al_menos(d0, 13), "p12": qc.al_menos(d0, 12), "p10": qc.al_menos(d0, 10)}
     mejor = None
     for elegidos in itertools.combinations(pares, 4):
@@ -55,9 +59,9 @@ def seguro(d, n_sim=200000):
             for i in favs:
                 c[i] = segundo[i] if i in par else base[i]
             nuevas.append("".join(c))
-        if len(set(nuevas) | set(resto)) < len(cols) or rm.diversidad(probs, resto + nuevas):
+        if len(set(nuevas) | set(resto) | set(fijas)) < len(cols) + len(set(fijas)) or rm.diversidad(probs, fijas + resto + nuevas):
             continue
-        dist = qc.simular_columnas(probs, resto + nuevas, n=n_sim)
+        dist = qc.simular_columnas(probs, fijas + resto + nuevas, n=n_sim)
         r = {"p13": qc.al_menos(dist, 13), "p12": qc.al_menos(dist, 12), "p10": qc.al_menos(dist, 10)}
         if mejor is None or (r["p13"], r["p12"]) > (mejor[1]["p13"], mejor[1]["p12"]):
             mejor = (nuevas, r, elegidos)

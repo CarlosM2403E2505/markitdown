@@ -171,3 +171,36 @@ Datos en `jornadas/j25/control_estadistico_2711.json`. El superordenador de Opta
 Lectura para la revisión del sábado:
 - Ningún signo cambia por estos datos.
 - Pero los partidos 7, 8 y 13 son los fijos más expuestos de la jornada. Deben ir protegidos, con su segundo signo en varias sencillas, según la regla de fijos protegidos con `--mercado 0.08`.
+
+---
+
+## Versión 3 · revisión del sábado 28/11 (09:05 peninsular)
+
+Cambios desde el jueves: convocatorias oficiales (Betis sin Lo Celso, Ceballos ni Losada; Real Madrid sin Trent, Endrick, Rodrygo ni Asencio; Atlético sin Cuti Romero, Sørloth ni Lookman; Athletic sin Guruzeta ni Vivian; Alavés sin Novoa ni Protesoni; Elche sin Lemar). Convocatorias de Segunda: no constan en las fuentes. Solo el Betis suma un ajuste A (goles ×0,98). Cuotas del sábado (OddsPortal) en los 15.
+
+| Nº | Partido | Casas % 1·X·2 | Mesa % 1·X·2 | Signo base |
+|---|---|---|---|---|
+| 1 | Betis – Rayo | 60 · 22 · 18 | 62 · 22 · 17 | 1 |
+| 2 | Málaga – Athletic | 20 · 25 · 55 | 28 · 27 · 45 | 2 |
+| 3 | Elche – Atlético | 15 · 20 · 65 | 25 · 27 · 48 | 2 |
+| 4 | Real Madrid – Alavés | 85 · 10 · 5 | 87 · 8 · 5 | 1 |
+| 5 | Valencia – Osasuna | 44 · 30 · 26 | 47 · 30 · 24 | 1X2 (triple) |
+| 6 | Deportivo – Barcelona | 9 · 13 · 78 | 8 · 10 · 82 | 2 |
+| 7 | Celta – Villarreal | 34 · 27 · 39 | 44 · 24 · 32 | 1X2 (triple) |
+| 8 | Real Sociedad – Sevilla | 45 · 26 · 29 | 63 · 19 · 18 | 1 |
+| 9 | Las Palmas – Andorra | 43 · 27 · 30 | 49 · 24 · 27 | 1X2 (triple) |
+| 10 | Albacete – Tenerife | 45 · 29 · 26 | 44 · 26 · 29 | 1 |
+| 11 | Eibar – Burgos | 51 · 28 · 21 | 43 · 29 · 28 | 1 |
+| 12 | Granada – Ceuta | 61 · 22 · 17 | 62 · 21 · 18 | 1 |
+| 13 | Mallorca – Castellón | 41 · 29 · 30 | 50 · 25 · 25 | 1X2 (triple) |
+| 14 | Almería – Sporting | 57 · 24 · 19 | 56 · 21 · 23 | 1 |
+| P15 | Espanyol – Getafe | 46 · 30 · 24 | 43 · 34 · 23 | **1-0** (13,4 %; 1-1 13,3 %; 0-0 11,2 %; 0-1 9,6 %; 2-0 8,7 %; 2-1 8,2 %) |
+
+**Boleto (R1-R7, con la P de las casas, R5b):** Reducida 1 oficial con triples en 5, 7, 9 y 13 (9 apuestas) + 15 sencillas optimizadas en 2 boletos (7 y 8, en serpentina para que los dos lleven protección). 24 apuestas, **18 €**. Pleno 1-0 en todas.
+
+- P(14) 1/908 · P(≥13) 1,6 % (casas; 1,3 % con la mesa) · P(≥12) 8,2 % · P(≥10) 53 %.
+- X esperadas 3,1 · P(ninguna X) 2,8 % (mesa) · X cubiertas en 11 partidos.
+- Seguro de favoritos: no aplica (rompería la diversidad R3).
+- Sueltas: Marca el Barcelona 95 %, Marca el Real Madrid 95 %, Marca la Real Sociedad 89 %, Marca el Almería 86 %, Marca el Granada 86 %.
+
+**Informe del Auditor (sábado):** datos de Primera hasta el 22/11 y de Segunda hasta el 15/11 más 3 resultados de la J23 (faltan 8 partidos de la J15 de Segunda). Sin convocatorias de Segunda. Divergencias grandes mesa/casas en 8 (Real Sociedad 63 frente a 45), 7, 3 y 13; el boleto usa las casas y los cubre. Nadie garantiza el pleno al 15.

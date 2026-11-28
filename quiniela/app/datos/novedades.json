@@ -567,6 +567,14 @@
    "origen": "Decisión de Carlos",
    "aporte": "J25 con los 18 € de siempre. El Pleno sigue siendo el marcador más probable de la mesa, también cuando hay empate entre dos resultados (el público no desempata).",
    "cambia": "No"
+  },
+  {
+   "id": "j25-sabado-2811",
+   "fecha": "2026-11-28 09:05",
+   "jornada": 25,
+   "origen": "Mesa (convocatorias oficiales, OddsPortal, reglas_mesa)",
+   "aporte": "Revisión del sábado: convocatorias de Primera (Betis sin Lo Celso ni Ceballos, Madrid sin Trent ni Rodrygo, Atlético sin Sørloth ni Cuti Romero). Cuotas del sábado. Boleto nuevo: Reducida 1 (triples en 5, 7, 9 y 13) + 15 sencillas en 2 boletos, 18 €, Pleno 1-0. P(≥13) 1,6 %.",
+   "cambia": "Sí"
   }
  ]
 }
